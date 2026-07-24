@@ -1,0 +1,27 @@
+name: Publish daily Instagram post
+on:
+  schedule:
+    - cron: "0 10 * * *"   # 10:00 UTC = 12:00 CEST daily
+  workflow_dispatch: {}     # manual "publish now" button for testing
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish next due post
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/main
+        run: python3 publish.py
+      - name: Commit queue state
+        run: |
+          git config user.name "leverage-ai-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add queue/schedule.json
+          git diff --cached --quiet || git commit -m "mark post published $(date -u +%F)"
+          git push
