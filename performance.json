@@ -1,0 +1,15 @@
+{
+  "snapshots": [
+    {
+      "date": "2026-07-25",
+      "followers": 1,
+      "posts": [
+        {
+          "slug": "post01-email-workflow",
+          "likes": 0,
+          "comments": 0
+        }
+      ]
+    }
+  ]
+}
