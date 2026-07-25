@@ -19,9 +19,18 @@ from datetime import date, timedelta
 
 import render_slides
 
-MODEL = "claude-sonnet-5"
+MODEL = "claude-opus-5"
 QUEUE = "queue/schedule.json"
 SPEC_DIR = "specs"
+
+# Server-side web search. Dynamic filtering is built into this tool version —
+# do NOT also declare code_execution, a second execution environment confuses
+# the model.
+WEB_SEARCH_TOOL = {
+    "type": "web_search_20260209",
+    "name": "web_search",
+    "max_uses": 8,
+}
 
 BRAND = """You write carousel posts for @leverageai.daily, an Instagram account \
 publishing one practical AI workflow a day for knowledge workers.
@@ -175,29 +184,60 @@ def author(count, start_index, avoid):
 
     slugs = ", ".join(f"post{start_index + i:02d}" for i in range(count))
     prompt = (
+        "First, use web_search to ground this batch in what is actually current: "
+        "recent AI tool releases and feature changes, workflows people are "
+        "discussing now, and anything that would date a post or make it wrong. "
+        "Search before writing — do not rely on memory for product capabilities, "
+        "pricing, or which tool does what, since those change often.\n\n"
+        "Then write the posts and submit them with the submit_posts tool.\n\n"
         f"{SCHEMA}\n\n"
-        f"Write {count} posts and submit them with the submit_posts tool.\n"
-        f"Use these slug prefixes in order: {slugs}.\n"
+        f"Write {count} posts. Use these slug prefixes in order: {slugs}.\n"
         f"Number the cover eyebrows WORKFLOW {start_index:03d} onward.\n\n"
+        "Prefer topics that are timely without being disposable — a workflow that "
+        "is useful because of something that changed recently, not news commentary. "
+        "Never state a fact you did not verify by search.\n\n"
         f"Already covered — pick genuinely different topics:\n"
         + "\n".join(f"- {t}" for t in avoid)
     )
 
     client = anthropic.Anthropic(api_key=key)
-    # Streamed: the SDK requires it once max_tokens implies a possibly-long request.
-    with client.messages.stream(
-        model=MODEL,
-        max_tokens=32000,
-        system=BRAND,
-        tools=[SUBMIT_TOOL],
-        tool_choice={"type": "tool", "name": "submit_posts"},
-        messages=[{"role": "user", "content": prompt}],
-    ) as stream:
-        resp = stream.get_final_message()
+    messages = [{"role": "user", "content": prompt}]
 
+    # tool_choice stays "auto": forcing submit_posts would stop the model
+    # searching first. Server-side search can hit its own iteration limit and
+    # return stop_reason "pause_turn" — resend to resume, bounded.
+    for _ in range(6):
+        with client.beta.messages.stream(
+            model=MODEL,
+            max_tokens=64000,
+            system=BRAND,
+            tools=[WEB_SEARCH_TOOL, SUBMIT_TOOL],
+            messages=messages,
+            betas=["server-side-fallback-2026-07-01"],
+            fallbacks="default",
+        ) as stream:
+            resp = stream.get_final_message()
+
+        if resp.stop_reason == "pause_turn":
+            messages = [
+                {"role": "user", "content": prompt},
+                {"role": "assistant", "content": resp.content},
+            ]
+            continue
+        break
+    else:
+        sys.exit("Search kept pausing without finishing — try a smaller --count.")
+
+    if resp.stop_reason == "refusal":
+        sys.exit("Request was declined by safety classifiers, and the fallback "
+                 "model declined too.")
     if resp.stop_reason == "max_tokens":
         sys.exit(f"Response hit max_tokens before finishing. "
                  f"Try a smaller --count (asked for {count}).")
+
+    searches = sum(1 for b in resp.content if b.type == "server_tool_use")
+    if searches:
+        print(f"grounded on {searches} web search(es)")
 
     for block in resp.content:
         if block.type == "tool_use" and block.name == "submit_posts":
