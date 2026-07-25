@@ -87,6 +87,75 @@ def existing_topics(sched):
     return [p["id"] for p in sched["posts"]]
 
 
+# Forcing a tool call guarantees well-formed JSON. Parsing free text failed on
+# literal newlines inside the `code` field, which are invalid inside a JSON string.
+RICH_TEXT = {
+    "anyOf": [
+        {"type": "string"},
+        {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "t": {"type": "string"},
+                    "c": {"type": "string", "enum": ["blue", "green", "dim", "white"]},
+                    "b": {"type": "boolean"},
+                },
+                "required": ["t"],
+            },
+        },
+    ]
+}
+
+SUBMIT_TOOL = {
+    "name": "submit_posts",
+    "description": "Submit the authored carousel posts.",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "posts": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "slug": {"type": "string"},
+                        "caption": {"type": "string"},
+                        "slides": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "kind": {
+                                        "type": "string",
+                                        "enum": ["cover", "step", "prompt",
+                                                 "stat", "recap"],
+                                    },
+                                    "eyebrow": {"type": "string"},
+                                    "headline": RICH_TEXT,
+                                    "sub": {"type": "string"},
+                                    "body": RICH_TEXT,
+                                    "label": {"type": "string"},
+                                    "code": {"type": "string"},
+                                    "stat": {"type": "string"},
+                                    "items": {"type": "array",
+                                              "items": {"type": "string"}},
+                                    "cta_title": {"type": "string"},
+                                    "cta_sub": {"type": "string"},
+                                    "footer_right": {"type": "string"},
+                                },
+                                "required": ["kind"],
+                            },
+                        },
+                    },
+                    "required": ["slug", "caption", "slides"],
+                },
+            }
+        },
+        "required": ["posts"],
+    },
+}
+
+
 def author(count, start_index, avoid):
     try:
         import anthropic
@@ -100,7 +169,8 @@ def author(count, start_index, avoid):
     slugs = ", ".join(f"post{start_index + i:02d}" for i in range(count))
     prompt = (
         f"{SCHEMA}\n\n"
-        f"Write {count} posts. Use these slug prefixes in order: {slugs}.\n"
+        f"Write {count} posts and submit them with the submit_posts tool.\n"
+        f"Use these slug prefixes in order: {slugs}.\n"
         f"Number the cover eyebrows WORKFLOW {start_index:03d} onward.\n\n"
         f"Already covered — pick genuinely different topics:\n"
         + "\n".join(f"- {t}" for t in avoid)
@@ -109,16 +179,22 @@ def author(count, start_index, avoid):
     client = anthropic.Anthropic(api_key=key)
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=16000,
+        max_tokens=32000,
         system=BRAND,
+        tools=[SUBMIT_TOOL],
+        tool_choice={"type": "tool", "name": "submit_posts"},
         messages=[{"role": "user", "content": prompt}],
     )
-    text = "".join(b.text for b in resp.content if b.type == "text").strip()
-    text = re.sub(r"^```(?:json)?|```$", "", text, flags=re.M).strip()
-    posts = json.loads(text)
-    if not isinstance(posts, list):
-        raise ValueError("model did not return a JSON array")
-    return posts
+
+    if resp.stop_reason == "max_tokens":
+        sys.exit(f"Response hit max_tokens before finishing. "
+                 f"Try a smaller --count (asked for {count}).")
+
+    for block in resp.content:
+        if block.type == "tool_use" and block.name == "submit_posts":
+            return block.input["posts"]
+
+    sys.exit(f"Model returned no submit_posts call (stop_reason={resp.stop_reason}).")
 
 
 def validate(post):
