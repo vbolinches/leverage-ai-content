@@ -19,7 +19,9 @@ Design notes:
 import json, os, sys, time, urllib.parse, urllib.request
 from datetime import date
 
-GRAPH = "https://graph.facebook.com/v21.0"
+# Instagram API with Instagram Login (graph.instagram.com) — publishes direct to
+# an Instagram professional account, no Facebook Page link required.
+GRAPH = "https://graph.instagram.com/v21.0"
 TOKEN = os.environ["IG_ACCESS_TOKEN"]
 IG_ID = os.environ["IG_USER_ID"]
 RAW_BASE = os.environ.get("RAW_BASE")  # e.g. https://raw.githubusercontent.com/<user>/<repo>/main
