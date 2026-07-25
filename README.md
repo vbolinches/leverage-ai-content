@@ -59,14 +59,25 @@ confirm the target is `17841443853596707` / `@leverageai.daily` before publishin
 
 ## Token expiry
 
-Long-lived tokens last **60 days**. Refresh with ~10 days of headroom.
+- Token generated: **2026-07-25**
+- **Expires: 2026-09-23** (60 days)
+- **Refresh by: 2026-09-13** (10 days of headroom)
 
-- Token generated: `TBD — fill in on the day the token is created`
-- **Expires: TBD (generation date + 60 days)**
-- **Refresh by: TBD (generation date + 50 days)**
+These dates are computed from the standard 60-day window, not read back from
+Meta — `graph.instagram.com` exposes no token-debug endpoint, so the exact
+expiry could not be confirmed programmatically. Treat 2026-09-23 as the latest
+plausible expiry, not a guarantee.
 
-To refresh: SETUP.md Part 2 step 4 (Access Token Debugger → Extend Access
-Token), then update the `IG_ACCESS_TOKEN` secret. Takes about two minutes.
+To refresh (note: **not** the Access Token Debugger route in SETUP.md — that
+belongs to the Facebook-Login API this repo no longer uses):
+
+- App dashboard → `leverage-ai-publisher` → Use cases → Customize →
+  **API setup with Instagram login** → **Generate token** next to
+  `leverageai.daily`, then `gh secret set IG_ACCESS_TOKEN`
+- Or refresh in place while the token is still valid:
+  `GET https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=<current>`
+
+After refreshing, run the **Verify Instagram credentials** workflow.
 
 ## Ongoing operation
 
