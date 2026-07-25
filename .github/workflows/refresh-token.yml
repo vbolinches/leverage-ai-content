@@ -57,10 +57,22 @@ jobs:
           DAYS=$(( EXPIRES / 86400 ))
           echo "New token valid for ~$DAYS days (until $(date -u -d "+$DAYS days" +%F))"
 
-          echo "--- Writing it back to the IG_ACCESS_TOKEN secret ---"
+          echo "--- Checking GH_PAT ---"
+          code=$(curl -sS -o /dev/null -w '%{http_code}' \
+            -H "Authorization: Bearer $GH_PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/user)
+          if [ "$code" = "401" ]; then
+            echo "::error::GH_PAT is rejected (401). The token value itself is wrong, \
+          revoked, or expired — permissions are not the issue. Create a new token and re-set the secret."
+            exit 1
+          fi
+          echo "PAT authenticates (HTTP $code)"
+
+          echo "--- Writing the new token back to IG_ACCESS_TOKEN ---"
           pip install --quiet pynacl
           NEW_TOKEN="$NEW" python - <<'PY'
-          import base64, json, os, urllib.request
+          import base64, json, os, sys, urllib.error, urllib.request
           from nacl import encoding, public
 
           repo = os.environ["REPO"]
@@ -78,9 +90,22 @@ jobs:
                       "Content-Type": "application/json",
                   },
               )
-              with urllib.request.urlopen(req) as r:
-                  raw = r.read()
-                  return json.loads(raw) if raw else {}
+              try:
+                  with urllib.request.urlopen(req) as r:
+                      raw = r.read()
+                      return json.loads(raw) if raw else {}
+              except urllib.error.HTTPError as e:
+                  detail = e.read().decode(errors="replace")[:400]
+                  hint = {
+                      401: "GH_PAT is invalid, revoked or expired.",
+                      403: "GH_PAT authenticates but lacks 'Secrets: Read and write' "
+                           "on this repository, or the repo was not selected when the "
+                           "fine-grained token was created.",
+                      404: "Repo not visible to this token — fine-grained tokens must "
+                           "list this repository under Repository access.",
+                  }.get(e.code, "")
+                  print(f"::error::GitHub API {e.code} on {path}. {hint} {detail}")
+                  sys.exit(1)
 
           key = api("actions/secrets/public-key")
           sealed = public.SealedBox(
