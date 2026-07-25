@@ -177,14 +177,16 @@ def author(count, start_index, avoid):
     )
 
     client = anthropic.Anthropic(api_key=key)
-    resp = client.messages.create(
+    # Streamed: the SDK requires it once max_tokens implies a possibly-long request.
+    with client.messages.stream(
         model=MODEL,
         max_tokens=32000,
         system=BRAND,
         tools=[SUBMIT_TOOL],
         tool_choice={"type": "tool", "name": "submit_posts"},
         messages=[{"role": "user", "content": prompt}],
-    )
+    ) as stream:
+        resp = stream.get_final_message()
 
     if resp.stop_reason == "max_tokens":
         sys.exit(f"Response hit max_tokens before finishing. "
