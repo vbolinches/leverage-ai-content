@@ -94,6 +94,17 @@ Meta — `graph.instagram.com` exposes no token-debug endpoint, so the exact
 expiry could not be confirmed programmatically. Treat 2026-09-23 as the latest
 plausible expiry, not a guarantee.
 
+**Auto-refresh is built but not working.** `refresh-token.yml` renews the token
+monthly and writes it back to the secret, but it needs a valid `GH_PAT` (the
+default `GITHUB_TOKEN` cannot write secrets). The stored PAT is currently
+rejected with 401 — the value isn't a GitHub token. Fix that secret and the
+workflow takes over; until then, refresh by hand.
+
+**You will be warned in advance either way.** `token_status.json` records the
+expiry date and the daily monitor warns at 21 days and fails (emailing you) at
+10 days. **After refreshing by hand, update the dates in `token_status.json`
+and commit** — otherwise the warning fires against a stale date.
+
 To refresh (note: **not** the Access Token Debugger route in SETUP.md — that
 belongs to the Facebook-Login API this repo no longer uses):
 
