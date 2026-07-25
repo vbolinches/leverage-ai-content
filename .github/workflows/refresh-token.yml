@@ -1,0 +1,97 @@
+name: Refresh Instagram token
+
+# Instagram Login tokens live 60 days. Refreshing one that is still valid mints
+# a fresh 60-day token, so running monthly keeps it alive indefinitely and the
+# every-50-days manual chore disappears.
+#
+# Requires a GH_PAT secret: a GitHub token with permission to write repository
+# secrets (fine-grained: Secrets = Read and write on this repo). The default
+# GITHUB_TOKEN cannot update secrets, which is why a PAT is needed.
+#
+# The new token is masked in logs and written straight back into the
+# IG_ACCESS_TOKEN secret. It is never printed, committed, or stored anywhere else.
+
+on:
+  schedule:
+    - cron: "0 3 1 * *"    # 03:00 UTC on the 1st of every month
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refresh token and update the secret
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${IG_ACCESS_TOKEN:-}" ]; then
+            echo "::error::IG_ACCESS_TOKEN is not set."; exit 1
+          fi
+          if [ -z "${GH_PAT:-}" ]; then
+            echo "::error::GH_PAT is not set — cannot write the refreshed token back. See this file's header."
+            exit 1
+          fi
+
+          echo "--- Requesting a fresh 60-day token ---"
+          resp=$(curl -sS -G "https://graph.instagram.com/refresh_access_token" \
+            --data-urlencode "grant_type=ig_refresh_token" \
+            --data-urlencode "access_token=$IG_ACCESS_TOKEN")
+
+          if echo "$resp" | jq -e '.error' >/dev/null; then
+            echo "::error::Refresh failed: $(echo "$resp" | jq -c '.error.message')"
+            echo "If the token has already expired it cannot be refreshed — mint a new one by hand (see README)."
+            exit 1
+          fi
+
+          NEW=$(echo "$resp" | jq -r '.access_token')
+          EXPIRES=$(echo "$resp" | jq -r '.expires_in')
+          if [ -z "$NEW" ] || [ "$NEW" = "null" ]; then
+            echo "::error::No access_token in refresh response."; exit 1
+          fi
+          echo "::add-mask::$NEW"
+
+          DAYS=$(( EXPIRES / 86400 ))
+          echo "New token valid for ~$DAYS days (until $(date -u -d "+$DAYS days" +%F))"
+
+          echo "--- Writing it back to the IG_ACCESS_TOKEN secret ---"
+          pip install --quiet pynacl
+          NEW_TOKEN="$NEW" python - <<'PY'
+          import base64, json, os, urllib.request
+          from nacl import encoding, public
+
+          repo = os.environ["REPO"]
+          pat = os.environ["GH_PAT"]
+          token = os.environ["NEW_TOKEN"]
+
+          def api(path, method="GET", body=None):
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{repo}/{path}",
+                  method=method,
+                  data=json.dumps(body).encode() if body else None,
+                  headers={
+                      "Authorization": f"Bearer {pat}",
+                      "Accept": "application/vnd.github+json",
+                      "Content-Type": "application/json",
+                  },
+              )
+              with urllib.request.urlopen(req) as r:
+                  raw = r.read()
+                  return json.loads(raw) if raw else {}
+
+          key = api("actions/secrets/public-key")
+          sealed = public.SealedBox(
+              public.PublicKey(key["key"].encode(), encoding.Base64Encoder())
+          ).encrypt(token.encode())
+
+          api("actions/secrets/IG_ACCESS_TOKEN", method="PUT", body={
+              "encrypted_value": base64.b64encode(sealed).decode(),
+              "key_id": key["key_id"],
+          })
+          print("IG_ACCESS_TOKEN updated.")
+          PY
+
+          echo "Done. Token refreshed and stored; nothing was logged."
