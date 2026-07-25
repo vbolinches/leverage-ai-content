@@ -1,0 +1,57 @@
+name: Queue health check
+
+# publish.py exits 0 with "nothing due" when the queue runs dry — by design, so
+# the daily cron never fails spuriously. The side effect is that running out of
+# content is SILENT: posting just stops and nothing tells you.
+#
+# This job makes that failure loud. It fails (and GitHub emails you) while there
+# is still runway to produce the next batch, not after posting has already stopped.
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"    # Mondays 09:00 UTC — an hour before the daily publish
+  workflow_dispatch: {}
+
+env:
+  MIN_DAYS_RUNWAY: 5       # shout when fewer than this many queued posts remain
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Report remaining runway
+        run: |
+          python3 - <<'PY'
+          import json, os, sys
+          from datetime import date
+
+          MIN = int(os.environ["MIN_DAYS_RUNWAY"])
+          sched = json.load(open("queue/schedule.json", encoding="utf-8"))
+          posts = sched["posts"]
+
+          queued = [p for p in posts if p["status"] == "queued"]
+          published = [p for p in posts if p["status"] == "published"]
+
+          print(f"published: {len(published)}   queued: {len(queued)}")
+
+          if not queued:
+              print("::error::QUEUE EMPTY — nothing will publish. "
+                    "Posting has stopped until a new batch is added.")
+              sys.exit(1)
+
+          last = max(p["date"] for p in queued)
+          runway = (date.fromisoformat(last) - date.today()).days
+          print(f"next: {min(p['date'] for p in queued)}   last: {last}   "
+                f"runway: {runway} days")
+
+          if len(queued) < MIN:
+              print(f"::error::Only {len(queued)} post(s) left, running dry on {last}. "
+                    f"Produce the next batch now.")
+              sys.exit(1)
+
+          print(f"OK: {len(queued)} posts queued through {last}.")
+          PY
+        env:
+          MIN_DAYS_RUNWAY: ${{ env.MIN_DAYS_RUNWAY }}
