@@ -35,6 +35,9 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--every", type=int, default=2,
                     help="convert every Nth queued post (default 2 = alternate)")
+    ap.add_argument("--rebuild", action="store_true",
+                    help="re-render reels that already exist (use after a "
+                         "renderer or audio change)")
     a = ap.parse_args()
 
     sched = load()
@@ -42,12 +45,14 @@ def main():
     if not queued:
         sys.exit("nothing queued")
 
-    targets = [p for i, p in enumerate(queued) if i % a.every == 0]
-    print(f"{len(queued)} queued -> converting {len(targets)} to reels\n")
+    targets = ([p for p in queued if p.get("format") == "reel"] if a.rebuild
+               else [p for i, p in enumerate(queued) if i % a.every == 0])
+    verb = "re-rendering" if a.rebuild else "converting"
+    print(f"{len(queued)} queued -> {verb} {len(targets)} reels\n")
 
     converted = 0
     for p in targets:
-        if p.get("format") == "reel":
+        if p.get("format") == "reel" and not a.rebuild:
             print(f"  {p['id']}: already a reel")
             continue
         slides = [s for s in p.get("slides", []) if os.path.exists(s)]

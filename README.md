@@ -53,10 +53,32 @@ it is scheduled on, so nothing is published twice.
 python render_reel.py specs/post15-example.json   # spec  -> reel.mp4
 python build_reels.py --dry-run                   # preview queue conversion
 python build_reels.py                             # convert alternates
+python build_reels.py --rebuild                   # re-render existing reels
 ```
 
 Video encoding uses `imageio-ffmpeg`, which ships its own ffmpeg binary — no
 system install, and identical output locally and in CI.
+
+### Audio
+
+**Instagram's publishing API cannot attach trending or licensed audio.** There is
+no `audio_id` parameter and Meta does not expose the music library to third
+parties — every API-published Reel must carry its audio inside the MP4. This is a
+platform limit, not a gap in this repo, and it affects all third-party
+schedulers.
+
+So `audio.py` synthesises an original bed per post: a slow minor loop, seeded
+from the post slug, with a cue on each slide change. Every sample is computed
+locally, so there is no licence, no attribution and no takedown surface. It
+exists because silent Reels get suppressed — not because it competes with a
+trending sound. It cannot.
+
+```bash
+python audio.py bed.wav --seconds 14 --slug post02-meeting-notes-prompt
+```
+
+**If a Reel ever needs a trending sound, it has to be posted by hand in the app.**
+That is the only route Meta provides.
 
 ## Producing the next batch
 

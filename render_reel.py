@@ -12,14 +12,20 @@ branding byte-identical to the carousels instead of maintaining a second layout.
 Motion matters — a static slideshow gets poor retention — so each card gets a
 slow zoom and cards cross-fade into each other.
 
+Audio comes from audio.py, synthesised per post. Instagram's API cannot attach
+trending or licensed audio, so it must be embedded here; silent Reels are
+suppressed. Slide changes get an audible cue.
+
     python render_reel.py specs/_example.json
     python render_reel.py specs/_example.json --out queue/
 
-Requires imageio-ffmpeg (ships its own ffmpeg binary; no system install).
+Requires imageio-ffmpeg (ships its own ffmpeg binary; no system install) and
+numpy (audio synthesis).
 """
-import argparse, json, os, subprocess, sys
+import argparse, json, os, subprocess, sys, tempfile
 from PIL import Image
 
+import audio
 import render_slides
 
 W, H = 1080, 1920
@@ -139,22 +145,44 @@ def render(spec, out_root="queue"):
     return _encode(cards, spec["slug"], out_root)
 
 
+def timeline(cards):
+    """Exact duration and slide-change times, in seconds.
+
+    Mirrors the frame arithmetic in frames() so the audio bed lines up with the
+    video sample-for-sample instead of drifting by a frame per card.
+    """
+    counts = [max(int(secs * FPS), 1) for _, secs in cards]
+    starts = []
+    running = 0
+    for n in counts[:-1]:
+        running += n
+        starts.append(running / FPS)
+    return sum(counts) / FPS, starts
+
+
 def _encode(cards, slug, out_root):
     out_dir = os.path.join(out_root, slug)
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, "reel.mp4")
 
+    # Reels published through the API cannot use Instagram's trending audio —
+    # Meta exposes no such parameter, so audio has to be inside the file. We
+    # synthesise an original bed (see audio.py) rather than ship a licensed
+    # track. Silent Reels get suppressed, so this is not optional.
+    duration, changes = timeline(cards)
+    bed = os.path.join(tempfile.gettempdir(), f"bed-{slug}.wav")
+    audio.write_wav(bed, audio.render_bed(duration, slug, accents=changes))
+
     cmd = [
         _ffmpeg(), "-y",
         "-f", "rawvideo", "-pix_fmt", "rgb24",
         "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
-        # Instagram is happier with an audio track present, even a silent one.
-        "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+        "-i", bed,
         "-shortest",
         "-c:v", "libx264", "-preset", "medium", "-crf", "20",
         "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.0",
         "-r", str(FPS), "-movflags", "+faststart",
-        "-c:a", "aac", "-b:a", "128k",
+        "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
         path,
     ]
 
@@ -170,6 +198,10 @@ def _encode(cards, slug, out_root):
     err = proc.stderr.read().decode(errors="replace")
     if proc.wait() != 0:
         sys.exit(f"ffmpeg failed:\n{err[-2000:]}")
+    try:
+        os.remove(bed)
+    except OSError:
+        pass
 
     secs = count / FPS
     # Instagram Reels accept 3s-15min; well outside that is a spec error.
