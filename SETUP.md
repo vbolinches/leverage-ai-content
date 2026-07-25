@@ -1,3 +1,16 @@
+> ## ⚠️ SUPERSEDED — kept for history only
+>
+> This document describes the **Facebook-Page route** (`graph.facebook.com` +
+> `instagram_business_account`). That route **does not work for this account**:
+> @leverageai.daily sits in a different Meta Accounts Center from the Facebook
+> account, so the Page link never forms at business level.
+>
+> The live system uses the **Instagram Login API** (`graph.instagram.com`).
+> Following the steps below — particularly Part 2 and the Access Token Debugger
+> refresh — will send you down a dead end.
+>
+> **See `README.md` and `CLAUDE.md` instead.**
+
 # Full Automation Setup — one time, ~45 min, then zero-touch daily posting
 
 After this setup, posting is fully autonomous: GitHub's servers publish one

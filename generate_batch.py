@@ -246,6 +246,9 @@ def main():
     ap.add_argument("--count", type=int, default=7)
     ap.add_argument("--dry-run", action="store_true",
                     help="author and render, but do not add to the queue")
+    ap.add_argument("--out", default="queue",
+                    help="where to render slides; use a separate dir for dry runs "
+                         "so the review bundle holds only the new posts")
     a = ap.parse_args()
 
     sched = load_queue()
@@ -266,8 +269,8 @@ def main():
         with open(f"{SPEC_DIR}/{post['slug']}.json", "w", encoding="utf-8") as f:
             json.dump(post, f, indent=2, ensure_ascii=False)
 
-        slides = render_slides.render_post(post)
-        print(f"  {post['slug']}: {len(slides)} slides rendered")
+        slides = render_slides.render_post(post, a.out)
+        print(f"  {post['slug']}: {len(slides)} slides rendered -> {a.out}/")
 
         if not a.dry_run:
             sched["posts"].append({

@@ -43,34 +43,44 @@ CONTENT_BOTTOM = 1215
 
 
 # --------------------------------------------------------------------------
-# Fonts: prefer fonts committed to the repo, then fall back to whatever the
-# host provides. CI (ubuntu) has DejaVu; Windows has Segoe UI.
+# Fonts. DejaVu is listed FIRST on every platform so a local preview renders
+# byte-identically to what CI publishes — otherwise Windows would silently use
+# Segoe UI and you would be reviewing slides that differ from the real ones.
+# matplotlib bundles DejaVu, which is how Windows gets it without an install.
 # --------------------------------------------------------------------------
+def _mpl_font_dir():
+    try:
+        import matplotlib, os as _os
+        return _os.path.join(_os.path.dirname(matplotlib.__file__),
+                             "mpl-data", "fonts", "ttf")
+    except Exception:
+        return None
+
+
+_MPL = _mpl_font_dir()
+
+
+def _candidates(dejavu, repo, windows):
+    paths = [repo]
+    if _MPL:
+        paths.append(os.path.join(_MPL, dejavu))
+    paths += [
+        f"/usr/share/fonts/truetype/dejavu/{dejavu}",
+        f"/usr/share/fonts/truetype/liberation/{windows[1]}",
+        windows[0],
+    ]
+    return paths
+
+
 FONT_CANDIDATES = {
-    "bold": [
-        "brand/fonts/Inter-Bold.ttf",
-        "C:/Windows/Fonts/segoeuib.ttf",
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
-    ],
-    "semi": [
-        "brand/fonts/Inter-SemiBold.ttf",
-        "C:/Windows/Fonts/seguisb.ttf",
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
-    ],
-    "regular": [
-        "brand/fonts/Inter-Regular.ttf",
-        "C:/Windows/Fonts/segoeui.ttf",
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
-    ],
-    "mono": [
-        "brand/fonts/JetBrainsMono-Regular.ttf",
-        "C:/Windows/Fonts/consola.ttf",
-        "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
-        "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf",
-    ],
+    "bold": _candidates("DejaVuSans-Bold.ttf", "brand/fonts/Inter-Bold.ttf",
+                        ("C:/Windows/Fonts/segoeuib.ttf", "LiberationSans-Bold.ttf")),
+    "semi": _candidates("DejaVuSans-Bold.ttf", "brand/fonts/Inter-SemiBold.ttf",
+                        ("C:/Windows/Fonts/seguisb.ttf", "LiberationSans-Bold.ttf")),
+    "regular": _candidates("DejaVuSans.ttf", "brand/fonts/Inter-Regular.ttf",
+                           ("C:/Windows/Fonts/segoeui.ttf", "LiberationSans-Regular.ttf")),
+    "mono": _candidates("DejaVuSansMono.ttf", "brand/fonts/JetBrainsMono-Regular.ttf",
+                        ("C:/Windows/Fonts/consola.ttf", "LiberationMono-Regular.ttf")),
 }
 _font_cache = {}
 

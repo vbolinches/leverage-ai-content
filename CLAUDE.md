@@ -1,65 +1,92 @@
-# HANDOFF — instructions for Claude Code (local agent)
+# leverage-ai-content — operating notes
 
-You are finishing the deployment of a fully-built Instagram automation for
-the account @leverageai.daily, owned by Vicente. Everything in this folder is
-final and tested — your job is DEPLOYMENT ONLY, not redesign. Do not modify
-publish.py, the workflow, or the queue except where these steps say so.
+Autonomous Instagram publishing for **@leverageai.daily**. Deployed and running
+since 2026-07-25. This file replaces the original deployment handoff, which
+described a setup that turned out not to match reality.
 
-## Context
-- This folder is the complete contents of a GitHub repo to be named
-  `leverage-ai-content` (must be PUBLIC — Meta fetches images from raw URLs).
-- `.github/workflows/publish.yml` posts 1 queued post/day at 10:00 UTC via
-  Instagram Graph API. `queue/schedule.json` holds 14 posts (2026-07-27 → 08-09).
-- Dated posts in the past publish on next run (by design, oldest first, one per run).
+Repo: https://github.com/vbolinches/leverage-ai-content (public — Meta fetches
+slide images from raw URLs, which only works on a public repo on `main`).
 
-## Your steps
+## Read this before changing anything
 
-1. **Preflight:** verify `git` and `gh` are installed (`gh --version`). If gh
-   is not authenticated, run `gh auth login` and let Vicente complete the
-   browser login. Scope must include repo + workflow.
+**1. The wrong-account hazard is real.** The Facebook account behind this app
+also administers **@inmigraforma**, an unrelated live business with a real
+audience. During setup the token could reach *only* that account. Publishing 14
+AI-productivity carousels there would have been unrecoverable.
 
-2. **Create and push the repo** from this folder as repo root:
-   - `git init && git add . && git commit -m "Leverage AI content engine v1"`
-   - `gh repo create leverage-ai-content --public --source=. --push`
-   - Verify `.github/workflows/publish.yml` exists at that path in the repo.
+- Correct target: `IG_USER_ID = 17841443853596707` = `@leverageai.daily`
+- Wrong target: `17841464133054122` = `@inmigraforma`
 
-3. **Meta token (Vicente does this part in his browser — guide him):**
-   Walk him through SETUP.md Part 2 step by step (developers.facebook.com →
-   Business app → Graph API Explorer → permissions instagram_basic,
-   instagram_content_publish, pages_show_list, business_management →
-   generate token → extend to long-lived → get IG user ID via
-   me/accounts → page id → instagram_business_account).
-   PRECONDITION he may still need: the IG account must be linked to a
-   Facebook Page (business.facebook.com). If me/accounts returns empty,
-   do that first.
-   Ask him to paste the long-lived token and IG user ID to you.
-   NEVER write the token to any file, commit, or log — secrets go only into
-   the gh secret commands below.
+`publish.py`, `monitor.py` and the verify workflow all assert the username. Do
+not weaken those guards.
 
-4. **Set secrets:**
-   - `gh secret set IG_ACCESS_TOKEN` (paste value when prompted)
-   - `gh secret set IG_USER_ID` (paste value)
+**2. This uses the Instagram Login API, not the Facebook Page API.**
+`publish.py` targets `graph.instagram.com`. The Page-based route
+(`graph.facebook.com` + `instagram_business_account`) **cannot work here**:
+@leverageai.daily lives in a different Meta Accounts Center from the Facebook
+account, so the Page link only ever forms at profile level and
+`instagram_business_account` never populates. A Facebook Page named "Leverage AI"
+(`1132549139952111`) exists from that attempt and is unused.
 
-5. **Test fire:** `gh workflow run "Publish daily Instagram post"` then
-   `gh run watch`. Success = log line "published: media id ...". Ask Vicente
-   to confirm post01 (6-slide carousel, "Stop writing emails from scratch")
-   is live on @leverageai.daily.
+`SETUP.md` documents the abandoned route and is retained only as history.
 
-6. **Post-deploy checks:**
-   - `queue/schedule.json` on main should now show post01 status "published"
-     (the workflow commits this; `git pull` to confirm).
-   - Record today's date + 60 days as TOKEN EXPIRY in the repo README
-     (create a short README.md noting: what this repo is, token expiry date,
-     and "weekly batches come from the Cowork session").
-   - Confirm the cron is enabled (Actions tab, workflow not disabled).
+**3. Nobody is watching the inbox.** Captions must never promise a reply,
+template or DM — anyone who took it up would get silence. `generate_batch.py`
+enforces this in both the brand prompt and the validator.
 
-7. **Report back** to Vicente: repo URL, first-post link, token expiry date,
-   and remind him the cron now runs daily at 12:00 CEST with no further action.
+**4. Running out of content fails silently.** `publish.py` exits 0 with
+"nothing due" by design, so the cron never fails spuriously. The queue-health
+workflow exists to make that failure loud. Keep it.
 
-## Failure notes
-- API error "media type unsupported / image fetch failed": raw URL not
-  public — repo must be public, files on branch `main`.
-- (#10) permission error: token missing instagram_content_publish or the
-  IG account isn't linked to the Page the token can see.
-- Rate/limit errors: we publish 1/day, far under the 25/day cap — if you see
-  a limit error, something else is wrong; stop and report, don't retry-loop.
+## Layout
+
+| Path | Purpose |
+|---|---|
+| `queue/schedule.json` | The queue: id, date, slides, caption, status |
+| `queue/postNN-*/` | Slide PNGs |
+| `specs/*.json` | Post content specs, rendered into slides |
+| `publish.py` | Publishes the oldest due post; marks it published |
+| `render_slides.py` | Spec → branded 1080×1350 slides |
+| `generate_batch.py` | Authors a batch with Claude, renders, queues |
+| `monitor.py` | Read-only digest + token expiry warning |
+| `token_status.json` | Token expiry dates (no secret) |
+
+## Workflows
+
+| Workflow | When | Notes |
+|---|---|---|
+| Publish daily Instagram post | 10:00 UTC daily | The core job |
+| Account monitor | 08:00 UTC daily | Digest; fails at <10 days token runway |
+| Queue health check | Mon 09:00 UTC | Fails below 5 queued posts |
+| Generate content batch | Wed 06:00 UTC | Only runs when queue < 7 |
+| Refresh Instagram token | 1st monthly | **Blocked** — needs a valid `GH_PAT` |
+| Verify Instagram credentials | manual | Run after any token change |
+
+## Secrets
+
+| Secret | State |
+|---|---|
+| `IG_ACCESS_TOKEN` | set; expires 2026-09-22 |
+| `IG_USER_ID` | set |
+| `ANTHROPIC_API_KEY` | set |
+| `GH_PAT` | **invalid** — rejected 401; value is not a GitHub token |
+
+## Known gaps
+
+- **Token auto-refresh is blocked** on `GH_PAT`. Until fixed, refresh by hand
+  (README has the steps) and **update `token_status.json`**, or the warning
+  fires against a stale date.
+- **Insights** (reach, impressions, saves) need
+  `instagram_business_manage_insights` added to the app; `monitor.py` degrades
+  gracefully without it.
+- **The app is in development mode.** Fine for a Tester-role account, but if
+  publishing ever fails on permissions, App Review is the cause.
+- **Generated posts publish unreviewed** on the Wednesday schedule. `--dry-run`
+  plus the artifact is the review path.
+
+## Conventions
+
+- Write `schedule.json` with `json.dump(..., indent=2, ensure_ascii=False)` —
+  matches what the publish workflow commits, keeps diffs clean.
+- Slides render with DejaVu on every platform so local previews match CI.
+- Never commit a token. `token_status.json` holds dates only.
