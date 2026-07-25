@@ -39,7 +39,14 @@ Each post is a 4-7 slide carousel following this arc:
 
 Captions: 2-4 short paragraphs, a save/comment prompt, the line \
 "Follow @leverageai.daily for one practical AI workflow a day.", then 8-10 \
-lowercase hashtags. Under 2000 characters."""
+lowercase hashtags. Under 2000 characters.
+
+NEVER promise anything you cannot deliver inside the post itself. This account \
+publishes on a schedule and nobody is watching the inbox, so a caption must not \
+say "comment X and I'll send you Y", offer a template, doc, checklist or DM, or \
+imply a reply. Anyone who took you up on it would get silence. Everything of \
+value must already be on the slides. Asking people to save, share or give an \
+opinion in the comments is fine — promising them something back is not."""
 
 SCHEMA = """Return ONLY a JSON array of post objects. No prose, no markdown fence.
 
@@ -209,6 +216,17 @@ def validate(post):
         errs.append("missing caption")
     if len(cap) > 2200:
         errs.append(f"caption {len(cap)} chars > 2200 Instagram limit")
+    # Nobody is watching the inbox, so a caption must not promise a reply.
+    low = cap.lower()
+    for phrase in ("i'll send", "ill send", "i will send", "dm me", "send you the",
+                   "comment below and i", "and i'll share", "i'll dm", "i'll reply"):
+        if phrase in low:
+            errs.append(f"caption promises a reply nobody will send: {phrase!r}")
+    # e.g. 'Comment "LOG" for the template' — an implicit promise of a hand-off.
+    m = re.search(r'comment\s+["“\']?\w+["”\']?\s+(?:for|and|to get)\b', low)
+    if m:
+        errs.append(f"caption implies a hand-off nobody will make: {m.group(0)!r}")
+
     slides = post.get("slides", [])
     if not 2 <= len(slides) <= 10:
         errs.append(f"{len(slides)} slides, Instagram carousels allow 2-10")
