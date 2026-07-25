@@ -80,6 +80,24 @@ def collect():
         "posts": me.get("media_count"),
     }
 
+    # Reach, saves and shares are the metrics that actually explain growth;
+    # likes explain very little. They need instagram_business_manage_insights,
+    # and a token minted AFTER that permission was added — an older token
+    # silently lacks the scope, so failures here are reported, not fatal.
+    acct_insights, acct_err = get(
+        f"{IG_ID}/insights",
+        metric="reach,profile_views,accounts_engaged,total_interactions",
+        period="day",
+        metric_type="total_value",
+    )
+    if acct_err:
+        report["insights_error"] = acct_err
+    else:
+        report["account_insights"] = {
+            d["name"]: d.get("total_value", {}).get("value")
+            for d in acct_insights.get("data", [])
+        }
+
     media, err = get(f"{IG_ID}/media",
                      fields="id,caption,permalink,timestamp,media_type,"
                             "like_count,comments_count",
@@ -91,14 +109,23 @@ def collect():
     posts = []
     for m in media.get("data", []):
         cap = (m.get("caption") or "").split("\n")[0][:60]
-        posts.append({
+        entry = {
             "id": m["id"],
             "posted": m.get("timestamp", "")[:10],
             "hook": cap,
             "likes": m.get("like_count", 0),
             "comments": m.get("comments_count", 0),
             "url": m.get("permalink"),
-        })
+        }
+        # Per-post reach and saves — the diagnostic pair. Low reach means a
+        # distribution problem; high reach with low saves means a content one.
+        ins, ins_err = get(f"{m['id']}/insights",
+                           metric="reach,saved,shares,total_interactions")
+        if not ins_err:
+            for d in ins.get("data", []):
+                vals = d.get("values") or [{}]
+                entry[d["name"]] = vals[0].get("value")
+        posts.append(entry)
     report["posts_recent"] = posts
 
     if posts:
@@ -155,9 +182,40 @@ def render(report):
         print(f"  best: {b['likes']}L/{b['comments']}C  {b['hook']}")
         print(f"        {b['url']}")
 
+    ai = report.get("account_insights")
+    if ai:
+        print("\naccount (last 24h)")
+        for k, v in ai.items():
+            print(f"  {k}: {v}")
+    elif report.get("insights_error"):
+        print(f"\n::warning::insights unavailable — {report['insights_error']}")
+        print("  If this mentions permissions, regenerate IG_ACCESS_TOKEN: the "
+              "token predates instagram_business_manage_insights being added.")
+
     print("\nrecent posts")
+    has_reach = any("reach" in p for p in report["posts_recent"])
     for p in report["posts_recent"]:
-        print(f"  {p['posted']}  {p['likes']:>5}L {p['comments']:>4}C  {p['hook']}")
+        line = f"  {p['posted']}  {p['likes']:>5}L {p['comments']:>4}C"
+        if has_reach:
+            line += (f" {p.get('reach', '?'):>6} reach"
+                     f" {p.get('saved', '?'):>4} saves")
+        print(f"{line}  {p['hook']}")
+
+    # The diagnosis the whole exercise is for.
+    reached = [p for p in report["posts_recent"] if p.get("reach")]
+    if reached:
+        avg_reach = sum(p["reach"] for p in reached) / len(reached)
+        saves = sum(p.get("saved") or 0 for p in reached)
+        rate = saves / sum(p["reach"] for p in reached) * 100
+        print(f"\ndiagnosis: avg reach {avg_reach:.0f}/post, "
+              f"save rate {rate:.1f}%")
+        if avg_reach < 100:
+            print("  -> DISTRIBUTION problem: too few people see these. "
+                  "Better content will not fix it.")
+        elif rate < 1:
+            print("  -> CONTENT problem: people see it and do not save it.")
+        else:
+            print("  -> Content is landing; growth is a conversion/volume question.")
 
     # Accumulate history — the API only reports current counts, so the time
     # series has to be built up snapshot by snapshot for the feedback loop.

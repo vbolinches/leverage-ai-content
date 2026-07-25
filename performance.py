@@ -60,6 +60,8 @@ def record(followers, posts, today=None):
                 "slug": m2s.get(p["id"], p["id"]),
                 "likes": p["likes"],
                 "comments": p["comments"],
+                # Present only once the token carries the insights scope.
+                **{k: p[k] for k in ("reach", "saved", "shares") if k in p},
             }
             for p in posts
         ],
@@ -112,8 +114,12 @@ def brief():
     scored = []
     for p in latest["posts"]:
         attrs = _spec_attributes(p["slug"])
-        # Comments are scarcer than likes, so weight them higher.
-        score = p["likes"] + 3 * p["comments"]
+        # Saves are the strongest signal for carousels — someone valuing a post
+        # enough to keep it. Shares spread reach. Likes are near-noise.
+        score = (p["likes"]
+                 + 3 * p["comments"]
+                 + 5 * (p.get("saved") or 0)
+                 + 5 * (p.get("shares") or 0))
         scored.append({**p, "score": score, "attrs": attrs})
 
     total = sum(p["score"] for p in scored)
