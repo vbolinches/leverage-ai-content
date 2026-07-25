@@ -25,31 +25,37 @@ about to be public anyway.
 - `IG_ACCESS_TOKEN` — long-lived Instagram user access token
 - `IG_USER_ID` — Instagram professional account ID
 
-## Deployment status — NOT YET LIVE (as of 2026-07-25)
+## Deployment status (as of 2026-07-25)
 
-The daily cron is **disabled**. No secrets are set. Nothing publishes until the
-Instagram link below is completed.
+The daily cron is **disabled** pending one remaining step. Nothing publishes yet.
+
+**Which API this uses.** `publish.py` targets the **Instagram API with Instagram
+Login** (`graph.instagram.com`), not the Facebook-Page-based API the original
+handoff assumed. `@leverageai.daily` sits in a different Meta Accounts Center
+than the Facebook account, so the Page-linked path could never populate
+`instagram_business_account`. The Instagram Login API removes the Facebook Page
+from the picture entirely — authorisation comes from the Instagram account.
 
 Done:
 - Repo public, queue validated (14 posts, 83 slides)
-- Meta app `leverage-ai-publisher-2` with permissions `instagram_basic`,
-  `instagram_content_publish`, `pages_show_list`, `business_management`,
-  `pages_read_engagement`
-- Facebook Page **Leverage AI** created — Page ID `1132549139952111`
+- Meta app `leverage-ai-publisher` (Instagram app `leverage-ai-publisher-IG`)
+  with `instagram_business_basic` + `instagram_business_content_publish`
+- `@leverageai.daily` accepted as an **Instagram Tester** on the app
+- `IG_USER_ID` secret set to `17841443853596707` (verified `@leverageai.daily`)
 
-Blocked on one thing:
-- `@leverageai.daily` (registered to `vbolinches+leverageai@gmail.com`) sits in a
-  **different Meta Accounts Center** than the Facebook account that owns the
-  Leverage AI Page. The Page shows the Instagram account as connected, but only
-  at profile level — `instagram_business_account` does not populate, so the
-  Content Publishing API cannot see it.
-- Fix: from the Instagram app, switch `@leverageai.daily` to a **Business**
-  account and connect it to the **Leverage AI** Page, authorising with the
-  Instagram account's own credentials. Then `IG_USER_ID` =
-  `GET /1132549139952111?fields=instagram_business_account`.
+Remaining:
+1. App dashboard → Use cases → API setup with Instagram login → **Generate token**
+   for `leverageai.daily`, then `gh secret set IG_ACCESS_TOKEN`
+2. Run the **Verify Instagram credentials** workflow — it asserts the token
+   resolves to `@leverageai.daily` and fails loudly otherwise
+3. `gh workflow enable "Publish daily Instagram post"`
 
-To re-enable once credentials verify:
-`gh workflow enable "Publish daily Instagram post"`
+**A Facebook Page named "Leverage AI"** (ID `1132549139952111`) was created during
+setup and is now unused. Harmless; delete it if you prefer.
+
+**Wrong-account hazard.** This Facebook account also administers
+`@inmigraforma` (IG ID `17841464133054122`), an unrelated live business. Always
+confirm the target is `17841443853596707` / `@leverageai.daily` before publishing.
 
 ## Token expiry
 
