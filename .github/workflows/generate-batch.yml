@@ -1,0 +1,91 @@
+name: Generate content batch
+
+# Closes the last manual loop: authors the next batch, renders the slides, and
+# commits them to the queue so the daily publisher keeps running.
+#
+# Runs weekly, but only actually generates when the queue is short — so it costs
+# nothing while there is still runway.
+#
+# Requires ANTHROPIC_API_KEY.
+#
+# REVIEW: with dry_run false, generated posts publish WITHOUT anyone reading
+# them. The scheduled run is the fully-automatic path. Set dry_run true on a
+# manual run to render into the repo without scheduling anything.
+
+on:
+  schedule:
+    - cron: "0 6 * * 3"    # Wednesdays 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many posts to author"
+        default: "7"
+      dry_run:
+        description: "Render without adding to the queue"
+        type: boolean
+        default: false
+      force:
+        description: "Generate even if the queue still has runway"
+        type: boolean
+        default: false
+
+env:
+  REFILL_BELOW: 7          # generate when fewer than this many posts are queued
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --quiet --upgrade pip
+          pip install --quiet pillow anthropic
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core
+
+      - name: Decide whether a batch is needed
+        id: check
+        env:
+          FORCE: ${{ inputs.force }}
+        run: |
+          queued=$(python3 -c "
+          import json
+          s = json.load(open('queue/schedule.json', encoding='utf-8'))
+          print(sum(1 for p in s['posts'] if p['status'] == 'queued'))
+          ")
+          echo "queued=$queued"
+          if [ "$FORCE" = "true" ] || [ "$queued" -lt "$REFILL_BELOW" ]; then
+            echo "run=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=no" >> "$GITHUB_OUTPUT"
+            echo "$queued posts still queued (threshold $REFILL_BELOW) — skipping."
+          fi
+
+      - name: Author, render and queue
+        if: steps.check.outputs.run == 'yes'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+            echo "::error::ANTHROPIC_API_KEY is not set — cannot author a batch."
+            exit 1
+          fi
+          python3 generate_batch.py \
+            --count "${{ inputs.count || 7 }}" \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Commit the batch
+        if: steps.check.outputs.run == 'yes' && inputs.dry_run != true
+        run: |
+          git config user.name "leverage-ai-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add queue specs
+          git diff --cached --quiet || git commit -m "generated batch $(date -u +%F)"
+          git push
