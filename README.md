@@ -16,9 +16,35 @@ about to be public anyway.
 |---|---|
 | `queue/schedule.json` | The queue: post id, date, slide paths, caption, status |
 | `queue/postNN-*/` | Slide images for each post |
+| `specs/*.json` | Post specs (content) — rendered into slides |
 | `publish.py` | Picks the oldest due post, uploads it, marks it published |
-| `build_schedule.py` | Regenerates `schedule.json` from the queue folders |
-| `.github/workflows/publish.yml` | Daily cron + manual "Run workflow" button |
+| `render_slides.py` | Spec → branded 1080×1350 slide PNGs |
+| `generate_batch.py` | Authors the next batch with Claude, renders, queues it |
+| `monitor.py` | Read-only account digest (see `MONITORING.md`) |
+| `brand/avatar.png` | Profile picture |
+| `build_schedule.py` | **Dead code** — points at `03-content/`, `07-automation/`, which don't exist here. Superseded by `generate_batch.py` |
+
+## Workflows
+
+| Workflow | Schedule | Does |
+|---|---|---|
+| Publish daily Instagram post | 10:00 UTC daily | Posts the next due carousel |
+| Account monitor | 08:00 UTC daily | Read-only performance digest |
+| Queue health check | Mondays 09:00 UTC | **Fails loudly** when < 5 posts remain |
+| Refresh Instagram token | 1st monthly | Renews the 60-day token in place |
+| Verify Instagram credentials | manual | Asserts the token maps to the right account |
+
+## Producing the next batch
+
+```bash
+export ANTHROPIC_API_KEY=...
+python generate_batch.py --count 7 --dry-run   # author + render, review first
+python generate_batch.py --count 7             # author, render, queue
+```
+
+`--dry-run` writes specs and slides without scheduling them — the intended way to
+keep a human between the model and the audience. Without it, generated posts go
+into the queue and publish unreviewed.
 
 ## Secrets (repo → Settings → Secrets and variables → Actions)
 
