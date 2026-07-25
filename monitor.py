@@ -40,8 +40,27 @@ def get(path, **params):
         return None, str(e)
 
 
+def token_runway():
+    """Days until IG_ACCESS_TOKEN expires, from the committed date file.
+
+    graph.instagram.com exposes no token-debug endpoint, and calling
+    refresh_access_token to check would mint a new token as a side effect — so
+    the expiry date is tracked in token_status.json instead.
+    """
+    try:
+        with open("token_status.json", encoding="utf-8") as f:
+            data = json.load(f)
+        expires = date.fromisoformat(data["expires"])
+    except Exception as e:
+        return None, f"token_status.json unreadable: {e}"
+    return (expires - date.today()).days, None
+
+
 def collect():
     report = {"generated": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+
+    days, err = token_runway()
+    report["token"] = {"days_left": days, "error": err}
 
     me, err = get("me", fields="user_id,username,account_type,followers_count,media_count")
     if err:
@@ -151,6 +170,19 @@ def render(report):
 
     if pending:
         print(f"\n::notice::{len(pending)} comment(s) need a reply.")
+
+    tok = report.get("token", {})
+    days = tok.get("days_left")
+    if tok.get("error"):
+        print(f"::warning::token expiry unknown — {tok['error']}")
+    elif days is not None:
+        print(f"\ntoken expires in {days} days")
+        if days <= 10:
+            print(f"::error::Instagram token expires in {days} days. Refresh it now "
+                  f"or publishing stops. See token_status.json.")
+            return 1
+        if days <= 21:
+            print(f"::warning::Instagram token expires in {days} days — refresh soon.")
     return 0
 
 
