@@ -1,0 +1,62 @@
+{
+  "slug": "post00-example",
+  "caption": "Example spec — reproduces the post01 carousel so the renderer can be diffed against the hand-made originals. Not scheduled.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 001",
+      "headline": [
+        {"t": "Stop writing emails "},
+        {"t": "from scratch.", "c": "blue"}
+      ],
+      "sub": "The 3-step system that cuts email time by more than half.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Dump, don't draft.",
+      "body": [
+        {"t": "Paste the email you received into ChatGPT or Claude. Then write ONE messy sentence about what you want to say. That's your whole input. "},
+        {"t": "Never start from a blank page.", "c": "green", "b": true}
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Use a reusable prompt.",
+      "sub": "Same prompt every time. Keep it saved as a text shortcut.",
+      "label": "COPY THIS PROMPT",
+      "code": "Reply to this email. My rough answer:\n[YOUR SENTENCE].\n\nRules:\n- 3 sentences max\n- my tone: direct, warm, no filler\n- end with a clear next step\n- no \"I hope this finds you well\""
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Edit 10%, send.",
+      "body": [
+        {"t": "The AI gets you to 90%. You add the one detail only you know — a name, a date, a decision. "},
+        {"t": "If you edit more than 10%, your prompt rules need updating, not the draft.", "c": "green", "b": true}
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "If email eats an hour of your day:",
+      "stat": "~half of it back"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Paste email + one messy sentence",
+        "Run your saved reply prompt",
+        "Edit the 10% only you know",
+        "Update prompt rules, not drafts"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily for one practical AI workflow a day",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}
