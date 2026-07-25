@@ -19,6 +19,9 @@ about to be public anyway.
 | `specs/*.json` | Post specs (content) — rendered into slides |
 | `publish.py` | Picks the oldest due post, uploads it, marks it published |
 | `render_slides.py` | Spec → branded 1080×1350 slide PNGs |
+| `render_reel.py` | Spec or slide PNGs → 1080×1920 MP4 Reel |
+| `build_reels.py` | Converts alternate queued posts into Reels |
+| `performance.py` | Performance history + the brief that feeds generation |
 | `generate_batch.py` | Authors the next batch with Claude, renders, queues it |
 | `monitor.py` | Read-only account digest (see `MONITORING.md`) |
 | `brand/avatar.png` | Profile picture |
@@ -33,6 +36,27 @@ about to be public anyway.
 | Queue health check | Mondays 09:00 UTC | **Fails loudly** when < 5 posts remain |
 | Refresh Instagram token | 1st monthly | Renews the 60-day token in place |
 | Verify Instagram credentials | manual | Asserts the token maps to the right account |
+
+## Carousels and Reels
+
+The queue alternates the two. Carousels reach people who already follow the
+account; Reels are Instagram's discovery surface and reach strangers. Alternating
+puts half the schedule in front of new people **without raising posting
+frequency**, which would add spam-pattern risk on a young account.
+
+A queue entry with `"format": "reel"` carries a `"video"` path and publishes as
+`media_type=REELS`; everything else publishes as a carousel. Reels are built from
+the same spec as the carousel — one authored post, rendered for whichever surface
+it is scheduled on, so nothing is published twice.
+
+```bash
+python render_reel.py specs/post15-example.json   # spec  -> reel.mp4
+python build_reels.py --dry-run                   # preview queue conversion
+python build_reels.py                             # convert alternates
+```
+
+Video encoding uses `imageio-ffmpeg`, which ships its own ffmpeg binary — no
+system install, and identical output locally and in CI.
 
 ## Producing the next batch
 

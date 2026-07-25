@@ -38,6 +38,14 @@ enforces this in both the brand prompt and the validator.
 "nothing due" by design, so the cron never fails spuriously. The queue-health
 workflow exists to make that failure loud. Keep it.
 
+**5. Reach is the constraint, not content quality.** Measured 2026-07-25:
+post01 got **reach 1** — one person saw it. Carousels are shown mostly to
+existing followers and there are none, so the content-optimising feedback loop
+cannot help; it has nothing to learn from. The queue therefore alternates
+carousels with **Reels**, which are the discovery surface. Judge the account on
+reach per post, not likes. If reach is still single digits by 2026-08-07, the
+answer is more Reels or an audience transfer — not better carousels.
+
 ## Layout
 
 | Path | Purpose |
