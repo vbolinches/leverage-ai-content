@@ -58,16 +58,30 @@ jobs:
           echo "New token valid for ~$DAYS days (until $(date -u -d "+$DAYS days" +%F))"
 
           echo "--- Checking GH_PAT ---"
+          # Pasted secrets often carry a trailing newline or stray whitespace,
+          # which corrupts the Authorization header and reads as a bad token.
+          PAT=$(printf '%s' "${GH_PAT}" | tr -d '[:space:]')
+          echo "::add-mask::$PAT"
+
+          case "$PAT" in
+            ghp_*)        echo "token looks like a classic PAT" ;;
+            github_pat_*) echo "token looks like a fine-grained PAT" ;;
+            gho_*|ghu_*)  echo "::warning::This looks like an OAuth/user-to-server token, not a PAT." ;;
+            *)            echo "::warning::Value does not start with ghp_ or github_pat_ — probably not a PAT at all." ;;
+          esac
+
           code=$(curl -sS -o /dev/null -w '%{http_code}' \
-            -H "Authorization: Bearer $GH_PAT" \
+            -H "Authorization: Bearer $PAT" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/user)
           if [ "$code" = "401" ]; then
-            echo "::error::GH_PAT is rejected (401). The token value itself is wrong, \
-          revoked, or expired — permissions are not the issue. Create a new token and re-set the secret."
+            echo "::error::GH_PAT rejected (401) even after trimming whitespace. \
+          The stored value is not a valid GitHub token. Verify it locally first: \
+          curl -H \"Authorization: Bearer <token>\" https://api.github.com/user"
             exit 1
           fi
           echo "PAT authenticates (HTTP $code)"
+          export GH_PAT="$PAT"
 
           echo "--- Writing the new token back to IG_ACCESS_TOKEN ---"
           pip install --quiet pynacl
