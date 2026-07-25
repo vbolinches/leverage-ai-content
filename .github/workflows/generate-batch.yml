@@ -81,6 +81,18 @@ jobs:
             --count "${{ inputs.count || 7 }}" \
             ${{ inputs.dry_run && '--dry-run' || '' }}
 
+      # A dry run renders into a throwaway runner, so publish the output as an
+      # artifact — otherwise there is nothing to actually review.
+      - name: Upload batch for review
+        if: steps.check.outputs.run == 'yes' && inputs.dry_run == true
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-batch
+          path: |
+            specs/
+            queue/post*/
+          retention-days: 14
+
       - name: Commit the batch
         if: steps.check.outputs.run == 'yes' && inputs.dry_run != true
         run: |
