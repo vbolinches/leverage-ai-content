@@ -25,6 +25,32 @@ about to be public anyway.
 - `IG_ACCESS_TOKEN` — long-lived Instagram user access token
 - `IG_USER_ID` — Instagram professional account ID
 
+## Deployment status — NOT YET LIVE (as of 2026-07-25)
+
+The daily cron is **disabled**. No secrets are set. Nothing publishes until the
+Instagram link below is completed.
+
+Done:
+- Repo public, queue validated (14 posts, 83 slides)
+- Meta app `leverage-ai-publisher-2` with permissions `instagram_basic`,
+  `instagram_content_publish`, `pages_show_list`, `business_management`,
+  `pages_read_engagement`
+- Facebook Page **Leverage AI** created — Page ID `1132549139952111`
+
+Blocked on one thing:
+- `@leverageai.daily` (registered to `vbolinches+leverageai@gmail.com`) sits in a
+  **different Meta Accounts Center** than the Facebook account that owns the
+  Leverage AI Page. The Page shows the Instagram account as connected, but only
+  at profile level — `instagram_business_account` does not populate, so the
+  Content Publishing API cannot see it.
+- Fix: from the Instagram app, switch `@leverageai.daily` to a **Business**
+  account and connect it to the **Leverage AI** Page, authorising with the
+  Instagram account's own credentials. Then `IG_USER_ID` =
+  `GET /1132549139952111?fields=instagram_business_account`.
+
+To re-enable once credentials verify:
+`gh workflow enable "Publish daily Instagram post"`
+
 ## Token expiry
 
 Long-lived tokens last **60 days**. Refresh with ~10 days of headroom.
