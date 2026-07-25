@@ -159,6 +159,20 @@ def render(report):
     for p in report["posts_recent"]:
         print(f"  {p['posted']}  {p['likes']:>5}L {p['comments']:>4}C  {p['hook']}")
 
+    # Accumulate history — the API only reports current counts, so the time
+    # series has to be built up snapshot by snapshot for the feedback loop.
+    try:
+        import performance
+        performance.record(a["followers"], report["posts_recent"])
+        _, stats = performance.brief()
+        if stats.get("reason"):
+            print(f"\nlearning: not yet — {stats['reason']}")
+        else:
+            print(f"\nlearning: active on {stats['posts']} posts "
+                  f"({stats['total_engagement']} engagement)")
+    except Exception as e:
+        print(f"::warning::could not record performance history: {e}")
+
     pending = report.get("comments_awaiting_reply", [])
     print(f"\ncomments awaiting reply: {len(pending)}")
     for c in pending:

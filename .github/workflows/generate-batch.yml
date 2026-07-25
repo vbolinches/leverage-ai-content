@@ -96,6 +96,6 @@ jobs:
         run: |
           git config user.name "leverage-ai-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add queue specs
+          git add queue specs strategy.md
           git diff --cached --quiet || git commit -m "generated batch $(date -u +%F)"
           git push

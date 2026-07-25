@@ -125,10 +125,19 @@ RICH_TEXT = {
 
 SUBMIT_TOOL = {
     "name": "submit_posts",
-    "description": "Submit the authored carousel posts.",
+    "description": "Submit the authored carousel posts and the updated strategy.",
     "input_schema": {
         "type": "object",
         "properties": {
+            "strategy": {
+                "type": "string",
+                "description": (
+                    "The full rewritten contents of strategy.md. Move hypotheses "
+                    "into Confirmed or Disproven only when the performance brief "
+                    "actually supports it; otherwise carry them forward unchanged "
+                    "and say what evidence is still missing. Never invent results."
+                ),
+            },
             "posts": {
                 "type": "array",
                 "items": {
@@ -167,9 +176,41 @@ SUBMIT_TOOL = {
                 },
             }
         },
-        "required": ["posts"],
+        "required": ["posts", "strategy"],
     },
 }
+
+
+def strategy_context():
+    """The performance brief plus accumulated strategy, for the prompt."""
+    import performance
+
+    text, stats = performance.brief()
+    strategy = ""
+    if os.path.exists("strategy.md"):
+        with open("strategy.md", encoding="utf-8") as f:
+            strategy = f.read()
+
+    if text:
+        perf = text
+        note = (
+            "Use the brief above. Double down on what the best performers share "
+            "and stop repeating what the worst ones did. Then rewrite the "
+            "strategy file, moving hypotheses into Confirmed or Disproven where "
+            "the data now supports it."
+        )
+    else:
+        perf = (f"PERFORMANCE: not yet meaningful — {stats.get('reason')}.\n"
+                f"({stats.get('posts', 0)} posts, "
+                f"{stats.get('total_engagement', 0)} total engagement.)")
+        note = (
+            "There is not enough data to optimise against. Do NOT invent "
+            "conclusions or claim a hypothesis is confirmed. Write the best "
+            "posts you can on the working hypotheses, and return the strategy "
+            "file essentially unchanged apart from noting what is still unproven."
+        )
+
+    return f"{perf}\n\nCURRENT STRATEGY FILE:\n{strategy}\n\n{note}"
 
 
 def author(count, start_index, avoid):
@@ -198,6 +239,7 @@ def author(count, start_index, avoid):
         "Never state a fact you did not verify by search.\n\n"
         f"Already covered — pick genuinely different topics:\n"
         + "\n".join(f"- {t}" for t in avoid)
+        + "\n\n" + strategy_context()
     )
 
     client = anthropic.Anthropic(api_key=key)
@@ -241,7 +283,7 @@ def author(count, start_index, avoid):
 
     for block in resp.content:
         if block.type == "tool_use" and block.name == "submit_posts":
-            return block.input["posts"]
+            return block.input
 
     sys.exit(f"Model returned no submit_posts call (stop_reason={resp.stop_reason}).")
 
@@ -293,8 +335,20 @@ def main():
 
     sched = load_queue()
     start = next_index(sched)
-    posts = author(a.count, start, existing_topics(sched))
+    result = author(a.count, start, existing_topics(sched))
+    posts = result["posts"]
     print(f"authored {len(posts)} posts starting at post{start:02d}")
+
+    # The updated strategy is the loop's memory. On a dry run it lands beside
+    # the rendered slides so it can be reviewed without touching the live file.
+    strategy = result.get("strategy")
+    if strategy:
+        target = ("strategy.md" if a.out == "queue"
+                  else os.path.join(a.out, "strategy.md"))
+        os.makedirs(os.path.dirname(target) or ".", exist_ok=True)
+        with open(target, "w", encoding="utf-8") as f:
+            f.write(strategy.rstrip() + "\n")
+        print(f"strategy updated -> {target}")
 
     # For a dry run the specs go beside the rendered slides, so the review
     # bundle carries the captions too — slides alone are half a review.

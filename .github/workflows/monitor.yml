@@ -12,6 +12,8 @@ on:
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -20,3 +22,14 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: python3 monitor.py
+
+      # performance.json is the feedback loop's memory — without committing it,
+      # every run would start from zero history and nothing could be learned.
+      - name: Commit performance history
+        if: always()
+        run: |
+          git config user.name "leverage-ai-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add performance.json
+          git diff --cached --quiet || git commit -m "performance snapshot $(date -u +%F)"
+          git push || echo "::warning::could not push performance history"
