@@ -7,7 +7,10 @@
         {
           "slug": "post01-email-workflow",
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
         }
       ]
     }
