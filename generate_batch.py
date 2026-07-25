@@ -256,7 +256,10 @@ def main():
     posts = author(a.count, start, existing_topics(sched))
     print(f"authored {len(posts)} posts starting at post{start:02d}")
 
-    os.makedirs(SPEC_DIR, exist_ok=True)
+    # For a dry run the specs go beside the rendered slides, so the review
+    # bundle carries the captions too — slides alone are half a review.
+    spec_dir = SPEC_DIR if a.out == "queue" else os.path.join(a.out, "specs")
+    os.makedirs(spec_dir, exist_ok=True)
     cursor = next_date(sched)
     added = 0
 
@@ -266,7 +269,8 @@ def main():
             print(f"REJECTED {post.get('slug')}: {'; '.join(errs)}")
             continue
 
-        with open(f"{SPEC_DIR}/{post['slug']}.json", "w", encoding="utf-8") as f:
+        with open(os.path.join(spec_dir, f"{post['slug']}.json"), "w",
+                  encoding="utf-8") as f:
             json.dump(post, f, indent=2, ensure_ascii=False)
 
         slides = render_slides.render_post(post, a.out)
