@@ -46,6 +46,18 @@ carousels with **Reels**, which are the discovery surface. Judge the account on
 reach per post, not likes. If reach is still single digits by 2026-08-07, the
 answer is more Reels or an audience transfer — not better carousels.
 
+**6. Reels cannot use trending audio, and never will through this pipeline.**
+Meta's Content Publishing API exposes no `audio_id` or music-library parameter —
+audio must be embedded in the MP4 before upload. This is a platform limit that
+affects every third-party scheduler, confirmed against Meta's docs 2026-07-25.
+
+`audio.py` therefore synthesises an original bed per post (numpy; seeded from the
+slug, so reruns are reproducible). Silent Reels get suppressed, so this is not
+cosmetic. Do not replace it with a licensed track — Instagram detects and mutes
+or strikes those, and the repo is public. **If a Reel genuinely needs a trending
+sound, it must be posted by hand in the app.** After any renderer or audio
+change, run `python build_reels.py --rebuild` and re-run the verify workflow.
+
 ## Layout
 
 | Path | Purpose |
@@ -55,6 +67,9 @@ answer is more Reels or an audience transfer — not better carousels.
 | `specs/*.json` | Post content specs, rendered into slides |
 | `publish.py` | Publishes the oldest due post; marks it published |
 | `render_slides.py` | Spec → branded 1080×1350 slides |
+| `render_reel.py` | Spec or slides → 1080×1920 MP4 Reel, with audio |
+| `audio.py` | Synthesises the Reel music bed (original, per-slug) |
+| `build_reels.py` | Converts alternate queued posts to Reels |
 | `generate_batch.py` | Authors a batch with Claude, renders, queues |
 | `monitor.py` | Read-only digest + token expiry warning |
 | `token_status.json` | Token expiry dates (no secret) |
