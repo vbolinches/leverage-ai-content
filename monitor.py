@@ -14,7 +14,7 @@ Deliberately read-only. It does not reply, like, or follow — see MONITORING.md
 for why those are handled differently.
 """
 import argparse, json, os, sys, urllib.error, urllib.parse, urllib.request
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
 GRAPH = "https://graph.instagram.com/v21.0"
 TOKEN = os.environ.get("IG_ACCESS_TOKEN")
