@@ -357,6 +357,10 @@ def main():
     cursor = next_date(sched)
     added = 0
 
+    # Continue the carousel/reel alternation from wherever the queue left off.
+    tail = [p for p in sched["posts"] if p["status"] == "queued"]
+    as_reel = not (tail and tail[-1].get("format") == "reel")
+
     for post in posts:
         errs = validate(post)
         if errs:
@@ -368,16 +372,31 @@ def main():
             json.dump(post, f, indent=2, ensure_ascii=False)
 
         slides = render_slides.render_post(post, a.out)
-        print(f"  {post['slug']}: {len(slides)} slides rendered -> {a.out}/")
+
+        # Alternate surfaces: carousels reach existing followers, Reels reach
+        # strangers. Alternating keeps one post a day while putting half the
+        # schedule on the discovery surface.
+        entry = {
+            "id": post["slug"],
+            "date": cursor.isoformat(),
+            "slides": slides,
+            "caption": post["caption"],
+            "status": "queued",
+        }
+
+        if as_reel:
+            import render_reel
+            video, secs = render_reel.render(post, a.out)
+            entry["format"] = "reel"
+            entry["video"] = video
+            print(f"  {post['slug']}: {len(slides)} slides + {secs:.0f}s reel "
+                  f"-> {a.out}/")
+        else:
+            print(f"  {post['slug']}: {len(slides)} slides -> {a.out}/")
+        as_reel = not as_reel
 
         if not a.dry_run:
-            sched["posts"].append({
-                "id": post["slug"],
-                "date": cursor.isoformat(),
-                "slides": slides,
-                "caption": post["caption"],
-                "status": "queued",
-            })
+            sched["posts"].append(entry)
             cursor += timedelta(days=1)
             added += 1
 

@@ -47,7 +47,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --quiet --upgrade pip
-          pip install --quiet pillow anthropic
+          # imageio-ffmpeg ships its own ffmpeg binary, so reel encoding works
+          # identically here and locally without a system package.
+          pip install --quiet pillow anthropic imageio-ffmpeg
           sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core
 
       - name: Decide whether a batch is needed

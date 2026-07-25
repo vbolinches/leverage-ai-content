@@ -26,7 +26,9 @@
         "queue/post02-meeting-notes-prompt/slide04.png"
       ],
       "caption": "Meetings end. Follow-ups don't. ✍️\n\nThis one prompt turns any messy meeting notes (or a transcript) into decisions, action items with owners, and a follow-up message — in one pass.\n\nScreenshot slide 2 and keep it.\n\nOne practical AI workflow a day → @leverageai.daily\n\n#chatgptprompts #aiprompts #meetingnotes #productivitytips #aitools #worksmarter #projectmanagement #aiworkflow #timemanagement #futureofwork",
-      "status": "queued"
+      "status": "queued",
+      "format": "reel",
+      "video": "queue/post02-meeting-notes-prompt/reel.mp4"
     },
     {
       "id": "post03-tool-duel",
@@ -55,7 +57,9 @@
         "queue/post04-chatgpt-mistakes/slide07.png"
       ],
       "caption": "It's (usually) not the AI. It's the brief. 🎯\n\nThese 5 mistakes explain most \"AI gives me generic answers\" complaints. Number 4 alone will change your outputs more than any new tool.\n\nWhich one are you guilty of? Be honest 👇\n\nDaily leverage, zero hype → @leverageai.daily\n\n#chatgpt #aitips #promptengineering #chatgptprompts #aitools #productivitytips #worksmarter #ai #aiworkflow #digitalskills",
-      "status": "queued"
+      "status": "queued",
+      "format": "reel",
+      "video": "queue/post04-chatgpt-mistakes/reel.mp4"
     },
     {
       "id": "post05-notebooklm-workflow",
@@ -84,7 +88,9 @@
         "queue/post06-content-repurpose/slide06.png"
       ],
       "caption": "One piece of work. Five pieces of content. ♻️\n\nMost people create from zero every time. The leverage move is repurposing: one strong original → adapted everywhere your audience lives. Here's the workflow + the exact prompt.\n\nTag someone who posts great stuff but only in one place 👇\n\nOne practical AI workflow a day → @leverageai.daily\n\n#contentcreation #aitools #contentmarketing #chatgptprompts #productivitytips #creatoreconomy #aiworkflow #worksmarter #marketingtips #smallbusiness",
-      "status": "queued"
+      "status": "queued",
+      "format": "reel",
+      "video": "queue/post06-content-repurpose/reel.mp4"
     },
     {
       "id": "post07-free-tools-honest",
@@ -113,7 +119,9 @@
         "queue/post08-cv-tailoring/slide06.png"
       ],
       "caption": "Sending the same CV to 50 jobs is why you're getting 50 silences. 📄\n\nThis workflow tailors your CV to each job post in ~10 minutes — without inventing anything. The honesty guardrail in step 3 matters: recruiters can smell AI padding.\n\nSend this to someone job hunting right now 📤\n\nDaily leverage, zero hype → @leverageai.daily\n\n#jobsearch #cvtips #careeradvice #chatgptprompts #aitools #jobhunting #resumetips #aiworkflow #careertips #worksmarter",
-      "status": "queued"
+      "status": "queued",
+      "format": "reel",
+      "video": "queue/post08-cv-tailoring/reel.mp4"
     },
     {
       "id": "post09-brutal-editor-prompt",
@@ -139,7 +147,9 @@
         "queue/post10-canva-vs-alternatives/slide06.png"
       ],
       "caption": "\"What should I use for design if I'm not a designer?\" — the honest answer, with weak spots included.\n\nNo tool sponsored this. That's the point of this page.\n\nWhat's your non-designer design stack? 👇\n\nOne practical AI workflow a day → @leverageai.daily\n\n#canva #designtools #nondesigner #aitools #contentcreation #smallbusinesstips #marketingtools #worksmarter #freetools #designtips",
-      "status": "queued"
+      "status": "queued",
+      "format": "reel",
+      "video": "queue/post10-canva-vs-alternatives/reel.mp4"
     },
     {
       "id": "post11-fake-productivity",
@@ -168,7 +178,9 @@
         "queue/post12-spreadsheet-formulas/slide06.png"
       ],
       "caption": "You don't need to memorize formulas anymore. You need to describe what you want. 📊\n\nThe workflow that ended \"how do I VLOOKUP\" googling forever — plus the verification habit that keeps it safe for real work.\n\nSave this for your next spreadsheet session 🔖\n\nDaily leverage, zero hype → @leverageai.daily\n\n#excel #googlesheets #exceltips #spreadsheets #aitools #productivitytips #datatips #worksmarter #chatgpt #officehacks",
-      "status": "queued"
+      "status": "queued",
+      "format": "reel",
+      "video": "queue/post12-spreadsheet-formulas/reel.mp4"
     },
     {
       "id": "post13-freelancer-stack",
@@ -195,7 +207,9 @@
         "queue/post14-feynman-prompt/slide05.png"
       ],
       "caption": "If you can't explain it simply, you don't understand it yet. This prompt tests exactly that. 🧠\n\nThe Feynman technique, automated: learn anything faster by forcing simplicity, then patching the gaps it exposes.\n\nTry it on something you \"know\" — the gaps will surprise you.\n\nOne practical AI workflow a day → @leverageai.daily\n\n#learning #feynmantechnique #studytips #chatgptprompts #aiprompts #learnfaster #aitools #education #selfimprovement #criticalthinking",
-      "status": "queued"
+      "status": "queued",
+      "format": "reel",
+      "video": "queue/post14-feynman-prompt/reel.mp4"
     }
   ]
 }

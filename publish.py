@@ -56,6 +56,27 @@ def main():
     if not due:
         print("nothing due today — queue ahead or empty"); return
     post = sorted(due, key=lambda p: p["date"])[0]
+
+    # Reels are a separate media type and a separate discovery surface —
+    # carousels mostly reach existing followers, Reels reach strangers.
+    if post.get("format") == "reel":
+        video_url = f"{RAW_BASE}/{urllib.parse.quote(post['video'])}"
+        print(f"publishing {post['id']} (reel)")
+        container = api(f"{IG_ID}/media", {
+            "media_type": "REELS",
+            "video_url": video_url,
+            "caption": post["caption"],
+        })
+        # Video transcoding takes far longer than image processing.
+        wait_ready(container, tries=90)
+        media_id = api(f"{IG_ID}/media_publish", {"creation_id": container})
+        print(f"published: media id {media_id}")
+        post["status"] = "published"
+        post["published_media_id"] = media_id
+        post["published_on"] = today
+        json.dump(sched, open(QUEUE, "w"), indent=2, ensure_ascii=False)
+        return
+
     slides = post["slides"]  # list of repo-relative paths
     urls = [f"{RAW_BASE}/{urllib.parse.quote(s)}" for s in slides]
     print(f"publishing {post['id']} ({len(urls)} slides)")
