@@ -26,9 +26,11 @@
         "queue/post02-meeting-notes-prompt/slide04.png"
       ],
       "caption": "Meetings end. Follow-ups don't. ✍️\n\nThis one prompt turns any messy meeting notes (or a transcript) into decisions, action items with owners, and a follow-up message — in one pass.\n\nScreenshot slide 2 and keep it.\n\nOne practical AI workflow a day → @leverageai.daily\n\n#chatgptprompts #aiprompts #meetingnotes #productivitytips #aitools #worksmarter #projectmanagement #aiworkflow #timemanagement #futureofwork",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "queue/post02-meeting-notes-prompt/reel.mp4"
+      "video": "queue/post02-meeting-notes-prompt/reel.mp4",
+      "published_media_id": "17923661373394798",
+      "published_on": "2026-07-26"
     },
     {
       "id": "post03-tool-duel",
