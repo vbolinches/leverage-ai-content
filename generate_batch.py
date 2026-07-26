@@ -277,9 +277,17 @@ def author(count, start_index, avoid):
         sys.exit(f"Response hit max_tokens before finishing. "
                  f"Try a smaller --count (asked for {count}).")
 
+    # tool_choice is "auto", so the model *can* skip searching and still submit
+    # a valid batch. That batch would be written from training data alone — the
+    # exact failure this pipeline exists to avoid, and invisible unless we say
+    # so. Warn rather than fail: an empty queue is worse than a stale batch, and
+    # the posts are still schema-valid.
     searches = sum(1 for b in resp.content if b.type == "server_tool_use")
     if searches:
         print(f"grounded on {searches} web search(es)")
+    else:
+        print("::warning::Batch was authored with ZERO web searches — content is "
+              "from training data, not current sources. Review before it publishes.")
 
     for block in resp.content:
         if block.type == "tool_use" and block.name == "submit_posts":
