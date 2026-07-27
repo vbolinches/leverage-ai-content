@@ -19,13 +19,39 @@ Design notes:
 import json, os, sys, time, urllib.parse, urllib.request
 from datetime import date
 
+import accounts
+
 # Instagram API with Instagram Login (graph.instagram.com) — publishes direct to
 # an Instagram professional account, no Facebook Page link required.
 GRAPH = "https://graph.instagram.com/v21.0"
 TOKEN = os.environ["IG_ACCESS_TOKEN"]
 IG_ID = os.environ["IG_USER_ID"]
 RAW_BASE = os.environ.get("RAW_BASE")  # e.g. https://raw.githubusercontent.com/<user>/<repo>/main
-QUEUE = "queue/schedule.json"
+ACCT = accounts.get()
+QUEUE = ACCT.queue
+
+
+def assert_target():
+    """Refuse to publish unless token, secret, and account config all agree.
+
+    The wrong-account hazard is real (see CLAUDE.md): the Facebook identity
+    behind this app also administers an unrelated live business. With multiple
+    accounts, a crossed secret pair would publish one brand's content to
+    another brand's audience — so every publish re-proves the token's identity
+    against the account directory it is about to publish from.
+    """
+    url = f"{GRAPH}/me?fields=user_id,username&access_token={TOKEN}"
+    with urllib.request.urlopen(url) as r:
+        me = json.load(r)
+    actual_user, actual_id = me.get("username"), str(me.get("user_id"))
+    if actual_user != ACCT["username"]:
+        raise RuntimeError(
+            f"WRONG ACCOUNT: token resolves to @{actual_user}, but account "
+            f"{ACCT['slug']!r} expects @{ACCT['username']}. Refusing to publish.")
+    if actual_id != str(ACCT["ig_user_id"]) or str(IG_ID) != str(ACCT["ig_user_id"]):
+        raise RuntimeError(
+            f"WRONG ACCOUNT: ids disagree (token={actual_id}, "
+            f"secret={IG_ID}, config={ACCT['ig_user_id']}). Refusing to publish.")
 
 def api(path, params):
     data = urllib.parse.urlencode({**params, "access_token": TOKEN}).encode()
@@ -50,12 +76,16 @@ def wait_ready(container_id, tries=20):
     raise RuntimeError(f"container {container_id} not ready after {tries} polls")
 
 def main():
-    sched = json.load(open(QUEUE))
+    sched = json.load(open(QUEUE, encoding="utf-8"))
     today = date.today().isoformat()
     due = [p for p in sched["posts"] if p["status"] == "queued" and p["date"] <= today]
     if not due:
-        print("nothing due today — queue ahead or empty"); return
+        print(f"[{ACCT['slug']}] nothing due today — queue ahead or empty"); return
     post = sorted(due, key=lambda p: p["date"])[0]
+
+    # Only hit the network guard when actually about to publish, so idle days
+    # keep their exit-0 "nothing due" behaviour even during an API wobble.
+    assert_target()
 
     # Reels are a separate media type and a separate discovery surface —
     # carousels mostly reach existing followers, Reels reach strangers.
@@ -74,7 +104,7 @@ def main():
         post["status"] = "published"
         post["published_media_id"] = media_id
         post["published_on"] = today
-        json.dump(sched, open(QUEUE, "w"), indent=2, ensure_ascii=False)
+        json.dump(sched, open(QUEUE, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
         return
 
     slides = post["slides"]  # list of repo-relative paths
@@ -103,7 +133,7 @@ def main():
     post["status"] = "published"
     post["published_media_id"] = media_id
     post["published_on"] = today
-    json.dump(sched, open(QUEUE, "w"), indent=2, ensure_ascii=False)
+    json.dump(sched, open(QUEUE, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
     try:

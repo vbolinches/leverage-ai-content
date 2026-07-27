@@ -8,20 +8,41 @@ permissions:
   contents: write
 
 jobs:
-  publish:
+  # The account list lives in accounts/*/account.json — one source of truth for
+  # code and workflows. This job turns it into a matrix.
+  accounts:
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.ls.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: ls
+        run: echo "matrix=$(python3 accounts.py --list-json)" >> "$GITHUB_OUTPUT"
+
+  publish:
+    needs: accounts
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false      # one account failing must not silence the others
+      max-parallel: 1       # each job commits the queue; serialise the pushes
+      matrix:
+        account: ${{ fromJson(needs.accounts.outputs.matrix) }}
+    name: publish ${{ matrix.account.slug }}
     steps:
       - uses: actions/checkout@v4
       - name: Publish next due post
         env:
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          ACCOUNT: ${{ matrix.account.slug }}
+          # Secret *names* come from account.json; values never leave Actions.
+          IG_ACCESS_TOKEN: ${{ secrets[matrix.account.token_secret] }}
+          IG_USER_ID: ${{ secrets[matrix.account.user_id_secret] }}
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/main
         run: python3 publish.py
       - name: Commit queue state
         run: |
           git config user.name "leverage-ai-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add queue/schedule.json
-          git diff --cached --quiet || git commit -m "mark post published $(date -u +%F)"
+          git add accounts/*/queue/schedule.json
+          git diff --cached --quiet || git commit -m "mark post published $(date -u +%F) (${{ matrix.account.slug }})"
+          git pull --rebase
           git push

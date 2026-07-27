@@ -1,0 +1,14 @@
+{
+  "slug": "leverageai",
+  "username": "leverageai.daily",
+  "ig_user_id": "17841443853596707",
+  "token_secret": "IG_ACCESS_TOKEN",
+  "user_id_secret": "IG_USER_ID",
+  "enabled": true,
+  "wordmark": "LEVERAGE AI",
+  "theme": "one practical AI workflow a day for knowledge workers",
+  "voice": "Direct, concrete, no hype. Never \"revolutionary\", \"game-changer\", \"insane\", \"unlock\". Short sentences. Second person. Always give something copy-pasteable. Name real tools (ChatGPT, Claude, NotebookLM, Perplexity, Canva, Notion). Be honest about limitations — say what a tool is bad at.",
+  "cta_line": "Follow @leverageai.daily for one practical AI workflow a day.",
+  "search_brief": "recent AI tool releases and feature changes, workflows people are discussing now, and anything that would date a post or make it wrong",
+  "colors": {}
+}

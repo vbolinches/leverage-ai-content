@@ -1,16 +1,17 @@
 name: Generate content batch
 
-# Closes the last manual loop: authors the next batch, renders the slides, and
-# commits them to the queue so the daily publisher keeps running.
+# Closes the last manual loop: authors the next batch for each account whose
+# queue is short, renders the slides and reels, and commits them so the daily
+# publisher keeps running.
 #
-# Runs weekly, but only actually generates when the queue is short — so it costs
+# Runs weekly, but only actually generates when a queue is short — so it costs
 # nothing while there is still runway.
 #
-# Requires ANTHROPIC_API_KEY.
+# Requires ANTHROPIC_API_KEY (shared across accounts).
 #
 # REVIEW: with dry_run false, generated posts publish WITHOUT anyone reading
 # them. The scheduled run is the fully-automatic path. Set dry_run true on a
-# manual run to render into the repo without scheduling anything.
+# manual run to render into an artifact without scheduling anything.
 
 on:
   schedule:
@@ -28,15 +29,48 @@ on:
         description: "Generate even if the queue still has runway"
         type: boolean
         default: false
+      account:
+        description: "Only this account slug (blank = all)"
+        default: ""
 
 env:
   REFILL_BELOW: 7          # generate when fewer than this many posts are queued
 
 jobs:
+  accounts:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.ls.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: ls
+        env:
+          ONLY: ${{ inputs.account }}
+        run: |
+          m=$(python3 accounts.py --list-json)
+          if [ -n "${ONLY:-}" ]; then
+            m=$(echo "$m" | python3 -c "
+          import json, os, sys
+          only = os.environ['ONLY']
+          accts = [a for a in json.load(sys.stdin) if a['slug'] == only]
+          if not accts: sys.exit(f'no enabled account {only!r}')
+          print(json.dumps(accts, separators=(',', ':')))")
+          fi
+          echo "matrix=$m" >> "$GITHUB_OUTPUT"
+
   generate:
+    needs: accounts
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    strategy:
+      fail-fast: false
+      max-parallel: 1       # jobs commit; serialise the pushes
+      matrix:
+        account: ${{ fromJson(needs.accounts.outputs.matrix) }}
+    name: generate ${{ matrix.account.slug }}
+    env:
+      ACCOUNT: ${{ matrix.account.slug }}
     steps:
       - uses: actions/checkout@v4
 
@@ -61,10 +95,12 @@ jobs:
         run: |
           queued=$(python3 -c "
           import json
-          s = json.load(open('queue/schedule.json', encoding='utf-8'))
+          import accounts
+          acct = accounts.get()
+          s = json.load(open(acct.queue, encoding='utf-8'))
           print(sum(1 for p in s['posts'] if p['status'] == 'queued'))
           ")
-          echo "queued=$queued"
+          echo "[$ACCOUNT] queued=$queued"
           if [ "$FORCE" = "true" ] || [ "$queued" -lt "$REFILL_BELOW" ]; then
             echo "run=yes" >> "$GITHUB_OUTPUT"
           else
@@ -91,7 +127,7 @@ jobs:
         if: steps.check.outputs.run == 'yes' && inputs.dry_run == true
         uses: actions/upload-artifact@v4
         with:
-          name: generated-batch
+          name: generated-batch-${{ matrix.account.slug }}
           path: review_out/
           retention-days: 14
 
@@ -100,6 +136,7 @@ jobs:
         run: |
           git config user.name "leverage-ai-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add queue specs strategy.md
-          git diff --cached --quiet || git commit -m "generated batch $(date -u +%F)"
+          git add accounts
+          git diff --cached --quiet || git commit -m "generated batch $(date -u +%F) (${{ matrix.account.slug }})"
+          git pull --rebase
           git push

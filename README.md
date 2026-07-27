@@ -1,9 +1,26 @@
 # leverage-ai-content
 
-Autonomous publishing engine for **@leverageai.daily**.
+Autonomous multi-account Instagram publishing engine. First account:
+**@leverageai.daily**.
 
-GitHub Actions publishes one queued post per day at **10:00 UTC / 12:00 CEST**
-to Instagram via the official Graph API. No machine needs to be on.
+GitHub Actions publishes one queued post per account per day at
+**10:00 UTC / 12:00 CEST** via the official Graph API. No machine needs to be
+on. Each account lives in `accounts/<slug>/` with its own config, queue,
+specs, strategy and token dates; every workflow matrixes over the enabled
+accounts in `accounts/*/account.json`.
+
+## Adding an account
+
+```bash
+python new_account.py <slug> --username <ig.username> --theme "one X a day for Y"
+```
+
+The scaffolder creates `accounts/<slug>/` **disabled** and prints the manual
+steps (Instagram professional account, Tester role on the Meta app, token →
+GitHub secrets, first content batch). Enable it in `account.json` only after
+the *Verify Instagram credentials* workflow is green for that account —
+disabled accounts are invisible to every workflow, so a half-configured
+account can never publish.
 
 This repo is **public by design**: Meta's servers fetch the slide images from
 this repo's `raw.githubusercontent.com` URLs, which only works on a public
@@ -14,9 +31,14 @@ about to be public anyway.
 
 | Path | Purpose |
 |---|---|
-| `queue/schedule.json` | The queue: post id, date, slide paths, caption, status |
-| `queue/postNN-*/` | Slide images for each post |
-| `specs/*.json` | Post specs (content) — rendered into slides |
+| `accounts/<slug>/account.json` | Account identity, secret names, brand voice |
+| `accounts/<slug>/queue/schedule.json` | The queue: post id, date, slide paths, caption, status |
+| `accounts/<slug>/queue/postNN-*/` | Slide images and reel for each post |
+| `accounts/<slug>/specs/*.json` | Post specs (content) — rendered into slides |
+| `accounts/<slug>/strategy.md` | Feedback-loop memory for that account |
+| `accounts/<slug>/token_status.json` | Token expiry dates (no secret) |
+| `accounts.py` | Account registry; feeds the workflow matrices |
+| `new_account.py` | Scaffold a new account (created disabled) |
 | `publish.py` | Picks the oldest due post, uploads it, marks it published |
 | `render_slides.py` | Spec → branded 1080×1350 slide PNGs |
 | `render_reel.py` | Spec or slide PNGs → 1080×1920 MP4 Reel |
@@ -94,8 +116,12 @@ into the queue and publish unreviewed.
 
 ## Secrets (repo → Settings → Secrets and variables → Actions)
 
-- `IG_ACCESS_TOKEN` — long-lived Instagram user access token
-- `IG_USER_ID` — Instagram professional account ID
+Per account, under the names recorded in its `account.json`:
+
+- token secret (leverageai: `IG_ACCESS_TOKEN`) — long-lived Instagram user access token
+- user-id secret (leverageai: `IG_USER_ID`) — Instagram professional account ID
+
+Shared: `ANTHROPIC_API_KEY` (generation), `GH_PAT` (token auto-refresh).
 
 ## Deployment status (as of 2026-07-25)
 

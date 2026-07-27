@@ -30,7 +30,6 @@ import render_slides
 
 W, H = 1080, 1920
 FPS = 30
-BG = render_slides.BG
 
 # Timing, in seconds. Hooks need less time than prompt slides people read.
 COVER_HOLD = 2.6
@@ -65,7 +64,8 @@ def hold_for(slide, is_last):
 def card(spec_slide, index, total):
     """One 1080x1920 frame: the carousel slide centred, plus a progress bar."""
     slide = render_slides.render_slide(spec_slide, index, total)
-    frame = Image.new("RGB", (W, H), BG)
+    # render_slides.BG is read at call time — configure() may have repointed it.
+    frame = Image.new("RGB", (W, H), render_slides.BG)
     frame.paste(slide, (0, (H - slide.height) // 2))
 
     # Progress bar — tells the viewer how much is left, which helps retention.
@@ -110,7 +110,7 @@ def card_from_image(path, index, total):
     specs, which were never part of the handoff.
     """
     slide = Image.open(path).convert("RGB")
-    frame = Image.new("RGB", (W, H), BG)
+    frame = Image.new("RGB", (W, H), render_slides.BG)
     frame.paste(slide, ((W - slide.width) // 2, (H - slide.height) // 2))
 
     from PIL import ImageDraw

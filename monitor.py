@@ -16,11 +16,14 @@ for why those are handled differently.
 import argparse, json, os, sys, urllib.error, urllib.parse, urllib.request
 from datetime import date, datetime, timezone
 
+import accounts
+
 GRAPH = "https://graph.instagram.com/v21.0"
 TOKEN = os.environ.get("IG_ACCESS_TOKEN")
 IG_ID = os.environ.get("IG_USER_ID")
 
-EXPECTED_USERNAME = "leverageai.daily"
+ACCT = accounts.get()
+EXPECTED_USERNAME = ACCT["username"]
 
 
 def get(path, **params):
@@ -48,11 +51,11 @@ def token_runway():
     the expiry date is tracked in token_status.json instead.
     """
     try:
-        with open("token_status.json", encoding="utf-8") as f:
+        with open(ACCT.token_status, encoding="utf-8") as f:
             data = json.load(f)
         expires = date.fromisoformat(data["expires"])
     except Exception as e:
-        return None, f"token_status.json unreadable: {e}"
+        return None, f"{ACCT.token_status} unreadable: {e}"
     return (expires - date.today()).days, None
 
 
@@ -163,7 +166,7 @@ def collect():
 
 def render(report):
     if "fatal" in report:
-        print(f"::error::{report['fatal']}")
+        print(f"::error::[{ACCT['slug']}] {report['fatal']}")
         return 1
 
     a = report["account"]
@@ -250,8 +253,9 @@ def render(report):
     elif days is not None:
         print(f"\ntoken expires in {days} days")
         if days <= 10:
-            print(f"::error::Instagram token expires in {days} days. Refresh it now "
-                  f"or publishing stops. See token_status.json.")
+            print(f"::error::[{ACCT['slug']}] Instagram token expires in {days} "
+                  f"days. Refresh it now or publishing stops. "
+                  f"See {ACCT.token_status}.")
             return 1
         if days <= 21:
             print(f"::warning::Instagram token expires in {days} days — refresh soon.")

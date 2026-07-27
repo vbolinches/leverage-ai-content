@@ -14,9 +14,14 @@ thresholds here, brief() returns None and generation runs unguided.
 import io, json, os
 from datetime import date
 
-HISTORY = "performance.json"
-SPEC_DIR = "specs"
-QUEUE = "queue/schedule.json"
+import accounts
+
+# Resolved per-invocation: every path belongs to the selected account, so one
+# account's history can never leak into another's generation brief.
+_ACCT = accounts.get()
+HISTORY = _ACCT.performance
+SPEC_DIR = _ACCT.spec_dir
+QUEUE = _ACCT.queue
 
 # Learning gates. Engagement on a new account is mostly noise; these are the
 # floor at which differences between posts start to mean anything.

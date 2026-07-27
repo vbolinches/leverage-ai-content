@@ -1,26 +1,44 @@
 name: Account monitor
 
-# Read-only digest: follower/post counts, per-post performance, and comments
-# awaiting a reply. Publishes nothing, replies to nothing, likes nothing.
-# Output lands in the Actions log; a failure emails you.
+# Read-only digest per account: follower/post counts, per-post performance, and
+# comments awaiting a reply. Publishes nothing, replies to nothing, likes
+# nothing. Output lands in the Actions log; a failure emails you.
 
 on:
   schedule:
     - cron: "0 8 * * *"    # daily 08:00 UTC, two hours before the publish run
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+
 jobs:
-  monitor:
+  accounts:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    outputs:
+      matrix: ${{ steps.ls.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: ls
+        run: echo "matrix=$(python3 accounts.py --list-json)" >> "$GITHUB_OUTPUT"
+
+  monitor:
+    needs: accounts
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 1       # jobs commit performance history; serialise pushes
+      matrix:
+        account: ${{ fromJson(needs.accounts.outputs.matrix) }}
+    name: monitor ${{ matrix.account.slug }}
     steps:
       - uses: actions/checkout@v4
 
       - name: Account digest
         env:
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          ACCOUNT: ${{ matrix.account.slug }}
+          IG_ACCESS_TOKEN: ${{ secrets[matrix.account.token_secret] }}
+          IG_USER_ID: ${{ secrets[matrix.account.user_id_secret] }}
         run: python3 monitor.py
 
       # performance.json is the feedback loop's memory — without committing it,
@@ -30,6 +48,7 @@ jobs:
         run: |
           git config user.name "leverage-ai-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add performance.json
-          git diff --cached --quiet || git commit -m "performance snapshot $(date -u +%F)"
+          git add accounts/*/performance.json
+          git diff --cached --quiet || git commit -m "performance snapshot $(date -u +%F) (${{ matrix.account.slug }})"
+          git pull --rebase
           git push || echo "::warning::could not push performance history"

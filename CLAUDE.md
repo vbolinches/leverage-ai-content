@@ -1,8 +1,16 @@
 # leverage-ai-content — operating notes
 
-Autonomous Instagram publishing for **@leverageai.daily**. Deployed and running
-since 2026-07-25. This file replaces the original deployment handoff, which
-described a setup that turned out not to match reality.
+Autonomous Instagram publishing, multi-account. Deployed and running since
+2026-07-25 with **@leverageai.daily** as the first account. This file replaces
+the original deployment handoff, which described a setup that turned out not to
+match reality.
+
+Every account lives in `accounts/<slug>/` — config, queue, specs, strategy,
+token dates, performance history. Scripts select one account via the `ACCOUNT`
+env var (automatic while only one is enabled); workflows matrix over
+`accounts.py --list-json`. To add an account: `python new_account.py <slug>
+--username ... --theme ...` and follow the printed checklist. New accounts are
+created disabled and stay invisible to every workflow until `"enabled": true`.
 
 Repo: https://github.com/vbolinches/leverage-ai-content (public — Meta fetches
 slide images from raw URLs, which only works on a public repo on `main`).
@@ -17,8 +25,11 @@ AI-productivity carousels there would have been unrecoverable.
 - Correct target: `IG_USER_ID = 17841443853596707` = `@leverageai.daily`
 - Wrong target: `17841464133054122` = `@inmigraforma`
 
-`publish.py`, `monitor.py` and the verify workflow all assert the username. Do
-not weaken those guards.
+Each `account.json` records the expected username AND ig_user_id, and
+`publish.py` re-proves the live token against both before every publish
+(`assert_target()`); `monitor.py` and the verify workflow assert the same.
+Multiple accounts make crossed secrets *more* likely, not less — do not weaken
+these guards, and never reuse one account's secret names for another.
 
 **2. This uses the Instagram Login API, not the Facebook Page API.**
 `publish.py` targets `graph.instagram.com`. The Page-based route
@@ -62,9 +73,13 @@ change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 
 | Path | Purpose |
 |---|---|
-| `queue/schedule.json` | The queue: id, date, slides, caption, status |
-| `queue/postNN-*/` | Slide PNGs |
-| `specs/*.json` | Post content specs, rendered into slides |
+| `accounts/<slug>/account.json` | Account identity, secret *names*, brand voice |
+| `accounts/<slug>/queue/schedule.json` | That account's queue |
+| `accounts/<slug>/specs/*.json` | Post content specs, rendered into slides |
+| `accounts/<slug>/strategy.md` | The feedback loop's memory |
+| `accounts/<slug>/token_status.json` | Token expiry dates (no secret) |
+| `accounts.py` | Registry; `--list-json` feeds the workflow matrices |
+| `new_account.py` | Scaffolds a new (disabled) account + prints setup steps |
 | `publish.py` | Publishes the oldest due post; marks it published |
 | `render_slides.py` | Spec → branded 1080×1350 slides |
 | `render_reel.py` | Spec or slides → 1080×1920 MP4 Reel, with audio |
@@ -72,7 +87,6 @@ change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 | `build_reels.py` | Converts alternate queued posts to Reels |
 | `generate_batch.py` | Authors a batch with Claude, renders, queues |
 | `monitor.py` | Read-only digest + token expiry warning |
-| `token_status.json` | Token expiry dates (no secret) |
 
 ## Workflows
 
@@ -87,23 +101,31 @@ change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 
 ## Secrets
 
-| Secret | State |
-|---|---|
-| `IG_ACCESS_TOKEN` | set; expires 2026-09-22 |
-| `IG_USER_ID` | set |
-| `ANTHROPIC_API_KEY` | set |
-| `GH_PAT` | **invalid** — rejected 401; value is not a GitHub token |
+Secret *names* are per-account, recorded in each `account.json`
+(`token_secret`, `user_id_secret`); workflows resolve them with
+`secrets[matrix.account.token_secret]`. `ANTHROPIC_API_KEY` and `GH_PAT` are
+shared across accounts.
+
+| Secret | Account | State |
+|---|---|---|
+| `IG_ACCESS_TOKEN` | leverageai | set; expires 2026-09-22 |
+| `IG_USER_ID` | leverageai | set |
+| `ANTHROPIC_API_KEY` | shared | set |
+| `GH_PAT` | shared | **invalid** — rejected 401; value is not a GitHub token |
 
 ## Known gaps
 
 - **Token auto-refresh is blocked** on `GH_PAT`. Until fixed, refresh by hand
-  (README has the steps) and **update `token_status.json`**, or the warning
-  fires against a stale date.
+  (README has the steps) and **update `accounts/<slug>/token_status.json`**, or
+  the warning fires against a stale date. Each account has its own token and
+  its own 60-day clock — the chore multiplies with accounts until GH_PAT works.
 - **Insights** (reach, impressions, saves) need
   `instagram_business_manage_insights` added to the app; `monitor.py` degrades
   gracefully without it.
-- **The app is in development mode.** Fine for a Tester-role account, but if
-  publishing ever fails on permissions, App Review is the cause.
+- **The app is in development mode.** Fine for Tester-role accounts, but every
+  new account must be added as an Instagram Tester on the Meta app (and accept
+  the invite) before its token can be minted. If publishing ever fails on
+  permissions, App Review is the cause.
 - **Generated posts publish unreviewed** on the Wednesday schedule. `--dry-run`
   plus the artifact is the review path.
 
@@ -111,5 +133,10 @@ change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 
 - Write `schedule.json` with `json.dump(..., indent=2, ensure_ascii=False)` —
   matches what the publish workflow commits, keeps diffs clean.
+- Media paths in `schedule.json` are repo-relative
+  (`accounts/<slug>/queue/...`) because Meta fetches them from raw URLs —
+  moving files means rewriting the paths in the same commit.
+- Workflow jobs that commit run with `max-parallel: 1` and `git pull --rebase`
+  before push — matrix jobs racing each other lose commits otherwise.
 - Slides render with DejaVu on every platform so local previews match CI.
 - Never commit a token. `token_status.json` holds dates only.

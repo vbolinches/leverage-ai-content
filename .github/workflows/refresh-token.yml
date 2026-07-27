@@ -1,15 +1,16 @@
 name: Refresh Instagram token
 
 # Instagram Login tokens live 60 days. Refreshing one that is still valid mints
-# a fresh 60-day token, so running monthly keeps it alive indefinitely and the
-# every-50-days manual chore disappears.
+# a fresh 60-day token, so running monthly keeps every account alive
+# indefinitely and the every-50-days manual chore disappears.
 #
 # Requires a GH_PAT secret: a GitHub token with permission to write repository
 # secrets (fine-grained: Secrets = Read and write on this repo). The default
 # GITHUB_TOKEN cannot update secrets, which is why a PAT is needed.
 #
-# The new token is masked in logs and written straight back into the
-# IG_ACCESS_TOKEN secret. It is never printed, committed, or stored anywhere else.
+# Each refreshed token is masked in logs and written straight back into that
+# account's token secret (the name recorded in its account.json). It is never
+# printed, committed, or stored anywhere else.
 
 on:
   schedule:
@@ -17,26 +18,42 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  refresh:
+  accounts:
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.ls.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: ls
+        run: echo "matrix=$(python3 accounts.py --list-json)" >> "$GITHUB_OUTPUT"
+
+  refresh:
+    needs: accounts
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        account: ${{ fromJson(needs.accounts.outputs.matrix) }}
+    name: refresh ${{ matrix.account.slug }}
     steps:
       - name: Refresh token and update the secret
         env:
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets[matrix.account.token_secret] }}
+          TOKEN_SECRET_NAME: ${{ matrix.account.token_secret }}
           GH_PAT: ${{ secrets.GH_PAT }}
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
 
           if [ -z "${IG_ACCESS_TOKEN:-}" ]; then
-            echo "::error::IG_ACCESS_TOKEN is not set."; exit 1
+            echo "::error::Secret $TOKEN_SECRET_NAME is not set."; exit 1
           fi
           if [ -z "${GH_PAT:-}" ]; then
             echo "::error::GH_PAT is not set — cannot write the refreshed token back. See this file's header."
             exit 1
           fi
 
-          echo "--- Requesting a fresh 60-day token ---"
+          echo "--- Requesting a fresh 60-day token for ${{ matrix.account.slug }} ---"
           resp=$(curl -sS -G "https://graph.instagram.com/refresh_access_token" \
             --data-urlencode "grant_type=ig_refresh_token" \
             --data-urlencode "access_token=$IG_ACCESS_TOKEN")
@@ -83,7 +100,7 @@ jobs:
           echo "PAT authenticates (HTTP $code)"
           export GH_PAT="$PAT"
 
-          echo "--- Writing the new token back to IG_ACCESS_TOKEN ---"
+          echo "--- Writing the new token back to $TOKEN_SECRET_NAME ---"
           pip install --quiet pynacl
           NEW_TOKEN="$NEW" python - <<'PY'
           import base64, json, os, sys, urllib.error, urllib.request
@@ -92,6 +109,7 @@ jobs:
           repo = os.environ["REPO"]
           pat = os.environ["GH_PAT"]
           token = os.environ["NEW_TOKEN"]
+          secret_name = os.environ["TOKEN_SECRET_NAME"]
 
           def api(path, method="GET", body=None):
               req = urllib.request.Request(
@@ -126,11 +144,12 @@ jobs:
               public.PublicKey(key["key"].encode(), encoding.Base64Encoder())
           ).encrypt(token.encode())
 
-          api("actions/secrets/IG_ACCESS_TOKEN", method="PUT", body={
+          api(f"actions/secrets/{secret_name}", method="PUT", body={
               "encrypted_value": base64.b64encode(sealed).decode(),
               "key_id": key["key_id"],
           })
-          print("IG_ACCESS_TOKEN updated.")
+          print(f"{secret_name} updated.")
           PY
 
           echo "Done. Token refreshed and stored; nothing was logged."
+          echo "::notice::Update accounts/${{ matrix.account.slug }}/token_status.json with the new expiry date."

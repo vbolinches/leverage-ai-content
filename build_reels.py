@@ -15,9 +15,13 @@ and a Reel would read as duplicate content.
 """
 import argparse, io, json, os, sys
 
+import accounts
 import render_reel
+import render_slides
 
-QUEUE = "queue/schedule.json"
+ACCT = accounts.get()
+render_slides.configure(ACCT)
+QUEUE = ACCT.queue
 
 
 def load():
@@ -64,7 +68,8 @@ def main():
             print(f"  {p['id']} ({p['date']}): would render {len(slides)} slides")
             continue
 
-        path, secs = render_reel.render_from_images(p["id"], slides)
+        path, secs = render_reel.render_from_images(p["id"], slides,
+                                                    out_root=ACCT.queue_dir)
         p["format"] = "reel"
         p["video"] = path
         converted += 1

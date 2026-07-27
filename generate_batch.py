@@ -17,11 +17,18 @@ intended way to keep a human in the loop.
 import argparse, json, os, re, sys
 from datetime import date, timedelta
 
+import accounts
 import render_slides
 
 MODEL = "claude-opus-5"
-QUEUE = "queue/schedule.json"
-SPEC_DIR = "specs"
+
+# One account per invocation (ACCOUNT env / --account). Everything the
+# generator reads and writes — queue, specs, strategy, brand voice — belongs
+# to this account and no other.
+ACCT = accounts.get()
+render_slides.configure(ACCT)
+QUEUE = ACCT.queue
+SPEC_DIR = ACCT.spec_dir
 
 # Server-side web search. Dynamic filtering is built into this tool version —
 # do NOT also declare code_execution, a second execution environment confuses
@@ -32,13 +39,13 @@ WEB_SEARCH_TOOL = {
     "max_uses": 8,
 }
 
-BRAND = """You write carousel posts for @leverageai.daily, an Instagram account \
-publishing one practical AI workflow a day for knowledge workers.
+# The account-agnostic parts of the brand system prompt. Voice, theme, handle
+# and CTA line come from accounts/<slug>/account.json; the no-reply-promise
+# rule is universal — every account here publishes unattended.
+BRAND = f"""You write carousel posts for {ACCT.handle}, an Instagram account \
+publishing {ACCT['theme']}.
 
-Voice: direct, concrete, no hype. Never "revolutionary", "game-changer", \
-"insane", "unlock". Short sentences. Second person. Always give something \
-copy-pasteable. Name real tools (ChatGPT, Claude, NotebookLM, Perplexity, \
-Canva, Notion). Be honest about limitations — say what a tool is bad at.
+Voice: {ACCT['voice']}
 
 Each post is a 4-7 slide carousel following this arc:
   1. cover     - hook + one-line promise
@@ -47,7 +54,7 @@ Each post is a 4-7 slide carousel following this arc:
   6. recap     - the system as 3-4 arrows, plus a save CTA
 
 Captions: 2-4 short paragraphs, a save/comment prompt, the line \
-"Follow @leverageai.daily for one practical AI workflow a day.", then 8-10 \
+"{ACCT['cta_line']}", then 8-10 \
 lowercase hashtags. Under 2000 characters.
 
 NEVER promise anything you cannot deliver inside the post itself. This account \
@@ -71,12 +78,16 @@ Slide kinds and their fields:
   {"kind":"step","eyebrow":"STEP 1","headline":"Short imperative.","body":[{"t":"explanation "},{"t":"key point.","c":"green","b":true}]}
   {"kind":"prompt","eyebrow":"STEP 2","headline":"Short.","sub":"one line","label":"COPY THIS PROMPT","code":"literal prompt\\nwith newlines"}
   {"kind":"stat","eyebrow":"THE PAYOFF","headline":"Framing question:","stat":"~big phrase"}
-  {"kind":"recap","eyebrow":"RECAP","headline":"The system","items":["step","step","step"],"cta_title":"Save this for later","cta_sub":"Follow @leverageai.daily for one practical AI workflow a day","footer_right":"SAVE THIS ↓"}
+  {"kind":"recap","eyebrow":"RECAP","headline":"The system","items":["step","step","step"],"cta_title":"Save this for later","cta_sub":"__CTA_SUB__","footer_right":"SAVE THIS ↓"}
 
 Hard limits (text overflows the canvas otherwise):
   headline <= 40 chars   sub <= 90 chars   body <= 260 chars
   code <= 9 lines, each <= 46 chars       stat <= 22 chars
   items: 3-4, each <= 44 chars            eyebrow <= 16 chars"""
+
+# The schema example must show this account's CTA, not a placeholder — the
+# model copies examples far more reliably than instructions.
+SCHEMA = SCHEMA.replace("__CTA_SUB__", ACCT["cta_line"].rstrip("."))
 
 
 def load_queue():
@@ -187,8 +198,8 @@ def strategy_context():
 
     text, stats = performance.brief()
     strategy = ""
-    if os.path.exists("strategy.md"):
-        with open("strategy.md", encoding="utf-8") as f:
+    if os.path.exists(ACCT.strategy):
+        with open(ACCT.strategy, encoding="utf-8") as f:
             strategy = f.read()
 
     if text:
@@ -226,10 +237,9 @@ def author(count, start_index, avoid):
     slugs = ", ".join(f"post{start_index + i:02d}" for i in range(count))
     prompt = (
         "First, use web_search to ground this batch in what is actually current: "
-        "recent AI tool releases and feature changes, workflows people are "
-        "discussing now, and anything that would date a post or make it wrong. "
-        "Search before writing — do not rely on memory for product capabilities, "
-        "pricing, or which tool does what, since those change often.\n\n"
+        f"{ACCT['search_brief']}. "
+        "Search before writing — do not rely on memory for facts that "
+        "change often.\n\n"
         "Then write the posts and submit them with the submit_posts tool.\n\n"
         f"{SCHEMA}\n\n"
         f"Write {count} posts. Use these slug prefixes in order: {slugs}.\n"
@@ -336,10 +346,21 @@ def main():
     ap.add_argument("--count", type=int, default=7)
     ap.add_argument("--dry-run", action="store_true",
                     help="author and render, but do not add to the queue")
-    ap.add_argument("--out", default="queue",
+    ap.add_argument("--out", default=None,
                     help="where to render slides; use a separate dir for dry runs "
                          "so the review bundle holds only the new posts")
+    ap.add_argument("--account", default=None,
+                    help="account slug (defaults to ACCOUNT env / sole account)")
     a = ap.parse_args()
+
+    if a.account and a.account != ACCT["slug"]:
+        sys.exit(f"--account {a.account} conflicts with resolved account "
+                 f"{ACCT['slug']} — set ACCOUNT={a.account} instead (module "
+                 f"state is bound at import).")
+
+    # No --out means rendering into the account's live queue directory.
+    live = a.out is None
+    out = a.out or ACCT.queue_dir
 
     sched = load_queue()
     start = next_index(sched)
@@ -351,8 +372,7 @@ def main():
     # the rendered slides so it can be reviewed without touching the live file.
     strategy = result.get("strategy")
     if strategy:
-        target = ("strategy.md" if a.out == "queue"
-                  else os.path.join(a.out, "strategy.md"))
+        target = ACCT.strategy if live else os.path.join(out, "strategy.md")
         os.makedirs(os.path.dirname(target) or ".", exist_ok=True)
         with open(target, "w", encoding="utf-8") as f:
             f.write(strategy.rstrip() + "\n")
@@ -360,7 +380,7 @@ def main():
 
     # For a dry run the specs go beside the rendered slides, so the review
     # bundle carries the captions too — slides alone are half a review.
-    spec_dir = SPEC_DIR if a.out == "queue" else os.path.join(a.out, "specs")
+    spec_dir = SPEC_DIR if live else os.path.join(out, "specs")
     os.makedirs(spec_dir, exist_ok=True)
     cursor = next_date(sched)
     added = 0
@@ -379,7 +399,7 @@ def main():
                   encoding="utf-8") as f:
             json.dump(post, f, indent=2, ensure_ascii=False)
 
-        slides = render_slides.render_post(post, a.out)
+        slides = render_slides.render_post(post, out)
 
         # Alternate surfaces: carousels reach existing followers, Reels reach
         # strangers. Alternating keeps one post a day while putting half the
@@ -394,13 +414,13 @@ def main():
 
         if as_reel:
             import render_reel
-            video, secs = render_reel.render(post, a.out)
+            video, secs = render_reel.render(post, out)
             entry["format"] = "reel"
             entry["video"] = video
             print(f"  {post['slug']}: {len(slides)} slides + {secs:.0f}s reel "
-                  f"-> {a.out}/")
+                  f"-> {out}/")
         else:
-            print(f"  {post['slug']}: {len(slides)} slides -> {a.out}/")
+            print(f"  {post['slug']}: {len(slides)} slides -> {out}/")
         as_reel = not as_reel
 
         if not a.dry_run:

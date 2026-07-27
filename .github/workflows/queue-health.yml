@@ -1,11 +1,12 @@
 name: Queue health check
 
-# publish.py exits 0 with "nothing due" when the queue runs dry — by design, so
+# publish.py exits 0 with "nothing due" when a queue runs dry — by design, so
 # the daily cron never fails spuriously. The side effect is that running out of
 # content is SILENT: posting just stops and nothing tells you.
 #
-# This job makes that failure loud. It fails (and GitHub emails you) while there
-# is still runway to produce the next batch, not after posting has already stopped.
+# This job makes that failure loud, for every account at once. It fails (and
+# GitHub emails you) while there is still runway to produce the next batch,
+# not after posting has already stopped.
 
 on:
   schedule:
@@ -21,37 +22,45 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Report remaining runway
+      - name: Report remaining runway per account
         run: |
           python3 - <<'PY'
           import json, os, sys
           from datetime import date
 
+          import accounts
+
           MIN = int(os.environ["MIN_DAYS_RUNWAY"])
-          sched = json.load(open("queue/schedule.json", encoding="utf-8"))
-          posts = sched["posts"]
+          failed = False
 
-          queued = [p for p in posts if p["status"] == "queued"]
-          published = [p for p in posts if p["status"] == "published"]
+          for acct in accounts.list_accounts():
+              sched = json.load(open(acct.queue, encoding="utf-8"))
+              posts = sched["posts"]
+              queued = [p for p in posts if p["status"] == "queued"]
+              published = [p for p in posts if p["status"] == "published"]
 
-          print(f"published: {len(published)}   queued: {len(queued)}")
+              print(f"[{acct['slug']}] published: {len(published)}   "
+                    f"queued: {len(queued)}")
 
-          if not queued:
-              print("::error::QUEUE EMPTY — nothing will publish. "
-                    "Posting has stopped until a new batch is added.")
-              sys.exit(1)
+              if not queued:
+                  print(f"::error::[{acct['slug']}] QUEUE EMPTY — nothing will "
+                        f"publish. Posting has stopped until a new batch is added.")
+                  failed = True
+                  continue
 
-          last = max(p["date"] for p in queued)
-          runway = (date.fromisoformat(last) - date.today()).days
-          print(f"next: {min(p['date'] for p in queued)}   last: {last}   "
-                f"runway: {runway} days")
+              last = max(p["date"] for p in queued)
+              runway = (date.fromisoformat(last) - date.today()).days
+              print(f"  next: {min(p['date'] for p in queued)}   last: {last}   "
+                    f"runway: {runway} days")
 
-          if len(queued) < MIN:
-              print(f"::error::Only {len(queued)} post(s) left, running dry on {last}. "
-                    f"Produce the next batch now.")
-              sys.exit(1)
+              if len(queued) < MIN:
+                  print(f"::error::[{acct['slug']}] Only {len(queued)} post(s) "
+                        f"left, running dry on {last}. Produce the next batch now.")
+                  failed = True
+              else:
+                  print(f"  OK: {len(queued)} posts queued through {last}.")
 
-          print(f"OK: {len(queued)} posts queued through {last}.")
+          sys.exit(1 if failed else 0)
           PY
         env:
           MIN_DAYS_RUNWAY: ${{ env.MIN_DAYS_RUNWAY }}

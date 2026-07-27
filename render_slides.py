@@ -41,6 +41,26 @@ FOOTER_Y = 1258
 CONTENT_TOP = 175
 CONTENT_BOTTOM = 1215
 
+# Per-account chrome. Defaults preserve the original @leverageai.daily deck;
+# configure() overrides them from accounts/<slug>/account.json.
+BRANDING = {"wordmark": "LEVERAGE AI", "handle": "@leverageai.daily"}
+
+
+def configure(acct):
+    """Point the renderer at an account: wordmark, footer handle, palette.
+
+    COLORS is updated in place (not rebound) so modules that imported it keep
+    seeing the active palette.
+    """
+    global BG
+    BRANDING["wordmark"] = acct.get("wordmark", acct["username"].upper())
+    BRANDING["handle"] = "@" + acct["username"]
+    for name, rgb in (acct.get("colors") or {}).items():
+        if name == "bg":
+            BG = tuple(rgb)
+        else:
+            COLORS[name] = tuple(rgb)
+
 
 # --------------------------------------------------------------------------
 # Fonts. DejaVu is listed FIRST on every platform so a local preview renders
@@ -175,10 +195,11 @@ def draw_mark(draw, x, y, size=34):
 def draw_chrome(img, draw, page, total, footer_right=None):
     draw_mark(draw, MARGIN, HEADER_Y)
     f = font("semi", 21)
-    draw_tracked(draw, "LEVERAGE AI", MARGIN + 50, HEADER_Y + 6, f, COLORS["dim"], 4)
+    draw_tracked(draw, BRANDING["wordmark"], MARGIN + 50, HEADER_Y + 6, f,
+                 COLORS["dim"], 4)
 
     ff = font("regular", 25)
-    draw.text((MARGIN, FOOTER_Y), "@leverageai.daily", font=ff, fill=COLORS["dim"])
+    draw.text((MARGIN, FOOTER_Y), BRANDING["handle"], font=ff, fill=COLORS["dim"])
 
     right = footer_right if footer_right is not None else f"{page}/{total}"
     if right:
