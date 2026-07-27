@@ -43,7 +43,9 @@ account, so the Page link only ever forms at profile level and
 
 **3. Nobody is watching the inbox.** Captions must never promise a reply,
 template or DM — anyone who took it up would get silence. `generate_batch.py`
-enforces this in both the brand prompt and the validator.
+enforces this in both the brand prompt and the validator. The DM auto-responder
+(point 8) does not change this rule: it sends one generic welcome and must
+itself never promise a further reply.
 
 **4. Running out of content fails silently.** `publish.py` exits 0 with
 "nothing due" by design, so the cron never fails spuriously. The queue-health
@@ -69,6 +71,15 @@ or strikes those, and the repo is public. **If a Reel genuinely needs a trending
 sound, it must be posted by hand in the app.** After any renderer or audio
 change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 
+**8. DM automation is reply-only, and DM-on-follow is not an API feature.**
+Meta's API can only reply within 24h of an inbound message
+(`instagram_business_manage_messages`, Advanced Access via App Review — both
+still missing here, so `dm_responder.py` is armed but inert and warns instead
+of failing). The "messaged you because you followed" DM big accounts send is
+ManyChat's Meta-partner "Follow to DM" (beta, ~1000-follower eligibility) —
+it cannot be built from this repo at any price. Do not add DM code that
+initiates conversations; the API will reject it and Meta may flag the app.
+
 ## Layout
 
 | Path | Purpose |
@@ -88,6 +99,7 @@ change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 | `generate_batch.py` | Authors a batch with Claude, renders, queues |
 | `monitor.py` | Read-only digest + token expiry warning |
 | `ideas.py` | Content-ideas monitor (X / RSS / HN) → `accounts/<slug>/ideas.json` |
+| `dm_responder.py` | One automated welcome per inbound DM conversation |
 
 ## Workflows
 
@@ -96,6 +108,7 @@ change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 | Publish daily Instagram post | 10:00 UTC daily | The core job |
 | Account monitor | 08:00 UTC daily | Digest; fails at <10 days token runway |
 | Queue health check | Mon 09:00 UTC | Fails below 5 queued posts |
+| DM auto-responder | every 2h | Inert (warns) until messaging permission + App Review |
 | Content ideas monitor | Tue 06:00 UTC | Refreshes idea sources; X only with `X_BEARER_TOKEN` |
 | Generate content batch | Wed 06:00 UTC | Only runs when queue < 7; reads fresh ideas |
 | Refresh Instagram token | 1st monthly | **Blocked** — needs a valid `GH_PAT` |

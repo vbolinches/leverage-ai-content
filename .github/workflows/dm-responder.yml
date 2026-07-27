@@ -1,0 +1,47 @@
+name: DM auto-responder
+
+# Replies once, per conversation, to people who DM an account — inside Meta's
+# 24-hour reply window. Cannot start conversations (no API can); the
+# DM-on-follow feature big accounts use is a Meta-partner product (ManyChat
+# Follow to DM), not an API capability.
+#
+# Until instagram_business_manage_messages (with Advanced Access) is on the
+# token, dm_responder.py logs a warning and exits 0 — armed, not failing.
+# Stateless: nothing to commit; a rerun can never double-send.
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"   # every 2h, offset to dodge top-of-hour congestion
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Report what would be sent, send nothing"
+        type: boolean
+        default: false
+
+jobs:
+  accounts:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.ls.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: ls
+        run: echo "matrix=$(python3 accounts.py --list-json)" >> "$GITHUB_OUTPUT"
+
+  respond:
+    needs: accounts
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        account: ${{ fromJson(needs.accounts.outputs.matrix) }}
+    name: respond ${{ matrix.account.slug }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reply to new conversations
+        env:
+          ACCOUNT: ${{ matrix.account.slug }}
+          IG_ACCESS_TOKEN: ${{ secrets[matrix.account.token_secret] }}
+          IG_USER_ID: ${{ secrets[matrix.account.user_id_secret] }}
+        run: python3 dm_responder.py ${{ inputs.dry_run && '--dry-run' || '' }}

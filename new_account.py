@@ -77,6 +77,9 @@ def main():
         # Content-ideas monitor (ideas.py). rss + hn_queries are free;
         # x_accounts needs the shared X_BEARER_TOKEN secret (pay-per-use).
         "idea_sources": {"x_accounts": [], "rss": [], "hn_queries": []},
+        # One automated reply to inbound DMs (dm_responder.py). Needs the
+        # messaging permission + App Review; text must never promise a human.
+        "dm_welcome": {"enabled": False, "text": ""},
     }
 
     os.makedirs(f"{root}/queue", exist_ok=True)
