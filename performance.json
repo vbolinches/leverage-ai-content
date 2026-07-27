@@ -13,6 +13,28 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-07-27",
+      "followers": 2,
+      "posts": [
+        {
+          "slug": "post02-meeting-notes-prompt",
+          "likes": 5,
+          "comments": 2,
+          "reach": 142,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post01-email-workflow",
+          "likes": 0,
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
