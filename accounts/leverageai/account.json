@@ -10,5 +10,13 @@
   "voice": "Direct, concrete, no hype. Never \"revolutionary\", \"game-changer\", \"insane\", \"unlock\". Short sentences. Second person. Always give something copy-pasteable. Name real tools (ChatGPT, Claude, NotebookLM, Perplexity, Canva, Notion). Be honest about limitations — say what a tool is bad at.",
   "cta_line": "Follow @leverageai.daily for one practical AI workflow a day.",
   "search_brief": "recent AI tool releases and feature changes, workflows people are discussing now, and anything that would date a post or make it wrong",
-  "colors": {}
+  "colors": {},
+  "idea_sources": {
+    "x_accounts": ["OpenAI", "AnthropicAI", "perplexity_ai", "NotebookLM", "GoogleDeepMind"],
+    "rss": [
+      "https://simonwillison.net/atom/everything/",
+      "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+    ],
+    "hn_queries": ["ChatGPT workflow", "Claude AI", "NotebookLM", "AI productivity"]
+  }
 }

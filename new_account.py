@@ -74,6 +74,9 @@ def main():
                          "recent developments, tools, findings, and anything that "
                          "would date a post or make it wrong"),
         "colors": {},
+        # Content-ideas monitor (ideas.py). rss + hn_queries are free;
+        # x_accounts needs the shared X_BEARER_TOKEN secret (pay-per-use).
+        "idea_sources": {"x_accounts": [], "rss": [], "hn_queries": []},
     }
 
     os.makedirs(f"{root}/queue", exist_ok=True)

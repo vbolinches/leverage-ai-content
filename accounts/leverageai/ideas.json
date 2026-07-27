@@ -1,0 +1,413 @@
+{
+  "updated": "2026-07-27",
+  "items": [
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Nvidia, Microsoft launch open AI security alliance — without OpenAI, Google, or Anthropic",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
+      "at": "2026-07-27",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "The tech-broification of American science has officially begun",
+      "url": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
+      "at": "2026-07-27",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+      "url": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
+      "at": "2026-07-26",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/AI productivity",
+      "title": "The AI Productivity Illusion",
+      "url": "https://www.hardresetmedia.com/p/the-ai-productivity-illusion",
+      "at": "2026-07-25",
+      "signal": 69,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Ruff v0.16.0",
+      "url": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
+      "at": "2026-07-25",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Boris Cherny",
+      "url": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
+      "at": "2026-07-25",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Introducing Claude Opus 5",
+      "url": "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything",
+      "at": "2026-07-24",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Midjourney bought the astrology app Co-Star",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
+      "at": "2026-07-24",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "You can’t ignore Google Zero anymore",
+      "url": "https://www.theverge.com/podcast/970735/google-zero-reddit-ai-publishers-vergecast",
+      "at": "2026-07-24",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Meta is making its AI chatbot more like an assistant",
+      "url": "https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update",
+      "at": "2026-07-24",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "at": "2026-07-23",
+      "signal": 190,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "The first known runaway AI agent - or a very bad marketing stunt?",
+      "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
+      "at": "2026-07-23",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Seth Larson",
+      "url": "https://simonwillison.net/2026/Jul/23/seth-larson/#atom-everything",
+      "at": "2026-07-23",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Anthropic releases Opus 5 with ‘close’ to Fable 5’s capabilities",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
+      "at": "2026-07-23",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Alexa Plus is getting an AI update to handle more complicated instructions",
+      "url": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
+      "at": "2026-07-23",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Claude’s voice mode is now available for Opus and Sonnet",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
+      "at": "2026-07-23",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Patreon is laying off 20 percent of workers",
+      "url": "https://www.theverge.com/tech/970211/patreon-layoffs-ai",
+      "at": "2026-07-23",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "OpenAI is making big claims as it rolls out ChatGPT Health to everyone",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
+      "at": "2026-07-23",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Thomas Ptacek",
+      "url": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
+      "at": "2026-07-22",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
+      "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
+      "at": "2026-07-22",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Are AI labs pelicanmaxxing?",
+      "url": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
+      "at": "2026-07-22",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Orchestrions",
+      "url": "https://simonwillison.net/2026/Jul/22/all-the-orchestrions/#atom-everything",
+      "at": "2026-07-22",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Judge approves $1.5B Anthropic settlement for pirated books used to train Claude",
+      "url": "https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63",
+      "at": "2026-07-21",
+      "signal": 567,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "California Sea Lion",
+      "url": "https://simonwillison.net/2026/Jul/21/sighting-383713864/#atom-everything",
+      "at": "2026-07-21",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Nativ: Run AI models locally on your Mac",
+      "url": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+      "at": "2026-07-21",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
+      "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
+      "at": "2026-07-21",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Reverse-engineering is cheap now",
+      "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+      "at": "2026-07-20",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Who’s Afraid of Chinese Models?",
+      "url": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
+      "at": "2026-07-20",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Sam Altman",
+      "url": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
+      "at": "2026-07-20",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "AI Mania Is Eviscerating Global Decision-Making",
+      "url": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
+      "at": "2026-07-19",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything",
+      "at": "2026-07-19",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/NotebookLM",
+      "title": "I started a “dirt notebook”",
+      "url": "https://pinewind.bearblog.dev/i-started-a-dirt-notebook/",
+      "at": "2026-07-18",
+      "signal": 122,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Beginning July 20, Claude Fable 5 will be included in all Max plans",
+      "url": "https://twitter.com/claudeai/status/2078302415804379218",
+      "at": "2026-07-18",
+      "signal": 43,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "SQLite Query Explainer",
+      "url": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
+      "at": "2026-07-18",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Claude make Fable 5 permanent",
+      "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything",
+      "at": "2026-07-18",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "nascheme/quixote",
+      "url": "https://simonwillison.net/2026/Jul/18/quixote/#atom-everything",
+      "at": "2026-07-18",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Kimi K3",
+      "url": "https://simonwillison.net/2026/Jul/17/kimi-k3/#atom-everything",
+      "at": "2026-07-17",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "LLM cliché highlighter",
+      "url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
+      "at": "2026-07-17",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Spot birds not golf",
+      "url": "https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything",
+      "at": "2026-07-17",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol",
+      "url": "https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6",
+      "at": "2026-07-16",
+      "signal": 396,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/NotebookLM",
+      "title": "NotebookLM is now Gemini Notebook",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+      "at": "2026-07-16",
+      "signal": 371,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Launch HN: Traceforce (YC S26) – Company-wide security monitoring for AI apps",
+      "url": "https://news.ycombinator.com/item?id=48937020",
+      "at": "2026-07-16",
+      "signal": 43,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Firefox in WebAssembly",
+      "url": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
+      "at": "2026-07-16",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
+      "at": "2026-07-16",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Thibault Sottiaux",
+      "url": "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
+      "at": "2026-07-16",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Inkling: Our open-weights model",
+      "url": "https://simonwillison.net/2026/Jul/16/inkling/#atom-everything",
+      "at": "2026-07-16",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Mermaid to ASCII art (mermaid-ascii)",
+      "url": "https://simonwillison.net/2026/Jul/16/mermaid-ascii/#atom-everything",
+      "at": "2026-07-16",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything",
+      "at": "2026-07-16",
+      "signal": 0,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+      "at": "2026-07-12",
+      "signal": 706,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Fable extended until 19 July",
+      "url": "https://twitter.com/claudeai/status/2076351399999557669",
+      "at": "2026-07-12",
+      "signal": 94,
+      "seen": "2026-07-27"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "We're extending access to Fable 5 on all paid plans through July 12",
+      "url": "https://twitter.com/claudeai/status/2074548242386178258",
+      "at": "2026-07-07",
+      "signal": 232,
+      "seen": "2026-07-27"
+    }
+  ]
+}

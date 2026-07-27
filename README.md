@@ -102,6 +102,25 @@ python audio.py bed.wav --seconds 14 --slug post02-meeting-notes-prompt
 **If a Reel ever needs a trending sound, it has to be posted by hand in the app.**
 That is the only route Meta provides.
 
+## Content ideas monitor
+
+`ideas.py` watches each account's configured sources — X accounts, RSS feeds,
+Hacker News queries (`idea_sources` in `account.json`) — and accumulates recent
+signals in `accounts/<slug>/ideas.json`. A Tuesday workflow refreshes it; the
+Wednesday generator folds fresh items into its prompt as *leads to verify by
+web search*, never as facts.
+
+RSS and HN are free and always on. **X requires a developer account with
+pay-per-use billing** (~$0.005/post read since Feb 2026 — a few dollars a month
+at this volume): create it at developer.x.com, then
+`gh secret set X_BEARER_TOKEN`. Until that secret exists, X sources are
+skipped and the monitor says so.
+
+```bash
+python ideas.py            # refresh the selected account's ideas.json
+python ideas.py --show     # print the digest the generator would see
+```
+
 ## Producing the next batch
 
 ```bash

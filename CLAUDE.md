@@ -87,6 +87,7 @@ change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 | `build_reels.py` | Converts alternate queued posts to Reels |
 | `generate_batch.py` | Authors a batch with Claude, renders, queues |
 | `monitor.py` | Read-only digest + token expiry warning |
+| `ideas.py` | Content-ideas monitor (X / RSS / HN) → `accounts/<slug>/ideas.json` |
 
 ## Workflows
 
@@ -95,7 +96,8 @@ change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 | Publish daily Instagram post | 10:00 UTC daily | The core job |
 | Account monitor | 08:00 UTC daily | Digest; fails at <10 days token runway |
 | Queue health check | Mon 09:00 UTC | Fails below 5 queued posts |
-| Generate content batch | Wed 06:00 UTC | Only runs when queue < 7 |
+| Content ideas monitor | Tue 06:00 UTC | Refreshes idea sources; X only with `X_BEARER_TOKEN` |
+| Generate content batch | Wed 06:00 UTC | Only runs when queue < 7; reads fresh ideas |
 | Refresh Instagram token | 1st monthly | **Blocked** — needs a valid `GH_PAT` |
 | Verify Instagram credentials | manual | Run after any token change |
 
@@ -112,6 +114,14 @@ shared across accounts.
 | `IG_USER_ID` | leverageai | set |
 | `ANTHROPIC_API_KEY` | shared | set |
 | `GH_PAT` | shared | **invalid** — rejected 401; value is not a GitHub token |
+| `X_BEARER_TOKEN` | shared | **not set** — X idea sources skipped until it is |
+
+**7. X (Twitter) reads cost money and need a billing-enabled developer
+account.** X moved to pay-per-use in Feb 2026 (~$0.005/post read; no free read
+tier). `ideas.py` therefore treats X as optional: without `X_BEARER_TOKEN` it
+runs on the free sources (RSS, Hacker News) and says so. Ideas are **leads,
+not facts** — the generator's prompt tells it to verify anything it uses by
+web search. Do not let idea items bypass that rule.
 
 ## Known gaps
 

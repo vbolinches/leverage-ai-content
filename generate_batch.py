@@ -234,13 +234,20 @@ def author(count, start_index, avoid):
     if not key:
         sys.exit("ANTHROPIC_API_KEY is not set — cannot author a batch.")
 
+    # Monitored-source signals (X, RSS, HN) come in as leads to investigate.
+    # They suggest WHAT is being talked about; web_search still decides what is
+    # actually true. Empty string when the ideas file is stale or absent.
+    import ideas
+    signals = ideas.digest(ACCT)
+
     slugs = ", ".join(f"post{start_index + i:02d}" for i in range(count))
     prompt = (
         "First, use web_search to ground this batch in what is actually current: "
         f"{ACCT['search_brief']}. "
         "Search before writing — do not rely on memory for facts that "
         "change often.\n\n"
-        "Then write the posts and submit them with the submit_posts tool.\n\n"
+        + (signals + "\n\n" if signals else "")
+        + "Then write the posts and submit them with the submit_posts tool.\n\n"
         f"{SCHEMA}\n\n"
         f"Write {count} posts. Use these slug prefixes in order: {slugs}.\n"
         f"Number the cover eyebrows WORKFLOW {start_index:03d} onward.\n\n"

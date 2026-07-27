@@ -1,0 +1,38 @@
+name: Content ideas monitor
+
+# Refreshes accounts/<slug>/ideas.json from each account's configured sources:
+# X accounts (official API, pay-per-use — only when X_BEARER_TOKEN is set),
+# RSS feeds and Hacker News (free, always on). The Wednesday generator folds
+# fresh signals into its authoring prompt as leads to verify by search.
+#
+# Runs Tuesdays so the file is at most a day old when generation reads it.
+# Reads nothing private, publishes nothing.
+
+on:
+  schedule:
+    - cron: "0 6 * * 2"    # Tuesdays 06:00 UTC — the day before generation
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh idea sources for all accounts
+        env:
+          # Optional. Without it, X sources are skipped and free sources run.
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: python3 ideas.py --all
+
+      - name: Commit ideas files
+        run: |
+          git config user.name "leverage-ai-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add accounts/*/ideas.json
+          git diff --cached --quiet || git commit -m "content ideas refresh $(date -u +%F)"
+          git pull --rebase
+          git push
