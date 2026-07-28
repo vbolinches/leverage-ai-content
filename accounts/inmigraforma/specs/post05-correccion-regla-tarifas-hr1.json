@@ -1,0 +1,79 @@
+{
+  "slug": "post05-correccion-regla-tarifas-hr1",
+  "caption": "Detalle pequeño, consecuencia grande: las reglas publicadas se corrigen, y la versión corregida es la que cuenta.\n\nLa regla \"USCIS Immigration Fees and Related Procedures Required by H.R.1 Reconciliation Bill\" se publicó en el Federal Register el 29 de abril de 2026 (documento 2026-08333). El 21 de julio de 2026 el Federal Register publicó una corrección de esa misma regla (documento 2026-14698, titulada \"...; Correction\").\n\nQué hacer con eso, en la práctica: antes de pagar una tarifa o enviar un formulario, revisa si el documento que estás leyendo tiene una corrección posterior. En federalregister.gov, la ficha de cada documento enlaza las correcciones y documentos relacionados. Y los montos que USCIS cobra hoy están en uscis.gov, sección Fees.\n\nEN: The H.R.1 USCIS fee rule was published in the Federal Register on April 29, 2026 (doc. 2026-08333) and corrected on July 21, 2026 (doc. 2026-14698). Before paying or filing, check whether the document you are reading has a later correction.\n\nGuarda esto: es el paso que casi nadie hace antes de pagar.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #tarifasuscis #federalregister #dhs #tramites #noticiasinmigracion #inmigrantes #immigrationnews #asilo\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 005",
+      "headline": [
+        {
+          "t": "La regla de tarifas "
+        },
+        {
+          "t": "tuvo corrección",
+          "c": "blue"
+        }
+      ],
+      "sub": "Corrección publicada en el Federal Register el 21 de julio de 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Se corrigió el texto publicado.",
+      "body": [
+        {
+          "t": "La regla de tarifas de USCIS derivada de H.R. 1 (29 de abril de 2026) recibió una corrección oficial. "
+        },
+        {
+          "t": "Fuente: Federal Register, 21 de julio de 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A quien va a pagar o presentar.",
+      "body": [
+        {
+          "t": "Si estás por pagar una tarifa o enviar un formulario, la versión corregida es la que rige. "
+        },
+        {
+          "t": "Leer la regla original sin su corrección puede darte un dato viejo.",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Los dos documentos.",
+      "sub": "Mismo título, dos fechas: guarda las dos referencias juntas.",
+      "label": "DATOS OFICIALES",
+      "code": "Original rule - Federal Register\nApril 29, 2026 (doc. 2026-08333)\n\"USCIS Immigration Fees and Related\nProcedures Required by H.R.1\nReconciliation Bill\"\n\nCorrection - Federal Register\nJuly 21, 2026 (doc. 2026-14698)\nSame title + \"; Correction\""
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO",
+      "headline": "¿Cuál es la fecha que manda?",
+      "stat": "21 de julio de 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El cambio, en resumen",
+      "items": [
+        "→ Regla de tarifas: 29 abr 2026",
+        "→ Corrección oficial: 21 jul 2026",
+        "→ Rige la versión corregida",
+        "Información general — no es asesoría legal"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

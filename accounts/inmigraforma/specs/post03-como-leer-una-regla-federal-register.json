@@ -1,0 +1,79 @@
+{
+  "slug": "post03-como-leer-una-regla-federal-register",
+  "caption": "Cada cambio real de inmigración deja rastro escrito en el Federal Register. Saber leer ese rastro es la diferencia entre enterarte y confirmar.\n\nLa regla de asilo anunciada por USCIS y DHS el 27 de julio de 2026 sirve de ejemplo vivo: es una interim final rule, con DHS Docket No. USCIS-2026-0199, que apareció en inspección pública del Federal Register (documento 2026-15190) con publicación prevista para el 28 de julio de 2026.\n\nMétodo: busca el docket en federalregister.gov, abre el documento y lee la primera página antes que cualquier titular. Ahí están la agencia, la fecha de vigencia (EFFECTIVE DATE), y si el documento acepta comentarios y hasta cuándo. En regulations.gov encuentras el mismo docket y los comentarios públicos.\n\nEN: To confirm any change, look it up in the Federal Register by docket number and read page one: agency, effective date, and whether comments are being accepted. Live example: DHS Docket No. USCIS-2026-0199, document 2026-15190, announced July 27, 2026.\n\nGuarda este método: te sirve para cualquier regla, no solo para esta.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #federalregister #uscis #dhs #regulaciones #noticiasinmigracion #inmigrantes #asilo #immigrationnews #tramites\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 003",
+      "headline": [
+        {
+          "t": "Cómo leer "
+        },
+        {
+          "t": "una regla oficial",
+          "c": "blue"
+        }
+      ],
+      "sub": "Ejemplo vivo: docket USCIS-2026-0199, anunciado el 27 de julio de 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Hay un documento que manda.",
+      "body": [
+        {
+          "t": "La regla de asilo del 27 de julio de 2026 es una interim final rule con docket propio en el Federal Register. "
+        },
+        {
+          "t": "El documento manda, no el titular.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A quien tiene algo pendiente.",
+      "body": [
+        {
+          "t": "Si tienes un caso pendiente o vas a presentar uno, la fecha de vigencia del documento decide qué versión de la regla te aplica. "
+        },
+        {
+          "t": "Está en la página 1.",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El método, en 4 pasos.",
+      "sub": "Los mismos pasos funcionan para cualquier regla de USCIS, DHS o DOS.",
+      "label": "MÉTODO",
+      "code": "1. federalregister.gov -> Search\n2. Docket: USCIS-2026-0199\n   Document number: 2026-15190\n3. Read page 1:\n   - AGENCY\n   - EFFECTIVE DATE\n   - COMMENT DATE (if any)\n4. regulations.gov = same docket\n   + public comments"
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO",
+      "headline": "¿Qué guardas de cada regla?",
+      "stat": "USCIS-2026-0199"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El cambio, en resumen",
+      "items": [
+        "→ Busca el docket, no el titular",
+        "→ Lee la página 1 del documento",
+        "→ Anota la EFFECTIVE DATE",
+        "Información general — no es asesoría legal"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

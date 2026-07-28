@@ -1,0 +1,79 @@
+{
+  "slug": "post04-cuota-anual-asilo-hr1",
+  "caption": "Hay una obligación de pago que sigue viva desde abril y que mucha gente no tiene en el calendario: la cuota anual de asilo (annual asylum fee) creada por H.R. 1, la Reconciliation Act de 2025.\n\nEl 28 de abril de 2026, USCIS publicó una alerta titulada \"DHS Announces Consequences for Unpaid Annual Asylum Fees, Unveils New H.R. 1 Requirements\". Es decir: la agencia anunció formalmente que dejar de pagar esa cuota anual tiene consecuencias, y presentó requisitos nuevos derivados de H.R. 1.\n\nEl marco de tarifas está en la regla del Federal Register \"USCIS Immigration Fees and Related Procedures Required by H.R.1 Reconciliation Bill\", publicada el 29 de abril de 2026. Los montos y la mecánica de pago vigentes se consultan en uscis.gov, en la sección de Fees, y en la alerta original del 28 de abril de 2026: no confíes en cifras que circulan en redes sin fecha ni fuente.\n\nEN: H.R. 1 created an annual asylum fee. On April 28, 2026, USCIS published an alert on consequences for unpaid annual asylum fees and new H.R. 1 requirements; the fee framework was published in the Federal Register on April 29, 2026. Check current amounts on uscis.gov.\n\nComparte esto con alguien que tenga un caso de asilo pendiente.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #asilo #uscis #dhs #tarifasuscis #federalregister #noticiasinmigracion #inmigrantes #asylum #immigrationnews\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 004",
+      "headline": [
+        {
+          "t": "Cuota anual de asilo: "
+        },
+        {
+          "t": "hay consecuencias",
+          "c": "blue"
+        }
+      ],
+      "sub": "Alerta de USCIS del 28 de abril de 2026 sobre pagos no realizados.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "El no pago ya tiene efectos.",
+      "body": [
+        {
+          "t": "USCIS anunció consecuencias por cuotas anuales de asilo no pagadas y requisitos nuevos de H.R. 1. "
+        },
+        {
+          "t": "Fuente: alerta de USCIS del 28 de abril de 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "Casos de asilo pendientes.",
+      "body": [
+        {
+          "t": "Afecta a quien tiene una solicitud de asilo pendiente sujeta a la cuota anual creada por H.R. 1. "
+        },
+        {
+          "t": "Los montos vigentes se verifican en uscis.gov, sección Fees.",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Los títulos oficiales.",
+      "sub": "Búscalos así, con estas palabras, para llegar al documento correcto.",
+      "label": "DATOS OFICIALES",
+      "code": "USCIS alert - April 28, 2026\n\"DHS Announces Consequences for\nUnpaid Annual Asylum Fees, Unveils\nNew H.R. 1 Requirements\"\n\nFederal Register - April 29, 2026\n\"USCIS Immigration Fees and Related\nProcedures Required by H.R.1\nReconciliation Bill\""
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO",
+      "headline": "¿Desde cuándo está avisado?",
+      "stat": "28 de abril de 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El cambio, en resumen",
+      "items": [
+        "→ H.R. 1 creó una cuota anual de asilo",
+        "→ USCIS avisó consecuencias, 28 abr 2026",
+        "→ Montos vigentes: uscis.gov (Fees)",
+        "Información general — no es asesoría legal"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

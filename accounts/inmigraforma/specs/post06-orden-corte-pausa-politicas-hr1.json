@@ -1,0 +1,79 @@
+{
+  "slug": "post06-orden-corte-pausa-politicas-hr1",
+  "caption": "Cuando una corte interviene, USCIS lo publica. Ese es el canal donde conviene mirar, y hay un caso en curso que lo muestra.\n\nSegún la propia página de noticias de USCIS, el 21 de julio de 2026 la U.S. District Court for the District of Massachusetts emitió una orden en Venez. Ass'n of Mass., et al. v. USCIS, et al., 26-cv-13038-NMG (D. Mass.), concediendo en parte la moción de emergencia de los demandantes para un administrative stay de ciertas políticas de USCIS basadas en H.R. 1, la Reconciliation Act de 2025. USCIS publicó la alerta el 23 de julio de 2026.\n\nDos palabras importan aquí. \"En parte\": la corte no pausó todo lo pedido. \"Administrative stay\": es una pausa temporal mientras el litigio avanza, no una decisión final. El alcance exacto está en la alerta de USCIS y en la orden del tribunal, y puede cambiar; por eso el hábito útil es revisar uscis.gov/newsroom/alerts antes de asumir cómo queda tu trámite.\n\nEN: Per USCIS, on July 21, 2026 the U.S. District Court for the District of Massachusetts granted in part an emergency motion for an administrative stay of certain USCIS policies based on H.R. 1, in case 26-cv-13038-NMG. USCIS posted the alert on July 23, 2026. Scope may change as litigation continues.\n\nGuarda el número de caso y revisa las alertas de USCIS.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #dhs #cortesfederales #litigio #noticiasinmigracion #inmigrantes #asilo #immigrationnews #tramites\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 006",
+      "headline": [
+        {
+          "t": "Una corte pausó "
+        },
+        {
+          "t": "parte de H.R. 1",
+          "c": "blue"
+        }
+      ],
+      "sub": "Orden del 21 de julio de 2026 (D. Mass.); alerta de USCIS del 23 de julio.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Pausa parcial, no definitiva.",
+      "body": [
+        {
+          "t": "Una corte federal concedió en parte un administrative stay de ciertas políticas de USCIS basadas en H.R. 1. "
+        },
+        {
+          "t": "Fuente: alerta de USCIS del 23 de julio de 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "Depende del alcance exacto.",
+      "body": [
+        {
+          "t": "Solo alcanza las políticas que la orden nombra, y solo mientras dure la pausa. "
+        },
+        {
+          "t": "El alcance está en la alerta de USCIS y en la orden del tribunal.",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El caso, con su número.",
+      "sub": "Así lo cita USCIS en su propia alerta: guarda la referencia completa.",
+      "label": "DATOS OFICIALES",
+      "code": "Venez. Ass'n of Mass., et al. v.\nUSCIS, et al.\nNo. 26-cv-13038-NMG (D. Mass.)\nOrder: July 21, 2026\nGranted IN PART: administrative stay\nof certain USCIS policies based on\nH.R. 1, the Reconciliation Act of 2025\nUSCIS alert posted: July 23, 2026\nCheck: uscis.gov/newsroom/alerts"
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO",
+      "headline": "¿Qué número guardar?",
+      "stat": "26-cv-13038-NMG"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El cambio, en resumen",
+      "items": [
+        "→ Orden del 21 de julio de 2026",
+        "→ Stay concedido en parte, no en todo",
+        "→ Pausa temporal, no decisión final",
+        "Información general — no es asesoría legal"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

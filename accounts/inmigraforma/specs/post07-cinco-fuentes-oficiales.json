@@ -1,0 +1,79 @@
+{
+  "slug": "post07-cinco-fuentes-oficiales",
+  "caption": "Julio de 2026 dejó una lección de método: la misma noticia de asilo apareció el 27 de julio en uscis.gov (News Releases) y en dhs.gov, y el documento con fuerza legal salió en el Federal Register con su docket (USCIS-2026-0199). Tres lugares, una sola noticia, y solo uno decide.\n\nEstas son las cinco fuentes que usamos y que puedes usar tú: uscis.gov/newsroom para alertas y comunicados de la agencia; dhs.gov/news para declaraciones del departamento; travel.state.gov para asuntos consulares y el Visa Bulletin mensual; federalregister.gov para reglas y dockets; justice.gov/eoir para las cortes de inmigración.\n\nRegla práctica: si un dato no trae fuente y fecha, todavía no es un dato. Antes de reenviar algo que te llegó por WhatsApp, busca la alerta o el documento y fíjate en la fecha de publicación y en la fecha de vigencia. Son dos fechas distintas y se confunden mucho.\n\nEN: Five official sources worth bookmarking: uscis.gov/newsroom, dhs.gov/news, travel.state.gov (including the monthly Visa Bulletin), federalregister.gov, and justice.gov/eoir. Example from July 2026: one asylum announcement appeared on uscis.gov and dhs.gov on July 27, while the legal text ran in the Federal Register under docket USCIS-2026-0199.\n\nGuarda esta lista y compártela con quien reenvía noticias sin fuente.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #dhs #visabulletin #federalregister #eoir #noticiasinmigracion #inmigrantes #immigrationnews #tramites\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 007",
+      "headline": [
+        {
+          "t": "5 fuentes oficiales, "
+        },
+        {
+          "t": "un método",
+          "c": "blue"
+        }
+      ],
+      "sub": "Cómo verificar cualquier noticia, con el ejemplo del 27 de julio de 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Una noticia, tres lugares.",
+      "body": [
+        {
+          "t": "El 27 de julio de 2026 la regla de asilo se anunció en uscis.gov y dhs.gov; el texto legal salió en el Federal Register. "
+        },
+        {
+          "t": "Solo el documento decide.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A cualquiera con un trámite.",
+      "body": [
+        {
+          "t": "Da igual si tu caso es asilo, Green Card, I-485 o EAD: el método de verificación es el mismo. "
+        },
+        {
+          "t": "Sin fuente y fecha, todavía no es un dato.",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Guarda estas direcciones.",
+      "sub": "Cinco sitios oficiales y para qué sirve cada uno.",
+      "label": "FUENTES OFICIALES",
+      "code": "uscis.gov/newsroom = alerts, releases\ndhs.gov/news       = DHS statements\ntravel.state.gov   = visas, consulados\n   + Visa Bulletin (mensual)\nfederalregister.gov = rules + dockets\njustice.gov/eoir   = immigration courts\n\nEjemplo julio 2026:\ndocket USCIS-2026-0199"
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO",
+      "headline": "¿Cuántas pestañas necesitas?",
+      "stat": "5 fuentes oficiales"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El cambio, en resumen",
+      "items": [
+        "→ Busca la alerta oficial primero",
+        "→ Luego el documento y su docket",
+        "→ Publicación y vigencia: 2 fechas",
+        "Información general — no es asesoría legal"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

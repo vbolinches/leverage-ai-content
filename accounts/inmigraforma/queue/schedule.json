@@ -1,3 +1,110 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "id": "post01-asilo-referir-sin-entrevista",
+      "date": "2026-07-29",
+      "slides": [
+        "accounts/inmigraforma/queue/post01-asilo-referir-sin-entrevista/slide01.png",
+        "accounts/inmigraforma/queue/post01-asilo-referir-sin-entrevista/slide02.png",
+        "accounts/inmigraforma/queue/post01-asilo-referir-sin-entrevista/slide03.png",
+        "accounts/inmigraforma/queue/post01-asilo-referir-sin-entrevista/slide04.png",
+        "accounts/inmigraforma/queue/post01-asilo-referir-sin-entrevista/slide05.png",
+        "accounts/inmigraforma/queue/post01-asilo-referir-sin-entrevista/slide06.png"
+      ],
+      "caption": "El 27 de julio de 2026, DHS y USCIS anunciaron una interim final rule que permite a USCIS referir solicitudes de asilo a un Immigration Judge sin realizar primero la entrevista de asilo. El comunicado está en uscis.gov (News Releases) y en dhs.gov, ambos con fecha 27 de julio de 2026.\n\nSegún ese comunicado oficial, el propósito declarado es reducir el backlog y acortar el tiempo total que toman los asylum officers y los Immigration Judges en adjudicar solicitudes. El documento salió en inspección pública del Federal Register (DHS Docket No. USCIS-2026-0199) con publicación prevista para el 28 de julio de 2026.\n\nLo que el comunicado también dice, y conviene no perder de vista: referir no es negar. USCIS explica que, cuando refiere un caso, el Immigration Judge hace una nueva revisión de la solicitud. Las fechas de vigencia y el plazo de comentarios aparecen en la primera página del documento del Federal Register.\n\nEN: On July 27, 2026, DHS and USCIS announced an interim final rule allowing USCIS to refer asylum applications to immigration judges without interviewing the applicant first. Stated goal: reduce the asylum backlog. Sources: uscis.gov and dhs.gov news release, July 27, 2026; Federal Register docket USCIS-2026-0199.\n\nGuarda este post para conservar la fecha y el número de docket.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #asilo #uscis #dhs #federalregister #cortedeinmigracion #noticiasinmigracion #inmigrantes #immigrationnews #asylum\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/inmigraforma/queue/post01-asilo-referir-sin-entrevista/reel.mp4"
+    },
+    {
+      "id": "post02-asilo-afirmativo-vs-defensivo",
+      "date": "2026-07-30",
+      "slides": [
+        "accounts/inmigraforma/queue/post02-asilo-afirmativo-vs-defensivo/slide01.png",
+        "accounts/inmigraforma/queue/post02-asilo-afirmativo-vs-defensivo/slide02.png",
+        "accounts/inmigraforma/queue/post02-asilo-afirmativo-vs-defensivo/slide03.png",
+        "accounts/inmigraforma/queue/post02-asilo-afirmativo-vs-defensivo/slide04.png",
+        "accounts/inmigraforma/queue/post02-asilo-afirmativo-vs-defensivo/slide05.png",
+        "accounts/inmigraforma/queue/post02-asilo-afirmativo-vs-defensivo/slide06.png"
+      ],
+      "caption": "Para entender la regla anunciada el 27 de julio de 2026 hay que entender primero las dos vías del asilo, y USCIS las describe en su propio comunicado de ese día.\n\nVía afirmativa: la solicitud se presenta ante USCIS y la adjudica un asylum officer. Es la vía de quien no está en removal proceedings. Vía defensiva: la solicitud se resuelve ante un Immigration Judge del Departamento de Justicia (EOIR), y es la vía de quien sí está en removal proceedings.\n\nEl comunicado de USCIS explica que, según el estatus de la persona, USCIS normalmente adjudica la solicitud o la refiere a un Immigration Judge, quien entonces hace una nueva revisión de la solicitud. Eso es lo que cambia de forma: con la interim final rule (Docket USCIS-2026-0199), ese referral puede ocurrir sin entrevista previa.\n\nEN: Affirmative asylum is decided by USCIS for people not in removal proceedings; defensive asylum is decided by an immigration judge for people who are. USCIS says it either adjudicates the case or refers it to a judge, who conducts a new review. Source: USCIS/DHS news release, July 27, 2026.\n\n¿Te sirvió el mapa de las dos vías? Guárdalo y dinos en comentarios qué término quieres que expliquemos.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #asilo #uscis #eoir #cortedeinmigracion #asylum #noticiasinmigracion #inmigrantes #dhs #immigrationnews\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+      "status": "queued"
+    },
+    {
+      "id": "post03-como-leer-una-regla-federal-register",
+      "date": "2026-07-31",
+      "slides": [
+        "accounts/inmigraforma/queue/post03-como-leer-una-regla-federal-register/slide01.png",
+        "accounts/inmigraforma/queue/post03-como-leer-una-regla-federal-register/slide02.png",
+        "accounts/inmigraforma/queue/post03-como-leer-una-regla-federal-register/slide03.png",
+        "accounts/inmigraforma/queue/post03-como-leer-una-regla-federal-register/slide04.png",
+        "accounts/inmigraforma/queue/post03-como-leer-una-regla-federal-register/slide05.png",
+        "accounts/inmigraforma/queue/post03-como-leer-una-regla-federal-register/slide06.png"
+      ],
+      "caption": "Cada cambio real de inmigración deja rastro escrito en el Federal Register. Saber leer ese rastro es la diferencia entre enterarte y confirmar.\n\nLa regla de asilo anunciada por USCIS y DHS el 27 de julio de 2026 sirve de ejemplo vivo: es una interim final rule, con DHS Docket No. USCIS-2026-0199, que apareció en inspección pública del Federal Register (documento 2026-15190) con publicación prevista para el 28 de julio de 2026.\n\nMétodo: busca el docket en federalregister.gov, abre el documento y lee la primera página antes que cualquier titular. Ahí están la agencia, la fecha de vigencia (EFFECTIVE DATE), y si el documento acepta comentarios y hasta cuándo. En regulations.gov encuentras el mismo docket y los comentarios públicos.\n\nEN: To confirm any change, look it up in the Federal Register by docket number and read page one: agency, effective date, and whether comments are being accepted. Live example: DHS Docket No. USCIS-2026-0199, document 2026-15190, announced July 27, 2026.\n\nGuarda este método: te sirve para cualquier regla, no solo para esta.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #federalregister #uscis #dhs #regulaciones #noticiasinmigracion #inmigrantes #asilo #immigrationnews #tramites\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/inmigraforma/queue/post03-como-leer-una-regla-federal-register/reel.mp4"
+    },
+    {
+      "id": "post04-cuota-anual-asilo-hr1",
+      "date": "2026-08-01",
+      "slides": [
+        "accounts/inmigraforma/queue/post04-cuota-anual-asilo-hr1/slide01.png",
+        "accounts/inmigraforma/queue/post04-cuota-anual-asilo-hr1/slide02.png",
+        "accounts/inmigraforma/queue/post04-cuota-anual-asilo-hr1/slide03.png",
+        "accounts/inmigraforma/queue/post04-cuota-anual-asilo-hr1/slide04.png",
+        "accounts/inmigraforma/queue/post04-cuota-anual-asilo-hr1/slide05.png",
+        "accounts/inmigraforma/queue/post04-cuota-anual-asilo-hr1/slide06.png"
+      ],
+      "caption": "Hay una obligación de pago que sigue viva desde abril y que mucha gente no tiene en el calendario: la cuota anual de asilo (annual asylum fee) creada por H.R. 1, la Reconciliation Act de 2025.\n\nEl 28 de abril de 2026, USCIS publicó una alerta titulada \"DHS Announces Consequences for Unpaid Annual Asylum Fees, Unveils New H.R. 1 Requirements\". Es decir: la agencia anunció formalmente que dejar de pagar esa cuota anual tiene consecuencias, y presentó requisitos nuevos derivados de H.R. 1.\n\nEl marco de tarifas está en la regla del Federal Register \"USCIS Immigration Fees and Related Procedures Required by H.R.1 Reconciliation Bill\", publicada el 29 de abril de 2026. Los montos y la mecánica de pago vigentes se consultan en uscis.gov, en la sección de Fees, y en la alerta original del 28 de abril de 2026: no confíes en cifras que circulan en redes sin fecha ni fuente.\n\nEN: H.R. 1 created an annual asylum fee. On April 28, 2026, USCIS published an alert on consequences for unpaid annual asylum fees and new H.R. 1 requirements; the fee framework was published in the Federal Register on April 29, 2026. Check current amounts on uscis.gov.\n\nComparte esto con alguien que tenga un caso de asilo pendiente.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #asilo #uscis #dhs #tarifasuscis #federalregister #noticiasinmigracion #inmigrantes #asylum #immigrationnews\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+      "status": "queued"
+    },
+    {
+      "id": "post05-correccion-regla-tarifas-hr1",
+      "date": "2026-08-02",
+      "slides": [
+        "accounts/inmigraforma/queue/post05-correccion-regla-tarifas-hr1/slide01.png",
+        "accounts/inmigraforma/queue/post05-correccion-regla-tarifas-hr1/slide02.png",
+        "accounts/inmigraforma/queue/post05-correccion-regla-tarifas-hr1/slide03.png",
+        "accounts/inmigraforma/queue/post05-correccion-regla-tarifas-hr1/slide04.png",
+        "accounts/inmigraforma/queue/post05-correccion-regla-tarifas-hr1/slide05.png",
+        "accounts/inmigraforma/queue/post05-correccion-regla-tarifas-hr1/slide06.png"
+      ],
+      "caption": "Detalle pequeño, consecuencia grande: las reglas publicadas se corrigen, y la versión corregida es la que cuenta.\n\nLa regla \"USCIS Immigration Fees and Related Procedures Required by H.R.1 Reconciliation Bill\" se publicó en el Federal Register el 29 de abril de 2026 (documento 2026-08333). El 21 de julio de 2026 el Federal Register publicó una corrección de esa misma regla (documento 2026-14698, titulada \"...; Correction\").\n\nQué hacer con eso, en la práctica: antes de pagar una tarifa o enviar un formulario, revisa si el documento que estás leyendo tiene una corrección posterior. En federalregister.gov, la ficha de cada documento enlaza las correcciones y documentos relacionados. Y los montos que USCIS cobra hoy están en uscis.gov, sección Fees.\n\nEN: The H.R.1 USCIS fee rule was published in the Federal Register on April 29, 2026 (doc. 2026-08333) and corrected on July 21, 2026 (doc. 2026-14698). Before paying or filing, check whether the document you are reading has a later correction.\n\nGuarda esto: es el paso que casi nadie hace antes de pagar.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #tarifasuscis #federalregister #dhs #tramites #noticiasinmigracion #inmigrantes #immigrationnews #asilo\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/inmigraforma/queue/post05-correccion-regla-tarifas-hr1/reel.mp4"
+    },
+    {
+      "id": "post06-orden-corte-pausa-politicas-hr1",
+      "date": "2026-08-03",
+      "slides": [
+        "accounts/inmigraforma/queue/post06-orden-corte-pausa-politicas-hr1/slide01.png",
+        "accounts/inmigraforma/queue/post06-orden-corte-pausa-politicas-hr1/slide02.png",
+        "accounts/inmigraforma/queue/post06-orden-corte-pausa-politicas-hr1/slide03.png",
+        "accounts/inmigraforma/queue/post06-orden-corte-pausa-politicas-hr1/slide04.png",
+        "accounts/inmigraforma/queue/post06-orden-corte-pausa-politicas-hr1/slide05.png",
+        "accounts/inmigraforma/queue/post06-orden-corte-pausa-politicas-hr1/slide06.png"
+      ],
+      "caption": "Cuando una corte interviene, USCIS lo publica. Ese es el canal donde conviene mirar, y hay un caso en curso que lo muestra.\n\nSegún la propia página de noticias de USCIS, el 21 de julio de 2026 la U.S. District Court for the District of Massachusetts emitió una orden en Venez. Ass'n of Mass., et al. v. USCIS, et al., 26-cv-13038-NMG (D. Mass.), concediendo en parte la moción de emergencia de los demandantes para un administrative stay de ciertas políticas de USCIS basadas en H.R. 1, la Reconciliation Act de 2025. USCIS publicó la alerta el 23 de julio de 2026.\n\nDos palabras importan aquí. \"En parte\": la corte no pausó todo lo pedido. \"Administrative stay\": es una pausa temporal mientras el litigio avanza, no una decisión final. El alcance exacto está en la alerta de USCIS y en la orden del tribunal, y puede cambiar; por eso el hábito útil es revisar uscis.gov/newsroom/alerts antes de asumir cómo queda tu trámite.\n\nEN: Per USCIS, on July 21, 2026 the U.S. District Court for the District of Massachusetts granted in part an emergency motion for an administrative stay of certain USCIS policies based on H.R. 1, in case 26-cv-13038-NMG. USCIS posted the alert on July 23, 2026. Scope may change as litigation continues.\n\nGuarda el número de caso y revisa las alertas de USCIS.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #dhs #cortesfederales #litigio #noticiasinmigracion #inmigrantes #asilo #immigrationnews #tramites\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+      "status": "queued"
+    },
+    {
+      "id": "post07-cinco-fuentes-oficiales",
+      "date": "2026-08-04",
+      "slides": [
+        "accounts/inmigraforma/queue/post07-cinco-fuentes-oficiales/slide01.png",
+        "accounts/inmigraforma/queue/post07-cinco-fuentes-oficiales/slide02.png",
+        "accounts/inmigraforma/queue/post07-cinco-fuentes-oficiales/slide03.png",
+        "accounts/inmigraforma/queue/post07-cinco-fuentes-oficiales/slide04.png",
+        "accounts/inmigraforma/queue/post07-cinco-fuentes-oficiales/slide05.png",
+        "accounts/inmigraforma/queue/post07-cinco-fuentes-oficiales/slide06.png"
+      ],
+      "caption": "Julio de 2026 dejó una lección de método: la misma noticia de asilo apareció el 27 de julio en uscis.gov (News Releases) y en dhs.gov, y el documento con fuerza legal salió en el Federal Register con su docket (USCIS-2026-0199). Tres lugares, una sola noticia, y solo uno decide.\n\nEstas son las cinco fuentes que usamos y que puedes usar tú: uscis.gov/newsroom para alertas y comunicados de la agencia; dhs.gov/news para declaraciones del departamento; travel.state.gov para asuntos consulares y el Visa Bulletin mensual; federalregister.gov para reglas y dockets; justice.gov/eoir para las cortes de inmigración.\n\nRegla práctica: si un dato no trae fuente y fecha, todavía no es un dato. Antes de reenviar algo que te llegó por WhatsApp, busca la alerta o el documento y fíjate en la fecha de publicación y en la fecha de vigencia. Son dos fechas distintas y se confunden mucho.\n\nEN: Five official sources worth bookmarking: uscis.gov/newsroom, dhs.gov/news, travel.state.gov (including the monthly Visa Bulletin), federalregister.gov, and justice.gov/eoir. Example from July 2026: one asylum announcement appeared on uscis.gov and dhs.gov on July 27, while the legal text ran in the Federal Register under docket USCIS-2026-0199.\n\nGuarda esta lista y compártela con quien reenvía noticias sin fuente.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #dhs #visabulletin #federalregister #eoir #noticiasinmigracion #inmigrantes #immigrationnews #tramites\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/inmigraforma/queue/post07-cinco-fuentes-oficiales/reel.mp4"
+    }
+  ]
 }
