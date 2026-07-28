@@ -18,10 +18,15 @@ Spanish-speaking people personally affected by US immigration policy.
 
 ## Non-negotiables (not hypotheses)
 
+- News comes ONLY from official government outlets (USCIS, DHS, State
+  Department, Federal Register, EOIR). No secondary-press reporting as news.
+- Immigration-lawyer commentary is allowed ONLY as clearly labelled opinion
+  ("OPINIÓN", lawyer/firm named) with the not-legal-advice disclaimer.
 - Every claim carries a source and a date on the slide itself.
-- Nothing publishes that was not verified against an official source.
 - No individual legal advice, ever. The disclaimer line closes every caption.
 - Never alarmist. People make life decisions on this information.
+- Visual continuity: keep the account's existing style — no big changes in
+  colors or fonts (owner's instruction, 2026-07-27).
 
 ## Confirmed
 
