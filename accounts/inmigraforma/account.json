@@ -1,0 +1,30 @@
+{
+  "slug": "inmigraforma",
+  "username": "inmigraforma",
+  "ig_user_id": "17841464133054122",
+  "token_secret": "IG_TOKEN_INMIGRAFORMA",
+  "user_id_secret": "IG_USER_ID_INMIGRAFORMA",
+  "enabled": false,
+  "wordmark": "INMIGRAFORMA",
+  "theme": "US immigration news explained in Spanish and English — policy changes, USCIS updates, visa news, and what they mean in practice",
+  "eyebrow_prefix": "NOTICIA",
+  "voice": "Bilingual: slides in Spanish, plus one short English recap paragraph in the caption. Keep official terms in English (Green Card, parole, Visa Bulletin, I-485, EAD). Calm, precise, neutral — never alarmist, never speculative about future policy. Report ONLY changes you verified on official sources (uscis.gov, dhs.gov, state.gov, travel.state.gov, federalregister.gov) or reputable legal analyses, and name the source and date on the slide for every claim. Prefer explainers that stay accurate for at least two weeks; skip anything that could flip within days. General information only, never individual legal advice: every caption ends with 'Información general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.'",
+  "cta_line": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.",
+  "search_brief": "recent US immigration policy and procedure changes from official sources — USCIS announcements, DHS and State Department notices, Federal Register rules, the monthly Visa Bulletin, court decisions affecting immigration, and analyses published by immigration lawyers",
+  "post_arc": "Each post is a 4-7 slide carousel following this arc:\n  1. cover   - the news in one clear Spanish headline; the date visible in the sub line\n  2. step    - QUÉ CAMBIÓ: what changed, with source and date named on the slide\n  3. step    - A QUIÉN AFECTA: who is affected, concretely (visa categories, countries, pending cases)\n  4. prompt  - DATOS CLAVE: key dates, numbers or quoted rule text in the code box, in English as officially published\n  5. stat    - the single number or date that matters most\n  6. recap   - the change in 3-4 arrows, save CTA, and the line 'Información general — no es asesoría legal'",
+  "colors": {},
+  "dm_welcome": {
+    "enabled": true,
+    "text": "¡Gracias por tu mensaje! 🙌 Este buzón es automatizado, así que esta es la única respuesta que recibirás aquí. No podemos responder consultas sobre casos individuales — para tu caso, consulta a un abogado de inmigración. Todo lo que publicamos está en los posts: guárdalos para tenerlos a mano. / Thanks for your message! This inbox is automated and we cannot answer questions about individual cases — please consult an immigration attorney. Everything we share is in the posts."
+  },
+  "idea_sources": {
+    "x_accounts": ["USCIS", "DHSgov", "StateDept", "TravelGov", "ReichlinMelnick"],
+    "rss": [
+      "https://news.google.com/rss/search?q=USCIS&hl=en-US&gl=US&ceid=US:en",
+      "https://news.google.com/rss/search?q=%22visa%20bulletin%22&hl=en-US&gl=US&ceid=US:en",
+      "https://news.google.com/rss/search?q=%22US%20immigration%22%20OR%20%22green%20card%22%20when:7d&hl=en-US&gl=US&ceid=US:en",
+      "https://immigrationimpact.com/feed/"
+    ],
+    "hn_queries": []
+  }
+}

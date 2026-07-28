@@ -17,13 +17,16 @@ slide images from raw URLs, which only works on a public repo on `main`).
 
 ## Read this before changing anything
 
-**1. The wrong-account hazard is real.** The Facebook account behind this app
-also administers **@inmigraforma**, an unrelated live business with a real
-audience. During setup the token could reach *only* that account. Publishing 14
-AI-productivity carousels there would have been unrecoverable.
+**1. The wrong-account hazard is real — and both accounts are live now.**
+`@inmigraforma` (IG `17841464133054122`) was originally the account these
+guards protected *against*: an unrelated live business the setup token could
+reach by accident. As of 2026-07 it is **tenant two** — a bilingual US
+immigration news account with a real audience. That makes the hazard
+symmetric: crossed secrets would publish AI-productivity content to an
+immigration audience or vice versa, both live, both real.
 
-- Correct target: `IG_USER_ID = 17841443853596707` = `@leverageai.daily`
-- Wrong target: `17841464133054122` = `@inmigraforma`
+- `17841443853596707` = `@leverageai.daily` (AI workflows, English)
+- `17841464133054122` = `@inmigraforma` (immigration news, ES/EN)
 
 Each `account.json` records the expected username AND ig_user_id, and
 `publish.py` re-proves the live token against both before every publish
@@ -125,6 +128,8 @@ shared across accounts.
 |---|---|---|
 | `IG_ACCESS_TOKEN` | leverageai | set; expires 2026-09-22 |
 | `IG_USER_ID` | leverageai | set |
+| `IG_TOKEN_INMIGRAFORMA` | inmigraforma | **not set** — account stays disabled until it is |
+| `IG_USER_ID_INMIGRAFORMA` | inmigraforma | **not set** — value is `17841464133054122` |
 | `ANTHROPIC_API_KEY` | shared | set |
 | `GH_PAT` | shared | **invalid** — rejected 401; value is not a GitHub token |
 | `X_BEARER_TOKEN` | shared | **not set** — X idea sources skipped until it is |

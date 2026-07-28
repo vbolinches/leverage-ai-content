@@ -87,17 +87,23 @@ def list_accounts(include_disabled=False):
 
 
 def get(slug=None):
-    """Resolve one account: explicit slug > ACCOUNT env > the single account."""
+    """Resolve one account: explicit slug > ACCOUNT env > the single account.
+
+    Naming a slug explicitly also finds DISABLED accounts — setup work (filling
+    a queue, testing sources, dry-running generation) happens before an account
+    is enabled. Only the unnamed fallback and the workflow matrices are limited
+    to enabled accounts, so a disabled account still can't be reached by cron.
+    """
     slug = slug or os.environ.get("ACCOUNT")
+    if slug:
+        for a in list_accounts(include_disabled=True):
+            if a["slug"] == slug:
+                return a
+        known = ", ".join(a["slug"] for a in list_accounts(include_disabled=True))
+        raise SystemExit(f"unknown account {slug!r} (have: {known})")
     accts = list_accounts()
     if not accts:
         raise SystemExit("no enabled accounts under accounts/*/account.json")
-    if slug:
-        for a in accts:
-            if a["slug"] == slug:
-                return a
-        known = ", ".join(a["slug"] for a in accts)
-        raise SystemExit(f"unknown account {slug!r} (enabled: {known})")
     if len(accts) == 1:
         return accts[0]
     known = ", ".join(a["slug"] for a in accts)

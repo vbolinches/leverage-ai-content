@@ -39,19 +39,24 @@ WEB_SEARCH_TOOL = {
     "max_uses": 8,
 }
 
-# The account-agnostic parts of the brand system prompt. Voice, theme, handle
-# and CTA line come from accounts/<slug>/account.json; the no-reply-promise
-# rule is universal — every account here publishes unattended.
+# The account-agnostic parts of the brand system prompt. Voice, theme, handle,
+# CTA line — and optionally the slide arc and eyebrow series — come from
+# accounts/<slug>/account.json; the no-reply-promise rule is universal — every
+# account here publishes unattended.
+DEFAULT_ARC = """Each post is a 4-7 slide carousel following this arc:
+  1. cover     - hook + one-line promise
+  2-4. step    - concrete steps; one may be a `prompt` slide with a copyable prompt
+  5. stat      - the payoff, one big number or phrase
+  6. recap     - the system as 3-4 arrows, plus a save CTA"""
+
+SERIES = ACCT.get("eyebrow_prefix", "WORKFLOW")
+
 BRAND = f"""You write carousel posts for {ACCT.handle}, an Instagram account \
 publishing {ACCT['theme']}.
 
 Voice: {ACCT['voice']}
 
-Each post is a 4-7 slide carousel following this arc:
-  1. cover     - hook + one-line promise
-  2-4. step    - concrete steps; one may be a `prompt` slide with a copyable prompt
-  5. stat      - the payoff, one big number or phrase
-  6. recap     - the system as 3-4 arrows, plus a save CTA
+{ACCT.get('post_arc') or DEFAULT_ARC}
 
 Captions: 2-4 short paragraphs, a save/comment prompt, the line \
 "{ACCT['cta_line']}", then 8-10 \
@@ -74,7 +79,7 @@ Each post:
 }
 
 Slide kinds and their fields:
-  {"kind":"cover","eyebrow":"WORKFLOW NNN","headline":[{"t":"Plain "},{"t":"accent.","c":"blue"}],"sub":"one line","footer_right":"SWIPE →"}
+  {"kind":"cover","eyebrow":"__SERIES__ NNN","headline":[{"t":"Plain "},{"t":"accent.","c":"blue"}],"sub":"one line","footer_right":"SWIPE →"}
   {"kind":"step","eyebrow":"STEP 1","headline":"Short imperative.","body":[{"t":"explanation "},{"t":"key point.","c":"green","b":true}]}
   {"kind":"prompt","eyebrow":"STEP 2","headline":"Short.","sub":"one line","label":"COPY THIS PROMPT","code":"literal prompt\\nwith newlines"}
   {"kind":"stat","eyebrow":"THE PAYOFF","headline":"Framing question:","stat":"~big phrase"}
@@ -85,9 +90,10 @@ Hard limits (text overflows the canvas otherwise):
   code <= 9 lines, each <= 46 chars       stat <= 22 chars
   items: 3-4, each <= 44 chars            eyebrow <= 16 chars"""
 
-# The schema example must show this account's CTA, not a placeholder — the
-# model copies examples far more reliably than instructions.
-SCHEMA = SCHEMA.replace("__CTA_SUB__", ACCT["cta_line"].rstrip("."))
+# The schema examples must show this account's CTA and eyebrow series, not
+# placeholders — the model copies examples far more reliably than instructions.
+SCHEMA = (SCHEMA.replace("__CTA_SUB__", ACCT["cta_line"].rstrip("."))
+                .replace("__SERIES__", SERIES))
 
 
 def load_queue():
@@ -250,7 +256,7 @@ def author(count, start_index, avoid):
         + "Then write the posts and submit them with the submit_posts tool.\n\n"
         f"{SCHEMA}\n\n"
         f"Write {count} posts. Use these slug prefixes in order: {slugs}.\n"
-        f"Number the cover eyebrows WORKFLOW {start_index:03d} onward.\n\n"
+        f"Number the cover eyebrows {SERIES} {start_index:03d} onward.\n\n"
         "Prefer topics that are timely without being disposable — a workflow that "
         "is useful because of something that changed recently, not news commentary. "
         "Never state a fact you did not verify by search.\n\n"
@@ -323,16 +329,23 @@ def validate(post):
         errs.append("missing caption")
     if len(cap) > 2200:
         errs.append(f"caption {len(cap)} chars > 2200 Instagram limit")
-    # Nobody is watching the inbox, so a caption must not promise a reply.
+    # Nobody is watching the inbox, so a caption must not promise a reply —
+    # in any of the languages this system publishes in.
     low = cap.lower()
     for phrase in ("i'll send", "ill send", "i will send", "dm me", "send you the",
-                   "comment below and i", "and i'll share", "i'll dm", "i'll reply"):
+                   "comment below and i", "and i'll share", "i'll dm", "i'll reply",
+                   "te enviaré", "te envío", "te envio", "te mando", "te paso el",
+                   "escríbeme y", "escribeme y", "mándame un dm", "mandame un dm",
+                   "te respondo", "te comparto por dm"):
         if phrase in low:
             errs.append(f"caption promises a reply nobody will send: {phrase!r}")
-    # e.g. 'Comment "LOG" for the template' — an implicit promise of a hand-off.
-    m = re.search(r'comment\s+["“\']?\w+["”\']?\s+(?:for|and|to get)\b', low)
-    if m:
-        errs.append(f"caption implies a hand-off nobody will make: {m.group(0)!r}")
+    # e.g. 'Comment "LOG" for the template' / 'Comenta "VISA" y te mando...' —
+    # an implicit promise of a hand-off.
+    for pat in (r'comment\s+["“\']?\w+["”\']?\s+(?:for|and|to get)\b',
+                r'comenta\s+["“\']?\w+["”\']?\s+y\s+te\b'):
+        m = re.search(pat, low)
+        if m:
+            errs.append(f"caption implies a hand-off nobody will make: {m.group(0)!r}")
 
     slides = post.get("slides", [])
     if not 2 <= len(slides) <= 10:
