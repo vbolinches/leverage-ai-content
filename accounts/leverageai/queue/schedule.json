@@ -61,9 +61,11 @@
         "accounts/leverageai/queue/post04-chatgpt-mistakes/slide07.png"
       ],
       "caption": "It's (usually) not the AI. It's the brief. 🎯\n\nThese 5 mistakes explain most \"AI gives me generic answers\" complaints. Number 4 alone will change your outputs more than any new tool.\n\nWhich one are you guilty of? Be honest 👇\n\nDaily leverage, zero hype → @leverageai.daily\n\n#chatgpt #aitips #promptengineering #chatgptprompts #aitools #productivitytips #worksmarter #ai #aiworkflow #digitalskills",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post04-chatgpt-mistakes/reel.mp4"
+      "video": "accounts/leverageai/queue/post04-chatgpt-mistakes/reel.mp4",
+      "published_media_id": "18114416365943333",
+      "published_on": "2026-07-28"
     },
     {
       "id": "post05-notebooklm-workflow",
