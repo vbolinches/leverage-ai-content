@@ -139,7 +139,20 @@ def main():
     tcfg = ACCT.get("threads") or {}
     ttok = os.environ.get("THREADS_ACCESS_TOKEN")
     tid = os.environ.get("THREADS_USER_ID")
-    if tcfg and ttok and tid:
+    if tcfg and ttok and not tid:
+        # Token exists but the user-id secret doesn't: look the id up from the
+        # token (ids are not secret) and tell the operator what to set.
+        turl = (f"https://graph.threads.net/v1.0/me?fields=id,username"
+                f"&access_token={urllib.parse.quote(ttok)}")
+        try:
+            with urllib.request.urlopen(turl) as r:
+                tme = json.load(r)
+            print(f"::warning::[{ACCT['slug']}] Threads token OK "
+                  f"(@{tme.get('username')}) but {tcfg.get('user_id_secret')} "
+                  f"is not set. Set it to: {tme.get('id')}")
+        except urllib.error.HTTPError as e:
+            fail(f"threads token rejected: {e.read().decode(errors='replace')[:300]}")
+    elif tcfg and ttok and tid:
         turl = (f"https://graph.threads.net/v1.0/me?fields=id,username"
                 f"&access_token={urllib.parse.quote(ttok)}")
         try:
