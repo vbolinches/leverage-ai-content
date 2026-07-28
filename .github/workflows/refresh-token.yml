@@ -41,6 +41,7 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets[matrix.account.token_secret] }}
           TOKEN_SECRET_NAME: ${{ matrix.account.token_secret }}
           GH_PAT: ${{ secrets.GH_PAT }}
+          FB_APP_SECRET: ${{ secrets.FB_APP_SECRET }}
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
@@ -53,10 +54,24 @@ jobs:
             exit 1
           fi
 
-          echo "--- Requesting a fresh 60-day token for ${{ matrix.account.slug }} ---"
-          resp=$(curl -sS -G "https://graph.instagram.com/refresh_access_token" \
-            --data-urlencode "grant_type=ig_refresh_token" \
-            --data-urlencode "access_token=$IG_ACCESS_TOKEN")
+          echo "--- Requesting a fresh 60-day token for ${{ matrix.account.slug }} (${{ matrix.account.api }}) ---"
+          if [ "${{ matrix.account.api }}" = "facebook_page" ]; then
+            # Facebook-Login user tokens refresh by exchanging the still-valid
+            # token, which needs the app secret (FB_APP_SECRET repo secret).
+            if [ -z "${FB_APP_SECRET:-}" ]; then
+              echo "::error::FB_APP_SECRET is not set — cannot refresh a facebook_page-route token. Refresh by hand (README)."
+              exit 1
+            fi
+            resp=$(curl -sS -G "https://graph.facebook.com/v21.0/oauth/access_token" \
+              --data-urlencode "grant_type=fb_exchange_token" \
+              --data-urlencode "client_id=1805978924108246" \
+              --data-urlencode "client_secret=$FB_APP_SECRET" \
+              --data-urlencode "fb_exchange_token=$IG_ACCESS_TOKEN")
+          else
+            resp=$(curl -sS -G "https://graph.instagram.com/refresh_access_token" \
+              --data-urlencode "grant_type=ig_refresh_token" \
+              --data-urlencode "access_token=$IG_ACCESS_TOKEN")
+          fi
 
           if echo "$resp" | jq -e '.error' >/dev/null; then
             echo "::error::Refresh failed: $(echo "$resp" | jq -c '.error.message')"

@@ -71,6 +71,13 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
+    # Facebook-Login-route accounts read DMs via the Page inbox — different
+    # endpoints, not implemented. Skip cleanly rather than half-work.
+    if ACCT.get("api", "instagram_login") != "instagram_login":
+        print(f"[{ACCT['slug']}] api={ACCT.get('api')} — DM responder supports "
+              f"the instagram_login route only; skipping")
+        return 0
+
     cfg = ACCT.get("dm_welcome") or {}
     if not cfg.get("enabled"):
         print(f"[{ACCT['slug']}] dm_welcome disabled in account.json — nothing to do")

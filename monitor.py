@@ -18,12 +18,17 @@ from datetime import date, datetime, timezone
 
 import accounts
 
-GRAPH = "https://graph.instagram.com/v21.0"
-TOKEN = os.environ.get("IG_ACCESS_TOKEN")
-IG_ID = os.environ.get("IG_USER_ID")
-
 ACCT = accounts.get()
 EXPECTED_USERNAME = ACCT["username"]
+
+# Route-aware (see publish.py): facebook_page accounts are read through
+# graph.facebook.com, where there is no Instagram /me — the IG node is
+# addressed by id and answers the same fields.
+ROUTE = ACCT.get("api", "instagram_login")
+GRAPH = ("https://graph.facebook.com/v21.0" if ROUTE == "facebook_page"
+         else "https://graph.instagram.com/v21.0")
+TOKEN = os.environ.get("IG_ACCESS_TOKEN")
+IG_ID = os.environ.get("IG_USER_ID")
 
 
 def get(path, **params):
@@ -65,7 +70,11 @@ def collect():
     days, err = token_runway()
     report["token"] = {"days_left": days, "error": err}
 
-    me, err = get("me", fields="user_id,username,account_type,followers_count,media_count")
+    if ROUTE == "facebook_page":
+        me, err = get(str(IG_ID), fields="username,followers_count,media_count")
+    else:
+        me, err = get("me", fields="user_id,username,account_type,"
+                                   "followers_count,media_count")
     if err:
         report["fatal"] = f"account lookup failed: {err}"
         return report
@@ -78,7 +87,7 @@ def collect():
 
     report["account"] = {
         "username": me.get("username"),
-        "type": me.get("account_type"),
+        "type": me.get("account_type", "business"),
         "followers": me.get("followers_count"),
         "posts": me.get("media_count"),
     }

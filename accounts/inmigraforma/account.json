@@ -4,6 +4,7 @@
   "ig_user_id": "17841464133054122",
   "token_secret": "IG_TOKEN_INMIGRAFORMA",
   "user_id_secret": "IG_USER_ID_INMIGRAFORMA",
+  "api": "facebook_page",
   "enabled": false,
   "wordmark": "INMIGRAFORMA",
   "theme": "US immigration news explained in Spanish and English — policy changes, USCIS updates, visa news, and what they mean in practice",

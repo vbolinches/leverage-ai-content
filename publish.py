@@ -16,34 +16,55 @@ Design notes:
 - Exits 0 with "nothing due" when queue is empty/ahead of schedule, so the
   cron never fails spuriously. Any API error exits 1 → Actions email alert.
 """
-import json, os, sys, time, urllib.parse, urllib.request
+import json, os, sys, time, urllib.error, urllib.parse, urllib.request
 from datetime import date
 
 import accounts
 
-# Instagram API with Instagram Login (graph.instagram.com) — publishes direct to
-# an Instagram professional account, no Facebook Page link required.
-GRAPH = "https://graph.instagram.com/v21.0"
+ACCT = accounts.get()
+QUEUE = ACCT.queue
+
+# Two API routes exist because Meta's account topologies differ per account:
+#
+# instagram_login (default) — graph.instagram.com with an Instagram-Login
+#   token. Needs no Facebook Page. Used by accounts whose Instagram sits in
+#   its own Accounts Center (leverageai).
+#
+# facebook_page — graph.facebook.com with a Facebook-Login user token. Works
+#   only when the Instagram account is business-linked to a Facebook Page the
+#   token's user administers (inmigraforma). Same container/publish endpoints,
+#   different host — and it can ALSO cross-post to the linked Facebook Page.
+ROUTE = ACCT.get("api", "instagram_login")
+GRAPH = ("https://graph.facebook.com/v21.0" if ROUTE == "facebook_page"
+         else "https://graph.instagram.com/v21.0")
 TOKEN = os.environ["IG_ACCESS_TOKEN"]
 IG_ID = os.environ["IG_USER_ID"]
 RAW_BASE = os.environ.get("RAW_BASE")  # e.g. https://raw.githubusercontent.com/<user>/<repo>/main
-ACCT = accounts.get()
-QUEUE = ACCT.queue
+
+
+def _get(path, **params):
+    params["access_token"] = TOKEN
+    url = f"{GRAPH}/{path}?{urllib.parse.urlencode(params)}"
+    with urllib.request.urlopen(url) as r:
+        return json.load(r)
 
 
 def assert_target():
     """Refuse to publish unless token, secret, and account config all agree.
 
-    The wrong-account hazard is real (see CLAUDE.md): the Facebook identity
-    behind this app also administers an unrelated live business. With multiple
-    accounts, a crossed secret pair would publish one brand's content to
-    another brand's audience — so every publish re-proves the token's identity
+    The wrong-account hazard is real (see CLAUDE.md): both accounts are live
+    businesses now, so a crossed secret pair would publish one brand's content
+    to the other's audience — every publish re-proves the token's identity
     against the account directory it is about to publish from.
     """
-    url = f"{GRAPH}/me?fields=user_id,username&access_token={TOKEN}"
-    with urllib.request.urlopen(url) as r:
-        me = json.load(r)
-    actual_user, actual_id = me.get("username"), str(me.get("user_id"))
+    if ROUTE == "facebook_page":
+        # A Facebook-Login token has no Instagram /me — ask the IG node
+        # directly whether this token sees the expected username there.
+        me = _get(str(ACCT["ig_user_id"]), fields="username")
+        actual_user, actual_id = me.get("username"), str(me.get("id"))
+    else:
+        me = _get("me", fields="user_id,username")
+        actual_user, actual_id = me.get("username"), str(me.get("user_id"))
     if actual_user != ACCT["username"]:
         raise RuntimeError(
             f"WRONG ACCOUNT: token resolves to @{actual_user}, but account "
@@ -52,6 +73,78 @@ def assert_target():
         raise RuntimeError(
             f"WRONG ACCOUNT: ids disagree (token={actual_id}, "
             f"secret={IG_ID}, config={ACCT['ig_user_id']}). Refusing to publish.")
+
+
+def page_token():
+    """The linked Facebook Page and a Page token derived from the user token.
+
+    The Page is discovered from the link itself — the page among /me/accounts
+    whose instagram_business_account is this account's IG — so a stale or
+    mistyped page id in config can never redirect posts to another Page.
+    """
+    pages = _get("me/accounts",
+                 fields="id,name,access_token,instagram_business_account")
+    for p in pages.get("data", []):
+        if (p.get("instagram_business_account") or {}).get("id") == str(ACCT["ig_user_id"]):
+            want = str(ACCT.get("facebook_page_id") or p["id"])
+            if p["id"] != want:
+                raise RuntimeError(
+                    f"page mismatch: linked page {p['id']} != config {want}")
+            return p["id"], p["name"], p["access_token"]
+    raise RuntimeError("no administered Facebook Page is linked to "
+                       f"IG {ACCT['ig_user_id']} — cannot cross-post")
+
+
+def crosspost_page(post):
+    """Mirror the just-published IG post onto the linked Facebook Page.
+
+    Best-effort by design: the IG publish already succeeded and is recorded,
+    so a Page hiccup must not fail the run and re-publish tomorrow.
+    """
+    try:
+        pid, pname, ptok = page_token()
+        if post.get("format") == "reel":
+            # file_url upload — publishes as a Page video post. (True FB
+            # "Reels" need a resumable binary upload; not worth it yet.)
+            data = urllib.parse.urlencode({
+                "file_url": f"{RAW_BASE}/{urllib.parse.quote(post['video'])}",
+                "description": post["caption"],
+                "access_token": ptok,
+            }).encode()
+            req = urllib.request.Request(f"{GRAPH}/{pid}/videos",
+                                         data=data, method="POST")
+            with urllib.request.urlopen(req) as r:
+                vid = json.load(r).get("id")
+            print(f"  cross-posted video to Page {pname!r} (id {vid})")
+        else:
+            media = []
+            for s in post["slides"]:
+                data = urllib.parse.urlencode({
+                    "url": f"{RAW_BASE}/{urllib.parse.quote(s)}",
+                    "published": "false",
+                    "access_token": ptok,
+                }).encode()
+                req = urllib.request.Request(f"{GRAPH}/{pid}/photos",
+                                             data=data, method="POST")
+                with urllib.request.urlopen(req) as r:
+                    media.append(json.load(r)["id"])
+                time.sleep(1)
+            params = {"message": post["caption"], "access_token": ptok}
+            for i, m in enumerate(media):
+                params[f"attached_media[{i}]"] = json.dumps({"media_fbid": m})
+            req = urllib.request.Request(f"{GRAPH}/{pid}/feed",
+                                         data=urllib.parse.urlencode(params).encode(),
+                                         method="POST")
+            with urllib.request.urlopen(req) as r:
+                fid = json.load(r).get("id")
+            print(f"  cross-posted {len(media)} photos to Page {pname!r} (id {fid})")
+        return True
+    except Exception as e:
+        detail = e.read().decode(errors="replace")[:300] \
+            if isinstance(e, urllib.error.HTTPError) else str(e)
+        print(f"::warning::Facebook Page cross-post failed (Instagram post "
+              f"succeeded and is recorded): {detail}")
+        return False
 
 def api(path, params):
     data = urllib.parse.urlencode({**params, "access_token": TOKEN}).encode()
@@ -104,6 +197,8 @@ def main():
         post["status"] = "published"
         post["published_media_id"] = media_id
         post["published_on"] = today
+        if ROUTE == "facebook_page":
+            post["facebook_page_posted"] = crosspost_page(post)
         json.dump(sched, open(QUEUE, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
         return
 
@@ -133,6 +228,8 @@ def main():
     post["status"] = "published"
     post["published_media_id"] = media_id
     post["published_on"] = today
+    if ROUTE == "facebook_page":
+        post["facebook_page_posted"] = crosspost_page(post)
     json.dump(sched, open(QUEUE, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":

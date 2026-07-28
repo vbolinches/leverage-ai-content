@@ -122,7 +122,8 @@ def main():
         print(json.dumps([
             {"slug": x["slug"], "username": x["username"],
              "token_secret": x["token_secret"],
-             "user_id_secret": x["user_id_secret"]}
+             "user_id_secret": x["user_id_secret"],
+             "api": x.get("api", "instagram_login")}
             for x in accts
         ], separators=(",", ":")))
         return
