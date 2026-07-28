@@ -1,5 +1,5 @@
 {
-  "minted": "2026-07-27",
-  "expires": "2026-09-25",
-  "note": "Facebook-Login user token (leverage-ai-publisher-2, facebook_page route). Refresh via fb_exchange_token before expiry - see README."
+  "minted": "2026-07-28",
+  "expires": "2026-09-26",
+  "note": "Long-lived FB user token via fb_exchange_token (session-independent). App 2095342677999373. Explorer tokens are session-bound - never store one directly again."
 }
