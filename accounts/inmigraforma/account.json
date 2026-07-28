@@ -6,7 +6,7 @@
   "user_id_secret": "IG_USER_ID_INMIGRAFORMA",
   "api": "facebook_page",
   "facebook_page_id": "202083679654871",
-  "enabled": false,
+  "enabled": true,
   "wordmark": "INMIGRAFORMA",
   "theme": "US immigration news explained in Spanish and English — policy changes, USCIS updates, visa news, and what they mean in practice",
   "eyebrow_prefix": "NOTICIA",
