@@ -5,6 +5,7 @@
   "token_secret": "IG_TOKEN_INMIGRAFORMA",
   "user_id_secret": "IG_USER_ID_INMIGRAFORMA",
   "api": "facebook_page",
+  "fb_app_id": "2095342677999373",
   "facebook_page_id": "202083679654871",
   "enabled": true,
   "threads": {

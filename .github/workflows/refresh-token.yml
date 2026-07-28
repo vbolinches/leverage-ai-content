@@ -64,7 +64,7 @@ jobs:
             fi
             resp=$(curl -sS -G "https://graph.facebook.com/v21.0/oauth/access_token" \
               --data-urlencode "grant_type=fb_exchange_token" \
-              --data-urlencode "client_id=1805978924108246" \
+              --data-urlencode "client_id=${{ matrix.account.fb_app_id }}" \
               --data-urlencode "client_secret=$FB_APP_SECRET" \
               --data-urlencode "fb_exchange_token=$IG_ACCESS_TOKEN")
           else

@@ -124,6 +124,7 @@ def main():
              "token_secret": x["token_secret"],
              "user_id_secret": x["user_id_secret"],
              "api": x.get("api", "instagram_login"),
+             "fb_app_id": x.get("fb_app_id", ""),
              # Empty-string fallbacks: secrets[''] resolves to nothing in a
              # workflow expression, so unconfigured accounts just skip Threads.
              "threads_token_secret": (x.get("threads") or {}).get("token_secret", ""),
