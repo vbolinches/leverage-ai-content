@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27",
+  "updated": "2026-07-28",
   "items": [
     {
       "source": "rss/www.theverge.com",
@@ -19,6 +19,30 @@
     },
     {
       "source": "rss/simonwillison.net",
+      "title": "moonshotai/Kimi-K3",
+      "url": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
+      "at": "2026-07-27",
+      "signal": 0,
+      "seen": "2026-07-28"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "An opinionated guide to which AI to use to do stuff",
+      "url": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
+      "at": "2026-07-27",
+      "signal": 0,
+      "seen": "2026-07-28"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Why China is giving away its best AI models",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/971444/how-chinese-open-weight-ai-models-impact-us-companies",
+      "at": "2026-07-27",
+      "signal": 0,
+      "seen": "2026-07-28"
+    },
+    {
+      "source": "rss/simonwillison.net",
       "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
       "url": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
       "at": "2026-07-26",
@@ -30,7 +54,7 @@
       "title": "The AI Productivity Illusion",
       "url": "https://www.hardresetmedia.com/p/the-ai-productivity-illusion",
       "at": "2026-07-25",
-      "signal": 69,
+      "signal": 70,
       "seen": "2026-07-27"
     },
     {
@@ -86,7 +110,7 @@
       "title": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
       "url": "https://github.com/palmier-io/palmier-pro",
       "at": "2026-07-23",
-      "signal": 190,
+      "signal": 191,
       "seen": "2026-07-27"
     },
     {
