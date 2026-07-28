@@ -75,6 +75,97 @@ def assert_target():
             f"secret={IG_ID}, config={ACCT['ig_user_id']}). Refusing to publish.")
 
 
+THREADS_GRAPH = "https://graph.threads.net/v1.0"
+THREADS_TOKEN = os.environ.get("THREADS_ACCESS_TOKEN")
+THREADS_ID = os.environ.get("THREADS_USER_ID")
+
+
+def threads_text(post):
+    """Compress an Instagram caption into Threads' 500-char limit.
+
+    Keeps the opening paragraph (the substance) and, when present, the
+    not-legal-advice disclaimer — that line is a content rule, not filler,
+    so it survives truncation ahead of everything else.
+    """
+    paras = [p.strip() for p in post["caption"].split("\n") if p.strip()]
+    first = paras[0] if paras else ""
+    disclaimer = next((p for p in paras
+                       if "asesoría legal" in p.lower()
+                       or "asesoria legal" in p.lower()), "")
+    text = first
+    if disclaimer and disclaimer != first:
+        text = text[:500 - len(disclaimer) - 2].rstrip()
+        text += "\n\n" + disclaimer
+    return text[:500]
+
+
+def crosspost_threads(post):
+    """Mirror the just-published post onto Threads. Best-effort, like the
+    Page cross-post: the IG publish is already recorded, so failure warns.
+
+    Carousels become a single-image post (the cover slide) — Threads is a
+    text-first surface and six branded slides there read as spam. Reels go
+    as native video.
+    """
+    if not THREADS_TOKEN or not THREADS_ID:
+        threads_cfg = ACCT.get("threads") or {}
+        if threads_cfg:
+            print(f"::warning::[{ACCT['slug']}] threads configured but secrets "
+                  f"{threads_cfg.get('token_secret')}/"
+                  f"{threads_cfg.get('user_id_secret')} not set — skipping")
+        return None
+    try:
+        me_url = (f"{THREADS_GRAPH}/me?fields=username"
+                  f"&access_token={urllib.parse.quote(THREADS_TOKEN)}")
+        with urllib.request.urlopen(me_url) as r:
+            tuser = json.load(r).get("username")
+        expected = (ACCT.get("threads") or {}).get("username", ACCT["username"])
+        if tuser != expected:
+            raise RuntimeError(f"threads token is @{tuser}, expected @{expected}")
+
+        params = {"text": threads_text(post), "access_token": THREADS_TOKEN}
+        if post.get("format") == "reel":
+            params["media_type"] = "VIDEO"
+            params["video_url"] = f"{RAW_BASE}/{urllib.parse.quote(post['video'])}"
+        else:
+            params["media_type"] = "IMAGE"
+            params["image_url"] = f"{RAW_BASE}/{urllib.parse.quote(post['slides'][0])}"
+
+        req = urllib.request.Request(f"{THREADS_GRAPH}/{THREADS_ID}/threads",
+                                     data=urllib.parse.urlencode(params).encode(),
+                                     method="POST")
+        with urllib.request.urlopen(req) as r:
+            cid = json.load(r)["id"]
+
+        # Containers process async; video takes longer than images.
+        for _ in range(30 if post.get("format") == "reel" else 6):
+            with urllib.request.urlopen(
+                    f"{THREADS_GRAPH}/{cid}?fields=status"
+                    f"&access_token={urllib.parse.quote(THREADS_TOKEN)}") as r:
+                status = json.load(r).get("status")
+            if status == "FINISHED":
+                break
+            if status == "ERROR":
+                raise RuntimeError(f"threads container {cid} failed")
+            time.sleep(5)
+
+        req = urllib.request.Request(
+            f"{THREADS_GRAPH}/{THREADS_ID}/threads_publish",
+            data=urllib.parse.urlencode({"creation_id": cid,
+                                         "access_token": THREADS_TOKEN}).encode(),
+            method="POST")
+        with urllib.request.urlopen(req) as r:
+            tid = json.load(r).get("id")
+        print(f"  cross-posted to Threads (id {tid})")
+        return True
+    except Exception as e:
+        detail = e.read().decode(errors="replace")[:300] \
+            if isinstance(e, urllib.error.HTTPError) else str(e)
+        print(f"::warning::Threads cross-post failed (Instagram post succeeded "
+              f"and is recorded): {detail}")
+        return False
+
+
 def page_token():
     """The linked Facebook Page and a Page token derived from the user token.
 
@@ -230,6 +321,9 @@ def main():
     post["published_on"] = today
     if ROUTE == "facebook_page":
         post["facebook_page_posted"] = crosspost_page(post)
+    threads_result = crosspost_threads(post)
+    if threads_result is not None:
+        post["threads_posted"] = threads_result
     json.dump(sched, open(QUEUE, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":

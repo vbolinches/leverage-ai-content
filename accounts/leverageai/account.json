@@ -5,6 +5,11 @@
   "token_secret": "IG_ACCESS_TOKEN",
   "user_id_secret": "IG_USER_ID",
   "enabled": true,
+  "threads": {
+    "token_secret": "THREADS_TOKEN_LEVERAGEAI",
+    "user_id_secret": "THREADS_USER_ID_LEVERAGEAI",
+    "username": "leverageai.daily"
+  },
   "wordmark": "LEVERAGE AI",
   "theme": "one practical AI workflow a day for knowledge workers",
   "voice": "Direct, concrete, no hype. Never \"revolutionary\", \"game-changer\", \"insane\", \"unlock\". Short sentences. Second person. Always give something copy-pasteable. Name real tools (ChatGPT, Claude, NotebookLM, Perplexity, Canva, Notion). Be honest about limitations — say what a tool is bad at.",

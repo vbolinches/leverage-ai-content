@@ -36,6 +36,8 @@ jobs:
           # Secret *names* come from account.json; values never leave Actions.
           IG_ACCESS_TOKEN: ${{ secrets[matrix.account.token_secret] }}
           IG_USER_ID: ${{ secrets[matrix.account.user_id_secret] }}
+          THREADS_ACCESS_TOKEN: ${{ secrets[matrix.account.threads_token_secret] }}
+          THREADS_USER_ID: ${{ secrets[matrix.account.threads_user_id_secret] }}
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/main
         run: python3 publish.py
       - name: Commit queue state

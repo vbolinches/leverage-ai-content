@@ -7,6 +7,11 @@
   "api": "facebook_page",
   "facebook_page_id": "202083679654871",
   "enabled": true,
+  "threads": {
+    "token_secret": "THREADS_TOKEN_INMIGRAFORMA",
+    "user_id_secret": "THREADS_USER_ID_INMIGRAFORMA",
+    "username": "inmigraforma"
+  },
   "wordmark": "INMIGRAFORMA",
   "theme": "US immigration news explained in Spanish and English — policy changes, USCIS updates, visa news, and what they mean in practice",
   "eyebrow_prefix": "NOTICIA",

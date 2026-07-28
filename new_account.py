@@ -80,6 +80,12 @@ def main():
         # One automated reply to inbound DMs (dm_responder.py). Needs the
         # messaging permission + App Review; text must never promise a human.
         "dm_welcome": {"enabled": False, "text": ""},
+        # Threads cross-posting (publish.py). Activate by adding the account
+        # as a Threads Tester on the Threads app, generating a token, and
+        # setting these secrets. Absent secrets = Threads silently skipped.
+        "threads": {"token_secret": f"THREADS_TOKEN_{suffix}",
+                    "user_id_secret": f"THREADS_USER_ID_{suffix}",
+                    "username": a.username},
     }
 
     os.makedirs(f"{root}/queue", exist_ok=True)

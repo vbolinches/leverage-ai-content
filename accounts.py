@@ -123,7 +123,11 @@ def main():
             {"slug": x["slug"], "username": x["username"],
              "token_secret": x["token_secret"],
              "user_id_secret": x["user_id_secret"],
-             "api": x.get("api", "instagram_login")}
+             "api": x.get("api", "instagram_login"),
+             # Empty-string fallbacks: secrets[''] resolves to nothing in a
+             # workflow expression, so unconfigured accounts just skip Threads.
+             "threads_token_secret": (x.get("threads") or {}).get("token_secret", ""),
+             "threads_user_id_secret": (x.get("threads") or {}).get("user_id_secret", "")}
             for x in accts
         ], separators=(",", ":")))
         return

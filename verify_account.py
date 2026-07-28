@@ -134,6 +134,31 @@ def main():
             print("::warning::reel still processing after 5 min — slow, "
                   "not necessarily broken")
 
+    # 7 — Threads, when configured. Absence of secrets is a warning, not a
+    # failure: Threads is an optional surface and must not block Instagram.
+    tcfg = ACCT.get("threads") or {}
+    ttok = os.environ.get("THREADS_ACCESS_TOKEN")
+    tid = os.environ.get("THREADS_USER_ID")
+    if tcfg and ttok and tid:
+        turl = (f"https://graph.threads.net/v1.0/me?fields=id,username"
+                f"&access_token={urllib.parse.quote(ttok)}")
+        try:
+            with urllib.request.urlopen(turl) as r:
+                tme = json.load(r)
+        except urllib.error.HTTPError as e:
+            fail(f"threads token rejected: {e.read().decode(errors='replace')[:300]}")
+        texpected = tcfg.get("username", ACCT["username"])
+        if tme.get("username") != texpected:
+            fail(f"WRONG THREADS ACCOUNT: token is @{tme.get('username')}, "
+                 f"expected @{texpected}")
+        if str(tme.get("id")) != str(tid):
+            fail(f"threads user-id secret ({tid}) != token's id ({tme.get('id')})")
+        print(f"  OK: Threads token reaches @{tme.get('username')}")
+    elif tcfg:
+        print(f"::warning::[{ACCT['slug']}] Threads configured but secrets "
+              f"{tcfg.get('token_secret')} / {tcfg.get('user_id_secret')} not "
+              f"set — Threads cross-posting will be skipped")
+
     print(f"[{ACCT['slug']}] all checks passed. Nothing was published.")
 
 

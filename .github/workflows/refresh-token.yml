@@ -168,3 +168,68 @@ jobs:
 
           echo "Done. Token refreshed and stored; nothing was logged."
           echo "::notice::Update accounts/${{ matrix.account.slug }}/token_status.json with the new expiry date."
+
+      # Threads tokens are separate (graph.threads.net) and refresh WITHOUT an
+      # app secret — th_refresh_token works on any still-valid long-lived token
+      # older than 24h. Runs only for accounts with Threads configured.
+      - name: Refresh Threads token and update the secret
+        if: matrix.account.threads_token_secret != ''
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets[matrix.account.threads_token_secret] }}
+          TOKEN_SECRET_NAME: ${{ matrix.account.threads_token_secret }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [ -z "${THREADS_ACCESS_TOKEN:-}" ]; then
+            echo "::warning::$TOKEN_SECRET_NAME not set — Threads not active yet, skipping."
+            exit 0
+          fi
+          if [ -z "${GH_PAT:-}" ]; then
+            echo "::error::GH_PAT is not set — cannot write the refreshed token back."
+            exit 1
+          fi
+          resp=$(curl -sS -G "https://graph.threads.net/refresh_access_token" \
+            --data-urlencode "grant_type=th_refresh_token" \
+            --data-urlencode "access_token=$THREADS_ACCESS_TOKEN")
+          if echo "$resp" | jq -e '.error' >/dev/null; then
+            echo "::error::Threads refresh failed: $(echo "$resp" | jq -c '.error.message // .error')"
+            exit 1
+          fi
+          NEW=$(echo "$resp" | jq -r '.access_token')
+          [ -n "$NEW" ] && [ "$NEW" != "null" ] || { echo "::error::no token in response"; exit 1; }
+          echo "::add-mask::$NEW"
+          DAYS=$(( $(echo "$resp" | jq -r '.expires_in') / 86400 ))
+          echo "New Threads token valid ~$DAYS days"
+          PAT=$(printf '%s' "${GH_PAT}" | tr -d '[:space:]')
+          echo "::add-mask::$PAT"
+          export GH_PAT="$PAT"
+          pip install --quiet pynacl
+          NEW_TOKEN="$NEW" python - <<'PY'
+          import base64, json, os, sys, urllib.error, urllib.request
+          from nacl import encoding, public
+          repo, pat = os.environ["REPO"], os.environ["GH_PAT"]
+          token, name = os.environ["NEW_TOKEN"], os.environ["TOKEN_SECRET_NAME"]
+          def api(path, method="GET", body=None):
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{repo}/{path}", method=method,
+                  data=json.dumps(body).encode() if body else None,
+                  headers={"Authorization": f"Bearer {pat}",
+                           "Accept": "application/vnd.github+json",
+                           "Content-Type": "application/json"})
+              try:
+                  with urllib.request.urlopen(req) as r:
+                      raw = r.read()
+                      return json.loads(raw) if raw else {}
+              except urllib.error.HTTPError as e:
+                  print(f"::error::GitHub API {e.code} on {path}: "
+                        f"{e.read().decode(errors='replace')[:300]}")
+                  sys.exit(1)
+          key = api("actions/secrets/public-key")
+          sealed = public.SealedBox(public.PublicKey(
+              key["key"].encode(), encoding.Base64Encoder())).encrypt(token.encode())
+          api(f"actions/secrets/{name}", method="PUT", body={
+              "encrypted_value": base64.b64encode(sealed).decode(),
+              "key_id": key["key_id"]})
+          print(f"{name} updated.")
+          PY
