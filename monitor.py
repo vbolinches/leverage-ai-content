@@ -243,11 +243,13 @@ def render(report):
     except Exception as e:
         print(f"::warning::could not record performance history: {e}")
 
+    # This output lands in PUBLIC Actions logs (public repo): never print who
+    # commented or what they said — for this audience that can be sensitive.
+    # The post permalink is enough to find and answer them in the app.
     pending = report.get("comments_awaiting_reply", [])
     print(f"\ncomments awaiting reply: {len(pending)}")
     for c in pending:
-        print(f"  @{c['from']} ({c['at']}): {c['text']}")
-        print(f"    -> {c['post']}")
+        print(f"  ({c['at']}) -> {c['post']}")
 
     for e in report.get("comment_errors", []):
         print(f"::warning::comments: {e}")

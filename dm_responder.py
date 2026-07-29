@@ -131,14 +131,16 @@ def main():
             print(f"::warning::hit {MAX_SENDS_PER_RUN}-send cap; rest next run")
             break
 
+        # Never print sender usernames: this log is public (public repo), and
+        # who DMs an account like this can itself be sensitive information.
         if a.dry_run:
-            print(f"  would welcome @{who.get('username')} ({when})")
+            print(f"  would welcome 1 conversation ({when})")
         else:
             try:
                 send_text(who["id"], text)
-                print(f"  welcomed @{who.get('username')}")
+                print("  welcomed 1 conversation")
             except urllib.error.HTTPError as e:
-                print(f"::warning::send to @{who.get('username')} failed: "
+                print(f"::warning::a send failed: "
                       f"{e.read().decode(errors='replace')[:200]}")
                 continue
         sent += 1
