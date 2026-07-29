@@ -65,6 +65,44 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-07-29",
+      "followers": 4,
+      "posts": [
+        {
+          "slug": "post04-chatgpt-mistakes",
+          "likes": 2,
+          "comments": 0,
+          "reach": 74,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post03-tool-duel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post02-meeting-notes-prompt",
+          "likes": 5,
+          "comments": 2,
+          "reach": 143,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post01-email-workflow",
+          "likes": 0,
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
