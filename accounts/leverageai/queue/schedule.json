@@ -97,9 +97,11 @@
         "accounts/leverageai/queue/post06-content-repurpose/slide06.png"
       ],
       "caption": "One piece of work. Five pieces of content. ♻️\n\nMost people create from zero every time. The leverage move is repurposing: one strong original → adapted everywhere your audience lives. Here's the workflow + the exact prompt.\n\nTag someone who posts great stuff but only in one place 👇\n\nOne practical AI workflow a day → @leverageai.daily\n\n#contentcreation #aitools #contentmarketing #chatgptprompts #productivitytips #creatoreconomy #aiworkflow #worksmarter #marketingtips #smallbusiness",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post06-content-repurpose/reel.mp4"
+      "video": "accounts/leverageai/queue/post06-content-repurpose/reel.mp4",
+      "published_media_id": "18071870159447921",
+      "published_on": "2026-07-30"
     },
     {
       "id": "post07-free-tools-honest",
