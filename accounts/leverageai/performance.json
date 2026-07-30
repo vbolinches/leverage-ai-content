@@ -103,6 +103,52 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-07-30",
+      "followers": 5,
+      "posts": [
+        {
+          "slug": "post05-notebooklm-workflow",
+          "likes": 2,
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post04-chatgpt-mistakes",
+          "likes": 2,
+          "comments": 0,
+          "reach": 75,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post03-tool-duel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post02-meeting-notes-prompt",
+          "likes": 5,
+          "comments": 2,
+          "reach": 143,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post01-email-workflow",
+          "likes": 0,
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
