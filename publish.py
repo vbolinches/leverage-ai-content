@@ -290,6 +290,9 @@ def main():
         post["published_on"] = today
         if ROUTE == "facebook_page":
             post["facebook_page_posted"] = crosspost_page(post)
+        threads_result = crosspost_threads(post)
+        if threads_result is not None:
+            post["threads_posted"] = threads_result
         json.dump(sched, open(QUEUE, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
         return
 
