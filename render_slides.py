@@ -43,11 +43,14 @@ CONTENT_BOTTOM = 1215
 
 # Per-account chrome. Defaults preserve the original @leverageai.daily deck;
 # configure() overrides them from accounts/<slug>/account.json.
-BRANDING = {"wordmark": "LEVERAGE AI", "handle": "@leverageai.daily"}
+BRANDING = {"wordmark": "LEVERAGE AI", "handle": "@leverageai.daily",
+            "logo": None}
+_logo_cache = {}
 
 
 def configure(acct):
-    """Point the renderer at an account: wordmark, footer handle, palette.
+    """Point the renderer at an account: wordmark, footer handle, palette,
+    and optionally a logo image that replaces the default drawn mark.
 
     COLORS is updated in place (not rebound) so modules that imported it keep
     seeing the active palette.
@@ -55,11 +58,25 @@ def configure(acct):
     global BG
     BRANDING["wordmark"] = acct.get("wordmark", acct["username"].upper())
     BRANDING["handle"] = "@" + acct["username"]
+    BRANDING["logo"] = acct.get("logo")
     for name, rgb in (acct.get("colors") or {}).items():
         if name == "bg":
             BG = tuple(rgb)
         else:
             COLORS[name] = tuple(rgb)
+
+
+def _logo(size):
+    """The account's logo, resized and rounded-corner-masked, cached."""
+    key = (BRANDING["logo"], size)
+    if key not in _logo_cache:
+        im = Image.open(BRANDING["logo"]).convert("RGB").resize(
+            (size, size), Image.LANCZOS)
+        mask = Image.new("L", (size, size), 0)
+        ImageDraw.Draw(mask).rounded_rectangle(
+            [0, 0, size - 1, size - 1], radius=size // 3, fill=255)
+        _logo_cache[key] = (im, mask)
+    return _logo_cache[key]
 
 
 # --------------------------------------------------------------------------
@@ -193,7 +210,11 @@ def draw_mark(draw, x, y, size=34):
 
 
 def draw_chrome(img, draw, page, total, footer_right=None):
-    draw_mark(draw, MARGIN, HEADER_Y)
+    if BRANDING["logo"] and os.path.exists(BRANDING["logo"]):
+        logo, mask = _logo(38)
+        img.paste(logo, (MARGIN, HEADER_Y - 2), mask)
+    else:
+        draw_mark(draw, MARGIN, HEADER_Y)
     f = font("semi", 21)
     draw_tracked(draw, BRANDING["wordmark"], MARGIN + 50, HEADER_Y + 6, f,
                  COLORS["dim"], 4)
