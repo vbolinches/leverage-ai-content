@@ -1,0 +1,79 @@
+{
+  "slug": "post14-tres-verificaciones-antes-del-i485",
+  "caption": "Dos cosas cambiaron en julio de 2026 y las dos afectan al mismo sobre: la regla final de public charge publicada el 20 de julio de 2026 (Federal Register, doc. 2026-14539), vigente el 18 de septiembre de 2026, y el anuncio de USCIS de un Form I-485 revisado, con las versiones anteriores no aceptadas desde esa fecha de vigencia.\n\nDe ahí tres verificaciones antes de enviar: la tabla del Visa Bulletin que USCIS indica para el mes (uscis.gov/visabulletininfo), la edición vigente del formulario en su página en uscis.gov, y la fecha de envío frente al 18 de septiembre de 2026. Las tres se comprueban en páginas oficiales, gratis, en minutos.\n\nIn English: before mailing or e-filing an I-485, check three things on official pages — which Visa Bulletin chart USCIS says applies this month, the current form edition on the form's uscis.gov page, and your filing date against the September 18, 2026 effective date of the public charge final rule.\n\nGuarda el post para tenerlo el día del envío y compártelo con quien esté preparando su caso.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #i485 #uscis #visabulletin #publiccharge #greencard #residencia #ajustedeestatus #inmigracionusa\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 014",
+      "headline": [
+        {
+          "t": "Antes de enviar un "
+        },
+        {
+          "t": "I-485",
+          "c": "blue"
+        }
+      ],
+      "sub": "3 verificaciones · Fuentes oficiales, julio de 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Dos cambios en julio de 2026.",
+      "body": [
+        {
+          "t": "Regla final de public charge: Federal Register 20-jul-2026 (doc. 2026-14539), vigente el 18-sep-2026. "
+        },
+        {
+          "t": "Y USCIS anunció un Form I-485 revisado.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A todo paquete de I-485.",
+      "body": [
+        {
+          "t": "Quien envíe en las próximas semanas, en papel o en línea, en categorías de familia o de empleo. "
+        },
+        {
+          "t": "Las tres verificaciones se hacen en páginas oficiales.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Las tres comprobaciones.",
+      "sub": "Páginas oficiales de USCIS y del Departamento de Estado",
+      "label": "CHEQUEO ANTES DE ENVIAR",
+      "code": "1) Chart for this month:\n   uscis.gov/visabulletininfo\n2) Current form edition:\n   uscis.gov page for Form I-485\n3) Filing date vs effective date:\n   September 18, 2026\n   (Federal Register 2026-14539)"
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LO CLAVE",
+      "headline": "¿Cuántas comprobaciones?",
+      "stat": "3, el día del envío"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El chequeo de tres",
+      "items": [
+        "Tabla del mes según USCIS",
+        "Edición vigente del formulario",
+        "Fecha de envío vs 18-sep-2026",
+        "Todo verificable en páginas oficiales"
+      ],
+      "cta_title": "Guarda esto para el día del envío",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

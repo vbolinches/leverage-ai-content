@@ -1,0 +1,79 @@
+{
+  "slug": "post13-retrogresion-visa-bulletin-aviso",
+  "caption": "El Visa Bulletin de agosto de 2026 (travel.state.gov) incluye su propio aviso: el Departamento de Estado señala que, si aparece más demanda de visas de inmigrante o se modifican acciones administrativas, puede ser necesaria retrogresión en los próximos meses para mantener las emisiones dentro de los límites anuales.\n\nTraducido a la práctica: las fechas límite del boletín no son promesas. Son la gestión mensual de un número limitado de visas por año fiscal. Por eso conviene leer el boletín cada mes en su página oficial en vez de guardar una captura de pantalla.\n\nIn English: the August 2026 Visa Bulletin carries the State Department's own note that retrogression may be necessary in the upcoming months to keep issuances within annual limits. Cut-off dates are managed month by month, so the current bulletin should be read on travel.state.gov each month.\n\nGuarda el post y compártelo con quien lleve años esperando una priority date.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #visabulletin #retrogresion #greencard #departamentodeestado #prioritydate #residencia #inmigracionusa #i485\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 013",
+      "headline": [
+        {
+          "t": "Retrogresión: "
+        },
+        {
+          "t": "el aviso del boletín",
+          "c": "blue"
+        }
+      ],
+      "sub": "Visa Bulletin de agosto de 2026 · travel.state.gov",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ DICE",
+      "headline": "El aviso viene en el boletín.",
+      "body": [
+        {
+          "t": "Visa Bulletin de agosto de 2026 (Departamento de Estado): puede ser necesaria retrogresión en los próximos meses "
+        },
+        {
+          "t": "para mantener las emisiones dentro de los límites anuales.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A quien espera con priority date.",
+      "body": [
+        {
+          "t": "Categorías de preferencia de familia y de empleo, dentro y fuera de EE.UU. "
+        },
+        {
+          "t": "La fecha límite de un mes no garantiza la del mes siguiente.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El aviso, palabra por palabra.",
+      "sub": "Visa Bulletin For August 2026 (travel.state.gov)",
+      "label": "TEXTO OFICIAL (EN)",
+      "code": "\"Note that as additional immigrant\nvisa demand materializes, or\nadministration actions are amended,\nretrogression may be necessary in the\nupcoming months to keep issuances\nwithin annual limits.\""
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LO CLAVE",
+      "headline": "¿Cada cuánto se actualiza?",
+      "stat": "1 boletín por mes"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Cómo tomarlo",
+      "items": [
+        "El aviso es del propio boletín oficial",
+        "Las fechas pueden no avanzar",
+        "Límites anuales por año fiscal",
+        "Léelo cada mes en travel.state.gov"
+      ],
+      "cta_title": "Guarda esto y revísalo cada mes",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

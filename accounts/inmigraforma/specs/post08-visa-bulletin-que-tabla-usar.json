@@ -1,0 +1,94 @@
+{
+  "slug": "post08-visa-bulletin-que-tabla-usar",
+  "caption": "Cada mes hay dos tablas en el Visa Bulletin y USCIS decide cuál puedes usar para presentar el I-485 desde dentro de EE.UU. Para agosto de 2026, USCIS publicó en sus Adjustment of Status Filing Charts (uscis.gov): categorías familiares, Dates for Filing; categorías de empleo, Final Action Dates.\n\nEl boletín de agosto de 2026 está en travel.state.gov y el propio boletín remite a uscis.gov/visabulletininfo para saber qué tabla aplica. Es una decisión mensual: la de agosto no vale automáticamente para septiembre.\n\nIn English: for August 2026, USCIS says family-sponsored adjustment applicants use the Dates for Filing chart and employment-based applicants use the Final Action Dates chart. The Visa Bulletin itself points to uscis.gov/visabulletininfo each month, so the chart has to be re-checked every month before filing an I-485.\n\nGuarda esto para revisarlo el mes que viene y compártelo con alguien que esté esperando su priority date.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #visabulletin #greencard #i485 #uscis #residencia #departamentodeestado #inmigracionusa #prioritydate\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 008",
+      "headline": [
+        {
+          "t": "Visa Bulletin: "
+        },
+        {
+          "t": "qué tabla usar",
+          "c": "blue"
+        }
+      ],
+      "sub": "Agosto 2026 · Fuentes: uscis.gov y travel.state.gov",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "USCIS elige la tabla del mes.",
+      "body": [
+        {
+          "t": "En sus Adjustment of Status Filing Charts (uscis.gov) para agosto de 2026: "
+        },
+        {
+          "t": "familia usa Dates for Filing; empleo usa Final Action Dates.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A quien presenta I-485 aquí.",
+      "body": [
+        {
+          "t": "Personas en categorías de preferencia (familia o empleo) que ajustan estatus dentro de EE.UU. "
+        },
+        {
+          "t": "Es una decisión mensual: hay que volver a revisarla cada mes.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Texto oficial, en inglés.",
+      "sub": "Visa Bulletin de agosto 2026 (DOS) y Filing Charts de USCIS",
+      "label": "TEXTO OFICIAL (EN)",
+      "code": "DOS, Visa Bulletin August 2026:\n\"Unless otherwise indicated on the\nUSCIS website at\nwww.uscis.gov/visabulletininfo...\"\n\nUSCIS Filing Charts, August 2026:\nFamily-sponsored: Dates for Filing\nEmployment-based: Final Action Dates"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "OPINIÓN",
+      "headline": "Lectura de un despacho legal.",
+      "body": [
+        {
+          "t": "Fisher Phillips LLP, en su análisis del Visa Bulletin de agosto de 2026, sugiere a empleadores reevaluar de inmediato a quienes antes no podían presentar el I-485. "
+        },
+        {
+          "t": "Es opinión, no noticia ni asesoría legal: consulta a un abogado.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LO CLAVE",
+      "headline": "¿Qué se revisa cada mes?",
+      "stat": "Chart A vs Chart B"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El chequeo mensual",
+      "items": [
+        "Boletín del mes: travel.state.gov",
+        "Tabla que aplica: uscis.gov",
+        "Agosto 2026: familia B, empleo A",
+        "Vuelve a revisarlo el mes que viene"
+      ],
+      "cta_title": "Guarda esto para el próximo boletín",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

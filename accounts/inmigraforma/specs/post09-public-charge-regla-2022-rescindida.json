@@ -1,0 +1,79 @@
+{
+  "slug": "post09-public-charge-regla-2022-rescindida",
+  "caption": "El 20 de julio de 2026 se publicó en el Federal Register la regla final “Public Charge Ground of Inadmissibility” (doc. 2026-14539, DHS Docket No. USCIS-2025-0304). DHS rescinde la regla de public charge de 2022 y no publica un reglamento que la reemplace.\n\nLa regla es vigente el 18 de septiembre de 2026. Según el propio texto, se aplica a solicitudes de admisión hechas en esa fecha o después y a solicitudes de ajuste de estatus con matasellos o envío electrónico en esa fecha o después. En su comunicado, USCIS dice que sus oficiales podrán evaluar todos los hechos pertinentes caso por caso.\n\nIn English: DHS published a final rule on July 20, 2026 rescinding the 2022 public charge regulations. It takes effect on September 18, 2026 and applies to admission applications made on or after that date and to adjustment applications postmarked or e-filed on or after that date. USCIS says officers will assess all pertinent facts case by case.\n\nGuarda esta fecha y comparte el post con quien tenga un caso en preparación.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #publiccharge #greencard #i485 #uscis #dhs #federalregister #residencia #inmigracionusa\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 009",
+      "headline": [
+        {
+          "t": "Public charge: "
+        },
+        {
+          "t": "regla de 2022 fuera",
+          "c": "blue"
+        }
+      ],
+      "sub": "Federal Register, 20 de julio de 2026 · Vigente el 18-sep-2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "DHS rescinde la regla de 2022.",
+      "body": [
+        {
+          "t": "Regla final “Public Charge Ground of Inadmissibility”, Federal Register 20-jul-2026 (doc. 2026-14539; DHS Docket USCIS-2025-0304). "
+        },
+        {
+          "t": "Elimina 8 CFR 212.20–212.23 sin reglamento que las reemplace.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "Admisión y ajuste de estatus.",
+      "body": [
+        {
+          "t": "Solicitudes de admisión del 18-sep-2026 en adelante y I-485 con matasellos o envío electrónico en esa fecha o después. "
+        },
+        {
+          "t": "USCIS dice que evaluará todos los hechos pertinentes caso por caso.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto de la regla.",
+      "sub": "Federal Register, 20 de julio de 2026 (doc. 2026-14539)",
+      "label": "TEXTO OFICIAL (EN)",
+      "code": "\"The final rule is effective on\nSeptember 18, 2026.\"\n\n\"This rule applies to applications for\nadmission made on or after September 18,\n2026 or applications for adjustment of\nstatus postmarked or electronically\nsubmitted on or after September 18,\n2026.\""
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LO CLAVE",
+      "headline": "La fecha que hay que saber:",
+      "stat": "18-SEP-2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El cambio en 4 pasos",
+      "items": [
+        "Regla final: Federal Register 20-jul-2026",
+        "Rescinde la regla de public charge 2022",
+        "Vigente el 18 de septiembre de 2026",
+        "Doc. 2026-14539 en federalregister.gov"
+      ],
+      "cta_title": "Guarda la fecha",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

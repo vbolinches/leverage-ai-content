@@ -1,0 +1,94 @@
+{
+  "slug": "post12-public-charge-bonds-103-6c",
+  "caption": "La parte menos comentada de la regla final del 20 de julio de 2026 (Federal Register, doc. 2026-14539) es la de las fianzas: según el resumen oficial, la regla también revisa las disposiciones sobre incumplimiento y cancelación de las public charge bonds, en 8 CFR 103.6(c).\n\nEl texto añade una cláusula de severability: DHS quiere que los cambios a 8 CFR 103.6(c) se mantengan incluso si un tribunal invalidara la rescisión de 8 CFR 212.20–212.23. Es un detalle técnico que explica por qué una parte de una regla puede sobrevivir a un litigio sobre otra parte.\n\nIn English: the same final rule also revises the breach and cancellation provisions for public charge bonds at 8 CFR 103.6(c), and DHS states those changes are intended to be severable from the rescission of 8 CFR 212.20–212.23. Effective date for the rule: September 18, 2026.\n\nGuarda el post si te interesa cómo se construyen las reglas, y dinos en comentarios qué parte quieres ver explicada.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #publiccharge #federalregister #dhs #uscis #greencard #residencia #inmigracionusa #reglasfederales\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 012",
+      "headline": [
+        {
+          "t": "Public charge bonds: "
+        },
+        {
+          "t": "también cambian",
+          "c": "blue"
+        }
+      ],
+      "sub": "Federal Register, 20 de julio de 2026 · 8 CFR 103.6(c)",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "La regla toca las fianzas.",
+      "body": [
+        {
+          "t": "Resumen oficial de la regla final (Federal Register, 20-jul-2026, doc. 2026-14539): "
+        },
+        {
+          "t": "también revisa el incumplimiento y la cancelación de las public charge bonds.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A quien tenga una fianza.",
+      "body": [
+        {
+          "t": "Casos con una public charge bond bajo 8 CFR 103.6, y a los fiadores. "
+        },
+        {
+          "t": "La regla es vigente el 18 de septiembre de 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "La cláusula de severability.",
+      "sub": "Federal Register, 20 de julio de 2026 (doc. 2026-14539)",
+      "label": "TEXTO OFICIAL (EN)",
+      "code": "\"DHS intends the changes to 8 CFR\n103.6(c) to be severable from the\nfull rescission of regulatory\nprovisions in 8 CFR part 212.\""
+    },
+    {
+      "kind": "step",
+      "eyebrow": "OPINIÓN",
+      "headline": "Cómo lo lee un despacho.",
+      "body": [
+        {
+          "t": "USILAW (usilaw.com), client alert de julio de 2026, anticipa variación entre oficinas y más RFE o NOID cuando la documentación financiera es escasa. "
+        },
+        {
+          "t": "Opinión, no noticia ni asesoría legal: consulta a un abogado.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LO CLAVE",
+      "headline": "El detalle que puede sobrevivir:",
+      "stat": "8 CFR 103.6(c)"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "La parte de las fianzas",
+      "items": [
+        "Misma regla: 20 de julio de 2026",
+        "Revisa breach y cancellation de bonds",
+        "Cambios pensados como severables",
+        "Vigente el 18 de septiembre de 2026"
+      ],
+      "cta_title": "Guarda esto para el expediente",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}
