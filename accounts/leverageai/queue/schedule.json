@@ -133,9 +133,12 @@
         "accounts/leverageai/queue/post08-cv-tailoring/slide06.png"
       ],
       "caption": "Sending the same CV to 50 jobs is why you're getting 50 silences. 📄\n\nThis workflow tailors your CV to each job post in ~10 minutes — without inventing anything. The honesty guardrail in step 3 matters: recruiters can smell AI padding.\n\nSend this to someone job hunting right now 📤\n\nDaily leverage, zero hype → @leverageai.daily\n\n#jobsearch #cvtips #careeradvice #chatgptprompts #aitools #jobhunting #resumetips #aiworkflow #careertips #worksmarter",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post08-cv-tailoring/reel.mp4"
+      "video": "accounts/leverageai/queue/post08-cv-tailoring/reel.mp4",
+      "published_media_id": "18099466006967981",
+      "published_on": "2026-08-01",
+      "threads_posted": true
     },
     {
       "id": "post09-brutal-editor-prompt",
