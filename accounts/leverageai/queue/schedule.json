@@ -167,9 +167,12 @@
         "accounts/leverageai/queue/post10-canva-vs-alternatives/slide06.png"
       ],
       "caption": "\"What should I use for design if I'm not a designer?\" — the honest answer, with weak spots included.\n\nNo tool sponsored this. That's the point of this page.\n\nWhat's your non-designer design stack? 👇\n\nOne practical AI workflow a day → @leverageai.daily\n\n#canva #designtools #nondesigner #aitools #contentcreation #smallbusinesstips #marketingtools #worksmarter #freetools #designtips",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post10-canva-vs-alternatives/reel.mp4"
+      "video": "accounts/leverageai/queue/post10-canva-vs-alternatives/reel.mp4",
+      "published_media_id": "18110984050963957",
+      "published_on": "2026-08-03",
+      "threads_posted": true
     },
     {
       "id": "post11-fake-productivity",
