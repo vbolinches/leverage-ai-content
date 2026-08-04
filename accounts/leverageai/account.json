@@ -11,10 +11,15 @@
     "username": "leverageai.daily"
   },
   "wordmark": "LEVERAGE AI",
-  "theme": "one practical AI workflow a day for knowledge workers",
-  "voice": "Direct, concrete, no hype. Never \"revolutionary\", \"game-changer\", \"insane\", \"unlock\". Short sentences. Second person. Always give something copy-pasteable. Name real tools (ChatGPT, Claude, NotebookLM, Perplexity, Canva, Notion). Be honest about limitations — say what a tool is bad at.",
-  "cta_line": "Follow @leverageai.daily for one practical AI workflow a day.",
-  "search_brief": "recent AI tool releases and feature changes, workflows people are discussing now, and anything that would date a post or make it wrong",
+  "theme": "one practical AI workflow a day for people who run their own business — solo consultants, freelancers and small operators",
+  "voice": "Direct, concrete, no hype. Never \"revolutionary\", \"game-changer\", \"insane\", \"unlock\". Short sentences. Second person, speaking to someone who runs their own business and does everything themselves: sales, delivery, invoices, marketing, admin. Frame every workflow around a task THEY actually have (client proposals, follow-ups, invoicing, scope creep, content for their own marketing, bookkeeping) and the time or money it wins back. Always give something copy-pasteable. Name real tools (ChatGPT, Claude, NotebookLM, Perplexity, Canva, Notion). Be honest about limitations — say what a tool is bad at.",
+  "cta_line": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+  "search_brief": "recent AI tool releases and feature changes relevant to solo business owners and freelancers — pricing changes, new features for proposals/invoicing/client work, workflows self-employed people are discussing now, and anything that would date a post or make it wrong",
+  "reel_ratio": 2,
+  "reel_endcard": {
+    "title": "Follow @leverageai.daily",
+    "sub": "One AI workflow a day for people who run their own business"
+  },
   "colors": {},
   "dm_welcome": {
     "enabled": true,

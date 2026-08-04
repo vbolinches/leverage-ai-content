@@ -24,9 +24,11 @@ SPEC_DIR = _ACCT.spec_dir
 QUEUE = _ACCT.queue
 
 # Learning gates. Engagement on a new account is mostly noise; these are the
-# floor at which differences between posts start to mean anything.
+# floor at which differences between posts start to mean anything. Reach
+# counts toward the signal: on a young account it is the first metric with
+# real variance (reels 6..144 vs carousels 1..3), and it IS the goal.
 MIN_POSTS = 6           # need enough published posts to compare
-MIN_TOTAL_ENGAGEMENT = 25   # ...and enough total signal to rank them
+MIN_TOTAL_SIGNAL = 150  # ...and enough total signal (reach + engagement)
 
 
 def _load(path, default):
@@ -119,12 +121,16 @@ def brief():
     scored = []
     for p in latest["posts"]:
         attrs = _spec_attributes(p["slug"])
-        # Saves are the strongest signal for carousels — someone valuing a post
-        # enough to keep it. Shares spread reach. Likes are near-noise.
-        score = (p["likes"]
-                 + 3 * p["comments"]
-                 + 5 * (p.get("saved") or 0)
-                 + 5 * (p.get("shares") or 0))
+        # Reach is the primary signal while the account is in the discovery
+        # phase — it is what the strategy is optimising and the only metric
+        # with real variance so far. Engagement outweighs it per-unit: a save
+        # is worth far more than an impression. Accounts whose token cannot
+        # read insights (reach absent) fall back to engagement-only naturally.
+        score = ((p.get("reach") or 0)
+                 + 3 * p["likes"]
+                 + 9 * p["comments"]
+                 + 15 * (p.get("saved") or 0)
+                 + 15 * (p.get("shares") or 0))
         scored.append({**p, "score": score, "attrs": attrs})
 
     total = sum(p["score"] for p in scored)
@@ -139,9 +145,9 @@ def brief():
         stats["reason"] = (f"only {len(scored)} published posts "
                            f"(need {MIN_POSTS} to compare)")
         return None, stats
-    if total < MIN_TOTAL_ENGAGEMENT:
-        stats["reason"] = (f"total engagement {total} "
-                           f"(need {MIN_TOTAL_ENGAGEMENT} for signal)")
+    if total < MIN_TOTAL_SIGNAL:
+        stats["reason"] = (f"total signal {total} "
+                           f"(need {MIN_TOTAL_SIGNAL} to rank posts)")
         return None, stats
 
     scored.sort(key=lambda p: p["score"], reverse=True)
@@ -155,8 +161,8 @@ def brief():
 
     def describe(p):
         a = p["attrs"] or {}
-        return (f'  {p["slug"]} — {p["likes"]}L {p["comments"]}C '
-                f'(score {p["score"]})\n'
+        return (f'  {p["slug"]} — reach {p.get("reach", "?")}, '
+                f'{p["likes"]}L {p["comments"]}C (score {p["score"]})\n'
                 f'    hook: {a.get("hook", "?")}\n'
                 f'    {a.get("slides", "?")} slides, '
                 f'prompt slide: {a.get("has_prompt_slide")}, '

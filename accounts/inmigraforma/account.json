@@ -15,6 +15,10 @@
   },
   "wordmark": "INMIGRAFORMA",
   "logo": "accounts/inmigraforma/brand/logo.png",
+  "reel_endcard": {
+    "title": "Sigue a @inmigraforma",
+    "sub": "Noticias de inmigración de EE.UU., claras y verificadas"
+  },
   "theme": "US immigration news explained in Spanish and English — policy changes, USCIS updates, visa news, and what they mean in practice",
   "eyebrow_prefix": "NOTICIA",
   "voice": "Bilingual: slides in Spanish, plus one short English recap paragraph in the caption. Keep official terms in English (Green Card, parole, Visa Bulletin, I-485, EAD). Calm, precise, neutral — never alarmist, never speculative about future policy. NEWS may come ONLY from official government outlets: uscis.gov, dhs.gov, state.gov, travel.state.gov, federalregister.gov, justice.gov/eoir — verify on the official page and name the source and date on the slide for every claim. Immigration-lawyer commentary may be used ONLY as clearly labelled opinion (eyebrow 'OPINIÓN' and the lawyer/firm named), never presented as news, and always with the disclaimer that it is not legal advice and the reader should consult an immigration lawyer about their case. Prefer explainers that stay accurate for at least two weeks; skip anything that could flip within days. Never individual legal advice: every caption ends with 'Información general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.' Visual style: keep the account's existing look — no big changes in colors or fonts, subtle continuity over rebranding.",

@@ -405,9 +405,17 @@ def main():
     cursor = next_date(sched)
     added = 0
 
-    # Continue the carousel/reel alternation from wherever the queue left off.
-    tail = [p for p in sched["posts"] if p["status"] == "queued"]
-    as_reel = not (tail and tail[-1].get("format") == "reel")
+    # reel_ratio = reels per carousel (default 1 = alternate). Reels are the
+    # only discovery surface — carousels reach single digits on a young
+    # account — so growth-phase accounts run reel-heavy. The pattern is
+    # deterministic by post number, so batches stay consistent across runs.
+    ratio = int(ACCT.get("reel_ratio", 1))
+    period = ratio + 1
+
+    def is_reel(slug):
+        m = re.match(r"post(\d+)", slug)
+        n = int(m.group(1)) if m else 0
+        return n % period != 0
 
     for post in posts:
         errs = validate(post)
@@ -432,7 +440,7 @@ def main():
             "status": "queued",
         }
 
-        if as_reel:
+        if is_reel(post["slug"]):
             import render_reel
             video, secs = render_reel.render(post, out)
             entry["format"] = "reel"
@@ -441,7 +449,6 @@ def main():
                   f"-> {out}/")
         else:
             print(f"  {post['slug']}: {len(slides)} slides -> {out}/")
-        as_reel = not as_reel
 
         if not a.dry_run:
             sched["posts"].append(entry)

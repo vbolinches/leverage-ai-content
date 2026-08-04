@@ -32,10 +32,13 @@ W, H = 1080, 1920
 FPS = 30
 
 # Timing, in seconds. Hooks need less time than prompt slides people read.
-COVER_HOLD = 2.6
+# The cover hold is short on purpose: the first second decides whether a
+# stranger keeps watching, so the hook must land immediately.
+COVER_HOLD = 1.6
 SLIDE_HOLD = 3.4
 PROMPT_HOLD = 5.0        # code slides need dwell time
 FINAL_HOLD = 3.2
+ENDCARD_HOLD = 1.8       # the explicit follow ask, at peak attention
 XFADE = 0.4
 ZOOM = 0.05              # 5% drift over a card's hold
 
@@ -122,6 +125,52 @@ def card_from_image(path, index, total):
     return frame
 
 
+def endcard():
+    """The follow ask: full-screen handle + one-line promise + logo/mark.
+
+    Every reel ends with this — a stranger who watched to the end is at peak
+    intent, and the reels never asked for the follow before. Text comes from
+    the account's reel_endcard config via render_slides.configure().
+    """
+    from PIL import ImageDraw
+    img = Image.new("RGB", (W, H), render_slides.BG)
+    d = ImageDraw.Draw(img)
+    cfg = render_slides.BRANDING.get("reel_endcard") or {}
+    title = cfg.get("title") or f"Follow {render_slides.BRANDING['handle']}"
+    sub = cfg.get("sub") or ""
+
+    logo_path = render_slides.BRANDING.get("logo")
+    y = 730
+    if logo_path and os.path.exists(logo_path):
+        logo, mask = render_slides._logo(120)
+        img.paste(logo, ((W - 120) // 2, y), mask)
+    else:
+        render_slides.draw_mark(d, (W - 96) // 2, y, size=96)
+    y += 190
+
+    ft = render_slides.font("bold", 64)
+    wpx = render_slides.measure(d, title, ft)
+    d.text(((W - wpx) / 2, y), title, font=ft,
+           fill=render_slides.COLORS["white"])
+    y += 110
+
+    if sub:
+        fs = render_slides.font("regular", 36)
+        lines = render_slides.wrap_segments(d, [{"t": sub, "c": "dim"}],
+                                            "regular", 36, W - 240)
+        for line in lines:
+            lw = sum(render_slides.measure(d, w, f) for w, _, f in line) \
+                + render_slides.measure(d, " ", fs) * (len(line) - 1)
+            cx = (W - lw) / 2
+            for i, (word, col, f) in enumerate(line):
+                if i:
+                    cx += render_slides.measure(d, " ", fs)
+                d.text((cx, y), word, font=f, fill=col)
+                cx += render_slides.measure(d, word, f)
+            y += 52
+    return img
+
+
 def render_from_images(slug, image_paths, out_root="queue"):
     """Build a reel from existing slide images (no spec required)."""
     total = len(image_paths)
@@ -132,6 +181,7 @@ def render_from_images(slug, image_paths, out_root="queue"):
                 else FINAL_HOLD if i == total - 1
                 else SLIDE_HOLD)
         cards.append((card_from_image(p, i + 1, total), secs))
+    cards.append((endcard(), ENDCARD_HOLD))
     return _encode(cards, slug, out_root)
 
 
@@ -142,6 +192,7 @@ def render(spec, out_root="queue"):
         (card(s, i + 1, total), hold_for(s, i == total - 1))
         for i, s in enumerate(slides)
     ]
+    cards.append((endcard(), ENDCARD_HOLD))
     return _encode(cards, spec["slug"], out_root)
 
 

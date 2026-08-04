@@ -59,6 +59,8 @@ def configure(acct):
     BRANDING["wordmark"] = acct.get("wordmark", acct["username"].upper())
     BRANDING["handle"] = "@" + acct["username"]
     BRANDING["logo"] = acct.get("logo")
+    BRANDING["reel_endcard"] = acct.get("reel_endcard") or {
+        "title": f"Follow @{acct['username']}", "sub": ""}
     for name, rgb in (acct.get("colors") or {}).items():
         if name == "bg":
             BG = tuple(rgb)
