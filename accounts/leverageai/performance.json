@@ -499,6 +499,100 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-08-05",
+      "followers": 7,
+      "posts": [
+        {
+          "slug": "post11-fake-productivity",
+          "likes": 0,
+          "comments": 0,
+          "reach": 0,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post10-canva-vs-alternatives",
+          "likes": 0,
+          "comments": 0,
+          "reach": 73,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post09-brutal-editor-prompt",
+          "likes": 1,
+          "comments": 0,
+          "reach": 3,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post08-cv-tailoring",
+          "likes": 1,
+          "comments": 0,
+          "reach": 27,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post07-free-tools-honest",
+          "likes": 1,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post06-content-repurpose",
+          "likes": 0,
+          "comments": 0,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post05-notebooklm-workflow",
+          "likes": 1,
+          "comments": 0,
+          "reach": 3,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post04-chatgpt-mistakes",
+          "likes": 2,
+          "comments": 0,
+          "reach": 76,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post03-tool-duel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post02-meeting-notes-prompt",
+          "likes": 5,
+          "comments": 2,
+          "reach": 144,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post01-email-workflow",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
