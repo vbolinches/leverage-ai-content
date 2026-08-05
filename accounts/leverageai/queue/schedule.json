@@ -204,9 +204,12 @@
         "accounts/leverageai/queue/post12-spreadsheet-formulas/slide06.png"
       ],
       "caption": "You don't need to memorize formulas anymore. You need to describe what you want. 📊\n\nThe workflow that ended \"how do I VLOOKUP\" googling forever — plus the verification habit that keeps it safe for real work.\n\nSave this for your next spreadsheet session 🔖\n\nDaily leverage, zero hype → @leverageai.daily\n\n#excel #googlesheets #exceltips #spreadsheets #aitools #productivitytips #datatips #worksmarter #chatgpt #officehacks",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post12-spreadsheet-formulas/reel.mp4"
+      "video": "accounts/leverageai/queue/post12-spreadsheet-formulas/reel.mp4",
+      "published_media_id": "17947297488253240",
+      "published_on": "2026-08-05",
+      "threads_posted": true
     },
     {
       "id": "post13-freelancer-stack",
