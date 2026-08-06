@@ -35,18 +35,19 @@ FPS = 30
 # slide (owner feedback 2026-08: fixed holds were too fast to read). The
 # static values below are fallbacks for the no-spec path and the floor/cap
 # system; spec-rendered slides use slide_seconds().
-COVER_HOLD = 2.4
-SLIDE_HOLD = 4.8
-PROMPT_HOLD = 6.0        # code slides need dwell time
-FINAL_HOLD = 4.5
-ENDCARD_HOLD = 2.2       # the explicit follow ask, at peak attention
+COVER_HOLD = 3.0
+SLIDE_HOLD = 6.5
+PROMPT_HOLD = 8.0        # code slides need dwell time
+FINAL_HOLD = 5.5
+ENDCARD_HOLD = 2.5       # the explicit follow ask, at peak attention
 XFADE = 0.4
 ZOOM = 0.05              # 5% drift over a card's hold
 
-# A comfortable phone reader manages roughly this many characters per second;
-# code/quoted rule text reads slower than prose.
-CHAR_RATE = 14.0
-CODE_RATE = 9.0
+# Reading speed on a phone with divided attention is far below quiet-desk
+# reading. Second owner correction (2026-08-06): 14 chars/s was still too
+# fast — people must be able to COMFORTABLY finish each slide, not race it.
+CHAR_RATE = 11.0
+CODE_RATE = 7.0
 
 PROGRESS_H = 6
 
@@ -81,7 +82,7 @@ def slide_seconds(slide, is_last):
     if slide.get("code"):
         secs += len(slide["code"]) / CODE_RATE
     kind = slide.get("kind")
-    lo, hi = {"cover": (2.2, 4.5), "prompt": (5.0, 9.5)}.get(kind, (3.5, 8.0))
+    lo, hi = {"cover": (2.6, 5.5), "prompt": (6.0, 12.0)}.get(kind, (4.5, 10.0))
     if is_last:
         lo = max(lo, FINAL_HOLD)
     return max(lo, min(secs, hi))
