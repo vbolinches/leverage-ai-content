@@ -223,9 +223,12 @@
         "accounts/leverageai/queue/post13-freelancer-stack/slide06.png"
       ],
       "caption": "The freelancer admin stack: proposal → contract questions → invoice chase, all AI-assisted, all free. 💼\n\nAdmin is unpaid work. This cuts it to under an hour a week.\n\nKnow a freelancer drowning in admin? Send them this 📤\n\nFollow @leverageai.daily for one practical AI workflow a day.\n\n#freelancer #freelancertips #solopreneur #aitools #smallbusiness #productivitytips #aiforbusiness #worksmarter #entrepreneur #adminhacks",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post13-freelancer-stack/reel.mp4"
+      "video": "accounts/leverageai/queue/post13-freelancer-stack/reel.mp4",
+      "published_media_id": "18084411710251905",
+      "published_on": "2026-08-06",
+      "threads_posted": true
     },
     {
       "id": "post14-feynman-prompt",
