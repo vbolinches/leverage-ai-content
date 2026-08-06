@@ -53,11 +53,19 @@ def media_to_slug():
     }
 
 
+def slug_to_format():
+    """Publish format per slug — the generator asked for this label to keep
+    testing the reels-vs-carousels hypothesis against fresh data."""
+    sched = _load(QUEUE, {"posts": []})
+    return {p["id"]: p.get("format", "carousel") for p in sched["posts"]}
+
+
 def record(followers, posts, today=None):
     """Append today's snapshot. Idempotent — re-running replaces today's entry."""
     today = today or date.today().isoformat()
     hist = _load(HISTORY, {"snapshots": []})
     m2s = media_to_slug()
+    s2f = slug_to_format()
 
     snapshot = {
         "date": today,
@@ -65,6 +73,7 @@ def record(followers, posts, today=None):
         "posts": [
             {
                 "slug": m2s.get(p["id"], p["id"]),
+                "format": s2f.get(m2s.get(p["id"], p["id"]), "?"),
                 "likes": p["likes"],
                 "comments": p["comments"],
                 # Present only once the token carries the insights scope.
@@ -161,7 +170,8 @@ def brief():
 
     def describe(p):
         a = p["attrs"] or {}
-        return (f'  {p["slug"]} — reach {p.get("reach", "?")}, '
+        return (f'  {p["slug"]} [{p.get("format", "?")}] — '
+                f'reach {p.get("reach", "?")}, '
                 f'{p["likes"]}L {p["comments"]}C (score {p["score"]})\n'
                 f'    hook: {a.get("hook", "?")}\n'
                 f'    {a.get("slides", "?")} slides, '
