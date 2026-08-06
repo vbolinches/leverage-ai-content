@@ -161,6 +161,20 @@ SUBMIT_TOOL = {
                     "type": "object",
                     "properties": {
                         "slug": {"type": "string"},
+                        "art": {
+                            "type": "string",
+                            "description": (
+                                "Background illustration matching the post's "
+                                "subject, drawn behind the cover. Pick the "
+                                "closest; 'document' is the safe general "
+                                "fallback."
+                            ),
+                            "enum": ["spreadsheet", "document", "email",
+                                     "calendar", "chat", "checklist", "chart",
+                                     "clock", "gavel", "passport", "scales",
+                                     "building", "form", "lightbulb",
+                                     "folder", "newspaper", "globe"],
+                        },
                         "caption": {"type": "string"},
                         "slides": {
                             "type": "array",
@@ -189,7 +203,7 @@ SUBMIT_TOOL = {
                             },
                         },
                     },
-                    "required": ["slug", "caption", "slides"],
+                    "required": ["slug", "art", "caption", "slides"],
                 },
             }
         },

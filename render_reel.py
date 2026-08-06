@@ -87,9 +87,9 @@ def slide_seconds(slide, is_last):
     return max(lo, min(secs, hi))
 
 
-def card(spec_slide, index, total):
+def card(spec_slide, index, total, art=None):
     """One 1080x1920 frame: the carousel slide centred, plus a progress bar."""
-    slide = render_slides.render_slide(spec_slide, index, total)
+    slide = render_slides.render_slide(spec_slide, index, total, art=art)
     # render_slides.BG is read at call time — configure() may have repointed it.
     frame = Image.new("RGB", (W, H), render_slides.BG)
     frame.paste(slide, (0, (H - slide.height) // 2))
@@ -212,7 +212,8 @@ def render(spec, out_root="queue"):
     slides = spec["slides"]
     total = len(slides)
     cards = [
-        (card(s, i + 1, total), slide_seconds(s, i == total - 1))
+        (card(s, i + 1, total, art=spec.get("art")),
+         slide_seconds(s, i == total - 1))
         for i, s in enumerate(slides)
     ]
     cards.append((endcard(), ENDCARD_HOLD))

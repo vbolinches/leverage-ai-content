@@ -232,8 +232,39 @@ def draw_chrome(img, draw, page, total, footer_right=None):
         draw.text((W - MARGIN - w, FOOTER_Y), right, font=fr, fill=col)
 
 
-def render_slide(spec, page, total):
-    img = Image.new("RGB", (W, H), BG)
+_grad_cache = {}
+
+
+def _canvas():
+    """Slide background: a subtle vertical gradient instead of a flat fill.
+
+    Cached per active BG. Kills the "flat" look on every slide without
+    costing any text contrast — the range stays within dark tones.
+    """
+    if BG not in _grad_cache:
+        top = tuple(min(255, int(c * 1.35 + 6)) for c in BG)
+        bottom = tuple(int(c * 0.55) for c in BG)
+        img = Image.new("RGB", (W, H))
+        px = img.load()
+        for y in range(H):
+            t = y / H
+            row = tuple(int(top[i] * (1 - t) + bottom[i] * t) for i in range(3))
+            for x in range(W):
+                px[x, y] = row
+        _grad_cache[BG] = img
+    return _grad_cache[BG].copy()
+
+
+def render_slide(spec, page, total, art=None):
+    img = _canvas()
+    # The topic illustration goes on the light-text slides only; step/prompt
+    # slides stay clean — they carry the dense text people need to read.
+    if art and spec.get("kind") in ("cover", "stat", "recap"):
+        import illustrations
+        accent = tuple(int(m * 0.65 + b * 0.35)
+                       for m, b in zip(COLORS["mark"], BG))
+        img = illustrations.paint(img, art, accent,
+                                  alpha=0.55 if spec.get("kind") == "cover" else 0.4)
     draw = ImageDraw.Draw(img)
     kind = spec.get("kind", "step")
     max_w = W - 2 * MARGIN
@@ -328,9 +359,10 @@ def render_post(spec, out_root="queue"):
     out_dir = os.path.join(out_root, slug)
     os.makedirs(out_dir, exist_ok=True)
     slides = spec["slides"]
+    art = spec.get("art")
     paths = []
     for i, s in enumerate(slides, 1):
-        img = render_slide(s, i, len(slides))
+        img = render_slide(s, i, len(slides), art=art)
         p = os.path.join(out_dir, f"slide{i:02d}.png")
         img.save(p, "PNG", optimize=True)
         paths.append(f"{out_root}/{slug}/slide{i:02d}.png".replace("\\", "/"))
