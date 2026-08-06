@@ -31,16 +31,22 @@ import render_slides
 W, H = 1080, 1920
 FPS = 30
 
-# Timing, in seconds. Hooks need less time than prompt slides people read.
-# The cover hold is short on purpose: the first second decides whether a
-# stranger keeps watching, so the hook must land immediately.
-COVER_HOLD = 1.6
-SLIDE_HOLD = 3.4
-PROMPT_HOLD = 5.0        # code slides need dwell time
-FINAL_HOLD = 3.2
-ENDCARD_HOLD = 1.8       # the explicit follow ask, at peak attention
+# Timing, in seconds. Dwell scales with how much text is actually on the
+# slide (owner feedback 2026-08: fixed holds were too fast to read). The
+# static values below are fallbacks for the no-spec path and the floor/cap
+# system; spec-rendered slides use slide_seconds().
+COVER_HOLD = 2.4
+SLIDE_HOLD = 4.8
+PROMPT_HOLD = 6.0        # code slides need dwell time
+FINAL_HOLD = 4.5
+ENDCARD_HOLD = 2.2       # the explicit follow ask, at peak attention
 XFADE = 0.4
 ZOOM = 0.05              # 5% drift over a card's hold
+
+# A comfortable phone reader manages roughly this many characters per second;
+# code/quoted rule text reads slower than prose.
+CHAR_RATE = 14.0
+CODE_RATE = 9.0
 
 PROGRESS_H = 6
 
@@ -53,15 +59,32 @@ def _ffmpeg():
     return imageio_ffmpeg.get_ffmpeg_exe()
 
 
-def hold_for(slide, is_last):
-    if is_last:
-        return FINAL_HOLD
+def _flat(v):
+    if v is None:
+        return ""
+    if isinstance(v, str):
+        return v
+    return "".join(x.get("t", "") for x in v)
+
+
+def slide_seconds(slide, is_last):
+    """Dwell time a human needs to actually read this slide.
+
+    Base + text-length at reading speed, clamped per slide kind so hooks stay
+    snappy and no single card stalls the reel.
+    """
+    text = " ".join(_flat(slide.get(k)) for k in
+                    ("eyebrow", "headline", "sub", "body", "label",
+                     "stat", "cta_title", "cta_sub"))
+    text += " " + " ".join(_flat(i) for i in (slide.get("items") or []))
+    secs = 1.2 + len(text.strip()) / CHAR_RATE
+    if slide.get("code"):
+        secs += len(slide["code"]) / CODE_RATE
     kind = slide.get("kind")
-    if kind == "cover":
-        return COVER_HOLD
-    if kind == "prompt" or slide.get("code"):
-        return PROMPT_HOLD
-    return SLIDE_HOLD
+    lo, hi = {"cover": (2.2, 4.5), "prompt": (5.0, 9.5)}.get(kind, (3.5, 8.0))
+    if is_last:
+        lo = max(lo, FINAL_HOLD)
+    return max(lo, min(secs, hi))
 
 
 def card(spec_slide, index, total):
@@ -189,7 +212,7 @@ def render(spec, out_root="queue"):
     slides = spec["slides"]
     total = len(slides)
     cards = [
-        (card(s, i + 1, total), hold_for(s, i == total - 1))
+        (card(s, i + 1, total), slide_seconds(s, i == total - 1))
         for i, s in enumerate(slides)
     ]
     cards.append((endcard(), ENDCARD_HOLD))
