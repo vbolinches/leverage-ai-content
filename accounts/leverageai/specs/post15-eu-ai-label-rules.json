@@ -1,0 +1,98 @@
+{
+  "slug": "post15-eu-ai-label-rules",
+  "art": "gavel",
+  "caption": "The EU's AI transparency rules (Article 50 of the AI Act) started applying on 2 August 2026. They reach any provider or deployer serving EU users, so a US or UK freelancer with EU clients is not automatically outside them.\n\nMost of the panic is overblown. Three things actually matter for a one-person business: a chatbot on your site has to tell people it's a chatbot, realistic AI-made images/audio/video of real people or events have to be disclosed, and AI text published to inform the public on matters of public interest has to be labelled. Your service page written with ChatGPT's help is not a press release about public affairs.\n\nThe slides have the exact lines you can paste under a bot greeting and under AI visuals. Twenty minutes, once, and it's done. Reported penalties run to €15 million or 3% of worldwide turnover, which is why \"I'll deal with it later\" is a bad plan — and why this is a workflow, not legal advice. If you work in health, finance or law, pay a lawyer for an hour.\n\nSave this so it's there next time you ship an AI-made asset. If you've already added a disclosure line, post the wording you used — other people can steal it.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #aiforbusiness #smallbusinesstips #euaiact #freelancetips #consultantlife #aitools #selfemployed #businessadmin",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 015",
+      "headline": [
+        {
+          "t": "EU AI labels "
+        },
+        {
+          "t": "are live.",
+          "c": "blue"
+        }
+      ],
+      "sub": "What the rules ask of a one-person business. And what they don't.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Know the three buckets.",
+      "body": [
+        {
+          "t": "Article 50 applies from 2 Aug 2026. Chatbots must say they're AI. Deepfakes must be disclosed. AI text published to inform the public on public-interest matters must be labelled. "
+        },
+        {
+          "t": "That's the list.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Start with the bot.",
+      "body": [
+        {
+          "t": "If you run a chat widget or an auto-replier, the person has to know it's a machine "
+        },
+        {
+          "t": "before they type.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " One line in the greeting covers it."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Paste these lines.",
+      "sub": "Greeting for the bot, caption line for AI visuals.",
+      "label": "COPY THESE LINES",
+      "code": "Bot greeting:\n\"You're chatting with an AI assistant.\nType HUMAN and I'll email you back.\"\n\nUnder AI visuals:\n\"Image generated with AI.\"\n\"Video contains AI-generated elements.\""
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Then stop labelling.",
+      "body": [
+        {
+          "t": "The text rule targets content informing the public on public-interest matters, not your service page. Penalties reach €15m or 3% of turnover, so "
+        },
+        {
+          "t": "if you're in a regulated niche, buy an hour of a lawyer.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "How long does this take?",
+      "stat": "~20 minutes, once"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Bot says it's a bot",
+        "Realistic AI media gets a note",
+        "Service copy needs no label",
+        "Regulated work: ask a lawyer"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

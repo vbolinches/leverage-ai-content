@@ -1,0 +1,95 @@
+{
+  "slug": "post20-business-context-file",
+  "art": "folder",
+  "caption": "OpenAI launched a ChatGPT for small business program on 21 July 2026 — training, guides, agents aimed at owners who are the marketer, the accountant and the salesperson at once. Useful. But none of it fixes the actual problem: the model doesn't know your rates, your clients, or the work you refuse.\n\nSo write one page. Services and prices, who you serve, who you turn down, three words for your tone, and one rule about never inventing numbers. Slide 3 has the skeleton — it takes fifteen minutes.\n\nThen stop retyping it. Paste it into a ChatGPT Project or Claude Project so every chat in that folder starts with it, or drop it into Custom Instructions. Every draft comes back closer to something you'd actually send.\n\nIt won't make outputs true. Context makes them sound like you, which is exactly when a wrong price is hardest to spot — so still read the numbers.\n\nSave this and write yours this week. What's the one thing about your business every AI tool gets wrong?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #claudeai #aiworkflow #selfemployed #consultantlife #smallbusinesstips #aitools #freelancetips",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 020",
+      "headline": [
+        {
+          "t": "Your AI doesn't know "
+        },
+        {
+          "t": "your business.",
+          "c": "blue"
+        }
+      ],
+      "sub": "One page of context, written once, pasted into every tool you use.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Write the page once.",
+      "body": [
+        {
+          "t": "Services and prices, who you serve, who you decline, your tone, your rules. "
+        },
+        {
+          "t": "Fifteen minutes now beats re-explaining yourself in every chat forever.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Use this skeleton.",
+      "sub": "Fill it in, keep it under 400 words.",
+      "label": "COPY THIS TEMPLATE",
+      "code": "BUSINESS CONTEXT\nI run: [service], solo, since [year].\nClients: [type, size, budget].\nI don't take: [work you refuse].\nPrices: [3 packages + day rate].\nVoice: [3 words + 1 banned word].\nAlways ask before inventing a number.\nNever promise dates I haven't given you."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Load it, don't retype it.",
+      "body": [
+        {
+          "t": "ChatGPT Projects and Claude Projects both keep files attached to every chat in the folder. "
+        },
+        {
+          "t": "Custom Instructions works too. Refresh it when your prices change.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "HONESTLY",
+      "headline": "Context isn't accuracy.",
+      "body": [
+        {
+          "t": "It makes drafts sound like you — which is exactly when a wrong price slips past. "
+        },
+        {
+          "t": "Read every number before it reaches a client.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Per chat, from day one:",
+      "stat": "~10 min not retyped"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "One page: prices, clients, tone",
+        "Add the no-invented-numbers rule",
+        "Attach it to a Project",
+        "Update it when prices change"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

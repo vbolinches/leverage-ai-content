@@ -1,0 +1,95 @@
+{
+  "slug": "post21-late-invoice-ladder",
+  "art": "clock",
+  "caption": "An invoice is 31 days late and you've sent nothing, because every draft you start sounds either apologetic or furious. So it sits there, and your bank balance sits with it.\n\nStop writing one email. Write the whole ladder in one go: day 1 after due date (friendly, assume oversight), day 14 (firm, restate the terms and the late fee, ask for a payment date), day 30 (final notice, work pauses, name the next step). The prompt on slide 3 drafts all three in about a minute. Save them, schedule them, stop rewriting them for every client.\n\nThe uncomfortable part: emails don't collect money, terms do. If your contract has no payment window and no late fee, no wording gets you paid faster — you're asking a favour. Fix the contract for the next client while you chase this one.\n\nSave this before your next overdue invoice. What's the longest you've waited to get paid?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#getpaid #freelancelife #lateinvoice #solobusiness #cashflow #freelancetips #selfemployed #consultantlife #smallbusinesstips #invoicing",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 021",
+      "headline": [
+        {
+          "t": "The invoice is "
+        },
+        {
+          "t": "31 days late.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Write all three chase emails once. Then never draft one again.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Build a ladder, not a plea.",
+      "body": [
+        {
+          "t": "Day 1: friendly nudge. Day 14: firm, terms restated. Day 30: final notice. "
+        },
+        {
+          "t": "Escalation does the work so your tone doesn't have to.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Draft all three at once.",
+      "sub": "One prompt, three emails you reuse forever.",
+      "label": "COPY THIS PROMPT",
+      "code": "Write 3 payment reminder emails for\ninvoice [#], [amount], due [date].\n1 (day 1): friendly, assume oversight.\n2 (day 14): firm, restate terms and late\nfee, ask for a payment date.\n3 (day 30): final notice, work pauses,\nname the next step.\nUnder 90 words each. No apologising."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Schedule, don't decide.",
+      "body": [
+        {
+          "t": "Put the send dates in your calendar the day you invoice. "
+        },
+        {
+          "t": "Chasing shouldn't need a decision at 9pm when you're already annoyed.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "HONESTLY",
+      "headline": "Wording isn't leverage.",
+      "body": [
+        {
+          "t": "No email collects money on its own. Payment window, late fee, deposit up front — "
+        },
+        {
+          "t": "if the contract doesn't say it, you're asking a favour.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Average time to payment:",
+      "stat": "31 days → 7"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Three emails, drafted once",
+        "Escalate on days 1, 14, 30",
+        "Schedule sends when you invoice",
+        "Put the late fee in the contract"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "post16-ai-clause-proposals",
+  "art": "scales",
+  "caption": "\"Did you use AI on this?\" is now a normal client question. The EU's AI transparency rules started applying on 2 August 2026 and procurement teams have noticed. You want your answer written down before someone asks it in an email at 9pm.\n\nOne paragraph in your proposal does it. Where AI helps, where it never touches, who is accountable. The last part is the one clients care about: you are. Nobody is asking you to work by hand. They're asking whether their data went somewhere and whether a human checked the output.\n\nThe prompt on slide 3 drafts the paragraph from your own boundaries. Rewrite it in your words afterwards — a clause that sounds like a chatbot wrote it defeats the point.\n\nSave it for your next proposal. If a client has already asked you this, say what you told them in the comments.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #proposalwriting #aiforbusiness #consultantlife #freelancetips #selfemployed #aitools #smallbusinesstips",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 016",
+      "headline": [
+        {
+          "t": "\"Did you use "
+        },
+        {
+          "t": "AI on this?\"",
+          "c": "blue"
+        }
+      ],
+      "sub": "Answer it in your proposal before a client asks it in an email.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Decide three lines.",
+      "body": [
+        {
+          "t": "Where AI helps (research, first drafts). Where it never goes (client data, final numbers). Who is accountable. "
+        },
+        {
+          "t": "The third line is the one they care about.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Draft the clause.",
+      "sub": "Fill the brackets with your real boundaries.",
+      "label": "COPY THIS PROMPT",
+      "code": "Write a 4-sentence AI use clause for my\nclient proposals.\nMy work: [what you deliver].\nI use AI for [research, first drafts].\nI never use it for [client data, final\nnumbers].\nI review everything and I'm accountable.\nPlain English. No legal jargon."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Put it page one.",
+      "body": [
+        {
+          "t": "Not buried in terms. Under \"how I work\", next to your process. "
+        },
+        {
+          "t": "Volunteering it reads as confidence; being caught out reads as hiding.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "HONESTLY",
+      "headline": "AI can't set the policy.",
+      "body": [
+        {
+          "t": "It drafts wording. It doesn't know what your clients fear — a data leak, a fake statistic, paying senior rates for output. "
+        },
+        {
+          "t": "Ask two clients before you finalise it.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What does one paragraph buy?",
+      "stat": "One less awkward call"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Name where AI helps",
+        "Name where it never goes",
+        "Take accountability in writing",
+        "Same paragraph in every proposal"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

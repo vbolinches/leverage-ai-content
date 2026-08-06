@@ -1,0 +1,98 @@
+{
+  "slug": "post17-month-end-books",
+  "art": "spreadsheet",
+  "caption": "Month-end bookkeeping is the job that eats a Sunday. The part that changed: QuickBooks can now pull transactions out of a PDF or image of a bank statement, and its categorisation suggestions come with an explanation of why it guessed that. Xero and FreshBooks are pushing the same reconciliation and invoicing automation.\n\nThat kills the typing. It does not kill the checking. The workflow on the slides is: let the software extract and categorise, then spend your attention on the twenty transactions that actually matter — biggest amounts, anything uncategorised, anything it explained badly.\n\nThen export the CSV and use the prompt on slide 3 in ChatGPT or Claude to find the things software doesn't flag: the subscription you're paying twice, the client whose invoices got slower every month. Strip names and account numbers first. Your bank data is not chatbot training material.\n\nSave this before the end of the month. What's the one expense you always forget to log?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#bookkeeping #freelancelife #solobusiness #smallbusinessfinance #quickbooks #selfemployed #aitools #freelancetips #consultantlife #businessadmin",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 017",
+      "headline": [
+        {
+          "t": "Month-end books "
+        },
+        {
+          "t": "in one sitting.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Let the software type. You only check the twenty rows that matter.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Feed it the statement.",
+      "body": [
+        {
+          "t": "QuickBooks now extracts transactions from a PDF or photo of a bank statement and explains each category it suggests. "
+        },
+        {
+          "t": "No more manual entry.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " Xero and FreshBooks automate the same reconciling."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Check twenty rows.",
+      "body": [
+        {
+          "t": "Sort by amount. Review the top ten, everything uncategorised, and anything where the explanation looks thin. "
+        },
+        {
+          "t": "Ignore the £4 coffees — they don't move your return.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Find what software misses.",
+      "sub": "Export the CSV. Delete names and account numbers first.",
+      "label": "COPY THIS PROMPT",
+      "code": "Here is my transaction CSV.\n1. Group spend by category, biggest\nfirst.\n2. Flag anything likely miscategorised.\n3. List subscriptions charged twice.\n4. Show months income dropped over 20%.\nAsk me before assuming anything."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "HONESTLY",
+      "headline": "It guesses. You sign.",
+      "body": [
+        {
+          "t": "Categorisation is a prediction, not a ruling, and a chatbot will do arithmetic wrong with total confidence. "
+        },
+        {
+          "t": "Your name is on the return, so spot-check the totals.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What does month-end cost?",
+      "stat": "3 hours → 40 min"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Upload statement, let it extract",
+        "Review top ten + uncategorised",
+        "CSV into chat for the patterns",
+        "Spot-check totals yourself"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

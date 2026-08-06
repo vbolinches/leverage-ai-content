@@ -1,0 +1,95 @@
+{
+  "slug": "post19-scope-creep-change-order",
+  "art": "email",
+  "caption": "\"Can you just add a couple of slides?\" Four hours later you've done it for free and the client has no idea they asked for anything.\n\nScope creep isn't a boundaries problem, it's a paperwork problem. Nobody writes the change order because writing it feels aggressive and takes twenty minutes you don't have. So you eat it. The fix is to make the email cost two minutes and sound normal.\n\nLog the request the day it lands — date, what they asked, your estimate. Then run the prompt on slide 3. It gives you a short, warm, unapologetic email that names the extra hours, the price, the new date, and offers a swap for something already in scope. The swap is what makes it land: you're not refusing, you're pricing.\n\nOne thing AI won't do: hold the line. It writes the email. You still have to send it before you do the work, not after.\n\nSave this for the next \"quick favour\". How many unpaid hours did the last one cost you?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#scopecreep #freelancelife #clientwork #solobusiness #freelancetips #consultantlife #selfemployed #aiforbusiness #smallbusinesstips #getpaid",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 019",
+      "headline": [
+        {
+          "t": "\"Can you just "
+        },
+        {
+          "t": "add one thing?\"",
+          "c": "blue"
+        }
+      ],
+      "sub": "Turn the quick favour into a priced change order in five minutes.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Log it the same day.",
+      "body": [
+        {
+          "t": "One line in a note: date, what they asked, your hour estimate. "
+        },
+        {
+          "t": "Three weeks later you won't remember, and \"it's been creeping\" is not an invoice.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Price before you build.",
+      "body": [
+        {
+          "t": "Extra hours times your rate, rounded up. Then decide the swap: what already in scope could drop instead? "
+        },
+        {
+          "t": "Two options beat one refusal.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Write the email.",
+      "sub": "Paste into ChatGPT or Claude. Fill the brackets.",
+      "label": "COPY THIS PROMPT",
+      "code": "Client asked for [extra request].\nOriginal scope: [one line].\nThis adds ~[X] hours at [rate].\nWrite a 120-word email: warm, no apology.\nSay it's outside scope, give the price\nand the new delivery date, and offer to\nswap it for [in-scope item] instead.\nNo jargon. No \"just circling back\"."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "HONESTLY",
+      "headline": "It won't hold the line.",
+      "body": [
+        {
+          "t": "A polite draft doesn't make you send it. Send before the work, not after — "
+        },
+        {
+          "t": "once it's delivered, the price of that email is your relationship.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What does one email recover?",
+      "stat": "~4 unpaid hours"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Log the ask the day it lands",
+        "Price it, pick a swap",
+        "Send the email before you build",
+        "Never bill a surprise at the end"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

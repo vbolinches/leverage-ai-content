@@ -244,6 +244,118 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post14-feynman-prompt/reel.mp4"
+    },
+    {
+      "id": "post15-eu-ai-label-rules",
+      "date": "2026-08-08",
+      "slides": [
+        "accounts/leverageai/queue/post15-eu-ai-label-rules/slide01.png",
+        "accounts/leverageai/queue/post15-eu-ai-label-rules/slide02.png",
+        "accounts/leverageai/queue/post15-eu-ai-label-rules/slide03.png",
+        "accounts/leverageai/queue/post15-eu-ai-label-rules/slide04.png",
+        "accounts/leverageai/queue/post15-eu-ai-label-rules/slide05.png",
+        "accounts/leverageai/queue/post15-eu-ai-label-rules/slide06.png",
+        "accounts/leverageai/queue/post15-eu-ai-label-rules/slide07.png"
+      ],
+      "caption": "The EU's AI transparency rules (Article 50 of the AI Act) started applying on 2 August 2026. They reach any provider or deployer serving EU users, so a US or UK freelancer with EU clients is not automatically outside them.\n\nMost of the panic is overblown. Three things actually matter for a one-person business: a chatbot on your site has to tell people it's a chatbot, realistic AI-made images/audio/video of real people or events have to be disclosed, and AI text published to inform the public on matters of public interest has to be labelled. Your service page written with ChatGPT's help is not a press release about public affairs.\n\nThe slides have the exact lines you can paste under a bot greeting and under AI visuals. Twenty minutes, once, and it's done. Reported penalties run to €15 million or 3% of worldwide turnover, which is why \"I'll deal with it later\" is a bad plan — and why this is a workflow, not legal advice. If you work in health, finance or law, pay a lawyer for an hour.\n\nSave this so it's there next time you ship an AI-made asset. If you've already added a disclosure line, post the wording you used — other people can steal it.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #aiforbusiness #smallbusinesstips #euaiact #freelancetips #consultantlife #aitools #selfemployed #businessadmin",
+      "status": "queued"
+    },
+    {
+      "id": "post16-ai-clause-proposals",
+      "date": "2026-08-09",
+      "slides": [
+        "accounts/leverageai/queue/post16-ai-clause-proposals/slide01.png",
+        "accounts/leverageai/queue/post16-ai-clause-proposals/slide02.png",
+        "accounts/leverageai/queue/post16-ai-clause-proposals/slide03.png",
+        "accounts/leverageai/queue/post16-ai-clause-proposals/slide04.png",
+        "accounts/leverageai/queue/post16-ai-clause-proposals/slide05.png",
+        "accounts/leverageai/queue/post16-ai-clause-proposals/slide06.png",
+        "accounts/leverageai/queue/post16-ai-clause-proposals/slide07.png"
+      ],
+      "caption": "\"Did you use AI on this?\" is now a normal client question. The EU's AI transparency rules started applying on 2 August 2026 and procurement teams have noticed. You want your answer written down before someone asks it in an email at 9pm.\n\nOne paragraph in your proposal does it. Where AI helps, where it never touches, who is accountable. The last part is the one clients care about: you are. Nobody is asking you to work by hand. They're asking whether their data went somewhere and whether a human checked the output.\n\nThe prompt on slide 3 drafts the paragraph from your own boundaries. Rewrite it in your words afterwards — a clause that sounds like a chatbot wrote it defeats the point.\n\nSave it for your next proposal. If a client has already asked you this, say what you told them in the comments.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #proposalwriting #aiforbusiness #consultantlife #freelancetips #selfemployed #aitools #smallbusinesstips",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post16-ai-clause-proposals/reel.mp4"
+    },
+    {
+      "id": "post17-month-end-books",
+      "date": "2026-08-10",
+      "slides": [
+        "accounts/leverageai/queue/post17-month-end-books/slide01.png",
+        "accounts/leverageai/queue/post17-month-end-books/slide02.png",
+        "accounts/leverageai/queue/post17-month-end-books/slide03.png",
+        "accounts/leverageai/queue/post17-month-end-books/slide04.png",
+        "accounts/leverageai/queue/post17-month-end-books/slide05.png",
+        "accounts/leverageai/queue/post17-month-end-books/slide06.png",
+        "accounts/leverageai/queue/post17-month-end-books/slide07.png"
+      ],
+      "caption": "Month-end bookkeeping is the job that eats a Sunday. The part that changed: QuickBooks can now pull transactions out of a PDF or image of a bank statement, and its categorisation suggestions come with an explanation of why it guessed that. Xero and FreshBooks are pushing the same reconciliation and invoicing automation.\n\nThat kills the typing. It does not kill the checking. The workflow on the slides is: let the software extract and categorise, then spend your attention on the twenty transactions that actually matter — biggest amounts, anything uncategorised, anything it explained badly.\n\nThen export the CSV and use the prompt on slide 3 in ChatGPT or Claude to find the things software doesn't flag: the subscription you're paying twice, the client whose invoices got slower every month. Strip names and account numbers first. Your bank data is not chatbot training material.\n\nSave this before the end of the month. What's the one expense you always forget to log?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#bookkeeping #freelancelife #solobusiness #smallbusinessfinance #quickbooks #selfemployed #aitools #freelancetips #consultantlife #businessadmin",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post17-month-end-books/reel.mp4"
+    },
+    {
+      "id": "post18-agent-job-brief",
+      "date": "2026-08-11",
+      "slides": [
+        "accounts/leverageai/queue/post18-agent-job-brief/slide01.png",
+        "accounts/leverageai/queue/post18-agent-job-brief/slide02.png",
+        "accounts/leverageai/queue/post18-agent-job-brief/slide03.png",
+        "accounts/leverageai/queue/post18-agent-job-brief/slide04.png",
+        "accounts/leverageai/queue/post18-agent-job-brief/slide05.png",
+        "accounts/leverageai/queue/post18-agent-job-brief/slide06.png"
+      ],
+      "caption": "The tools stopped being chatboxes this summer. OpenAI launched ChatGPT Work on 9 July 2026 and a small business program on 21 July. Anthropic started rolling Claude Cowork out to web and mobile on 7 July, Max subscribers first. All of them run multi-step jobs instead of answering one message.\n\nWhich changes the skill. Chatting gets you a paragraph. A brief gets you a finished thing. The template on slide 2 is the same one you'd hand a subcontractor: the artefact, what \"done\" means, the inputs it may use, the constraints, and permission to ask instead of guess.\n\nThe line that saves you most is the last one — ask for a list of what it skipped. Agents fail quietly. They'll hand you a confident deliverable with two invented figures in it and no flag. If you can't verify the output in five minutes, don't delegate that job yet.\n\nSave this for the next job you'd rather not do yourself. What's the first task you'd hand over?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #aiagents #chatgpt #claudeai #aiworkflow #selfemployed #consultantlife #freelancetips #aitools",
+      "status": "queued"
+    },
+    {
+      "id": "post19-scope-creep-change-order",
+      "date": "2026-08-12",
+      "slides": [
+        "accounts/leverageai/queue/post19-scope-creep-change-order/slide01.png",
+        "accounts/leverageai/queue/post19-scope-creep-change-order/slide02.png",
+        "accounts/leverageai/queue/post19-scope-creep-change-order/slide03.png",
+        "accounts/leverageai/queue/post19-scope-creep-change-order/slide04.png",
+        "accounts/leverageai/queue/post19-scope-creep-change-order/slide05.png",
+        "accounts/leverageai/queue/post19-scope-creep-change-order/slide06.png",
+        "accounts/leverageai/queue/post19-scope-creep-change-order/slide07.png"
+      ],
+      "caption": "\"Can you just add a couple of slides?\" Four hours later you've done it for free and the client has no idea they asked for anything.\n\nScope creep isn't a boundaries problem, it's a paperwork problem. Nobody writes the change order because writing it feels aggressive and takes twenty minutes you don't have. So you eat it. The fix is to make the email cost two minutes and sound normal.\n\nLog the request the day it lands — date, what they asked, your estimate. Then run the prompt on slide 3. It gives you a short, warm, unapologetic email that names the extra hours, the price, the new date, and offers a swap for something already in scope. The swap is what makes it land: you're not refusing, you're pricing.\n\nOne thing AI won't do: hold the line. It writes the email. You still have to send it before you do the work, not after.\n\nSave this for the next \"quick favour\". How many unpaid hours did the last one cost you?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#scopecreep #freelancelife #clientwork #solobusiness #freelancetips #consultantlife #selfemployed #aiforbusiness #smallbusinesstips #getpaid",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post19-scope-creep-change-order/reel.mp4"
+    },
+    {
+      "id": "post20-business-context-file",
+      "date": "2026-08-13",
+      "slides": [
+        "accounts/leverageai/queue/post20-business-context-file/slide01.png",
+        "accounts/leverageai/queue/post20-business-context-file/slide02.png",
+        "accounts/leverageai/queue/post20-business-context-file/slide03.png",
+        "accounts/leverageai/queue/post20-business-context-file/slide04.png",
+        "accounts/leverageai/queue/post20-business-context-file/slide05.png",
+        "accounts/leverageai/queue/post20-business-context-file/slide06.png",
+        "accounts/leverageai/queue/post20-business-context-file/slide07.png"
+      ],
+      "caption": "OpenAI launched a ChatGPT for small business program on 21 July 2026 — training, guides, agents aimed at owners who are the marketer, the accountant and the salesperson at once. Useful. But none of it fixes the actual problem: the model doesn't know your rates, your clients, or the work you refuse.\n\nSo write one page. Services and prices, who you serve, who you turn down, three words for your tone, and one rule about never inventing numbers. Slide 3 has the skeleton — it takes fifteen minutes.\n\nThen stop retyping it. Paste it into a ChatGPT Project or Claude Project so every chat in that folder starts with it, or drop it into Custom Instructions. Every draft comes back closer to something you'd actually send.\n\nIt won't make outputs true. Context makes them sound like you, which is exactly when a wrong price is hardest to spot — so still read the numbers.\n\nSave this and write yours this week. What's the one thing about your business every AI tool gets wrong?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #claudeai #aiworkflow #selfemployed #consultantlife #smallbusinesstips #aitools #freelancetips",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post20-business-context-file/reel.mp4"
+    },
+    {
+      "id": "post21-late-invoice-ladder",
+      "date": "2026-08-14",
+      "slides": [
+        "accounts/leverageai/queue/post21-late-invoice-ladder/slide01.png",
+        "accounts/leverageai/queue/post21-late-invoice-ladder/slide02.png",
+        "accounts/leverageai/queue/post21-late-invoice-ladder/slide03.png",
+        "accounts/leverageai/queue/post21-late-invoice-ladder/slide04.png",
+        "accounts/leverageai/queue/post21-late-invoice-ladder/slide05.png",
+        "accounts/leverageai/queue/post21-late-invoice-ladder/slide06.png",
+        "accounts/leverageai/queue/post21-late-invoice-ladder/slide07.png"
+      ],
+      "caption": "An invoice is 31 days late and you've sent nothing, because every draft you start sounds either apologetic or furious. So it sits there, and your bank balance sits with it.\n\nStop writing one email. Write the whole ladder in one go: day 1 after due date (friendly, assume oversight), day 14 (firm, restate the terms and the late fee, ask for a payment date), day 30 (final notice, work pauses, name the next step). The prompt on slide 3 drafts all three in about a minute. Save them, schedule them, stop rewriting them for every client.\n\nThe uncomfortable part: emails don't collect money, terms do. If your contract has no payment window and no late fee, no wording gets you paid faster — you're asking a favour. Fix the contract for the next client while you chase this one.\n\nSave this before your next overdue invoice. What's the longest you've waited to get paid?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#getpaid #freelancelife #lateinvoice #solobusiness #cashflow #freelancetips #selfemployed #consultantlife #smallbusinesstips #invoicing",
+      "status": "queued"
     }
   ]
 }

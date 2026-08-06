@@ -1,0 +1,80 @@
+{
+  "slug": "post18-agent-job-brief",
+  "art": "checklist",
+  "caption": "The tools stopped being chatboxes this summer. OpenAI launched ChatGPT Work on 9 July 2026 and a small business program on 21 July. Anthropic started rolling Claude Cowork out to web and mobile on 7 July, Max subscribers first. All of them run multi-step jobs instead of answering one message.\n\nWhich changes the skill. Chatting gets you a paragraph. A brief gets you a finished thing. The template on slide 2 is the same one you'd hand a subcontractor: the artefact, what \"done\" means, the inputs it may use, the constraints, and permission to ask instead of guess.\n\nThe line that saves you most is the last one — ask for a list of what it skipped. Agents fail quietly. They'll hand you a confident deliverable with two invented figures in it and no flag. If you can't verify the output in five minutes, don't delegate that job yet.\n\nSave this for the next job you'd rather not do yourself. What's the first task you'd hand over?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #aiagents #chatgpt #claudeai #aiworkflow #selfemployed #consultantlife #freelancetips #aitools",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 018",
+      "headline": [
+        {
+          "t": "Stop chatting. "
+        },
+        {
+          "t": "Write a brief.",
+          "c": "blue"
+        }
+      ],
+      "sub": "ChatGPT Work and Claude Cowork run jobs now. Brief them like a sub.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Name the finished thing.",
+      "body": [
+        {
+          "t": "Not \"help me with the proposal\". One artefact: a 2-page proposal, a priced quote, a 12-post schedule. "
+        },
+        {
+          "t": "If you can't name the file, it can't finish it.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Hand over a brief.",
+      "sub": "Works in ChatGPT, Claude or Gemini. Same five parts.",
+      "label": "COPY THIS PROMPT",
+      "code": "Job: [one finished thing].\nDone means: [3 checks I can verify].\nInputs: [files and links you may use].\nConstraints: [tone, length, no invented\nnumbers].\nUnknowns: ask me, don't guess.\nDeliver: the file, plus 5 lines on what\nyou skipped or wasn't sure about."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Read the skipped list.",
+      "body": [
+        {
+          "t": "That's the real output. It tells you where the work is thin before a client finds it. "
+        },
+        {
+          "t": "Agents fail quietly — a wrong number arrives looking exactly like a right one.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Brief vs. chat, same task:",
+      "stat": "1 pass, not 6"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Name the artefact, not the topic",
+        "Define done in 3 checks",
+        "Give inputs and constraints",
+        "Demand a list of what it skipped"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}
