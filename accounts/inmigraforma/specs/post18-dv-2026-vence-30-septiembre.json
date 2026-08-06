@@ -1,0 +1,82 @@
+{
+  "slug": "post18-dv-2026-vence-30-septiembre",
+  "art": "globe",
+  "caption": "La lotería de visas tiene un reloj propio: el derecho de los seleccionados vive dentro de un año fiscal y no se traslada al siguiente.\n\nEl Visa Bulletin de agosto de 2026 (travel.state.gov) lo dice de forma directa: el año de derecho de quienes están registrados en DV-2026 termina el 30 de septiembre de 2026, y después de esa fecha no pueden emitirse visas DV a solicitantes de DV-2026. Lo mismo aplica a cónyuges e hijos derivados.\n\nSi tienes un caso DV-2026 en trámite, la fecha en el calendario importa más que cualquier rumor. El boletín se publica cada mes en travel.state.gov y ahí se confirma el estado del programa.\n\nEN: Per the August 2026 Visa Bulletin, the year of entitlement for DV-2026 registrants ends on September 30, 2026, and DV visas may not be issued to DV-2026 applicants after that date; derivatives are limited to the same date.\n\nGuarda este post y compártelo con alguien que haya sido seleccionado.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #loteriadevisas #dv2026 #visabulletin #greencard #departamentodeestado #inmigracionusa #residencia #visas #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 018",
+      "headline": [
+        {
+          "t": "DV-2026 termina el "
+        },
+        {
+          "t": "30 de septiembre.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Visa Bulletin de agosto de 2026, travel.state.gov: fin del año de derecho DV-2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ DICE",
+      "headline": "El derecho tiene fecha de cierre.",
+      "body": [
+        {
+          "t": "El Visa Bulletin (travel.state.gov, agosto de 2026) repite que el año de derecho de quienes están registrados en el programa DV-2026 "
+        },
+        {
+          "t": "termina el 30 de septiembre de 2026",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "Seleccionados y derivados.",
+      "body": [
+        {
+          "t": "Después de esa fecha no pueden emitirse visas DV a solicitantes de DV-2026. "
+        },
+        {
+          "t": "Cónyuges e hijos que acompañan o siguen a un principal DV-2026 solo tienen estatus derivado hasta el 30/9/2026.",
+          "c": "blue"
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto oficial, en inglés.",
+      "sub": "Visa Bulletin For August 2026, travel.state.gov.",
+      "label": "TEXTO OFICIAL",
+      "code": "\"The year of entitlement for all\napplicants registered for the DV-2026\nprogram ends as of September 30,\n2026. DV visas may not be issued to\nDV-2026 applicants after that date.\""
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA FECHA",
+      "headline": "¿Hasta cuándo vale DV-2026?",
+      "stat": "30 SEP 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "DV-2026 en 3 líneas",
+      "items": [
+        "El año de derecho cierra el 30/9/2026",
+        "Sin visas DV-2026 después de esa fecha",
+        "Derivados: mismo límite de fecha",
+        "Fuente: Visa Bulletin de agosto 2026"
+      ],
+      "cta_title": "Guarda y comparte con quien fue seleccionado",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

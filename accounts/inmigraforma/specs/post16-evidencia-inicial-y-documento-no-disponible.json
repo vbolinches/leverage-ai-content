@@ -1,0 +1,96 @@
+{
+  "slug": "post16-evidencia-inicial-y-documento-no-disponible",
+  "art": "checklist",
+  "caption": "\"Evidencia inicial\" es la documentación que un formulario exige desde el primer envío. En su alerta del 5 de agosto de 2026, USCIS dice que las instrucciones de cada formulario especifican toda esa evidencia.\n\nCon la nueva guía sobre RFE y NOID, esa lista pesa más: la agencia describe la evidencia inicial como algo que debe estar cuando se presenta la solicitud, no como algo que se completa después.\n\nLa slide de OPINIÓN cita a Murthy Law Firm sobre qué hacer cuando un documento principal no existe o no se puede obtener. Es opinión de firma, no noticia y no asesoría legal.\n\nEN: USCIS's Aug. 5, 2026 alert states that form instructions specify all required initial evidence for every benefit request. Read the instructions for your form on uscis.gov before you file.\n\nGuarda el post y cuéntanos en comentarios qué formulario estás preparando.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #evidencia #rfe #formularios #greencard #i485 #inmigracionusa #tramites #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 016",
+      "headline": [
+        {
+          "t": "Qué es la "
+        },
+        {
+          "t": "evidencia inicial.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Tras la alerta de USCIS del 5 de agosto de 2026 sobre estándares de evidencia.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Las instrucciones mandan.",
+      "body": [
+        {
+          "t": "En su alerta del 5 de agosto de 2026, USCIS afirma que "
+        },
+        {
+          "t": "las instrucciones de cada formulario especifican toda la evidencia inicial requerida",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " para cada solicitud de beneficio."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A quien esté armando un envío.",
+      "body": [
+        {
+          "t": "Si preparas un formulario de USCIS, las instrucciones publicadas en uscis.gov junto a ese formulario son la lista que USCIS dice usar. "
+        },
+        {
+          "t": "Léelas completas antes de enviar, no después.",
+          "c": "blue"
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto oficial, en inglés.",
+      "sub": "Alerta de USCIS, uscis.gov/newsroom/alerts, 5 de agosto de 2026.",
+      "label": "TEXTO OFICIAL",
+      "code": "\"USCIS form instructions specify all\nrequired initial evidence for every\nbenefit request, giving requestors\nall the information needed to\ncomply.\""
+    },
+    {
+      "kind": "step",
+      "eyebrow": "OPINIÓN",
+      "headline": "Si falta el documento principal.",
+      "body": [
+        {
+          "t": "Murthy Law Firm (5 ago 2026) sugiere que, cuando un documento principal no está disponible, el envío explique y documente esa falta e incluya evidencia secundaria o declaraciones juradas. "
+        },
+        {
+          "t": "Opinión de firma, no asesoría legal.",
+          "c": "dim"
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA IDEA",
+      "headline": "¿Cuándo se prueba la elegibilidad?",
+      "stat": "AL PRESENTAR"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Antes de enviar",
+      "items": [
+        "Abre las instrucciones del formulario",
+        "Marca cada evidencia inicial exigida",
+        "Explica y documenta lo que no exista",
+        "Fuente: alerta de USCIS del 5/8/2026"
+      ],
+      "cta_title": "Guarda esta rutina de revisión",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

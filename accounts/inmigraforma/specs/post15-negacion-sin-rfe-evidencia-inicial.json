@@ -1,0 +1,95 @@
+{
+  "slug": "post15-negacion-sin-rfe-evidencia-inicial",
+  "art": "document",
+  "caption": "USCIS publicó el 5 de agosto de 2026 una alerta sobre estándares de evidencia (Policy Alert PA-2026-05). Según la alerta, si una solicitud no demuestra elegibilidad o no incluye toda la evidencia inicial requerida, USCIS puede negarla sin emitir primero un RFE o un NOID.\n\nLa alerta también dice que las instrucciones de cada formulario especifican toda la evidencia inicial exigida. En la práctica, eso mueve el trabajo al momento de presentar, no a la respuesta.\n\nEn las slides está el texto oficial en inglés, con la fuente y la fecha. La opinión citada es de Murthy Law Firm y está marcada como opinión, no como noticia.\n\nEN: On Aug. 5, 2026 USCIS issued an alert (PA-2026-05) stating that if a benefit requestor fails to establish eligibility or omits required initial evidence at filing, USCIS may deny the request without first issuing an RFE or NOID.\n\nGuarda este post antes de tu próximo envío y comparte tu duda en los comentarios.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #rfe #noid #greencard #i485 #inmigracionusa #visas #noticiasinmigracion #tramites\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 015",
+      "headline": [
+        {
+          "t": "USCIS puede negar "
+        },
+        {
+          "t": "sin RFE.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Alerta de USCIS del 5 de agosto de 2026 sobre evidencia (PA-2026-05).",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "La evidencia va desde el inicio.",
+      "body": [
+        {
+          "t": "Alerta de USCIS (uscis.gov), 5 de agosto de 2026: si la solicitud no demuestra elegibilidad o le falta la evidencia inicial requerida, USCIS "
+        },
+        {
+          "t": "puede negarla sin emitir antes un RFE o un NOID.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A cualquier solicitud de beneficio.",
+      "body": [
+        {
+          "t": "La alerta habla de "
+        },
+        {
+          "t": "immigration benefit requests",
+          "c": "blue"
+        },
+        {
+          "t": " en general: no nombra formularios concretos. USCIS dice que las instrucciones de cada formulario ya especifican toda la evidencia inicial exigida."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto oficial, en inglés.",
+      "sub": "Alerta de USCIS, uscis.gov/newsroom/alerts, 5 de agosto de 2026.",
+      "label": "TEXTO OFICIAL",
+      "code": "\"Generally, if a benefit requestor\nfails to demonstrate eligibility for\na benefit or fails to provide all\nrequired initial evidence when filing\nan application, USCIS may deny their\nimmigration benefit request without\nfirst issuing a Request for Evidence\n(RFE) or a Notice of Intent to Deny\n(NOID).\""
+    },
+    {
+      "kind": "step",
+      "eyebrow": "OPINIÓN",
+      "headline": "Lectura de Murthy Law Firm.",
+      "body": [
+        {
+          "t": "Murthy Law Firm (5 ago 2026) resume que la guía rige de inmediato y alcanza solicitudes pendientes o presentadas desde el 5/8/2026, salvo que otra norma diga lo contrario. "
+        },
+        {
+          "t": "Opinión de firma, no asesoría legal: consulta a un abogado.",
+          "c": "dim"
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA FECHA",
+      "headline": "¿Desde cuándo rige la guía?",
+      "stat": "5 AGO 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El cambio en 3 pasos",
+      "items": [
+        "USCIS: evidencia completa al presentar",
+        "Puede negar sin RFE ni NOID previo",
+        "Fuente: alerta de USCIS del 5/8/2026"
+      ],
+      "cta_title": "Guarda esto para tu próxima solicitud",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}
