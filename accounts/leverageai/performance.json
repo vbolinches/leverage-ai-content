@@ -695,6 +695,120 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "followers": 7,
+      "posts": [
+        {
+          "slug": "post13-freelancer-stack",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 7,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post12-spreadsheet-formulas",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 7,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post11-fake-productivity",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 0,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post10-canva-vs-alternatives",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 73,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post09-brutal-editor-prompt",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 3,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post08-cv-tailoring",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 27,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post07-free-tools-honest",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post06-content-repurpose",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post05-notebooklm-workflow",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 3,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post04-chatgpt-mistakes",
+          "format": "reel",
+          "likes": 2,
+          "comments": 0,
+          "reach": 76,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post03-tool-duel",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post02-meeting-notes-prompt",
+          "format": "reel",
+          "likes": 5,
+          "comments": 2,
+          "reach": 144,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
