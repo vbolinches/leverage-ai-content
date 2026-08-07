@@ -241,9 +241,12 @@
         "accounts/leverageai/queue/post14-feynman-prompt/slide05.png"
       ],
       "caption": "If you can't explain it simply, you don't understand it yet. This prompt tests exactly that. 🧠\n\nThe Feynman technique, automated: learn anything faster by forcing simplicity, then patching the gaps it exposes.\n\nTry it on something you \"know\" — the gaps will surprise you.\n\nOne practical AI workflow a day → @leverageai.daily\n\n#learning #feynmantechnique #studytips #chatgptprompts #aiprompts #learnfaster #aitools #education #selfimprovement #criticalthinking",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post14-feynman-prompt/reel.mp4"
+      "video": "accounts/leverageai/queue/post14-feynman-prompt/reel.mp4",
+      "published_media_id": "17913483525432465",
+      "published_on": "2026-08-07",
+      "threads_posted": true
     },
     {
       "id": "post15-eu-ai-label-rules",
