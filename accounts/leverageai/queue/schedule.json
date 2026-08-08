@@ -261,7 +261,10 @@
         "accounts/leverageai/queue/post15-eu-ai-label-rules/slide07.png"
       ],
       "caption": "The EU's AI transparency rules (Article 50 of the AI Act) started applying on 2 August 2026. They reach any provider or deployer serving EU users, so a US or UK freelancer with EU clients is not automatically outside them.\n\nMost of the panic is overblown. Three things actually matter for a one-person business: a chatbot on your site has to tell people it's a chatbot, realistic AI-made images/audio/video of real people or events have to be disclosed, and AI text published to inform the public on matters of public interest has to be labelled. Your service page written with ChatGPT's help is not a press release about public affairs.\n\nThe slides have the exact lines you can paste under a bot greeting and under AI visuals. Twenty minutes, once, and it's done. Reported penalties run to €15 million or 3% of worldwide turnover, which is why \"I'll deal with it later\" is a bad plan — and why this is a workflow, not legal advice. If you work in health, finance or law, pay a lawyer for an hour.\n\nSave this so it's there next time you ship an AI-made asset. If you've already added a disclosure line, post the wording you used — other people can steal it.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #aiforbusiness #smallbusinesstips #euaiact #freelancetips #consultantlife #aitools #selfemployed #businessadmin",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "18068786201546196",
+      "published_on": "2026-08-08",
+      "threads_posted": true
     },
     {
       "id": "post16-ai-clause-proposals",
