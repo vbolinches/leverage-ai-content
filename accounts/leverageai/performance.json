@@ -1037,6 +1037,120 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-08-10",
+      "followers": 7,
+      "posts": [
+        {
+          "slug": "post16-ai-clause-proposals",
+          "format": "reel",
+          "likes": 2,
+          "comments": 0,
+          "reach": 17,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post15-eu-ai-label-rules",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 3,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post14-feynman-prompt",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 35,
+          "saved": 1,
+          "shares": 0
+        },
+        {
+          "slug": "post13-freelancer-stack",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 7,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post12-spreadsheet-formulas",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 7,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post11-fake-productivity",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 0,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post10-canva-vs-alternatives",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 73,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post09-brutal-editor-prompt",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 3,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post08-cv-tailoring",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 27,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post07-free-tools-honest",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post06-content-repurpose",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post05-notebooklm-workflow",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
