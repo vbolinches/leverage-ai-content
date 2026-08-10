@@ -299,9 +299,12 @@
         "accounts/leverageai/queue/post17-month-end-books/slide07.png"
       ],
       "caption": "Month-end bookkeeping is the job that eats a Sunday. The part that changed: QuickBooks can now pull transactions out of a PDF or image of a bank statement, and its categorisation suggestions come with an explanation of why it guessed that. Xero and FreshBooks are pushing the same reconciliation and invoicing automation.\n\nThat kills the typing. It does not kill the checking. The workflow on the slides is: let the software extract and categorise, then spend your attention on the twenty transactions that actually matter — biggest amounts, anything uncategorised, anything it explained badly.\n\nThen export the CSV and use the prompt on slide 3 in ChatGPT or Claude to find the things software doesn't flag: the subscription you're paying twice, the client whose invoices got slower every month. Strip names and account numbers first. Your bank data is not chatbot training material.\n\nSave this before the end of the month. What's the one expense you always forget to log?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#bookkeeping #freelancelife #solobusiness #smallbusinessfinance #quickbooks #selfemployed #aitools #freelancetips #consultantlife #businessadmin",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post17-month-end-books/reel.mp4"
+      "video": "accounts/leverageai/queue/post17-month-end-books/reel.mp4",
+      "published_media_id": "18417306382145553",
+      "published_on": "2026-08-10",
+      "threads_posted": true
     },
     {
       "id": "post18-agent-job-brief",
