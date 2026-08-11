@@ -318,7 +318,10 @@
         "accounts/leverageai/queue/post18-agent-job-brief/slide06.png"
       ],
       "caption": "The tools stopped being chatboxes this summer. OpenAI launched ChatGPT Work on 9 July 2026 and a small business program on 21 July. Anthropic started rolling Claude Cowork out to web and mobile on 7 July, Max subscribers first. All of them run multi-step jobs instead of answering one message.\n\nWhich changes the skill. Chatting gets you a paragraph. A brief gets you a finished thing. The template on slide 2 is the same one you'd hand a subcontractor: the artefact, what \"done\" means, the inputs it may use, the constraints, and permission to ask instead of guess.\n\nThe line that saves you most is the last one — ask for a list of what it skipped. Agents fail quietly. They'll hand you a confident deliverable with two invented figures in it and no flag. If you can't verify the output in five minutes, don't delegate that job yet.\n\nSave this for the next job you'd rather not do yourself. What's the first task you'd hand over?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #aiagents #chatgpt #claudeai #aiworkflow #selfemployed #consultantlife #freelancetips #aitools",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "17885143080680304",
+      "published_on": "2026-08-11",
+      "threads_posted": true
     },
     {
       "id": "post19-scope-creep-change-order",
