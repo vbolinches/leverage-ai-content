@@ -1,0 +1,104 @@
+{
+  "slug": "post28-voice-debrief-after-calls",
+  "art": "clock",
+  "caption": "The most valuable five minutes of your week is straight after a client call, when you still remember the budget number they mumbled. Two days later it's gone, and your follow-up email is vague.\n\nOpenAI's release notes say GPT-Live in ChatGPT Voice now supports file uploads and Projects as of 7 August 2026. So keep one Project per client, and talk into it while the call is fresh: on the walk back, in the car park, before the next thing starts.\n\nTalk for two minutes, then let it produce the follow-up email, a line on what they agreed versus what they asked for free, and the open questions. The scope line is the one that saves you money later.\n\nHonest limit: voice transcription drops digits and mangles surnames. Fix names and numbers by hand before anything with a price on it leaves your outbox.\n\nSave this and try it after your next call. Do you write follow-ups same day, or let them slide?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #chatgpt #aiforbusiness #selfemployed #smallbusinessowner #followup #aitools",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 028",
+      "headline": [
+        {
+          "t": "Debrief the call "
+        },
+        {
+          "t": "before you drive home",
+          "c": "blue"
+        },
+        {
+          "t": "."
+        }
+      ],
+      "sub": "Two minutes of talking in, follow-up email and scope note out.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "One Project per client.",
+      "body": [
+        {
+          "t": "OpenAI's notes say voice in ChatGPT now supports file uploads and Projects as of 7 Aug 2026. "
+        },
+        {
+          "t": "So you can talk into the same client context",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " that holds their brief and last proposal."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Set the rules, then talk.",
+      "sub": "Say or paste this first, so it listens instead of interrupting.",
+      "label": "COPY THIS PROMPT",
+      "code": "I just finished a client call. I will\ntalk for 2 minutes. Ask me nothing\nuntil I stop. Then give me:\n1) a 5-line follow-up email, plain,\n   no padding\n2) what they agreed vs what they\n   asked for free\n3) 3 open questions and next step."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Say the boring details.",
+      "body": [
+        {
+          "t": "Names, dates, the budget word they used, who else signs it off. "
+        },
+        {
+          "t": "\"Good call, nice people\" produces nothing.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " Detail in, usable email out."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Fix names and numbers.",
+      "body": [
+        {
+          "t": "Voice transcription drops digits and mangles surnames. "
+        },
+        {
+          "t": "Check both by hand before anything with a price leaves your outbox.",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Call to sent follow-up:",
+      "stat": "~6 minutes"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "A Project per client",
+        "Two minutes of voice, rules first",
+        "Email + scope line + questions",
+        "Correct names and numbers"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

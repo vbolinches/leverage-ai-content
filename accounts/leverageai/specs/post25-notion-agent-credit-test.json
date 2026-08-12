@@ -1,0 +1,104 @@
+{
+  "slug": "post25-notion-agent-credit-test",
+  "art": "scales",
+  "caption": "If you automate work in Notion, the billing changed under you. Since May 2026, Notion's custom agents run on metered credits: pooled across the workspace, reset monthly, no rollover. Full Notion AI sits on the paid Business tier.\n\nMetered means an agent that loops spends money while you sleep. So the question stopped being \"can I automate this?\" and became \"is this job worth paying per run?\"\n\nHere is the test I use: it has to repeat at least weekly, touch five or more records, and be something you skip when you get busy. One out of three, do it by hand or paste a prompt into a normal chat — that is included and it is fine. The prompt below writes a tight spec with a stop condition, which is the difference between a useful agent and a meter running in the dark.\n\nSave this before you build your next automation. What's the one recurring admin job you'd hand over first?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #notion #consultantlife #aiforbusiness #selfemployed #smallbusinessowner #aitools #businessadmin #automation",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 025",
+      "headline": [
+        {
+          "t": "Notion agents now "
+        },
+        {
+          "t": "bill per credit",
+          "c": "blue"
+        },
+        {
+          "t": "."
+        }
+      ],
+      "sub": "Which repeat jobs are worth metering, and which to keep doing by hand.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Know where the meter is.",
+      "body": [
+        {
+          "t": "Since May 2026 custom agents run on Notion credits: "
+        },
+        {
+          "t": "pooled, reset monthly, no rollover.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " Full Notion AI sits on the paid Business tier. An agent that loops spends while you sleep."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Apply a three-part test.",
+      "body": [
+        {
+          "t": "Automate only if it repeats weekly, touches 5+ records, and "
+        },
+        {
+          "t": "you skip it when you get busy.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " One out of three? Do it by hand, or paste a prompt into a normal chat instead."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Spec it before you build it.",
+      "sub": "Paste into ChatGPT or Claude, then build from the answer.",
+      "label": "COPY THIS PROMPT",
+      "code": "Write a spec for a Notion agent.\nJob: [one sentence].\nInclude: trigger, the exact databases\nand fields it may read and write,\nstop condition, max items per run,\nwhat to do if a field is missing.\nUnder 200 words. No open-ended\nloops. No steps I cannot check."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Buy small, watch a month.",
+      "body": [
+        {
+          "t": "Credits do not roll over, so a big block bought in optimism is money gone. "
+        },
+        {
+          "t": "Start on the smallest amount and check usage after 30 days.",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What earns an agent?",
+      "stat": "weekly + 5 records"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Find the meter before you build",
+        "Weekly + 5 records + you skip it",
+        "Spec it with a stop condition",
+        "Buy small, review after 30 days"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

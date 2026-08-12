@@ -1,0 +1,104 @@
+{
+  "slug": "post24-prospect-brief-after-atlas",
+  "art": "globe",
+  "caption": "If your pre-call research lived in OpenAI's Atlas browser, it stopped working. OpenAI's release notes say Atlas was deprecated and scheduled to stop working on 9 August 2026, with browser-based agentic capabilities folded into ChatGPT and Codex instead.\n\nThe habit is worth keeping even though the tab is gone. Ten minutes of research before a first call is the difference between \"so, tell me about your business\" and a question that makes them sit up.\n\nThe prompt below forces citations and an UNVERIFIED label, because the failure mode here is confident nonsense: wrong headcount, invented funding round, a director who left two years ago. Check every name and number on the company's own site before you say it out loud. Works in ChatGPT, Claude or Perplexity.\n\nSave this before your next first call. And tell me: how long do you actually spend on prep — ten minutes or none?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #consultantlife #clientwork #salescall #aiforbusiness #selfemployed #smallbusinessowner #aitools #businessdevelopment",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 024",
+      "headline": [
+        {
+          "t": "Atlas is gone. "
+        },
+        {
+          "t": "Do this instead",
+          "c": "blue"
+        },
+        {
+          "t": "."
+        }
+      ],
+      "sub": "A 10-minute prospect brief before every first call.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "What actually changed.",
+      "body": [
+        {
+          "t": "OpenAI's notes say Atlas was deprecated and scheduled to stop working on 9 Aug 2026, with agentic browsing moving into ChatGPT and Codex. "
+        },
+        {
+          "t": "Keep the habit, move the tool.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Ask for a brief, not an essay.",
+      "sub": "Works in ChatGPT, Claude or Perplexity. Paste the company name in.",
+      "label": "COPY THIS PROMPT",
+      "code": "Research [company] before my call.\nUse sources from the last 12 months.\nGive me: what they sell, who buys,\n3 recent changes, 2 problems I could\nfix, 1 thing I should not say.\nCite a link for every claim.\nLabel anything unconfirmed as\nUNVERIFIED. Do not guess."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Verify three things.",
+      "body": [
+        {
+          "t": "Names, numbers, dates. Research agents invent headcount and funding rounds and quote people who left. "
+        },
+        {
+          "t": "Check those three on the company's own site",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " before you repeat them."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Turn it into two questions.",
+      "body": [
+        {
+          "t": "You do not need a briefing document in the call. Take the two recent changes and ask "
+        },
+        {
+          "t": "\"what did that break for you?\"",
+          "c": "blue",
+          "b": true
+        },
+        {
+          "t": " Then stop talking and write down the answer."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Prep time per first call:",
+      "stat": "~10 minutes"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Cited brief, not an essay",
+        "Verify names, numbers, dates",
+        "Convert findings to 2 questions",
+        "Write their answers down"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

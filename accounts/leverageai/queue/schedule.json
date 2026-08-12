@@ -371,6 +371,121 @@
       ],
       "caption": "An invoice is 31 days late and you've sent nothing, because every draft you start sounds either apologetic or furious. So it sits there, and your bank balance sits with it.\n\nStop writing one email. Write the whole ladder in one go: day 1 after due date (friendly, assume oversight), day 14 (firm, restate the terms and the late fee, ask for a payment date), day 30 (final notice, work pauses, name the next step). The prompt on slide 3 drafts all three in about a minute. Save them, schedule them, stop rewriting them for every client.\n\nThe uncomfortable part: emails don't collect money, terms do. If your contract has no payment window and no late fee, no wording gets you paid faster — you're asking a favour. Fix the contract for the next client while you chase this one.\n\nSave this before your next overdue invoice. What's the longest you've waited to get paid?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#getpaid #freelancelife #lateinvoice #solobusiness #cashflow #freelancetips #selfemployed #consultantlife #smallbusinesstips #invoicing",
       "status": "queued"
+    },
+    {
+      "id": "post22-claude-watermark-deliverables",
+      "date": "2026-08-15",
+      "slides": [
+        "accounts/leverageai/queue/post22-claude-watermark-deliverables/slide01.png",
+        "accounts/leverageai/queue/post22-claude-watermark-deliverables/slide02.png",
+        "accounts/leverageai/queue/post22-claude-watermark-deliverables/slide03.png",
+        "accounts/leverageai/queue/post22-claude-watermark-deliverables/slide04.png",
+        "accounts/leverageai/queue/post22-claude-watermark-deliverables/slide05.png",
+        "accounts/leverageai/queue/post22-claude-watermark-deliverables/slide06.png",
+        "accounts/leverageai/queue/post22-claude-watermark-deliverables/slide07.png"
+      ],
+      "caption": "Anthropic announced on 10 August 2026 that new Claude models embed an invisible watermark in the text they generate, plus signed provenance metadata (C2PA) on files. It applies worldwide, not only in the EU, and the mark is designed to survive copy-paste.\n\nBefore you panic about the draft you sent last week: the mark shows Claude processed a piece of text, not that Claude wrote it. Paraphrasing breaks the signal, and the public detection tool has not shipped yet. Nobody is scanning your proposal today.\n\nThe workflow that actually protects you is the same one that makes the work better: rewrite the draft from your own notes so the facts, numbers and judgement are yours, and put one honest line about AI use in your terms so it never becomes a mid-project argument. Not legal advice — read your own contracts.\n\nSave this for the next deliverable you hand over. And tell me in the comments: do your clients ask about AI, or is it still unspoken?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #aiforbusiness #freelancewriting #smallbusinessowner #aitools #proposalwriting #selfemployed",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post22-claude-watermark-deliverables/reel.mp4"
+    },
+    {
+      "id": "post23-monday-pipeline-sweep",
+      "date": "2026-08-16",
+      "slides": [
+        "accounts/leverageai/queue/post23-monday-pipeline-sweep/slide01.png",
+        "accounts/leverageai/queue/post23-monday-pipeline-sweep/slide02.png",
+        "accounts/leverageai/queue/post23-monday-pipeline-sweep/slide03.png",
+        "accounts/leverageai/queue/post23-monday-pipeline-sweep/slide04.png",
+        "accounts/leverageai/queue/post23-monday-pipeline-sweep/slide05.png",
+        "accounts/leverageai/queue/post23-monday-pipeline-sweep/slide06.png",
+        "accounts/leverageai/queue/post23-monday-pipeline-sweep/slide07.png"
+      ],
+      "caption": "Every solo business has the same leak: proposals that were sent, never answered, and never chased. Not because you don't care — because Monday starts and the work in front of you wins.\n\nClaude Cowork can run a task on a schedule — daily, weekly or monthly — against a folder of your own files, and hand back a working spreadsheet. So point it at your proposals folder and let it do the remembering. You get a table with the stale ones flagged and a draft follow-up for each.\n\nHonest limitation: it misreads amounts on scanned PDFs and it will mark a closed deal as open. Treat the output as a to-do list, not a source of truth. Two minutes of eyeballing, three emails sent, done before your coffee goes cold.\n\nSave this if you have a proposal sitting unanswered right now. What's your longest unchased quote — a week, a month?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #proposalwriting #aiforbusiness #selfemployed #smallbusinessowner #salesfollowup #aitools",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post23-monday-pipeline-sweep/reel.mp4"
+    },
+    {
+      "id": "post24-prospect-brief-after-atlas",
+      "date": "2026-08-17",
+      "slides": [
+        "accounts/leverageai/queue/post24-prospect-brief-after-atlas/slide01.png",
+        "accounts/leverageai/queue/post24-prospect-brief-after-atlas/slide02.png",
+        "accounts/leverageai/queue/post24-prospect-brief-after-atlas/slide03.png",
+        "accounts/leverageai/queue/post24-prospect-brief-after-atlas/slide04.png",
+        "accounts/leverageai/queue/post24-prospect-brief-after-atlas/slide05.png",
+        "accounts/leverageai/queue/post24-prospect-brief-after-atlas/slide06.png",
+        "accounts/leverageai/queue/post24-prospect-brief-after-atlas/slide07.png"
+      ],
+      "caption": "If your pre-call research lived in OpenAI's Atlas browser, it stopped working. OpenAI's release notes say Atlas was deprecated and scheduled to stop working on 9 August 2026, with browser-based agentic capabilities folded into ChatGPT and Codex instead.\n\nThe habit is worth keeping even though the tab is gone. Ten minutes of research before a first call is the difference between \"so, tell me about your business\" and a question that makes them sit up.\n\nThe prompt below forces citations and an UNVERIFIED label, because the failure mode here is confident nonsense: wrong headcount, invented funding round, a director who left two years ago. Check every name and number on the company's own site before you say it out loud. Works in ChatGPT, Claude or Perplexity.\n\nSave this before your next first call. And tell me: how long do you actually spend on prep — ten minutes or none?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #consultantlife #clientwork #salescall #aiforbusiness #selfemployed #smallbusinessowner #aitools #businessdevelopment",
+      "status": "queued"
+    },
+    {
+      "id": "post25-notion-agent-credit-test",
+      "date": "2026-08-18",
+      "slides": [
+        "accounts/leverageai/queue/post25-notion-agent-credit-test/slide01.png",
+        "accounts/leverageai/queue/post25-notion-agent-credit-test/slide02.png",
+        "accounts/leverageai/queue/post25-notion-agent-credit-test/slide03.png",
+        "accounts/leverageai/queue/post25-notion-agent-credit-test/slide04.png",
+        "accounts/leverageai/queue/post25-notion-agent-credit-test/slide05.png",
+        "accounts/leverageai/queue/post25-notion-agent-credit-test/slide06.png",
+        "accounts/leverageai/queue/post25-notion-agent-credit-test/slide07.png"
+      ],
+      "caption": "If you automate work in Notion, the billing changed under you. Since May 2026, Notion's custom agents run on metered credits: pooled across the workspace, reset monthly, no rollover. Full Notion AI sits on the paid Business tier.\n\nMetered means an agent that loops spends money while you sleep. So the question stopped being \"can I automate this?\" and became \"is this job worth paying per run?\"\n\nHere is the test I use: it has to repeat at least weekly, touch five or more records, and be something you skip when you get busy. One out of three, do it by hand or paste a prompt into a normal chat — that is included and it is fine. The prompt below writes a tight spec with a stop condition, which is the difference between a useful agent and a meter running in the dark.\n\nSave this before you build your next automation. What's the one recurring admin job you'd hand over first?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #notion #consultantlife #aiforbusiness #selfemployed #smallbusinessowner #aitools #businessadmin #automation",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post25-notion-agent-credit-test/reel.mp4"
+    },
+    {
+      "id": "post26-case-study-one-pager",
+      "date": "2026-08-19",
+      "slides": [
+        "accounts/leverageai/queue/post26-case-study-one-pager/slide01.png",
+        "accounts/leverageai/queue/post26-case-study-one-pager/slide02.png",
+        "accounts/leverageai/queue/post26-case-study-one-pager/slide03.png",
+        "accounts/leverageai/queue/post26-case-study-one-pager/slide04.png",
+        "accounts/leverageai/queue/post26-case-study-one-pager/slide05.png",
+        "accounts/leverageai/queue/post26-case-study-one-pager/slide06.png",
+        "accounts/leverageai/queue/post26-case-study-one-pager/slide07.png"
+      ],
+      "caption": "The cheapest sales asset you own is the job you just finished. Written up as a one-page case study, it does the arguing for you in the next proposal — and most solo operators have zero of them.\n\nWrite the copy first, design second. The prompt below gives you the structure: short headline, three bullets, one client quote, one line on what you'd do next. No adjectives, numbers where you have them.\n\nThen let Canva do the layout. Canva AI 2.0 (April 2026) keeps a memory of your style and reapplies it, so the second one-pager looks like the first without you fiddling with fonts. Canva Sheets plus bulk create will produce one per row if you have a few jobs to write up.\n\nTwo honest limits: AI layout will happily stretch your logo and invent a statistic, so check every number against your own invoice — and never publish a client name or logo without asking first.\n\nSave this and write up your last finished job this week. How many case studies do you actually have — zero, one, ten?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #canva #casestudy #aiforbusiness #selfemployed #smallbusinessmarketing #aitools",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post26-case-study-one-pager/reel.mp4"
+    },
+    {
+      "id": "post27-notebooklm-handover-pack",
+      "date": "2026-08-20",
+      "slides": [
+        "accounts/leverageai/queue/post27-notebooklm-handover-pack/slide01.png",
+        "accounts/leverageai/queue/post27-notebooklm-handover-pack/slide02.png",
+        "accounts/leverageai/queue/post27-notebooklm-handover-pack/slide03.png",
+        "accounts/leverageai/queue/post27-notebooklm-handover-pack/slide04.png",
+        "accounts/leverageai/queue/post27-notebooklm-handover-pack/slide05.png",
+        "accounts/leverageai/queue/post27-notebooklm-handover-pack/slide06.png",
+        "accounts/leverageai/queue/post27-notebooklm-handover-pack/slide07.png"
+      ],
+      "caption": "The invisible cost of finishing a project is the six months of \"quick questions\" afterwards. Where's the file, how do I change the header, who do I call when it breaks. All unbilled.\n\nFix it once with a handover pack. Put your delivery files into a NotebookLM notebook — final deliverable, SOW, decisions log, a checklist of accounts (names only, never passwords) — then generate the client-facing doc from those sources only. NotebookLM answers from what you upload, which is exactly what you want here: no invented steps.\n\nAdd a Video Overview from the same notebook. NotebookLM turns notebook content into a narrated video summary, and a five-minute walkthrough kills most of the follow-up calls.\n\nHonest limit: it treats every uploaded file as true, including the superseded draft you forgot to remove. Delete old versions first, then read the whole thing before it goes out with your name on it.\n\nSave this for your next project close. Do you charge for support after handover, or absorb it?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #notebooklm #aiforbusiness #selfemployed #smallbusinessowner #projectdelivery #aitools",
+      "status": "queued"
+    },
+    {
+      "id": "post28-voice-debrief-after-calls",
+      "date": "2026-08-21",
+      "slides": [
+        "accounts/leverageai/queue/post28-voice-debrief-after-calls/slide01.png",
+        "accounts/leverageai/queue/post28-voice-debrief-after-calls/slide02.png",
+        "accounts/leverageai/queue/post28-voice-debrief-after-calls/slide03.png",
+        "accounts/leverageai/queue/post28-voice-debrief-after-calls/slide04.png",
+        "accounts/leverageai/queue/post28-voice-debrief-after-calls/slide05.png",
+        "accounts/leverageai/queue/post28-voice-debrief-after-calls/slide06.png",
+        "accounts/leverageai/queue/post28-voice-debrief-after-calls/slide07.png"
+      ],
+      "caption": "The most valuable five minutes of your week is straight after a client call, when you still remember the budget number they mumbled. Two days later it's gone, and your follow-up email is vague.\n\nOpenAI's release notes say GPT-Live in ChatGPT Voice now supports file uploads and Projects as of 7 August 2026. So keep one Project per client, and talk into it while the call is fresh: on the walk back, in the car park, before the next thing starts.\n\nTalk for two minutes, then let it produce the follow-up email, a line on what they agreed versus what they asked for free, and the open questions. The scope line is the one that saves you money later.\n\nHonest limit: voice transcription drops digits and mangles surnames. Fix names and numbers by hand before anything with a price on it leaves your outbox.\n\nSave this and try it after your next call. Do you write follow-ups same day, or let them slide?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #chatgpt #aiforbusiness #selfemployed #smallbusinessowner #followup #aitools",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post28-voice-debrief-after-calls/reel.mp4"
     }
   ]
 }

@@ -1,0 +1,107 @@
+{
+  "slug": "post22-claude-watermark-deliverables",
+  "art": "document",
+  "caption": "Anthropic announced on 10 August 2026 that new Claude models embed an invisible watermark in the text they generate, plus signed provenance metadata (C2PA) on files. It applies worldwide, not only in the EU, and the mark is designed to survive copy-paste.\n\nBefore you panic about the draft you sent last week: the mark shows Claude processed a piece of text, not that Claude wrote it. Paraphrasing breaks the signal, and the public detection tool has not shipped yet. Nobody is scanning your proposal today.\n\nThe workflow that actually protects you is the same one that makes the work better: rewrite the draft from your own notes so the facts, numbers and judgement are yours, and put one honest line about AI use in your terms so it never becomes a mid-project argument. Not legal advice — read your own contracts.\n\nSave this for the next deliverable you hand over. And tell me in the comments: do your clients ask about AI, or is it still unspoken?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #aiforbusiness #freelancewriting #smallbusinessowner #aitools #proposalwriting #selfemployed",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 022",
+      "headline": [
+        {
+          "t": "Claude now "
+        },
+        {
+          "t": "watermarks",
+          "c": "blue"
+        },
+        {
+          "t": " your text."
+        }
+      ],
+      "sub": "What that means when you hand a client an AI-assisted draft.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Know what the mark is.",
+      "body": [
+        {
+          "t": "Anthropic says new Claude models from 2 Aug 2026 embed an invisible mark in generated text, "
+        },
+        {
+          "t": "worldwide, and it survives copy-paste.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " Files get signed provenance metadata."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Know what it is not.",
+      "body": [
+        {
+          "t": "A mark shows Claude "
+        },
+        {
+          "t": "processed the text, not that Claude wrote it.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " Paraphrasing breaks the signal and the public detection tool has not shipped. Nobody is scanning your proposal today."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Make the draft yours.",
+      "sub": "Run every AI draft through this before it leaves your laptop.",
+      "label": "COPY THIS PROMPT",
+      "code": "Here is your draft and my raw notes.\nRewrite it so every claim comes from\nmy notes, in my voice: short\nsentences, no words I would not say.\nFlag any sentence you invented.\nList 3 places to add a detail only I\nwould know. Keep it under 400 words."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Disclose once, in writing.",
+      "body": [
+        {
+          "t": "One line in your terms: "
+        },
+        {
+          "t": "\"I use AI tools for drafting and research. I review all work and I am accountable for it.\"",
+          "c": "blue",
+          "b": true
+        },
+        {
+          "t": " Settled up front, never argued mid-project."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What does the mark prove?",
+      "stat": "processing, not proof"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Assume every output is marked",
+        "Rewrite it from your own notes",
+        "Disclose AI use in your terms",
+        "Stay the accountable human"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

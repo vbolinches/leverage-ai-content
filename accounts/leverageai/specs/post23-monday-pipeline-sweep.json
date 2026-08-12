@@ -1,0 +1,104 @@
+{
+  "slug": "post23-monday-pipeline-sweep",
+  "art": "folder",
+  "caption": "Every solo business has the same leak: proposals that were sent, never answered, and never chased. Not because you don't care — because Monday starts and the work in front of you wins.\n\nClaude Cowork can run a task on a schedule — daily, weekly or monthly — against a folder of your own files, and hand back a working spreadsheet. So point it at your proposals folder and let it do the remembering. You get a table with the stale ones flagged and a draft follow-up for each.\n\nHonest limitation: it misreads amounts on scanned PDFs and it will mark a closed deal as open. Treat the output as a to-do list, not a source of truth. Two minutes of eyeballing, three emails sent, done before your coffee goes cold.\n\nSave this if you have a proposal sitting unanswered right now. What's your longest unchased quote — a week, a month?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #proposalwriting #aiforbusiness #selfemployed #smallbusinessowner #salesfollowup #aitools",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 023",
+      "headline": [
+        {
+          "t": "The proposals you "
+        },
+        {
+          "t": "forgot to chase",
+          "c": "blue"
+        },
+        {
+          "t": "."
+        }
+      ],
+      "sub": "A scheduled AI job that tells you who to follow up with every Monday.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Get it all in one folder.",
+      "body": [
+        {
+          "t": "Proposals, quotes, signed SOWs, and any client email you saved as PDF. "
+        },
+        {
+          "t": "If it is not in the folder, it does not exist.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " One folder beats a perfect system you never fill."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Write the job once.",
+      "sub": "Point Claude Cowork at the folder and save this as a recurring task.",
+      "label": "COPY THIS PROMPT",
+      "code": "Read every file in /Proposals.\nBuild a table: client, amount, date\nsent, last contact, status.\nFlag anything sent over 10 days ago\nwith no reply.\nFor each flagged row, draft a 4-line\nfollow-up email in my voice.\nSave Pipeline.xlsx and drafts.md."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Put it on a schedule.",
+      "body": [
+        {
+          "t": "Cowork can run a task daily, weekly or monthly and hand back a finished spreadsheet. "
+        },
+        {
+          "t": "Set it for Monday morning.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " Start it at your desk, read the result on your phone."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Check the numbers yourself.",
+      "body": [
+        {
+          "t": "It misreads amounts on scanned PDFs and it will confidently mark a closed deal as open. "
+        },
+        {
+          "t": "Treat the table as a to-do list, not a source of truth.",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "How long does chasing take?",
+      "stat": "~10 min a week"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "One folder for every quote",
+        "One scheduled Cowork job",
+        "Read the flags, send 3 emails",
+        "Verify amounts before you quote"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "slug": "post27-notebooklm-handover-pack",
+  "art": "checklist",
+  "caption": "The invisible cost of finishing a project is the six months of \"quick questions\" afterwards. Where's the file, how do I change the header, who do I call when it breaks. All unbilled.\n\nFix it once with a handover pack. Put your delivery files into a NotebookLM notebook — final deliverable, SOW, decisions log, a checklist of accounts (names only, never passwords) — then generate the client-facing doc from those sources only. NotebookLM answers from what you upload, which is exactly what you want here: no invented steps.\n\nAdd a Video Overview from the same notebook. NotebookLM turns notebook content into a narrated video summary, and a five-minute walkthrough kills most of the follow-up calls.\n\nHonest limit: it treats every uploaded file as true, including the superseded draft you forgot to remove. Delete old versions first, then read the whole thing before it goes out with your name on it.\n\nSave this for your next project close. Do you charge for support after handover, or absorb it?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #notebooklm #aiforbusiness #selfemployed #smallbusinessowner #projectdelivery #aitools",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 027",
+      "headline": [
+        {
+          "t": "Stop repeating the same "
+        },
+        {
+          "t": "handover call",
+          "c": "blue"
+        },
+        {
+          "t": "."
+        }
+      ],
+      "sub": "One pack that answers the questions clients ask for six months.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Load delivery files only.",
+      "body": [
+        {
+          "t": "Final deliverable, SOW, decisions log, account list with names only — "
+        },
+        {
+          "t": "never passwords.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " NotebookLM answers from the sources you give it, so bad sources mean a bad pack."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Generate the client doc.",
+      "sub": "Paste this into the notebook chat once your sources are in.",
+      "label": "COPY THIS PROMPT",
+      "code": "Using these sources only, write a\nhandover doc for a non-technical\nclient: what was delivered, how to\nuse it, what to do monthly, what to\nnever change, who to contact when.\nCite the source for each section.\nWrite \"not in sources\" for anything\nmissing. Do not fill gaps."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Add a Video Overview.",
+      "body": [
+        {
+          "t": "NotebookLM turns the notebook into a narrated video summary. "
+        },
+        {
+          "t": "Send it with the doc.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " Most clients will watch five minutes rather than book a call with you."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Delete old drafts first.",
+      "body": [
+        {
+          "t": "It treats every uploaded file as true, including the superseded version you forgot to remove. "
+        },
+        {
+          "t": "Clean the sources, then read the output line by line.",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What does the pack replace?",
+      "stat": "~2 hours of calls"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Notebook of clean delivery files",
+        "Generate doc, sources cited",
+        "Video Overview instead of a call",
+        "Read it before your name goes on"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}
