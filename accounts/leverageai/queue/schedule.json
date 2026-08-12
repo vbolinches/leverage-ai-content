@@ -336,9 +336,12 @@
         "accounts/leverageai/queue/post19-scope-creep-change-order/slide07.png"
       ],
       "caption": "\"Can you just add a couple of slides?\" Four hours later you've done it for free and the client has no idea they asked for anything.\n\nScope creep isn't a boundaries problem, it's a paperwork problem. Nobody writes the change order because writing it feels aggressive and takes twenty minutes you don't have. So you eat it. The fix is to make the email cost two minutes and sound normal.\n\nLog the request the day it lands — date, what they asked, your estimate. Then run the prompt on slide 3. It gives you a short, warm, unapologetic email that names the extra hours, the price, the new date, and offers a swap for something already in scope. The swap is what makes it land: you're not refusing, you're pricing.\n\nOne thing AI won't do: hold the line. It writes the email. You still have to send it before you do the work, not after.\n\nSave this for the next \"quick favour\". How many unpaid hours did the last one cost you?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#scopecreep #freelancelife #clientwork #solobusiness #freelancetips #consultantlife #selfemployed #aiforbusiness #smallbusinesstips #getpaid",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post19-scope-creep-change-order/reel.mp4"
+      "video": "accounts/leverageai/queue/post19-scope-creep-change-order/reel.mp4",
+      "published_media_id": "18107047676125228",
+      "published_on": "2026-08-12",
+      "threads_posted": true
     },
     {
       "id": "post20-business-context-file",
