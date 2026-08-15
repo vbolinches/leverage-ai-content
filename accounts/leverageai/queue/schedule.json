@@ -394,9 +394,12 @@
         "accounts/leverageai/queue/post22-claude-watermark-deliverables/slide07.png"
       ],
       "caption": "Anthropic announced on 10 August 2026 that new Claude models embed an invisible watermark in the text they generate, plus signed provenance metadata (C2PA) on files. It applies worldwide, not only in the EU, and the mark is designed to survive copy-paste.\n\nBefore you panic about the draft you sent last week: the mark shows Claude processed a piece of text, not that Claude wrote it. Paraphrasing breaks the signal, and the public detection tool has not shipped yet. Nobody is scanning your proposal today.\n\nThe workflow that actually protects you is the same one that makes the work better: rewrite the draft from your own notes so the facts, numbers and judgement are yours, and put one honest line about AI use in your terms so it never becomes a mid-project argument. Not legal advice — read your own contracts.\n\nSave this for the next deliverable you hand over. And tell me in the comments: do your clients ask about AI, or is it still unspoken?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #aiforbusiness #freelancewriting #smallbusinessowner #aitools #proposalwriting #selfemployed",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post22-claude-watermark-deliverables/reel.mp4"
+      "video": "accounts/leverageai/queue/post22-claude-watermark-deliverables/reel.mp4",
+      "published_media_id": "18220872544336634",
+      "published_on": "2026-08-15",
+      "threads_posted": true
     },
     {
       "id": "post23-monday-pipeline-sweep",
