@@ -191,11 +191,24 @@ GRADE_TOOL = {
                     "properties": {
                         "label": {"type": "string",
                                   "description": "The candidate's letter."},
+                        "rank": {
+                            "type": "integer",
+                            "description": (
+                                "1 = hardest to scroll past, then 2, 3... "
+                                "Every candidate gets a DIFFERENT rank. Ranks "
+                                "decide the winner, so commit to an order even "
+                                "when two hooks feel equally strong — that "
+                                "judgement is the job."
+                            ),
+                        },
                         "score": {
                             "type": "number",
                             "description": ("0-10: how hard is this to scroll "
                                             "past for THIS audience. Be blunt. "
-                                            "A 6 is a wasted post."),
+                                            "A 6 is a wasted post. Decimals are "
+                                            "fine and two hooks may share a "
+                                            "score — rank is what separates "
+                                            "them."),
                         },
                         "shape": {"type": "string", "enum": list(SHAPES)},
                         "stopping": {
@@ -207,7 +220,8 @@ GRADE_TOOL = {
                         "reason": {"type": "string",
                                    "description": "One line. No hedging."},
                     },
-                    "required": ["label", "score", "shape", "stopping", "reason"],
+                    "required": ["label", "rank", "score", "shape", "stopping",
+                                 "reason"],
                 },
             }
         },
@@ -236,7 +250,11 @@ def _grader_system(acct):
         "well written. Scrolling past is the default; a hook has to earn the "
         "stop.\n\n"
         "Be blunt and spread your scores. If everything lands 7-8 you have not "
-        "graded anything. Most hooks are mediocre and should score like it."
+        "graded anything. Most hooks are mediocre and should score like it.\n\n"
+        "Rank is what picks the winner, and no two candidates may share a rank. "
+        "When two hooks feel equally strong, do not leave it a coin flip — "
+        "decide, using what this account has actually learned. Refusing to "
+        "separate them just hands the choice to whatever order they arrived in."
         + ru_block
     )
 
@@ -259,7 +277,8 @@ def grade(client, acct, slug, pool):
         for c in labelled
     )
     msg = (f"Grade every candidate below. Return one grading per label, "
-           f"{len(labelled)} in total.\n\n{listing}")
+           f"{len(labelled)} in total, ranked 1 to {len(labelled)} with no "
+           f"rank used twice.\n\n{listing}")
 
     resp = client.messages.create(
         model=SCORER_MODEL,
@@ -283,14 +302,20 @@ def grade(client, acct, slug, pool):
         g = grades.get(c["label"])
         if not g:
             continue
-        scored.append({**c, "score": float(g["score"]), "shape": g["shape"],
-                       "stopping": g["stopping"], "reason": g["reason"]})
+        scored.append({**c, "rank": int(g["rank"]), "score": float(g["score"]),
+                       "shape": g["shape"], "stopping": g["stopping"],
+                       "reason": g["reason"]})
     if not scored:
         raise RuntimeError("grader graded none of the candidates")
 
-    # Deterministic ordering: score desc, then label asc so ties never wobble
-    # between runs.
-    scored.sort(key=lambda c: (-c["score"], c["label"]))
+    # Rank, not score, decides the winner. Scores tie often — the first run of
+    # this graded two hooks 8.0 and the winner fell out of a `sorted()` call,
+    # which threw away the one the account's own evidence favoured. A forced
+    # total order makes the grader own that call instead.
+    if len({c["rank"] for c in scored}) != len(scored):
+        print(f"::warning::grader reused a rank on {slug} — falling back to "
+              f"score order for the duplicates.")
+    scored.sort(key=lambda c: (c["rank"], -c["score"], c["label"]))
     return scored
 
 
@@ -327,7 +352,8 @@ def retry(client, acct, brand, post, scored, n=4):
     pool, so a retry can lose.
     """
     verdicts = "\n".join(
-        f"  {c['score']:.1f} [{c['shape']}] {flatten(c['headline'])}\n"
+        f"  #{c['rank']} {c['score']:.1f} [{c['shape']}] "
+        f"{flatten(c['headline'])}\n"
         f"      stops on: {c['stopping']} — {c['reason']}"
         for c in scored
     )
@@ -364,8 +390,8 @@ def report(slug, scored, chosen):
     for c in scored:
         mark = "->" if c is chosen else "  "
         src = "authored" if c.get("authored") else "candidate"
-        lines.append(f"   {mark} {c['score']:>4.1f}  [{c['shape']}] "
-                     f"{flatten(c['headline'])}   ({src})")
+        lines.append(f"   {mark} #{c['rank']}  {c['score']:>4.1f}  "
+                     f"[{c['shape']}] {flatten(c['headline'])}   ({src})")
         lines.append(f"          stops on: {c['stopping']} — {c['reason']}")
     return "\n".join(lines)
 

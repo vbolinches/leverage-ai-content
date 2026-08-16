@@ -403,11 +403,11 @@ def hook_test(post, min_score, log_path=None):
             "threshold": min_score,
             "retried": retried,
             "chosen": {k: chosen[k] for k in
-                       ("headline", "sub", "score", "shape", "stopping",
+                       ("headline", "sub", "rank", "score", "shape", "stopping",
                         "reason", "authored")},
             "candidates": [{k: c[k] for k in
-                            ("headline", "score", "shape", "stopping", "reason",
-                             "authored")} for c in scored],
+                            ("headline", "rank", "score", "shape", "stopping",
+                             "reason", "authored")} for c in scored],
         }, path=log_path)
 
         out = hooks.report(post["slug"], scored, chosen)
