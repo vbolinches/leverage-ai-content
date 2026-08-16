@@ -19,6 +19,21 @@
     },
     {
       "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "El I-94 es el papelito que dice cuándo entraste a EE.UU. y hasta cuándo puedes quedarte. Ahora USCIS aclara que a veces también sirve para probar que puedes trabajar. "
+        },
+        {
+          "t": "Es como una entrada al cine que además vale como pase de estacionamiento, pero solo en algunas funciones. Confirma que la tuya es una de esas.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
       "eyebrow": "QUÉ CAMBIÓ",
       "headline": "Qué aclaró USCIS.",
       "body": [
@@ -82,5 +97,5 @@
       "footer_right": "SAVE THIS ↓"
     }
   ],
-  "caption": "El Form I-94, el registro de entrada y salida, suele verse solo como prueba de estatus. USCIS aclara en su Policy Manual que también puede servir como evidencia de autorización de empleo en ciertas categorías de EAD: aquellas autorizadas a trabajar de forma incidente al estatus o al parole.\n\nDos matices importantes. Primero: dice ciertas categorías, no todas. Segundo: sirve como evidencia, no sustituye ningún requisito de tu caso. Antes de presentarlo como prueba, confirma tu categoría exacta. Fuente: página de Actualizaciones del Policy Manual, uscis.gov.\n\nIn English: USCIS clarifies that Form I-94 may be used as evidence of both status and employment authorization for certain EAD categories that are employment authorized incident to status or parole. It applies to certain categories only — check yours.\n\nGuarda el post y compártelo con alguien que tenga trabajo autorizado incidente a su estatus.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #i94 #ead #parole #permisodetrabajo #policymanual #inmigracionusa #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso."
+  "caption": "El Form I-94, el registro de entrada y salida, suele verse solo como prueba de estatus. USCIS aclara en su Policy Manual que también puede servir como evidencia de autorización de empleo en ciertas categorías de EAD: aquellas autorizadas a trabajar de forma incidente al estatus o al parole.\n\nEn palabras simples: El I-94 es el papelito que dice cuándo entraste a EE.UU. y hasta cuándo puedes quedarte. USCIS aclara que a veces también sirve para probar que puedes trabajar, como una entrada al cine que además vale de pase de estacionamiento, pero solo en algunas funciones.\n\nDos matices importantes. Primero: dice ciertas categorías, no todas. Segundo: sirve como evidencia, no sustituye ningún requisito de tu caso. Antes de presentarlo como prueba, confirma tu categoría exacta. Fuente: página de Actualizaciones del Policy Manual, uscis.gov.\n\nIn English: USCIS clarifies that Form I-94 may be used as evidence of both status and employment authorization for certain EAD categories that are employment authorized incident to status or parole. It applies to certain categories only — check yours.\n\nGuarda el post y compártelo con alguien que tenga trabajo autorizado incidente a su estatus.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #i94 #ead #parole #permisodetrabajo #policymanual #inmigracionusa #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso."
 }

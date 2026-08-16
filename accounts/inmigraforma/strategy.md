@@ -70,6 +70,13 @@ there is an internal, craft-level reason.
 
 ## Non-negotiables (not hypotheses)
 
+- **Plain language, always (owner instruction, 2026-08-16).** A 10-year-old
+  must be able to understand what every post means. Every post carries an
+  EN PALABRAS SIMPLES slide (always slide 2) that re-explains the news in
+  everyday Spanish with a concrete comparison, plus an "En palabras simples:"
+  caption paragraph and an "In plain words:" sentence in the English recap.
+  Every official term is explained in plain words the first time it appears.
+  The validator rejects any post without the slide - this is not optional.
 - News comes ONLY from official government outlets (USCIS, DHS, State
   Department, Federal Register, EOIR). No secondary-press reporting as news.
 - Immigration-lawyer commentary is allowed ONLY as clearly labelled opinion

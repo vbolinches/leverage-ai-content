@@ -364,6 +364,19 @@ def validate(post):
     slides = post.get("slides", [])
     if not 2 <= len(slides) <= 10:
         errs.append(f"{len(slides)} slides, Instagram carousels allow 2-10")
+
+    # Accounts that mandate a plain-language slide (owner rule for
+    # inmigraforma, 2026-08-16: a 10-year-old must understand every post)
+    # cannot ship without it - the validator is the guarantee, not the prompt.
+    req = ACCT.get("required_eyebrow")
+    if req:
+        eyebrows = [(s.get("eyebrow") or "").upper() for s in slides]
+        if not any(req.upper() in e for e in eyebrows):
+            errs.append(f"missing mandatory '{req}' slide")
+        if "en palabras simples" in req.lower():
+            low_cap = cap.lower()
+            if "en palabras simples" not in low_cap:
+                errs.append("caption missing the 'En palabras simples:' paragraph")
     for i, s in enumerate(slides, 1):
         hl = s.get("headline")
         flat = hl if isinstance(hl, str) else "".join(x.get("t", "") for x in hl or [])

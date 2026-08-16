@@ -1,7 +1,7 @@
 {
   "slug": "post20-limites-anuales-de-visas-de-inmigrante",
   "art": "scales",
-  "caption": "La espera por una Green Card no es un trámite lento: es aritmética. Cada año fiscal hay un número máximo de visas de inmigrante y el Visa Bulletin publica esos topes.\n\nEn el boletín de agosto de 2026 (travel.state.gov): el límite del año fiscal 2026 para inmigrantes de preferencia familiar, conforme a la sección 201 de la INA, es de 226,000, y el nivel mundial anual de preferencia por empleo es de al menos 140,000. La sección 203(c) de la INA prevé hasta 55,000 visas de diversidad por año fiscal.\n\nCuando la demanda supera esos números, la categoría queda oversubscribed y aparece una final action date: la fecha de prioridad del primer solicitante que no alcanzó número dentro de los límites.\n\nEN: The August 2026 Visa Bulletin states the FY 2026 family-sponsored preference limit is 226,000 and the worldwide employment-based level is at least 140,000; INA 203(c) provides up to 55,000 diversity visas per fiscal year.\n\nGuarda el post y compártelo con quien pregunte por qué la fila es tan larga.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #visabulletin #greencard #residencia #fechadeprioridad #uscis #departamentodeestado #inmigracionusa #visas #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "caption": "La espera por una Green Card no es un trámite lento: es aritmética. Cada año fiscal hay un número máximo de visas de inmigrante y el Visa Bulletin publica esos topes.\n\nEn palabras simples: Cada año hay un número fijo de visas, como boletos para un concierto. Si pide más gente que boletos hay, se forma una fila y esperas tu turno.\n\nEn el boletín de agosto de 2026 (travel.state.gov): el límite del año fiscal 2026 para inmigrantes de preferencia familiar, conforme a la sección 201 de la INA, es de 226,000, y el nivel mundial anual de preferencia por empleo es de al menos 140,000. La sección 203(c) de la INA prevé hasta 55,000 visas de diversidad por año fiscal.\n\nCuando la demanda supera esos números, la categoría queda oversubscribed y aparece una final action date: la fecha de prioridad del primer solicitante que no alcanzó número dentro de los límites.\n\nEN: The August 2026 Visa Bulletin states the FY 2026 family-sponsored preference limit is 226,000 and the worldwide employment-based level is at least 140,000; INA 203(c) provides up to 55,000 diversity visas per fiscal year. In plain words: Each year there is a fixed number of visas, like tickets for a concert. When more people apply than there are tickets, a line forms and you wait your turn.\n\nGuarda el post y compártelo con quien pregunte por qué la fila es tan larga.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #visabulletin #greencard #residencia #fechadeprioridad #uscis #departamentodeestado #inmigracionusa #visas #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
   "slides": [
     {
       "kind": "cover",
@@ -17,6 +17,21 @@
       ],
       "sub": "Los límites anuales publicados en el Visa Bulletin de agosto de 2026.",
       "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Cada año hay un número fijo de visas, como boletos para un concierto: cuando se acaban, se acaban. "
+        },
+        {
+          "t": "Si pide más gente que boletos hay, se forma una fila y te toca esperar tu turno. Ese turno es la fecha que sale en el Visa Bulletin.",
+          "c": "green",
+          "b": true
+        }
+      ]
     },
     {
       "kind": "step",

@@ -1,7 +1,7 @@
 {
   "slug": "post21-oficina-asilo-san-antonio-houston",
   "art": "building",
-  "caption": "USCIS abrió una oficina de asilo adicional en San Antonio, Texas. Según la alerta publicada en uscis.gov, desde el 28 de mayo de 2026 quienes presentaron su solicitud de asilo ante USCIS y residen en la jurisdicción de la oficina de asilo de Houston pueden ser entrevistados en Houston o en San Antonio.\n\nEs un cambio de logística, no de requisitos: no modifica quién califica ni qué evidencia se pide. Lo que puede cambiar es el lugar al que te cite USCIS, y eso importa para planear viaje, permisos en el trabajo e intérprete.\n\nLa cita oficial siempre llega por escrito de USCIS. Ninguna publicación en redes reemplaza esa notificación.\n\nEN: USCIS opened an additional asylum office in San Antonio, Texas. Beginning May 28, 2026, asylum applicants who filed with USCIS and live in the Houston Asylum Office jurisdiction may be interviewed at either the Houston or San Antonio asylum office.\n\nGuarda el post y compártelo con quien espera entrevista de asilo en Texas.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #asilo #uscis #texas #sanantonio #houston #entrevistadeasilo #inmigracionusa #i589 #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
+  "caption": "USCIS abrió una oficina de asilo adicional en San Antonio, Texas. Según la alerta publicada en uscis.gov, desde el 28 de mayo de 2026 quienes presentaron su solicitud de asilo ante USCIS y residen en la jurisdicción de la oficina de asilo de Houston pueden ser entrevistados en Houston o en San Antonio.\n\nEn palabras simples: USCIS abrió otra oficina, como cuando un hospital abre una sede nueva para atender más rápido. Si tu caso era de Houston, tu entrevista puede ser en Houston o en San Antonio; el caso no cambia.\n\nEs un cambio de logística, no de requisitos: no modifica quién califica ni qué evidencia se pide. Lo que puede cambiar es el lugar al que te cite USCIS, y eso importa para planear viaje, permisos en el trabajo e intérprete.\n\nLa cita oficial siempre llega por escrito de USCIS. Ninguna publicación en redes reemplaza esa notificación.\n\nEN: USCIS opened an additional asylum office in San Antonio, Texas. Beginning May 28, 2026, asylum applicants who filed with USCIS and live in the Houston Asylum Office jurisdiction may be interviewed at either the Houston or San Antonio asylum office. In plain words: USCIS opened a new office, like a hospital opening a second location to see people faster. Houston-area asylum cases can now be interviewed in Houston or San Antonio; the case itself does not change.\n\nGuarda el post y compártelo con quien espera entrevista de asilo en Texas.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #asilo #uscis #texas #sanantonio #houston #entrevistadeasilo #inmigracionusa #i589 #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.",
   "slides": [
     {
       "kind": "cover",
@@ -17,6 +17,21 @@
       ],
       "sub": "Alerta de USCIS: rige desde el 28 de mayo de 2026 (uscis.gov/newsroom/alerts).",
       "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "USCIS abrió una oficina nueva en San Antonio, como cuando un hospital abre otra sede para atender más rápido. "
+        },
+        {
+          "t": "Si tu caso de asilo estaba en la zona de Houston, tu entrevista puede ser en Houston o en San Antonio. El caso es el mismo; cambia el lugar.",
+          "c": "green",
+          "b": true
+        }
+      ]
     },
     {
       "kind": "step",

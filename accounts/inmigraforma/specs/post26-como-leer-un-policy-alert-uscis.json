@@ -19,6 +19,21 @@
     },
     {
       "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Un Policy Alert es la carta que USCIS manda a sus propios oficiales para decirles cómo revisar los casos. "
+        },
+        {
+          "t": "Es como cuando la escuela cambia el manual de los maestros: los alumnos no reciben una carta, pero sus tareas se califican con la regla nueva.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
       "eyebrow": "QUÉ ES",
       "headline": "Qué es un Policy Alert.",
       "body": [
@@ -82,5 +97,5 @@
       "footer_right": "SAVE THIS ↓"
     }
   ],
-  "caption": "No todo cambio de inmigración llega por el Federal Register. Muchos llegan como Policy Alert: un PDF corto con el que USCIS actualiza su Policy Manual, la guía que usan los oficiales al decidir casos.\n\nSe leen igual siempre: número y fecha arriba, un SUBJECT con el tema, un Purpose con la guía que se actualiza y un Background con la base que cita. El ejemplo del carrusel es PA-2026-05, del 5 de agosto de 2026, sobre evidencia, RFEs y NOIDs. Los encuentras en uscis.gov, en Policy Manual > Updates.\n\nIn English: USCIS updates its Policy Manual through numbered Policy Alerts. Each one opens with a number and date, a SUBJECT line, a Purpose section and a Background section — the fastest way to see what actually changed and when.\n\nGuarda el post para la próxima vez que veas un titular sobre un cambio de USCIS y quieras ir a la fuente.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #policymanual #tramitesmigratorios #rfe #greencard #derechomigratorio #inmigracionusa #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso."
+  "caption": "No todo cambio de inmigración llega por el Federal Register. Muchos llegan como Policy Alert: un PDF corto con el que USCIS actualiza su Policy Manual, la guía que usan los oficiales al decidir casos.\n\nEn palabras simples: Un Policy Alert es la carta que USCIS manda a sus propios oficiales para decirles cómo revisar los casos, como cuando la escuela cambia el manual de los maestros: los alumnos no reciben carta, pero sus tareas se califican con la regla nueva.\n\nSe leen igual siempre: número y fecha arriba, un SUBJECT con el tema, un Purpose con la guía que se actualiza y un Background con la base que cita. El ejemplo del carrusel es PA-2026-05, del 5 de agosto de 2026, sobre evidencia, RFEs y NOIDs. Los encuentras en uscis.gov, en Policy Manual > Updates.\n\nIn English: USCIS updates its Policy Manual through numbered Policy Alerts. Each one opens with a number and date, a SUBJECT line, a Purpose section and a Background section — the fastest way to see what actually changed and when.\n\nGuarda el post para la próxima vez que veas un titular sobre un cambio de USCIS y quieras ir a la fuente.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #policymanual #tramitesmigratorios #rfe #greencard #derechomigratorio #inmigracionusa #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso."
 }
