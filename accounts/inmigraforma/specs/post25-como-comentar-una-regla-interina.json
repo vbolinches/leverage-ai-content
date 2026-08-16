@@ -1,0 +1,86 @@
+{
+  "slug": "post25-como-comentar-una-regla-interina",
+  "art": "email",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 025",
+      "headline": [
+        {
+          "t": "Puedes comentar "
+        },
+        {
+          "t": "esta regla.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Plazo hasta el 13 de octubre de 2026 · Docket DHS USCIS-2026-0232",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Vigente y aún abierta.",
+      "body": [
+        {
+          "t": "Una regla interina final entra en vigor de inmediato, pero "
+        },
+        {
+          "t": "sigue recibiendo comentarios",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ". La de e-filing rige desde el 11-08-2026 y admite comentarios hasta el 13-10-2026. Fuente: Federal Register, doc. 2026-16313."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "Antes de escribir, lee esto.",
+      "body": [
+        {
+          "t": "Cualquier persona puede comentar. El propio documento avisa que "
+        },
+        {
+          "t": "todo lo enviado se publica sin cambios",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ", incluida la información personal que incluyas. Piensa qué datos pones. Fuente: doc. 2026-16313."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto oficial.",
+      "sub": "Federal Register, documento 2026-16313, publicado el 11 de agosto de 2026.",
+      "label": "TEXTO OFICIAL",
+      "code": "\"Comments must be received on or before\nOctober 13, 2026.\"\n\n\"...all submissions will be posted,\nwithout change, to the Federal\neRulemaking Portal at\nhttp://www.regulations.gov, and will\ninclude any personal information you\nprovide.\""
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO",
+      "headline": "¿Hasta cuándo hay plazo?",
+      "stat": "13 OCT 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Comentar, paso a paso",
+      "items": [
+        "1. Busca el docket USCIS-2026-0232",
+        "2. Léelo en federalregister.gov",
+        "3. Comenta antes del 13-10-2026",
+        "4. Recuerda: se publica tal cual"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "caption": "Una regla interina final (IFR) es distinta de una propuesta: ya está vigente. Pero la agencia todavía recibe comentarios del público, y esos comentarios quedan en el expediente del reglamento.\n\nEn la regla de e-filing el plazo es el 13 de octubre de 2026, y el expediente es el DHS Docket No. USCIS-2026-0232 (documento 2026-16313 del Federal Register). El propio documento advierte que todo lo que envíes se publica sin cambios, con la información personal que incluyas.\n\nIn English: an interim final rule is already in effect, but DHS still accepts public comments — here, until Oct. 13, 2026, under DHS Docket No. USCIS-2026-0232. Everything submitted is posted publicly, without change, including any personal information.\n\nGuarda este post: el mismo procedimiento sirve para cualquier regla futura. Y comenta si te sirvió.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #federalregister #uscis #dhs #regulaciones #efiling #derechomigratorio #inmigracionusa #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso."
+}

@@ -1,0 +1,86 @@
+{
+  "slug": "post23-efiling-180-dias-mas-60-dias",
+  "art": "clock",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 023",
+      "headline": [
+        {
+          "t": "180 + 60: así "
+        },
+        {
+          "t": "llega el aviso.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Cómo sabrás si tu formulario pasa a ser solo en línea · USCIS, 11-08-2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Dos condiciones, no una.",
+      "body": [
+        {
+          "t": "USCIS solo puede exigir e-filing de un formulario que ya lleve "
+        },
+        {
+          "t": "al menos 180 días disponible en línea",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ", y debe avisar en su sitio web con 60 días de antelación. Fuente: uscis.gov, alerta del 11-08-2026."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "A QUIÉN AFECTA",
+      "headline": "A quién afecta.",
+      "body": [
+        {
+          "t": "A quien presente en papel un formulario que ya tiene versión en línea. Cuando se exija, habrá que usar una "
+        },
+        {
+          "t": "cuenta en línea de USCIS",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ": llenar el formulario en línea o subir el PDF con la evidencia. Fuente: doc. 2026-16313."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto oficial.",
+      "sub": "Alerta de USCIS del 11 de agosto de 2026, en inglés como se publicó.",
+      "label": "TEXTO OFICIAL",
+      "code": "\"Under this IFR, USCIS may require future\nfilings of any immigration form that has\nbeen available for e-filing for at least\n180 days to be submitted online. USCIS\nwill notify the public on its website at\nleast 60 days before requiring e-filing\nof a form.\"\n- uscis.gov alert, Aug. 11, 2026"
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO",
+      "headline": "¿Cuánto aviso previo hay?",
+      "stat": "180 + 60 DÍAS"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El aviso, paso a paso",
+      "items": [
+        "180 días con el formulario ya en línea",
+        "Aviso en uscis.gov con 60 días antes",
+        "Después: cuenta en línea obligatoria",
+        "Fuente: uscis.gov y FR 2026-16313"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "caption": "La regla interina de e-filing no cambia nada de un día para otro. Pone dos condiciones antes de que un formulario sea obligatoriamente en línea: que USCIS lo haya ofrecido en línea al menos 180 días, y que publique el aviso en su sitio web al menos 60 días antes.\n\nCuando se exija, la presentación se hace desde una cuenta en línea de USCIS: llenando el formulario en línea o subiendo el PDF del formulario completo con su evidencia. Fuente: alerta de USCIS del 11 de agosto de 2026 y documento 2026-16313 del Federal Register.\n\nIn English: before USCIS can make a form online-only, the form must have been available for e-filing for at least 180 days, and USCIS must post notice on its website at least 60 days in advance. Filing then happens through a USCIS online account.\n\nGuarda el post para tener el calendario a mano y compártelo con quien todavía presenta en papel.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #efiling #dhs #formularios #greencard #ciudadania #inmigracionusa #noticiasinmigracion\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso."
+}
