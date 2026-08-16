@@ -414,9 +414,12 @@
         "accounts/leverageai/queue/post23-monday-pipeline-sweep/slide07.png"
       ],
       "caption": "Every solo business has the same leak: proposals that were sent, never answered, and never chased. Not because you don't care — because Monday starts and the work in front of you wins.\n\nClaude Cowork can run a task on a schedule — daily, weekly or monthly — against a folder of your own files, and hand back a working spreadsheet. So point it at your proposals folder and let it do the remembering. You get a table with the stale ones flagged and a draft follow-up for each.\n\nHonest limitation: it misreads amounts on scanned PDFs and it will mark a closed deal as open. Treat the output as a to-do list, not a source of truth. Two minutes of eyeballing, three emails sent, done before your coffee goes cold.\n\nSave this if you have a proposal sitting unanswered right now. What's your longest unchased quote — a week, a month?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #proposalwriting #aiforbusiness #selfemployed #smallbusinessowner #salesfollowup #aitools",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post23-monday-pipeline-sweep/reel.mp4"
+      "video": "accounts/leverageai/queue/post23-monday-pipeline-sweep/reel.mp4",
+      "published_media_id": "18074987828373238",
+      "published_on": "2026-08-16",
+      "threads_posted": true
     },
     {
       "id": "post24-prospect-brief-after-atlas",
