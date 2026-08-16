@@ -15,7 +15,11 @@ name: Generate content batch
 
 on:
   schedule:
-    - cron: "0 6 * * 3"    # Wednesdays 06:00 UTC
+    # Daily, not weekly: the queue-length gate below makes extra runs free
+    # (they skip in seconds), and a weekly cron has twice let a queue coast
+    # to the edge (GitHub skipped one Wednesday outright; another week a
+    # queue sat at exactly the threshold and ran dry before the next fire).
+    - cron: "0 6 * * *"    # daily 06:00 UTC
   workflow_dispatch:
     inputs:
       count:
@@ -34,7 +38,9 @@ on:
         default: ""
 
 env:
-  REFILL_BELOW: 7          # generate when fewer than this many posts are queued
+  REFILL_BELOW: 8          # generate when fewer than this many posts are queued
+                           # (a 7-post batch lands ~14 days of runway; daily
+                           # checks mean a queue never dips under a week)
 
 jobs:
   accounts:

@@ -113,7 +113,7 @@ initiates conversations; the API will reject it and Meta may flag the app.
 | Queue health check | Mon 09:00 UTC | Fails below 5 queued posts |
 | DM auto-responder | every 2h | Inert (warns) until messaging permission + App Review |
 | Content ideas monitor | Tue 06:00 UTC | Refreshes idea sources; X only with `X_BEARER_TOKEN` |
-| Generate content batch | Wed 06:00 UTC | Only runs when queue < 7; reads fresh ideas |
+| Generate content batch | daily 06:00 UTC | Only acts when queue < 8 (extra runs skip in seconds); reads fresh ideas |
 | Refresh Instagram token | 1st monthly | **Blocked** — needs a valid `GH_PAT` |
 | Verify Instagram credentials | manual | Run after any token change |
 
