@@ -1,0 +1,95 @@
+{
+  "slug": "post30-drive-files-no-reupload",
+  "art": "document",
+  "caption": "You've uploaded the same client brief eleven times. Once per chat, because the last chat got too long.\n\nAs of mid-August 2026, ChatGPT can see your Google Drive properly: browse files and folders from the Library, or pull a file into any chat from the composer or with an @mention, without uploading it again. Files shared with you show up too.\n\nSo the workflow changes shape. One Drive folder per client — contract, brief, brand notes, last three deliverables. Then the weekly update prompt on slide 4 points at two files and gives you shipped / blocked / next week, with the contract quoted for scope.\n\nLimitation worth respecting: it reads what you point it at, it doesn't verify it. An old brief in that folder gets quoted as gospel. Clean the folder before you trust the output.\n\nSave this. Then go look at how many stale client files are still sitting in your Drive.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #clientwork #consultantlife #googledrive #freelancetips",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 030",
+      "headline": [
+        {
+          "t": "Stop re-uploading "
+        },
+        {
+          "t": "the same brief.",
+          "c": "blue"
+        }
+      ],
+      "sub": "ChatGPT can pull client files straight out of your Drive.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Connect Drive once.",
+      "body": [
+        {
+          "t": "With the Google Drive plugin connected you can browse Drive files and folders inside ChatGPT's Library — "
+        },
+        {
+          "t": "including files people shared with you.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "One folder per client.",
+      "body": [
+        {
+          "t": "Contract, brief, brand notes, last three deliverables. Nothing else. "
+        },
+        {
+          "t": "What's in the folder is what it can quote.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Mention the file, then ask.",
+      "sub": "Pull a Drive file in from the composer or with an @mention. No upload.",
+      "label": "COPY THIS PROMPT",
+      "code": "Read @ACME-brief and @ACME-contract.\nDraft a one-page update for Dana:\n1. What shipped this week.\n2. What's blocked and what I need.\n3. What lands next week, with dates.\nQuote the contract for anything in scope.\nFlag anything I did that isn't in it.\nPlain English. Under 300 words."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "Watch what's in reach.",
+      "body": [
+        {
+          "t": "A connected Drive includes folders clients shared with you months ago. And it reads, it doesn't check: "
+        },
+        {
+          "t": "it will quote an outdated brief with total confidence.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What does a client update cost?",
+      "stat": "~6 min, 0 uploads"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "One Drive folder per client",
+        "@mention brief and contract",
+        "Ask for shipped, blocked, next",
+        "Bin stale files or it quotes them"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "post35-nda-check-before-pasting",
+  "art": "form",
+  "caption": "You've been pasting client material into ChatGPT for a year without reading the confidentiality clause. Most people have.\n\nTen minutes fixes it. Slide 3 makes the model quote every clause that limits sharing with third parties or sending data abroad, then give you a flat yes / no / unclear per clause, then draft the email that asks the client. Quotes matter — you want the wording, not a reassuring summary.\n\nIf the answer is no, redacting and working on structure only usually gets you most of the value. Asking permission gets the rest; clients often say yes once you name the tool. Running a model on your own machine is a genuine third option now — Meta released Muse Glimmer in August 2026 under an Apache 2.0 licence, a 30B model that runs on a Mac or PC with one decent GPU — but it's slower and weaker than what you're used to, so treat it as the last resort, not the default.\n\nThis is not legal advice. A model misses cross-references and local law. For a regulated client, pay a lawyer once and reuse the answer forever.\n\nSave this and run it on your biggest contract this week.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #clientwork #consultantlife #selfemployed #aiforbusiness #dataprivacy #freelancetips #smallbusinessowner",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 035",
+      "headline": [
+        {
+          "t": "Can you paste that "
+        },
+        {
+          "t": "into ChatGPT?",
+          "c": "blue"
+        }
+      ],
+      "sub": "Check the contract, not your gut. Ten minutes, once per client.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Find two clauses.",
+      "body": [
+        {
+          "t": "Confidentiality, and data processing. You're looking for disclosure to third parties, approved subprocessors, and where data may be stored. "
+        },
+        {
+          "t": "A cloud AI tool is a third party.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Make it quote the clauses.",
+      "sub": "Quotes, not summaries. You want to read the actual wording.",
+      "label": "COPY THIS PROMPT",
+      "code": "Here is my client contract. [paste]\nList every clause limiting what I can\nshare with third parties or send outside\nmy country. Quote each one.\nFor each, answer plainly: can I paste\nthis project's material into a cloud AI\ntool? Yes, no, or unclear.\nThen draft 3 questions for the client\nin one short email."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "If it's no, you still have options.",
+      "body": [
+        {
+          "t": "Redact and work on structure only. Or ask in writing — most clients say yes when you name the tool. "
+        },
+        {
+          "t": "Meta's open Muse Glimmer now runs on one consumer GPU, so local is possible. Just slower.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "Not legal advice.",
+      "body": [
+        {
+          "t": "A model reading your contract is a first pass, not counsel. It misses cross-references and local law. "
+        },
+        {
+          "t": "Real money or a regulated client? Pay a lawyer once, reuse the answer.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What does the check buy?",
+      "stat": "no \"you did what?\""
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Find the third-party clauses",
+        "Get yes / no / unclear per clause",
+        "Ask permission in one email",
+        "Local model only if you must"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

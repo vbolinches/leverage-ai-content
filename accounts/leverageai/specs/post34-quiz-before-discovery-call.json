@@ -1,0 +1,98 @@
+{
+  "slug": "post34-quiz-before-discovery-call",
+  "art": "lightbulb",
+  "caption": "A good lead in an industry you've never worked in. You've got two days and no idea what they call things.\n\nMost people ask AI for a briefing, skim it, and walk into the call sounding like they skimmed a briefing. ChatGPT's newer quiz mode is better for this: ask it to quiz you on a topic and you answer inside the conversation, one question at a time. It's on all consumer plans, web and mobile.\n\nSlide 3 is the prompt. Fifteen questions on how they make money, what goes wrong in the job, who signs off, and the vocabulary. Graded and corrected as you go. Then five questions to ask them and three claims to avoid.\n\nThe gaps it exposes are the real output. Ask the client those things directly — clients like being asked how their business works.\n\nOne limitation: the quiz is generated, not sourced. Anything you'll repeat as fact in the meeting, check against a real source first.\n\nSave this before your next discovery call. What's the sector you keep bluffing?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #consultantlife #salestips #clientwork #smallbusinessowner",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 034",
+      "headline": [
+        {
+          "t": "A call in a sector "
+        },
+        {
+          "t": "you don't know.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Make ChatGPT quiz you for fifteen minutes first.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Ask to be quizzed, not briefed.",
+      "body": [
+        {
+          "t": "ChatGPT can now quiz you on a topic and take your answers inside the chat, on every consumer plan, web and mobile. "
+        },
+        {
+          "t": "Reading a summary feels productive. Being wrong sticks.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Fifteen questions, graded.",
+      "sub": "Swap the business for whoever you're meeting on Thursday.",
+      "label": "COPY THIS PROMPT",
+      "code": "Quiz me before a call with a commercial\nplumbing firm, 30 staff, family owned.\n15 questions, one at a time. Mix:\nhow they make money, what breaks in the\njob, who buys, what they call things.\nGrade each answer, correct me, move on.\nEnd with 5 questions I should ask them\nand 3 claims I should not make."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 3",
+      "headline": "Your misses are the agenda.",
+      "body": [
+        {
+          "t": "Whatever you fluffed, ask them directly on the call. "
+        },
+        {
+          "t": "\"How do you actually price a callout?\" beats pretending you knew.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "It can be confidently wrong.",
+      "body": [
+        {
+          "t": "Quiz answers are generated, not sourced. "
+        },
+        {
+          "t": "Anything you'd repeat as fact — margins, rules, prices — check somewhere real",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ": Perplexity with sources, or the client's own site."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "How much prep is that?",
+      "stat": "~15 min, no reading"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Ask for a graded quiz, not a summary",
+        "15 questions, one at a time",
+        "Turn misses into call questions",
+        "Verify any number you'll repeat"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

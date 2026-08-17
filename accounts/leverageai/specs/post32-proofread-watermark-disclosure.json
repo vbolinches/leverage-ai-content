@@ -1,0 +1,95 @@
+{
+  "slug": "post32-proofread-watermark-disclosure",
+  "art": "scales",
+  "caption": "The part people miss about Claude's text watermark: it isn't only for text Claude wrote.\n\nAnthropic's own explainer says the mark indicates text was processed by Claude. Paste in a paragraph you wrote yourself for a proofread, a translation or a summary, and the output carries the mark. It travels with copy-paste and can persist through some editing. The EU has required providers serving its market to mark AI-generated content since 2 August 2026, and other major model developers signed the same code, so this won't stay a Claude-only thing.\n\nTwo things that make it less alarming. Anthropic says the watermark carries no identifying information and can't be traced back to a person, organisation or chat, and nothing hidden is inserted into your text.\n\nSo the move isn't to hide it. It's slide 4: a four-line AI-use note in the proposal, before delivery. A client who already knows how you work doesn't run detectors.\n\nNot legal advice — and absence of a mark proves nothing either way.\n\nSave this before your next handover. Has a client asked you the AI question yet?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #claudeai #aiforbusiness #freelancewriting #selfemployed #aiethics",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 032",
+      "headline": [
+        {
+          "t": "You wrote it. "
+        },
+        {
+          "t": "Claude proofread it.",
+          "c": "blue"
+        }
+      ],
+      "sub": "It carries a mark now. Better you mention that than the client.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Know what the mark means.",
+      "body": [
+        {
+          "t": "Anthropic says a mark shows text was processed by Claude — not that Claude wrote it. "
+        },
+        {
+          "t": "Your own draft, run through for a proofread, comes back marked.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "It isn't a tracker.",
+      "body": [
+        {
+          "t": "Anthropic says the watermark carries no identifying information and can't be traced to a person, organisation or chat. "
+        },
+        {
+          "t": "Nothing hidden is added to the text.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Put it in writing first.",
+      "sub": "Drop this into your proposal or your handover note.",
+      "label": "COPY THIS LINE",
+      "code": "AI use on this project:\nThinking and drafting: me.\nProofreading and tidying: AI-assisted.\nFacts, figures, quotes: checked by me.\nText processed by Claude can carry a\nmachine-readable mark - including text\nI wrote myself. Happy to walk you\nthrough any file."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "Where this stops.",
+      "body": [
+        {
+          "t": "Not legal advice. Marking applies to supported models and platforms, not everything. It travels with copy-paste and may survive some editing — "
+        },
+        {
+          "t": "and no mark proves nothing.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What ends the AI question?",
+      "stat": "one line, upfront"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Mark means processed, not authored",
+        "Your own text gets marked too",
+        "Disclose the line before delivery",
+        "Check facts yourself — marks don't"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

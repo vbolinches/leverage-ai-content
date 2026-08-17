@@ -1,0 +1,95 @@
+{
+  "slug": "post33-prompt-regression-test",
+  "art": "checklist",
+  "caption": "Your proposal prompt used to land. Now the output is flabbier and you can't say why.\n\nNothing changed on your side. The model did. OpenAI removed the GPT-5.1 models from ChatGPT in March 2026 and moved existing conversations onto newer ones; GPT-4.5 and o3 were each retired after a published sunset period. Prompts you tuned against an older model don't get a migration notice.\n\nSo keep the five prompts that make you money in one plain text file — proposal, follow-up, scope change, invoice chase, case study — with one good output saved next to each. That saved output is the benchmark. Without it you're arguing with your memory.\n\nThen run slide 4 whenever your default model shifts. It compares old output to new, names what drifted, and rewrites the prompt to get the old quality back.\n\nWhat it can't do: bring back a retired model. Sometimes the honest answer is that the prompt needs rebuilding.\n\nSave this. Which of your five prompts would you notice breaking first?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #consultantlife #promptengineering #freelancetips #smallbusinessowner",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 033",
+      "headline": [
+        {
+          "t": "Your best prompt "
+        },
+        {
+          "t": "outlived its model.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Models get retired on a schedule. Re-test your prompts when they go.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "This already happened.",
+      "body": [
+        {
+          "t": "OpenAI removed the GPT-5.1 models from ChatGPT in March 2026 and carried old chats onto newer ones. GPT-4.5 and o3 followed, each with a sunset period. "
+        },
+        {
+          "t": "Your saved prompts get no notice.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Five prompts, one file.",
+      "body": [
+        {
+          "t": "Proposal, follow-up, scope change, invoice chase, case study. Plain text, not buried in chat history. "
+        },
+        {
+          "t": "Keep one good output saved beside each.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Run the regression test.",
+      "sub": "Ten minutes, once, whenever your model changes under you.",
+      "label": "COPY THIS PROMPT",
+      "code": "Here is a prompt I have used for a year\nand the output I want back.\n[paste prompt]\n[paste last good output]\nRun the prompt now, then compare:\nwhat's missing, what's worse, what drifted\nin tone. Rewrite the prompt so today's\nmodel returns the old result. Show the\ndifferences in plain language."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "A prompt can't undo a retirement.",
+      "body": [
+        {
+          "t": "You can't get a removed model back. And swaps change tone more quietly than accuracy, so "
+        },
+        {
+          "t": "judge against your last good deliverable, not your memory.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "When do you re-test?",
+      "stat": "when models move"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Five money prompts in one file",
+        "Save one good output per prompt",
+        "Re-run both when the model shifts",
+        "Fix the prompt, not the output"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

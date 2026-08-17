@@ -1,0 +1,95 @@
+{
+  "slug": "post31-sheets-canvas-job-tracker",
+  "art": "spreadsheet",
+  "caption": "Your pipeline lives in one sheet. Forty rows, twelve columns, and you stopped opening it in March.\n\nGoogle started rolling out Gemini in the Sheets side panel in August 2026, including canvases: click Create canvas, describe the view you want in plain English, and refine it with more prompts until it's right. No formulas, no pivot tables.\n\nThe view that actually pays you is on slide 4. Group by stage, sort by due date, highlight anything that's delivered and unpaid, highlight anything with no next action. That's your Friday twenty minutes.\n\nHonest limits: creating and editing canvases has per-user usage limits, you need Workspace smart features on, and the rollout is staged — if the Gemini icon isn't there, you're waiting. It also can't rescue a tracker you don't keep current.\n\nSave this for Friday. What's the one column your tracker is missing?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #googlesheets #aiworkflow #selfemployed #consultantlife #smallbusinessowner #cashflow #freelancetips",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 031",
+      "headline": [
+        {
+          "t": "Your job tracker is a "
+        },
+        {
+          "t": "wall of rows.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Gemini in Sheets can turn it into a view you'll actually check.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Fix the columns first.",
+      "body": [
+        {
+          "t": "One row per job: client, fee, stage, invoice sent, due date, next action. "
+        },
+        {
+          "t": "It sorts what's there. It can't invent a date you never logged.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Side panel, create canvas.",
+      "body": [
+        {
+          "t": "Click the Gemini icon in the Sheets side panel, choose Create canvas, then describe the view in plain words. "
+        },
+        {
+          "t": "Refine it with more prompts.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Describe the view you want.",
+      "sub": "Natural language. No formulas, no pivot tables.",
+      "label": "COPY THIS PROMPT",
+      "code": "Create a canvas from this sheet.\nGroup jobs by stage: quoted, live, done.\nInside each group, sort by due date.\nShow client, fee, invoice sent, next step.\nHighlight rows that are done and unpaid.\nHighlight anything with no next step.\nKeep it to one screen. No charts."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "Two things to know.",
+      "body": [
+        {
+          "t": "Creating and editing canvases has per-user usage limits, and the rollout is staged — no Gemini icon yet means waiting. "
+        },
+        {
+          "t": "It's a view, not a fix for a sheet you don't update.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What surfaces in one look?",
+      "stat": "done + unpaid"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "One row per job, six columns",
+        "Gemini panel, create canvas",
+        "Group by stage, sort by due date",
+        "Read done-and-unpaid every Friday"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

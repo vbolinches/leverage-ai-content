@@ -1,0 +1,101 @@
+{
+  "slug": "post29-client-project-memory",
+  "art": "folder",
+  "caption": "You paste a client's numbers into the same chat you used for someone else's pitch. Nothing bad happens. Then a proposal comes back with the wrong industry in it.\n\nFix is boring. One ChatGPT project per paying client. Files, chats and instructions live in it, and the memory setting stays project-only so context doesn't wander between accounts. That setting used to be locked at creation — you can now change it in Project settings after the fact.\n\nThe standing brief on slide 4 is the part that saves the time. Scope, out of scope, who you're writing for, how they talk. Write it once when you sign, never re-brief again.\n\nOne honest caveat: project-only memory is organisation, not confidentiality. If the contract says no third-party processing, that clause still wins.\n\nSave this and set one up for your biggest client. How many clients are currently sharing one chat window?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #clientwork #consultantlife #freelancetips #smallbusinessowner",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 029",
+      "headline": [
+        {
+          "t": "Client A's context is "
+        },
+        {
+          "t": "leaking.",
+          "c": "blue"
+        }
+      ],
+      "sub": "One ChatGPT project per client. Memory kept inside it.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "One project per client.",
+      "body": [
+        {
+          "t": "A ChatGPT project holds files, chats and instructions in one place. Make one per paying client. "
+        },
+        {
+          "t": "Name it the way your invoices do.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Switch memory to project-only.",
+      "body": [
+        {
+          "t": "Open the project, three-dot menu, Project settings, Memory. "
+        },
+        {
+          "t": "You can now change this after the project exists.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " Shared projects are project-only already."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Paste the standing brief once.",
+      "sub": "Project instructions. Written once, used in every chat inside it.",
+      "label": "COPY THIS PROMPT",
+      "code": "You are working only on ACME's account.\nFacts: B2B logistics, 40 staff, UK.\nContact: Dana, ops director, hates jargon.\nScope: 12-page website copy, fixed fee.\nOut of scope: SEO, ads, ongoing edits.\nTone: plain English, short sentences.\nNever mention other clients or their work.\nIf a fact is missing, ask before assuming."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "This is tidiness, not secrecy.",
+      "body": [
+        {
+          "t": "Project-only memory stops context bleeding between clients. "
+        },
+        {
+          "t": "It is not a confidentiality guarantee.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " If a contract bars third-party processing, the setting doesn't change that."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "How often do you re-explain?",
+      "stat": "~0 re-briefings"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "One project per client",
+        "Memory set to project-only",
+        "Standing brief in the instructions",
+        "Missing fact? It asks, not guesses"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

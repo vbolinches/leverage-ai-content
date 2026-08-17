@@ -501,6 +501,121 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post28-voice-debrief-after-calls/reel.mp4"
+    },
+    {
+      "id": "post29-client-project-memory",
+      "date": "2026-08-22",
+      "slides": [
+        "accounts/leverageai/queue/post29-client-project-memory/slide01.png",
+        "accounts/leverageai/queue/post29-client-project-memory/slide02.png",
+        "accounts/leverageai/queue/post29-client-project-memory/slide03.png",
+        "accounts/leverageai/queue/post29-client-project-memory/slide04.png",
+        "accounts/leverageai/queue/post29-client-project-memory/slide05.png",
+        "accounts/leverageai/queue/post29-client-project-memory/slide06.png",
+        "accounts/leverageai/queue/post29-client-project-memory/slide07.png"
+      ],
+      "caption": "You paste a client's numbers into the same chat you used for someone else's pitch. Nothing bad happens. Then a proposal comes back with the wrong industry in it.\n\nFix is boring. One ChatGPT project per paying client. Files, chats and instructions live in it, and the memory setting stays project-only so context doesn't wander between accounts. That setting used to be locked at creation — you can now change it in Project settings after the fact.\n\nThe standing brief on slide 4 is the part that saves the time. Scope, out of scope, who you're writing for, how they talk. Write it once when you sign, never re-brief again.\n\nOne honest caveat: project-only memory is organisation, not confidentiality. If the contract says no third-party processing, that clause still wins.\n\nSave this and set one up for your biggest client. How many clients are currently sharing one chat window?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #clientwork #consultantlife #freelancetips #smallbusinessowner",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post29-client-project-memory/reel.mp4"
+    },
+    {
+      "id": "post30-drive-files-no-reupload",
+      "date": "2026-08-23",
+      "slides": [
+        "accounts/leverageai/queue/post30-drive-files-no-reupload/slide01.png",
+        "accounts/leverageai/queue/post30-drive-files-no-reupload/slide02.png",
+        "accounts/leverageai/queue/post30-drive-files-no-reupload/slide03.png",
+        "accounts/leverageai/queue/post30-drive-files-no-reupload/slide04.png",
+        "accounts/leverageai/queue/post30-drive-files-no-reupload/slide05.png",
+        "accounts/leverageai/queue/post30-drive-files-no-reupload/slide06.png",
+        "accounts/leverageai/queue/post30-drive-files-no-reupload/slide07.png"
+      ],
+      "caption": "You've uploaded the same client brief eleven times. Once per chat, because the last chat got too long.\n\nAs of mid-August 2026, ChatGPT can see your Google Drive properly: browse files and folders from the Library, or pull a file into any chat from the composer or with an @mention, without uploading it again. Files shared with you show up too.\n\nSo the workflow changes shape. One Drive folder per client — contract, brief, brand notes, last three deliverables. Then the weekly update prompt on slide 4 points at two files and gives you shipped / blocked / next week, with the contract quoted for scope.\n\nLimitation worth respecting: it reads what you point it at, it doesn't verify it. An old brief in that folder gets quoted as gospel. Clean the folder before you trust the output.\n\nSave this. Then go look at how many stale client files are still sitting in your Drive.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #clientwork #consultantlife #googledrive #freelancetips",
+      "status": "queued"
+    },
+    {
+      "id": "post31-sheets-canvas-job-tracker",
+      "date": "2026-08-24",
+      "slides": [
+        "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/slide01.png",
+        "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/slide02.png",
+        "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/slide03.png",
+        "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/slide04.png",
+        "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/slide05.png",
+        "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/slide06.png",
+        "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/slide07.png"
+      ],
+      "caption": "Your pipeline lives in one sheet. Forty rows, twelve columns, and you stopped opening it in March.\n\nGoogle started rolling out Gemini in the Sheets side panel in August 2026, including canvases: click Create canvas, describe the view you want in plain English, and refine it with more prompts until it's right. No formulas, no pivot tables.\n\nThe view that actually pays you is on slide 4. Group by stage, sort by due date, highlight anything that's delivered and unpaid, highlight anything with no next action. That's your Friday twenty minutes.\n\nHonest limits: creating and editing canvases has per-user usage limits, you need Workspace smart features on, and the rollout is staged — if the Gemini icon isn't there, you're waiting. It also can't rescue a tracker you don't keep current.\n\nSave this for Friday. What's the one column your tracker is missing?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #googlesheets #aiworkflow #selfemployed #consultantlife #smallbusinessowner #cashflow #freelancetips",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/reel.mp4"
+    },
+    {
+      "id": "post32-proofread-watermark-disclosure",
+      "date": "2026-08-25",
+      "slides": [
+        "accounts/leverageai/queue/post32-proofread-watermark-disclosure/slide01.png",
+        "accounts/leverageai/queue/post32-proofread-watermark-disclosure/slide02.png",
+        "accounts/leverageai/queue/post32-proofread-watermark-disclosure/slide03.png",
+        "accounts/leverageai/queue/post32-proofread-watermark-disclosure/slide04.png",
+        "accounts/leverageai/queue/post32-proofread-watermark-disclosure/slide05.png",
+        "accounts/leverageai/queue/post32-proofread-watermark-disclosure/slide06.png",
+        "accounts/leverageai/queue/post32-proofread-watermark-disclosure/slide07.png"
+      ],
+      "caption": "The part people miss about Claude's text watermark: it isn't only for text Claude wrote.\n\nAnthropic's own explainer says the mark indicates text was processed by Claude. Paste in a paragraph you wrote yourself for a proofread, a translation or a summary, and the output carries the mark. It travels with copy-paste and can persist through some editing. The EU has required providers serving its market to mark AI-generated content since 2 August 2026, and other major model developers signed the same code, so this won't stay a Claude-only thing.\n\nTwo things that make it less alarming. Anthropic says the watermark carries no identifying information and can't be traced back to a person, organisation or chat, and nothing hidden is inserted into your text.\n\nSo the move isn't to hide it. It's slide 4: a four-line AI-use note in the proposal, before delivery. A client who already knows how you work doesn't run detectors.\n\nNot legal advice — and absence of a mark proves nothing either way.\n\nSave this before your next handover. Has a client asked you the AI question yet?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #claudeai #aiforbusiness #freelancewriting #selfemployed #aiethics",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post32-proofread-watermark-disclosure/reel.mp4"
+    },
+    {
+      "id": "post33-prompt-regression-test",
+      "date": "2026-08-26",
+      "slides": [
+        "accounts/leverageai/queue/post33-prompt-regression-test/slide01.png",
+        "accounts/leverageai/queue/post33-prompt-regression-test/slide02.png",
+        "accounts/leverageai/queue/post33-prompt-regression-test/slide03.png",
+        "accounts/leverageai/queue/post33-prompt-regression-test/slide04.png",
+        "accounts/leverageai/queue/post33-prompt-regression-test/slide05.png",
+        "accounts/leverageai/queue/post33-prompt-regression-test/slide06.png",
+        "accounts/leverageai/queue/post33-prompt-regression-test/slide07.png"
+      ],
+      "caption": "Your proposal prompt used to land. Now the output is flabbier and you can't say why.\n\nNothing changed on your side. The model did. OpenAI removed the GPT-5.1 models from ChatGPT in March 2026 and moved existing conversations onto newer ones; GPT-4.5 and o3 were each retired after a published sunset period. Prompts you tuned against an older model don't get a migration notice.\n\nSo keep the five prompts that make you money in one plain text file — proposal, follow-up, scope change, invoice chase, case study — with one good output saved next to each. That saved output is the benchmark. Without it you're arguing with your memory.\n\nThen run slide 4 whenever your default model shifts. It compares old output to new, names what drifted, and rewrites the prompt to get the old quality back.\n\nWhat it can't do: bring back a retired model. Sometimes the honest answer is that the prompt needs rebuilding.\n\nSave this. Which of your five prompts would you notice breaking first?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #consultantlife #promptengineering #freelancetips #smallbusinessowner",
+      "status": "queued"
+    },
+    {
+      "id": "post34-quiz-before-discovery-call",
+      "date": "2026-08-27",
+      "slides": [
+        "accounts/leverageai/queue/post34-quiz-before-discovery-call/slide01.png",
+        "accounts/leverageai/queue/post34-quiz-before-discovery-call/slide02.png",
+        "accounts/leverageai/queue/post34-quiz-before-discovery-call/slide03.png",
+        "accounts/leverageai/queue/post34-quiz-before-discovery-call/slide04.png",
+        "accounts/leverageai/queue/post34-quiz-before-discovery-call/slide05.png",
+        "accounts/leverageai/queue/post34-quiz-before-discovery-call/slide06.png",
+        "accounts/leverageai/queue/post34-quiz-before-discovery-call/slide07.png"
+      ],
+      "caption": "A good lead in an industry you've never worked in. You've got two days and no idea what they call things.\n\nMost people ask AI for a briefing, skim it, and walk into the call sounding like they skimmed a briefing. ChatGPT's newer quiz mode is better for this: ask it to quiz you on a topic and you answer inside the conversation, one question at a time. It's on all consumer plans, web and mobile.\n\nSlide 3 is the prompt. Fifteen questions on how they make money, what goes wrong in the job, who signs off, and the vocabulary. Graded and corrected as you go. Then five questions to ask them and three claims to avoid.\n\nThe gaps it exposes are the real output. Ask the client those things directly — clients like being asked how their business works.\n\nOne limitation: the quiz is generated, not sourced. Anything you'll repeat as fact in the meeting, check against a real source first.\n\nSave this before your next discovery call. What's the sector you keep bluffing?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #consultantlife #salestips #clientwork #smallbusinessowner",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post34-quiz-before-discovery-call/reel.mp4"
+    },
+    {
+      "id": "post35-nda-check-before-pasting",
+      "date": "2026-08-28",
+      "slides": [
+        "accounts/leverageai/queue/post35-nda-check-before-pasting/slide01.png",
+        "accounts/leverageai/queue/post35-nda-check-before-pasting/slide02.png",
+        "accounts/leverageai/queue/post35-nda-check-before-pasting/slide03.png",
+        "accounts/leverageai/queue/post35-nda-check-before-pasting/slide04.png",
+        "accounts/leverageai/queue/post35-nda-check-before-pasting/slide05.png",
+        "accounts/leverageai/queue/post35-nda-check-before-pasting/slide06.png",
+        "accounts/leverageai/queue/post35-nda-check-before-pasting/slide07.png"
+      ],
+      "caption": "You've been pasting client material into ChatGPT for a year without reading the confidentiality clause. Most people have.\n\nTen minutes fixes it. Slide 3 makes the model quote every clause that limits sharing with third parties or sending data abroad, then give you a flat yes / no / unclear per clause, then draft the email that asks the client. Quotes matter — you want the wording, not a reassuring summary.\n\nIf the answer is no, redacting and working on structure only usually gets you most of the value. Asking permission gets the rest; clients often say yes once you name the tool. Running a model on your own machine is a genuine third option now — Meta released Muse Glimmer in August 2026 under an Apache 2.0 licence, a 30B model that runs on a Mac or PC with one decent GPU — but it's slower and weaker than what you're used to, so treat it as the last resort, not the default.\n\nThis is not legal advice. A model misses cross-references and local law. For a regulated client, pay a lawyer once and reuse the answer forever.\n\nSave this and run it on your biggest contract this week.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #clientwork #consultantlife #selfemployed #aiforbusiness #dataprivacy #freelancetips #smallbusinessowner",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post35-nda-check-before-pasting/reel.mp4"
     }
   ]
 }
