@@ -21,7 +21,11 @@ import accounts
 import hooks
 import render_slides
 
-MODEL = "claude-opus-5"
+# Authoring model. Per-account override via "model" in account.json; the
+# owner chose Haiku 4.5 as the default (2026-08-17) for cost. Note that the
+# generator's value is in careful source verification and honest strategy
+# reasoning - if a batch's quality slips, this is the first knob to revisit.
+DEFAULT_MODEL = "claude-haiku-4-5-20251001"
 
 # One account per invocation (ACCOUNT env / --account). Everything the
 # generator reads and writes — queue, specs, strategy, brand voice — belongs
@@ -30,6 +34,7 @@ ACCT = accounts.get()
 render_slides.configure(ACCT)
 QUEUE = ACCT.queue
 SPEC_DIR = ACCT.spec_dir
+MODEL = ACCT.get("model", DEFAULT_MODEL)
 
 # Server-side web search. Dynamic filtering is built into this tool version —
 # do NOT also declare code_execution, a second execution environment confuses
