@@ -100,7 +100,7 @@ initiates conversations; the API will reject it and Meta may flag the app.
 | `render_reel.py` | Spec or slides → 1080×1920 MP4 Reel, with audio |
 | `audio.py` | Synthesises the Reel music bed (original, per-slug) |
 | `build_reels.py` | Converts alternate queued posts to Reels |
-| `generate_batch.py` | Authors a batch with Claude, renders, queues |
+| `generate_batch.py` | Authors a batch with Claude (Haiku 4.5 default; inmigraforma pinned to Opus via `model` in account.json), renders, queues |
 | `hooks.py` | Hook-shape taxonomy; grades candidate covers blind, logs scores |
 | `monitor.py` | Read-only digest + token expiry warning |
 | `ideas.py` | Content-ideas monitor (X / RSS / HN) → `accounts/<slug>/ideas.json` |
