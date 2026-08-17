@@ -434,7 +434,10 @@
         "accounts/leverageai/queue/post24-prospect-brief-after-atlas/slide07.png"
       ],
       "caption": "If your pre-call research lived in OpenAI's Atlas browser, it stopped working. OpenAI's release notes say Atlas was deprecated and scheduled to stop working on 9 August 2026, with browser-based agentic capabilities folded into ChatGPT and Codex instead.\n\nThe habit is worth keeping even though the tab is gone. Ten minutes of research before a first call is the difference between \"so, tell me about your business\" and a question that makes them sit up.\n\nThe prompt below forces citations and an UNVERIFIED label, because the failure mode here is confident nonsense: wrong headcount, invented funding round, a director who left two years ago. Check every name and number on the company's own site before you say it out loud. Works in ChatGPT, Claude or Perplexity.\n\nSave this before your next first call. And tell me: how long do you actually spend on prep — ten minutes or none?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #consultantlife #clientwork #salescall #aiforbusiness #selfemployed #smallbusinessowner #aitools #businessdevelopment",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "18111113537045724",
+      "published_on": "2026-08-17",
+      "threads_posted": true
     },
     {
       "id": "post25-notion-agent-credit-test",
