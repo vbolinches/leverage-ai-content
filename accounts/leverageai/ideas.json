@@ -1,12 +1,268 @@
 {
-  "updated": "2026-08-11",
+  "updated": "2026-08-18",
   "items": [
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
+      "url": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
+      "at": "2026-08-17",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+      "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
+      "at": "2026-08-17",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Whisker’s AI-powered litter robot thinks my cats swapped bodies",
+      "url": "https://www.theverge.com/tech/978323/whisker-litter-robot-5-pro-review",
+      "at": "2026-08-17",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Anthropic explains how Claude&#8217;s invisible text watermarks will work",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
+      "at": "2026-08-17",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "OpenAI reportedly disbanded its preparedness team",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
+      "at": "2026-08-17",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "ChatGPT’s Computer History tracks your clicks and keystrokes",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
+      "at": "2026-08-17",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Have a laugh at AI’s expense by roleplaying as a chatbot",
+      "url": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot",
+      "at": "2026-08-17",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Markdown SVG upgrades",
+      "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+      "at": "2026-08-16",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "at": "2026-08-16",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Dario Amodei",
+      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+      "at": "2026-08-16",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "CORS Chat",
+      "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
+      "at": "2026-08-15",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Northern Gannet",
+      "url": "https://simonwillison.net/2026/Aug/15/sighting-391300422/",
+      "at": "2026-08-15",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Even Claude Is in the Dark About Dario Amodei's Wife",
+      "url": "https://www.wsj.com/tech/ai/claude-dario-amodei-wife-anthropic-e1eeda7d",
+      "at": "2026-08-14",
+      "signal": 52,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Don't classify. Hallucinate!",
+      "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+      "at": "2026-08-14",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Rogue AI aren’t science fiction anymore",
+      "url": "https://www.theverge.com/column/980337/rogue-ai-science-fiction-openai",
+      "at": "2026-08-14",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Mark Zuckerberg has an Instagzam",
+      "url": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast",
+      "at": "2026-08-14",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "You can now turn off Google Gemini&#8217;s visible watermarks",
+      "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
+      "at": "2026-08-14",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Apple trained its own AI model for China with help from Alibaba",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+      "at": "2026-08-14",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Can I use my Outputs to train an AI model?",
+      "url": "https://support.claude.com/en/articles/12326764-can-i-use-my-outputs-to-train-an-ai-model",
+      "at": "2026-08-13",
+      "signal": 93,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "sqlite-utils 4.2.1",
+      "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
+      "at": "2026-08-13",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "sqlite-utils 4.2",
+      "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils/",
+      "at": "2026-08-13",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "llm-gemini 0.33",
+      "url": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
+      "at": "2026-08-13",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "alchemy-utils 0.1a1",
+      "url": "https://simonwillison.net/2026/Aug/13/alchemy-utils/",
+      "at": "2026-08-13",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Microsoft’s Clippy-like Mico character is no longer the face of Copilot",
+      "url": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
+      "at": "2026-08-13",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
+      "url": "https://discoveredmaterials.com/research/",
+      "at": "2026-08-12",
+      "signal": 161,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "hn/NotebookLM",
+      "title": "Numba in the Browser: Unlocking a New Scientific Python Stack in JupyterLite",
+      "url": "https://notebook.link/blog/numba-in-the-browser/",
+      "at": "2026-08-12",
+      "signal": 68,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+      "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "at": "2026-08-12",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "alchemy-utils 0.1a0",
+      "url": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
+      "at": "2026-08-12",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Florian Herrengt",
+      "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
+      "at": "2026-08-12",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "There are no lossless transformations of natural-language text",
+      "url": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/",
+      "at": "2026-08-11",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
+      "at": "2026-08-11",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-upload-dbs 0.5a0",
+      "url": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/",
+      "at": "2026-08-11",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
     {
       "source": "hn/Claude AI",
       "title": "How Claude marks AI-generated content",
       "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
       "at": "2026-08-10",
-      "signal": 110,
+      "signal": 451,
       "seen": "2026-08-11"
     },
     {
@@ -58,11 +314,27 @@
       "seen": "2026-08-11"
     },
     {
+      "source": "rss/simonwillison.net",
+      "title": "Introducing Muse Glimmer",
+      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
+      "at": "2026-08-10",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting OpenClaw (running Opus 4.6)",
+      "url": "https://simonwillison.net/2026/Aug/10/openclaw/",
+      "at": "2026-08-10",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
       "source": "hn/NotebookLM",
       "title": "Windows 11's built-in Weather app wastes more than 1 GB of RAM",
       "url": "https://www.notebookcheck.net/Windows-11-s-built-in-Weather-app-wastes-more-than-1-GB-of-RAM.1364205.0.html",
       "at": "2026-08-09",
-      "signal": 642,
+      "signal": 668,
       "seen": "2026-08-11"
     },
     {
@@ -91,6 +363,30 @@
     },
     {
       "source": "rss/simonwillison.net",
+      "title": "Quoting Claude Opus 5 system prompt",
+      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/",
+      "at": "2026-08-09",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "GitHub Models is now retired",
+      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
+      "at": "2026-08-09",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "SQLite compressed text-history prototypes",
+      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
+      "at": "2026-08-09",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
       "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
       "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
       "at": "2026-08-08",
@@ -112,6 +408,30 @@
       "at": "2026-08-08",
       "signal": 0,
       "seen": "2026-08-11"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+      "url": "https://simonwillison.net/2026/Aug/8/auto-mode/",
+      "at": "2026-08-08",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+      "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/",
+      "at": "2026-08-08",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting John Gruber",
+      "url": "https://simonwillison.net/2026/Aug/8/john-gruber/",
+      "at": "2026-08-08",
+      "signal": 0,
+      "seen": "2026-08-18"
     },
     {
       "source": "rss/simonwillison.net",
@@ -187,6 +507,30 @@
     },
     {
       "source": "rss/simonwillison.net",
+      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+      "at": "2026-08-07",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)",
+      "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/",
+      "at": "2026-08-07",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
+      "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/",
+      "at": "2026-08-07",
+      "signal": 0,
+      "seen": "2026-08-18"
+    },
+    {
+      "source": "rss/simonwillison.net",
       "title": "datasette-auth-tokens 0.4a13",
       "url": "https://simonwillison.net/2026/Aug/6/datasette-auth-tokens/#atom-everything",
       "at": "2026-08-06",
@@ -224,6 +568,14 @@
       "at": "2026-08-06",
       "signal": 0,
       "seen": "2026-08-11"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-auth-tokens 0.4a13",
+      "url": "https://simonwillison.net/2026/Aug/6/datasette-auth-tokens/",
+      "at": "2026-08-06",
+      "signal": 0,
+      "seen": "2026-08-18"
     },
     {
       "source": "rss/simonwillison.net",
@@ -288,358 +640,6 @@
       "at": "2026-08-04",
       "signal": 0,
       "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "llm 0.32",
-      "url": "https://simonwillison.net/2026/Aug/4/llm/#atom-everything",
-      "at": "2026-08-04",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "hn/AI productivity",
-      "title": "The AI Productivity Gap",
-      "url": "https://bjorg.bjornroche.com/management/ai-productivity-gap/",
-      "at": "2026-08-03",
-      "signal": 140,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "hn/ChatGPT workflow",
-      "title": "Show HN: Product analytics (and evals) for agent sessions on your MCP",
-      "url": "https://armature.tech/",
-      "at": "2026-08-03",
-      "signal": 42,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Don't be a meat proxy",
-      "url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything",
-      "at": "2026-08-03",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting David Crawshaw's prompt",
-      "url": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
-      "at": "2026-08-03",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Devtools must be open source (exe.dev)",
-      "url": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything",
-      "at": "2026-08-03",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Europe’s AI labeling and transparency rules are now in effect",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
-      "at": "2026-08-03",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "China&#8217;s Alibaba takes another swipe at America’s AI supremacy",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
-      "at": "2026-08-03",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Fender’s CEO seems to think your bandmates are just analog AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/974265/fender-ceo-bud-cole-ai-music",
-      "at": "2026-08-03",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Is this Billboard Hot 100 hit AI slop?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
-      "at": "2026-08-03",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "condense-json 1.1",
-      "url": "https://simonwillison.net/2026/Aug/3/condense-json/#atom-everything",
-      "at": "2026-08-03",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "condense-json 1.0",
-      "url": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
-      "at": "2026-08-02",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Open letters about AI development",
-      "url": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
-      "at": "2026-08-02",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "July 2026 newsletter",
-      "url": "https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything",
-      "at": "2026-08-02",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Greg Brockman",
-      "url": "https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything",
-      "at": "2026-08-01",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "datasette-apps 0.2a0",
-      "url": "https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything",
-      "at": "2026-08-01",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Ten advances in mathematics and theoretical computer science",
-      "url": "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/#atom-everything",
-      "at": "2026-08-01",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "hn/ChatGPT workflow",
-      "title": "Show HN: What should the GUI for AI agents look like?",
-      "url": "https://marbleos.com/demo",
-      "at": "2026-07-31",
-      "signal": 139,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
-      "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "llm-mcp-client 0.1a0",
-      "url": "https://simonwillison.net/2026/Jul/31/llm-mcp-client/#atom-everything",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Oxide and Friends: The Open Weight Revolution with Simon Willison",
-      "url": "https://simonwillison.net/2026/Jul/31/oxide-and-friends/#atom-everything",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "smevals - a small eval suite for evaluating models, prompts, and harnesses",
-      "url": "https://simonwillison.net/2026/Jul/31/smevals/#atom-everything",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Slack Emoji Maker",
-      "url": "https://simonwillison.net/2026/Jul/31/slack-emoji-maker/#atom-everything",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "datasette-agent 0.4a0",
-      "url": "https://simonwillison.net/2026/Jul/31/datasette-agent/#atom-everything",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Is paying artists enough to convince them to embrace AI?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Google Earth&#8217;s AI deepfake tool only lasted one day",
-      "url": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Here’s the problem with putting an AI image generator in Google Earth",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "The major labels propose rules to keep AI slop off the charts",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "It’s time to panic about AI safety",
-      "url": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Anthropic says Claude accidentally hacked real companies too",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
-      "at": "2026-07-31",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "hn/NotebookLM",
-      "title": "Launch HN: Prized (YC S26) – Let non-engineer staff build secure internal tools",
-      "url": "https://prized.dev",
-      "at": "2026-07-30",
-      "signal": 79,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "hn/AI productivity",
-      "title": "AI productivity gains are closer to 10% than 10x",
-      "url": "https://leaddev.com/reporting/ai-productivity-gains-are-closer-to-10-than-10x",
-      "at": "2026-07-30",
-      "signal": 44,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Advancing the price-performance frontier with GPT‑5.6",
-      "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything",
-      "at": "2026-07-30",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Investigating three real-world incidents in our cybersecurity evaluations",
-      "url": "https://simonwillison.net/2026/Jul/30/three-real-world-incidents/#atom-everything",
-      "at": "2026-07-30",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "llm 0.32rc2",
-      "url": "https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything",
-      "at": "2026-07-30",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Bruce Schneier",
-      "url": "https://simonwillison.net/2026/Jul/30/bruce-schneier/#atom-everything",
-      "at": "2026-07-30",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "llm-chat-completions-server 0.1a0",
-      "url": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything",
-      "at": "2026-07-30",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "llm 0.32rc1",
-      "url": "https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything",
-      "at": "2026-07-30",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "hn/Claude AI",
-      "title": "GPT-5.6 vs. Claude Fable 5 for Physical AI, which performs best?",
-      "url": "https://juliahub.com/blog/frontier-models-physical-ai-evaluation",
-      "at": "2026-07-29",
-      "signal": 101,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting D. Richard Hipp",
-      "url": "https://simonwillison.net/2026/Jul/29/d-richard-hipp/#atom-everything",
-      "at": "2026-07-29",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "AI Worming through Word",
-      "url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything",
-      "at": "2026-07-29",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Matthew Green",
-      "url": "https://simonwillison.net/2026/Jul/29/matthew-green/#atom-everything",
-      "at": "2026-07-29",
-      "signal": 0,
-      "seen": "2026-08-04"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Adding a custom MCP server to Claude and ChatGPT",
-      "url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything",
-      "at": "2026-07-29",
-      "signal": 0,
-      "seen": "2026-08-04"
     }
   ]
 }
