@@ -70,6 +70,7 @@ there is an internal, craft-level reason.
 
 ## Non-negotiables (not hypotheses)
 
+- **Audience = regular immigrants, not lawyers (owner, 2026-08-19).** Simple register on EVERY slide, not only slide 2: short sentences, everyday words, every official term explained plainly on first use, 'me afecta a mi?' framing. Write like a trusted neighbour who understands the paperwork.
 - **Plain language, always (owner instruction, 2026-08-16).** A 10-year-old
   must be able to understand what every post means. Every post carries an
   EN PALABRAS SIMPLES slide (always slide 2) that re-explains the news in

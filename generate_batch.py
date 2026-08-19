@@ -93,7 +93,7 @@ wasted slot, and your own cover can lose.
 
 Slide kinds and their fields:
   {"kind":"cover","eyebrow":"__SERIES__ NNN","headline":[{"t":"Plain "},{"t":"accent.","c":"blue"}],"sub":"one line","footer_right":"SWIPE →"}
-  {"kind":"step","eyebrow":"STEP 1","headline":"Short imperative.","body":[{"t":"explanation "},{"t":"key point.","c":"green","b":true}]}
+__REQUIRED_SLIDE__  {"kind":"step","eyebrow":"STEP 1","headline":"Short imperative.","body":[{"t":"explanation "},{"t":"key point.","c":"green","b":true}]}
   {"kind":"prompt","eyebrow":"STEP 2","headline":"Short.","sub":"one line","label":"COPY THIS PROMPT","code":"literal prompt\\nwith newlines"}
   {"kind":"stat","eyebrow":"THE PAYOFF","headline":"Framing question:","stat":"~big phrase"}
   {"kind":"recap","eyebrow":"RECAP","headline":"The system","items":["step","step","step"],"cta_title":"Save this for later","cta_sub":"__CTA_SUB__","footer_right":"SAVE THIS ↓"}
@@ -105,8 +105,18 @@ Hard limits (text overflows the canvas otherwise):
 
 # The schema examples must show this account's CTA and eyebrow series, not
 # placeholders — the model copies examples far more reliably than instructions.
+_REQ = ACCT.get("required_eyebrow")
+_REQ_LINE = ""
+if _REQ:
+    _REQ_LINE = (
+        '  {"kind":"step","eyebrow":"' + _REQ + '","headline":"Qué significa esto.",'
+        '"body":[{"t":"2-3 frases de todos los días, sin jerga. "},'
+        '{"t":"Una comparación concreta de la vida diaria.","c":"green","b":true}]}'
+        '   <- MANDATORY as slide 2 of EVERY post' + chr(10)
+    )
 SCHEMA = (SCHEMA.replace("__CTA_SUB__", ACCT["cta_line"].rstrip("."))
-                .replace("__SERIES__", SERIES))
+                .replace("__SERIES__", SERIES)
+                .replace("__REQUIRED_SLIDE__", _REQ_LINE))
 
 
 def load_queue():
@@ -200,7 +210,15 @@ SUBMIT_TOOL = {
                                         "enum": ["cover", "step", "prompt",
                                                  "stat", "recap"],
                                     },
-                                    "eyebrow": {"type": "string"},
+                                    "eyebrow": {
+                                        "type": "string",
+                                        "description": (
+                                            "Slide label. "
+                                            + (f"Slide 2 of every post MUST have "
+                                               f"eyebrow '{ACCT['required_eyebrow']}'. "
+                                               if ACCT.get("required_eyebrow") else "")
+                                        ),
+                                    },
                                     "headline": RICH_TEXT,
                                     "sub": {"type": "string"},
                                     "body": RICH_TEXT,
