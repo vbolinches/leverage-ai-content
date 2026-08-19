@@ -1,0 +1,900 @@
+{
+  "entries": [
+    {
+      "slug": "post29-tps-fechas-en-pagina-oficial-uscis",
+      "graded": "2026-08-19",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Tu TPS ya tiene "
+          },
+          {
+            "t": "fecha de salida.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Cambió la página de USCIS, no tu permiso. Consultada el 19 de agosto de 2026.",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "change",
+        "stopping": "fecha de salida",
+        "reason": "Makes it personal and final — 'your TPS already has an expiration date' reads like a countdown aimed at the viewer.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Tu TPS ya tiene "
+            },
+            {
+              "t": "fecha de salida.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 8.2,
+          "shape": "change",
+          "stopping": "fecha de salida",
+          "reason": "Makes it personal and final — 'your TPS already has an expiration date' reads like a countdown aimed at the viewer.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Enterarte tarde "
+            },
+            {
+              "t": "cuesta tu trabajo.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 7.8,
+          "shape": "cost",
+          "stopping": "cuesta tu trabajo",
+          "reason": "Names the loss — job — which is the thing this audience actually fears; only loses to E because it doesn't say what changed.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Sabes el día "
+            },
+            {
+              "t": "en que vence tu TPS?",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 6.8,
+          "shape": "question",
+          "stopping": "vence",
+          "reason": "Direct question about your own expiry date makes you check yourself, but a question is easier to answer 'sí' and scroll.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "El error: mirar solo "
+            },
+            {
+              "t": "tu permiso.",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 6.2,
+          "shape": "mistake",
+          "stopping": "mirar solo tu permiso",
+          "reason": "Good specific mistake most people are making, but 'el error' framing is flat and the stakes stay implicit.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "3 países, "
+            },
+            {
+              "t": "3 fechas de fin de TPS.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 5.5,
+          "shape": "number-claim",
+          "stopping": "3 países",
+          "reason": "Withholding which countries is a weak tease — if you don't think it's yours, you scroll.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Hay fechas nuevas de "
+            },
+            {
+              "t": "fin del TPS.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 4.0,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Pure headline announcement with no 'you' and no consequence; reads like a government bulletin.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post30-nuevas-ediciones-i539-i765-15-sep",
+      "graded": "2026-08-19",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Hoja vieja = "
+          },
+          {
+            "t": "papeles devueltos.",
+            "c": "blue"
+          }
+        ],
+        "sub": "USCIS cambia el I-539 y el I-765 el 15 de septiembre de 2026.",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "cost",
+        "stopping": "papeles devueltos",
+        "reason": "Equation format delivers the personal consequence instantly — the old sheet you already filled out gets your case bounced.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Hoja vieja = "
+            },
+            {
+              "t": "papeles devueltos.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 8.0,
+          "shape": "cost",
+          "stopping": "papeles devueltos",
+          "reason": "Equation format delivers the personal consequence instantly — the old sheet you already filled out gets your case bounced.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "USCIS no dará "
+            },
+            {
+              "t": "ni un día de gracia.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 7.5,
+          "shape": "contrarian",
+          "stopping": "ni un día de gracia",
+          "reason": "Sounds like an authority slamming a door; the zero-mercy framing threatens anyone with a pending form.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Un rechazo te cuesta "
+            },
+            {
+              "t": "semanas de espera.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 7.0,
+          "shape": "cost",
+          "stopping": "semanas de espera",
+          "reason": "Names the real currency of this audience — time lost — but 'un rechazo' is abstract until you read the sub.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Hoy vale la vieja. "
+            },
+            {
+              "t": "El 15, solo la nueva.",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 6.5,
+          "shape": "change",
+          "stopping": "El 15, solo la nueva",
+          "reason": "Clean before/after with a deadline, but 'la vieja/la nueva' is vague on the cover — what old thing?",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Sabes qué edición "
+            },
+            {
+              "t": "tiene tu formulario?",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 6.0,
+          "shape": "question",
+          "stopping": "qué edición",
+          "reason": "Good you-check question, but most readers don't know what 'edición' means and the threat is missing from the cover.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Dos formularios cambian "
+            },
+            {
+              "t": "el 15 de sep.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 4.5,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Reads like a bulletin headline — no consequence, no you, nothing to fear or save.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post31-como-revisar-la-edicion-de-un-formulario",
+      "graded": "2026-08-19",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Guardar el PDF "
+          },
+          {
+            "t": "es el error común.",
+            "c": "blue"
+          }
+        ],
+        "sub": "USCIS cambia el I-539 y el I-765 el 15 de septiembre de 2026.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "mistake",
+        "stopping": "el error común",
+        "reason": "Names a habit almost everyone has (saving the PDF) and calls it the mistake, plus the sub names I-765 and I-539 — the two forms this audience actually files.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Guardar el PDF "
+            },
+            {
+              "t": "es el error común.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 7.5,
+          "shape": "mistake",
+          "stopping": "el error común",
+          "reason": "Names a habit almost everyone has (saving the PDF) and calls it the mistake, plus the sub names I-765 and I-539 — the two forms this audience actually files.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "La fecha chica "
+            },
+            {
+              "t": "decide tu trámite.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 6.5,
+          "shape": "cost",
+          "stopping": "decide tu trámite",
+          "reason": "Ties a tiny detail to the fate of your case; vague about which detail, but the stakes land.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "La vista previa "
+            },
+            {
+              "t": "todavía no se manda.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 5.5,
+          "shape": "contrarian",
+          "stopping": "todavía no se manda",
+          "reason": "A stop order with a date to wait for, but 'la vista previa' is jargon nobody recognizes as their own situation.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "1 minuto de revisión, "
+            },
+            {
+              "t": "meses ahorrados.",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 5.0,
+          "shape": "before-after",
+          "stopping": "meses ahorrados",
+          "reason": "Trade framing is fine but generic — could be about anything, and the sub gives no form name.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Mira la edición "
+            },
+            {
+              "t": "antes de mandarlo.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 4.0,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Polite instruction with no threat, no number, no named form; reads like a reminder, not news.",
+          "authored": true
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Dónde está la fecha "
+            },
+            {
+              "t": "de edición?",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 3.5,
+          "shape": "question",
+          "stopping": "nothing",
+          "reason": "Asks about a field nobody was worried about and answers it in the sub — curiosity gap closes before the stop happens.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post32-fin-duration-of-status-estudiantes-f-j",
+      "graded": "2026-08-19",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Pasarse de la fecha "
+          },
+          {
+            "t": "cuesta el estatus.",
+            "c": "blue"
+          }
+        ],
+        "sub": "DHS, regla final del 17 de julio de 2026. Aplica desde el 15 de septiembre.",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "cost",
+        "stopping": "cuesta el estatus",
+        "reason": "Names the consequence in the first four words — losing status is the only thing this audience actually fears.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Pasarse de la fecha "
+            },
+            {
+              "t": "cuesta el estatus.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 8.2,
+          "shape": "cost",
+          "stopping": "cuesta el estatus",
+          "reason": "Names the consequence in the first four words — losing status is the only thing this audience actually fears.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "“Mientras estudie” "
+            },
+            {
+              "t": "ya no aplica.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 7.6,
+          "shape": "change",
+          "stopping": "ya no aplica",
+          "reason": "Kills a phrase every F-1 holder has heard on their I-94; the death of a familiar rule stops the thumb.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "El permiso durará "
+            },
+            {
+              "t": "máximo 4 años.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 7.2,
+          "shape": "number-claim",
+          "stopping": "máximo 4 años",
+          "reason": "A hard number people can measure their own case against, though it reads as info rather than threat.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Hasta cuándo puedes "
+            },
+            {
+              "t": "quedarte?",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 6.5,
+          "shape": "question",
+          "stopping": "¿Hasta cuándo?",
+          "reason": "Personal and answerable, but a question invites 'I'll check later' more than a consequence does.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Antes: sin fecha. "
+            },
+            {
+              "t": "Ahora: con fecha.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 5.5,
+          "shape": "before-after",
+          "stopping": "nothing",
+          "reason": "Clean structure, zero stakes — 'con fecha' means nothing until you say what happens when it passes.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Los estudiantes tendrán "
+            },
+            {
+              "t": "fecha fija.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 4.5,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Third-person, neutral, reads like a headline about other people instead of about you.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post33-admit-until-date-i94-estudiantes",
+      "graded": "2026-08-19",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "El plazo para salir "
+          },
+          {
+            "t": "baja a 30 días.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Regla final de DHS del 17 de julio de 2026, vigente desde el 15 de septiembre.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "number-claim",
+        "stopping": "30 días",
+        "reason": "A hard number attached to a deadline to leave the country — the only hook here with a concrete personal cost.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "El plazo para salir "
+            },
+            {
+              "t": "baja a 30 días.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 7.5,
+          "shape": "number-claim",
+          "stopping": "30 días",
+          "reason": "A hard number attached to a deadline to leave the country — the only hook here with a concrete personal cost.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Mirar solo el I-20 "
+            },
+            {
+              "t": "es el error.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 6.5,
+          "shape": "mistake",
+          "stopping": "es el error",
+          "reason": "Names a mistake the reader is probably making right now with a document they actually hold.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Tu I-94 traerá "
+            },
+            {
+              "t": "fecha de salida.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "fecha de salida",
+          "reason": "Direct, personal, plain language — but it states a fact without telling you why it hurts.",
+          "authored": true
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Sabes qué dice "
+            },
+            {
+              "t": "tu I-94 hoy?",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 5.5,
+          "shape": "question",
+          "stopping": "hoy",
+          "reason": "Creates a small itch to check, but questions are easy to answer 'no' to and keep scrolling.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Tu papel de entrada "
+            },
+            {
+              "t": "ahora tiene tope.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "tope",
+          "reason": "'Papel de entrada' is nicely plain but 'tope' is vague — no stakes, no number.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Antes: sin fecha. "
+            },
+            {
+              "t": "Ahora: en el I-94.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "nothing",
+          "reason": "Reads like a bureaucratic diff; no consequence, no urgency, nothing a worried reader can grab.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post34-pedir-mas-tiempo-eos-i539-180-dias",
+      "graded": "2026-08-19",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "La escuela ya no "
+          },
+          {
+            "t": "lo arregla sola.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Ahora se pide a USCIS con el I-539. Regla de DHS del 17 de julio de 2026.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "change",
+        "stopping": "ya no",
+        "reason": "Kills the old habit students rely on — 'the school used to fix this, now it doesn't' is a personal threat in six words.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "La escuela ya no "
+            },
+            {
+              "t": "lo arregla sola.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 7.5,
+          "shape": "change",
+          "stopping": "ya no",
+          "reason": "Kills the old habit students rely on — 'the school used to fix this, now it doesn't' is a personal threat in six words.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Mandarlo a tiempo "
+            },
+            {
+              "t": "no basta.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 7.0,
+          "shape": "mistake",
+          "stopping": "no basta",
+          "reason": "Names the exact mistake that gets people denied — mailing on time and still losing status.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Antes: la escuela. "
+            },
+            {
+              "t": "Ahora: USCIS.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 6.5,
+          "shape": "before-after",
+          "stopping": "Ahora: USCIS",
+          "reason": "Clean before/after that shows the change instantly, but abstract without saying what breaks for you.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Qué pasa si tu curso "
+            },
+            {
+              "t": "se alarga?",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 5.5,
+          "shape": "question",
+          "stopping": "se alarga",
+          "reason": "Targets the right person but asks a mild question instead of warning them of a consequence.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Puedes pedirlo "
+            },
+            {
+              "t": "180 días antes.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 5.0,
+          "shape": "number-claim",
+          "stopping": "180 días",
+          "reason": "The number is concrete but it's good news with no stakes; easy to scroll past.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Para quedarte más, "
+            },
+            {
+              "t": "hay que pedirlo.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 3.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Generic obvious statement — 'to stay longer you have to ask' tells nobody anything new.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post35-transicion-estudiantes-que-no-cambia",
+      "graded": "2026-08-19",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Un viaje te cambia "
+          },
+          {
+            "t": "las reglas.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Si vuelves el 15 de sep. o después, recibes fecha fija. DHS, 17 de julio de 2026.",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "change",
+        "stopping": "viaje",
+        "reason": "Travel is the concrete fear trigger — 'one trip changes your rules' makes a real-life action feel dangerous, and the sub names the date.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Un viaje te cambia "
+            },
+            {
+              "t": "las reglas.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 6.5,
+          "shape": "change",
+          "stopping": "viaje",
+          "reason": "Travel is the concrete fear trigger — 'one trip changes your rules' makes a real-life action feel dangerous, and the sub names the date.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Si ya estás aquí, "
+            },
+            {
+              "t": "no corras.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "no corras",
+          "reason": "Direct command plus 'si ya estás aquí' sorts the reader instantly, but calming hooks stop fewer thumbs than scaring ones.",
+          "authored": true
+        },
+        {
+          "headline": [
+            {
+              "t": "El 15 de sep. "
+            },
+            {
+              "t": "no tienes que hacer nada.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 5.5,
+          "shape": "contrarian",
+          "stopping": "no tienes que hacer nada",
+          "reason": "Relief claim tied to a date is scannable, but 'do nothing' invites doing nothing — including scrolling.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Correr al abogado hoy "
+            },
+            {
+              "t": "te cuesta gratis.",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 4.5,
+          "shape": "cost",
+          "stopping": "te cuesta gratis",
+          "reason": "The 'costs you free' twist is cute wordplay that reads as confusing, not urgent, to a non-legal audience.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Te alcanza la regla "
+            },
+            {
+              "t": "si no viajas?",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 4.0,
+          "shape": "question",
+          "stopping": "si no viajas",
+          "reason": "Vague question — 'la regla' is never named, so nobody knows which rule they're being asked about.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "La transición dura "
+            },
+            {
+              "t": "hasta marzo de 2027.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 3.0,
+          "shape": "number-claim",
+          "stopping": "nothing",
+          "reason": "OPT jargon and a calendar fact; speaks to students only and feels like a bureaucratic notice, not news that touches you.",
+          "authored": false
+        }
+      ]
+    }
+  ]
+}

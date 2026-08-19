@@ -1,0 +1,158 @@
+{
+  "slug": "post34-pedir-mas-tiempo-eos-i539-180-dias",
+  "art": "clock",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 034",
+      "headline": [
+        {
+          "t": "La escuela ya no "
+        },
+        {
+          "t": "lo arregla sola.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Ahora se pide a USCIS con el I-539. Regla de DHS del 17 de julio de 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Si tu estudio se alarga, ya no basta con arreglarlo en la escuela. Hay que pedirle más tiempo a USCIS con un formulario, y hay que hacerlo antes de tu fecha. "
+        },
+        {
+          "t": "Es como renovar el carnet de la biblioteca antes de que se venza.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Se pide un EOS.",
+      "body": [
+        {
+          "t": "Quien necesite más tiempo pide un EOS (extensión de estadía): primero con el oficial de su escuela (DSO), si hace falta, y luego con USCIS en el Formulario I-539. "
+        },
+        {
+          "t": "Fuente: studyinthestates.dhs.gov (DHS), 19 ago 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "A quién le toca.",
+      "body": [
+        {
+          "t": "Te toca si necesitas más tiempo para terminar, empezar otro programa o hacer prácticas (OPT o STEM OPT). "
+        },
+        {
+          "t": "Si terminas y te vas antes de tu fecha, no tienes que pedir nada.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice DHS.",
+      "sub": "En español: puedes pedirlo 180 días antes, y USCIS debe recibirlo antes de tu fecha.",
+      "label": "TEXTO OFICIAL (DHS)",
+      "code": "studyinthestates.dhs.gov:\n\n\"Students may apply for an EOS\nstarting 180 days before their\nauthorized period of admission\nexpires.\"\n\n\"...USCIS must receive their Form\nI-539 before the...period...expires.\""
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL NÚMERO",
+      "headline": "¿Desde cuándo puedo pedirlo?",
+      "stat": "180 DÍAS ANTES"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Cómo no llegar tarde.",
+      "items": [
+        "Cuenta 180 días antes de tu fecha",
+        "Habla con tu DSO primero",
+        "Que USCIS lo reciba, no que lo mandes",
+        "En los 30 días de salida, no trabajes"
+      ],
+      "sub": "Información general — no es asesoría legal.",
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": [
+        {
+          "t": "Puedes pedirlo "
+        },
+        {
+          "t": "180 días antes.",
+          "c": "blue"
+        }
+      ],
+      "sub": "DHS explica el nuevo trámite de extensión. Consultado el 19 de agosto de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "¿Qué pasa si tu curso "
+        },
+        {
+          "t": "se alarga?",
+          "c": "blue"
+        }
+      ],
+      "sub": "DHS explica el EOS con el Formulario I-539. Regla del 17 de julio de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "Mandarlo a tiempo "
+        },
+        {
+          "t": "no basta.",
+          "c": "blue"
+        }
+      ],
+      "sub": "DHS dice que USCIS debe recibirlo antes de tu fecha. Consultado el 19 ago 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "La escuela ya no "
+        },
+        {
+          "t": "lo arregla sola.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Ahora se pide a USCIS con el I-539. Regla de DHS del 17 de julio de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "Antes: la escuela. "
+        },
+        {
+          "t": "Ahora: USCIS.",
+          "c": "blue"
+        }
+      ],
+      "sub": "DHS explica el nuevo trámite de extensión. Consultado el 19 de agosto de 2026."
+    }
+  ],
+  "caption": "Con la regla final de DHS del 17 de julio de 2026, un estudiante F que necesite más tiempo debe pedir una extensión de estadía (EOS). En sus páginas oficiales (studyinthestates.dhs.gov, consultadas el 19 de agosto de 2026), DHS explica que el estudiante lo pide primero con el oficial de su escuela (DSO), si hace falta, y luego con USCIS usando el Formulario I-539. Se puede pedir desde 180 días antes de que se venza el tiempo autorizado, y USCIS tiene que recibir el I-539 antes de esa fecha. DHS también advierte que quien lo pide dentro de los 30 días de salida no puede empezar ni seguir trabajando.\n\nEn palabras simples: si tu programa se alarga, hay que avisar antes, no después. Es como renovar el carnet de la biblioteca: se renueva antes de la fecha, no el día siguiente. Cuenta 180 días para atrás desde tu fecha, apunta ese día y habla con tu DSO.\n\nIn English: under the DHS final rule, F students needing more time must file an extension of stay (EOS) on Form I-539; DHS says they may apply starting 180 days before their authorized admission period expires, and USCIS must receive the form before it expires. In plain words: ask early, and count on the date USCIS receives it.\n\nGuarda este post y compártelo con quien esté por terminar su programa.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\n#inmigracion #inmigracionusa #i539 #visaestudiante #opt #uscis #dhs #noticiasinmigracion #inmigrantes"
+}

@@ -1,0 +1,167 @@
+{
+  "slug": "post31-como-revisar-la-edicion-de-un-formulario",
+  "art": "checklist",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 031",
+      "headline": [
+        {
+          "t": "Guardar el PDF "
+        },
+        {
+          "t": "es el error común.",
+          "c": "blue"
+        }
+      ],
+      "sub": "USCIS cambia el I-539 y el I-765 el 15 de septiembre de 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué es la “edición”.",
+      "body": [
+        {
+          "t": "Cada formulario de USCIS trae una fecha pequeña abajo. Esa fecha es la edición. Si mandas una edición que ya no vale, te devuelven los papeles sin decidir nada. "
+        },
+        {
+          "t": "Es como llevar la tarea en la hoja del año pasado.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Ahora la fecha manda.",
+      "body": [
+        {
+          "t": "USCIS puso en su sitio versiones de vista previa del I-539 y del I-765 con edición 09/15/26, y avisó que no se pueden mandar antes del 15 de sep. "
+        },
+        {
+          "t": "Fuente: uscis.gov, aviso del 14 de agosto de 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "A quién le toca.",
+      "body": [
+        {
+          "t": "Te toca si guardaste un formulario en la computadora hace meses. También si alguien te dio una copia impresa. "
+        },
+        {
+          "t": "Si vas a llenar todo en tu cuenta en línea de USCIS, el sistema usa la edición del día.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice USCIS.",
+      "sub": "En español: manda la nueva solo desde el 15 de sep.; antes de esa fecha la rechazan.",
+      "label": "TEXTO OFICIAL (USCIS)",
+      "code": "uscis.gov, 14 de agosto de 2026:\n\n\"Do not file the 09/15/26 editions of\nthese forms before Sept. 15, 2026.\"\n\n\"USCIS will only accept the 09/15/26\neditions of these forms if they are\npostmarked or electronically\nsubmitted on or after Sept. 15, 2026.\""
+    },
+    {
+      "kind": "step",
+      "eyebrow": "OPINIÓN",
+      "headline": "Cómo lo ve un despacho.",
+      "body": [
+        {
+          "t": "RJ Immigration Law (rjimmigrationlaw.com), agosto de 2026, dice que, a diferencia de muchos cambios de formulario, esta vez no dejan seguir usando la edición anterior. "
+        },
+        {
+          "t": "Es su opinión. Información general — no es asesoría legal.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Tres revisiones de un minuto.",
+      "items": [
+        "Baja el formulario el mismo día",
+        "Busca la fecha chica abajo del PDF",
+        "Compara con la fecha del aviso",
+        "No uses copias guardadas ni prestadas"
+      ],
+      "sub": "Información general — no es asesoría legal.",
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": [
+        {
+          "t": "La fecha chica "
+        },
+        {
+          "t": "decide tu trámite.",
+          "c": "blue"
+        }
+      ],
+      "sub": "USCIS avisó el 14 de agosto de 2026 que cambian dos formularios muy usados."
+    },
+    {
+      "headline": [
+        {
+          "t": "¿Dónde está la fecha "
+        },
+        {
+          "t": "de edición?",
+          "c": "blue"
+        }
+      ],
+      "sub": "Está abajo en cada formulario de USCIS. Aviso del 14 de agosto de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "Guardar el PDF "
+        },
+        {
+          "t": "es el error común.",
+          "c": "blue"
+        }
+      ],
+      "sub": "USCIS cambia el I-539 y el I-765 el 15 de septiembre de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "1 minuto de revisión, "
+        },
+        {
+          "t": "meses ahorrados.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Aviso de USCIS del 14 de agosto de 2026 sobre ediciones nuevas."
+    },
+    {
+      "headline": [
+        {
+          "t": "La vista previa "
+        },
+        {
+          "t": "todavía no se manda.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Lo dice USCIS en su aviso del 14 de agosto de 2026. Espera al 15 de sep."
+    }
+  ],
+  "caption": "Cada formulario de USCIS trae una fecha de edición impresa abajo. Ahora esa fecha importa más: en su aviso del 14 de agosto de 2026, USCIS publicó versiones de vista previa del I-539 y del I-765 con edición 09/15/26 y dijo dos cosas claras. Una: no las manden antes del 15 de septiembre de 2026. Dos: solo aceptará esas ediciones si el sobre tiene sello postal, o el envío electrónico se hace, el 15 de septiembre o después.\n\nEn palabras simples: el papel correcto depende del día en que lo mandas. Es como llevar la tarea en la hoja del año pasado: aunque esté bien hecha, te la devuelven. Baja el formulario de uscis.gov el mismo día que lo vas a mandar y compara la fecha chica del PDF con la del aviso.\n\nIn English: every USCIS form shows an edition date. USCIS says the 09/15/26 editions of Forms I-539 and I-765 must not be filed before Sept. 15, 2026, and will only be accepted if postmarked or e-filed on or after that day. In plain words: download the form the same day you file and check the small date on it.\n\nGuarda este post y cuéntanos en los comentarios si te han devuelto papeles por algo así.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\n#inmigracion #inmigracionusa #uscis #formularios #i765 #i539 #noticiasinmigracion #inmigrantes #estadosunidos"
+}

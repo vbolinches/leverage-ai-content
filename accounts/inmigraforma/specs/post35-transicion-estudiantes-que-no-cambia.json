@@ -1,0 +1,158 @@
+{
+  "slug": "post35-transicion-estudiantes-que-no-cambia",
+  "art": "calendar",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 035",
+      "headline": [
+        {
+          "t": "Un viaje te cambia "
+        },
+        {
+          "t": "las reglas.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Si vuelves el 15 de sep. o después, recibes fecha fija. DHS, 17 de julio de 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Si ya estabas estudiando aquí antes del 15 de septiembre, sigues con tus reglas de antes por ahora. El cambio te llega cuando sales y vuelves, o cuando necesitas más tiempo. "
+        },
+        {
+          "t": "Es como una fila: los que ya estaban no vuelven a empezar.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "El cambio no es para todos hoy.",
+      "body": [
+        {
+          "t": "DHS dice que los estudiantes F siguen entrando con duration of status (sin fecha) hasta el 15 de sep. de 2026. Después, quien entre recibe una fecha fija. "
+        },
+        {
+          "t": "Fuente: studyinthestates.dhs.gov (DHS), 19 ago 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "Cuándo te alcanza.",
+      "body": [
+        {
+          "t": "Si sales del país y vuelves el 15 de sep. o después, te dan la fecha fija: la fecha final de tu I-20, hasta 4 años, más 30 días de salida. "
+        },
+        {
+          "t": "Si te quedas aquí, sigues igual por ahora.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice DHS.",
+      "sub": "En español: quien pidió su OPT a tiempo, hasta el 18 de marzo de 2027, no pide EOS aparte.",
+      "label": "TEXTO OFICIAL (DHS)",
+      "code": "studyinthestates.dhs.gov:\n\n\"...who timely filed for post-\ncompletion OPT or STEM OPT by\nMarch 18, 2027: These students do\nnot need to file a separate\napplication for an EOS.\""
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA FECHA",
+      "headline": "¿Hasta cuándo la transición?",
+      "stat": "18 MAR 2027"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Qué hacer y qué no.",
+      "items": [
+        "No hagas trámites por miedo",
+        "Pregunta a tu DSO antes de viajar",
+        "Si viajas, revisa tu nuevo I-94",
+        "Webinar de SEVP: 31 de agosto de 2026"
+      ],
+      "sub": "Información general — no es asesoría legal.",
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": [
+        {
+          "t": "El 15 de sep. "
+        },
+        {
+          "t": "no tienes que hacer nada.",
+          "c": "blue"
+        }
+      ],
+      "sub": "La regla de DHS del 17 de julio de 2026 trae reglas de transición."
+    },
+    {
+      "headline": [
+        {
+          "t": "¿Te alcanza la regla "
+        },
+        {
+          "t": "si no viajas?",
+          "c": "blue"
+        }
+      ],
+      "sub": "DHS lo explica en sus páginas oficiales. Consultadas el 19 de agosto de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "Un viaje te cambia "
+        },
+        {
+          "t": "las reglas.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Si vuelves el 15 de sep. o después, recibes fecha fija. DHS, 17 de julio de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "La transición dura "
+        },
+        {
+          "t": "hasta marzo de 2027.",
+          "c": "blue"
+        }
+      ],
+      "sub": "DHS: quien pidió su OPT a tiempo no pide extensión aparte. 19 de agosto de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "Correr al abogado hoy "
+        },
+        {
+          "t": "te cuesta gratis.",
+          "c": "blue"
+        }
+      ],
+      "sub": "DHS explica qué no cambia el 15 de septiembre de 2026 para quien ya está aquí."
+    }
+  ],
+  "caption": "La regla final de DHS del 17 de julio de 2026 empieza el 15 de septiembre de 2026, pero no cae igual sobre todos. En sus páginas oficiales (studyinthestates.dhs.gov, consultadas el 19 de agosto de 2026), DHS explica que los estudiantes F siguen siendo admitidos con duration of status hasta esa fecha; que quien salga del país y regrese el 15 de septiembre o después puede recibir un tiempo fijo — la fecha final de su I-20, con un tope de cuatro años, más 30 días para salir —; y que quien pidió a tiempo su OPT o su STEM OPT hasta el 18 de marzo de 2027 no necesita pedir una extensión de estadía aparte. SEVP anunció además un webinar público el 31 de agosto de 2026.\n\nEn palabras simples: si ya estás aquí y no viajas, hoy no tienes que hacer nada. Es como una fila: los que ya estaban no vuelven a empezar. El cambio te toca cuando sales y vuelves, o cuando necesitas más tiempo. Antes de comprar un boleto, pregunta a tu DSO.\n\nIn English: the DHS final rule takes effect Sept. 15, 2026, but current F students stay under duration of status until then; travel and re-entry on or after that date brings a fixed admission period, and those who timely filed OPT or STEM OPT by March 18, 2027 need no separate extension of stay. In plain words: if you are here and not travelling, nothing to do today.\n\nGuarda este post y compártelo con quien esté pensando en viajar.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\n#inmigracion #inmigracionusa #visaestudiante #f1 #opt #dhs #uscis #noticiasinmigracion #inmigrantes"
+}

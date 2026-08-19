@@ -1,0 +1,158 @@
+{
+  "slug": "post29-tps-fechas-en-pagina-oficial-uscis",
+  "art": "calendar",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 029",
+      "headline": [
+        {
+          "t": "Tu TPS ya tiene "
+        },
+        {
+          "t": "fecha de salida.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Cambió la página de USCIS, no tu permiso. Consultada el 19 de agosto de 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué dice esa página.",
+      "body": [
+        {
+          "t": "USCIS tiene una página donde avisa cuándo se acaba el TPS de cada país. Ahí también dice si el permiso de trabajo sigue valiendo. "
+        },
+        {
+          "t": "Es como el tablero de salidas de la terminal de buses: ahí ves la hora exacta.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Tres avisos, tres fechas.",
+      "body": [
+        {
+          "t": "El TPS de El Salvador termina el 9 de sep. de 2026. El de Ucrania y el de Sudán, el 19 de oct. de 2026. También hay una guía sobre el fin del TPS de Somalia. "
+        },
+        {
+          "t": "Fuente: uscis.gov, I-9 Central, Form I-9 Related News, 19 ago 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "A quién le toca.",
+      "body": [
+        {
+          "t": "Si tu TPS es de El Salvador, Ucrania o Sudán, esa fecha es tuya. Si tu TPS es de otro país, busca tu país en la misma página. "
+        },
+        {
+          "t": "Si ya tienes Green Card o ciudadanía, esto no te cambia nada.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice en inglés.",
+      "sub": "En español: el TPS de El Salvador y sus beneficios terminan el 9 de sep. de 2026.",
+      "label": "TEXTO OFICIAL (USCIS)",
+      "code": "uscis.gov - Form I-9 Related News:\n\n\"The Temporary Protected Status (TPS)\ndesignation of El Salvador and related\nbenefits are set to terminate on\nSept. 9, 2026.\"\n\nUcrania y Sudán: 19 de octubre de 2026."
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA FECHA",
+      "headline": "¿Qué fecha apuntar hoy?",
+      "stat": "9 SEP 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Qué hacer con esta fecha.",
+      "items": [
+        "Busca tu país en la página de USCIS",
+        "Saca tu EAD y mira su fecha",
+        "No te guíes por rumores de WhatsApp",
+        "Habla con un abogado de inmigración"
+      ],
+      "sub": "Información general — no es asesoría legal.",
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": [
+        {
+          "t": "3 países, "
+        },
+        {
+          "t": "3 fechas de fin de TPS.",
+          "c": "blue"
+        }
+      ],
+      "sub": "USCIS las publicó en su página de I-9. Consultada el 19 de agosto de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "¿Sabes el día "
+        },
+        {
+          "t": "en que vence tu TPS?",
+          "c": "blue"
+        }
+      ],
+      "sub": "USCIS lo publica en una sola página. Consultada el 19 de agosto de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "El error: mirar solo "
+        },
+        {
+          "t": "tu permiso.",
+          "c": "blue"
+        }
+      ],
+      "sub": "La fecha de fin del TPS va en otra página de USCIS. 19 de agosto de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "Tu TPS ya tiene "
+        },
+        {
+          "t": "fecha de salida.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Cambió la página de USCIS, no tu permiso. Consultada el 19 de agosto de 2026."
+    },
+    {
+      "headline": [
+        {
+          "t": "Enterarte tarde "
+        },
+        {
+          "t": "cuesta tu trabajo.",
+          "c": "blue"
+        }
+      ],
+      "sub": "USCIS ya publicó las fechas de fin de TPS. Consultada el 19 de agosto de 2026."
+    }
+  ],
+  "caption": "USCIS mantiene una página oficial (I-9 Central, “Form I-9 Related News”) donde avisa cuándo termina el TPS de cada país y qué pasa con los permisos de trabajo. Al consultarla el 19 de agosto de 2026 decía: el TPS de El Salvador y sus beneficios terminan el 9 de septiembre de 2026; el de Ucrania y el de Sudán, el 19 de octubre de 2026. También hay una guía publicada sobre el fin del TPS de Somalia.\n\nEn palabras simples: hay una página del gobierno que dice, país por país, hasta cuándo vale el TPS. Es como el tablero de salidas de la terminal de buses: ahí ves la hora exacta y no tienes que preguntarle a nadie. Busca tu país, apunta la fecha y saca tu permiso de trabajo para ver qué fecha trae.\n\nIn English: USCIS keeps an official page (I-9 Central, “Form I-9 Related News”) with TPS end dates. As consulted on Aug. 19, 2026, it said TPS for El Salvador and related benefits end Sept. 9, 2026, and TPS for Ukraine and Sudan end Oct. 19, 2026. In plain words: check your own country on that page and write the date down.\n\nGuarda este post y compártelo con alguien que tenga TPS.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\n#inmigracion #inmigracionusa #tps #uscis #permisodetrabajo #elsalvador #noticiasinmigracion #inmigrantes #estadosunidos"
+}
