@@ -472,9 +472,12 @@
         "accounts/leverageai/queue/post26-case-study-one-pager/slide07.png"
       ],
       "caption": "The cheapest sales asset you own is the job you just finished. Written up as a one-page case study, it does the arguing for you in the next proposal — and most solo operators have zero of them.\n\nWrite the copy first, design second. The prompt below gives you the structure: short headline, three bullets, one client quote, one line on what you'd do next. No adjectives, numbers where you have them.\n\nThen let Canva do the layout. Canva AI 2.0 (April 2026) keeps a memory of your style and reapplies it, so the second one-pager looks like the first without you fiddling with fonts. Canva Sheets plus bulk create will produce one per row if you have a few jobs to write up.\n\nTwo honest limits: AI layout will happily stretch your logo and invent a statistic, so check every number against your own invoice — and never publish a client name or logo without asking first.\n\nSave this and write up your last finished job this week. How many case studies do you actually have — zero, one, ten?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #canva #casestudy #aiforbusiness #selfemployed #smallbusinessmarketing #aitools",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post26-case-study-one-pager/reel.mp4"
+      "video": "accounts/leverageai/queue/post26-case-study-one-pager/reel.mp4",
+      "published_media_id": "17883673176479561",
+      "published_on": "2026-08-19",
+      "threads_posted": true
     },
     {
       "id": "post27-notebooklm-handover-pack",
