@@ -107,12 +107,20 @@ def _spec_attributes(slug):
     caption = spec.get("caption", "")
     tags = [w for w in caption.split() if w.startswith("#")]
 
+    # What the blind grader predicted for this hook before it published. Joining
+    # it to real reach is the only way to find out whether the grader is worth
+    # listening to — see hooks.py. Absent for anything written before the hook
+    # test existed, or when grading was skipped.
+    import hooks
+    predicted = hooks.score_for(_ACCT, slug) or {}
+
     return {
         "hook": hook,
         "slides": len(slides),
         "kinds": [s.get("kind") for s in slides],
         "has_prompt_slide": any(s.get("kind") == "prompt" for s in slides),
         "hashtags": tags[:10],
+        **predicted,
     }
 
 
@@ -170,10 +178,14 @@ def brief():
 
     def describe(p):
         a = p["attrs"] or {}
+        graded = ""
+        if a.get("hook_score") is not None:
+            graded = (f' [graded {a["hook_score"]:.1f}/10 pre-publish, '
+                      f'shape: {a.get("hook_shape")}]')
         return (f'  {p["slug"]} [{p.get("format", "?")}] — '
                 f'reach {p.get("reach", "?")}, '
                 f'{p["likes"]}L {p["comments"]}C (score {p["score"]})\n'
-                f'    hook: {a.get("hook", "?")}\n'
+                f'    hook: {a.get("hook", "?")}{graded}\n'
                 f'    {a.get("slides", "?")} slides, '
                 f'prompt slide: {a.get("has_prompt_slide")}, '
                 f'tags: {" ".join(a.get("hashtags", [])[:6])}')
@@ -187,6 +199,20 @@ def brief():
         + "\n\nWORST PERFORMING — do less of what these did:\n"
         + "\n".join(describe(p) for p in bottom)
     )
+
+    # Once graded posts have published, the grader itself becomes testable. Its
+    # rubric is the strategy file's Confirmed section, so a miscalibrated grader
+    # is a symptom of a wrong rule — which is fixable, but only if it gets said.
+    if any((p["attrs"] or {}).get("hook_score") is not None for p in scored):
+        text += (
+            "\n\nHOOK GRADER CALIBRATION: some hooks above carry the score a "
+            "blind grader gave them before publishing. Check whether the "
+            "high-graded hooks actually out-reached the low-graded ones. If "
+            "they did not, say so plainly in the strategy file — the grader "
+            "scores against the Confirmed section, so a grader that does not "
+            "predict reach means a rule in Confirmed is wrong. Do not conclude "
+            "either way on fewer than about six graded posts."
+        )
     return text, stats
 
 

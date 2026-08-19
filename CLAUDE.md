@@ -91,6 +91,7 @@ initiates conversations; the API will reject it and Meta may flag the app.
 | `accounts/<slug>/queue/schedule.json` | That account's queue |
 | `accounts/<slug>/specs/*.json` | Post content specs, rendered into slides |
 | `accounts/<slug>/strategy.md` | The feedback loop's memory |
+| `accounts/<slug>/hooks.json` | Every graded cover hook + score, joined to reach later |
 | `accounts/<slug>/token_status.json` | Token expiry dates (no secret) |
 | `accounts.py` | Registry; `--list-json` feeds the workflow matrices |
 | `new_account.py` | Scaffolds a new (disabled) account + prints setup steps |
@@ -99,7 +100,8 @@ initiates conversations; the API will reject it and Meta may flag the app.
 | `render_reel.py` | Spec or slides → 1080×1920 MP4 Reel, with audio |
 | `audio.py` | Synthesises the Reel music bed (original, per-slug) |
 | `build_reels.py` | Converts alternate queued posts to Reels |
-| `generate_batch.py` | Authors a batch with Claude, renders, queues |
+| `generate_batch.py` | Authors a batch with Claude (Haiku 4.5 default; inmigraforma pinned to Opus via `model` in account.json), renders, queues |
+| `hooks.py` | Hook-shape taxonomy; grades candidate covers blind, logs scores |
 | `monitor.py` | Read-only digest + token expiry warning |
 | `ideas.py` | Content-ideas monitor (X / RSS / HN) → `accounts/<slug>/ideas.json` |
 | `dm_responder.py` | One automated welcome per inbound DM conversation |

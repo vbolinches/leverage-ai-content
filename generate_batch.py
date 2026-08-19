@@ -18,9 +18,14 @@ import argparse, json, os, re, sys
 from datetime import date, timedelta
 
 import accounts
+import hooks
 import render_slides
 
-MODEL = "claude-opus-5"
+# Authoring model. Per-account override via "model" in account.json; the
+# owner chose Haiku 4.5 as the default (2026-08-17) for cost. Note that the
+# generator's value is in careful source verification and honest strategy
+# reasoning - if a batch's quality slips, this is the first knob to revisit.
+DEFAULT_MODEL = "claude-haiku-4-5-20251001"
 
 # One account per invocation (ACCOUNT env / --account). Everything the
 # generator reads and writes — queue, specs, strategy, brand voice — belongs
@@ -29,6 +34,7 @@ ACCT = accounts.get()
 render_slides.configure(ACCT)
 QUEUE = ACCT.queue
 SPEC_DIR = ACCT.spec_dir
+MODEL = ACCT.get("model", DEFAULT_MODEL)
 
 # Server-side web search. Dynamic filtering is built into this tool version —
 # do NOT also declare code_execution, a second execution environment confuses
@@ -75,8 +81,15 @@ Each post:
 {
   "slug": "postNN-short-kebab-topic",   // NN is provided to you
   "caption": "full Instagram caption",
+  "hook_candidates": [ ...exactly 5 alternative covers... ],
   "slides": [ ...4 to 7 slide objects... ]
 }
+
+hook_candidates are five OTHER ways to open the same post — {"headline":...,"sub":...},
+same shape as the cover's own. Write the cover you believe in, then five real
+alternatives built on different hook shapes. They are graded blind against your
+cover by a separate reader and the winner replaces it, so a lazy candidate is a
+wasted slot, and your own cover can lose.
 
 Slide kinds and their fields:
   {"kind":"cover","eyebrow":"__SERIES__ NNN","headline":[{"t":"Plain "},{"t":"accent.","c":"blue"}],"sub":"one line","footer_right":"SWIPE →"}
@@ -122,23 +135,7 @@ def existing_topics(sched):
 
 # Forcing a tool call guarantees well-formed JSON. Parsing free text failed on
 # literal newlines inside the `code` field, which are invalid inside a JSON string.
-RICH_TEXT = {
-    "anyOf": [
-        {"type": "string"},
-        {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "t": {"type": "string"},
-                    "c": {"type": "string", "enum": ["blue", "green", "dim", "white"]},
-                    "b": {"type": "boolean"},
-                },
-                "required": ["t"],
-            },
-        },
-    ]
-}
+RICH_TEXT = hooks.RICH_TEXT
 
 SUBMIT_TOOL = {
     "name": "submit_posts",
@@ -161,6 +158,23 @@ SUBMIT_TOOL = {
                     "type": "object",
                     "properties": {
                         "slug": {"type": "string"},
+                        "hook_candidates": {
+                            "type": "array",
+                            "description": (
+                                "Exactly 5 alternative covers for this post, "
+                                "each built on a DIFFERENT hook shape from the "
+                                "cover slide and from each other. Graded blind "
+                                "against your cover; the winner replaces it."
+                            ),
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "headline": RICH_TEXT,
+                                    "sub": {"type": "string"},
+                                },
+                                "required": ["headline", "sub"],
+                            },
+                        },
                         "art": {
                             "type": "string",
                             "description": (
@@ -203,7 +217,8 @@ SUBMIT_TOOL = {
                             },
                         },
                     },
-                    "required": ["slug", "art", "caption", "slides"],
+                    "required": ["slug", "art", "caption", "slides",
+                                 "hook_candidates"],
                 },
             }
         },
@@ -244,16 +259,25 @@ def strategy_context():
     return f"{perf}\n\nCURRENT STRATEGY FILE:\n{strategy}\n\n{note}"
 
 
+_CLIENT = None
+
+
+def client():
+    """One Anthropic client for the run — authoring and hook grading share it."""
+    global _CLIENT
+    if _CLIENT is None:
+        try:
+            import anthropic
+        except ImportError:
+            sys.exit("pip install anthropic")
+        key = os.environ.get("ANTHROPIC_API_KEY")
+        if not key:
+            sys.exit("ANTHROPIC_API_KEY is not set — cannot author a batch.")
+        _CLIENT = anthropic.Anthropic(api_key=key)
+    return _CLIENT
+
+
 def author(count, start_index, avoid):
-    try:
-        import anthropic
-    except ImportError:
-        sys.exit("pip install anthropic")
-
-    key = os.environ.get("ANTHROPIC_API_KEY")
-    if not key:
-        sys.exit("ANTHROPIC_API_KEY is not set — cannot author a batch.")
-
     # Monitored-source signals (X, RSS, HN) come in as leads to investigate.
     # They suggest WHAT is being talked about; web_search still decides what is
     # actually true. Empty string when the ideas file is stale or absent.
@@ -276,17 +300,17 @@ def author(count, start_index, avoid):
         "Never state a fact you did not verify by search.\n\n"
         f"Already covered — pick genuinely different topics:\n"
         + "\n".join(f"- {t}" for t in avoid)
+        + "\n\n" + hooks.ban_list(ACCT)
         + "\n\n" + strategy_context()
     )
 
-    client = anthropic.Anthropic(api_key=key)
     messages = [{"role": "user", "content": prompt}]
 
     # tool_choice stays "auto": forcing submit_posts would stop the model
     # searching first. Server-side search can hit its own iteration limit and
     # return stop_reason "pause_turn" — resend to resume, bounded.
     for _ in range(6):
-        with client.beta.messages.stream(
+        with client().beta.messages.stream(
             model=MODEL,
             max_tokens=64000,
             system=BRAND,
@@ -331,6 +355,75 @@ def author(count, start_index, avoid):
             return block.input
 
     sys.exit(f"Model returned no submit_posts call (stop_reason={resp.stop_reason}).")
+
+
+def hook_test(post, min_score, log_path=None):
+    """Grade the cover blind against its alternatives and splice the winner in.
+
+    Mutates the post's cover slide. Never raises: a grader failure must not
+    cost us the batch — the authored cover simply survives, which is exactly
+    the behaviour before this existed. An empty queue is worse than an ungraded
+    hook, same reasoning as the zero-web-search warning above.
+    """
+    slides = post.get("slides") or []
+    cover = next((s for s in slides if s.get("kind") == "cover"), None)
+    if not cover:
+        return "  (no cover slide — hook test skipped)"
+
+    pool = [{"headline": cover.get("headline", ""), "sub": cover.get("sub", ""),
+             "authored": True}]
+    # Candidates must meet the stated headline limit; the authored cover stays
+    # in the pool whatever its length, because it is also the fallback and
+    # validate() is what judges it.
+    for c in post.get("hook_candidates") or []:
+        if len(hooks.flatten(c.get("headline"))) > hooks.MAX_HEADLINE:
+            continue
+        pool.append({"headline": c["headline"], "sub": c.get("sub", ""),
+                     "authored": False})
+
+    if len(pool) < 2:
+        return "  (no usable alternatives — hook test skipped)"
+
+    try:
+        scored = hooks.grade(client(), ACCT, post["slug"], pool)
+        retried = False
+
+        # "Be blunt, a 6 out of 10 hook is a wasted video." One targeted retry:
+        # fresh hooks join the pool rather than replace it, so a retry can lose.
+        if scored[0]["score"] < min_score:
+            extras = [c for c in hooks.retry(client(), ACCT, BRAND, post, scored)
+                      if len(hooks.flatten(c.get("headline"))) <= hooks.MAX_HEADLINE]
+            if extras:
+                scored = hooks.grade(client(), ACCT, post["slug"], pool + extras)
+                retried = True
+
+        chosen = scored[0]
+        cover["headline"] = chosen["headline"]
+        if chosen.get("sub"):
+            cover["sub"] = chosen["sub"]
+
+        hooks.log(ACCT, {
+            "slug": post["slug"],
+            "graded": date.today().isoformat(),
+            "threshold": min_score,
+            "retried": retried,
+            "chosen": {k: chosen[k] for k in
+                       ("headline", "sub", "rank", "score", "shape", "stopping",
+                        "reason", "authored")},
+            "candidates": [{k: c[k] for k in
+                            ("headline", "rank", "score", "shape", "stopping",
+                             "reason", "authored")} for c in scored],
+        }, path=log_path)
+
+        out = hooks.report(post["slug"], scored, chosen)
+        if chosen["score"] < min_score:
+            out += (f"\n   ::warning::best hook still {chosen['score']:.1f} < "
+                    f"{min_score} after a retry — publishing it anyway, but it "
+                    f"is the weakest link in this post.")
+        return out
+    except Exception as e:
+        return (f"  ::warning::hook test failed for {post['slug']} ({e}) — "
+                f"keeping the authored cover ungraded.")
 
 
 def validate(post):
@@ -398,6 +491,11 @@ def main():
                          "so the review bundle holds only the new posts")
     ap.add_argument("--account", default=None,
                     help="account slug (defaults to ACCOUNT env / sole account)")
+    ap.add_argument("--no-hook-test", action="store_true",
+                    help="skip blind hook grading; ship the authored cover")
+    ap.add_argument("--min-hook-score", type=float, default=hooks.MIN_SCORE,
+                    help=f"retry a post's hooks below this "
+                         f"(default {hooks.MIN_SCORE})")
     a = ap.parse_args()
 
     if a.account and a.account != ACCT["slug"]:
@@ -444,7 +542,15 @@ def main():
         n = int(m.group(1)) if m else 0
         return n % period != 0
 
+    # The hook test runs before validation, because it rewrites the cover
+    # headline that validation measures. On a dry run its log lands beside the
+    # rendered slides, like the strategy file above.
+    hook_log = None if live else os.path.join(out, "hooks.json")
+
     for post in posts:
+        if not a.no_hook_test:
+            print(hook_test(post, a.min_hook_score, log_path=hook_log))
+
         errs = validate(post)
         if errs:
             print(f"REJECTED {post.get('slug')}: {'; '.join(errs)}")
