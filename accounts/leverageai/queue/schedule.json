@@ -492,7 +492,10 @@
         "accounts/leverageai/queue/post27-notebooklm-handover-pack/slide07.png"
       ],
       "caption": "The invisible cost of finishing a project is the six months of \"quick questions\" afterwards. Where's the file, how do I change the header, who do I call when it breaks. All unbilled.\n\nFix it once with a handover pack. Put your delivery files into a NotebookLM notebook — final deliverable, SOW, decisions log, a checklist of accounts (names only, never passwords) — then generate the client-facing doc from those sources only. NotebookLM answers from what you upload, which is exactly what you want here: no invented steps.\n\nAdd a Video Overview from the same notebook. NotebookLM turns notebook content into a narrated video summary, and a five-minute walkthrough kills most of the follow-up calls.\n\nHonest limit: it treats every uploaded file as true, including the superseded draft you forgot to remove. Delete old versions first, then read the whole thing before it goes out with your name on it.\n\nSave this for your next project close. Do you charge for support after handover, or absorb it?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #notebooklm #aiforbusiness #selfemployed #smallbusinessowner #projectdelivery #aitools",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "18132825547726470",
+      "published_on": "2026-08-20",
+      "threads_posted": true
     },
     {
       "id": "post28-voice-debrief-after-calls",
