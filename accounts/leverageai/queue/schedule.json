@@ -510,9 +510,12 @@
         "accounts/leverageai/queue/post28-voice-debrief-after-calls/slide07.png"
       ],
       "caption": "The most valuable five minutes of your week is straight after a client call, when you still remember the budget number they mumbled. Two days later it's gone, and your follow-up email is vague.\n\nOpenAI's release notes say GPT-Live in ChatGPT Voice now supports file uploads and Projects as of 7 August 2026. So keep one Project per client, and talk into it while the call is fresh: on the walk back, in the car park, before the next thing starts.\n\nTalk for two minutes, then let it produce the follow-up email, a line on what they agreed versus what they asked for free, and the open questions. The scope line is the one that saves you money later.\n\nHonest limit: voice transcription drops digits and mangles surnames. Fix names and numbers by hand before anything with a price on it leaves your outbox.\n\nSave this and try it after your next call. Do you write follow-ups same day, or let them slide?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #chatgpt #aiforbusiness #selfemployed #smallbusinessowner #followup #aitools",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post28-voice-debrief-after-calls/reel.mp4"
+      "video": "accounts/leverageai/queue/post28-voice-debrief-after-calls/reel.mp4",
+      "published_media_id": "17903876325473740",
+      "published_on": "2026-08-21",
+      "threads_posted": true
     },
     {
       "id": "post29-client-project-memory",
