@@ -331,16 +331,21 @@ def author(count, start_index, avoid):
     # parameter outright (400 "does not support the `fallbacks` parameter").
     # Only send it when the model can take it.
     extra = {}
+    search_tool = dict(WEB_SEARCH_TOOL)
     if "haiku" not in MODEL:
         extra = {"betas": ["server-side-fallback-2026-07-01"],
                  "fallbacks": "default"}
+    else:
+        # Haiku has no programmatic tool calling; the search tool must be
+        # declared direct-call-only or the API rejects the request (400).
+        search_tool["allowed_callers"] = ["direct"]
 
     for _ in range(6):
         with client().beta.messages.stream(
             model=MODEL,
             max_tokens=64000,
             system=BRAND,
-            tools=[WEB_SEARCH_TOOL, SUBMIT_TOOL],
+            tools=[search_tool, SUBMIT_TOOL],
             messages=messages,
             **extra,
         ) as stream:
