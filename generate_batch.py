@@ -327,6 +327,14 @@ def author(count, start_index, avoid):
     # tool_choice stays "auto": forcing submit_posts would stop the model
     # searching first. Server-side search can hit its own iteration limit and
     # return stop_reason "pause_turn" — resend to resume, bounded.
+    # Server-side fallback is an Opus/Sonnet feature; Haiku rejects the
+    # parameter outright (400 "does not support the `fallbacks` parameter").
+    # Only send it when the model can take it.
+    extra = {}
+    if "haiku" not in MODEL:
+        extra = {"betas": ["server-side-fallback-2026-07-01"],
+                 "fallbacks": "default"}
+
     for _ in range(6):
         with client().beta.messages.stream(
             model=MODEL,
@@ -334,8 +342,7 @@ def author(count, start_index, avoid):
             system=BRAND,
             tools=[WEB_SEARCH_TOOL, SUBMIT_TOOL],
             messages=messages,
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",
+            **extra,
         ) as stream:
             resp = stream.get_final_message()
 
