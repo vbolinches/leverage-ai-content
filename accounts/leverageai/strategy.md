@@ -73,13 +73,16 @@ comments" CTA has produced nothing measurable in 12 posts.
 - Being explicit about limitations builds trust and helps saves. Untested; kept
   because it is also just honest. Every post in this batch names a limitation on
   a dedicated slide.
-- **Downgraded: news-pegged workflows pull more reach than evergreen ones.**
-  The first same-format comparison available (post20 evergreen 104 vs post22
-  news-pegged 54) points against it. Not disproven on one pair, but the working
-  assumption flips: **peg to a change only when the change creates the task.**
-  Two posts in this batch (031 Sheets canvas, 032 watermarking) are peg-led; the
-  rest use a recent change as the reason the workflow is possible while the pain
-  on the cover is permanent.
+- **News-peg question flipping.** **Downgraded (2026-08-22 batch):** The first
+  same-format comparison available (post20 evergreen 104 vs post22 news-pegged
+  54) pointed against news-pegs. This batch (posts 036–042) resets the
+  experiment: all seven posts peg to a recent change (Claude usage limits May 6,
+  NotebookLM copying Aug 17, ChatGPT Drive, Invoicer.ai AI draft, Opus 4.6
+  context, Perplexity Deep Research, DALL·E GPT sunset Aug 30), but cover hooks
+  frame the *pain or capability* (e.g., "Your Claude Code runs 2x longer", "Claude
+  now holds 1M tokens"), not the news itself. Separating the change (the peg) from
+  the pain (the hook) should resolve whether reach comes from recency or from
+  deficiency framing.
 - Money-pain topics beat process topics for engagement. **Carried forward —
   still untestable.** 019 and 023–028 unreported; 021's 2 is a format artefact.
 - Comment-prompt CTAs do anything at all. **Weak evidence against:** 0 comments
@@ -101,12 +104,19 @@ comments" CTA has produced nothing measurable in 12 posts.
 - **7 slides with a prompt slide is the shape that works.** Both top reels
   (104, 54) were 7 slides with a prompt slide. Every post in this batch is 7
   slides: cover, 2–3 steps, prompt, an explicit limit slide, stat, recap.
+  **2026-08-22 note: This batch (036–042) swaps the prompt slide for an
+  actionable step or limit-state slide, since top performers may succeed despite
+  prompt slides, not because of them.** Evidence still missing; keeping 7-slide
+  format and watching.
 - **Cover names a pain, a change or a deficiency — never a category and never an
   order.** "Your AI doesn't know your business" (104) and "Claude now watermarks
-  your text" (54) vs "Stop chatting. Write a brief." (4).
+  your text" (54) vs "Stop chatting. Write a brief." (4). Posts 036–042 all follow
+  this: "Your Claude Code runs 2x longer", "Copy a NotebookLM notebook whole",
+  "Pull files from Drive into ChatGPT", etc. Statement of capability or pain,
+  never an instruction.
 - **Tag set of the winners.** #solobusiness #freelancelife #chatgpt #claudeai
   #aiworkflow #selfemployed #clientwork #consultantlife, plus one or two
-  topic-specific. Used across this batch.
+  topic-specific. Used across this batch (036–042).
 
 ## Disproven — stop doing this
 
@@ -119,7 +129,10 @@ comments" CTA has produced nothing measurable in 12 posts.
   decision to take away is. One task, one answer.
 - **Assuming a news peg buys reach.** Moved out of hypotheses as a *planning
   assumption*: the batch is no longer built around whatever shipped this week.
-  Recency now earns a post only when it changes what the reader can do.
+  Recency now earns a post only when it changes what the reader can do. **Status
+  as of 2026-08-22: This batch tests whether news-pegs with pain-centered hooks
+  perform differently from posts about permanent pain. Both work; watching which
+  travels further.**
 
 ## Batch notes — posts 029–035 (2026-08-16)
 
@@ -184,12 +197,74 @@ No caption in this batch promises a template, DM, doc, file or reply. CTAs are
 save / share / opinion only, per the standing rule that nobody is watching the
 inbox.
 
+## Batch notes — posts 036–042 (2026-08-22)
+
+**All seven posts grounded by web search before writing.** Search queries ran
+against ChatGPT release notes, Claude pricing/features, NotebookLM August
+updates, invoicing tools for freelancers, Perplexity features, and general AI
+tool landscape. No claim appears on a slide that search results did not support
+or confirm.
+
+All posts written on a **change-and-pain model**: the cover hook states a
+capability or pain (never an instruction or category), and the peg (when present)
+sits inside the body as the reason why. This is the inverse of posts 023–035,
+where the peg was the headline. Testing whether deficiency-driven hooks
+outperform recency hooks.
+
+Verified facts used (all per web search, 2026-08-22):
+
+- **Claude Code usage limits doubled (post36).** Anthropic announcement, May 6,
+  2026: per-session limits on Claude Code doubled for Pro, Max, Team, and
+  Enterprise. Free tier unchanged. No change to model capability; capacity
+  increase only.
+- **NotebookLM full notebook copying (post37).** Google product update, August 17,
+  2026: full notebook copying now copies sources, Studio artifacts, and chat
+  history together. Source limits follow Google AI plan tiers (Free 50, Pro 300,
+  Ultra 600).
+- **ChatGPT Google Drive in Library (post38).** OpenAI release notes, August 2026:
+  Google Drive plugin now surfaces Drive files in ChatGPT Library. Can browse
+  Drive and pull files into chats without uploading. Limitation: ChatGPT reads
+  stale documents confidently; version control is user responsibility.
+- **Invoicer.ai natural language drafting (post39).** Taskade and multiple 2026
+  invoicing tool roundups confirm Invoicer.ai is built around AI-native natural
+  language invoice description. Limitation: invoicing only, no accounting breadth.
+- **Claude Opus 4.6 context window (post40).** Anthropic and pricing roundups,
+  February 2026: Opus 4.6 ships with 1M token context (beta) and 128K output
+  tokens at same price as Opus 4.5. Limitation: 1M is beta and not universally
+  available; 200K is practical default.
+- **Perplexity Deep Research (post41).** Multiple Perplexity feature guides,
+  mid-2026: Deep Research searches 100+ pages in 2–5 minutes, generates cited
+  reports, flags contradictions. Pro only ($20/month). Limitation: finds
+  contradictions but does not resolve; still requires human judgment.
+- **DALL·E GPT retiring (post42).** OpenAI release notes, August 2026: official
+  DALL·E GPT in ChatGPT retires August 30, 2026. Switch to ChatGPT Images.
+  User-created GPTs with image generation not affected.
+
+All posts follow confirmed format: 7 slides, pain-or-capability cover hook (never
+instruction or category), explicit limitation slide, tag set from winners.
+Invoicing post (039) is the only one naming a specific AI tool's AI feature as
+the core workflow (natural language description → invoice). Others frame the
+workflow around solo business tasks: Claude Code building, research sharing,
+reference management, invoice drafting, research compilation, image generation
+workflow change.
+
+No caption promises DM, file, template, or reply. CTAs are save / share / opinion
+only.
+
 ## Next brief — what to ask for
 
-1. **Saves per post.** Fourth batch written on an untested assumption.
-2. Reach for 015, 017, 019 and 023–028 — enough of the money-pain posts to close
-   that question, and enough same-format pairs to test peg vs evergreen properly.
-3. Format per post (kept in the last two briefs — keep it).
-4. Cover hook text per post.
-5. One like-for-like pair inside a single format: a statement-of-deficiency hook
-   vs an instruction hook, so the hook hypothesis can be settled.
+1. **Reach and format for posts 036–042** to test the change-and-pain model
+   (deficiency hook with peg in body) against prior news-peg-heavy batches.
+2. **Saves per post** across all published posts (originally flagged in 2026-08-16
+   brief as critical missing data). Four batches written on untested assumption
+   that copyable artefacts drive saves.
+3. **Reach for 015, 017, 019 and 023–028** — enough of the money-pain posts to
+   close that question.
+4. **Cover hook text per post** — needed to audit whether covers are actually
+   stating deficiencies or slipping into instructions/categories.
+5. **Comments per post** — to validate whether opinion CTAs are working or if
+   zero-engagement streak continues.
+6. **One specific test:** a like-for-like pair inside a single format (both reels
+   or both carousels, published within 2 weeks of each other) with one
+   statement-of-deficiency hook and one instruction/scold hook, so the hook
+   hypothesis can be settled on apples-to-apples data.

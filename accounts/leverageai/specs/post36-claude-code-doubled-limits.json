@@ -1,0 +1,109 @@
+{
+  "slug": "post36-claude-code-doubled-limits",
+  "art": "chart",
+  "caption": "Claude Code usage limits doubled on May 6, 2026. If you use it to build workflows, automate client tasks, or generate reports—you can do twice as much now before hitting a ceiling.\n\nThe catch: the free tier still maxes out immediately. Pro is worth the $20/month if you're building anything that takes more than a few turns.\n\nSave this if you're thinking about building something inside Claude for your business, or share it with a developer who is.",
+  "hook_candidates": [
+    {
+      "headline": "Your Claude tool just got 2x faster.",
+      "sub": "Not the model. The usage limit."
+    },
+    {
+      "headline": "Twice the Claude Code in one sitting.",
+      "sub": "Change took effect May 6, 2026."
+    },
+    {
+      "headline": "You stopped coding too early.",
+      "sub": "Claude doubled the session limit."
+    },
+    {
+      "headline": "More work per Claude Code session.",
+      "sub": "Since May 2026."
+    },
+    {
+      "headline": "Your Claude workflow runs out of time.",
+      "sub": "But not for the reason you think."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 036",
+      "headline": [
+        {
+          "t": "Your Claude Code runs "
+        },
+        {
+          "t": "2x longer.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Usage limits doubled on all paid plans.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT CHANGED",
+      "headline": "Anthropic doubled session limits.",
+      "body": [
+        {
+          "t": "On May 6, 2026, "
+        },
+        {
+          "t": "Claude Code per-session limits doubled",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " on Pro, Max, Team, and Enterprise. You can do roughly twice as much work before the limiter hits in a single session."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO THIS HELPS",
+      "headline": "If you build inside Claude.",
+      "body": [
+        {
+          "t": "Multi-step automations, client report generators, internal tools, proposal builders. Anything that takes 10+ turns now takes 20 before the ceiling. You still pay the same $20/month (Pro) or higher."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "Free tier: still maxes out fast.",
+      "body": [
+        {
+          "t": "The doubling applies to paid plans only. Free tier "
+        },
+        {
+          "t": "still hits limits immediately",
+          "c": "dim"
+        },
+        {
+          "t": ". Not legal advice; check Anthropic's terms."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Build longer without restart?",
+      "stat": "2x session capacity"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Claude Code limits doubled May 6",
+        "Applies to Pro, Max, Team, Enterprise",
+        "Free tier unchanged",
+        "Build more complex workflows per session"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

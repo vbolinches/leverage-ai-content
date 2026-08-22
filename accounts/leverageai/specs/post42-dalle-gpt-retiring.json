@@ -1,0 +1,101 @@
+{
+  "slug": "post42-dalle-gpt-retiring",
+  "art": "document",
+  "caption": "OpenAI is retiring the official DALL·E GPT on August 30, 2026. If you're using it to generate images, you need to switch to ChatGPT Images before then.\n\nChatGPT Images does the same work—create and edit images—without a separate tool. Simpler and one less login.\n\nUser-created GPTs with image generation enabled are not affected. Only the official one is going away.\n\nSave this if you use DALL·E through ChatGPT. Comment: are you using DALL·E, or did you already switch to ChatGPT Images?",
+  "hook_candidates": [
+    {
+      "headline": "Your DALL·E GPT is shutting down.",
+      "sub": "August 30, 2026."
+    },
+    {
+      "headline": "Download your images before they're gone.",
+      "sub": "DALL·E GPT retires soon."
+    },
+    {
+      "headline": "One less ChatGPT tool to manage.",
+      "sub": "DALL·E GPT is consolidating."
+    },
+    {
+      "headline": "Switch to ChatGPT Images now.",
+      "sub": "DALL·E GPT goes away."
+    },
+    {
+      "headline": "Your AI image tool is changing.",
+      "sub": "August 30 deadline."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 042",
+      "headline": "Your DALL·E GPT is shutting down.",
+      "sub": "August 30, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT'S HAPPENING",
+      "headline": "Official DALL·E GPT shuts down.",
+      "body": [
+        {
+          "t": "On August 30, 2026, OpenAI is retiring the official "
+        },
+        {
+          "t": "DALL·E GPT in ChatGPT",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ". Image generation moves to ChatGPT Images, a native feature inside ChatGPT itself."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT YOU NEED TO DO",
+      "headline": "Download images. Switch tools.",
+      "body": [
+        {
+          "t": "Download any images you want to keep from the DALL·E GPT before August 30. After the deadline, they will not be accessible. For image creation or editing going forward, use ChatGPT Images instead."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT DOESN'T CHANGE",
+      "headline": "Custom GPTs with image generation stay.",
+      "body": [
+        {
+          "t": "If you built your own GPT with image generation enabled, "
+        },
+        {
+          "t": "it is not affected",
+          "c": "green"
+        },
+        {
+          "t": ". Only the official DALL·E GPT is going. You keep your custom ones."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "One fewer tool to manage?",
+      "stat": "Consolidation, not loss"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Official DALL·E GPT retires August 30",
+        "Download your images before then",
+        "Use ChatGPT Images going forward",
+        "Custom GPTs with images stay"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

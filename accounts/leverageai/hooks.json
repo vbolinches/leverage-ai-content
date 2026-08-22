@@ -1,0 +1,563 @@
+{
+  "entries": [
+    {
+      "slug": "post36-claude-code-doubled-limits",
+      "graded": "2026-08-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Your Claude Code runs "
+          },
+          {
+            "t": "2x longer.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Usage limits doubled on all paid plans.",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "change",
+        "stopping": "2x longer",
+        "reason": "Names the reader's tool, states a concrete capability change, sub delivers the receipt — the exact shape both top reels used.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Your Claude Code runs "
+            },
+            {
+              "t": "2x longer.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 8.2,
+          "shape": "change",
+          "stopping": "2x longer",
+          "reason": "Names the reader's tool, states a concrete capability change, sub delivers the receipt — the exact shape both top reels used.",
+          "authored": true
+        },
+        {
+          "headline": "You stopped coding too early.",
+          "rank": 2,
+          "score": 7.6,
+          "shape": "mistake",
+          "stopping": "stopped too early",
+          "reason": "Accuses the reader of leaving work on the table, then explains why — pain-first and personal, only weaker because 'coding' narrows the audience.",
+          "authored": false
+        },
+        {
+          "headline": "Your Claude tool just got 2x faster.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Not the model.",
+          "reason": "Strong misdirect in the sub, but 'your Claude tool' is vague enough to soften the hit.",
+          "authored": false
+        },
+        {
+          "headline": "Your Claude workflow runs out of time.",
+          "rank": 4,
+          "score": 5.8,
+          "shape": "cost",
+          "stopping": "runs out of time",
+          "reason": "Real pain but the sub withholds instead of paying — curiosity-gap teasing with nothing usable on the frame.",
+          "authored": false
+        },
+        {
+          "headline": "Twice the Claude Code in one sitting.",
+          "rank": 5,
+          "score": 5.2,
+          "shape": "number-claim",
+          "stopping": "Twice",
+          "reason": "Headline is a fact about the product, not about the reader; the date sub is admin, not appetite.",
+          "authored": false
+        },
+        {
+          "headline": "More work per Claude Code session.",
+          "rank": 6,
+          "score": 3.8,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Reads as a feature label with no 'you' in it — the topic-label framing that has repeatedly reached 2.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post37-notebooklm-notebook-copying",
+      "graded": "2026-08-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop pasting research piece by piece.",
+        "sub": "Copy the whole notebook now.",
+        "rank": 1,
+        "score": 7.2,
+        "shape": "mistake",
+        "stopping": "piece by piece",
+        "reason": "Names the tedious thing the reader is doing right now, then kills it in the sub — pain-first, capability-second, exactly the 104 shape.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop pasting research piece by piece.",
+          "rank": 1,
+          "score": 7.2,
+          "shape": "mistake",
+          "stopping": "piece by piece",
+          "reason": "Names the tedious thing the reader is doing right now, then kills it in the sub — pain-first, capability-second, exactly the 104 shape.",
+          "authored": false
+        },
+        {
+          "headline": "Copy your entire research at once.",
+          "rank": 2,
+          "score": 6.6,
+          "shape": "change",
+          "stopping": "entire",
+          "reason": "\"Entire...at once\" carries the relief and the sub names the capability change, but it opens as a soft instruction rather than a pain.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Copy a NotebookLM "
+            },
+            {
+              "t": "notebook whole.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "whole",
+          "reason": "Clear capability statement and the sub itemises what travels, but it's phrased as an order and assumes the reader already feels the pain.",
+          "authored": true
+        },
+        {
+          "headline": "Hand off research faster.",
+          "rank": 4,
+          "score": 3.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "\"Hand off research faster\" is generic productivity-speak with no concrete object; the specificity is buried in the sub where it can't stop anyone.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post38-chatgpt-drive-no-reupload",
+      "graded": "2026-08-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Pull files from Drive into "
+          },
+          {
+            "t": "ChatGPT.",
+            "c": "blue"
+          }
+        ],
+        "sub": "No upload. No re-download. Browse and reference.",
+        "rank": 1,
+        "score": 7.2,
+        "shape": "change",
+        "stopping": "No upload. No re-download.",
+        "reason": "Names a new capability plus the exact friction it kills — statement, not instruction, exactly the shape that hit 104 and 54.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Pull files from Drive into "
+            },
+            {
+              "t": "ChatGPT.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 7.2,
+          "shape": "change",
+          "stopping": "No upload. No re-download.",
+          "reason": "Names a new capability plus the exact friction it kills — statement, not instruction, exactly the shape that hit 104 and 54.",
+          "authored": true
+        },
+        {
+          "headline": "Stop uploading to ChatGPT.",
+          "rank": 2,
+          "score": 5.5,
+          "shape": "contrarian",
+          "stopping": "Stop uploading",
+          "reason": "Has a jolt but it is an order, and orders are the framing that reached 4.",
+          "authored": false
+        },
+        {
+          "headline": "One folder, one conversation.",
+          "rank": 3,
+          "score": 3.2,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Cryptic slogan plus a feature label — the topic-label cover that has twice reached 2.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post39-invoicer-ai-natural-language",
+      "graded": "2026-08-22",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Your invoice takes 12 minutes."
+          }
+        ],
+        "sub": "Describing it out loud takes 20 seconds.",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "before-after",
+        "stopping": "12 minutes",
+        "reason": "Names a real time cost and collapses it to 20 seconds — pain plus change, exactly the winning cover shape.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Your invoice takes 12 minutes."
+            }
+          ],
+          "rank": 1,
+          "score": 8.2,
+          "shape": "before-after",
+          "stopping": "12 minutes",
+          "reason": "Names a real time cost and collapses it to 20 seconds — pain plus change, exactly the winning cover shape.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "What did you bill that client in May?"
+            }
+          ],
+          "rank": 2,
+          "score": 7.0,
+          "shape": "question",
+          "stopping": "If you have to go look",
+          "reason": "Direct question about the reader's own books lands a deficiency, but takes a sub-line to make the point.",
+          "authored": false
+        },
+        {
+          "headline": "Stop copy-pasting invoice templates.",
+          "rank": 3,
+          "score": 5.5,
+          "shape": "mistake",
+          "stopping": "copy-pasting invoice templates",
+          "reason": "Recognisable drudgery but it's an instruction cover — the exact 'Stop chatting.' pattern that reached 4.",
+          "authored": false
+        },
+        {
+          "headline": "Describe an invoice in plain English.",
+          "rank": 4,
+          "score": 4.8,
+          "shape": "category",
+          "stopping": "plain English",
+          "reason": "Capability statement with no pain and no number; reads as a feature blurb, not a stop.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Draft invoices in plain "
+            },
+            {
+              "t": "English.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 4.2,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Same as F but blunter and more tool-brochure — describes a category, names no deficiency.",
+          "authored": true
+        },
+        {
+          "headline": "One sentence: invoice.",
+          "rank": 6,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Topic-label fragment with no pain, no change, no stakes — the 'tool duel' failure mode.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post40-claude-opus-context-window",
+      "graded": "2026-08-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Claude now holds "
+          },
+          {
+            "t": "1M tokens.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Read entire briefs, papers, projects at once.",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "number-claim",
+        "stopping": "1M tokens",
+        "reason": "Concrete capability number plus a sub that spells out what it lets you do — the only one that names a change with a usable size.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Claude now holds "
+            },
+            {
+              "t": "1M tokens.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 6.5,
+          "shape": "number-claim",
+          "stopping": "1M tokens",
+          "reason": "Concrete capability number plus a sub that spells out what it lets you do — the only one that names a change with a usable size.",
+          "authored": true
+        },
+        {
+          "headline": "The research bottleneck just moved.",
+          "rank": 2,
+          "score": 4.5,
+          "shape": "change",
+          "stopping": "bottleneck just moved",
+          "reason": "Names a shift but keeps it abstract; 'research bottleneck' is discourse, not a pain the reader feels on a client job.",
+          "authored": false
+        },
+        {
+          "headline": "Claude's context just got massive.",
+          "rank": 3,
+          "score": 3.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Vague spec announcement — 'got massive' is a category label about a tool, not a pain or a deficiency.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post41-perplexity-deep-research",
+      "graded": "2026-08-22",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Who are your "
+          },
+          {
+            "t": "top 5 competitors",
+            "c": "blue",
+            "b": true
+          },
+          {
+            "t": " charging?",
+            "c": "white"
+          }
+        ],
+        "sub": "If you'd need an afternoon to answer, this workflow is 5 minutes.",
+        "rank": 1,
+        "score": 8.4,
+        "shape": "question",
+        "stopping": "charging",
+        "reason": "Names a live business pain — competitor pricing — and puts an afternoon of work against 5 minutes; the only hook that's about the reader's money.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Who are your "
+            },
+            {
+              "t": "top 5 competitors",
+              "c": "blue",
+              "b": true
+            },
+            {
+              "t": " charging?",
+              "c": "white"
+            }
+          ],
+          "rank": 1,
+          "score": 8.4,
+          "shape": "question",
+          "stopping": "charging",
+          "reason": "Names a live business pain — competitor pricing — and puts an afternoon of work against 5 minutes; the only hook that's about the reader's money.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "ChatGPT guesses. "
+            },
+            {
+              "t": "This one cites.",
+              "c": "green",
+              "b": true
+            }
+          ],
+          "rank": 2,
+          "score": 7.8,
+          "shape": "contrarian",
+          "stopping": "guesses",
+          "reason": "Attacks the tool they already use, promises a verdict plus the two failure modes — deficiency framing this account has proven.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "\"AI research\" is not "
+            },
+            {
+              "t": "one prompt",
+              "c": "green",
+              "b": true
+            }
+          ],
+          "rank": 3,
+          "score": 6.9,
+          "shape": "contrarian",
+          "stopping": "not one prompt",
+          "reason": "Corrects a belief they hold and the sub adds contradiction-flagging, but it edges toward AI discourse rather than a task.",
+          "authored": false
+        },
+        {
+          "headline": "One research query. Hundred-page crawl.",
+          "rank": 4,
+          "score": 5.6,
+          "shape": "number-claim",
+          "stopping": "Hundred-page crawl",
+          "reason": "Scale is mildly arresting but 'Deep Research is real' is opinion, not something the reader can do.",
+          "authored": false
+        },
+        {
+          "headline": "Get a researched brief in 5 minutes.",
+          "rank": 5,
+          "score": 4.6,
+          "shape": "before-after",
+          "stopping": "5 minutes",
+          "reason": "Time promise is fine, but 'get a brief' is an instruction-shaped category with no pain named.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Research a topic in "
+            },
+            {
+              "t": "minutes.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 3.4,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "'Research a topic' is the topic label this account has already burned reach on twice.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post42-dalle-gpt-retiring",
+      "graded": "2026-08-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Your DALL·E GPT is shutting down.",
+        "sub": "August 30, 2026.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "change",
+        "stopping": "Your ... shutting down",
+        "reason": "Possessive plus a hard shutdown word makes it personal loss with a date attached — the closest match to the 104/54 pattern.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Your DALL·E GPT is shutting down.",
+          "rank": 1,
+          "score": 7.5,
+          "shape": "change",
+          "stopping": "Your ... shutting down",
+          "reason": "Possessive plus a hard shutdown word makes it personal loss with a date attached — the closest match to the 104/54 pattern.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "DALL·E GPT is "
+            },
+            {
+              "t": "retiring.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 6.8,
+          "shape": "change",
+          "stopping": "retiring",
+          "reason": "Clear deficiency statement with the fix in the sub, but 'retiring' is softer than 'shutting down' and there's no 'your'.",
+          "authored": true
+        },
+        {
+          "headline": "Your AI image tool is changing.",
+          "rank": 3,
+          "score": 5.2,
+          "shape": "change",
+          "stopping": "deadline",
+          "reason": "'Changing' is vague and 'image tool' is nearly a category label; only the sub's deadline does any work.",
+          "authored": false
+        },
+        {
+          "headline": "One less ChatGPT tool to manage.",
+          "rank": 4,
+          "score": 3.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Frames a shutdown as tidy housekeeping — removes the pain that would make anyone stop.",
+          "authored": false
+        },
+        {
+          "headline": "Switch to ChatGPT Images now.",
+          "rank": 5,
+          "score": 3.0,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "An instruction on the cover, the exact shape that reached 4; the actual news is demoted to the sub.",
+          "authored": false
+        }
+      ]
+    }
+  ]
+}

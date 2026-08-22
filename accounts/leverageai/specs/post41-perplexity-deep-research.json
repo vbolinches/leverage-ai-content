@@ -1,0 +1,114 @@
+{
+  "slug": "post41-perplexity-deep-research",
+  "art": "chart",
+  "caption": "Perplexity's Deep Research searches dozens of sources across hundreds of pages, compiles citations, flags contradictions, and generates a structured report—all in 2–5 minutes.\n\nUse it for competitive analysis, market sizing, technical research, or anything where you need a cited briefing, not just a hot take.\n\nThe catch: Deep Research is on Pro (paid) only. It's also a research tool, not a decision-maker—contradictions flagged still require human judgment.\n\nSave this if you do a lot of research for proposals or client work. Comment: what would you research first?",
+  "hook_candidates": [
+    {
+      "headline": "Get a researched brief in 5 minutes.",
+      "sub": "Perplexity Deep Research does the work."
+    },
+    {
+      "headline": "Your competitive research just got 10x faster.",
+      "sub": "Deep Research compiles for you."
+    },
+    {
+      "headline": "Stop reading 20 pages to write one paragraph.",
+      "sub": "Deep Research aggregates."
+    },
+    {
+      "headline": "One research query. Hundred-page crawl.",
+      "sub": "Deep Research is real."
+    },
+    {
+      "headline": "Your research briefing is built. Now defend it.",
+      "sub": "Deep Research gives you the sources."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 041",
+      "headline": [
+        {
+          "t": "Who are your "
+        },
+        {
+          "t": "top 5 competitors",
+          "c": "blue",
+          "b": true
+        },
+        {
+          "t": " charging?",
+          "c": "white"
+        }
+      ],
+      "sub": "If you'd need an afternoon to answer, this workflow is 5 minutes.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "HOW IT WORKS",
+      "headline": "Ask a research question.",
+      "body": [
+        {
+          "t": "\"What are the top 5 competitors in the CRM space for nonprofits, and what are their pricing models?\" "
+        },
+        {
+          "t": "Deep Research",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " searches dozens of sources, reads full articles, compares data, flags contradictions, and writes a structured report."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHEN TO USE THIS",
+      "headline": "Use for cited briefings, not opinions.",
+      "body": [
+        {
+          "t": "Market sizing. Competitor analysis. Technical research for proposals. Anything where you need sources and detail, not a quick answer. Typically takes 2–5 minutes per query."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "Deep Research is Pro only.",
+      "body": [
+        {
+          "t": "Perplexity Pro ($20/month). Also remember: "
+        },
+        {
+          "t": "Deep Research finds contradictions but doesn't resolve them",
+          "c": "dim"
+        },
+        {
+          "t": ". You still read and judge. It's research assistance, not a decision."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "How long does research take?",
+      "stat": "2–5 min per deep query"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Enter a research question",
+        "Deep Research crawls 100+ pages",
+        "Get a cited, structured report",
+        "Use for proposals, competitive work"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

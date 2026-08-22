@@ -1,0 +1,109 @@
+{
+  "slug": "post38-chatgpt-drive-no-reupload",
+  "art": "folder",
+  "caption": "ChatGPT's Google Drive integration just matured: you can now browse your Drive directly from the Library, pull files into chats without uploading again, and keep Docs/Sheets/Slides open side by side while you work.\n\nThe catch: ChatGPT reads what you point it at. If you drop a stale brief or old pricing list, it will quote it confidently.\n\nSave this if you're pulling documents into ChatGPT constantly. Comment: do you hand it confidential files?",
+  "hook_candidates": [
+    {
+      "headline": "Stop uploading to ChatGPT.",
+      "sub": "Pull from Google Drive instead."
+    },
+    {
+      "headline": "Your Drive is now ChatGPT's filing cabinet.",
+      "sub": "Browse, reference, no re-upload."
+    },
+    {
+      "headline": "ChatGPT just got smarter about your files.",
+      "sub": "Direct Drive access."
+    },
+    {
+      "headline": "One folder, one conversation.",
+      "sub": "ChatGPT + Drive integration."
+    },
+    {
+      "headline": "Pull any Drive file into ChatGPT instantly.",
+      "sub": "The Library now shows your Drive."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 038",
+      "headline": [
+        {
+          "t": "Pull files from Drive into "
+        },
+        {
+          "t": "ChatGPT.",
+          "c": "blue"
+        }
+      ],
+      "sub": "No upload. No re-download. Browse and reference.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "HOW IT WORKS",
+      "headline": "Google Drive is now in ChatGPT Library.",
+      "body": [
+        {
+          "t": "With the Drive plugin connected, "
+        },
+        {
+          "t": "you can browse your Google Drive files and folders directly from the Library",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ". Pull any file into a chat with @mentions. No uploading. No re-downloading."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE SETUP",
+      "headline": "Connect Drive plugin once.",
+      "body": [
+        {
+          "t": "Go to ChatGPT plugins. Search Google Drive. Connect once. After that, every file and folder on your Drive (including shared items) shows up in the Library when you need it. Reuse files across chats."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE CATCH",
+      "headline": "ChatGPT reads stale documents.",
+      "body": [
+        {
+          "t": "If you drop a 6-month-old pricing list or outdated brief into the chat, ChatGPT will "
+        },
+        {
+          "t": "quote it confidently",
+          "c": "dim"
+        },
+        {
+          "t": ". Version control is on you. Keep files current or label them dated."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "How much time disappears?",
+      "stat": "No more file drag & drop"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Install Google Drive plugin in ChatGPT",
+        "Browse Drive from ChatGPT Library",
+        "Pull files into chats with @mentions",
+        "Keep documents current to avoid stale reads"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

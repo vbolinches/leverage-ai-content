@@ -1,0 +1,98 @@
+{
+  "slug": "post37-notebooklm-notebook-copying",
+  "art": "document",
+  "caption": "NotebookLM just added full notebook copying. That means research notebooks with all your sources, artifacts, and chats now copy as a complete unit—not piecemeal.\n\nUseful when you're handing off research to a client, archiving a project, or building a template for work you do repeatedly.\n\nThe limit: sources follow your Google AI plan limits, so check your tier. Comment what you use NotebookLM for—research, client work, or learning.",
+  "hook_candidates": [
+    {
+      "headline": "Copy your entire research at once.",
+      "sub": "NotebookLM now copies complete notebooks."
+    },
+    {
+      "headline": "Your research notebook is finally portable.",
+      "sub": "August 17, 2026."
+    },
+    {
+      "headline": "Stop pasting research piece by piece.",
+      "sub": "Copy the whole notebook now."
+    },
+    {
+      "headline": "Hand off research faster.",
+      "sub": "Full notebook copying live."
+    },
+    {
+      "headline": "One click: your sources + artifacts + chat.",
+      "sub": "NotebookLM update."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 037",
+      "headline": "Stop pasting research piece by piece.",
+      "sub": "Copy the whole notebook now.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT CHANGED",
+      "headline": "Full notebook copying is live.",
+      "body": [
+        {
+          "t": "As of August 17, 2026, NotebookLM added "
+        },
+        {
+          "t": "full notebook copying",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ". Copy a notebook and everything goes with it: sources, Studio artifacts, chat history."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHEN YOU USE THIS",
+      "headline": "Handing off research to a client.",
+      "body": [
+        {
+          "t": "Competitor research. Market sizing. Due diligence briefing. Copy the entire notebook, share it, they get your sources and analysis as one package. No piece-by-piece export."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "Source limits follow your Google AI plan.",
+      "body": [
+        {
+          "t": "Free: 50 sources per notebook. Pro: 300. Ultra: 600. If you're copying a notebook with 200 sources and your plan has a 100-source ceiling, "
+        },
+        {
+          "t": "check before sharing.",
+          "c": "dim"
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "One action, one file?",
+      "stat": "Complete notebook copies"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Full notebook copy: sources + artifacts + chat",
+        "Live since August 17, 2026",
+        "Check source limits on your plan",
+        "One click to share research"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

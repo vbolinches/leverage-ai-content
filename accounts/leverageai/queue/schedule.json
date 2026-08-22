@@ -634,6 +634,112 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post35-nda-check-before-pasting/reel.mp4"
+    },
+    {
+      "id": "post36-claude-code-doubled-limits",
+      "date": "2026-08-29",
+      "slides": [
+        "accounts/leverageai/queue/post36-claude-code-doubled-limits/slide01.png",
+        "accounts/leverageai/queue/post36-claude-code-doubled-limits/slide02.png",
+        "accounts/leverageai/queue/post36-claude-code-doubled-limits/slide03.png",
+        "accounts/leverageai/queue/post36-claude-code-doubled-limits/slide04.png",
+        "accounts/leverageai/queue/post36-claude-code-doubled-limits/slide05.png",
+        "accounts/leverageai/queue/post36-claude-code-doubled-limits/slide06.png"
+      ],
+      "caption": "Claude Code usage limits doubled on May 6, 2026. If you use it to build workflows, automate client tasks, or generate reports—you can do twice as much now before hitting a ceiling.\n\nThe catch: the free tier still maxes out immediately. Pro is worth the $20/month if you're building anything that takes more than a few turns.\n\nSave this if you're thinking about building something inside Claude for your business, or share it with a developer who is.",
+      "status": "queued"
+    },
+    {
+      "id": "post37-notebooklm-notebook-copying",
+      "date": "2026-08-30",
+      "slides": [
+        "accounts/leverageai/queue/post37-notebooklm-notebook-copying/slide01.png",
+        "accounts/leverageai/queue/post37-notebooklm-notebook-copying/slide02.png",
+        "accounts/leverageai/queue/post37-notebooklm-notebook-copying/slide03.png",
+        "accounts/leverageai/queue/post37-notebooklm-notebook-copying/slide04.png",
+        "accounts/leverageai/queue/post37-notebooklm-notebook-copying/slide05.png",
+        "accounts/leverageai/queue/post37-notebooklm-notebook-copying/slide06.png"
+      ],
+      "caption": "NotebookLM just added full notebook copying. That means research notebooks with all your sources, artifacts, and chats now copy as a complete unit—not piecemeal.\n\nUseful when you're handing off research to a client, archiving a project, or building a template for work you do repeatedly.\n\nThe limit: sources follow your Google AI plan limits, so check your tier. Comment what you use NotebookLM for—research, client work, or learning.",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post37-notebooklm-notebook-copying/reel.mp4"
+    },
+    {
+      "id": "post38-chatgpt-drive-no-reupload",
+      "date": "2026-08-31",
+      "slides": [
+        "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/slide01.png",
+        "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/slide02.png",
+        "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/slide03.png",
+        "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/slide04.png",
+        "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/slide05.png",
+        "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/slide06.png"
+      ],
+      "caption": "ChatGPT's Google Drive integration just matured: you can now browse your Drive directly from the Library, pull files into chats without uploading again, and keep Docs/Sheets/Slides open side by side while you work.\n\nThe catch: ChatGPT reads what you point it at. If you drop a stale brief or old pricing list, it will quote it confidently.\n\nSave this if you're pulling documents into ChatGPT constantly. Comment: do you hand it confidential files?",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/reel.mp4"
+    },
+    {
+      "id": "post39-invoicer-ai-natural-language",
+      "date": "2026-09-01",
+      "slides": [
+        "accounts/leverageai/queue/post39-invoicer-ai-natural-language/slide01.png",
+        "accounts/leverageai/queue/post39-invoicer-ai-natural-language/slide02.png",
+        "accounts/leverageai/queue/post39-invoicer-ai-natural-language/slide03.png",
+        "accounts/leverageai/queue/post39-invoicer-ai-natural-language/slide04.png",
+        "accounts/leverageai/queue/post39-invoicer-ai-natural-language/slide05.png",
+        "accounts/leverageai/queue/post39-invoicer-ai-natural-language/slide06.png"
+      ],
+      "caption": "Invoicer.ai is built from the ground up around natural language: you describe line items and rates in plain English and it drafts a complete invoice instantly.\n\nFaster and cleaner than legacy form-based tools. Good fit if you want AI-assisted invoicing without the weight of a full accounting suite.\n\nThe catch: invoice-only. No balance sheet, no KPI dashboard, no accounting breadth. You're not outsourcing bookkeeping—you're just drafting invoices faster.\n\nSave if you send a lot of invoices. Comment: what's your current bottleneck—drafting or chasing payment?",
+      "status": "queued"
+    },
+    {
+      "id": "post40-claude-opus-context-window",
+      "date": "2026-09-02",
+      "slides": [
+        "accounts/leverageai/queue/post40-claude-opus-context-window/slide01.png",
+        "accounts/leverageai/queue/post40-claude-opus-context-window/slide02.png",
+        "accounts/leverageai/queue/post40-claude-opus-context-window/slide03.png",
+        "accounts/leverageai/queue/post40-claude-opus-context-window/slide04.png",
+        "accounts/leverageai/queue/post40-claude-opus-context-window/slide05.png",
+        "accounts/leverageai/queue/post40-claude-opus-context-window/slide06.png"
+      ],
+      "caption": "Claude Opus 4.6 shipped in February with a 1 million token context window (beta) and 128K max output tokens—roughly double prior limits. Same price as Opus 4.5.\n\nMeans you can drop multiple long research papers, full client briefs, or years of email into one chat and ask it to synthesize across all of them without splitting into multiple conversations.\n\nThe catch: beta means it can be slow and the 1M window is not available in all configurations yet. The 200K window is the practical default.\n\nSave this if you work with large documents. Comment: what's the longest document you've ever dropped into Claude?",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post40-claude-opus-context-window/reel.mp4"
+    },
+    {
+      "id": "post41-perplexity-deep-research",
+      "date": "2026-09-03",
+      "slides": [
+        "accounts/leverageai/queue/post41-perplexity-deep-research/slide01.png",
+        "accounts/leverageai/queue/post41-perplexity-deep-research/slide02.png",
+        "accounts/leverageai/queue/post41-perplexity-deep-research/slide03.png",
+        "accounts/leverageai/queue/post41-perplexity-deep-research/slide04.png",
+        "accounts/leverageai/queue/post41-perplexity-deep-research/slide05.png",
+        "accounts/leverageai/queue/post41-perplexity-deep-research/slide06.png"
+      ],
+      "caption": "Perplexity's Deep Research searches dozens of sources across hundreds of pages, compiles citations, flags contradictions, and generates a structured report—all in 2–5 minutes.\n\nUse it for competitive analysis, market sizing, technical research, or anything where you need a cited briefing, not just a hot take.\n\nThe catch: Deep Research is on Pro (paid) only. It's also a research tool, not a decision-maker—contradictions flagged still require human judgment.\n\nSave this if you do a lot of research for proposals or client work. Comment: what would you research first?",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post41-perplexity-deep-research/reel.mp4"
+    },
+    {
+      "id": "post42-dalle-gpt-retiring",
+      "date": "2026-09-04",
+      "slides": [
+        "accounts/leverageai/queue/post42-dalle-gpt-retiring/slide01.png",
+        "accounts/leverageai/queue/post42-dalle-gpt-retiring/slide02.png",
+        "accounts/leverageai/queue/post42-dalle-gpt-retiring/slide03.png",
+        "accounts/leverageai/queue/post42-dalle-gpt-retiring/slide04.png",
+        "accounts/leverageai/queue/post42-dalle-gpt-retiring/slide05.png",
+        "accounts/leverageai/queue/post42-dalle-gpt-retiring/slide06.png"
+      ],
+      "caption": "OpenAI is retiring the official DALL·E GPT on August 30, 2026. If you're using it to generate images, you need to switch to ChatGPT Images before then.\n\nChatGPT Images does the same work—create and edit images—without a separate tool. Simpler and one less login.\n\nUser-created GPTs with image generation enabled are not affected. Only the official one is going away.\n\nSave this if you use DALL·E through ChatGPT. Comment: are you using DALL·E, or did you already switch to ChatGPT Images?",
+      "status": "queued"
     }
   ]
 }

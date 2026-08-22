@@ -1,0 +1,105 @@
+{
+  "slug": "post39-invoicer-ai-natural-language",
+  "art": "document",
+  "caption": "Invoicer.ai is built from the ground up around natural language: you describe line items and rates in plain English and it drafts a complete invoice instantly.\n\nFaster and cleaner than legacy form-based tools. Good fit if you want AI-assisted invoicing without the weight of a full accounting suite.\n\nThe catch: invoice-only. No balance sheet, no KPI dashboard, no accounting breadth. You're not outsourcing bookkeeping—you're just drafting invoices faster.\n\nSave if you send a lot of invoices. Comment: what's your current bottleneck—drafting or chasing payment?",
+  "hook_candidates": [
+    {
+      "headline": "Describe an invoice in plain English.",
+      "sub": "Invoicer.ai drafts it instantly."
+    },
+    {
+      "headline": "Your invoice bottleneck isn't what you think.",
+      "sub": "It's the form-filling."
+    },
+    {
+      "headline": "Stop copy-pasting invoice templates.",
+      "sub": "Tell Invoicer.ai what you did."
+    },
+    {
+      "headline": "One sentence: invoice.",
+      "sub": "Invoicer.ai AI-first draft."
+    },
+    {
+      "headline": "The invoicing tool freelancers actually want.",
+      "sub": "Describe it. It drafts."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 039",
+      "headline": [
+        {
+          "t": "Your invoice takes 12 minutes."
+        }
+      ],
+      "sub": "Describing it out loud takes 20 seconds.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "HOW IT WORKS",
+      "headline": "Describe what you did.",
+      "body": [
+        {
+          "t": "\"Consulting work for 3 hours at $150/hr, plus a $500 retainer credit.\" "
+        },
+        {
+          "t": "Invoicer.ai",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " drafts a complete invoice with line items, totals, and formatting. You edit if needed and send."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHY THIS MATTERS",
+      "headline": "Speed wins with repetition.",
+      "body": [
+        {
+          "t": "If you send 5+ invoices per week, the time saved compounds. No template hunting. No form fields. Natural language in, formatted invoice out."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE LIMIT",
+      "headline": "Invoicing only. No accounting.",
+      "body": [
+        {
+          "t": "Invoicer.ai drafts invoices and estimates. It does not generate balance sheets, track expenses, or flag overdue payments. "
+        },
+        {
+          "t": "You still need separate tools",
+          "c": "dim"
+        },
+        {
+          "t": " for bookkeeping."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "What's one invoice worth?",
+      "stat": "Draft in 30 seconds"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Describe line items and rates in natural language",
+        "Invoicer.ai generates complete invoice",
+        "Edit and send—or use as-is",
+        "Scales best for high-volume invoicers"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

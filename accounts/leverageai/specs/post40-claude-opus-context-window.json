@@ -1,0 +1,109 @@
+{
+  "slug": "post40-claude-opus-context-window",
+  "art": "document",
+  "caption": "Claude Opus 4.6 shipped in February with a 1 million token context window (beta) and 128K max output tokens—roughly double prior limits. Same price as Opus 4.5.\n\nMeans you can drop multiple long research papers, full client briefs, or years of email into one chat and ask it to synthesize across all of them without splitting into multiple conversations.\n\nThe catch: beta means it can be slow and the 1M window is not available in all configurations yet. The 200K window is the practical default.\n\nSave this if you work with large documents. Comment: what's the longest document you've ever dropped into Claude?",
+  "hook_candidates": [
+    {
+      "headline": "Claude's context just got massive.",
+      "sub": "1 million tokens now available."
+    },
+    {
+      "headline": "Stop splitting long research across chats.",
+      "sub": "Claude Opus 4.6 holds it all."
+    },
+    {
+      "headline": "Your due diligence brief just fit in one chat.",
+      "sub": "Claude context window exploded."
+    },
+    {
+      "headline": "Read five papers at once without restarting.",
+      "sub": "Opus 4.6 context window."
+    },
+    {
+      "headline": "The research bottleneck just moved.",
+      "sub": "1M token context is live."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 040",
+      "headline": [
+        {
+          "t": "Claude now holds "
+        },
+        {
+          "t": "1M tokens.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Read entire briefs, papers, projects at once.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT'S NEW",
+      "headline": "Opus 4.6 ships with massive context.",
+      "body": [
+        {
+          "t": "Released February 2026, "
+        },
+        {
+          "t": "Claude Opus 4.6 includes a 1M token context window (beta)",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " and 128K max output tokens. Same price as Opus 4.5."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT THIS UNLOCKS",
+      "headline": "Synthesize across massive bodies of work.",
+      "body": [
+        {
+          "t": "Drop multiple long due diligence docs, competitor research, full email chains, or three research papers into one chat. Ask Claude to find patterns across all of it without truncation or context switching."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE REALITY",
+      "headline": "1M is beta. 200K is practical.",
+      "body": [
+        {
+          "t": "The 1M window is in beta and "
+        },
+        {
+          "t": "not available in all configurations",
+          "c": "dim"
+        },
+        {
+          "t": ". The practical default is around 200K, which is already 8x prior limits. Test before committing to the 1M tier."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "How much can you hold?",
+      "stat": "1M tokens (beta available)"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Opus 4.6 launched February 2026",
+        "1M token context (beta), 200K practical",
+        "128K max output tokens",
+        "Same price as Opus 4.5"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}
