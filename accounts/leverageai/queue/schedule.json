@@ -530,9 +530,12 @@
         "accounts/leverageai/queue/post29-client-project-memory/slide07.png"
       ],
       "caption": "You paste a client's numbers into the same chat you used for someone else's pitch. Nothing bad happens. Then a proposal comes back with the wrong industry in it.\n\nFix is boring. One ChatGPT project per paying client. Files, chats and instructions live in it, and the memory setting stays project-only so context doesn't wander between accounts. That setting used to be locked at creation — you can now change it in Project settings after the fact.\n\nThe standing brief on slide 4 is the part that saves the time. Scope, out of scope, who you're writing for, how they talk. Write it once when you sign, never re-brief again.\n\nOne honest caveat: project-only memory is organisation, not confidentiality. If the contract says no third-party processing, that clause still wins.\n\nSave this and set one up for your biggest client. How many clients are currently sharing one chat window?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #clientwork #consultantlife #freelancetips #smallbusinessowner",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post29-client-project-memory/reel.mp4"
+      "video": "accounts/leverageai/queue/post29-client-project-memory/reel.mp4",
+      "published_media_id": "17981261580114131",
+      "published_on": "2026-08-22",
+      "threads_posted": true
     },
     {
       "id": "post30-drive-files-no-reupload",
