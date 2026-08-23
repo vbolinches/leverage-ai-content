@@ -240,8 +240,14 @@ def crosspost_page(post):
 def api(path, params):
     data = urllib.parse.urlencode({**params, "access_token": TOKEN}).encode()
     req = urllib.request.Request(f"{GRAPH}/{path}", data=data, method="POST")
-    with urllib.request.urlopen(req) as r:
-        out = json.load(r)
+    try:
+        with urllib.request.urlopen(req) as r:
+            out = json.load(r)
+    except urllib.error.HTTPError as e:
+        # Surface Meta's error JSON (code/subcode/message) — a bare "HTTP 403"
+        # is undiagnosable. The body never echoes the token.
+        body = e.read().decode(errors="replace")[:600]
+        raise RuntimeError(f"HTTP {e.code} on {path}: {body}") from None
     if "id" not in out:
         raise RuntimeError(f"API error on {path}: {out}")
     return out["id"]
@@ -250,8 +256,12 @@ def wait_ready(container_id, tries=20):
     """Poll container status until FINISHED (Meta processes async)."""
     for _ in range(tries):
         url = f"{GRAPH}/{container_id}?fields=status_code&access_token={TOKEN}"
-        with urllib.request.urlopen(url) as r:
-            status = json.load(r).get("status_code")
+        try:
+            with urllib.request.urlopen(url) as r:
+                status = json.load(r).get("status_code")
+        except urllib.error.HTTPError as e:
+            body = e.read().decode(errors="replace")[:600]
+            raise RuntimeError(f"HTTP {e.code} polling container: {body}") from None
         if status == "FINISHED":
             return
         if status == "ERROR":
