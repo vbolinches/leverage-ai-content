@@ -74,6 +74,14 @@ or strikes those, and the repo is public. **If a Reel genuinely needs a trending
 sound, it must be posted by hand in the app.** After any renderer or audio
 change, run `python build_reels.py --rebuild` and re-run the verify workflow.
 
+**9. Instagram can action-block an account (error 4 / subcode 2207051).**
+It is an anti-spam block on the account, not an API failure, and daily retries
+extend it. `publish.py` records it in `accounts/<slug>/block_status.json`,
+skips attempts during a growing cool-down (2..5 days), silences the DM
+responder meanwhile, and clears the file on the first successful publish. The
+monitor digest surfaces it daily. Only an in-app appeal (Account Status)
+lifts a block faster — that is the owner's job, not the pipeline's.
+
 **8. DM automation is reply-only, and DM-on-follow is not an API feature.**
 Meta's API can only reply within 24h of an inbound message
 (`instagram_business_manage_messages`, Advanced Access via App Review — both
