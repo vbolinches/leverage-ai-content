@@ -281,6 +281,15 @@ def main():
     if not TOKEN or not IG_ID:
         sys.exit("IG_ACCESS_TOKEN and IG_USER_ID must be set")
 
+    block_file = ACCT.path("block_status.json")
+    if os.path.exists(block_file):
+        with open(block_file, encoding="utf-8") as f:
+            bs = json.load(f)
+        print(f"::warning::[{ACCT['slug']}] Instagram action block active "
+              f"since {bs.get('first_detected')} (strike {bs.get('strikes')}, "
+              f"next publish attempt after {bs.get('cooldown_until')}). "
+              f"Appealing in the app is the only accelerator.")
+
     report = collect()
     if a.json:
         print(json.dumps(report, indent=2, ensure_ascii=False))

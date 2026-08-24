@@ -17,7 +17,7 @@ Design notes:
   cron never fails spuriously. Any API error exits 1 → Actions email alert.
 """
 import json, os, sys, time, urllib.error, urllib.parse, urllib.request
-from datetime import date
+from datetime import date, timedelta
 
 import accounts
 
@@ -269,6 +269,55 @@ def wait_ready(container_id, tries=20):
         time.sleep(5)
     raise RuntimeError(f"container {container_id} not ready after {tries} polls")
 
+
+# ---------------------------------------------------------------------------
+# Instagram action-block backoff (error 4 / subcode 2207051, "action is
+# blocked"). This is an account-level anti-spam block, not an API failure:
+# retrying daily while blocked is exactly the automated activity that extends
+# it. So: record the block, skip attempts during a growing cool-down, and let
+# the first successful publish clear it. State lives in the repo so every
+# workflow (publish, DM responder, monitor) sees the same picture.
+BLOCK_FILE = ACCT.path("block_status.json")
+BLOCK_MARKERS = ("2207051", "action is blocked")
+
+
+def _load_block():
+    if not os.path.exists(BLOCK_FILE):
+        return None
+    with open(BLOCK_FILE, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _clear_block():
+    if os.path.exists(BLOCK_FILE):
+        os.remove(BLOCK_FILE)
+        print(f"[{ACCT['slug']}] action block is over — publishing works again")
+
+
+def _record_block(detail, today):
+    st = _load_block() or {"first_detected": today, "strikes": 0}
+    st["strikes"] += 1
+    st["last_detected"] = today
+    # 2, 3, 4, 5, 5... days between attempts. Slow enough to look human,
+    # fast enough to notice the block lifting within the week.
+    cooldown = min(1 + st["strikes"], 5)
+    st["cooldown_until"] = (date.fromisoformat(today)
+                            + timedelta(days=cooldown)).isoformat()
+    st["detail"] = detail[:300]
+    st["_comment"] = ("Written by publish.py when Instagram action-blocks the "
+                      "account. Deleted automatically on the next successful "
+                      "publish. While present, publish attempts pause until "
+                      "cooldown_until and the DM responder stays quiet. "
+                      "Appealing in the app (profile -> menu -> Account Status) "
+                      "is the only thing that lifts a block faster.")
+    with open(BLOCK_FILE, "w", encoding="utf-8") as f:
+        json.dump(st, f, indent=2, ensure_ascii=False)
+    print(f"::warning::[{ACCT['slug']}] Instagram action block "
+          f"(strike {st['strikes']}) — pausing publish attempts until "
+          f"{st['cooldown_until']}. Queue is preserved; oldest-due publishes "
+          f"first once the block lifts. Appeal in the app: Account Status.")
+
+
 def main():
     sched = json.load(open(QUEUE, encoding="utf-8"))
     today = date.today().isoformat()
@@ -277,10 +326,29 @@ def main():
         print(f"[{ACCT['slug']}] nothing due today — queue ahead or empty"); return
     post = sorted(due, key=lambda p: p["date"])[0]
 
+    st = _load_block()
+    if st and today < st.get("cooldown_until", ""):
+        print(f"::warning::[{ACCT['slug']}] action-block cool-down until "
+              f"{st['cooldown_until']} (strike {st['strikes']}) — skipping "
+              f"today's attempt on purpose. Nothing is lost: the queue "
+              f"publishes oldest-due first when attempts resume.")
+        return
+
     # Only hit the network guard when actually about to publish, so idle days
     # keep their exit-0 "nothing due" behaviour even during an API wobble.
     assert_target()
 
+    try:
+        _publish(sched, post, today)
+    except RuntimeError as e:
+        if any(m in str(e) for m in BLOCK_MARKERS):
+            _record_block(str(e), today)
+            return
+        raise
+    _clear_block()
+
+
+def _publish(sched, post, today):
     # Reels are a separate media type and a separate discovery surface —
     # carousels mostly reach existing followers, Reels reach strangers.
     if post.get("format") == "reel":

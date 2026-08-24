@@ -89,6 +89,14 @@ def main():
 
     if not TOKEN or not IG_ID:
         sys.exit("IG_ACCESS_TOKEN and IG_USER_ID must be set")
+
+    # While the account is action-blocked (see publish.py), every automated
+    # call is activity that can extend the block. Stay completely quiet.
+    if os.path.exists(ACCT.path("block_status.json")):
+        print(f"::warning::[{ACCT['slug']}] account is in action-block "
+              f"cool-down — skipping DM polling until publishing recovers")
+        return 0
+
     assert_target()
 
     try:

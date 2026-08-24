@@ -45,6 +45,7 @@ jobs:
           git config user.name "leverage-ai-bot"
           git config user.email "actions@users.noreply.github.com"
           git add accounts/*/queue/schedule.json
+          git add -A -- 'accounts/*/block_status.json' 2>/dev/null || true
           git diff --cached --quiet || git commit -m "mark post published $(date -u +%F) (${{ matrix.account.slug }})"
           git pull --rebase
           git push
