@@ -550,7 +550,10 @@
         "accounts/leverageai/queue/post30-drive-files-no-reupload/slide07.png"
       ],
       "caption": "You've uploaded the same client brief eleven times. Once per chat, because the last chat got too long.\n\nAs of mid-August 2026, ChatGPT can see your Google Drive properly: browse files and folders from the Library, or pull a file into any chat from the composer or with an @mention, without uploading it again. Files shared with you show up too.\n\nSo the workflow changes shape. One Drive folder per client — contract, brief, brand notes, last three deliverables. Then the weekly update prompt on slide 4 points at two files and gives you shipped / blocked / next week, with the contract quoted for scope.\n\nLimitation worth respecting: it reads what you point it at, it doesn't verify it. An old brief in that folder gets quoted as gospel. Clean the folder before you trust the output.\n\nSave this. Then go look at how many stale client files are still sitting in your Drive.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #clientwork #consultantlife #googledrive #freelancetips",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "18095056574101007",
+      "published_on": "2026-08-23",
+      "note": "media_publish returned 403 (subcode 2207051) on 3 attempts but each one actually published; kept the first copy, the other two were deleted by hand in the app"
     },
     {
       "id": "post31-sheets-canvas-job-tracker",

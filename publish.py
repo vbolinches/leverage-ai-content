@@ -318,6 +318,41 @@ def _record_block(detail, today):
           f"first once the block lifts. Appeal in the app: Account Status.")
 
 
+
+def _norm_caption(text):
+    return " ".join((text or "").split())
+
+
+def _find_live_copy(post):
+    """The id of an already-live media carrying this post's caption, or None.
+
+    Meta's media_publish can return an error (seen with 403/2207051) even
+    though the post actually went live. A retry after that error publishes a
+    duplicate — this lookup is what makes retries safe.
+    """
+    try:
+        out = _get(f"{IG_ID}/media", fields="id,caption", limit=20)
+    except Exception as e:
+        print(f"::warning::could not check for an existing copy: {e}")
+        return None
+    want = _norm_caption(post.get("caption"))
+    for m in out.get("data", []):
+        if _norm_caption(m.get("caption")) == want:
+            return m["id"]
+    return None
+
+
+def _adopt_live_copy(sched, post, media_id, today):
+    """Mark the post published against a media that is already live."""
+    post["status"] = "published"
+    post["published_media_id"] = media_id
+    post["published_on"] = today
+    post["note"] = ("adopted: found already live before/after an API error; "
+                    "not re-posted. Cross-posts were skipped to avoid "
+                    "duplicates there too.")
+    json.dump(sched, open(QUEUE, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+
+
 def main():
     sched = json.load(open(QUEUE, encoding="utf-8"))
     today = date.today().isoformat()
@@ -338,9 +373,32 @@ def main():
     # keep their exit-0 "nothing due" behaviour even during an API wobble.
     assert_target()
 
+    # Never publish a post whose caption is already live — a previous run
+    # may have errored AFTER Meta actually published (it happens; post30
+    # went live three times this way on 2026-08-23/24).
+    live = _find_live_copy(post)
+    if live:
+        print(f"::warning::[{ACCT['slug']}] {post['id']} is already live "
+              f"(media {live}) from a previous errored run — marking it "
+              f"published instead of re-posting.")
+        _adopt_live_copy(sched, post, live, today)
+        _clear_block()
+        return
+
     try:
         _publish(sched, post, today)
     except RuntimeError as e:
+        # The error may be a lie: give Meta a moment, then check whether the
+        # post landed anyway before treating this as a failure.
+        time.sleep(20)
+        live = _find_live_copy(post)
+        if live:
+            print(f"::warning::[{ACCT['slug']}] API said '{str(e)[:120]}' but "
+                  f"{post['id']} IS live (media {live}) — marking published, "
+                  f"no retry, no duplicate.")
+            _adopt_live_copy(sched, post, live, today)
+            _clear_block()
+            return
         if any(m in str(e) for m in BLOCK_MARKERS):
             _record_block(str(e), today)
             return
