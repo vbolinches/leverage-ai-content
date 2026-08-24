@@ -1925,6 +1925,12 @@
       "followers": 165,
       "posts": [
         {
+          "slug": "post27-i94-prueba-de-estatus-y-empleo",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0
+        },
+        {
           "slug": "post26-como-leer-un-policy-alert-uscis",
           "format": "carousel",
           "likes": 1,
@@ -1988,12 +1994,6 @@
           "slug": "post16-evidencia-inicial-y-documento-no-disponible",
           "format": "carousel",
           "likes": 2,
-          "comments": 0
-        },
-        {
-          "slug": "post15-negacion-sin-rfe-evidencia-inicial",
-          "format": "reel",
-          "likes": 0,
           "comments": 0
         }
       ]
