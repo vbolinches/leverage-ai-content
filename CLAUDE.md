@@ -91,6 +91,16 @@ ManyChat's Meta-partner "Follow to DM" (beta, ~1000-follower eligibility) —
 it cannot be built from this repo at any price. Do not add DM code that
 initiates conversations; the API will reject it and Meta may flag the app.
 
+**10. inmigraforma owes the reader the source and the meaning.**
+Three owner rules (2026-08-25), all enforced by `validate()`, not just the
+prompt: every caption carries a real `https://` URL of the exact official page
+(allow-listed domains, home pages rejected, invented URLs forbidden); the
+phrases "es cuando" / "es como cuando" are banned outright; and any post
+quoting official English text needs a `QUÉ SIGNIFICA` slide of 150+ chars
+covering what it says, what it means day to day, and what happens if ignored.
+`repeated_openers()` also warns when one comparison formula spreads across a
+batch — that is how the banned tic formed in the first place.
+
 ## Layout
 
 | Path | Purpose |
