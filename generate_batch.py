@@ -479,6 +479,25 @@ def hook_test(post, min_score, log_path=None):
                 f"keeping the authored cover ungraded.")
 
 
+def repeated_openers(posts):
+    """Comparison openers reused across a batch — the tic-forming pattern.
+
+    Per-post validation cannot see this: each post is fine on its own, and
+    only the batch reveals that every one of them opens the same way. Warns
+    rather than rejects, because the fix is rewording, not discarding work.
+    """
+    seen = {}
+    for post in posts:
+        for sl in post.get("slides", []):
+            body = "".join(x.get("t", "") for x in (sl.get("body") or []))
+            for opener in ("funciona igual que", "pasa lo mismo con",
+                           "piensalo asi", "piénsalo así", "igual que en",
+                           "es como", "imagina que"):
+                if opener in body.lower():
+                    seen.setdefault(opener, []).append(post.get("slug"))
+    return {k: v for k, v in seen.items() if len(v) > 1}
+
+
 def validate(post):
     """Catch the failure modes that would silently ship a broken carousel."""
     errs = []
@@ -648,6 +667,12 @@ def main():
     # headline that validation measures. On a dry run its log lands beside the
     # rendered slides, like the strategy file above.
     hook_log = None if live else os.path.join(out, "hooks.json")
+
+    dupes = repeated_openers(posts)
+    for opener, slugs in dupes.items():
+        print(f"::warning::comparison opener {opener!r} reused in "
+              f"{len(slugs)} posts ({', '.join(s for s in slugs if s)}) — "
+              f"a repeated formula is the tic the owner asked us to drop")
 
     for post in posts:
         if not a.no_hook_test:
