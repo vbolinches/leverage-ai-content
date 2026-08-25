@@ -75,6 +75,21 @@ imply a reply. Anyone who took you up on it would get silence. Everything of \
 value must already be on the slides. Asking people to save, share or give an \
 opinion in the comments is fine — promising them something back is not."""
 
+# Accounts that report news owe the reader the original document: a named
+# source nobody can open is not a citation. But an invented URL is far worse
+# than none, so the rule is bound to what web search actually returned - and
+# validate() re-checks the domain before anything is queued.
+if ACCT.get("require_source_url"):
+    BRAND += ("\n\nSOURCES ARE MANDATORY AND MUST BE REAL. Every caption ends "
+              "with a 'Fuente oficial:' line carrying the full https:// URL of "
+              "the exact official page you consulted - the specific notice, rule "
+              "or page, never the site's home page. Use ONLY URLs that came back "
+              "from your web searches in this session and that you actually "
+              "read. Never guess, shorten, reconstruct or 'fix' a URL: a link "
+              "that 404s destroys the credibility of an account whose whole "
+              "promise is that the news is verifiable. If you cannot produce a "
+              "real URL for a claim, write about something else.")
+
 SCHEMA = """Return ONLY a JSON array of post objects. No prose, no markdown fence.
 
 Each post:
@@ -113,6 +128,14 @@ if _REQ:
         '"body":[{"t":"2-3 frases de todos los días, sin jerga. "},'
         '{"t":"Una comparación concreta de la vida diaria.","c":"green","b":true}]}'
         '   <- MANDATORY as slide 2 of EVERY post' + chr(10)
+    )
+_GLOSS = ACCT.get("legal_gloss_eyebrow")
+if _GLOSS:
+    _REQ_LINE += (
+        '  {"kind":"step","eyebrow":"' + _GLOSS + '","headline":"Qué dice ese texto.",'
+        '"body":[{"t":"Qué dice en palabras normales, qué significa para ti en el "},'
+        '{"t":"día a día, y qué pasa si lo ignoras.","c":"green","b":true}]}'
+        '   <- MANDATORY whenever a slide quotes official English text' + chr(10)
     )
 SCHEMA = (SCHEMA.replace("__CTA_SUB__", ACCT["cta_line"].rstrip("."))
                 .replace("__SERIES__", SERIES)
@@ -500,6 +523,55 @@ def validate(post):
             low_cap = cap.lower()
             if "en palabras simples" not in low_cap:
                 errs.append("caption missing the 'En palabras simples:' paragraph")
+    # Phrasing the owner ruled out (2026-08-25): "X es cuando..." is improper
+    # as a definition, and "Es como cuando..." had become a formulaic tic.
+    banned = ACCT.get("banned_phrases") or []
+    if banned:
+        blob = " ".join([cap] + [json.dumps(sl, ensure_ascii=False)
+                                 for sl in slides]).lower()
+        for phrase in banned:
+            if phrase in blob:
+                errs.append(f"uses banned phrasing {phrase!r} - define it directly, "
+                            f"or write the comparison as a full sentence")
+
+    # A source the reader cannot open is not a source.
+    if ACCT.get("require_source_url"):
+        urls = [u.rstrip('.,;:)"”’') for u in re.findall(r"https?://\S+", cap)]
+        if "fuente oficial" not in cap.lower():
+            errs.append("caption missing the 'Fuente oficial:' line")
+        if not urls:
+            errs.append("caption carries no source URL - the reader cannot reach "
+                        "the official document")
+        allowed = ACCT.get("official_domains") or []
+        if urls and allowed:
+            def _host(u):
+                h = re.sub(r"^https?://", "", u).split("/")[0].lower()
+                return re.sub(r"^www\.", "", h)
+            bad = [u for u in urls
+                   if not any(_host(u) == d or _host(u).endswith("." + d)
+                              for d in allowed)]
+            if bad:
+                errs.append(f"source URL is not an official domain: {bad[0]}")
+            shallow = [u for u in urls if u not in bad
+                       and len(u.rstrip("/").split("/")) <= 3]
+            if shallow:
+                errs.append(f"source URL is a site home page, not the specific "
+                            f"notice: {shallow[0]}")
+
+    # Quoting law without explaining it leaves the reader no better informed.
+    gloss = ACCT.get("legal_gloss_eyebrow")
+    if gloss and any((sl.get("code") or "").strip() for sl in slides):
+        eyes = [(sl.get("eyebrow") or "").upper() for sl in slides]
+        if not any(gloss.upper() in e for e in eyes):
+            errs.append(f"quotes official text but has no '{gloss}' slide "
+                        f"explaining what it means")
+        for sl in slides:
+            if gloss.upper() in (sl.get("eyebrow") or "").upper():
+                body = "".join(x.get("t", "") for x in (sl.get("body") or []))
+                if len(body) < 150:
+                    errs.append(f"'{gloss}' slide is only {len(body)} chars - too "
+                                f"thin to actually explain the legal text")
+
     for i, s in enumerate(slides, 1):
         hl = s.get("headline")
         flat = hl if isinstance(hl, str) else "".join(x.get("t", "") for x in hl or [])
