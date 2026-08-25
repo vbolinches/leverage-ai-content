@@ -895,6 +895,574 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post36-asilo-cambiar-fecha-entrevista",
+      "graded": "2026-08-25",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Pedir el cambio tarde cierra tu caso.",
+        "sub": "El error: avisar después de la fecha. USCIS, alerta del 21 de agosto de 2026.",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "cost",
+        "stopping": "cierra tu caso",
+        "reason": "Names the worst outcome an asylum seeker can imagine and ties it to one avoidable mistake — that stops the thumb.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Pedir el cambio tarde cierra tu caso.",
+          "rank": 1,
+          "score": 8.2,
+          "shape": "cost",
+          "stopping": "cierra tu caso",
+          "reason": "Names the worst outcome an asylum seeker can imagine and ties it to one avoidable mistake — that stops the thumb.",
+          "authored": false
+        },
+        {
+          "headline": "10 días. Ese es todo tu margen.",
+          "rank": 2,
+          "score": 7.8,
+          "shape": "number-claim",
+          "stopping": "10 días",
+          "reason": "A hard deadline plus 'ese es todo tu margen' creates instant clock anxiety; only loses because the stake is implied, not stated.",
+          "authored": false
+        },
+        {
+          "headline": "Una buena razón ya no alcanza.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "ya no alcanza",
+          "reason": "Kills the assumption people are living on — 'my reason is good enough' — in six plain words.",
+          "authored": false
+        },
+        {
+          "headline": "Antes: buena causa. Ahora: algo grave.",
+          "rank": 4,
+          "score": 6.5,
+          "shape": "before-after",
+          "stopping": "algo grave",
+          "reason": "Clean before/after shows the tightening, but reads like a rule summary rather than a threat to the reader.",
+          "authored": false
+        },
+        {
+          "headline": "USCIS cambió tu cita de asilo.",
+          "rank": 5,
+          "score": 5.5,
+          "shape": "change",
+          "stopping": "cambió tu cita",
+          "reason": "'USCIS cambió tu cita' is alarming but misleads — the sub reveals it's about rescheduling rules, and the bait deflates.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Puedes mover tu "
+            },
+            {
+              "t": "entrevista de asilo?",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 4.5,
+          "shape": "question",
+          "stopping": "nothing",
+          "reason": "A polite yes/no question with no stake; most readers assume 'sure, probably' and keep scrolling.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post37-asilo-faltar-entrevista-diez-dias",
+      "graded": "2026-08-25",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "10 días para no perder tu asilo.",
+        "sub": "Es el plazo para pedir otra fecha si faltaste a tu entrevista, según USCIS.",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "number-claim",
+        "stopping": "10 días",
+        "reason": "A hard countdown plus the thing they'd lose — the only hook that gives a deadline you can act on today.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "10 días para no perder tu asilo.",
+          "rank": 1,
+          "score": 8.2,
+          "shape": "number-claim",
+          "stopping": "10 días",
+          "reason": "A hard countdown plus the thing they'd lose — the only hook that gives a deadline you can act on today.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Esperar el aviso "
+            },
+            {
+              "t": "ya no te salva.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 7.6,
+          "shape": "change",
+          "stopping": "ya no te salva",
+          "reason": "Kills the exact assumption most asylum applicants live by, and says it in second person.",
+          "authored": true
+        },
+        {
+          "headline": "Faltar puede costarte el caso.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "cost",
+          "stopping": "costarte el caso",
+          "reason": "Names the worst outcome, but 'faltar' floats without a person or a date attached.",
+          "authored": false
+        },
+        {
+          "headline": "¿Faltaste a tu entrevista de asilo?",
+          "rank": 4,
+          "score": 6.4,
+          "shape": "question",
+          "stopping": "¿Faltaste?",
+          "reason": "Perfect self-selection for the few it hits, but a yes/no question lets everyone else scroll guilt-free.",
+          "authored": false
+        },
+        {
+          "headline": "Ya no hay carta de advertencia.",
+          "rank": 5,
+          "score": 5.8,
+          "shape": "change",
+          "stopping": "Ya no hay carta",
+          "reason": "States the news accurately and impersonally; no 'you', no cost, reads like a bulletin.",
+          "authored": false
+        },
+        {
+          "headline": "Antes llegaba carta. Ahora, nada.",
+          "rank": 6,
+          "score": 5.0,
+          "shape": "before-after",
+          "stopping": "Ahora, nada",
+          "reason": "Poetic and vague — you have to read the sub to learn what it's even about.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post38-h1b-tarifa-propuesta-103265",
+      "graded": "2026-08-25",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Ya cuesta $103,265 pedir una H-1B?",
+        "sub": "La respuesta corta es no. Lo que DHS publicó el 25 de agosto de 2026, en simple.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "question",
+        "stopping": "$103,265",
+        "reason": "The number plus a direct yes/no question aimed at the reader's own wallet forces the stop, and the sub delivers the answer immediately.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Ya cuesta $103,265 pedir una H-1B?",
+          "rank": 1,
+          "score": 7.5,
+          "shape": "question",
+          "stopping": "$103,265",
+          "reason": "The number plus a direct yes/no question aimed at the reader's own wallet forces the stop, and the sub delivers the answer immediately.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Nadie paga "
+            },
+            {
+              "t": "$103,265 hoy.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 7.2,
+          "shape": "contrarian",
+          "stopping": "Nadie paga",
+          "reason": "Flat denial of a scary number is a relief-hook; strong, but slightly less personal than asking the reader directly.",
+          "authored": true
+        },
+        {
+          "headline": "$103,265 por petición H-1B.",
+          "rank": 3,
+          "score": 6.8,
+          "shape": "number-claim",
+          "stopping": "$103,265",
+          "reason": "The raw number is the shock, but the cover alone reads like a scare headline with no tension to resolve.",
+          "authored": false
+        },
+        {
+          "headline": "El error: creer que ya es ley.",
+          "rank": 4,
+          "score": 6.3,
+          "shape": "mistake",
+          "stopping": "ya es ley",
+          "reason": "'El error' framing works, but the cover buries the number in the sub so the thumbnail has no jolt.",
+          "authored": false
+        },
+        {
+          "headline": "DHS abrió 30 días de comentarios.",
+          "rank": 5,
+          "score": 4.2,
+          "shape": "change",
+          "stopping": "30 días",
+          "reason": "Reads like a government press release; no money, no threat, no reason for a regular immigrant to care.",
+          "authored": false
+        },
+        {
+          "headline": "Hoy: propuesta. Mañana: quizá regla.",
+          "rank": 6,
+          "score": 3.5,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Abstract process poetry with no number and no stake — nothing on the cover touches the reader's life.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post39-visa-bulletin-septiembre-2026-tabla",
+      "graded": "2026-08-25",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Mirar la tabla que no es cuesta meses.",
+        "sub": "Cómo saber cuál toca en septiembre de 2026 antes de mandar tu I-485.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "cost",
+        "stopping": "cuesta meses",
+        "reason": "Names the personal loss in time — months of your life — which is the only thing this audience actually fears.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Mirar la tabla que no es cuesta meses.",
+          "rank": 1,
+          "score": 7.5,
+          "shape": "cost",
+          "stopping": "cuesta meses",
+          "reason": "Names the personal loss in time — months of your life — which is the only thing this audience actually fears.",
+          "authored": false
+        },
+        {
+          "headline": "2 tablas, 1 sola te sirve.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "1 sola te sirve",
+          "reason": "Tiny, concrete and implies you may be looking at the wrong one right now; 'te sirve' makes it personal.",
+          "authored": false
+        },
+        {
+          "headline": "Familia y empleo no usan lo mismo.",
+          "rank": 3,
+          "score": 6.5,
+          "shape": "contrarian",
+          "stopping": "un error caro",
+          "reason": "Good split (family vs employment) and a cost, but the cost sits in the sub instead of the cover line.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Qué tabla usas "
+            },
+            {
+              "t": "en septiembre?",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 5.5,
+          "shape": "question",
+          "stopping": "¿Qué tabla usas?",
+          "reason": "Direct question with a real self-check, but no stake attached — easy to assume you already know.",
+          "authored": true
+        },
+        {
+          "headline": "El Visa Bulletin no decide solo.",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "no decide solo",
+          "reason": "Interesting correction for insiders, but abstract procedure with zero consequence for the reader.",
+          "authored": false
+        },
+        {
+          "headline": "USCIS publicó la tabla de septiembre.",
+          "rank": 6,
+          "score": 3.0,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Pure announcement headline, jargon-heavy sub, no risk or consequence — this is a news ticker, not a hook.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post40-excepcion-final-action-dates",
+      "graded": "2026-08-25",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Mirar una sola tabla es el error.",
+        "sub": "La excepción de USCIS que puede adelantar tu I-485 meses, explicada en simple.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "mistake",
+        "stopping": "es el error",
+        "reason": "Names a mistake the reader is almost certainly making right now, and the sub pays it off with months saved on the I-485.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Mirar una sola tabla es el error.",
+          "rank": 1,
+          "score": 7.5,
+          "shape": "mistake",
+          "stopping": "es el error",
+          "reason": "Names a mistake the reader is almost certainly making right now, and the sub pays it off with months saved on the I-485.",
+          "authored": false
+        },
+        {
+          "headline": "Esperar de más te cuesta meses.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "cost",
+          "stopping": "te cuesta meses",
+          "reason": "Cost in months is the currency this audience actually feels; only weakness is the vague 'esperar de más'.",
+          "authored": false
+        },
+        {
+          "headline": "1 excepción que casi nadie usa.",
+          "rank": 3,
+          "score": 6.5,
+          "shape": "number-claim",
+          "stopping": "casi nadie usa",
+          "reason": "Secret-exception framing pulls, but '1 excepción' with no stated benefit leaves the stakes offscreen.",
+          "authored": false
+        },
+        {
+          "headline": "¿Y si la otra tabla te deja pasar?",
+          "rank": 4,
+          "score": 5.5,
+          "shape": "question",
+          "stopping": "te deja pasar",
+          "reason": "'Pasar' hints at the prize but 'la otra tabla' means nothing to someone who hasn't opened the Bulletin.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "La otra tabla "
+            },
+            {
+              "t": "también puede servir.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 4.5,
+          "shape": "contrarian",
+          "stopping": "nothing",
+          "reason": "Reads like a footnote; 'también puede servir' has no urgency and no cost attached.",
+          "authored": true
+        },
+        {
+          "headline": "Antes esperabas. Ahora comparas.",
+          "rank": 6,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "nothing",
+          "reason": "Abstract before/after with no visa, no months, no risk — nothing here says this touches your case.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post41-abogado-presente-entrevista-uscis",
+      "graded": "2026-08-25",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Tu abogado va a estar ahí de verdad?",
+        "sub": "USCIS ya no permite la participación remota en estas entrevistas. Regla del 18 mayo 2026.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "question",
+        "stopping": "de verdad",
+        "reason": "Aims straight at the reader's own interview and plants doubt about their own lawyer showing up.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Tu abogado va a estar ahí de verdad?",
+          "rank": 1,
+          "score": 7.5,
+          "shape": "question",
+          "stopping": "de verdad",
+          "reason": "Aims straight at the reader's own interview and plants doubt about their own lawyer showing up.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Antes por teléfono. "
+            },
+            {
+              "t": "Ahora, en persona.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 7.0,
+          "shape": "before-after",
+          "stopping": "Ahora, en persona",
+          "reason": "Cleanest change-signal: the rule flipped, and the sub says it hits your interview.",
+          "authored": true
+        },
+        {
+          "headline": "USCIS cerró la puerta al Zoom.",
+          "rank": 3,
+          "score": 6.5,
+          "shape": "change",
+          "stopping": "Zoom",
+          "reason": "'Zoom' is the one word everyone understands instantly, but it's news about USCIS, not about you.",
+          "authored": false
+        },
+        {
+          "headline": "Creer que entra por video es un error.",
+          "rank": 4,
+          "score": 6.0,
+          "shape": "mistake",
+          "stopping": "es un error",
+          "reason": "Mistake framing works, but 'entra por video' is vague about who and stops nobody cold.",
+          "authored": false
+        },
+        {
+          "headline": "El teléfono ya no cuenta como asistir.",
+          "rank": 5,
+          "score": 5.5,
+          "shape": "change",
+          "stopping": "ya no cuenta",
+          "reason": "Correct and quiet; reads like a memo line, no stakes for the reader on the cover.",
+          "authored": false
+        },
+        {
+          "headline": "Un viaje más para tu abogado.",
+          "rank": 6,
+          "score": 4.0,
+          "shape": "cost",
+          "stopping": "nothing",
+          "reason": "The cost lands on the lawyer, not the immigrant — wrong person's problem.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post42-dos-pasos-visa-bulletin-uscis",
+      "graded": "2026-08-25",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Ver el Visa Bulletin "
+          },
+          {
+            "t": "no basta.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Falta el paso 2: la decisión de USCIS sobre qué tabla vale ese mes.",
+        "rank": 1,
+        "score": 7.2,
+        "shape": "mistake",
+        "stopping": "no basta",
+        "reason": "Tells the reader the thing they already do is incomplete — that's a personal threat of missing a filing window.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Ver el Visa Bulletin "
+            },
+            {
+              "t": "no basta.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 7.2,
+          "shape": "mistake",
+          "stopping": "no basta",
+          "reason": "Tells the reader the thing they already do is incomplete — that's a personal threat of missing a filing window.",
+          "authored": true
+        },
+        {
+          "headline": "¿Quién decide si ya puedes mandar?",
+          "rank": 2,
+          "score": 6.8,
+          "shape": "question",
+          "stopping": "si ya puedes mandar",
+          "reason": "Puts the reader's own 'can I file yet?' anxiety in the first line, though a question is a softer stop than an accusation.",
+          "authored": false
+        },
+        {
+          "headline": "El Visa Bulletin no da permisos.",
+          "rank": 3,
+          "score": 6.5,
+          "shape": "contrarian",
+          "stopping": "no da permisos",
+          "reason": "Contradicts the belief most applicants hold, but reads like a fact correction rather than something aimed at the reader.",
+          "authored": false
+        },
+        {
+          "headline": "Antes: una página. Ahora: dos.",
+          "rank": 4,
+          "score": 5.5,
+          "shape": "before-after",
+          "stopping": "Ahora: dos",
+          "reason": "Implies something changed, but 'una página / dos' is too abstract to signal what it costs you.",
+          "authored": false
+        },
+        {
+          "headline": "1 semana entre paso 1 y paso 2.",
+          "rank": 5,
+          "score": 4.5,
+          "shape": "number-claim",
+          "stopping": "1 semana",
+          "reason": "A number with no stakes; 'paso 1 y paso 2' means nothing to someone who hasn't read the caption.",
+          "authored": false
+        },
+        {
+          "headline": "USCIS actualiza su página cada mes.",
+          "rank": 6,
+          "score": 2.5,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Bureaucratic housekeeping stated flatly — no threat, no benefit, no reason to stop.",
+          "authored": false
+        }
+      ]
     }
   ]
 }

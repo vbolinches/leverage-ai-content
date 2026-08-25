@@ -1,0 +1,118 @@
+{
+  "slug": "post39-visa-bulletin-septiembre-2026-tabla",
+  "art": "chart",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 039",
+      "headline": "Mirar la tabla que no es cuesta meses.",
+      "sub": "Cómo saber cuál toca en septiembre de 2026 antes de mandar tu I-485.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué pasó, en corto.",
+      "body": [
+        {
+          "t": "Cada mes salen dos listas de fechas. USCIS dice cuál sirve para mandar tu papeleo. En septiembre: familia usa una, empleo usa la otra. "
+        },
+        {
+          "t": "Igual que en una fila con dos listas: importa cuál lee quien atiende.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "USCIS ya eligió tabla.",
+      "body": [
+        {
+          "t": "Para septiembre de 2026: casos de familia usan \"Dates for Filing\"; casos de empleo usan \"Final Action Dates\". "
+        },
+        {
+          "t": "Fuente: USCIS, página When to File, septiembre de 2026, consultada el 25 de agosto de 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "A quién le toca.",
+      "body": [
+        {
+          "t": "Te toca si vas a mandar el I-485 (el formulario para pedir la Green Card desde dentro de EE.UU.) en una categoría con fila de espera. "
+        },
+        {
+          "t": "Si ya tienes tu Green Card, esto no te cambia nada.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto oficial.",
+      "sub": "USCIS, When to File... September 2026 (uscis.gov), consultada el 25 ago 2026",
+      "label": "TEXTO OFICIAL EN INGLÉS",
+      "code": "For Family-Sponsored Filings: ...you must\nuse the Dates for Filing chart in the\nVisa Bulletin for September 2026.\n\nFor Employment-Based Preference Filings:\n...you must use the Final Action Dates\nchart."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice qué tabla vale este mes para cada tipo de caso. Para ti: busca tu categoría y tu país de nacimiento en la tabla correcta antes de mandar nada. "
+        },
+        {
+          "t": "Con la tabla equivocada puedes mandar el I-485 antes de tiempo y que te lo rechacen.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Antes de mandar tu I-485",
+      "items": [
+        "Familia: Dates for Filing (sep 2026)",
+        "Empleo: Final Action Dates (sep 2026)",
+        "Busca tu categoría y tu país",
+        "Confirma en uscis.gov antes de enviar"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "Familia y empleo no usan lo mismo.",
+      "sub": "USCIS decidió tablas distintas para septiembre de 2026. Mirar la otra es un error caro."
+    },
+    {
+      "headline": "El Visa Bulletin no decide solo.",
+      "sub": "USCIS es quien dice qué tabla vale cada mes. Para septiembre de 2026 ya la publicó."
+    },
+    {
+      "headline": "USCIS publicó la tabla de septiembre.",
+      "sub": "Familia usa Dates for Filing; empleo usa Final Action Dates. Decisión de septiembre 2026."
+    },
+    {
+      "headline": "2 tablas, 1 sola te sirve.",
+      "sub": "La decisión de USCIS para septiembre de 2026, explicada en simple."
+    },
+    {
+      "headline": "Mirar la tabla que no es cuesta meses.",
+      "sub": "Cómo saber cuál toca en septiembre de 2026 antes de mandar tu I-485."
+    }
+  ],
+  "caption": "USCIS ya publicó qué tabla del Visa Bulletin se usa en septiembre de 2026 para mandar el I-485 (el formulario para pedir la Green Card desde dentro de EE.UU.). Para todas las categorías de familia se usa la tabla \"Dates for Filing\". Para todas las categorías de empleo se usa la tabla \"Final Action Dates\".\n\nEn palabras simples: cada mes hay dos listas de fechas y solo una sirve para mandar tus papeles. Busca la fila de tu categoría y la columna de tu país de nacimiento. Si tu fecha de prioridad es anterior a la fecha de la tabla, o si dice \"C\", puedes mandar el I-485 si cumples lo demás.\n\nIn English: for September 2026, USCIS says family-sponsored applicants use the Dates for Filing chart and employment-based applicants use the Final Action Dates chart. In plain words: check the right chart before you file.\n\nFuente oficial: https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/when-to-file-your-adjustment-of-status-application-for-family-sponsored-or-employment-based-128\nhttps://travel.state.gov/content/dam/visas/Bulletins/visabulletin_September2026.pdf\n\nGuarda este post: la decisión cambia cada mes y conviene tener el enlace a mano.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n#inmigracion #visabulletin #greencard #uscis #i485 #inmigrantes #estadosunidos #residencia #noticiasinmigracion"
+}

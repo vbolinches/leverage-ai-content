@@ -1,0 +1,126 @@
+{
+  "slug": "post42-dos-pasos-visa-bulletin-uscis",
+  "art": "calendar",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 042",
+      "headline": [
+        {
+          "t": "Ver el Visa Bulletin "
+        },
+        {
+          "t": "no basta.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Falta el paso 2: la decisión de USCIS sobre qué tabla vale ese mes.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué pasó, en corto.",
+      "body": [
+        {
+          "t": "El Visa Bulletin lo saca el Departamento de Estado. Después USCIS decide qué tabla vale para mandar tu I-485. Suele hacerlo dentro de una semana. "
+        },
+        {
+          "t": "Primero llega el menú del mes; luego la caja dice qué se puede pedir hoy.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Son dos pasos, no uno.",
+      "body": [
+        {
+          "t": "USCIS lo dice en su propia página: cada mes designa una de las dos tablas y la enlaza ahí, dentro de una semana desde que sale el Visa Bulletin. "
+        },
+        {
+          "t": "Fuente: USCIS, Adjustment of Status Filing Charts, consultada el 25 de agosto de 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "A quién le toca.",
+      "body": [
+        {
+          "t": "Te toca si estás esperando tu turno para mandar el I-485 y revisas el Visa Bulletin cada mes. "
+        },
+        {
+          "t": "Si tu trámite es fuera de EE.UU. con el consulado, tu proceso lo maneja el Departamento de Estado.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto oficial.",
+      "sub": "USCIS, Adjustment of Status Filing Charts (uscis.gov), consultada el 25 ago 2026",
+      "label": "TEXTO OFICIAL EN INGLÉS",
+      "code": "We anticipate designating one of the two\ncharts each month and linking to the\nrelevant chart below within one week of\nDOS's publication of the Visa Bulletin."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice: USCIS espera designar la tabla y enlazarla en esa página dentro de una semana. Para ti: revisa el bulletin, luego esa página. "
+        },
+        {
+          "t": "Si te guías solo por el bulletin, puedes usar la tabla que no toca ese mes.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Tu rutina de cada mes",
+      "items": [
+        "Paso 1: lee el Visa Bulletin del mes",
+        "Paso 2: abre la página de charts de USCIS",
+        "Espera a que USCIS designe la tabla",
+        "Anota la fecha en que lo revisaste"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "¿Quién decide si ya puedes mandar?",
+      "sub": "El Visa Bulletin es solo la mitad de la respuesta. La otra mitad la pone USCIS."
+    },
+    {
+      "headline": "El Visa Bulletin no da permisos.",
+      "sub": "USCIS es quien designa la tabla que vale cada mes para mandar el I-485."
+    },
+    {
+      "headline": "Antes: una página. Ahora: dos.",
+      "sub": "La rutina mensual completa para saber si ya te toca mandar tu I-485."
+    },
+    {
+      "headline": "1 semana entre paso 1 y paso 2.",
+      "sub": "USCIS dice que designa la tabla dentro de una semana desde que sale el Visa Bulletin."
+    },
+    {
+      "headline": "USCIS actualiza su página cada mes.",
+      "sub": "Ahí enlaza la tabla que vale para mandar el I-485. Consultada el 25 de agosto de 2026."
+    }
+  ],
+  "caption": "Muchas personas revisan el Visa Bulletin y creen que ya tienen la respuesta. Falta un paso. El Departamento de Estado publica el boletín; después USCIS designa cuál de las dos tablas se usa ese mes para mandar el I-485 (el formulario para pedir la Green Card desde dentro de EE.UU.). USCIS dice en su página que espera designarla y enlazarla dentro de una semana desde que sale el boletín.\n\nEn palabras simples: son dos páginas, no una. Primero mira el boletín del mes. Después entra a la página de USCIS y confirma qué tabla vale. Si te guías solo por el boletín, puedes usar la tabla equivocada.\n\nIn English: the Visa Bulletin comes from the State Department; USCIS then designates which chart applies for adjustment of status that month, usually within a week. In plain words: check both pages before you file.\n\nFuente oficial: https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/adjustment-of-status-filing-charts-from-the-visa-bulletin\nhttps://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/when-to-file-your-adjustment-of-status-application-for-family-sponsored-or-employment-based-128\n\nGuarda este post como recordatorio mensual y compártelo con quien esté en la fila.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n#inmigracion #visabulletin #uscis #greencard #i485 #residencia #inmigrantes #estadosunidos #noticiasinmigracion"
+}

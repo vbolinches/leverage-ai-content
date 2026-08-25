@@ -1,0 +1,118 @@
+{
+  "slug": "post41-abogado-presente-entrevista-uscis",
+  "art": "building",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 041",
+      "headline": "¿Tu abogado va a estar ahí de verdad?",
+      "sub": "USCIS ya no permite la participación remota en estas entrevistas. Regla del 18 mayo 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué pasó, en corto.",
+      "body": [
+        {
+          "t": "Tu abogado ya no puede acompañarte por teléfono ni por video en la entrevista. Si quieres que esté, tiene que ir contigo al edificio. "
+        },
+        {
+          "t": "El maestro pide que vayas a la escuela para la reunión, no que llames.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Se acabó la asistencia remota.",
+      "body": [
+        {
+          "t": "USCIS ya no permite que abogados ni representantes acreditados participen a distancia en entrevistas de oficina y de asilo, salvo casos limitados. "
+        },
+        {
+          "t": "Fuente: USCIS, página de la entrevista de asilo, 18 de mayo de 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "A quién le toca.",
+      "body": [
+        {
+          "t": "Te toca si tienes abogado o representante acreditado y una entrevista en una oficina de USCIS o de asilo. "
+        },
+        {
+          "t": "Si vas sin representante, esta regla no te cambia nada.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto oficial.",
+      "sub": "USCIS, Preparing for Your Affirmative Asylum Interview, alerta del 18 de mayo de 2026",
+      "label": "TEXTO OFICIAL EN INGLÉS",
+      "code": "Effective May 18, 2026, USCIS will no\nlonger permit attorneys and accredited\nrepresentatives to participate remotely\nin interviews at field offices and in\naffirmative asylum ... interviews at\nasylum offices, except in limited\ncircumstances."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice: el representante debe estar presente en el lugar. Para ti: confirma semanas antes que tu abogado puede viajar ese día. "
+        },
+        {
+          "t": "Si das por hecho que entra por video, puedes quedarte sin él en la entrevista.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Antes de tu entrevista",
+      "items": [
+        "Pregunta a tu abogado si irá en persona",
+        "Confirma dirección y hora en tu aviso",
+        "Lleva tus documentos originales",
+        "Llega con tiempo a la dirección del aviso"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "¿Tu abogado va a estar ahí de verdad?",
+      "sub": "USCIS ya no permite la participación remota en estas entrevistas. Regla del 18 mayo 2026."
+    },
+    {
+      "headline": "Creer que entra por video es un error.",
+      "sub": "USCIS exige que el abogado esté presente en la entrevista, salvo casos limitados."
+    },
+    {
+      "headline": "El teléfono ya no cuenta como asistir.",
+      "sub": "Lo que dice USCIS sobre abogados en entrevistas de oficina y de asilo, mayo de 2026."
+    },
+    {
+      "headline": "USCIS cerró la puerta al Zoom.",
+      "sub": "Los representantes legales deben asistir en persona a estas entrevistas, desde mayo 2026."
+    },
+    {
+      "headline": "Un viaje más para tu abogado.",
+      "sub": "La asistencia remota terminó: tiempo y traslado extra en cada entrevista, según USCIS."
+    }
+  ],
+  "caption": "USCIS no permite que los abogados ni los representantes acreditados participen a distancia en las entrevistas en oficinas locales (field offices) ni en las entrevistas de asilo afirmativo y NACARA 203 en las oficinas de asilo, salvo casos limitados. Todos los representantes legales deben estar físicamente presentes. La alerta está en la página oficial de USCIS sobre cómo prepararte para la entrevista de asilo y rige desde el 18 de mayo de 2026.\n\nEn palabras simples: si quieres a tu abogado contigo el día de la entrevista, tiene que ir al edificio. No vale por teléfono ni por video. Habla con él con semanas de anticipación y confirma quién te va a acompañar.\n\nIn English: USCIS no longer allows attorneys and accredited representatives to appear remotely at field office and affirmative asylum interviews, except in limited circumstances. In plain words: your lawyer has to show up in person.\n\nFuente oficial: https://www.uscis.gov/humanitarian/refugees-and-asylum/asylum/preparing-for-your-affirmative-asylum-interview\n\nGuarda este post y compártelo con quien tenga entrevista pronto.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n#inmigracion #asilo #uscis #entrevista #inmigrantes #estadosunidos #greencard #noticiasinmigracion #abogadodeinmigracion"
+}

@@ -1,0 +1,118 @@
+{
+  "slug": "post36-asilo-cambiar-fecha-entrevista",
+  "art": "calendar",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 036",
+      "headline": "Pedir el cambio tarde cierra tu caso.",
+      "sub": "El error: avisar después de la fecha. USCIS, alerta del 21 de agosto de 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué pasó, en corto.",
+      "body": [
+        {
+          "t": "Antes bastaba una buena razón para mover tu cita de asilo. Ahora la razón tiene que ser algo grave y fuera de tu control. "
+        },
+        {
+          "t": "Pasa lo mismo con un examen final: te lo mueven por una emergencia, no por gusto.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Subió el nivel de la excusa.",
+      "body": [
+        {
+          "t": "USCIS ya no acepta cualquier motivo. Pide \"exceptional circumstances\": una circunstancia excepcional, algo serio que no puedes controlar. "
+        },
+        {
+          "t": "Fuente: USCIS, página Asylum, alerta del 21 de agosto de 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "A quién le toca.",
+      "body": [
+        {
+          "t": "Te toca si pediste asilo con USCIS y tienes cita de entrevista. "
+        },
+        {
+          "t": "Si tu caso ya está con un juez de inmigración, o si ya te dieron asilo, esta alerta no habla de ti.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "El texto oficial.",
+      "sub": "USCIS, página Asylum (uscis.gov), alerta del 21 de agosto de 2026",
+      "label": "TEXTO OFICIAL EN INGLÉS",
+      "code": "Starting Aug. 21, 2026, you must\nestablish exceptional circumstances for\nUSCIS to reschedule your asylum\ninterview."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice: para mover la entrevista tienes que probar algo excepcional. Para ti: pide el cambio antes de tu fecha y sigue las instrucciones de tu aviso de cita. "
+        },
+        {
+          "t": "Si faltas sin pedirlo, USCIS puede cerrar tu caso o mandarlo a un juez.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Tu plan si no puedes ir",
+      "items": [
+        "Pide el cambio antes de tu fecha",
+        "Guarda prueba: carta médica, papeles",
+        "Lee la alerta en la página Asylum",
+        "No faltes sin avisar a USCIS"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "Una buena razón ya no alcanza.",
+      "sub": "USCIS ahora exige una circunstancia excepcional para mover tu entrevista de asilo."
+    },
+    {
+      "headline": "Pedir el cambio tarde cierra tu caso.",
+      "sub": "El error: avisar después de la fecha. USCIS, alerta del 21 de agosto de 2026."
+    },
+    {
+      "headline": "Antes: buena causa. Ahora: algo grave.",
+      "sub": "Así cambió el permiso para mover tu entrevista de asilo, desde agosto de 2026."
+    },
+    {
+      "headline": "10 días. Ese es todo tu margen.",
+      "sub": "Si faltas a tu entrevista de asilo, ese es el plazo que da USCIS desde el 21 de agosto."
+    },
+    {
+      "headline": "USCIS cambió tu cita de asilo.",
+      "sub": "Nuevas reglas para pedir otra fecha, en vigor desde el 21 de agosto de 2026."
+    }
+  ],
+  "caption": "USCIS endureció las reglas para cambiar la fecha de una entrevista de asilo. Desde el 21 de agosto de 2026, hay que probar \"exceptional circumstances\" (una circunstancia excepcional) para que te den otra fecha. Antes bastaba una buena causa.\n\nEn palabras simples: si no puedes ir a tu entrevista, avisa antes de la fecha y explica por qué, con papeles que lo prueben. La razón tiene que ser algo serio y fuera de tu control, como una enfermedad grave. Si faltas y no pides el cambio, USCIS puede cerrar tu caso o mandarlo a un juez de inmigración.\n\nIn English: starting Aug. 21, 2026, USCIS requires exceptional circumstances to reschedule an affirmative asylum interview. In plain words: ask for a new date before your interview day, and keep proof of your reason.\n\nFuente oficial: https://www.uscis.gov/humanitarian/refugees-and-asylum/asylum\n\nGuarda este post si tienes una entrevista pendiente y compártelo con quien también la tenga.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n#inmigracion #asilo #uscis #inmigrantes #estadosunidos #noticiasinmigracion #tramitesmigratorios #asilopolitico #entrevistadeasilo"
+}
