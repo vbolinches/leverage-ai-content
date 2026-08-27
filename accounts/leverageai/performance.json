@@ -2975,6 +2975,120 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-08-27",
+      "followers": 10,
+      "posts": [
+        {
+          "slug": "post29-client-project-memory",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 12,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post28-voice-debrief-after-calls",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 15,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post27-notebooklm-handover-pack",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 1,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post26-case-study-one-pager",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 113,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post25-notion-agent-credit-test",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 14,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post24-prospect-brief-after-atlas",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post23-monday-pipeline-sweep",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post22-claude-watermark-deliverables",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 54,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post21-late-invoice-ladder",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post20-business-context-file",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 104,
+          "saved": 1,
+          "shares": 0
+        },
+        {
+          "slug": "post19-scope-creep-change-order",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 28,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post18-agent-job-brief",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
