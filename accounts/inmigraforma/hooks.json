@@ -1463,6 +1463,511 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post43-cuatro-zonas-control-aduanero-mar",
+      "graded": "2026-08-27",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "La frontera en el mar "
+          },
+          {
+            "t": "se movió.",
+            "c": "blue"
+          }
+        ],
+        "sub": "CBP amplió su control en 4 costas de EE.UU. — 25 de agosto de 2026",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "change",
+        "stopping": "se movió",
+        "reason": "\"La frontera en el mar se movió\" is plain, ominous and human — the only line that sounds like something happened to you, not to a map.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "La frontera en el mar "
+            },
+            {
+              "t": "se movió.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 6.5,
+          "shape": "change",
+          "stopping": "se movió",
+          "reason": "\"La frontera en el mar se movió\" is plain, ominous and human — the only line that sounds like something happened to you, not to a map.",
+          "authored": true
+        },
+        {
+          "headline": "Antes 12 millas, ahora el doble",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "before-after",
+          "stopping": "el doble",
+          "reason": "Before/after with a doubling is concrete, but 12 millas means nothing to a worker with no boat and no legal training.",
+          "authored": false
+        },
+        {
+          "headline": "No, esto no es una ley migratoria",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "No, esto no es",
+          "reason": "Negation hook kills its own stakes — it tells the audience up front this is not a migration law, i.e. not their problem.",
+          "authored": false
+        },
+        {
+          "headline": "24 millas náuticas: la nueva línea",
+          "rank": 4,
+          "score": 4.5,
+          "shape": "number-claim",
+          "stopping": "nothing",
+          "reason": "\"24 millas náuticas\" is a bureaucratic measurement, not a stop; reads like a CBP press release headline.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post44-public-charge-fecha-18-septiembre",
+      "graded": "2026-08-27",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "1 fecha decide qué regla te aplican",
+        "sub": "USCIS cambia su guía de 'public charge' el 18 de sept. de 2026",
+        "rank": 1,
+        "score": 6.2,
+        "shape": "number-claim",
+        "stopping": "te aplican",
+        "reason": "Only one that ties the change to the reader's own case with a concrete stake.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "1 fecha decide qué regla te aplican",
+          "rank": 1,
+          "score": 6.2,
+          "shape": "number-claim",
+          "stopping": "te aplican",
+          "reason": "Only one that ties the change to the reader's own case with a concrete stake.",
+          "authored": false
+        },
+        {
+          "headline": "No, la regla de 2022 ya no manda sola",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "ya no manda",
+          "reason": "Correction framing hints something changed, but 'la regla de 2022' means nothing to a non-lawyer.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Antes: una regla. ",
+              "c": "dim"
+            },
+            {
+              "t": "Después: otra.",
+              "c": "blue",
+              "b": true
+            }
+          ],
+          "rank": 3,
+          "score": 2.5,
+          "shape": "before-after",
+          "stopping": "nothing",
+          "reason": "'Una regla / otra' says literally nothing — empty before-after with zero stake.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post45-como-comentar-tarifa-h1b-103265",
+      "graded": "2026-08-27",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No, todavía nadie paga $103,265",
+        "sub": "Es una propuesta del DHS, no una ley — comentarios hasta el 24 de sept.",
+        "rank": 1,
+        "score": 7.2,
+        "shape": "contrarian",
+        "stopping": "No, todavía nadie paga $103,265",
+        "reason": "Opens by contradicting the panic already in the feed and leads with the shocking number — the strongest stop of the four.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No, todavía nadie paga $103,265",
+          "rank": 1,
+          "score": 7.2,
+          "shape": "contrarian",
+          "stopping": "No, todavía nadie paga $103,265",
+          "reason": "Opens by contradicting the panic already in the feed and leads with the shocking number — the strongest stop of the four.",
+          "authored": false
+        },
+        {
+          "headline": "El error: creer que ya es ley",
+          "rank": 2,
+          "score": 6.4,
+          "shape": "mistake",
+          "stopping": "El error",
+          "reason": "Names the reader's likely mistake, but hides the $103,265 number in the subline where it stops fewer thumbs.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "30 días para opinar ",
+              "c": "dim"
+            },
+            {
+              "t": "antes de la ley.",
+              "c": "blue",
+              "b": true
+            }
+          ],
+          "rank": 3,
+          "score": 5.5,
+          "shape": "number-claim",
+          "stopping": "30 días para opinar",
+          "reason": "A deadline with a job to do, but 'opinar antes de la ley' sounds like civic process, not something touching this audience's life.",
+          "authored": true
+        },
+        {
+          "headline": "Hoy propuesta, el 24 de sept. se cierra",
+          "rank": 4,
+          "score": 4.2,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Reads like a calendar note; no number, no threat, no correction — nothing to halt a scroll.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post46-ong-registrar-votantes-naturalizacion",
+      "graded": "2026-08-27",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Las ONG "
+          },
+          {
+            "t": "sí pueden ayudarte a votar.",
+            "c": "blue",
+            "b": true
+          }
+        ],
+        "sub": "Una corte pausó la regla que lo impedía — aviso de USCIS, 3 de agosto de 2026",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "contrarian",
+        "stopping": "sí pueden ayudarte",
+        "reason": "Only one that names a benefit to the reader in plain words — 'sí pueden ayudarte' reverses a fear and touches their life.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Las ONG "
+            },
+            {
+              "t": "sí pueden ayudarte a votar.",
+              "c": "blue",
+              "b": true
+            }
+          ],
+          "rank": 1,
+          "score": 6.5,
+          "shape": "contrarian",
+          "stopping": "sí pueden ayudarte",
+          "reason": "Only one that names a benefit to the reader in plain words — 'sí pueden ayudarte' reverses a fear and touches their life.",
+          "authored": true
+        },
+        {
+          "headline": "USCIS volvió a una regla de 2017",
+          "rank": 2,
+          "score": 3.5,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Bureaucratic date-and-rule announcement; a 2017 regla means nothing to a reader with no legal training.",
+          "authored": false
+        },
+        {
+          "headline": "1 orden de corte devolvió esta ayuda",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "number-claim",
+          "stopping": "esta ayuda",
+          "reason": "'1 orden de corte' is a fake number and 'esta ayuda' is vague; the sub buries the payoff in USCIS jargon.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post47-quien-paga-tarifa-h1b-103265",
+      "graded": "2026-08-27",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No, el trabajador no paga esta tarifa",
+        "sub": "La propuesta de $103,265 le tocaría a la empresa, no a ti",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "contrarian",
+        "stopping": "No, el trabajador no paga",
+        "reason": "Opens with a relief-flavored correction aimed straight at the reader's wallet fear, and the sub delivers the number anyway.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No, el trabajador no paga esta tarifa",
+          "rank": 1,
+          "score": 6.5,
+          "shape": "contrarian",
+          "stopping": "No, el trabajador no paga",
+          "reason": "Opens with a relief-flavored correction aimed straight at the reader's wallet fear, and the sub delivers the number anyway.",
+          "authored": false
+        },
+        {
+          "headline": "$103,265: la cifra que no pagas tú",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "que no pagas tú",
+          "reason": "Big number plus a personal 'not you' twist; the number alone is what stops, the twist keeps it.",
+          "authored": false
+        },
+        {
+          "headline": "¿Quién pagaría los $103,265 del H-1B?",
+          "rank": 3,
+          "score": 5.5,
+          "shape": "question",
+          "stopping": "$103,265",
+          "reason": "The figure works but the question is a quiz the reader has no reason to answer, and the sub spoils it flatly.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "$103,265: quién lo pagaría "
+            },
+            {
+              "t": "(y quién no).",
+              "c": "blue",
+              "b": true
+            }
+          ],
+          "rank": 4,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "$103,265",
+          "reason": "Reads like a policy memo headline; 'quién lo pagaría' is bureaucratic and the sub is pure filing data.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post48-public-charge-que-beneficios-cuentan",
+      "graded": "2026-08-27",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No toda ayuda del gobierno cuenta igual",
+        "sub": "Depende de la fecha en que la recibiste, según la nueva guía de USCIS",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "contrarian",
+        "stopping": "No toda ayuda del gobierno cuenta igual",
+        "reason": "Names the fear directly — did the food stamps/Medicaid hurt me — and the sub gives the date-based twist plus USCIS as the source.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No toda ayuda del gobierno cuenta igual",
+          "rank": 1,
+          "score": 6.5,
+          "shape": "contrarian",
+          "stopping": "No toda ayuda del gobierno cuenta igual",
+          "reason": "Names the fear directly — did the food stamps/Medicaid hurt me — and the sub gives the date-based twist plus USCIS as the source.",
+          "authored": false
+        },
+        {
+          "headline": "¿Sabes qué ayuda cuenta y cuál no?",
+          "rank": 2,
+          "score": 5.5,
+          "shape": "question",
+          "stopping": "cuál no",
+          "reason": "The question implies a test you might be failing, but it's vague about which help and the sub buries a date with no stakes attached.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Una fecha decide "
+            },
+            {
+              "t": "el beneficio.",
+              "c": "blue",
+              "b": true
+            }
+          ],
+          "rank": 3,
+          "score": 4.5,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "'Una fecha decide el beneficio' is abstract copywriting; 'public charge' in quotes is jargon this audience won't self-identify with fast enough.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post49-cbp-autoridad-abordar-barcos",
+      "graded": "2026-08-27",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Antes 12 millas. ",
+            "c": "dim"
+          },
+          {
+            "t": "Ahora, el doble.",
+            "c": "blue",
+            "b": true
+          }
+        ],
+        "sub": "Qué pueden hacer los agentes en las nuevas zonas — CBP, 25 de agosto de 2026",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "before-after",
+        "stopping": "el doble",
+        "reason": "\"Antes 12. Ahora el doble\" is the whole change in five words — the fastest concrete before/after here.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Antes 12 millas. ",
+              "c": "dim"
+            },
+            {
+              "t": "Ahora, el doble.",
+              "c": "blue",
+              "b": true
+            }
+          ],
+          "rank": 1,
+          "score": 7.5,
+          "shape": "before-after",
+          "stopping": "el doble",
+          "reason": "\"Antes 12. Ahora el doble\" is the whole change in five words — the fastest concrete before/after here.",
+          "authored": true
+        },
+        {
+          "headline": [
+            {
+              "t": "Creer que el barco ya está ",
+              "c": "white"
+            },
+            {
+              "t": "afuera",
+              "b": true,
+              "c": "green"
+            }
+          ],
+          "rank": 2,
+          "score": 7.0,
+          "shape": "mistake",
+          "stopping": "el error",
+          "reason": "Names the exact wrong assumption a boat owner will make, which is the closest thing to personal stakes on the list.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "4 zonas nuevas en el ",
+              "c": "white"
+            },
+            {
+              "t": "mar",
+              "b": true,
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 6.5,
+          "shape": "number-claim",
+          "stopping": "Florida, California, Puerto Rico y Texas",
+          "reason": "The state list does the work: readers scan for their own place, but '4 zonas nuevas' alone is vague.",
+          "authored": false
+        },
+        {
+          "headline": "24 millas náuticas de nueva autoridad",
+          "rank": 4,
+          "score": 5.5,
+          "shape": "number-claim",
+          "stopping": "24 millas náuticas",
+          "reason": "Accurate and specific but 'nueva autoridad' is bureaucratic and 'millas náuticas' means nothing to a regular reader.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "El mar cerca de casa ",
+              "c": "white"
+            },
+            {
+              "t": "cambió",
+              "b": true,
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 4.5,
+          "shape": "change",
+          "stopping": "cerca de casa",
+          "reason": "Soft and abstract; 'el mar cambió' promises poetry instead of telling anyone what happened to them.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Hasta dónde llega ",
+              "c": "white"
+            },
+            {
+              "t": "EE.UU.",
+              "b": true,
+              "c": "green"
+            },
+            {
+              "t": " en el agua?",
+              "c": "white"
+            }
+          ],
+          "rank": 6,
+          "score": 3.5,
+          "shape": "question",
+          "stopping": "nothing",
+          "reason": "A trivia question about US water limits with a withheld answer — no stakes, easiest scroll on the board.",
+          "authored": false
+        }
+      ]
     }
   ]
 }

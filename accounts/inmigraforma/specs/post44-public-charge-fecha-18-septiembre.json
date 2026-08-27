@@ -1,0 +1,123 @@
+{
+  "slug": "post44-public-charge-fecha-18-septiembre",
+  "art": "calendar",
+  "caption": "USCIS actualizó su manual de políticas sobre \"public charge\" — la regla que mira si alguien podría depender demasiado del gobierno. La nueva guía entra en vigor el 18 de septiembre de 2026 y aplica a los formularios I-485 (para pedir la Green Card desde dentro de EE.UU.) mandados esa fecha o después.\n\nEn palabras simples: la fecha en que mandas tu I-485 decide qué regla te aplican. Pasa lo mismo en un juego de mesa: si cambian las reglas a la mitad de la partida, lo que valía antes ya no vale igual.\n\nIn plain words: file your I-485 before September 18, 2026, and the old, narrower rule applies. File on or after that date, and the newer, broader rule applies instead. Getting the date wrong could change how your case is judged.\n\nSi ya tienes tu Green Card, esta guía no te cambia nada. Si vas a mandar el I-485 pronto, revisa bien la fecha.\n\nGuarda este post si estás por mandar tus papeles.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-issues-guidance-on-making-public-charge-inadmissibility-determination\n\n#inmigracion #greencard #publiccharge #i485 #uscis #ajustedeestatus #inmigranteseeuu #noticiasdeinmigracion",
+  "hook_candidates": [
+    {
+      "headline": "1 fecha decide qué regla te aplican",
+      "sub": "USCIS cambia su guía de 'public charge' el 18 de sept. de 2026"
+    },
+    {
+      "headline": "No, la regla de 2022 ya no manda sola",
+      "sub": "Desde el 18 de sept. hay una guía nueva de USCIS sobre ayuda del gobierno"
+    },
+    {
+      "headline": "El error: mandar el I-485 sin ver la fecha",
+      "sub": "La fecha en que lo mandas decide qué regla usan contigo"
+    },
+    {
+      "headline": "¿Sabes qué regla te toca si mandas tu I-485?",
+      "sub": "Depende del día exacto — USCIS lo aclaró esta semana"
+    },
+    {
+      "headline": "USCIS cambió cómo mide depender del gobierno",
+      "sub": "La nueva guía empieza el 18 de septiembre de 2026"
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 044",
+      "headline": "1 fecha decide qué regla te aplican",
+      "sub": "USCIS cambia su guía de 'public charge' el 18 de sept. de 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Cuando pides la Green Card desde dentro de EE.UU. con el formulario I-485, un oficial mira si has recibido ayuda del gobierno. "
+        },
+        {
+          "t": "Pasa lo mismo en un juego de mesa: si cambian las reglas a la mitad, lo que valía antes ya no vale igual.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Nueva guía desde el 18 de sept.",
+      "body": [
+        {
+          "t": "USCIS actualizó su manual sobre quién puede ser negado por depender del gobierno ('public charge'). "
+        },
+        {
+          "t": "Aplica a los I-485 mandados el 18 de sept. de 2026 o después. Fuente: USCIS, aviso oficial.",
+          "c": "dim"
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "¿A quién le toca esto?",
+      "body": [
+        {
+          "t": "Te afecta si vas a mandar el I-485 (pedir la Green Card desde EE.UU.) cerca de esa fecha. "
+        },
+        {
+          "t": "Si ya tienes tu Green Card, esto no te cambia nada.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice el aviso",
+      "sub": "USCIS, aviso oficial — consultado el 25 de agosto de 2026",
+      "label": "TEXTO OFICIAL",
+      "code": "This guidance is effective\non Sept. 18, 2026, and\napplies to all Forms I-485\nsubject to the public\ncharge ground postmarked\nor electronically submitted\non or after that date."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice que la fecha en que mandas tu I-485 decide la regla que te aplican. "
+        },
+        {
+          "t": "Antes del 18 de sept. va la regla vieja; ese día o después, la nueva y más amplia. Si te equivocas de fecha, te juzgan con la que no esperabas.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA FECHA CLAVE",
+      "headline": "¿Cuál es el punto de quiebre?",
+      "stat": "18 de sept. 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Revisa la fecha exacta de tu I-485",
+        "Junta papeles antes del 18 de sept.",
+        "Si ya tienes Green Card, no aplica",
+        "Verifica en uscis.gov antes de enviar"
+      ],
+      "cta_title": "Guarda esta fecha",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "slug": "post45-como-comentar-tarifa-h1b-103265",
+  "art": "checklist",
+  "caption": "El 25 de agosto de 2026, el Departamento de Seguridad Nacional (DHS) publicó en el Federal Register una propuesta: cobrar $103,265 por cada petición H-1B con tope anual, además de las tarifas que ya existen. Todavía no es ley — es solo una propuesta, y el público puede opinar hasta el 24 de septiembre de 2026.\n\nEn palabras simples: antes de que una regla nueva se vuelva ley, cualquier persona puede escribir su opinión. Igual que en una escuela que pide la opinión de los padres antes de cambiar el horario de clases.\n\nIn plain words: DHS proposed a $103,265 fee for capped H-1B petitions. It is not law yet. Anyone can submit an official comment through regulations.gov before September 24, 2026.\n\nComentar es gratis y no necesitas abogado para hacerlo. Busca el número de expediente USCIS-2026-0298 en regulations.gov.\n\nGuarda este plazo si te interesa este tema.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions\n\n#inmigracion #h1b #dhs #visadetrabajo #comentariospublicos #noticiasdeinmigracion #inmigranteseeuu #empleo",
+  "hook_candidates": [
+    {
+      "headline": "No, todavía nadie paga $103,265",
+      "sub": "Es una propuesta del DHS, no una ley — comentarios hasta el 24 de sept."
+    },
+    {
+      "headline": "El error: creer que ya es ley",
+      "sub": "DHS solo propuso la tarifa de $103,265; falta el paso final"
+    },
+    {
+      "headline": "¿Sabes cómo opinar sobre la tarifa del H-1B?",
+      "sub": "El plazo cierra el 24 de septiembre de 2026"
+    },
+    {
+      "headline": "Hoy propuesta, el 24 de sept. se cierra",
+      "sub": "DHS abrió comentarios sobre la tarifa de $103,265 para el H-1B"
+    },
+    {
+      "headline": "DHS abrió la puerta a comentarios públicos",
+      "sub": "Sobre la tarifa propuesta de $103,265 — hasta el 24 de sept."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 045",
+      "headline": "No, todavía nadie paga $103,265",
+      "sub": "Es una propuesta del DHS, no una ley — comentarios hasta el 24 de sept.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Antes de que una regla nueva del gobierno se vuelva ley, cualquier persona puede escribir su opinión. "
+        },
+        {
+          "t": "Igual que en una escuela que pide la opinión de los padres antes de cambiar el horario de clases.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "DHS abrió los comentarios.",
+      "body": [
+        {
+          "t": "El 25 de agosto de 2026, DHS publicó una propuesta: cobrar $103,265 por cada petición H-1B con tope anual. "
+        },
+        {
+          "t": "Todavía no es ley. Fuente: Federal Register, 25 de agosto de 2026.",
+          "c": "dim"
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "¿A quién le toca esto?",
+      "body": [
+        {
+          "t": "Te afecta si tu empleador piensa pedir un H-1B con tope este año. "
+        },
+        {
+          "t": "No aplica a peticiones ya aprobadas ni a trabajos exentos del tope (como universidades).",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Cómo mandar tu comentario",
+      "sub": "Federal Register, Docket USCIS-2026-0298 — 25 de agosto de 2026",
+      "label": "TEXTO OFICIAL",
+      "code": "Written comments must be\nsubmitted on or before\nSeptember 24, 2026.\nFederal eRulemaking Portal:\nregulations.gov\nDocket No. USCIS-2026-0298"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice que hay un plazo fijo: 24 de septiembre de 2026, antes de la medianoche. "
+        },
+        {
+          "t": "Para comentar, entras a regulations.gov y buscas USCIS-2026-0298. Si el plazo pasa, tu comentario no cuenta para la decisión final.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA FECHA CLAVE",
+      "headline": "¿Hasta cuándo puedes comentar?",
+      "stat": "24 de sept. 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Entra a regulations.gov, busca el docket",
+        "Comenta antes del 24 de sept. de 2026",
+        "Comentar es gratis, no necesitas abogado",
+        "Hoy nadie paga esta tarifa todavía"
+      ],
+      "cta_title": "Guarda este plazo",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

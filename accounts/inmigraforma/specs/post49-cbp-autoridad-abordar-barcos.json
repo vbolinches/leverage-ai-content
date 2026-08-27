@@ -1,0 +1,133 @@
+{
+  "slug": "post49-cbp-autoridad-abordar-barcos",
+  "art": "globe",
+  "caption": "El 25 de agosto de 2026, CBP (la Oficina de Aduanas y Protección Fronteriza) publicó el aviso oficial de 4 nuevas \"zonas de control aduanero\" en el mar: cerca del sur de Florida, el sur de California, Puerto Rico y la costa del Golfo de Texas. Dentro de esas zonas, los agentes pueden subir a un barco y aplicar leyes de EE.UU. hasta 24 millas náuticas de la costa — el doble que antes.\n\nEn palabras simples: en esas 4 zonas, los agentes ahora pueden revisar un barco más lejos de la orilla que antes. Un autobús escolar que antes revisaba media ruta ahora revisa el doble de largo.\n\nIn plain words: in 4 coastal zones, CBP agents can now board and inspect boats up to 24 nautical miles from shore — double the previous range. This does not change asylum law or any immigration case already underway on land.\n\nSi viajas por mar cerca de esas costas, conviene saber esto antes de salir.\n\nGuarda este post si conoces a alguien que navega por ahí.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/08/25/2026-17354/establishment-of-four-customs-enforcement-areas y https://www.cbp.gov/newsroom/national-media-release/cbp-strengthens-maritime-border-security-expands-jurisdiction\n\n#inmigracion #cbp #fronteramaritima #aduanas #florida #puertorico #texas #noticiasdeinmigracion",
+  "hook_candidates": [
+    {
+      "headline": "24 millas náuticas de nueva autoridad",
+      "sub": "CBP puede subir a barcos más lejos de la costa — desde el 25 de agosto"
+    },
+    {
+      "headline": "No, esto no toca tu caso de asilo en tierra",
+      "sub": "Es sobre autoridad para abordar barcos en el mar, nada más"
+    },
+    {
+      "headline": "El error: creer que cambian las leyes de asilo",
+      "sub": "Solo amplía dónde CBP puede abordar barcos, no las reglas de asilo"
+    },
+    {
+      "headline": "¿Qué puede hacer CBP ahora en 4 zonas del mar?",
+      "sub": "Subir a barcos hasta 24 millas de la costa, desde el 25 de agosto"
+    },
+    {
+      "headline": "CBP ganó más autoridad para abordar barcos",
+      "sub": "En 4 zonas del mar, desde el 25 de agosto de 2026"
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 049",
+      "headline": [
+        {
+          "t": "Antes 12 millas. ",
+          "c": "dim"
+        },
+        {
+          "t": "Ahora, el doble.",
+          "c": "blue",
+          "b": true
+        }
+      ],
+      "sub": "Qué pueden hacer los agentes en las nuevas zonas — CBP, 25 de agosto de 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "En 4 zonas del mar, los agentes de aduanas ahora pueden subir a un barco y revisarlo más lejos de la costa que antes. "
+        },
+        {
+          "t": "Un autobús escolar que antes revisaba media ruta ahora revisa el doble de largo.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Más autoridad en el mar.",
+      "body": [
+        {
+          "t": "Desde el 25 de agosto de 2026, CBP puede subir a barcos y hacer cumplir leyes de EE.UU. hasta 24 millas náuticas de la costa, en 4 zonas. "
+        },
+        {
+          "t": "Fuente: Federal Register y comunicado de CBP, 25 de agosto de 2026.",
+          "c": "dim"
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "¿A quién le toca esto?",
+      "body": [
+        {
+          "t": "Afecta a quien viaje en barco cerca de Florida, el sur de California, Puerto Rico o la costa de Texas. "
+        },
+        {
+          "t": "No cambia las leyes de asilo ni ningún proceso migratorio que ya tengas en tierra.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "La autoridad, en sus palabras",
+      "sub": "Federal Register, 25 de agosto de 2026",
+      "label": "TEXTO OFICIAL",
+      "code": "This action authorizes\ncustoms officers and agents\nto enforce applicable U.S.\nlaws, including the\nauthorization to board\nvessels."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice que los agentes pueden subir a un barco y aplicar leyes de EE.UU. dentro de estas 4 zonas. "
+        },
+        {
+          "t": "En la práctica, un barco puede ser detenido más lejos de la orilla que antes. Esto no decide casos de asilo ni estatus migratorio.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO CLAVE",
+      "headline": "¿Cuánto se duplicó el alcance?",
+      "stat": "12→24 millas náuticas"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Viajas por mar cerca de estas zonas: ojo",
+        "No cambia tu proceso de asilo en tierra",
+        "Verifica en federalregister.gov",
+        "Guarda esto si conoces a un navegante"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

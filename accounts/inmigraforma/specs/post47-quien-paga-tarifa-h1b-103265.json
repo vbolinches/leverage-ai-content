@@ -1,0 +1,123 @@
+{
+  "slug": "post47-quien-paga-tarifa-h1b-103265",
+  "art": "chart",
+  "caption": "El 25 de agosto de 2026, el DHS propuso una tarifa de $103,265 para cada petición H-1B con tope anual, además de las tarifas normales. Esa tarifa la pagaría la empresa que presenta la petición — no el trabajador. Y hoy, nadie la paga: es solo una propuesta, no una ley.\n\nEn palabras simples: cuando una empresa pide un permiso H-1B para alguien, ella es quien paga las tarifas del gobierno, no la persona contratada. Esta propuesta no cambia eso.\n\nIn plain words: DHS proposed a $103,265 fee for capped H-1B petitions. If it becomes final, the employer pays it — not the worker. Nobody pays it today.\n\nSi alguien te pide que tú pagues directamente esta cantidad, es una señal de fraude. Verifica siempre en la fuente oficial.\n\nGuarda este post para no caer en engaños.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions\n\n#inmigracion #h1b #dhs #estafas #visadetrabajo #inmigranteseeuu #noticiasdeinmigracion #empleo",
+  "hook_candidates": [
+    {
+      "headline": "$103,265: la cifra que no pagas tú",
+      "sub": "DHS propuso esta tarifa para el H-1B — 25 de agosto de 2026"
+    },
+    {
+      "headline": "No, el trabajador no paga esta tarifa",
+      "sub": "La propuesta de $103,265 le tocaría a la empresa, no a ti"
+    },
+    {
+      "headline": "El error: creer que ya debes pagar $103,265",
+      "sub": "Todavía es solo una propuesta del DHS, no una ley"
+    },
+    {
+      "headline": "¿Quién pagaría los $103,265 del H-1B?",
+      "sub": "La respuesta no es el trabajador — aquí la explicación"
+    },
+    {
+      "headline": "Hoy nadie paga; si se aprueba, paga la empresa",
+      "sub": "La propuesta de tarifa H-1B del DHS, explicada"
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 047",
+      "headline": "No, el trabajador no paga esta tarifa",
+      "sub": "La propuesta de $103,265 le tocaría a la empresa, no a ti",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "El gobierno propuso una tarifa nueva y muy alta para el H-1B. La paga la empresa que pide el permiso, no el trabajador. "
+        },
+        {
+          "t": "Y hoy, nadie la paga: todavía es solo una idea, no una ley.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Sigue siendo una propuesta.",
+      "body": [
+        {
+          "t": "El 25 de agosto de 2026, DHS propuso cobrar $103,265 por cada petición H-1B con tope, además de las tarifas normales. "
+        },
+        {
+          "t": "No es una regla final. Fuente: Federal Register, 25 de agosto de 2026.",
+          "c": "dim"
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "¿A quién le toca esto?",
+      "body": [
+        {
+          "t": "Si algún día se aprueba, le tocaría pagar a la empresa que presenta tu petición H-1B, no a ti. "
+        },
+        {
+          "t": "No afecta peticiones ya aprobadas, ni H-1B de universidades u organizaciones exentas del tope.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice la propuesta",
+      "sub": "Federal Register, 25 de agosto de 2026",
+      "label": "TEXTO OFICIAL",
+      "code": "DHS proposes to establish\na $103,265 fee, payable at\nthe time of filing, for all\nH-1B cap-subject petitions\n...which would be imposed\nin addition to all other\napplicable fees."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice que la tarifa se cobraría al mandar la petición — y esa petición siempre la manda la empresa, nunca el trabajador. "
+        },
+        {
+          "t": "Si alguien te pide que TÚ pagues, es señal de fraude. Hoy, nadie debe pagarlo: no es ley todavía.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO CLAVE",
+      "headline": "¿Cuánto se propuso cobrar?",
+      "stat": "$103,265 (no es ley)"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "No pagues nada hoy por esta tarifa",
+        "Si te la piden a ti, es señal de fraude",
+        "La pagaría la empresa, no el trabajador",
+        "Verifica en federalregister.gov"
+      ],
+      "cta_title": "Guarda esto para no caer en fraudes",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

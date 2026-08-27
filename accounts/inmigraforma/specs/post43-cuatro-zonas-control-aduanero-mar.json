@@ -1,0 +1,131 @@
+{
+  "slug": "post43-cuatro-zonas-control-aduanero-mar",
+  "art": "globe",
+  "caption": "El 25 de agosto de 2026, la Oficina de Aduanas y Protección Fronteriza (CBP) creó 4 \"zonas de control aduanero\" en el mar: cerca del sur de Florida, el sur de California, Puerto Rico y la costa del Golfo de Texas. Ahí, CBP ahora puede vigilar y detener barcos hasta 24 millas náuticas de la costa — antes eran solo 12.\n\nEn palabras simples: el gobierno movió la línea de vigilancia en el mar el doble de lejos, en 4 lugares. Es como si la cerca de tu patio se corriera el doble de lejos: hay más espacio bajo control.\n\nIn plain words: CBP can now stop and board boats up to 24 nautical miles from shore — double the old limit — in 4 coastal zones. If you travel by boat near South Florida, Southern California, Puerto Rico, or the Texas Gulf Coast, know this before you go.\n\nEsto no cambia ningún trámite de inmigración dentro de EE.UU. Es sobre control en el mar, no sobre casos ya en proceso.\n\nGuarda este post si conoces a alguien que viaja por esas aguas.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/08/25/2026-17354/establishment-of-four-customs-enforcement-areas y https://www.cbp.gov/newsroom/national-media-release/cbp-strengthens-maritime-border-security-expands-jurisdiction\n\n#inmigracion #cbp #aduanas #fronteramaritima #florida #california #puertorico #texas #noticiasdeinmigracion #inmigranteseeuu",
+  "hook_candidates": [
+    {
+      "headline": "24 millas náuticas: la nueva línea",
+      "sub": "CBP duplicó su zona en 4 costas de EE.UU. — 25 de agosto de 2026"
+    },
+    {
+      "headline": "No, esto no es una ley migratoria",
+      "sub": "Es una expansión de control aduanero en el mar, no en tierra"
+    },
+    {
+      "headline": "Antes 12 millas, ahora el doble",
+      "sub": "CBP amplió su control marítimo en 4 costas — 25 ago 2026"
+    },
+    {
+      "headline": "El error: creer que es solo para migrantes",
+      "sub": "También toca a pescadores y viajeros legales en esas aguas"
+    },
+    {
+      "headline": "¿Hasta dónde llega hoy el control de CBP?",
+      "sub": "Cambió el 25 de agosto de 2026 en 4 costas de EE.UU."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 043",
+      "headline": [
+        {
+          "t": "La frontera en el mar "
+        },
+        {
+          "t": "se movió.",
+          "c": "blue"
+        }
+      ],
+      "sub": "CBP amplió su control en 4 costas de EE.UU. — 25 de agosto de 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "El gobierno decidió vigilar el mar más lejos de 4 costas de EE.UU. Antes revisaba hasta 12 millas mar adentro; ahora hasta 24. "
+        },
+        {
+          "t": "Es como si la cerca de tu patio se moviera el doble de lejos.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "24 millas, no 12.",
+      "body": [
+        {
+          "t": "Desde el 25 de agosto de 2026, CBP puede vigilar y detener barcos hasta 24 millas náuticas de la costa en 4 zonas (antes eran 12). "
+        },
+        {
+          "t": "Fuente: Federal Register y CBP, 25 de agosto de 2026.",
+          "c": "dim"
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "¿A quién le toca esto?",
+      "body": [
+        {
+          "t": "Esto afecta a quien viaje en barco cerca de Florida, el sur de California, Puerto Rico o la costa de Texas. "
+        },
+        {
+          "t": "No cambia nada si ya vives en EE.UU. o tienes un caso de inmigración en trámite.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice el aviso oficial",
+      "sub": "CBP, comunicado oficial — 25 de agosto de 2026",
+      "label": "TEXTO OFICIAL",
+      "code": "expanding its enforcement\njurisdiction from 12 to 24\nnautical miles in designated\nwaters adjacent to South\nFlorida, Southern California,\nPuerto Rico, and the Gulf\nCoast of Texas."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué significa ese texto.",
+      "body": [
+        {
+          "t": "Dice que EE.UU. duplicó su control en el mar: antes 12 millas, ahora 24. "
+        },
+        {
+          "t": "Si viajas en barco por esas costas, te pueden parar más lejos de la orilla. No cambia tu proceso migratorio en tierra.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL DATO CLAVE",
+      "headline": "¿Cuánto creció el control?",
+      "stat": "12→24 millas náuticas"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Si viajas por mar cerca de estas 4 costas: ojo",
+        "Verifica el aviso en federalregister.gov",
+        "No cambia tu trámite ya en proceso",
+        "Guarda esto si conoces a un viajero"
+      ],
+      "cta_title": "Guarda esto para después",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}
