@@ -586,9 +586,12 @@
         "accounts/leverageai/queue/post32-proofread-watermark-disclosure/slide07.png"
       ],
       "caption": "The part people miss about Claude's text watermark: it isn't only for text Claude wrote.\n\nAnthropic's own explainer says the mark indicates text was processed by Claude. Paste in a paragraph you wrote yourself for a proofread, a translation or a summary, and the output carries the mark. It travels with copy-paste and can persist through some editing. The EU has required providers serving its market to mark AI-generated content since 2 August 2026, and other major model developers signed the same code, so this won't stay a Claude-only thing.\n\nTwo things that make it less alarming. Anthropic says the watermark carries no identifying information and can't be traced back to a person, organisation or chat, and nothing hidden is inserted into your text.\n\nSo the move isn't to hide it. It's slide 4: a four-line AI-use note in the proposal, before delivery. A client who already knows how you work doesn't run detectors.\n\nNot legal advice — and absence of a mark proves nothing either way.\n\nSave this before your next handover. Has a client asked you the AI question yet?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#freelancelife #solobusiness #clientwork #consultantlife #claudeai #aiforbusiness #freelancewriting #selfemployed #aiethics",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post32-proofread-watermark-disclosure/reel.mp4"
+      "video": "accounts/leverageai/queue/post32-proofread-watermark-disclosure/reel.mp4",
+      "published_media_id": "17912574294449047",
+      "published_on": "2026-08-27",
+      "threads_posted": true
     },
     {
       "id": "post33-prompt-regression-test",
