@@ -355,22 +355,25 @@ def author(count, start_index, avoid):
     # `fallbacks` parameter"), and it is not documented for Sonnet - so send it
     # to the models known to take it rather than to everything-but-Haiku.
     extra = {}
-    search_tool = dict(WEB_SEARCH_TOOL)
     if MODEL.startswith(("claude-opus", "claude-fable", "claude-mythos")):
         extra = {"betas": ["server-side-fallback-2026-07-01"],
                  "fallbacks": "default"}
-    if "haiku" in MODEL:
-        # Haiku has no programmatic tool calling; the search tool must be
-        # declared direct-call-only or the API rejects the request (400).
-        # Sonnet 4.5+ and Opus 4.5+ support it, so they need no override.
-        search_tool["allowed_callers"] = ["direct"]
+
+    # Both tools are direct-call-only. This is not just a Haiku workaround
+    # (Haiku has no programmatic tool calling at all): we read the batch out of
+    # submit_posts in the FINAL message, so a call the model makes from inside
+    # code execution is invisible to us — and leaves a pending tool use that
+    # the next request cannot resume without a container id (Sonnet 5 did
+    # exactly that on 2026-08-27, 400 "container_id is required").
+    search_tool = dict(WEB_SEARCH_TOOL, allowed_callers=["direct"])
+    submit_tool = dict(SUBMIT_TOOL, allowed_callers=["direct"])
 
     for _ in range(6):
         with client().beta.messages.stream(
             model=MODEL,
             max_tokens=64000,
             system=BRAND,
-            tools=[search_tool, SUBMIT_TOOL],
+            tools=[search_tool, submit_tool],
             messages=messages,
             **extra,
         ) as stream:
