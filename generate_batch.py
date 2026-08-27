@@ -21,11 +21,11 @@ import accounts
 import hooks
 import render_slides
 
-# Authoring model. Per-account override via "model" in account.json; the
-# owner chose Haiku 4.5 as the default (2026-08-17) for cost. Note that the
-# generator's value is in careful source verification and honest strategy
-# reasoning - if a batch's quality slips, this is the first knob to revisit.
-DEFAULT_MODEL = "claude-haiku-4-5-20251001"
+# Authoring model. Per-account override via "model" in account.json. The
+# owner standardised both accounts on Sonnet 5 (2026-08-27). The generator's
+# value is in careful source verification and honest strategy reasoning - if a
+# batch's quality slips, this is the first knob to revisit.
+DEFAULT_MODEL = "claude-sonnet-5"
 
 # One account per invocation (ACCOUNT env / --account). Everything the
 # generator reads and writes — queue, specs, strategy, brand voice — belongs
@@ -350,17 +350,19 @@ def author(count, start_index, avoid):
     # tool_choice stays "auto": forcing submit_posts would stop the model
     # searching first. Server-side search can hit its own iteration limit and
     # return stop_reason "pause_turn" — resend to resume, bounded.
-    # Server-side fallback is an Opus/Sonnet feature; Haiku rejects the
-    # parameter outright (400 "does not support the `fallbacks` parameter").
-    # Only send it when the model can take it.
+    # Server-side refusal fallback is documented for the Opus/Fable tier only.
+    # Haiku rejects the parameter outright (400 "does not support the
+    # `fallbacks` parameter"), and it is not documented for Sonnet - so send it
+    # to the models known to take it rather than to everything-but-Haiku.
     extra = {}
     search_tool = dict(WEB_SEARCH_TOOL)
-    if "haiku" not in MODEL:
+    if MODEL.startswith(("claude-opus", "claude-fable", "claude-mythos")):
         extra = {"betas": ["server-side-fallback-2026-07-01"],
                  "fallbacks": "default"}
-    else:
+    if "haiku" in MODEL:
         # Haiku has no programmatic tool calling; the search tool must be
         # declared direct-call-only or the API rejects the request (400).
+        # Sonnet 4.5+ and Opus 4.5+ support it, so they need no override.
         search_tool["allowed_callers"] = ["direct"]
 
     for _ in range(6):
@@ -726,7 +728,11 @@ def main():
     with open(QUEUE, "w", encoding="utf-8") as f:
         json.dump(sched, f, indent=2, ensure_ascii=False)
 
-    dates = [p["date"] for p in sched["posts"]]
+    # Only scheduled posts hold a slot. Retired ones keep their original date
+    # as a record of when they would have run, and must not collide with the
+    # posts that replaced them.
+    dates = [p["date"] for p in sched["posts"]
+             if p.get("status") in ("queued", "published")]
     assert len(set(dates)) == len(dates), "duplicate dates in queue"
     print(f"\nqueued {added} posts through {max(dates)}")
     return 0

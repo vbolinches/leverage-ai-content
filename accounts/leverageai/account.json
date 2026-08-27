@@ -26,11 +26,23 @@
     "text": "Thanks for the message! 🙌 This inbox runs automated, so this is the only reply you'll get here — but everything we share is already in the posts: every prompt is on the slides, ready to copy. Save the ones you use. New workflow every day at 12:00 CET."
   },
   "idea_sources": {
-    "x_accounts": ["OpenAI", "AnthropicAI", "perplexity_ai", "NotebookLM", "GoogleDeepMind"],
+    "x_accounts": [
+      "OpenAI",
+      "AnthropicAI",
+      "perplexity_ai",
+      "NotebookLM",
+      "GoogleDeepMind"
+    ],
     "rss": [
       "https://simonwillison.net/atom/everything/",
       "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
     ],
-    "hn_queries": ["ChatGPT workflow", "Claude AI", "NotebookLM", "AI productivity"]
-  }
+    "hn_queries": [
+      "ChatGPT workflow",
+      "Claude AI",
+      "NotebookLM",
+      "AI productivity"
+    ]
+  },
+  "model": "claude-sonnet-5"
 }
