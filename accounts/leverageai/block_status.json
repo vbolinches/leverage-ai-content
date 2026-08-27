@@ -1,8 +1,0 @@
-{
-  "first_detected": "2026-08-23",
-  "strikes": 2,
-  "last_detected": "2026-08-24",
-  "cooldown_until": "2026-08-27",
-  "detail": "HTTP 403 on media_publish: code 4, subcode 2207051, \"action is blocked\" (seen on the 2026-08-23 and 2026-08-24 daily runs)",
-  "_comment": "Written by publish.py when Instagram action-blocks the account. Deleted automatically on the next successful publish. While present, publish attempts pause until cooldown_until and the DM responder stays quiet. Appealing in the app (profile -> menu -> Account Status) is the only thing that lifts a block faster."
-}

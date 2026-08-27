@@ -566,9 +566,12 @@
         "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/slide07.png"
       ],
       "caption": "Your pipeline lives in one sheet. Forty rows, twelve columns, and you stopped opening it in March.\n\nGoogle started rolling out Gemini in the Sheets side panel in August 2026, including canvases: click Create canvas, describe the view you want in plain English, and refine it with more prompts until it's right. No formulas, no pivot tables.\n\nThe view that actually pays you is on slide 4. Group by stage, sort by due date, highlight anything that's delivered and unpaid, highlight anything with no next action. That's your Friday twenty minutes.\n\nHonest limits: creating and editing canvases has per-user usage limits, you need Workspace smart features on, and the rollout is staged — if the Gemini icon isn't there, you're waiting. It also can't rescue a tracker you don't keep current.\n\nSave this for Friday. What's the one column your tracker is missing?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #googlesheets #aiworkflow #selfemployed #consultantlife #smallbusinessowner #cashflow #freelancetips",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/reel.mp4"
+      "video": "accounts/leverageai/queue/post31-sheets-canvas-job-tracker/reel.mp4",
+      "published_media_id": "17985614829018783",
+      "published_on": "2026-08-27",
+      "threads_posted": true
     },
     {
       "id": "post32-proofread-watermark-disclosure",
