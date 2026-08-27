@@ -371,7 +371,10 @@ def author(count, start_index, avoid):
     for _ in range(6):
         with client().beta.messages.stream(
             model=MODEL,
-            max_tokens=64000,
+            # 128K is the streaming ceiling on Sonnet 5 / Opus 5. Sonnet
+            # needs the headroom: a 7-post inmigraforma batch (8 slides
+            # plus 5 hook candidates each) overran 64K on 2026-08-27.
+            max_tokens=128000,
             system=BRAND,
             tools=[search_tool, submit_tool],
             messages=messages,
