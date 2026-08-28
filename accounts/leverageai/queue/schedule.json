@@ -606,7 +606,10 @@
         "accounts/leverageai/queue/post33-prompt-regression-test/slide07.png"
       ],
       "caption": "Your proposal prompt used to land. Now the output is flabbier and you can't say why.\n\nNothing changed on your side. The model did. OpenAI removed the GPT-5.1 models from ChatGPT in March 2026 and moved existing conversations onto newer ones; GPT-4.5 and o3 were each retired after a published sunset period. Prompts you tuned against an older model don't get a migration notice.\n\nSo keep the five prompts that make you money in one plain text file — proposal, follow-up, scope change, invoice chase, case study — with one good output saved next to each. That saved output is the benchmark. Without it you're arguing with your memory.\n\nThen run slide 4 whenever your default model shifts. It compares old output to new, names what drifted, and rewrites the prompt to get the old quality back.\n\nWhat it can't do: bring back a retired model. Sometimes the honest answer is that the prompt needs rebuilding.\n\nSave this. Which of your five prompts would you notice breaking first?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #consultantlife #promptengineering #freelancetips #smallbusinessowner",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "17985015807022110",
+      "published_on": "2026-08-28",
+      "threads_posted": true
     },
     {
       "id": "post34-quiz-before-discovery-call",
