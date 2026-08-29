@@ -624,9 +624,12 @@
         "accounts/leverageai/queue/post34-quiz-before-discovery-call/slide07.png"
       ],
       "caption": "A good lead in an industry you've never worked in. You've got two days and no idea what they call things.\n\nMost people ask AI for a briefing, skim it, and walk into the call sounding like they skimmed a briefing. ChatGPT's newer quiz mode is better for this: ask it to quiz you on a topic and you answer inside the conversation, one question at a time. It's on all consumer plans, web and mobile.\n\nSlide 3 is the prompt. Fifteen questions on how they make money, what goes wrong in the job, who signs off, and the vocabulary. Graded and corrected as you go. Then five questions to ask them and three claims to avoid.\n\nThe gaps it exposes are the real output. Ask the client those things directly — clients like being asked how their business works.\n\nOne limitation: the quiz is generated, not sourced. Anything you'll repeat as fact in the meeting, check against a real source first.\n\nSave this before your next discovery call. What's the sector you keep bluffing?\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aiworkflow #selfemployed #consultantlife #salestips #clientwork #smallbusinessowner",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post34-quiz-before-discovery-call/reel.mp4"
+      "video": "accounts/leverageai/queue/post34-quiz-before-discovery-call/reel.mp4",
+      "published_media_id": "18142266988563450",
+      "published_on": "2026-08-29",
+      "threads_posted": true
     },
     {
       "id": "post35-nda-check-before-pasting",
