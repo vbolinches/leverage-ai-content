@@ -708,9 +708,12 @@
         "accounts/inmigraforma/queue/post39-visa-bulletin-septiembre-2026-tabla/slide07.png"
       ],
       "caption": "USCIS ya publicó qué tabla del Visa Bulletin se usa en septiembre de 2026 para mandar el I-485 (el formulario para pedir la Green Card desde dentro de EE.UU.). Para todas las categorías de familia se usa la tabla \"Dates for Filing\". Para todas las categorías de empleo se usa la tabla \"Final Action Dates\".\n\nEn palabras simples: cada mes hay dos listas de fechas y solo una sirve para mandar tus papeles. Busca la fila de tu categoría y la columna de tu país de nacimiento. Si tu fecha de prioridad es anterior a la fecha de la tabla, o si dice \"C\", puedes mandar el I-485 si cumples lo demás.\n\nIn English: for September 2026, USCIS says family-sponsored applicants use the Dates for Filing chart and employment-based applicants use the Final Action Dates chart. In plain words: check the right chart before you file.\n\nFuente oficial: https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/when-to-file-your-adjustment-of-status-application-for-family-sponsored-or-employment-based-128\nhttps://travel.state.gov/content/dam/visas/Bulletins/visabulletin_September2026.pdf\n\nGuarda este post: la decisión cambia cada mes y conviene tener el enlace a mano.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n#inmigracion #visabulletin #greencard #uscis #i485 #inmigrantes #estadosunidos #residencia #noticiasinmigracion",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/inmigraforma/queue/post39-visa-bulletin-septiembre-2026-tabla/reel.mp4"
+      "video": "accounts/inmigraforma/queue/post39-visa-bulletin-septiembre-2026-tabla/reel.mp4",
+      "published_media_id": "17898993309662207",
+      "published_on": "2026-08-29",
+      "facebook_page_posted": true
     },
     {
       "id": "post40-excepcion-final-action-dates",
