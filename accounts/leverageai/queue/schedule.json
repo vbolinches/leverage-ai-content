@@ -644,9 +644,12 @@
         "accounts/leverageai/queue/post35-nda-check-before-pasting/slide07.png"
       ],
       "caption": "You've been pasting client material into ChatGPT for a year without reading the confidentiality clause. Most people have.\n\nTen minutes fixes it. Slide 3 makes the model quote every clause that limits sharing with third parties or sending data abroad, then give you a flat yes / no / unclear per clause, then draft the email that asks the client. Quotes matter — you want the wording, not a reassuring summary.\n\nIf the answer is no, redacting and working on structure only usually gets you most of the value. Asking permission gets the rest; clients often say yes once you name the tool. Running a model on your own machine is a genuine third option now — Meta released Muse Glimmer in August 2026 under an Apache 2.0 licence, a 30B model that runs on a Mac or PC with one decent GPU — but it's slower and weaker than what you're used to, so treat it as the last resort, not the default.\n\nThis is not legal advice. A model misses cross-references and local law. For a regulated client, pay a lawyer once and reuse the answer forever.\n\nSave this and run it on your biggest contract this week.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #clientwork #consultantlife #selfemployed #aiforbusiness #dataprivacy #freelancetips #smallbusinessowner",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post35-nda-check-before-pasting/reel.mp4"
+      "video": "accounts/leverageai/queue/post35-nda-check-before-pasting/reel.mp4",
+      "published_media_id": "17997729833801760",
+      "published_on": "2026-08-30",
+      "threads_posted": true
     },
     {
       "id": "post36-claude-code-doubled-limits",
