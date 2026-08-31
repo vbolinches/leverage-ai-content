@@ -663,7 +663,10 @@
         "accounts/leverageai/queue/post36-claude-code-doubled-limits/slide06.png"
       ],
       "caption": "Claude Code usage limits doubled on May 6, 2026. If you use it to build workflows, automate client tasks, or generate reports—you can do twice as much now before hitting a ceiling.\n\nThe catch: the free tier still maxes out immediately. Pro is worth the $20/month if you're building anything that takes more than a few turns.\n\nSave this if you're thinking about building something inside Claude for your business, or share it with a developer who is.",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "17961377609984508",
+      "published_on": "2026-08-31",
+      "threads_posted": true
     },
     {
       "id": "post37-notebooklm-notebook-copying",
