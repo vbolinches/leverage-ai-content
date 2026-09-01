@@ -2549,6 +2549,12 @@
       "followers": 165,
       "posts": [
         {
+          "slug": "post42-dos-pasos-visa-bulletin-uscis",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0
+        },
+        {
           "slug": "post41-abogado-presente-entrevista-uscis",
           "format": "reel",
           "likes": 0,
@@ -2612,12 +2618,6 @@
           "slug": "post24-efiling-exencion-undue-hardship",
           "format": "carousel",
           "likes": 3,
-          "comments": 0
-        },
-        {
-          "slug": "post23-efiling-180-dias-mas-60-dias",
-          "format": "reel",
-          "likes": 2,
           "comments": 0
         }
       ]
