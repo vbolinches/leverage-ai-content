@@ -1,6 +1,7 @@
 {
   "_comment": "Expiry tracking for IG_ACCESS_TOKEN. Contains NO secret — just dates. The daily monitor reads this and warns before the token dies. After refreshing the token by hand, update both dates here and commit.",
-  "minted": "2026-07-25",
-  "expires": "2026-09-22",
-  "how_to_refresh": "App dashboard -> leverage-ai-publisher -> Use cases -> Customize -> API setup with Instagram login -> Generate token next to leverageai.daily, then: gh secret set IG_ACCESS_TOKEN"
+  "minted": "2026-09-01",
+  "expires": "2026-10-30",
+  "how_to_refresh": "App dashboard -> leverage-ai-publisher -> Use cases -> Customize -> API setup with Instagram login -> Generate token next to leverageai.daily, then: gh secret set IG_ACCESS_TOKEN",
+  "last_refresh": "automated via Refresh Instagram token workflow (GH_PAT now valid)"
 }
