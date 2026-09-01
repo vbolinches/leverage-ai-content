@@ -3,5 +3,5 @@
   "minted": "2026-09-01",
   "expires": "2026-10-30",
   "how_to_refresh": "App dashboard -> leverage-ai-publisher -> Use cases -> Customize -> API setup with Instagram login -> Generate token next to leverageai.daily, then: gh secret set IG_ACCESS_TOKEN",
-  "last_refresh": "automated via Refresh Instagram token workflow (GH_PAT now valid)"
+  "last_refresh": "auto-refreshed by the Refresh Instagram token workflow"
 }
