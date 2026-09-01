@@ -680,9 +680,12 @@
         "accounts/leverageai/queue/post37-notebooklm-notebook-copying/slide06.png"
       ],
       "caption": "NotebookLM just added full notebook copying. That means research notebooks with all your sources, artifacts, and chats now copy as a complete unit—not piecemeal.\n\nUseful when you're handing off research to a client, archiving a project, or building a template for work you do repeatedly.\n\nThe limit: sources follow your Google AI plan limits, so check your tier. Comment what you use NotebookLM for—research, client work, or learning.",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post37-notebooklm-notebook-copying/reel.mp4"
+      "video": "accounts/leverageai/queue/post37-notebooklm-notebook-copying/reel.mp4",
+      "published_media_id": "18109222703116399",
+      "published_on": "2026-09-01",
+      "threads_posted": true
     },
     {
       "id": "post38-chatgpt-drive-no-reupload",
