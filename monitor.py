@@ -273,10 +273,81 @@ def render(report):
     return 0
 
 
+
+def check_pat():
+    """Warn before GH_PAT expires, and shout if it is already dead.
+
+    GH_PAT is what lets the monthly refresh workflow write a refreshed
+    Instagram token back into the repo's secrets. Nothing else watches it, and
+    its failure mode is silent: refresh stops working, no post fails, and
+    publishing dies ~60 days later when the Instagram tokens themselves lapse.
+    That is exactly what happened between 2026-08-01 and 2026-09-01. The PAT is
+    shared across accounts, so this runs once per digest, not once per account.
+    """
+    pat = os.environ.get("GH_PAT", "").strip()
+    if not pat:
+        print("::warning::GH_PAT is not available to the monitor, so its "
+              "expiry cannot be checked. Instagram token auto-refresh depends "
+              "on it.")
+        return 0
+
+    req = urllib.request.Request(
+        "https://api.github.com/user",
+        headers={"Authorization": f"Bearer {pat}",
+                 "Accept": "application/vnd.github+json"})
+    try:
+        with urllib.request.urlopen(req) as r:
+            expires = r.headers.get("github-authentication-token-expiration")
+    except urllib.error.HTTPError as e:
+        print(f"::error::GH_PAT is rejected by GitHub (HTTP {e.code}). Token "
+              f"auto-refresh is broken until it is replaced, and publishing "
+              f"stops roughly 60 days after the last successful refresh. "
+              f"Replace it at "
+              f"https://github.com/settings/personal-access-tokens")
+        return 1
+    except Exception as e:
+        print(f"::warning::could not check GH_PAT expiry: {e}")
+        return 0
+
+    if not expires:
+        print("GH_PAT authenticates and carries no expiry date.")
+        return 0
+
+    # GitHub sends "2027-08-31 00:00:00 +0000" (and has used an ISO form);
+    # the leading date is the part that matters either way.
+    try:
+        day = date.fromisoformat(expires.strip()[:10])
+    except ValueError:
+        print(f"::warning::GH_PAT expiry not parseable: {expires!r}")
+        return 0
+
+    left = (day - date.today()).days
+    print(f"GH_PAT expires in {left} days ({day})")
+    if left <= 14:
+        print(f"::error::GH_PAT expires in {left} days. Once it lapses the "
+              f"monthly token refresh fails silently and publishing stops "
+              f"about 60 days later. Replace it at "
+              f"https://github.com/settings/personal-access-tokens")
+        return 1
+    if left <= 45:
+        print(f"::warning::GH_PAT expires in {left} days ({day}) — replace it "
+              f"before it lapses; Instagram token auto-refresh depends on it.")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--check-pat", action="store_true",
+                    help="check GH_PAT's expiry instead of an account digest; "
+                         "needs no Instagram credentials")
     a = ap.parse_args()
+
+    # Runs on its own, before the Instagram credential check: the PAT has
+    # nothing to do with any one account, and this must still report when an
+    # account's own token is missing.
+    if a.check_pat:
+        return check_pat()
 
     if not TOKEN or not IG_ID:
         sys.exit("IG_ACCESS_TOKEN and IG_USER_ID must be set")

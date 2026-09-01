@@ -22,6 +22,20 @@ jobs:
       - id: ls
         run: echo "matrix=$(python3 accounts.py --list-json)" >> "$GITHUB_OUTPUT"
 
+  # The PAT is shared across accounts and its lapse is silent, so it gets its
+  # own job rather than being repeated inside the per-account matrix.
+  pat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check GH_PAT expiry
+        env:
+          # Any enabled slug satisfies monitor.py's account resolution; the
+          # PAT check itself is account-independent.
+          ACCOUNT: leverageai
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python3 monitor.py --check-pat
+
   monitor:
     needs: accounts
     runs-on: ubuntu-latest
