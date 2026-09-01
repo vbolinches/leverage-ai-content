@@ -57,6 +57,51 @@ MIN_SCORE = 6.0
 MAX_HEADLINE = 40
 
 
+def cached(text):
+    """A system-prompt string as a single cacheable block.
+
+    Every Anthropic call in this repo puts its system prompt through this
+    (never a bare string) so a static instruction block gets reused instead
+    of re-billed on every call. The payoff here is concrete, not theoretical:
+    grade() runs once per post in a batch with an IDENTICAL system prompt and
+    tool schema each time, so post 2 onward reads what post 1 wrote instead
+    of paying full input price again. Anthropic caches by content hash, not
+    object identity, so a freshly-built string with the same bytes still
+    hits — this doesn't need memoising on our side, only marking as cacheable.
+    Default 5-minute TTL: every call site here fires within seconds of the
+    last one in the same run, never across separate daily workflow runs, so
+    there is no case in this repo where the 1h TTL's 2x write cost would earn
+    its keep over the default's 1.25x.
+    """
+    return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
+
+
+def cached_tools(*tools):
+    """Tool list with cache_control on the last one, caching all of them.
+
+    A cache_control block on a tool caches that tool AND every tool before it
+    in the list — so it belongs on the LAST tool only, never on all of them.
+    """
+    tools = [dict(t) for t in tools]
+    tools[-1] = dict(tools[-1], cache_control={"type": "ephemeral"})
+    return tools
+
+
+def log_cache_usage(resp, label):
+    """One-line cache read/write report, matching this repo's print-based
+    diagnostics elsewhere (e.g. generate_batch's 'grounded on N web search').
+    Silent about zero-token reads/writes so healthy steady-state calls (all
+    read, nothing written) don't spam output.
+    """
+    u = getattr(resp, "usage", None)
+    if u is None:
+        return
+    read = getattr(u, "cache_read_input_tokens", 0) or 0
+    write = getattr(u, "cache_creation_input_tokens", 0) or 0
+    if read or write:
+        print(f"  [cache:{label}] read={read} write={write}")
+
+
 def flatten(rich):
     """Rich-text segments or a plain string -> plain string."""
     if isinstance(rich, str):
@@ -280,14 +325,18 @@ def grade(client, acct, slug, pool):
            f"{len(labelled)} in total, ranked 1 to {len(labelled)} with no "
            f"rank used twice.\n\n{listing}")
 
+    # system + tools are byte-identical on every grade() call for this acct
+    # within a run (one call per post in the batch) -- cache_control here is
+    # the whole reason post 2 onward is cheap.
     resp = client.messages.create(
         model=SCORER_MODEL,
         max_tokens=4000,
-        system=_grader_system(acct),
-        tools=[GRADE_TOOL],
+        system=cached(_grader_system(acct)),
+        tools=cached_tools(GRADE_TOOL),
         tool_choice={"type": "tool", "name": "submit_grades"},
         messages=[{"role": "user", "content": msg}],
     )
+    log_cache_usage(resp, f"grade:{slug}")
 
     grades = {}
     for block in resp.content:
@@ -368,14 +417,19 @@ def retry(client, acct, brand, post, scored, n=4):
         f"Headline must be at most {MAX_HEADLINE} characters — it is set very "
         f"large and overflows the canvas past that. Submit with submit_hooks."
     )
+    # Caches are per-model, so this does NOT hit author()'s cache write (that
+    # runs on MODEL, this runs on SCORER_MODEL) -- but a batch can call retry()
+    # for more than one post, and every call here shares the same `brand` text
+    # and SCORER_MODEL, so the second retry in a batch reads the first's write.
     resp = client.messages.create(
         model=SCORER_MODEL,
         max_tokens=4000,
-        system=brand,
-        tools=[RETRY_TOOL],
+        system=cached(brand),
+        tools=cached_tools(RETRY_TOOL),
         tool_choice={"type": "tool", "name": "submit_hooks"},
         messages=[{"role": "user", "content": msg}],
     )
+    log_cache_usage(resp, f"retry:{post.get('slug', '?')}")
     for block in resp.content:
         if block.type == "tool_use" and block.name == "submit_hooks":
             return [{"headline": h["headline"], "sub": h.get("sub", ""),

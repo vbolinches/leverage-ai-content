@@ -188,3 +188,15 @@ web search. Do not let idea items bypass that rule.
   before push — matrix jobs racing each other lose commits otherwise.
 - Slides render with DejaVu on every platform so local previews match CI.
 - Never commit a token. `token_status.json` holds dates only.
+- Every Anthropic API call uses prompt caching — never pass `system` as a bare
+  string or an uncached `tools` list. Use `hooks.cached(text)` for the system
+  prompt and `hooks.cached_tools(*tools)` for the tools list (puts
+  `cache_control` on the last tool only — that caches every tool before it
+  too, so never mark more than the last), and call
+  `hooks.log_cache_usage(resp, label)` after the response so a hit/write shows
+  up in the run log. Default 5-minute TTL everywhere; nothing in this repo
+  calls the same prompt again after a long enough gap for 1h TTL's 2x write
+  cost to earn out. Caches are per-model — `hooks.grade()`/`retry()` run on
+  `SCORER_MODEL`, `generate_batch.author()` on `MODEL`; identical text on
+  different models is still two separate cache entries. This applies to any
+  new call site too, not just the three that exist today.

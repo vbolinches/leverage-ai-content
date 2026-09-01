@@ -345,7 +345,10 @@ def author(count, start_index, avoid):
         + "\n\n" + strategy_context()
     )
 
-    messages = [{"role": "user", "content": prompt}]
+    # cache_control here too: prompt is unchanged across pause_turn retries
+    # below, and it's large (the full schema + strategy context + ideas
+    # digest) -- worth its own breakpoint alongside system and tools.
+    messages = [{"role": "user", "content": hooks.cached(prompt)}]
 
     # tool_choice stays "auto": forcing submit_posts would stop the model
     # searching first. Server-side search can hit its own iteration limit and
@@ -368,6 +371,9 @@ def author(count, start_index, avoid):
     search_tool = dict(WEB_SEARCH_TOOL, allowed_callers=["direct"])
     submit_tool = dict(SUBMIT_TOOL, allowed_callers=["direct"])
 
+    # BRAND is identical on every iteration of this loop, and SUBMIT_TOOL's
+    # schema is the biggest single block in the request (the whole slide
+    # spec) -- caching pays off the moment a pause_turn forces a second pass.
     for _ in range(6):
         with client().beta.messages.stream(
             model=MODEL,
@@ -375,16 +381,20 @@ def author(count, start_index, avoid):
             # needs the headroom: a 7-post inmigraforma batch (8 slides
             # plus 5 hook candidates each) overran 64K on 2026-08-27.
             max_tokens=128000,
-            system=BRAND,
-            tools=[search_tool, submit_tool],
+            system=hooks.cached(BRAND),
+            tools=hooks.cached_tools(search_tool, submit_tool),
             messages=messages,
             **extra,
         ) as stream:
             resp = stream.get_final_message()
+        hooks.log_cache_usage(resp, "author")
 
         if resp.stop_reason == "pause_turn":
+            # Same cached block as the initial message, byte-for-byte -- the
+            # assistant turn is appended after it, not inside it, so this
+            # stays a prefix match against what the first call wrote.
             messages = [
-                {"role": "user", "content": prompt},
+                {"role": "user", "content": hooks.cached(prompt)},
                 {"role": "assistant", "content": resp.content},
             ]
             continue
