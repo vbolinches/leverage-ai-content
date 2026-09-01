@@ -80,14 +80,22 @@ jobs:
           fi
 
           NEW=$(echo "$resp" | jq -r '.access_token')
-          EXPIRES=$(echo "$resp" | jq -r '.expires_in')
+          # Facebook's fb_exchange_token omits expires_in for long-lived
+          # tokens. jq -r then prints "null", and `set -u` treats a bare word
+          # in arithmetic as an unbound variable - which killed this step even
+          # though the token itself came back fine.
+          EXPIRES=$(echo "$resp" | jq -r '.expires_in // empty')
           if [ -z "$NEW" ] || [ "$NEW" = "null" ]; then
             echo "::error::No access_token in refresh response."; exit 1
           fi
           echo "::add-mask::$NEW"
 
-          DAYS=$(( EXPIRES / 86400 ))
-          echo "New token valid for ~$DAYS days (until $(date -u -d "+$DAYS days" +%F))"
+          if [ -n "$EXPIRES" ]; then
+            DAYS=$(( EXPIRES / 86400 ))
+            echo "New token valid for ~$DAYS days (until $(date -u -d "+$DAYS days" +%F))"
+          else
+            echo "New token issued; no expires_in returned (normal for Facebook long-lived tokens)"
+          fi
 
           echo "--- Checking GH_PAT ---"
           # Pasted secrets often carry a trailing newline or stray whitespace,
@@ -199,8 +207,12 @@ jobs:
           NEW=$(echo "$resp" | jq -r '.access_token')
           [ -n "$NEW" ] && [ "$NEW" != "null" ] || { echo "::error::no token in response"; exit 1; }
           echo "::add-mask::$NEW"
-          DAYS=$(( $(echo "$resp" | jq -r '.expires_in') / 86400 ))
-          echo "New Threads token valid ~$DAYS days"
+          EXPIRES=$(echo "$resp" | jq -r '.expires_in // empty')
+          if [ -n "$EXPIRES" ]; then
+            echo "New Threads token valid ~$(( EXPIRES / 86400 )) days"
+          else
+            echo "New Threads token issued; no expires_in returned"
+          fi
           PAT=$(printf '%s' "${GH_PAT}" | tr -d '[:space:]')
           echo "::add-mask::$PAT"
           export GH_PAT="$PAT"
