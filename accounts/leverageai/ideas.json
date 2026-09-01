@@ -1,6 +1,190 @@
 {
-  "updated": "2026-08-25",
+  "updated": "2026-09-01",
   "items": [
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Introducing wrapture",
+      "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
+      "at": "2026-08-31",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Andrew Digby",
+      "url": "https://simonwillison.net/2026/Aug/31/andrew-digby/",
+      "at": "2026-08-31",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Debian won&#8217;t ban AI code from its Linux distribution",
+      "url": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+      "at": "2026-08-31",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "New York Governor Kathy Hochul thinks AI should be ‘less evil’",
+      "url": "https://www.theverge.com/podcast/986661/ny-gov-kathy-hochul-ai-data-centers-ban-3d-printed-guns-flock-cameras",
+      "at": "2026-08-31",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "ChatGPT to face tougher regulation in the EU",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+      "at": "2026-08-31",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Instagram cracks down on AI accounts pretending to be human",
+      "url": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
+      "at": "2026-08-31",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Texas Governor Abbott blocks funding for more Flock cameras",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
+      "at": "2026-08-31",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Sony Music Publishing and Warner Chappell are suing Anthropic",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+      "at": "2026-08-31",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Understanding ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "at": "2026-08-30",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "hn/AI productivity",
+      "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
+      "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+      "at": "2026-08-29",
+      "signal": 476,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Introducing Hy4 Preview",
+      "url": "https://simonwillison.net/2026/Aug/29/hy4/",
+      "at": "2026-08-29",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Just a rumour of a bug is enough to find a security exploit these days",
+      "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
+      "at": "2026-08-28",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Musicians-turned-detectives are hunting for AI grifters",
+      "url": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
+      "at": "2026-08-28",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Trump’s EPA wants to let data centers hide their air pollution",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
+      "at": "2026-08-28",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Anthropic was illegally blacklisted by the Trump administration, court rules",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
+      "at": "2026-08-28",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Google’s AI note-taking app now allows you to interact with books",
+      "url": "https://www.theverge.com/tech/985567/google-gemini-notebook-expert-sources-books",
+      "at": "2026-08-28",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "hn/NotebookLM",
+      "title": "AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
+      "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+      "at": "2026-08-27",
+      "signal": 112,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Tell HN: Man, AI is killing my brain",
+      "url": "https://news.ycombinator.com/item?id=49468252",
+      "at": "2026-08-27",
+      "signal": 54,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+      "at": "2026-08-27",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Analyzing student votes across AI models for college essay help",
+      "url": "https://studyarena.com/blog/chatgpt-vs-claude-vs-gemini-college-essays-2026",
+      "at": "2026-08-26",
+      "signal": 43,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Qwen3.8-Flash-Next",
+      "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+      "at": "2026-08-26",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Paul Dix",
+      "url": "https://simonwillison.net/2026/Aug/26/paul-dix/",
+      "at": "2026-08-26",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "EVE Online: The Move to Python 3 Begins!",
+      "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
+      "at": "2026-08-25",
+      "signal": 0,
+      "seen": "2026-09-01"
+    },
     {
       "source": "rss/simonwillison.net",
       "title": "llm-anthropic 0.27",
@@ -70,7 +254,7 @@
       "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
       "url": "https://github.com/proliferate-ai/proliferate",
       "at": "2026-08-21",
-      "signal": 45,
+      "signal": 46,
       "seen": "2026-08-25"
     },
     {
@@ -456,190 +640,6 @@
       "at": "2026-08-12",
       "signal": 0,
       "seen": "2026-08-18"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "alchemy-utils 0.1a0",
-      "url": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
-      "at": "2026-08-12",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Florian Herrengt",
-      "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
-      "at": "2026-08-12",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "There are no lossless transformations of natural-language text",
-      "url": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/",
-      "at": "2026-08-11",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
-      "at": "2026-08-11",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "datasette-upload-dbs 0.5a0",
-      "url": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/",
-      "at": "2026-08-11",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "hn/Claude AI",
-      "title": "How Claude marks AI-generated content",
-      "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
-      "at": "2026-08-10",
-      "signal": 451,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Introducing Muse Glimmer",
-      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
-      "at": "2026-08-10",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting OpenClaw",
-      "url": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
-      "at": "2026-08-10",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Mark Zuckerberg doesn’t understand how to live",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision",
-      "at": "2026-08-10",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Four takeaways from Mark Zuckerberg&#8217;s massive AI manifesto",
-      "url": "https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble",
-      "at": "2026-08-10",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "What happens to Bose when headphones become AI?",
-      "url": "https://www.theverge.com/podcast/975732/bose-ceo-lila-snyder-ai-wearables-licensing-headphones-audio",
-      "at": "2026-08-10",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "An Amazon data center could have the worst polluting power plant in the country",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
-      "at": "2026-08-10",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Introducing Muse Glimmer",
-      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
-      "at": "2026-08-10",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting OpenClaw (running Opus 4.6)",
-      "url": "https://simonwillison.net/2026/Aug/10/openclaw/",
-      "at": "2026-08-10",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "hn/NotebookLM",
-      "title": "Windows 11's built-in Weather app wastes more than 1 GB of RAM",
-      "url": "https://www.notebookcheck.net/Windows-11-s-built-in-Weather-app-wastes-more-than-1-GB-of-RAM.1364205.0.html",
-      "at": "2026-08-09",
-      "signal": 671,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Claude Opus 5 system prompt",
-      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
-      "at": "2026-08-09",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "GitHub Models is now retired",
-      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
-      "at": "2026-08-09",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "SQLite compressed text-history prototypes",
-      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/#atom-everything",
-      "at": "2026-08-09",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Claude Opus 5 system prompt",
-      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/",
-      "at": "2026-08-09",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "GitHub Models is now retired",
-      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
-      "at": "2026-08-09",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "SQLite compressed text-history prototypes",
-      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
-      "at": "2026-08-09",
-      "signal": 0,
-      "seen": "2026-08-18"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
-      "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
-      "at": "2026-08-08",
-      "signal": 0,
-      "seen": "2026-08-11"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-      "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
-      "at": "2026-08-08",
-      "signal": 0,
-      "seen": "2026-08-11"
     }
   ]
 }
