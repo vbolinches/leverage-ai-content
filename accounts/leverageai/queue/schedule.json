@@ -699,9 +699,12 @@
         "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/slide06.png"
       ],
       "caption": "ChatGPT's Google Drive integration just matured: you can now browse your Drive directly from the Library, pull files into chats without uploading again, and keep Docs/Sheets/Slides open side by side while you work.\n\nThe catch: ChatGPT reads what you point it at. If you drop a stale brief or old pricing list, it will quote it confidently.\n\nSave this if you're pulling documents into ChatGPT constantly. Comment: do you hand it confidential files?",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/reel.mp4"
+      "video": "accounts/leverageai/queue/post38-chatgpt-drive-no-reupload/reel.mp4",
+      "published_media_id": "18339515383282830",
+      "published_on": "2026-09-02",
+      "threads_posted": true
     },
     {
       "id": "post39-invoicer-ai-natural-language",
