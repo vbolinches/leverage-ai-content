@@ -1,0 +1,118 @@
+{
+  "slug": "post47-chatgpt-upwork-discovery",
+  "art": "chat",
+  "caption": "Since April, Upwork's marketplace lives inside ChatGPT. A client can describe their project in plain language and get matched straight to a freelancer — no browsing profiles first.\n\nThat changes what makes a profile work. Matching runs on how specifically you've described your service, not how professional your resume-style bio sounds. 'Graphic designer' loses to 'logo redesign for small bakeries, 5-day turnaround.'\n\nThe prompt on slide 4 rewrites your profile the way a client would actually phrase their need. Save this before your next profile update.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #upwork #selfemployed #clientwork #consultantlife #freelanceclients",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 047",
+      "headline": "Your profile still reads like a resume.",
+      "sub": "Clients can now find you through ChatGPT, not just search.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "What changed in April.",
+      "body": [
+        {
+          "t": "Upwork's marketplace now lives inside ChatGPT. A client describes a project in plain language and "
+        },
+        {
+          "t": "gets matched straight from Upwork's talent pool",
+          "c": "blue",
+          "b": true
+        },
+        {
+          "t": " — no separate search, no browsing profiles first."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Matching runs on your words.",
+      "body": [
+        {
+          "t": "The match happens on how your profile is written, not a resume format. A title like 'graphic designer' loses to "
+        },
+        {
+          "t": "'logo redesign for small bakeries, 5-day turnaround'",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " when a client describes a specific need."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Rewrite it like a client would ask.",
+      "sub": "Paste your current profile text in first.",
+      "label": "COPY THIS PROMPT",
+      "code": "Here's my Upwork profile: [paste it].\nRewrite the title and first two\nlines the way a client would type\ntheir need into ChatGPT — specific\nservice, specific client type,\nspecific outcome."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "You don't control the handoff.",
+      "body": [
+        {
+          "t": "Once matched, Upwork's own agent, Uma, scopes the work and drafts the contract. "
+        },
+        {
+          "t": "Review anything it produces before you agree",
+          "c": "dim",
+          "b": true
+        },
+        {
+          "t": " — a matching algorithm isn't the same as a client who's read your terms."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Clients now skip straight to:",
+      "stat": "no search required"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Client describes the need",
+        "ChatGPT matches to talent",
+        "Handed to Upwork's Uma",
+        "Review before you agree"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "A vague profile costs you the match.",
+      "sub": "ChatGPT now sends clients straight to Upwork talent."
+    },
+    {
+      "headline": "Being found doesn't start on Upwork anymore.",
+      "sub": "It starts with what someone types into ChatGPT."
+    },
+    {
+      "headline": "Browse profiles. Now: describe, matched.",
+      "sub": "ChatGPT's Upwork integration skips the search step."
+    },
+    {
+      "headline": "ChatGPT can now hand clients straight to you.",
+      "sub": "Upwork's marketplace has lived inside it since April."
+    },
+    {
+      "headline": "18 million freelancers, one ChatGPT prompt.",
+      "sub": "That's the pool a client's plain-language request pulls from."
+    }
+  ]
+}

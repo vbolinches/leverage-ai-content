@@ -1,3 +1,4 @@
+
 # Content strategy — maintained by the generator
 
 This file is the loop's long-term memory. Each generation run reads it, writes
@@ -16,255 +17,223 @@ small operators. Every post is framed around a task a self-employed person
 actually has (proposals, follow-ups, invoicing, scope creep, bookkeeping, client
 confidentiality, their own marketing) and the time or money it wins back.
 
-## Current read (2026-08-16 brief)
+## Current read (2026-09-02 brief)
 
-12 published posts, 8 followers (+7 over 22 days). Followers moved by one in the
-five days since the last brief. Reach is still concentrated in a handful of posts
-and the concentration tracks format exactly.
+10 followers, +9 over 38 days across 12 published posts. Growth is still slow
+and reach is still extremely concentrated.
 
 Numbers in this brief, with format labelled:
 
-  Reels:     post20 (104), post22 (54), post14 (37)
-  Carousels: post18 (4), post21 (2), post11 (2)
+  Best:  post26 case-study one-pager [reel] — reach 113, prompt slide True
+         post35 NDA paste-check [reel] — reach 107, prompt slide True
+         post32 proofread-watermark disclosure [reel] — reach 93, prompt slide True
+  Worst: post34 sector quiz before discovery call [reel] — reach 6, prompt slide True
+         post37 NotebookLM notebook copying [reel] — reach 1, prompt slide False
+         post36 Claude Code doubled limits [carousel] — reach 1, prompt slide False
 
-That is now two consecutive briefs where **every** double-digit reach number is a
-reel and **no** carousel has cleared 4. Six posts, clean separation, no overlap.
-Treating the format constraint as settled (see Confirmed).
+**New finding: topic universality now looks like a bigger lever than hook
+shape or even format.** The three worst posts share something the three best
+posts don't: each requires a narrow scenario or a tool most of this audience
+doesn't use. post36 is about Claude *Code* — a terminal coding tool most
+solo consultants, coaches, and service freelancers have no use for, regardless
+of how well the hook was written. post37 is about copying NotebookLM notebooks
+whole, a mechanic that only matters if you're already deep in a NotebookLM
+research habit. post34 assumes a specific hypothetical (a discovery call in an
+unfamiliar sector) rather than a task nearly everyone in the audience has. The
+three best posts — a case-study one-pager, a paste-this-into-ChatGPT safety
+check, a proofread disclosure line — are tasks essentially every solo operator
+does. **This batch (043–049) was screened for audience fit before topic
+selection**: Claude Cowork is explicitly marketed at non-programmers, Claude's
+write-actions post is about email (universal), and the Gemini Notebook post
+uses a business-book scenario rather than a notebook-management mechanic.
 
-**post20 is the new ceiling and it is not news-pegged.** "Your AI doesn't know
-your business" — a business context file — did 104 reach, double the best
-news-pegged reel (post22 watermarking, 54). Both were reels, 7 slides, both had a
-prompt slide, both were tightly niched. This is the first apples-to-apples
-comparison the account has produced on the news-peg question, and it points the
-opposite way to the hypothesis: the *pain* was generic and permanent, and it
-travelled furthest. One pair is not proof, but the hypothesis is downgraded, not
-carried forward neutrally (see Working hypotheses).
+**Hook grader calibration — flagged, not yet concluded.** Only two posts in
+this brief carry a pre-publish grader score: post36 (8.2/10, shape: change) and
+post37 (7.2/10, shape: mistake). Both scored well above average pre-publish and
+both landed at reach 1 — tied for the worst result in the dataset. That is the
+opposite of what a working grader should produce. Per standing instructions,
+two graded posts is far short of the ~6 needed to conclude the grader is
+miscalibrated, so this is **not** being treated as disproof yet — but it is
+suspicious enough to flag loudly: the grader appears to score against the
+"cover names a pain/change/deficiency" rule in Confirmed without any way to
+weigh whether the *topic itself* reaches this audience, which the new finding
+above suggests may matter more. Watching for more graded posts before acting.
 
-**What the three reels share, and the three carousels don't:** all three reels
-name a concrete deficiency in the reader's own setup ("your AI doesn't know your
-business", "Claude now watermarks your text", the Feynman explain-it-back gap).
-The worst carousel hook on record, post18's "Stop chatting. Write a brief.", is
-an instruction — it tells the reader off instead of telling them something about
-themselves. Confounded by format, so it stays a hypothesis, but every cover in
-this batch is written as a statement of fact about the reader's situation.
+**The pain/deficiency cover rule survives, but downgraded from sufficient to
+necessary.** post36 and post37 both followed the Confirmed cover rule (a
+statement of capability/pain, not a category or order) and still reached 1.
+The rule isn't wrong — no post that ignored it has ever done well — but it no
+longer looks sufficient on its own. Topic relevance to a *generalist solo
+operator* audience is now believed to gate reach before the hook even gets a
+chance to work.
 
-**Money-pain hypothesis: still unresolved and now weakly bruised.** post21 (late
-invoice ladder, the purest money-pain post published) reached 2 — but as a
-carousel, so the format confound swallows the signal. Carried forward.
+**Format finding holds with one wrinkle.** Every double-digit reach number
+remains a reel (113/107/93 vs carousel 1). But post37, a reel, still only hit
+1 — so reel format is confirmed necessary but not sufficient, same conclusion
+as prior briefs, now with a cleaner example of a reel failing anyway.
 
-**Evidence still missing:** saves per post (four batches written on the
-assumption that copyable artefacts drive saves, still never measured), reach for
-posts 015, 017, 019, 023–028, and cover hook text for most posts. Comments are
-zero across every post reported to date, which means the "ask an opinion in the
-comments" CTA has produced nothing measurable in 12 posts.
+**Prompt slide finding holds with the same wrinkle.** All three best posts had
+a prompt slide (True). But post34 also had a prompt slide and still only
+reached 6 — well below the top three. Prompt slide presence correlates with
+success but a prompt slide bolted onto a low-fit topic doesn't rescue it.
 
 ## Working hypotheses (still unvalidated)
 
 - Niche framing (self-employed tasks) converts reach into follows better than
-  generic knowledge-worker framing. **Weak support:** followers 7 → 8 while the
-  reach leader was a tightly-niched post. Sample far too small.
+  generic knowledge-worker framing. **Weak support, unchanged**: sample too
+  small, no new evidence this brief.
 - Copy-pasteable prompts drive saves. **Still cannot test:** no save counts in
-  any of the four briefs. Both top reels carried a prompt slide, which is
-  consistent but proves nothing about saves specifically.
-- Concrete-pain hooks beat instruction/scold hooks. **Newly supported but
-  confounded:** the three reels all state a fact about the reader's setup; the
-  4-reach carousel gave an order. Needs a like-for-like comparison inside one
-  format.
-- Being explicit about limitations builds trust and helps saves. Untested; kept
-  because it is also just honest. Every post in this batch names a limitation on
-  a dedicated slide.
-- **News-peg question flipping.** **Downgraded (2026-08-22 batch):** The first
-  same-format comparison available (post20 evergreen 104 vs post22 news-pegged
-  54) pointed against news-pegs. This batch (posts 036–042) resets the
-  experiment: all seven posts peg to a recent change (Claude usage limits May 6,
-  NotebookLM copying Aug 17, ChatGPT Drive, Invoicer.ai AI draft, Opus 4.6
-  context, Perplexity Deep Research, DALL·E GPT sunset Aug 30), but cover hooks
-  frame the *pain or capability* (e.g., "Your Claude Code runs 2x longer", "Claude
-  now holds 1M tokens"), not the news itself. Separating the change (the peg) from
-  the pain (the hook) should resolve whether reach comes from recency or from
-  deficiency framing.
-- Money-pain topics beat process topics for engagement. **Carried forward —
-  still untestable.** 019 and 023–028 unreported; 021's 2 is a format artefact.
-- Comment-prompt CTAs do anything at all. **Weak evidence against:** 0 comments
-  across 12 posts. Keeping them (they cost nothing, and the alternative — asking
-  for a reply we can't answer — is banned) but not counting on them.
+  any brief to date. All three top reels had a prompt slide, but post34 also
+  did and still reached only 6 — consistent with "necessary, not sufficient,"
+  same status as the format hypothesis below it.
+- Concrete-pain hooks beat instruction/scold hooks. **Still likely true but now
+  known to be insufficient alone** — see Current read. Kept, with topic-fit
+  added as a co-requirement rather than a replacement.
+- Being explicit about limitations builds trust and helps saves. Untested;
+  kept because it is also just honest. Every post in this batch names a
+  limitation on a dedicated slide.
+- Money-pain topics beat process topics for engagement. **Carried forward,
+  still untestable** — no new reach data on money-pain posts (019, 021,
+  023–028) this brief.
+- News-peg vs evergreen framing. **Still downgraded, no new comparison data.**
+  The 036–042 batch was built to test change-and-pain framing against prior
+  batches, but this brief did not report reach for that batch beyond
+  post36/037, and both of those failed on topic-fit grounds that confound the
+  news-peg question entirely. Genuinely unresolved — carried forward.
+- Comment-prompt CTAs do anything at all. **Weak evidence against, unchanged:**
+  0 comments reported across all briefs to date. Keeping them (costs nothing).
+- **NEW — hook grader may not predict reach.** Flagged above under Current
+  read. Not yet confirmed or disproven — only 2 graded posts observed, both
+  scored high and both cratered. Needs 4+ more graded posts before any
+  conclusion. Do not over-correct the generator's hook-writing process based
+  on this alone yet.
 
 ## Confirmed — do more of this
 
-- **Reels are the only discovery surface.** Two briefs, six labelled posts, zero
-  overlap: reels 104/54/37, carousels 4/2/2. The generator only produces
-  carousels, so *copy cannot fix this* — the owner must publish these as reels
-  with the cover slide as the hook frame, or reach stays in the low single digits
-  regardless of quality. Highest-leverage intervention available and it sits
-  outside the generator's control.
-- **Every post must end in something usable.** The posts that travel hand over a
-  finished artefact (a prompt, a line to paste into a proposal, a verdict); the
-  ones that reached 0–4 handed over a topic or an opinion. Nothing ships without
-  a copyable block. All seven posts in this batch have one.
-- **7 slides with a prompt slide is the shape that works.** Both top reels
-  (104, 54) were 7 slides with a prompt slide. Every post in this batch is 7
-  slides: cover, 2–3 steps, prompt, an explicit limit slide, stat, recap.
-  **2026-08-22 note: This batch (036–042) swaps the prompt slide for an
-  actionable step or limit-state slide, since top performers may succeed despite
-  prompt slides, not because of them.** Evidence still missing; keeping 7-slide
-  format and watching.
-- **Cover names a pain, a change or a deficiency — never a category and never an
-  order.** "Your AI doesn't know your business" (104) and "Claude now watermarks
-  your text" (54) vs "Stop chatting. Write a brief." (4). Posts 036–042 all follow
-  this: "Your Claude Code runs 2x longer", "Copy a NotebookLM notebook whole",
-  "Pull files from Drive into ChatGPT", etc. Statement of capability or pain,
-  never an instruction.
+- **Reels are the only discovery surface, but not a guarantee.** Four briefs
+  running: every double-digit reach number is a reel, no carousel has cleared
+  4, and now one reel (post37) also failed outright. Reels remain necessary;
+  they are no longer believed sufficient on their own. The generator still
+  only produces carousels for Instagram to publish as reels — that publishing
+  decision remains outside this file's control and is still the single
+  highest-leverage lever available.
+- **Topic must be a task the *median* solo operator actually has, not a task
+  specific to a sub-niche or a technical tool.** New this brief, based on the
+  clean split between the three best posts (universal tasks: case study,
+  confidentiality check, proofreading disclosure) and the three worst (a
+  coding tool most of the audience doesn't use, a notebook-management
+  mechanic, a narrow hypothetical). Before locking in a topic, ask: "would
+  this apply to a solo bookkeeper, a freelance designer, AND a one-person
+  consultancy?" If the honest answer is no, the topic needs reframing or
+  dropping, regardless of how strong the hook reads. This batch (043–049) was
+  screened against this test — Claude Cowork explicitly targets
+  non-programmers, and the two other Claude posts are about email and pricing,
+  not code.
+- **Every post must end in something usable.** Nothing ships without a
+  copyable block. All seven posts in this batch have one.
+- **7 slides, cover → 2–3 steps → prompt → explicit limit slide → stat →
+  recap.** Held across every batch since 2026-08-22; kept for 043–049.
+- **Cover names a pain, a change or a deficiency — never a category, never an
+  order.** Still true as a floor (no post that violated it has ever done
+  well), but see Current read: it is necessary, not sufficient. Every cover in
+  this batch follows it.
 - **Tag set of the winners.** #solobusiness #freelancelife #chatgpt #claudeai
   #aiworkflow #selfemployed #clientwork #consultantlife, plus one or two
-  topic-specific. Used across this batch (036–042).
+  topic-specific tags. Used across this batch.
 
 ## Disproven — stop doing this
 
-- **Meta-commentary about productivity/AI culture.** post11-fake-productivity
-  reached 2 with zero engagement. Write the task, not the discourse.
-- **Topic-label framing on the cover.** "Tool duel" and "email workflow" both
-  reached 2.
-- **Broad "here are some free tools" round-ups.** post07 reached 2 with the
-  honesty angle intact, so honesty is not the problem — a round-up with no single
-  decision to take away is. One task, one answer.
-- **Assuming a news peg buys reach.** Moved out of hypotheses as a *planning
-  assumption*: the batch is no longer built around whatever shipped this week.
-  Recency now earns a post only when it changes what the reader can do. **Status
-  as of 2026-08-22: This batch tests whether news-pegs with pain-centered hooks
-  perform differently from posts about permanent pain. Both work; watching which
-  travels further.**
+- **Meta-commentary about productivity/AI culture.** Unchanged.
+- **Topic-label framing on the cover.** Unchanged.
+- **Broad "here are some free tools" round-ups.** Unchanged.
+- **Assuming a news peg buys reach.** Unchanged — still an open question, not
+  a settled no.
+- **NEW — dev-tool / power-user mechanic topics for a generalist solo-business
+  audience.** post36 (Claude Code, a terminal coding tool) and post37
+  (NotebookLM's notebook-copying mechanic, a workflow only relevant to heavy
+  existing NotebookLM users) both reached 1 despite following every other
+  Confirmed rule (pain-shaped cover, reel/carousel format tested previously).
+  The shared trait is that neither topic applies to a majority of solo
+  consultants, freelancers, and small operators. Treat any topic that requires
+  the reader to already be a developer, or to already have a deep habit with a
+  specific tool's internals, as low-priority regardless of how newsworthy it
+  is.
 
-## Batch notes — posts 029–035 (2026-08-16)
+## Batch notes — posts 043–049 (2026-09-02)
 
-Grounded by search before writing. **The search budget ran out after seven
-queries**, which killed the planned checks on accounting tools (Xero/QuickBooks
-AI), NotebookLM, Canva and Perplexity feature changes. Nothing in this batch
-makes a claim about those products beyond naming Perplexity as a place to verify
-sources. No fact appears on a slide that the returned results did not support.
+All seven posts grounded by web search before writing. Verified facts used:
 
-Verified pegs used:
-- **ChatGPT project memory (029).** OpenAI release notes, Aug 2026: a project's
-  memory setting can now be changed after creation — project three-dot menu →
-  Project settings → Memory → Default or Project-only; shared projects remain
-  project-only. Projects hold files, chats and instructions. Slides say plainly
-  that project-only memory is organisation, not a confidentiality guarantee.
-- **ChatGPT × Google Drive (030).** OpenAI release notes, 13 Aug 2026 (GA): with
-  the Google Drive plugin connected you can browse Drive files and folders from
-  Library, including items shared directly with you, and pull a Drive file in
-  from the composer or with @mentions without uploading it again. Limit on the
-  slides: it reads what you point it at and will quote a stale brief confidently.
-- **Gemini in Sheets (031).** Google Workspace Updates: Gemini icon in the Sheets
-  side panel, "Create canvas", describe the view in natural language and refine
-  with further prompts; requires Workspace smart features; creating/editing
-  canvases is subject to per-user usage limits; rollout from 10 Aug 2026 (Rapid
-  Release) and 31 Aug 2026 (Scheduled Release). Both the usage limits and the
-  staged rollout are on the limit slide, so a late-published post still reads
-  true.
-- **Claude watermarking, proofreading angle (032).** Anthropic help centre plus
-  Anthropic's watermarking explainer and Global News coverage: the mark shows
-  text was *processed* by Claude, so human-written text sent for proofreading,
-  translation or summarising comes back marked; it travels with copy-paste and
-  may persist through some editing; it carries no identifying information and
-  cannot be traced to a person, organisation or chat; nothing hidden is added to
-  the text and it costs no extra tokens; absence of a mark proves nothing; EU
-  marking requirement in force from 2 Aug 2026 and other major developers signed
-  the same Code. Distinct from post022, which announced the fact — this one is
-  the disclosure line you put in a proposal. Says out loud it is not legal advice.
-- **Model retirements (033).** OpenAI model release notes: GPT-5.1 Instant /
-  Thinking / Pro no longer available in ChatGPT as of 11 Mar 2026 with existing
-  conversations continuing on newer models; GPT-4.5 retired after a 30-day sunset
-  and o3 after a 90-day sunset. Used as the reason to keep a prompt file and
-  re-test it, not as news. Deliberately avoids naming a current "best" model.
-- **ChatGPT quizzes (034).** OpenAI release notes, Aug 2026: ask ChatGPT to quiz
-  you on a topic and answer inside the conversation; available on all consumer
-  plans and Edu, web and mobile. Limit slide states quiz content is generated,
-  not sourced.
-- **Muse Glimmer (035).** Meta AI Research, 10 Aug 2026: 30B open-weight agentic
-  multimodal model released under Apache 2.0, small enough to run on a Mac or PC
-  with a single consumer GPU. Used only as the third option when a contract
-  forbids cloud processing, and explicitly called slower and weaker. Post is
-  framed as a contract check, and says twice that it is not legal advice.
+- **Claude write actions to Gmail/Drive (post43).** Confirmed via industry
+  coverage of Claude's August 2026 changes: since August 18, 2026, Claude can
+  send, reply to, and forward email, and share, move, or trash Drive files —
+  previously it could only read and draft. Ships with human-in-the-loop
+  approval on by default (Claude prepares the action, user confirms).
+- **Claude Cowork (post44).** Anthropic's agentic desktop assistant, explicitly
+  positioned for non-programmers (contrasted with Claude Code). Works across
+  files via connectors (Gmail, Drive, Asana, Notion, PayPal). Runs on Mac and
+  Windows; mobile and web arrived August 2026. Bundled into Pro ($17-20/month)
+  and up — not available on the free plan. On August 26, 2026 Anthropic added
+  a built-in Chromium browser inside the desktop app so Cowork can navigate
+  without the user's own browser. Limitation confirmed: long autonomous runs
+  consume the plan's usage allocation quickly; logins for banking/SSO sites are
+  not carried over automatically.
+- **Instagram AI-generated profile labels (post45).** Confirmed via multiple
+  late-August 2026 outlets: Instagram renamed its "AI creator" tag to
+  "AI-generated profile," required for accounts where the featured person is
+  AI-generated; unlabeled accounts lose recommendation reach in Reels and
+  Explore. Explicitly confirmed: a real person using AI to edit photos,
+  generate graphics, or improve captions does not need the label — the rule
+  targets the account's identity, not the tools used on it. An appeal process
+  exists via Account Status for wrongly flagged accounts.
+- **NotebookLM renamed Gemini Notebook + Expert Intelligence (post46).**
+  Confirmed via Google's own blog and multiple outlets: Google renamed
+  NotebookLM to Gemini Notebook on July 16, 2026 — same product, same
+  notebooks, notebooklm.google redirects. On August 27-28, 2026, Google added
+  Expert Intelligence: select ebooks purchased through Google Play Books can
+  be added as grounded sources, combinable with a user's own uploaded
+  documents; eligibility is shown via a "Tools" badge on the book's Play Books
+  page; ownership is required, and shared notebooks prompt other collaborators
+  to buy the book before they can use it as a source. Feature is currently
+  confined to the Gemini Notebook app/web dashboard.
+- **ChatGPT × Upwork integration (post47).** Confirmed: Upwork's Work
+  Marketplace app launched inside ChatGPT on April 9, 2026, letting a user
+  describe a project in plain language and get matched with freelancers from
+  Upwork's 18-million-person talent pool across 130 job categories. Once
+  matched, the flow hands off to Upwork's own AI agent, Uma, which scopes the
+  work and drafts the contract.
+- **Perplexity Model Council (post48).** Confirmed via Perplexity feature
+  coverage: Model Council, launched February 2026, lets a Pro/Max user ask one
+  question and see answers from multiple frontier models (GPT, Claude, Gemini,
+  Grok family) side by side. It is a comparison tool, not an arbiter — it does
+  not select a "correct" answer.
+- **Claude Pro vs Free (post49).** Confirmed via Anthropic pricing coverage,
+  August 2026 snapshot: Free plan does not include Cowork; Pro ($17/month
+  annual, $20/month) is the first tier that does; Max plans ($100-200/month)
+  add usage headroom, not new features. Slide states plainly that prices and
+  limits change and to check claude.com/pricing before committing.
 
-Deliberate omissions: subscription prices, model version numbers as
-recommendations, anything framed as "launched today", and any claim about
-accounting or design tools that the exhausted search budget could not verify.
-Several items from the monitored-signal list (OpenClaw, the Zuckerberg manifesto,
-the Amazon data-centre story) were checked or read and dropped as irrelevant to
-someone running their own business — news commentary is already on the Disproven
-list.
-
-No caption in this batch promises a template, DM, doc, file or reply. CTAs are
-save / share / opinion only, per the standing rule that nobody is watching the
-inbox.
-
-## Batch notes — posts 036–042 (2026-08-22)
-
-**All seven posts grounded by web search before writing.** Search queries ran
-against ChatGPT release notes, Claude pricing/features, NotebookLM August
-updates, invoicing tools for freelancers, Perplexity features, and general AI
-tool landscape. No claim appears on a slide that search results did not support
-or confirm.
-
-All posts written on a **change-and-pain model**: the cover hook states a
-capability or pain (never an instruction or category), and the peg (when present)
-sits inside the body as the reason why. This is the inverse of posts 023–035,
-where the peg was the headline. Testing whether deficiency-driven hooks
-outperform recency hooks.
-
-Verified facts used (all per web search, 2026-08-22):
-
-- **Claude Code usage limits doubled (post36).** Anthropic announcement, May 6,
-  2026: per-session limits on Claude Code doubled for Pro, Max, Team, and
-  Enterprise. Free tier unchanged. No change to model capability; capacity
-  increase only.
-- **NotebookLM full notebook copying (post37).** Google product update, August 17,
-  2026: full notebook copying now copies sources, Studio artifacts, and chat
-  history together. Source limits follow Google AI plan tiers (Free 50, Pro 300,
-  Ultra 600).
-- **ChatGPT Google Drive in Library (post38).** OpenAI release notes, August 2026:
-  Google Drive plugin now surfaces Drive files in ChatGPT Library. Can browse
-  Drive and pull files into chats without uploading. Limitation: ChatGPT reads
-  stale documents confidently; version control is user responsibility.
-- **Invoicer.ai natural language drafting (post39).** Taskade and multiple 2026
-  invoicing tool roundups confirm Invoicer.ai is built around AI-native natural
-  language invoice description. Limitation: invoicing only, no accounting breadth.
-- **Claude Opus 4.6 context window (post40).** Anthropic and pricing roundups,
-  February 2026: Opus 4.6 ships with 1M token context (beta) and 128K output
-  tokens at same price as Opus 4.5. Limitation: 1M is beta and not universally
-  available; 200K is practical default.
-- **Perplexity Deep Research (post41).** Multiple Perplexity feature guides,
-  mid-2026: Deep Research searches 100+ pages in 2–5 minutes, generates cited
-  reports, flags contradictions. Pro only ($20/month). Limitation: finds
-  contradictions but does not resolve; still requires human judgment.
-- **DALL·E GPT retiring (post42).** OpenAI release notes, August 2026: official
-  DALL·E GPT in ChatGPT retires August 30, 2026. Switch to ChatGPT Images.
-  User-created GPTs with image generation not affected.
-
-All posts follow confirmed format: 7 slides, pain-or-capability cover hook (never
-instruction or category), explicit limitation slide, tag set from winners.
-Invoicing post (039) is the only one naming a specific AI tool's AI feature as
-the core workflow (natural language description → invoice). Others frame the
-workflow around solo business tasks: Claude Code building, research sharing,
-reference management, invoice drafting, research compilation, image generation
-workflow change.
-
-No caption promises DM, file, template, or reply. CTAs are save / share / opinion
-only.
+Every post in this batch was screened against the new "median solo operator"
+topic-fit test before writing (see Confirmed) — none requires the reader to be
+a developer or a power-user of a specific tool's internal mechanics. No
+caption promises a DM, file, template, or reply; CTAs are save/share/opinion
+only, per the standing rule that nobody is watching the inbox.
 
 ## Next brief — what to ask for
 
-1. **Reach and format for posts 036–042** to test the change-and-pain model
-   (deficiency hook with peg in body) against prior news-peg-heavy batches.
-2. **Saves per post** across all published posts (originally flagged in 2026-08-16
-   brief as critical missing data). Four batches written on untested assumption
-   that copyable artefacts drive saves.
-3. **Reach for 015, 017, 019 and 023–028** — enough of the money-pain posts to
-   close that question.
-4. **Cover hook text per post** — needed to audit whether covers are actually
-   stating deficiencies or slipping into instructions/categories.
-5. **Comments per post** — to validate whether opinion CTAs are working or if
-   zero-engagement streak continues.
-6. **One specific test:** a like-for-like pair inside a single format (both reels
-   or both carousels, published within 2 weeks of each other) with one
-   statement-of-deficiency hook and one instruction/scold hook, so the hook
-   hypothesis can be settled on apples-to-apples data.
+1. **Reach and format for posts 043–049**, specifically checking whether the
+   topic-universality filter (new this batch) produces better results than
+   036–042, which mixed universal and narrow-technical topics.
+2. **4+ more graded posts** (pre-publish hook scores) to get to the ~6 needed
+   to actually judge whether the grader predicts reach — currently only 2
+   graded posts exist and both contradict the grader (high score, reach 1).
+3. **Saves per post** — still never measured, across any brief to date.
+4. **Reach for 015, 017, 019, 023–031, 038–042** — the backlog of unreported
+   posts keeps growing; money-pain and news-peg questions cannot close without
+   it.
+5. **Comments per post** — to check whether the zero-engagement streak on
+   opinion CTAs continues.
+6. **A clean within-format, within-topic-fit pair**: two reels, both about
+   universal solo-business tasks, one with a pain-shaped cover and one with an
+   instruction/category cover, published close together — the only way left
+   to isolate the hook-shape question from the topic-fit and format questions
+   that have now confounded three separate briefs.

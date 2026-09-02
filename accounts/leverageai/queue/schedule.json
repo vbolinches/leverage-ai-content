@@ -762,6 +762,121 @@
       ],
       "caption": "OpenAI is retiring the official DALL·E GPT on August 30, 2026. If you're using it to generate images, you need to switch to ChatGPT Images before then.\n\nChatGPT Images does the same work—create and edit images—without a separate tool. Simpler and one less login.\n\nUser-created GPTs with image generation enabled are not affected. Only the official one is going away.\n\nSave this if you use DALL·E through ChatGPT. Comment: are you using DALL·E, or did you already switch to ChatGPT Images?",
       "status": "queued"
+    },
+    {
+      "id": "post43-claude-sends-your-email",
+      "date": "2026-09-06",
+      "slides": [
+        "accounts/leverageai/queue/post43-claude-sends-your-email/slide01.png",
+        "accounts/leverageai/queue/post43-claude-sends-your-email/slide02.png",
+        "accounts/leverageai/queue/post43-claude-sends-your-email/slide03.png",
+        "accounts/leverageai/queue/post43-claude-sends-your-email/slide04.png",
+        "accounts/leverageai/queue/post43-claude-sends-your-email/slide05.png",
+        "accounts/leverageai/queue/post43-claude-sends-your-email/slide06.png",
+        "accounts/leverageai/queue/post43-claude-sends-your-email/slide07.png"
+      ],
+      "caption": "You know the email. Client's invoice is 15 days overdue, and you're staring at a blank reply trying to sound firm without sounding rude.\n\nAs of August 18, Claude can actually send that email for you — not just draft it. Connect Gmail, give it the invoice details, and it prepares the message. You still click approve before anything goes out.\n\nThe prompt on slide 4 is what to paste once you've connected Gmail. Save this so you're not rewriting the same overdue-payment email every month.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #claudeai #aiworkflow #selfemployed #clientwork #consultantlife #latepayments",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post43-claude-sends-your-email/reel.mp4"
+    },
+    {
+      "id": "post44-claude-cowork-paperwork",
+      "date": "2026-09-07",
+      "slides": [
+        "accounts/leverageai/queue/post44-claude-cowork-paperwork/slide01.png",
+        "accounts/leverageai/queue/post44-claude-cowork-paperwork/slide02.png",
+        "accounts/leverageai/queue/post44-claude-cowork-paperwork/slide03.png",
+        "accounts/leverageai/queue/post44-claude-cowork-paperwork/slide04.png",
+        "accounts/leverageai/queue/post44-claude-cowork-paperwork/slide05.png",
+        "accounts/leverageai/queue/post44-claude-cowork-paperwork/slide06.png",
+        "accounts/leverageai/queue/post44-claude-cowork-paperwork/slide07.png"
+      ],
+      "caption": "Somewhere on your drive is a folder of receipts and intake forms you keep meaning to sort. Claude Cowork can go through it without you opening each file one at a time.\n\nCowork is Anthropic's desktop agent — you describe an outcome, step away, and come back to a finished spreadsheet. It's included with Claude Pro and up, not the free plan, and it now runs on both Mac and Windows.\n\nIt's not free of limits: long jobs burn through your usage fast, and it won't touch banking or single sign-on logins unless you add them yourself. Save this for the next time paperwork piles up.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #claudeai #aiworkflow #selfemployed #clientwork #consultantlife #adminwork",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post44-claude-cowork-paperwork/reel.mp4"
+    },
+    {
+      "id": "post45-instagram-ai-label-rules",
+      "date": "2026-09-08",
+      "slides": [
+        "accounts/leverageai/queue/post45-instagram-ai-label-rules/slide01.png",
+        "accounts/leverageai/queue/post45-instagram-ai-label-rules/slide02.png",
+        "accounts/leverageai/queue/post45-instagram-ai-label-rules/slide03.png",
+        "accounts/leverageai/queue/post45-instagram-ai-label-rules/slide04.png",
+        "accounts/leverageai/queue/post45-instagram-ai-label-rules/slide05.png",
+        "accounts/leverageai/queue/post45-instagram-ai-label-rules/slide06.png",
+        "accounts/leverageai/queue/post45-instagram-ai-label-rules/slide07.png"
+      ],
+      "caption": "Instagram just tightened its rules on AI-generated influencers — accounts built around a fake person now need an 'AI-generated profile' label or they lose reach in Reels and Explore.\n\nIf you use ChatGPT to write captions or Canva to build graphics for your own business account, this isn't about you. The rule targets the identity behind the account, not the tools that touched the post.\n\nThe prompt on slide 4 is a quick way to check your own content history is clean. Save this before you assume a policy change applies to you when it doesn't — or worse, when it does.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #instagram #contentcreation #selfemployed #aiworkflow #consultantlife #marketing",
+      "status": "queued"
+    },
+    {
+      "id": "post46-gemini-notebook-expert-books",
+      "date": "2026-09-09",
+      "slides": [
+        "accounts/leverageai/queue/post46-gemini-notebook-expert-books/slide01.png",
+        "accounts/leverageai/queue/post46-gemini-notebook-expert-books/slide02.png",
+        "accounts/leverageai/queue/post46-gemini-notebook-expert-books/slide03.png",
+        "accounts/leverageai/queue/post46-gemini-notebook-expert-books/slide04.png",
+        "accounts/leverageai/queue/post46-gemini-notebook-expert-books/slide05.png",
+        "accounts/leverageai/queue/post46-gemini-notebook-expert-books/slide06.png",
+        "accounts/leverageai/queue/post46-gemini-notebook-expert-books/slide07.png"
+      ],
+      "caption": "NotebookLM quietly became Gemini Notebook in July. Same tool, same notebooks — but it just picked up a feature worth knowing about if you buy business books and never get past chapter three.\n\nExpert Intelligence lets you add an ebook you own from Google Play Books as a grounded source, alongside your own client notes. Ask it to apply the book's framework to a real situation, and it cites the exact page.\n\nIt only works with select titles bought through Play Books — not PDFs, not library copies. Save this for the next book you buy for a specific client problem.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #notebooklm #aiworkflow #selfemployed #clientwork #consultantlife #research",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post46-gemini-notebook-expert-books/reel.mp4"
+    },
+    {
+      "id": "post47-chatgpt-upwork-discovery",
+      "date": "2026-09-10",
+      "slides": [
+        "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/slide01.png",
+        "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/slide02.png",
+        "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/slide03.png",
+        "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/slide04.png",
+        "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/slide05.png",
+        "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/slide06.png",
+        "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/slide07.png"
+      ],
+      "caption": "Since April, Upwork's marketplace lives inside ChatGPT. A client can describe their project in plain language and get matched straight to a freelancer — no browsing profiles first.\n\nThat changes what makes a profile work. Matching runs on how specifically you've described your service, not how professional your resume-style bio sounds. 'Graphic designer' loses to 'logo redesign for small bakeries, 5-day turnaround.'\n\nThe prompt on slide 4 rewrites your profile the way a client would actually phrase their need. Save this before your next profile update.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #upwork #selfemployed #clientwork #consultantlife #freelanceclients",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/reel.mp4"
+    },
+    {
+      "id": "post48-perplexity-model-council",
+      "date": "2026-09-11",
+      "slides": [
+        "accounts/leverageai/queue/post48-perplexity-model-council/slide01.png",
+        "accounts/leverageai/queue/post48-perplexity-model-council/slide02.png",
+        "accounts/leverageai/queue/post48-perplexity-model-council/slide03.png",
+        "accounts/leverageai/queue/post48-perplexity-model-council/slide04.png",
+        "accounts/leverageai/queue/post48-perplexity-model-council/slide05.png",
+        "accounts/leverageai/queue/post48-perplexity-model-council/slide06.png",
+        "accounts/leverageai/queue/post48-perplexity-model-council/slide07.png"
+      ],
+      "caption": "You paste a tricky client email into whatever AI you have open, get an answer, and send it. But that answer is one model's opinion — not a verified fact.\n\nPerplexity's Model Council runs your question past several frontier models at once and shows you where they agree and where they don't. Use it for the sentences that actually carry risk: a price justification, a contract paraphrase, a claim you can't easily walk back.\n\nIt's a Pro-tier feature, and it won't pick a winner for you — that part's still your call. Save this for the next email you're not sure about.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #perplexity #aiworkflow #selfemployed #clientwork #consultantlife #proposals",
+      "status": "queued"
+    },
+    {
+      "id": "post49-claude-pro-worth-it",
+      "date": "2026-09-12",
+      "slides": [
+        "accounts/leverageai/queue/post49-claude-pro-worth-it/slide01.png",
+        "accounts/leverageai/queue/post49-claude-pro-worth-it/slide02.png",
+        "accounts/leverageai/queue/post49-claude-pro-worth-it/slide03.png",
+        "accounts/leverageai/queue/post49-claude-pro-worth-it/slide04.png",
+        "accounts/leverageai/queue/post49-claude-pro-worth-it/slide05.png",
+        "accounts/leverageai/queue/post49-claude-pro-worth-it/slide06.png",
+        "accounts/leverageai/queue/post49-claude-pro-worth-it/slide07.png"
+      ],
+      "caption": "Free Claude and Claude Pro look similar until you actually try to get work done — then the gap shows up fast.\n\nPro, at $17-20 a month, is the first tier that includes Cowork, the agent that works across your files and connectors, plus write access to Gmail and Drive with your approval. Free Claude has none of that.\n\nBefore you upgrade, run the audit on slide 4: count what you actually do by hand each week and whether an agent could take the first pass. Save this before your next subscription renewal.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #claudeai #aiworkflow #selfemployed #clientwork #consultantlife #aitools",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post49-claude-pro-worth-it/reel.mp4"
     }
   ]
 }

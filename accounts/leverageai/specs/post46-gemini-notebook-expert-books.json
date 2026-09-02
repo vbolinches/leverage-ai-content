@@ -1,0 +1,118 @@
+{
+  "slug": "post46-gemini-notebook-expert-books",
+  "art": "document",
+  "caption": "NotebookLM quietly became Gemini Notebook in July. Same tool, same notebooks — but it just picked up a feature worth knowing about if you buy business books and never get past chapter three.\n\nExpert Intelligence lets you add an ebook you own from Google Play Books as a grounded source, alongside your own client notes. Ask it to apply the book's framework to a real situation, and it cites the exact page.\n\nIt only works with select titles bought through Play Books — not PDFs, not library copies. Save this for the next book you buy for a specific client problem.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #notebooklm #aiworkflow #selfemployed #clientwork #consultantlife #research",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 046",
+      "headline": "You paid for the book. Never used it.",
+      "sub": "Gemini Notebook can finally put it to work for a client.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "NotebookLM has a new name.",
+      "body": [
+        {
+          "t": "Google renamed NotebookLM to "
+        },
+        {
+          "t": "Gemini Notebook",
+          "c": "blue",
+          "b": true
+        },
+        {
+          "t": " in July. Same tool, same notebooks — but it just gained a way to use ebooks you've bought as grounded sources, not just your own files."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Check if your book qualifies.",
+      "body": [
+        {
+          "t": "Open the book's page on Google Play Books and look for a 'Tools' badge — if Gemini Notebook is listed there, you can add that exact book as a source. It must be a copy you "
+        },
+        {
+          "t": "own",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Apply the book to one client.",
+      "sub": "Add the book plus your notes, then ask this.",
+      "label": "COPY THIS PROMPT",
+      "code": "Using [Book Title] as a source, plus\nmy notes on [Client], apply the\nbook's framework to this specific\nsituation. Cite the page or chapter\nfor every recommendation."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Where it stops working.",
+      "body": [
+        {
+          "t": "Only select English-language ebooks bought through Google Play Books qualify — not PDFs, not library loans. Share the notebook with someone who hasn't bought it, and "
+        },
+        {
+          "t": "they're prompted to purchase before using that source",
+          "c": "dim",
+          "b": true
+        },
+        {
+          "t": "."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Every page you paid for:",
+      "stat": "searchable on demand"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Check the book qualifies",
+        "Add it as a source",
+        "Add your client notes",
+        "Ask for advice, cited"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "You're still flipping back through the book.",
+      "sub": "Gemini Notebook can search it for you now."
+    },
+    {
+      "headline": "Your bookshelf isn't just for reading anymore.",
+      "sub": "Gemini Notebook can turn a book into a working source."
+    },
+    {
+      "headline": "Unread on the shelf. Cited in a brief.",
+      "sub": "Gemini Notebook's new Expert Intelligence bridges it."
+    },
+    {
+      "headline": "NotebookLM just became Gemini Notebook.",
+      "sub": "And it can now read the books you've actually bought."
+    },
+    {
+      "headline": "One book, one client, one cited answer.",
+      "sub": "Gemini Notebook's new Expert Intelligence connects them."
+    }
+  ]
+}

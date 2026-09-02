@@ -1,0 +1,118 @@
+{
+  "slug": "post48-perplexity-model-council",
+  "art": "scales",
+  "caption": "You paste a tricky client email into whatever AI you have open, get an answer, and send it. But that answer is one model's opinion — not a verified fact.\n\nPerplexity's Model Council runs your question past several frontier models at once and shows you where they agree and where they don't. Use it for the sentences that actually carry risk: a price justification, a contract paraphrase, a claim you can't easily walk back.\n\nIt's a Pro-tier feature, and it won't pick a winner for you — that part's still your call. Save this for the next email you're not sure about.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #perplexity #aiworkflow #selfemployed #clientwork #consultantlife #proposals",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 048",
+      "headline": "One AI's answer isn't the answer.",
+      "sub": "Perplexity now shows what every model says, side by side.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "What Model Council does.",
+      "body": [
+        {
+          "t": "Ask one question inside Perplexity and get answers from several frontier models at once — "
+        },
+        {
+          "t": "GPT, Claude, Gemini, Grok",
+          "c": "blue",
+          "b": true
+        },
+        {
+          "t": " — instead of whichever one you happened to open. Available on Pro and Max."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Save it for what matters.",
+      "body": [
+        {
+          "t": "Don't run every draft through it — that's slow. Use it for "
+        },
+        {
+          "t": "the sentence that actually carries risk",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ": a price justification, a contract paraphrase, a client-facing claim you can't walk back."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Compare before you send it.",
+      "sub": "Drop in the risky paragraph, not the whole document.",
+      "label": "COPY THIS PROMPT",
+      "code": "Compare how each model would phrase\nthis to a client: [paste paragraph].\nFlag anything one model states as\nfact that the others treat as\nuncertain, and tell me which is\nactually true."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "It compares. It doesn't decide.",
+      "body": [
+        {
+          "t": "Model Council shows you disagreement — "
+        },
+        {
+          "t": "it won't tell you which model is right",
+          "c": "dim",
+          "b": true
+        },
+        {
+          "t": ". That's still your judgment call, and it's a Pro-tier feature, not available free."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "One prompt, checked against:",
+      "stat": "every model at once"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Draft the risky sentence",
+        "Run it through Model Council",
+        "Compare the disagreements",
+        "Pick and edit yourself"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "You're trusting whichever model you opened.",
+      "sub": "Perplexity can now show you what the others would say."
+    },
+    {
+      "headline": "A wrong assumption in one paragraph costs a client.",
+      "sub": "Model Council catches it before you send."
+    },
+    {
+      "headline": "One model's opinion. Now: four, compared.",
+      "sub": "Perplexity's Model Council puts them side by side."
+    },
+    {
+      "headline": "Perplexity now runs your question past 4 models.",
+      "sub": "Model Council compares GPT, Claude, Gemini, and Grok."
+    },
+    {
+      "headline": "Four models, one paragraph, one decision.",
+      "sub": "Model Council shows where they actually disagree."
+    }
+  ]
+}

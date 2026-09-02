@@ -1,0 +1,118 @@
+{
+  "slug": "post43-claude-sends-your-email",
+  "art": "email",
+  "caption": "You know the email. Client's invoice is 15 days overdue, and you're staring at a blank reply trying to sound firm without sounding rude.\n\nAs of August 18, Claude can actually send that email for you — not just draft it. Connect Gmail, give it the invoice details, and it prepares the message. You still click approve before anything goes out.\n\nThe prompt on slide 4 is what to paste once you've connected Gmail. Save this so you're not rewriting the same overdue-payment email every month.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #claudeai #aiworkflow #selfemployed #clientwork #consultantlife #latepayments",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 043",
+      "headline": "Chasing payment costs you evenings.",
+      "sub": "Claude can now draft, queue, and send the follow-up for you.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Connect Gmail to Claude.",
+      "body": [
+        {
+          "t": "Since August 18, Claude can send, reply to, and forward email — not just draft it. Turn on the Gmail connector in "
+        },
+        {
+          "t": "Settings → Connectors",
+          "c": "blue",
+          "b": true
+        },
+        {
+          "t": " before you start."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Approval stays on by default.",
+      "body": [
+        {
+          "t": "Every send goes through a confirm step: Claude prepares the email, you read it, you click send. "
+        },
+        {
+          "t": "Nothing leaves your inbox without your say-so",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": " — unless you turn that off. Don't, for money emails."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Queue the follow-up.",
+      "sub": "Paste this once Claude can see your invoice details.",
+      "label": "COPY THIS PROMPT",
+      "code": "Client: [name]\nInvoice #: [number], due [date]\nDays overdue: [X]\nWrite a short, firm-but-friendly email\nasking for payment. No apology, no\nguilt. End with a clear next step.\nPrepare it to send from my Gmail —\nwait for my approval first."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Where this breaks.",
+      "body": [
+        {
+          "t": "Write actions are confirmed for Gmail; if you're on Outlook or another provider, "
+        },
+        {
+          "t": "check before you rely on it",
+          "c": "dim",
+          "b": true
+        },
+        {
+          "t": ". And approval-off is a real setting — leave it on for anything involving money."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "The chase email now costs you:",
+      "stat": "one click, not 10 min"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Connect Gmail to Claude",
+        "Give it the invoice details",
+        "Claude drafts the send",
+        "You approve, it goes"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "You're still typing that email yourself.",
+      "sub": "Claude can now send it — you only approve."
+    },
+    {
+      "headline": "Automating email doesn't mean losing control.",
+      "sub": "Every send still waits for your click."
+    },
+    {
+      "headline": "Draft it. Send it.",
+      "sub": "Claude can now do both, with your approval."
+    },
+    {
+      "headline": "Claude just learned to hit send.",
+      "sub": "As of August 18, it can email and manage Drive for you."
+    },
+    {
+      "headline": "One click replaces the whole email.",
+      "sub": "Claude drafts, you approve, it sends — that's it."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "slug": "post45-instagram-ai-label-rules",
+  "art": "checklist",
+  "caption": "Instagram just tightened its rules on AI-generated influencers — accounts built around a fake person now need an 'AI-generated profile' label or they lose reach in Reels and Explore.\n\nIf you use ChatGPT to write captions or Canva to build graphics for your own business account, this isn't about you. The rule targets the identity behind the account, not the tools that touched the post.\n\nThe prompt on slide 4 is a quick way to check your own content history is clean. Save this before you assume a policy change applies to you when it doesn't — or worse, when it does.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #instagram #contentcreation #selfemployed #aiworkflow #consultantlife #marketing",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 045",
+      "headline": "Mislabeling costs you Reels reach.",
+      "sub": "Here's what Instagram's new AI rule actually covers.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "What actually changed.",
+      "body": [
+        {
+          "t": "Instagram renamed its 'AI creator' tag to "
+        },
+        {
+          "t": "'AI-generated profile'",
+          "c": "blue",
+          "b": true
+        },
+        {
+          "t": " and started limiting reach for accounts featuring an AI-generated person without disclosing it — no Reels or Explore recommendations."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "This isn't about your tools.",
+      "body": [
+        {
+          "t": "A real person using AI to edit a photo, write a caption, or build a graphic "
+        },
+        {
+          "t": "does not need the label",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ". The rule is about who's on camera, not what software touched the post."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Audit your own content.",
+      "sub": "Ask this before you assume you're covered.",
+      "label": "COPY THIS PROMPT",
+      "code": "Review my last 10 Instagram posts.\nDid I ever present an AI-generated\nperson, voice, or persona as if it\nwere a real spokesperson for my\nbusiness? List anything borderline."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "If you do use a persona.",
+      "body": [
+        {
+          "t": "Running a virtual mascot or AI 'face' for your business as if it were real? That "
+        },
+        {
+          "t": "needs the label",
+          "c": "dim",
+          "b": true
+        },
+        {
+          "t": ". Instagram is proactively hunting unlabeled accounts, with an appeal option if you're wrongly flagged."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Real person, AI tools:",
+      "stat": "no label required"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Use AI to write and design",
+        "Post as yourself",
+        "No label needed",
+        "Fake personas get flagged"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "You might be about to label the wrong thing.",
+      "sub": "Instagram's new rule isn't about your editing tools."
+    },
+    {
+      "headline": "Mislabeling costs you Reels reach.",
+      "sub": "Here's what Instagram's new AI rule actually covers."
+    },
+    {
+      "headline": "AI creator tag. AI-generated profile.",
+      "sub": "Instagram tightened the label — here's who it hits."
+    },
+    {
+      "headline": "Instagram just renamed its AI label.",
+      "sub": "Here's whether it applies to your business account."
+    },
+    {
+      "headline": "One label, two very different accounts.",
+      "sub": "Real you using AI tools isn't the account it's for."
+    }
+  ]
+}

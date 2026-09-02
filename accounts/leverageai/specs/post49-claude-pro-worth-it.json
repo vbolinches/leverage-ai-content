@@ -1,0 +1,130 @@
+{
+  "slug": "post49-claude-pro-worth-it",
+  "art": "chart",
+  "caption": "Free Claude and Claude Pro look similar until you actually try to get work done — then the gap shows up fast.\n\nPro, at $17-20 a month, is the first tier that includes Cowork, the agent that works across your files and connectors, plus write access to Gmail and Drive with your approval. Free Claude has none of that.\n\nBefore you upgrade, run the audit on slide 4: count what you actually do by hand each week and whether an agent could take the first pass. Save this before your next subscription renewal.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #claudeai #aiworkflow #selfemployed #clientwork #consultantlife #aitools",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 049",
+      "headline": [
+        {
+          "t": "Free Claude "
+        },
+        {
+          "t": "can't touch",
+          "b": true,
+          "c": "blue"
+        },
+        {
+          "t": " your files"
+        }
+      ],
+      "sub": "Pro is the first tier that opens Gmail and Drive.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "What's missing on free.",
+      "body": [
+        {
+          "t": "Free Claude doesn't include "
+        },
+        {
+          "t": "Cowork",
+          "c": "blue",
+          "b": true
+        },
+        {
+          "t": " — the agent that works across your files and connectors — and caps how much you can do in chat. Pro, at $17-20/month, is the first tier that unlocks it."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "What Pro actually adds.",
+      "body": [
+        {
+          "t": "Cowork access, Gmail and Drive write actions (Claude can now send, reply, and manage files with your approval), and "
+        },
+        {
+          "t": "memory that now carries over between chat and Cowork",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ", so you're not re-explaining a client each time."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Run the numbers before you pay.",
+      "sub": "Answer this honestly before upgrading.",
+      "label": "COPY THIS PROMPT",
+      "code": "List the last 10 admin tasks I did\nby hand this week (email, files,\nsorting, formatting). For each, say\nwhether an AI agent with file and\nemail access could have done a\nfirst draft. Add up the minutes."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "Skip Max for now.",
+      "body": [
+        {
+          "t": "Max plans ($100-200/month) mostly add usage headroom, not new features — "
+        },
+        {
+          "t": "most one-person businesses rarely hit Pro's ceiling",
+          "c": "dim",
+          "b": true
+        },
+        {
+          "t": ". Prices change, so check claude.com/pricing before you commit."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "The real question:",
+      "stat": "minutes saved vs $20"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Count this week's admin minutes",
+        "Compare to what Cowork could take",
+        "Decide Free vs Pro",
+        "Revisit the numbers in a month"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "You're paying for Claude and not using half of it.",
+      "sub": "Or you're on free and missing the part that matters."
+    },
+    {
+      "headline": "The expensive Claude plan isn't the one to buy.",
+      "sub": "Max adds headroom, not features — Pro adds the agent."
+    },
+    {
+      "headline": "Free: chat only. Pro: an agent that works files.",
+      "sub": "Here's what $20 a month actually changes."
+    },
+    {
+      "headline": "Claude's paid tier just got a lot more useful.",
+      "sub": "Write actions and Cowork both landed in August."
+    },
+    {
+      "headline": "$17 to $20 a month buys one extra tool.",
+      "sub": "Here's whether your business actually needs it."
+    }
+  ]
+}

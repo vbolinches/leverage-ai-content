@@ -558,6 +558,469 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post43-claude-sends-your-email",
+      "graded": "2026-09-02",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Chasing payment costs you evenings.",
+        "sub": "Claude can now draft, queue, and send the follow-up for you.",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "cost",
+        "stopping": "evenings",
+        "reason": "Names a specific, universal solo-operator pain (chasing unpaid invoices) and prices it in lost evenings — the only cover here with a wound rather than a feature.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": "Chasing payment costs you evenings.",
+          "rank": 1,
+          "score": 8.2,
+          "shape": "cost",
+          "stopping": "evenings",
+          "reason": "Names a specific, universal solo-operator pain (chasing unpaid invoices) and prices it in lost evenings — the only cover here with a wound rather than a feature.",
+          "authored": true
+        },
+        {
+          "headline": "You're still typing that email yourself.",
+          "rank": 2,
+          "score": 7.4,
+          "shape": "mistake",
+          "stopping": "still",
+          "reason": "Second-person accusation of wasted effort lands as a deficiency the reader recognises, though the pain is generic email rather than a felt cost.",
+          "authored": false
+        },
+        {
+          "headline": "Claude just learned to hit send.",
+          "rank": 3,
+          "score": 5.8,
+          "shape": "change",
+          "stopping": "hit send",
+          "reason": "Clean capability-change line with a mild jolt, but it's news about a tool, not a pain the reader is feeling.",
+          "authored": false
+        },
+        {
+          "headline": "One click replaces the whole email.",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "One click",
+          "reason": "Reads like a product claim; no reader in the frame and 'replaces the whole email' is vague enough to scroll past.",
+          "authored": false
+        },
+        {
+          "headline": "Draft it. Send it.",
+          "rank": 5,
+          "score": 3.2,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Two imperative fragments that name a category of action and no deficiency — the exact order-shaped cover this account has never won with.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post44-claude-cowork-paperwork",
+      "graded": "2026-09-02",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Sorting receipts eats an afternoon.",
+        "sub": "Cowork can do the whole folder while you do something else.",
+        "rank": 1,
+        "score": 7.2,
+        "shape": "cost",
+        "stopping": "eats an afternoon",
+        "reason": "Names a real time cost every solo operator has felt and pairs it with doing something else instead — the clearest pain-to-relief swap of the three.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Sorting receipts eats an afternoon.",
+          "rank": 1,
+          "score": 7.2,
+          "shape": "cost",
+          "stopping": "eats an afternoon",
+          "reason": "Names a real time cost every solo operator has felt and pairs it with doing something else instead — the clearest pain-to-relief swap of the three.",
+          "authored": false
+        },
+        {
+          "headline": "You're opening each receipt by hand.",
+          "rank": 2,
+          "score": 6.5,
+          "shape": "mistake",
+          "stopping": "by hand",
+          "reason": "\"By hand\" accuses the reader of doing it the dumb way, which stops some scrolls, but opening receipts isn't vivid enough to sting hard.",
+          "authored": true
+        },
+        {
+          "headline": "A folder of receipts. One spreadsheet.",
+          "rank": 3,
+          "score": 4.2,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Two nouns in a row is a topic label, not a pain — the exact cover shape this account has never won with.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post45-instagram-ai-label-rules",
+      "graded": "2026-09-02",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Mislabeling costs you Reels reach.",
+        "sub": "Here's what Instagram's new AI rule actually covers.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "cost",
+        "stopping": "costs you Reels reach",
+        "reason": "Names a concrete penalty on the one metric this audience is anxious about — reach — and implies they may be doing it wrong right now.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Mislabeling costs you Reels reach.",
+          "rank": 1,
+          "score": 7.5,
+          "shape": "cost",
+          "stopping": "costs you Reels reach",
+          "reason": "Names a concrete penalty on the one metric this audience is anxious about — reach — and implies they may be doing it wrong right now.",
+          "authored": false
+        },
+        {
+          "headline": "You don't need an AI label.",
+          "rank": 2,
+          "score": 6.8,
+          "shape": "contrarian",
+          "stopping": "You don't need",
+          "reason": "Direct second-person relief claim that contradicts a live worry, but 'you don't need' also gives permission to scroll on.",
+          "authored": true
+        },
+        {
+          "headline": "Instagram just renamed its AI label.",
+          "rank": 3,
+          "score": 5.5,
+          "shape": "change",
+          "stopping": "renamed",
+          "reason": "News peg with no stated stake; 'renamed its AI label' is administrative and the pain only arrives in the subline.",
+          "authored": false
+        },
+        {
+          "headline": "One label, two very different accounts.",
+          "rank": 4,
+          "score": 4.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Riddle-shaped and abstract — nothing in it tells the reader they're the account at risk.",
+          "authored": false
+        },
+        {
+          "headline": "AI creator tag. AI-generated profile.",
+          "rank": 5,
+          "score": 2.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Two bare category labels stacked — exactly the topic-label cover this account has already disproven.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post46-gemini-notebook-expert-books",
+      "graded": "2026-09-02",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "You paid for the book. Never used it.",
+        "sub": "Gemini Notebook can finally put it to work for a client.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "cost",
+        "stopping": "You paid for the book. Never used it.",
+        "reason": "Names a guilt everyone feels in six words and lands the sunk cost before the reader can look away.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": "You paid for the book. Never used it.",
+          "rank": 1,
+          "score": 7.5,
+          "shape": "cost",
+          "stopping": "You paid for the book. Never used it.",
+          "reason": "Names a guilt everyone feels in six words and lands the sunk cost before the reader can look away.",
+          "authored": true
+        },
+        {
+          "headline": [
+            {
+              "t": "Your unread books ",
+              "c": "white"
+            },
+            {
+              "t": "can bill hours",
+              "c": "green",
+              "b": true
+            }
+          ],
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "bill hours",
+          "reason": "Turns dead shelf guilt into revenue — money language is the sharpest stop available here.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Which page ",
+              "c": "green",
+              "b": true
+            },
+            {
+              "t": "was that framework on?",
+              "c": "white"
+            }
+          ],
+          "rank": 3,
+          "score": 6.5,
+          "shape": "question",
+          "stopping": "Which page was that framework on?",
+          "reason": "A frustration the reader has literally had this month, though the question shape softens the punch.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Stop ",
+              "c": "white"
+            },
+            {
+              "t": "quoting frameworks ",
+              "c": "green",
+              "b": true
+            },
+            {
+              "t": "from memory",
+              "c": "white"
+            }
+          ],
+          "rank": 4,
+          "score": 6.0,
+          "shape": "mistake",
+          "stopping": "quoting frameworks from memory",
+          "reason": "Real credibility fear, but the phrasing reads instructional rather than accusing.",
+          "authored": false
+        },
+        {
+          "headline": "Unread on the shelf. Cited in a brief.",
+          "rank": 5,
+          "score": 5.5,
+          "shape": "before-after",
+          "stopping": "Unread on the shelf. Cited in a brief.",
+          "reason": "Nice contrast but the abstract 'bridges it' subhead drains the promise into product-speak.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Reading the book ",
+              "c": "white"
+            },
+            {
+              "t": "isn't the work",
+              "c": "green",
+              "b": true
+            }
+          ],
+          "rank": 6,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "isn't the work",
+          "reason": "Mild contrarian framing that states the obvious; no cost, no number, no sting.",
+          "authored": false
+        },
+        {
+          "headline": "One book, one client, one cited answer.",
+          "rank": 7,
+          "score": 3.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Rhythmic label with no pain or deficiency — exactly the category-cover shape that has never performed.",
+          "authored": false
+        },
+        {
+          "headline": "NotebookLM just became Gemini Notebook.",
+          "rank": 8,
+          "score": 2.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Product rename as news peg, plus it flags a NotebookLM-internals topic — the disproven pattern twice over.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post47-chatgpt-upwork-discovery",
+      "graded": "2026-09-02",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Your profile still reads like a resume.",
+        "sub": "Clients can now find you through ChatGPT, not just search.",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "mistake",
+        "stopping": "resume",
+        "reason": "Accuses the reader of a specific, visible mistake they can check in five seconds — the only one with a personal sting.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": "Your profile still reads like a resume.",
+          "rank": 1,
+          "score": 6.5,
+          "shape": "mistake",
+          "stopping": "resume",
+          "reason": "Accuses the reader of a specific, visible mistake they can check in five seconds — the only one with a personal sting.",
+          "authored": true
+        },
+        {
+          "headline": "A vague profile costs you the match.",
+          "rank": 2,
+          "score": 5.5,
+          "shape": "cost",
+          "stopping": "costs you",
+          "reason": "Names a loss but 'vague profile' is abstract and 'the match' is undefined, so the sting is generic.",
+          "authored": false
+        },
+        {
+          "headline": "Browse profiles. Now: describe, matched.",
+          "rank": 3,
+          "score": 2.5,
+          "shape": "change",
+          "stopping": "nothing",
+          "reason": "Reads like clipped feature notes about a tool mechanic; no pain, no reader in it, and Upwork-only narrows it below the median operator.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post49-claude-pro-worth-it",
+      "graded": "2026-09-02",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Free Claude "
+          },
+          {
+            "t": "can't touch",
+            "b": true,
+            "c": "blue"
+          },
+          {
+            "t": " your files"
+          }
+        ],
+        "sub": "Pro is the first tier that opens Gmail and Drive.",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "cost",
+        "stopping": "can't touch your files",
+        "reason": "Names a concrete deficiency the reader has already hit, and Gmail/Drive is universal to every solo operator.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Free Claude "
+            },
+            {
+              "t": "can't touch",
+              "b": true,
+              "c": "blue"
+            },
+            {
+              "t": " your files"
+            }
+          ],
+          "rank": 1,
+          "score": 7.5,
+          "shape": "cost",
+          "stopping": "can't touch your files",
+          "reason": "Names a concrete deficiency the reader has already hit, and Gmail/Drive is universal to every solo operator.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "You don't need Pro. Until you do."
+            }
+          ],
+          "rank": 2,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Until you do.",
+          "reason": "Contrarian reversal plus a promised one-line decision rule; the slide-4 pointer is a real reason to stop.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Pasting docs in by hand → "
+            },
+            {
+              "t": "done",
+              "b": true,
+              "c": "green"
+            }
+          ],
+          "rank": 3,
+          "score": 6.5,
+          "shape": "before-after",
+          "stopping": "by hand",
+          "reason": "Before-after on a chore everyone recognises, but the arrow-to-'done' phrasing reads half-finished.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "How much of your week is copy-paste?"
+            }
+          ],
+          "rank": 4,
+          "score": 6.0,
+          "shape": "question",
+          "stopping": "copy-paste",
+          "reason": "Decent self-audit question, but questions let the reader answer 'not much' and keep scrolling.",
+          "authored": false
+        },
+        {
+          "headline": "Free Claude skips what you'd use.",
+          "rank": 5,
+          "score": 5.5,
+          "shape": "mistake",
+          "stopping": "skips what you'd use",
+          "reason": "Deficiency-shaped but vague — 'what you'd use' names nothing the reader can feel.",
+          "authored": true
+        },
+        {
+          "headline": "$17 to $20 a month buys one extra tool.",
+          "rank": 6,
+          "score": 3.5,
+          "shape": "number-claim",
+          "stopping": "nothing",
+          "reason": "Reads as a pricing category label, no pain named, and the $17-to-$20 number means nothing to this audience.",
+          "authored": false
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,110 @@
+{
+  "slug": "post44-claude-cowork-paperwork",
+  "art": "folder",
+  "caption": "Somewhere on your drive is a folder of receipts and intake forms you keep meaning to sort. Claude Cowork can go through it without you opening each file one at a time.\n\nCowork is Anthropic's desktop agent — you describe an outcome, step away, and come back to a finished spreadsheet. It's included with Claude Pro and up, not the free plan, and it now runs on both Mac and Windows.\n\nIt's not free of limits: long jobs burn through your usage fast, and it won't touch banking or single sign-on logins unless you add them yourself. Save this for the next time paperwork piles up.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #claudeai #aiworkflow #selfemployed #clientwork #consultantlife #adminwork",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 044",
+      "headline": "Sorting receipts eats an afternoon.",
+      "sub": "Cowork can do the whole folder while you do something else.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Cowork isn't chat.",
+      "body": [
+        {
+          "t": "It's a desktop agent: you "
+        },
+        {
+          "t": "describe an outcome, step away, and come back to finished files",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": ". Runs on Mac and Windows, included with Claude Pro and up — not the free plan."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Point it at the whole folder.",
+      "body": [
+        {
+          "t": "Give Cowork access to a Drive or local folder instead of uploading files one at a time. It can open each receipt or intake form, pull the numbers, and build a spreadsheet from all of them in one pass."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 3",
+      "headline": "Hand it the batch job.",
+      "sub": "Point it at a folder and give the instruction once.",
+      "label": "COPY THIS PROMPT",
+      "code": "Open every file in this folder.\nFor each receipt: vendor, date, amount.\nBuild one spreadsheet, one row per\nreceipt, sorted by date.\nFlag anything missing a total.\nSave it back to the same folder."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 4",
+      "headline": "What it burns through.",
+      "body": [
+        {
+          "t": "Long autonomous runs "
+        },
+        {
+          "t": "eat your usage allocation fast",
+          "c": "dim",
+          "b": true
+        },
+        {
+          "t": " — this isn't flat-rate. It also won't log into banking or single sign-on sites unless you add them yourself, one at a time."
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "One task instead of:",
+      "stat": "forty separate clicks"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Point Cowork at the folder",
+        "Give the instruction once",
+        "Step away",
+        "Review the finished file"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "Sorting receipts eats an afternoon.",
+      "sub": "Cowork can do the whole folder while you do something else."
+    },
+    {
+      "headline": "An AI agent doesn't need every file uploaded.",
+      "sub": "Point it at the folder — it opens each one itself."
+    },
+    {
+      "headline": "A folder of receipts. One spreadsheet.",
+      "sub": "Claude Cowork gets you from one to the other."
+    },
+    {
+      "headline": "Claude can now work through a folder alone.",
+      "sub": "Cowork opens each file itself — no more one-by-one uploads."
+    },
+    {
+      "headline": "How many receipts are still sitting there?",
+      "sub": "Cowork can go through the whole folder in one pass."
+    }
+  ]
+}
