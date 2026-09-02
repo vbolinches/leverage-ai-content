@@ -3659,6 +3659,120 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "followers": 10,
+      "posts": [
+        {
+          "slug": "post37-notebooklm-notebook-copying",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 35,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post36-claude-code-doubled-limits",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post35-nda-check-before-pasting",
+          "format": "reel",
+          "likes": 2,
+          "comments": 0,
+          "reach": 107,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post34-quiz-before-discovery-call",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post33-prompt-regression-test",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 4,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post32-proofread-watermark-disclosure",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 93,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post31-sheets-canvas-job-tracker",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 8,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post29-client-project-memory",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 12,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post28-voice-debrief-after-calls",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 15,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post27-notebooklm-handover-pack",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 1,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post26-case-study-one-pager",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 113,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post25-notion-agent-credit-test",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 14,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
