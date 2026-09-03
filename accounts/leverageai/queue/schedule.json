@@ -718,7 +718,10 @@
         "accounts/leverageai/queue/post39-invoicer-ai-natural-language/slide06.png"
       ],
       "caption": "Invoicer.ai is built from the ground up around natural language: you describe line items and rates in plain English and it drafts a complete invoice instantly.\n\nFaster and cleaner than legacy form-based tools. Good fit if you want AI-assisted invoicing without the weight of a full accounting suite.\n\nThe catch: invoice-only. No balance sheet, no KPI dashboard, no accounting breadth. You're not outsourcing bookkeeping—you're just drafting invoices faster.\n\nSave if you send a lot of invoices. Comment: what's your current bottleneck—drafting or chasing payment?",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "18063556127763898",
+      "published_on": "2026-09-03",
+      "threads_posted": true
     },
     {
       "id": "post40-claude-opus-context-window",
