@@ -754,9 +754,12 @@
         "accounts/leverageai/queue/post41-perplexity-deep-research/slide06.png"
       ],
       "caption": "Perplexity's Deep Research searches dozens of sources across hundreds of pages, compiles citations, flags contradictions, and generates a structured report—all in 2–5 minutes.\n\nUse it for competitive analysis, market sizing, technical research, or anything where you need a cited briefing, not just a hot take.\n\nThe catch: Deep Research is on Pro (paid) only. It's also a research tool, not a decision-maker—contradictions flagged still require human judgment.\n\nSave this if you do a lot of research for proposals or client work. Comment: what would you research first?",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post41-perplexity-deep-research/reel.mp4"
+      "video": "accounts/leverageai/queue/post41-perplexity-deep-research/reel.mp4",
+      "published_media_id": "18058722770552209",
+      "published_on": "2026-09-05",
+      "threads_posted": true
     },
     {
       "id": "post42-dalle-gpt-retiring",
