@@ -773,7 +773,10 @@
         "accounts/leverageai/queue/post42-dalle-gpt-retiring/slide06.png"
       ],
       "caption": "OpenAI is retiring the official DALL·E GPT on August 30, 2026. If you're using it to generate images, you need to switch to ChatGPT Images before then.\n\nChatGPT Images does the same work—create and edit images—without a separate tool. Simpler and one less login.\n\nUser-created GPTs with image generation enabled are not affected. Only the official one is going away.\n\nSave this if you use DALL·E through ChatGPT. Comment: are you using DALL·E, or did you already switch to ChatGPT Images?",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "18112589600090109",
+      "published_on": "2026-09-06",
+      "threads_posted": true
     },
     {
       "id": "post43-claude-sends-your-email",
