@@ -54,13 +54,29 @@ itself never promise a further reply.
 "nothing due" by design, so the cron never fails spuriously. The queue-health
 workflow exists to make that failure loud. Keep it.
 
-**5. Reach is the constraint, not content quality.** Measured 2026-07-25:
-post01 got **reach 1** — one person saw it. Carousels are shown mostly to
-existing followers and there are none, so the content-optimising feedback loop
-cannot help; it has nothing to learn from. The queue therefore alternates
-carousels with **Reels**, which are the discovery surface. Judge the account on
-reach per post, not likes. If reach is still single digits by 2026-08-07, the
-answer is more Reels or an audience transfer — not better carousels.
+**5. Reach is the constraint, and carousels do not reach anyone.** Settled on
+data 2026-09-07, independently on both accounts:
+
+| Account | Carousel reach (median) | Reel reach (median) |
+|---|---|---|
+| leverageai | 2 (n=6, range 1-2) | 40 (n=8, range 6-108) |
+| inmigraforma | 3 (n=6, range 2-7) | 22 (n=6, range 2-59) |
+
+Both accounts are therefore **Reels-only** (`"reel_ratio": "all"`). Do not
+reintroduce carousels while an account is still in discovery: a carousel slot
+is a publishing day that reaches nobody. Revisit only once an account has a
+real audience to serve. Judge posts on reach, not likes.
+
+**5b. Reel length is the retention lever, and it is capped by reading time.**
+At the deliberately slow CHAR_RATE (11 chars/sec, owner's call — see point 6),
+a 30-second Reel holds only ~280 characters of slide text. Reels ran 67s
+(leverageai) and 77s (inmigraforma) because the slide limits were sized for
+canvas overflow, not for reading time. Both accounts now carry
+`reel_target_seconds` and a per-account `slide_limits` budget that
+`validate()` enforces against the whole post, so a long slide can no longer
+silently ship a minute-long Reel. Detail that does not fit goes in the
+**caption** — that is also the only place a viewer can copy a prompt or open a
+source URL.
 
 **6. Reels cannot use trending audio, and never will through this pipeline.**
 Meta's Content Publishing API exposes no `audio_id` or music-library parameter —
@@ -128,13 +144,13 @@ batch — that is how the banned tic formed in the first place.
 
 | Workflow | When | Notes |
 |---|---|---|
-| Publish daily Instagram post | 10:00 UTC daily | The core job |
+| Publish daily Instagram post | 16:00 UTC daily | The core job; 16:00 UTC = noon ET, both audiences are US |
 | Account monitor | 08:00 UTC daily | Digest; fails at <10 days token runway |
 | Queue health check | Mon 09:00 UTC | Fails below 5 queued posts |
 | DM auto-responder | every 2h | Inert (warns) until messaging permission + App Review |
 | Content ideas monitor | Tue 06:00 UTC | Refreshes idea sources; X only with `X_BEARER_TOKEN` |
 | Generate content batch | daily 06:00 UTC | Only acts when queue < 8 (extra runs skip in seconds); reads fresh ideas |
-| Refresh Instagram token | 1st monthly | **Blocked** — needs a valid `GH_PAT` |
+| Refresh Instagram token | 1st monthly | Working since 2026-09-01 |
 | Verify Instagram credentials | manual | Run after any token change |
 
 ## Secrets
@@ -146,12 +162,15 @@ shared across accounts.
 
 | Secret | Account | State |
 |---|---|---|
-| `IG_ACCESS_TOKEN` | leverageai | set; expires 2026-09-22 |
+| `IG_ACCESS_TOKEN` | leverageai | set; auto-refreshed, expires 2026-10-30 |
 | `IG_USER_ID` | leverageai | set |
-| `IG_TOKEN_INMIGRAFORMA` | inmigraforma | **not set** — account stays disabled until it is |
-| `IG_USER_ID_INMIGRAFORMA` | inmigraforma | **not set** — value is `17841464133054122` |
+| `THREADS_TOKEN_LEVERAGEAI` | leverageai | set; auto-refreshed |
+| `IG_TOKEN_INMIGRAFORMA` | inmigraforma | set; carries `instagram_manage_insights` since 2026-09-07, expires ~2026-11-06 |
+| `IG_USER_ID_INMIGRAFORMA` | inmigraforma | set |
+| `THREADS_TOKEN_INMIGRAFORMA` | inmigraforma | **not set** — Threads cross-posting skipped |
 | `ANTHROPIC_API_KEY` | shared | set |
-| `GH_PAT` | shared | **invalid** — rejected 401; value is not a GitHub token |
+| `FB_APP_SECRET` | shared | set — inmigraforma's Facebook-route refresh needs it |
+| `GH_PAT` | shared | set; fine-grained, Secrets:RW, expires 2027-08-31 (monitor warns) |
 | `X_BEARER_TOKEN` | shared | **not set** — X idea sources skipped until it is |
 
 **7. X (Twitter) reads cost money and need a billing-enabled developer
@@ -163,13 +182,16 @@ web search. Do not let idea items bypass that rule.
 
 ## Known gaps
 
-- **Token auto-refresh is blocked** on `GH_PAT`. Until fixed, refresh by hand
-  (README has the steps) and **update `accounts/<slug>/token_status.json`**, or
-  the warning fires against a stale date. Each account has its own token and
-  its own 60-day clock — the chore multiplies with accounts until GH_PAT works.
-- **Insights** (reach, impressions, saves) need
-  `instagram_business_manage_insights` added to the app; `monitor.py` degrades
-  gracefully without it.
+- **Token auto-refresh works** (fixed 2026-09-01). The monthly workflow
+  refreshes every account and writes the result back with `GH_PAT`. Still
+  update `accounts/<slug>/token_status.json` after any manual re-mint, or the
+  warning fires against a stale date. The daily monitor now also warns before
+  `GH_PAT` itself expires — its lapse is silent and kills refresh.
+- **Insights work on both accounts** (inmigraforma fixed 2026-09-07 by
+  re-granting its token with `instagram_manage_insights` — the app already had
+  the permission at Standard access; only the token lacked the scope). Both
+  accounts' learning loops are now above `performance.py`'s signal threshold,
+  so generation is guided by real reach for the first time.
 - **The app is in development mode.** Fine for Tester-role accounts, but every
   new account must be added as an Instagram Tester on the Meta app (and accept
   the invite) before its token can be minted. If publishing ever fails on
