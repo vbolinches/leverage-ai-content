@@ -507,7 +507,11 @@ def repeated_openers(posts):
     seen = {}
     for post in posts:
         for sl in post.get("slides", []):
-            body = "".join(x.get("t", "") for x in (sl.get("body") or []))
+            # body is EITHER rich-text segments or a plain string - the
+            # schema allows both. Assuming segments here crashed every batch
+            # from 2026-09-03 to 09-07, after the model had already authored
+            # the posts, so each failure burned a full batch.
+            body = hooks.flatten(sl.get("body"))
             for opener in ("funciona igual que", "pasa lo mismo con",
                            "piensalo asi", "piénsalo así", "igual que en",
                            "es como", "imagina que"):
@@ -673,10 +677,17 @@ def main():
     # only discovery surface — carousels reach single digits on a young
     # account — so growth-phase accounts run reel-heavy. The pattern is
     # deterministic by post number, so batches stay consistent across runs.
-    ratio = int(ACCT.get("reel_ratio", 1))
-    period = ratio + 1
+    # "all" = every post is a Reel. Measured on leverageai over 41 posts
+    # (2026-09-07): carousels reached 1-2 accounts each, Reels 6-108 (median
+    # ~40). A carousel slot on an account with no audience yet is a wasted
+    # publishing day, so accounts still in discovery run Reels only.
+    ratio = ACCT.get("reel_ratio", 1)
+    all_reels = str(ratio).lower() == "all"
+    period = 1 if all_reels else int(ratio) + 1
 
     def is_reel(slug):
+        if all_reels:
+            return True
         m = re.match(r"post(\d+)", slug)
         n = int(m.group(1)) if m else 0
         return n % period != 0
@@ -686,7 +697,14 @@ def main():
     # rendered slides, like the strategy file above.
     hook_log = None if live else os.path.join(out, "hooks.json")
 
-    dupes = repeated_openers(posts)
+    # Never let a reporting-only check throw away work the API was already
+    # paid for: a crash here on 2026-09-03..09-07 discarded five authored
+    # batches (7 posts each) and drained inmigraforma's queue to one post.
+    try:
+        dupes = repeated_openers(posts)
+    except Exception as e:
+        print(f"::warning::opener check failed ({e}) — batch kept regardless")
+        dupes = {}
     for opener, slugs in dupes.items():
         print(f"::warning::comparison opener {opener!r} reused in "
               f"{len(slugs)} posts ({', '.join(s for s in slugs if s)}) — "
