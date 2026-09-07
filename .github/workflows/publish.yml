@@ -1,7 +1,12 @@
 name: Publish daily Instagram post
 on:
   schedule:
-    - cron: "0 10 * * *"   # 10:00 UTC = 12:00 CEST daily
+    # 16:00 UTC = 12:00 ET / 09:00 PT. Both audiences are US-based (US
+    # immigration news; US solo business owners), and Instagram weights the
+    # first hour of engagement heavily. The old 10:00 UTC slot was 06:00 ET /
+    # 03:00 PT - posting into the middle of the night for the people the
+    # accounts are for.
+    - cron: "0 16 * * *"
   workflow_dispatch: {}     # manual "publish now" button for testing
 
 permissions:
