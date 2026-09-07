@@ -1,0 +1,122 @@
+{
+  "slug": "post56-39-paises-que-hacer-ahora",
+  "art": "gavel",
+  "caption": "Una corte federal canceló, en junio de 2026, las reglas de USCIS que congelaban trámites de personas nacidas en 39 países. Pero USCIS aclara que todavía prepara instrucciones nuevas mientras el caso sigue en la corte.\n\nEn palabras simples: que se cancele la pausa no significa que todo esté resuelto. USCIS sigue preparando los pasos exactos, así que revisa tu caso en vez de asumir que ya se aprobó solo.\n\nIn plain words: check your case status yourself instead of assuming it was automatically approved - USCIS says updated instructions are still coming.\n\n¿Tu caso estuvo en pausa por esta regla? Guarda este post y revisa tu estado.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/update-on-uscis-strengthened-screening-and-vetting\n\n#inmigracion #uscis #greencard #asilo #corte #inmigracionusa #inmigrantes #eeuu #tramitesmigratorios #actualizacion",
+  "hook_candidates": [
+    {
+      "headline": "39 países, una orden judicial, cero instrucciones aún.",
+      "sub": "Así lo dice la alerta de USCIS."
+    },
+    {
+      "headline": "¿Ya revisaste tu caso después del fallo de junio?",
+      "sub": "USCIS aún prepara instrucciones nuevas."
+    },
+    {
+      "headline": "Confiarte demasiado te puede costar una cita perdida.",
+      "sub": "USCIS todavía no terminó de actualizar sus reglas."
+    },
+    {
+      "headline": "El fallo judicial no cerró el caso, solo lo reabrió.",
+      "sub": "USCIS sigue preparando instrucciones nuevas."
+    },
+    {
+      "headline": "Antes: pausa total. Ahora: fila normal sin instrucciones finales.",
+      "sub": "Así sigue el caso de los 39 países."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 056",
+      "headline": [
+        {
+          "t": "No asumas que tu caso "
+        },
+        {
+          "t": "ya se resolvió solo.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Alerta de USCIS sobre los 39 países, actualizada",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Una corte canceló la regla que congelaba casos de 39 países - pero 'cancelada' no es lo mismo que 'terminada'. "
+        },
+        {
+          "t": "USCIS todavía prepara instrucciones nuevas, igual que un partido que se reinicia pero todavía no termina.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Qué cambió.",
+      "body": [
+        {
+          "t": "USCIS dice que 'strongly disagrees' con la orden pero la sigue por ahora, y que emitirá instrucciones actualizadas mientras siga el litigio. Fuente: uscis.gov, alerta 'Update on USCIS' Strengthened Screening and Vetting'."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "¿Me afecta a mí?",
+      "body": [
+        {
+          "t": "Si tu caso se congeló por tu país de nacimiento bajo esas reglas, revisa tu estado ahora. Si se congeló por otra razón, como una revisión normal de antecedentes, esta orden no lo toca."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice USCIS.",
+      "sub": "uscis.gov, alerta oficial",
+      "label": "TEXTO OFICIAL",
+      "code": "USCIS will issue updated\ninstructions pending\nfurther litigation\ndevelopments."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice que todavía falta guía nueva, esto no es la última palabra. "
+        },
+        {
+          "t": "No esperes aprobación automática - tu caso vuelve a la fila, pero el ritmo puede variar. Revisa tu estado o podrías perder una cita.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA FECHA CLAVE",
+      "headline": "¿Cuándo fue la sentencia final?",
+      "stat": "11 jun 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Revisa tu caso en myUSCIS o por teléfono",
+        "No pagues a nadie que prometa 'acelerar' tu caso",
+        "Guarda la alerta oficial para consultarla después",
+        "Sigue la cuenta para más actualizaciones"
+      ],
+      "cta_title": "Guarda esta alerta",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

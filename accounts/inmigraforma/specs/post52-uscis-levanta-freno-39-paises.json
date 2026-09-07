@@ -1,0 +1,122 @@
+{
+  "slug": "post52-uscis-levanta-freno-39-paises",
+  "art": "gavel",
+  "caption": "El 5 de junio de 2026, una corte federal en Rhode Island canceló las reglas de USCIS que habían puesto en pausa casi todos los trámites de personas nacidas en 39 países considerados 'de alto riesgo'. La sentencia final llegó el 11 de junio.\n\nEn palabras simples: USCIS había cerrado la fila para gente de 39 países. Un juez dijo que eso no era justo y ordenó reabrirla, igual que cuando se quita un letrero de 'cerrado' injusto. Pero USCIS todavía está preparando los pasos exactos.\n\nIn plain words: if your case was frozen because of your country of birth under these specific policies, it should be moving again - but USCIS says new instructions are still coming, so check your case status yourself.\n\n¿Tienes un caso de uno de esos 39 países? Guarda este post y revisa tu estado en myUSCIS.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/update-on-uscis-strengthened-screening-and-vetting\n\n#inmigracion #asilo #greencard #uscis #inmigracionusa #corte #inmigrantes #eeuu #tramitesmigratorios #actualizacion",
+  "hook_candidates": [
+    {
+      "headline": "No pienses que tu caso sigue congelado.",
+      "sub": "Una corte canceló la pausa el 5 de junio de 2026."
+    },
+    {
+      "headline": "¿Sigue tu país en la lista de pausa de USCIS?",
+      "sub": "Una corte cambió las reglas en junio de 2026."
+    },
+    {
+      "headline": "Meses de espera que una corte acaba de borrar.",
+      "sub": "USCIS debe tratarla como si nunca hubiera existido."
+    },
+    {
+      "headline": "La pausa de 39 países no sigue como crees.",
+      "sub": "Una corte la canceló el 5 de junio de 2026."
+    },
+    {
+      "headline": "Antes: trámite congelado. Ahora: en la fila otra vez.",
+      "sub": "Por orden judicial desde junio de 2026."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 052",
+      "headline": [
+        {
+          "t": "39 países ya no están "
+        },
+        {
+          "t": "congelados en USCIS.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Orden judicial vigente desde el 11 de junio de 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Desde fines de 2025, USCIS había puesto en pausa casi todos los trámites de personas nacidas en 39 países. "
+        },
+        {
+          "t": "Una corte lo canceló el 5 de junio de 2026, igual que cuando un juez ordena quitar un letrero de 'cerrado' injusto.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Qué cambió.",
+      "body": [
+        {
+          "t": "Una corte de Rhode Island canceló, el 5 de junio de 2026 (sentencia final el 11), las reglas PM 602-0192, PM 602-0194 y PA 2025-26 que congelaban trámites por país de nacimiento. Fuente: alerta de USCIS."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "¿Me afecta a mí?",
+      "body": [
+        {
+          "t": "Esto toca a personas nacidas en los 39 países señalados (como Afganistán, Haití, Irán, Sudán) con asilo, Green Card o permiso de trabajo pendiente. Si tu país no está en esa lista, esto no cambia tu caso."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice USCIS.",
+      "sub": "USCIS, alerta oficial",
+      "label": "TEXTO OFICIAL",
+      "code": "the vacatur applies to\nPM 602-0192, PM 602-0194,\nand PA 2025-26, which\nshould be treated as if\nthey are not in effect."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice que esas tres reglas quedan sin efecto por ahora. "
+        },
+        {
+          "t": "Tu caso debería avanzar aunque nacieras en uno de esos países - pero USCIS aún prepara instrucciones nuevas, no asumas aprobación automática.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL NÚMERO CLAVE",
+      "headline": "¿Cuántos países tocaba la pausa?",
+      "stat": "39 países"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Revisa el estado de tu caso en myUSCIS",
+        "No asumas aprobación automática todavía",
+        "Guarda la fecha 11 de junio de 2026 como referencia",
+        "Sigue la cuenta para más actualizaciones"
+      ],
+      "cta_title": "Guarda esta actualización",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

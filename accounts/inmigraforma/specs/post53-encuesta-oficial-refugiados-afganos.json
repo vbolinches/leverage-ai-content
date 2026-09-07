@@ -1,0 +1,114 @@
+{
+  "slug": "post53-encuesta-oficial-refugiados-afganos",
+  "art": "chat",
+  "caption": "El 1 de septiembre de 2026, el gobierno de EE.UU. pidió permiso urgente para usar un cuestionario telefónico con personas afganas que recibieron ayuda de reasentamiento (ORR), para saber qué más necesitan.\n\nEn palabras simples: si eres una persona afgana que llegó como refugiada y te llaman con preguntas cortas sobre tu ayuda, puede ser esta encuesta oficial - no una estafa. Pero nunca des tu número de seguro social sin confirmar quién llama.\n\nIn plain words: if you're an Afghan refugee and get a short survey call about the help you received, it may be legitimate government outreach - but never give personal financial details without confirming who's calling.\n\n¿Conoces a alguien que podría recibir esta llamada? Guarda este post para su familia.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/09/01/2026-17856/emergency-office-of-management-and-budget-review-and-public-comment-questionnaire-for-the-refugee\n\n#refugiados #afganistan #inmigracion #reasentamiento #eeuu #inmigrantes #orr #cuidadoconestafas #inmigracionusa #ayudahumanitaria",
+  "hook_candidates": [
+    {
+      "headline": "No cuelgues pensando que es una estafa.",
+      "sub": "El gobierno confirmó esta encuesta el 1 de septiembre."
+    },
+    {
+      "headline": "Una pregunta corta, sin costo para ti.",
+      "sub": "Aviso oficial sobre refugiados afganos, sept 2026."
+    },
+    {
+      "headline": "Colgar por miedo te puede costar ayuda extra.",
+      "sub": "La encuesta busca detectar qué necesitas todavía."
+    },
+    {
+      "headline": "Esa llamada sobre tus beneficios no es fraude.",
+      "sub": "Es un aviso oficial del gobierno, 1 sep 2026."
+    },
+    {
+      "headline": "Antes solo daban ayuda; ahora también preguntan si alcanzó.",
+      "sub": "Nueva encuesta oficial para refugiados afganos."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 053",
+      "headline": "No cuelgues pensando que es una estafa.",
+      "sub": "El gobierno confirmó esta encuesta el 1 de septiembre.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "El gobierno está llamando a algunas personas afganas para preguntarles cosas cortas sobre la ayuda que recibieron. "
+        },
+        {
+          "t": "No es una estafa, igual que cuando una escuela llama después de un programa para preguntar si sirvió.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Qué cambió.",
+      "body": [
+        {
+          "t": "El 1 de septiembre de 2026 el gobierno pidió permiso urgente para usar un cuestionario telefónico con personas afganas que recibieron ayuda de reasentamiento. Fuente: Federal Register, aviso 2026-17856."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "¿Me afecta a mí?",
+      "body": [
+        {
+          "t": "Esto solo toca a personas afganas que llegaron como refugiadas o parolees y recibieron beneficios de reasentamiento. Si no eres de Afganistán o no usaste esos servicios, esta llamada no debería llegarte."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice el aviso.",
+      "sub": "Federal Register, aviso del 1 de septiembre de 2026",
+      "label": "TEXTO OFICIAL",
+      "code": "used during brief\ntelephone interviews with\nAfghan arrivals who might\nhave received ORR benefits\nand services"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice que es una llamada corta para saber si necesitas más ayuda. "
+        },
+        {
+          "t": "Contestar es voluntario. Si alguien pide tu seguro social o dinero por teléfono, no es esta encuesta - cuelga y verifica con tu agencia.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA FECHA CLAVE",
+      "headline": "¿Hasta cuándo hay tiempo para comentar?",
+      "stat": "2 nov 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Confirma que quien llama diga ser de tu agencia de reasentamiento",
+        "Nunca des tu número de seguro social sin verificar",
+        "Responder la encuesta es voluntario",
+        "Guarda este post para tu familia"
+      ],
+      "cta_title": "Guarda esto para compartir",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

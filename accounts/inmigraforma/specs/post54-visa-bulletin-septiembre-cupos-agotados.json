@@ -1,0 +1,122 @@
+{
+  "slug": "post54-visa-bulletin-septiembre-cupos-agotados",
+  "art": "calendar",
+  "caption": "El Boletín de Visas de septiembre de 2026, publicado por el Departamento de Estado, advierte que algunas categorías de Green Card pueden quedarse sin cupos antes de que termine el mes.\n\nEn palabras simples: el gobierno solo tiene cierta cantidad de Green Cards por año, y septiembre es el último mes de ese año. Si se acaban los cupos antes del 30, la categoría se congela hasta octubre - como una tienda que agota una oferta antes de fin de mes.\n\nIn plain words: if your visa category becomes 'Unavailable' this month, your place in line is not lost - it just waits until October, when the new fiscal year's numbers open.\n\n¿Tu categoría está cerca del límite? Guarda este post y revisa el boletín de octubre apenas salga.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2026/visa-bulletin-for-september-2026.html\n\n#visabulletin #greencard #inmigracion #inmigracionusa #boletindevisas #inmigrantes #eeuu #residenciapermanente #tramitesmigratorios #departamentodeestado",
+  "hook_candidates": [
+    {
+      "headline": "No pienses que 'Unavailable' es perder tu turno.",
+      "sub": "El boletín de septiembre lo explica."
+    },
+    {
+      "headline": "¿Qué pasa si tu categoría se queda sin cupo?",
+      "sub": "El Boletín de Visas lo advierte este mes."
+    },
+    {
+      "headline": "30 de septiembre: la fecha que decide tu cupo.",
+      "sub": "Así lo advierte el Boletín de Visas 2026."
+    },
+    {
+      "headline": "Quedar 'Unavailable' no borra tu fecha de prioridad.",
+      "sub": "El Boletín de Visas de septiembre lo aclara."
+    },
+    {
+      "headline": "Antes había cupo; en cualquier momento puede acabarse.",
+      "sub": "Advertencia oficial del Boletín de Visas de septiembre."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 054",
+      "headline": [
+        {
+          "t": "Tu visa se puede acabar "
+        },
+        {
+          "t": "antes de fin de mes.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Boletín de Visas de septiembre de 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Cada año el gobierno solo tiene cierta cantidad de Green Cards por categoría y país. "
+        },
+        {
+          "t": "Septiembre es el último mes de ese año - si se agotan los cupos antes del 30, se congela hasta octubre, igual que una tienda que agota una oferta antes de fin de mes.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Qué cambió.",
+      "body": [
+        {
+          "t": "El Boletín de Visas de septiembre de 2026 advierte que las categorías pueden volverse 'Unavailable' antes de fin de año fiscal si se llega al límite anual. Fuente: travel.state.gov, Boletín de Visas de septiembre de 2026."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "¿Me afecta a mí?",
+      "body": [
+        {
+          "t": "Esto toca sobre todo a categorías con mucha demanda, como las de India, China, México o Filipinas. Si tu fecha de prioridad ya es antigua y tu caso está avanzado, es menos probable que te afecte este mes."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice el boletín.",
+      "sub": "travel.state.gov, Boletín de Visas de septiembre de 2026",
+      "label": "TEXTO OFICIAL",
+      "code": "Visa categories may\nbecome 'Unavailable' prior\nto the end of the fiscal\nyear if annual limits,\ncategory limits, or\npro-rated per-country\nlimits are reached."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice que los cupos se pueden acabar antes de fin de mes, no solo al final del año. "
+        },
+        {
+          "t": "Si tu categoría queda 'Unavailable', no aprobarán más casos ahí hasta octubre - tu lugar en la fila no se pierde.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "LA FECHA CLAVE",
+      "headline": "¿Cuándo cierra el año fiscal?",
+      "stat": "30 sep 2026"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Revisa el boletín de octubre apenas se publique",
+        "No entres en pánico si tu categoría dice 'Unavailable'",
+        "Tu fecha de prioridad se mantiene para octubre",
+        "Guarda este post para el próximo boletín"
+      ],
+      "cta_title": "Guarda esto para octubre",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

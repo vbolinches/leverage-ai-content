@@ -1968,6 +1968,190 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post50-investigacion-vecinos-naturalizacion",
+      "graded": "2026-09-07",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "USCIS puede hablar con "
+          },
+          {
+            "t": "tus vecinos.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Nueva guía de naturalización, 25 de agosto de 2026",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "change",
+        "stopping": "tus vecinos",
+        "reason": "Concrete, personal threat in five words — neighbors being interviewed is an image every applicant instantly pictures.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "USCIS puede hablar con "
+            },
+            {
+              "t": "tus vecinos.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 8.2,
+          "shape": "change",
+          "stopping": "tus vecinos",
+          "reason": "Concrete, personal threat in five words — neighbors being interviewed is an image every applicant instantly pictures.",
+          "authored": true
+        },
+        {
+          "headline": "No pienses que solo revisan papeles.",
+          "rank": 2,
+          "score": 7.4,
+          "shape": "contrarian",
+          "stopping": "preguntan a tus conocidos",
+          "reason": "Corrects a belief the reader actually holds, but buries the payoff in the subline instead of the cover.",
+          "authored": false
+        },
+        {
+          "headline": "¿Quién podría hablar de ti a USCIS?",
+          "rank": 3,
+          "score": 6.6,
+          "shape": "question",
+          "stopping": "hablar de ti",
+          "reason": "Right fear, but a question invites a shrug where D's statement forces a check.",
+          "authored": false
+        },
+        {
+          "headline": "Un error de consistencia ahora pesa más.",
+          "rank": 4,
+          "score": 4.8,
+          "shape": "mistake",
+          "stopping": "error de consistencia",
+          "reason": "Vague bureaucratic phrasing — nobody knows if they have made this error, so nobody stops.",
+          "authored": false
+        },
+        {
+          "headline": "335(a): la ley detrás del cambio.",
+          "rank": 5,
+          "score": 2.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Statute number as the opening word is a filter that removes exactly the audience this account serves.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post52-uscis-levanta-freno-39-paises",
+      "graded": "2026-09-07",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "39 países ya no están "
+          },
+          {
+            "t": "congelados en USCIS.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Orden judicial vigente desde el 11 de junio de 2026",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "number-claim",
+        "stopping": "39 países",
+        "reason": "A hard number plus 'ya no están congelados' tells the reader something concrete changed and invites them to check if their country is on the list.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "39 países ya no están "
+            },
+            {
+              "t": "congelados en USCIS.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 6.5,
+          "shape": "number-claim",
+          "stopping": "39 países",
+          "reason": "A hard number plus 'ya no están congelados' tells the reader something concrete changed and invites them to check if their country is on the list.",
+          "authored": true
+        },
+        {
+          "headline": "No pienses que tu caso sigue congelado.",
+          "rank": 2,
+          "score": 4.5,
+          "shape": "contrarian",
+          "stopping": "congelado",
+          "reason": "Vague negation with no number, no country and no named benefit — the reader can't tell if it touches them, so they scroll.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post53-encuesta-oficial-refugiados-afganos",
+      "graded": "2026-09-07",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No cuelgues pensando que es una estafa.",
+        "sub": "El gobierno confirmó esta encuesta el 1 de septiembre.",
+        "rank": 1,
+        "score": 7.2,
+        "shape": "mistake",
+        "stopping": "estafa",
+        "reason": "Names the exact reflex the audience has — hanging up on a government call — and warns they're about to lose something by doing it.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No cuelgues pensando que es una estafa.",
+          "rank": 1,
+          "score": 7.2,
+          "shape": "mistake",
+          "stopping": "estafa",
+          "reason": "Names the exact reflex the audience has — hanging up on a government call — and warns they're about to lose something by doing it.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Te llamó el gobierno "
+            },
+            {
+              "t": "por tus beneficios?",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 6.5,
+          "shape": "question",
+          "stopping": "por tus beneficios",
+          "reason": "A call about your benefits is personal and scary, but the question framing lets anyone who wasn't called scroll on.",
+          "authored": true
+        },
+        {
+          "headline": "Una pregunta corta, sin costo para ti.",
+          "rank": 3,
+          "score": 3.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Reads like a survey invitation with zero stakes; 'sin costo' reassures instead of alarming.",
+          "authored": false
+        }
+      ]
     }
   ]
 }

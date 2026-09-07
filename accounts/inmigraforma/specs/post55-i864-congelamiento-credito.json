@@ -1,0 +1,122 @@
+{
+  "slug": "post55-i864-congelamiento-credito",
+  "art": "form",
+  "caption": "USCIS advierte en su página oficial del Affidavit of Support que un congelamiento de crédito puede bloquear la revisión que ahora permite el nuevo Formulario I-864, vigente desde el 31 de agosto de 2026.\n\nEn palabras simples: si quien va a prometer apoyarte económicamente tiene el crédito congelado, eso puede detener tu caso, igual que una caja fuerte que nadie puede abrir sin la llave. Hay que estar listos para descongelar si USCIS lo pide.\n\nIn plain words: if your sponsor has a credit freeze, be ready to lift it quickly if USCIS asks - it could otherwise delay your case.\n\n¿Tu patrocinador tiene el crédito congelado? Guarda este post para avisarle.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.uscis.gov/green-card/green-card-processes-and-procedures/affidavit-of-support\n\n#i864 #greencard #inmigracion #patrocinador #uscis #credito #inmigracionusa #familiaresunidos #eeuu #inmigrantes",
+  "hook_candidates": [
+    {
+      "headline": "No asumas que tu congelamiento no importa aquí.",
+      "sub": "El nuevo I-864 dice lo contrario."
+    },
+    {
+      "headline": "3 burós de crédito, un solo formulario nuevo.",
+      "sub": "Así funciona el I-864 desde agosto de 2026."
+    },
+    {
+      "headline": "Un crédito congelado te puede costar semanas.",
+      "sub": "USCIS lo advierte en su página oficial."
+    },
+    {
+      "headline": "Proteger tu identidad no siempre te protege aquí.",
+      "sub": "El nuevo I-864 puede chocar con tu congelamiento."
+    },
+    {
+      "headline": "Antes el congelamiento no importaba; ahora sí.",
+      "sub": "Cambio confirmado por USCIS en agosto de 2026."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 055",
+      "headline": [
+        {
+          "t": "¿Tienes el crédito congelado? "
+        },
+        {
+          "t": "Esto te importa.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Nuevo I-864, actualizado por USCIS",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Congelar el crédito protege contra robo de identidad - mucha gente lo hace. "
+        },
+        {
+          "t": "Pero si vas a apoyar a un familiar en su Green Card, ese congelamiento puede bloquear la revisión, igual que una caja fuerte que nadie puede abrir sin la llave.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Qué cambió.",
+      "body": [
+        {
+          "t": "USCIS avisa en su página del Affidavit of Support que si el patrocinador tiene el crédito congelado, la agencia podría no poder revisar la información necesaria del I-864. Fuente: uscis.gov, página Affidavit of Support."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "¿Me afecta a mí?",
+      "body": [
+        {
+          "t": "Esto toca a quien firma el I-864 como patrocinador o copatrocinador y tiene un congelamiento activo en Equifax, Experian o TransUnion. No afecta directamente a quien pide la Green Card."
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "DATOS CLAVE",
+      "headline": "Lo que dice USCIS.",
+      "sub": "uscis.gov, página Affidavit of Support",
+      "label": "TEXTO OFICIAL",
+      "code": "USCIS may not be able to\naccess the information\nnecessary to assess the\nsufficiency of Form I-864."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Dice que un congelamiento puede impedir que USCIS revise el crédito del patrocinador. "
+        },
+        {
+          "t": "Tu caso puede quedar esperando hasta que se descongele o se responda una solicitud - revisa el correo seguido.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "EL NÚMERO CLAVE",
+      "headline": "¿Cuántos burós pueden congelar tu crédito?",
+      "stat": "3 burós"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Si tienes el crédito congelado, prepárate a descongelarlo rápido",
+        "Revisa tu correo y tu cuenta de USCIS seguido",
+        "No descongeles antes si nadie te lo ha pedido",
+        "Guarda este post para tu patrocinador"
+      ],
+      "cta_title": "Guarda esto para tu patrocinador",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ]
+}

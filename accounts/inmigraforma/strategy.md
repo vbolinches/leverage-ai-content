@@ -1,45 +1,34 @@
-\# Strategy — @inmigraforma
+
+# Strategy — @inmigraforma
 
 Repositioned 2026-07 from promoting immigration services to **US immigration
 news, explained bilingually (Spanish-first)**. The account has a small real
 audience (~162 followers) acquired under the old positioning — treat them as
 Spanish-speaking people personally affected by US immigration policy.
 
-## What the performance brief actually supports (2026-08-27)
+## What the performance brief actually supports (2026-09-07)
 
-The brief for this batch says: **not yet meaningful — total signal 24 across 12
-posts, and 150 is the threshold to rank posts at all**. It reports no saves, no
-shares, no reach and no profile visits — the metrics this account was
-repositioned around.
+The brief for this batch reports **total signal 57 across the same 12
+measured posts**, still below the 150 needed to rank posts at all. This is a
+new number, not a new metric: saves, shares, reach and profile visits are
+still not reported.
 
-Three things must be said plainly and none of them is a conclusion about
-content:
+What this new number does and does not tell us:
 
-1. The reported total (24) is again in the same low band as every previous
-   brief (27, 36, 39) and well under the earliest one (93) over the same 12
-   posts. We still do not know why the number moves. Different window,
-   different metric definition, a correction, or noise — all remain possible.
-   It is **not** evidence that anything declined, recovered, or that any batch
-   under- or out-performed another.
-2. Below the ranking threshold, **no post-level comparison is legitimate** in
-   either direction: not "news beats method", not the reverse, not "batch N
-   beat batch N-1".
-3. The number of measured posts has not grown (still 12) while we have now
-   published 49. The brief is still not measuring the repositioned work at
-   all.
+1. It is the fourth data point in a series that has moved 93 → 27/36/39/24 →
+   now 57, over the same 12 legacy posts. The series is not monotonic in
+   either direction. We still do not know why the number moves — different
+   window, different metric definition, a correction, or noise all remain
+   possible. **This is not evidence of an upward trend, a recovery, or that
+   anything in batches 6-7 "worked."**
+2. The number of measured posts is still 12, while the account has now
+   published 49 posts (56 after this batch). The brief still is not
+   measuring the repositioned work — post01 through post49 — at all.
+3. Below the 150 threshold, no post-level or batch-level comparison is
+   legitimate in either direction.
 
-Everything in the 2026-07-30, 2026-08-06, 2026-08-17, 2026-08-19 and
-2026-08-25 assessments therefore still stands:
-
-- The historic top and bottom performers are **pre-repositioning posts** whose
-  hook, slide count and tags are recorded as "?" — nothing concrete to copy.
-- The only identified post-repositioning item ever measured (post01) was
-  measured roughly one day after publication. That is not evidence about
-  method posts, prompt slides or the asylum topic.
-
-So: **no hypothesis moves this batch either.** Everything is carried forward
-unchanged, with the missing evidence named. Batch 7 changes format only where
-there is an internal, craft-level reason.
+So, again: **no hypothesis moves this batch.** Everything below is carried
+forward unchanged, with the missing evidence still named.
 
 ## Working hypotheses (unproven)
 
@@ -47,7 +36,7 @@ there is an internal, craft-level reason.
   with promotional content.
   *Evidence still missing: a post-repositioning snapshot taken at least 7-14
   days after publication, with per-post numbers above the ranking threshold.
-  Six briefs in, we have never had one.*
+  Seven briefs in, we have never had one.*
 - Spanish-first explainers of official English-language sources fill a real
   gap: the primary sources are hard to read, and much Spanish-language
   coverage is alarmist. Calm + sourced is the differentiator.
@@ -56,35 +45,35 @@ there is an internal, craft-level reason.
   quality, saves, follower retention.*
 - Saves should be the key metric: dates and rule changes are things people
   keep. Shares matter when a change affects a whole community.
-  *Evidence still missing: zero recorded saves or shares in the brief, six
+  *Evidence still missing: zero recorded saves or shares in the brief, seven
   briefs running.*
 - Method / workflow posts (how to read a rule, how to submit a public
   comment, which chart applies this month, how to check a form's edition
   date) are more save-worthy and age better than event posts.
-  *Evidence still missing: no post-level data at all. Batch 7 adds post45 (how
-  to submit an official comment on the H-1B fee proposal) as another test
-  case, on top of batches 4 and 6's workflow posts.*
+  *Evidence still missing: no post-level data at all.*
 - A single big rule or page can carry several posts if each one answers a
   different practical question instead of repeating the headline.
-  *Still explicitly unproven. Batch 7 deliberately runs two posts each off two
-  sources: the USCIS public-charge alert (post44 = when to file; post48 =
-  which benefits count) and the CBP Customs-Enforcement Areas notice (post43 =
-  what/where; post49 = what authority it grants). If a brief ever ranks
-  posts, compare whether the second post in each pair holds up or decays
-  against the first.*
+  *Still explicitly unproven. Batch 8 runs two more such pairs: the USCIS
+  "strengthened screening and vetting" alert (post52 = what the court order
+  changed; post56 = what to actually do now, since USCIS says instructions
+  are still coming) and the new Form I-864 credit-check authorization
+  (post51 = what changed; post55 = the credit-freeze edge case). If a brief
+  ever ranks posts, compare whether the second post in each pair holds up or
+  decays against the first.*
 - A dated post (a deadline) and an undated post (a workflow) may behave
   differently: the deadline gets urgency, the workflow gets saves.
-  *Unproven. Batch 7 pairs post44 (the Sept 18, 2026 public-charge deadline)
-  with post45 (the Sept 24, 2026 H-1B comment deadline, both dated) and
-  post48/post49 (workflow-style explainers with no single action deadline).*
+  *Unproven. Batch 8 has clear dated posts (post51's Aug 31 effective date,
+  post54's Sept 30 fiscal-year-end, post53's Nov 2 comment deadline) next to
+  workflow-style posts (post55, post56) with no single action deadline.*
 - A "not yet law" post may be as useful as a "law now" post, because scam
-  exposure peaks when a big number is in the headlines.
-  *Carried from batch 6 (post38) and re-tested from a new angle in batch 7:
-  post47 answers "who actually pays" for the still-proposed $103,265 H-1B fee,
-  explicitly to head off scam attempts asking workers to pay it directly. No
-  way to measure this without saves/comments data.*
+  exposure peaks when a big number or a call from "the government" is in
+  the news.
+  *Batch 8 tests this from a new angle: post53 (the ORR phone-survey notice
+  for Afghan arrivals) is framed explicitly to help people recognize a real
+  government call versus a scam call. No way to measure without saves/
+  comments data.*
 - Reels reach beyond the existing audience; carousels serve it. Alternate.
-  *Evidence still missing: batches 1-7 are carousels only; no Reel has run
+  *Evidence still missing: batches 1-8 are carousels only; no Reel has run
   under the new positioning, so there is no reach comparison at all.*
 
 ## Non-negotiables (not hypotheses)
@@ -152,98 +141,119 @@ Quick Facts / FAQ pages.
 Unchanged. USCIS asylum-rescheduling alert (effective 2026-08-21); the older
 attorney-physical-presence alert (effective 2026-05-18); the H-1B fee NPRM
 (FR Doc. 2026-17324, comments due 2026-09-24); the September 2026 chart
-determination and the standing Final-Action-Dates exception on
-uscis.gov/.../adjustment-of-status-filing-charts-from-the-visa-bulletin.
+determination and the standing Final-Action-Dates exception.
 
 ### Batch 7 — posts 43-49, drafted 2026-08-27
+Unchanged. FR Doc. 2026-17354 (Customs-Enforcement Areas) + cbp.gov release;
+uscis.gov public-charge guidance effective 2026-09-18; H-1B fee NPRM comment
+workflow and "who pays" angles; League of Women Voters v. USCIS naturalization
+voter-registration reversal.
+
+### Batch 8 — posts 50-56, drafted 2026-09-07
 
 Verified spine, all opened and read directly this session, all with dates
 named on-slide:
 
-- **federalregister.gov, FR Doc. 2026-17354** ("Establishment of Four
-  Customs-Enforcement Areas"), established 2026-08-25, plus **cbp.gov**'s own
-  newsroom release the same day: CBP expanded its enforcement jurisdiction
-  from 12 to 24 nautical miles in near-shore waters off South Florida,
-  Southern/Central California, Puerto Rico, and the Texas Gulf Coast, and is
-  authorized to board vessels within those zones. Two posts from one source
-  pair, different practical questions (post43 = what/where; post49 = what
-  authority it grants), testing the "several posts, different questions"
-  hypothesis again.
-- **uscis.gov/newsroom/alerts/uscis-issues-guidance-on-making-public-charge-
-  inadmissibility-determination**: guidance effective **2026-09-18**, applies
-  to Forms I-485 postmarked or e-filed on or after that date; means-tested
-  benefits received before that date count only if cash assistance for income
-  maintenance or long-term institutionalization, while benefits received on
-  or after that date can all be weighed. Two posts (post44 = filing-date
-  urgency; post48 = which benefits count), same source, different questions.
-- **federalregister.gov, FR Doc. 2026-17324** ("Fee for Certain H-1B
-  Petitions"), the same NPRM already used in batch 6's post38, mined for two
-  further angles: post45 is a workflow post on how to file an official
-  comment (regulations.gov, Docket No. USCIS-2026-0298, deadline
-  2026-09-24), and post47 answers "who actually pays" — the fee, if
-  finalized, is paid by the petitioning employer at time of filing, not the
-  worker, framed explicitly as scam-prevention since the number is already
-  circulating in secondary coverage.
-- **uscis.gov/policy-manual/updates**: on 2026-08-03 a federal court in
-  Maryland (League of Women Voters v. USCIS, No. 25-cv-3777, D. Md.) stayed a
-  2025 USCIS Policy Alert that had restricted voter-registration help at
-  naturalization ceremonies to state/local election officials only; USCIS
-  reverted, pending final resolution, to its June 28, 2017 guidance allowing
-  nonpartisan nonprofits to participate again (post46).
+- **uscis.gov Policy Manual, Volume 12, Part B, Chapter 2**, Policy Alert
+  dated **August 25, 2026**, "Investigations and Examinations for
+  Naturalization Eligibility": USCIS reintroduces personal/"neighborhood"
+  investigations under INA 335(a) and reinforces validating applicant
+  information under 335(b) for naturalization cases (post50). Direct PDF
+  opened and quoted:
+  uscis.gov/sites/default/files/document/policy-manual-updates/20260825-InvestigationsForNatzEligibility.pdf
+- **uscis.gov, Affidavit of Support page**: a new edition of Form I-864
+  (dated 08/24/26) took effect **August 31, 2026** with no grace period; it
+  adds a privacy release authorizing USCIS to request consumer-reporting-
+  agency (credit bureau) information about the sponsor; the page also
+  explicitly addresses the case of a sponsor with an active credit/security
+  freeze. Mined for two posts, different practical questions: post51 (what
+  changed, which edition to use) and post55 (the credit-freeze edge case) —
+  another test of the "several posts, one source" hypothesis.
+- **uscis.gov/newsroom/alerts/update-on-uscis-strengthened-screening-and-
+  vetting**: this is the first time an **official** (not law-firm or
+  court-reporting) source has been found and opened for the 39-country
+  adjudication-hold story that batch 7 explicitly declined to write about.
+  The alert itself states that the U.S. District Court for the District of
+  Rhode Island (Dorcas International Institute of Rhode Island v. USCIS,
+  26-cv-00132-JJM-PAS) entered final judgment on June 11, 2026 vacating
+  PM 602-0192, PM 602-0194 and PA 2025-26 agency-wide, and that USCIS "will
+  issue updated instructions pending further litigation developments." Two
+  posts, different questions: post52 (what the court order changed) and
+  post56 (what to actually do about your own case given the guidance is
+  still incomplete).
+- **federalregister.gov, Doc. 2026-17856** (published Sept 1, 2026):
+  emergency OMB/PRA notice for a "Questionnaire for the Refugee Outreach and
+  Well-Being Initiative" — brief telephone interviews with Afghan arrivals
+  who may have received ORR benefits, to identify further service needs;
+  public comments due **November 2, 2026** (post53). Narrow audience (Afghan
+  arrivals specifically) but genuinely useful as scam-versus-legitimate-call
+  guidance.
+- **travel.state.gov, Visa Bulletin for September 2026**: directly opened
+  and quoted the bulletin's own warning language that "Visa categories may
+  become 'Unavailable' prior to the end of the fiscal year if annual
+  limits... are reached" (post54). This is a different practical question
+  from posts 39/40/42 (which chart to use) and from post17 (the general
+  unavailable/fiscal-year mechanism from an earlier bulletin) — framed
+  specifically around September 30, 2026 as the actual, imminent fiscal-
+  year-end this time, not the mechanism in the abstract.
 
-Deliberately dropped leads, and why — same discipline as batch 6:
-- **The 39-country USCIS adjudication-hold injunction and the 75-country
-  immigrant-visa-ban ruling** (both in the monitored signals and heavily
-  covered by CNN, NPR, WaPo, NILC, CLINIC, Democracy Forward and several
-  immigration-law blogs): every source found in this session's search budget
-  was a court-reporting outlet, a law firm, or an advocacy group — none was
-  uscis.gov, dhs.gov, state.gov, or justice.gov/eoir. Per the sourcing rule,
-  court rulings need an official government page, not secondary reporting,
-  and none turned up inside the search budget. Do not write either one until
-  an official DHS/DOS/USCIS statement or a justice.gov/eoir page is opened
-  directly.
-- **The Cary, NC teacher ICE-detention story**: an individual enforcement
-  story with no official source and no reader action — outside the remit.
-- **The PERM premium-processing bill**: it is a bill, not law; its only
-  available source is congress.gov, which is not on the account's approved
-  list of official outlets (uscis.gov, dhs.gov, state.gov, travel.state.gov,
-  federalregister.gov, justice.gov/eoir). Skipped for sourcing reasons, not
-  because it is unimportant.
-- **DV-2028 registration dates**: every source found (dvprogramusa.com,
-  edvamerica.com, and similar) was a non-official, in some cases scam-adjacent
-  site guessing at "expected" October dates. travel.state.gov itself has not
-  posted DV-2028 dates yet. Writing about an unconfirmed date is exactly the
-  kind of speculation the account exists to avoid.
-- **September 2026 Visa Bulletin specific cutoff-date movements** (the sharp
-  family-category advances reported by AILA, WR Immigration, and other
-  practitioner blogs): the only uscis.gov page opened this session confirmed
-  the *chart-selection* rule (unchanged from August: family uses Dates for
-  Filing, employment uses Final Action Dates) but not the underlying
-  travel.state.gov bulletin's specific cutoff dates — that PDF was never
-  directly opened this session. Given posts 39/40/42 already cover this exact
-  chart-selection mechanism, a fourth post repeating it without new, directly
-  verified numbers was judged not worth the redundancy risk.
+Deliberately dropped or deferred leads, and why:
+- **The State Department's worldwide pause on immigrant-visa interview
+  appointments** (widely reported by Fragomen, Ogletree, and several other
+  law-firm blogs, all citing an August 25, 2026 confirmation): every source
+  found and opened this session was a law firm or legal-news blog. The
+  travel.state.gov "U.S. Visas News" index page does list an item titled
+  "Temporary Pause of Visa Operations," which may or may not be this same
+  story — but that specific page was never opened and read directly this
+  session, so per the sourcing rule this cannot yet be written up as news.
+  **Open item for next batch: open
+  https://travel.state.gov/content/travel/en/News/visas-news.html and the
+  specific "Temporary Pause of Visa Operations" page directly before writing
+  anything about this pause.**
+- **The separate 75-country immigrant-visa suspension and the August 21,
+  2026 SDNY ruling vacating it (Catholic Legal Immigration Network v.
+  Rubio)**: again, every source found this session was a law firm blog. No
+  state.gov or justice.gov/eoir page was opened confirming this ruling
+  directly. Still deferred, per the same discipline as batch 7's decision on
+  this exact story.
+- **The 179-year Indian green-card-backlog analysis (NFAP)**: this is a
+  think-tank/advocacy analysis, not an official government source, and the
+  underlying evergreen mechanism (per-country 7% caps) is already covered by
+  post20. Skipped as non-official and redundant.
+- **ICE arrests surge in upstate NY, the Tacoma green-card-holder detention
+  story, and the Raleigh grand-jury indictment**: individual enforcement or
+  criminal stories with no official government page as the source and no
+  general reader action — outside the remit, same reasoning as prior
+  batches' dropped individual-case leads.
+- **September 2026 Visa Bulletin specific cutoff-date movements**: still not
+  mined for numbers beyond the "Unavailable" warning already used in
+  post54, to avoid the redundancy flagged in batch 7.
 
 Open items for next batch, in search order:
-1. Open the actual **September 2026 Visa Bulletin PDF** on travel.state.gov
-   directly (not secondary summaries) if a genuinely new angle emerges;
-   otherwise let the cluster rest. October 2026 Visa Bulletin + chart
-   determination once published (post39/40/42 expire 2026-09-30).
-2. Find an **official** (uscis.gov, dhs.gov, state.gov, or justice.gov/eoir)
-   page or press statement on the 39-country adjudication-hold injunction and
-   the 75-country immigrant-visa-ban ruling before writing either — do not use
-   court-reporting or advocacy-group pages as the news source.
-3. What uscis.gov says on/after **2026-09-15** about the new I-539/I-765
-   editions and the F/J/I fixed-admission rule's effective date. If DHS
-   changes anything, posts 30 and 32-35 need an immediate correction post.
+1. Open **travel.state.gov's "Temporary Pause of Visa Operations" page**
+   (and the general Visas News index) directly to confirm whether it is the
+   same story as the August 2026 immigrant-visa-interview pause reported by
+   law firms, before writing about it.
+2. Find an **official** (state.gov or justice.gov/eoir) page or press
+   statement on the August 21, 2026 SDNY ruling vacating the 75-country
+   immigrant-visa suspension (Catholic Legal Immigration Network v. Rubio)
+   before writing about it — do not use law-firm blogs as the news source.
+3. October 2026 Visa Bulletin + chart determination once travel.state.gov
+   and uscis.gov publish it (expected late September 2026); posts 39/40/42/54
+   all reference the September bulletin and should be revisited once October
+   posts.
 4. **TPS after the dates**: uscis.gov on/after 2026-09-09 (El Salvador) and
    2026-10-19 (Ukraine, Sudan). Do not pre-write it.
-5. Whether the H-1B fee NPRM moves toward a final rule after comments close
-   2026-09-24.
-6. Check whether travel.state.gov has posted official DV-2028 registration
-   dates before writing anything about that program.
-7. Ask the owner for **saves, shares and reach**, and for a snapshot taken 7+
-   days after publication covering more than the same 12 legacy posts. Six
-   briefs in a row have been below the level where any post-level conclusion
-   is legitimate. Without those metrics this file cannot move anything into
-   Confirmed or Disproven, and it will not pretend otherwise.
+5. What uscis.gov says on/after 2026-09-15 about the new I-539/I-765
+   editions and the F/J/I fixed-admission rule's effective date (posts 30,
+   32-35).
+6. Whether the H-1B fee NPRM (comments closed 2026-09-24) moves toward a
+   final rule.
+7. Whether USCIS issues the "updated instructions" it promised in the
+   strengthened-screening-and-vetting alert (posts 52/56) — check
+   uscis.gov/newsroom/alerts for a follow-up.
+8. Ask the owner for **saves, shares and reach**, and for a snapshot taken
+   7+ days after publication covering more than the same 12 legacy posts.
+   Seven briefs in a row have been below the level where any post-level
+   conclusion is legitimate. Without those metrics this file cannot move
+   anything into Confirmed or Disproven, and it will not pretend otherwise.
