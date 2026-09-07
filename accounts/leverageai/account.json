@@ -44,5 +44,15 @@
       "AI productivity"
     ]
   },
-  "model": "claude-sonnet-5"
+  "model": "claude-sonnet-5",
+  "reel_target_seconds": 30,
+  "slide_limits": {
+    "slides_max": 4,
+    "headline": 34,
+    "sub": 60,
+    "body": 60,
+    "items": 22,
+    "stat": 18
+  },
+  "post_arc": "Each post is a 4-slide REEL, and the slides are the HOOK — not the whole workflow. The full steps and any copy-paste prompt live in the CAPTION, where people can actually select and copy them; nobody can copy text off a video.\n  1. cover  - the hook: one plain sentence, plus a 6-8 word sub\n  2. step   - the shift, in one line\n  3. step   - the payoff or the catch, in one line\n  4. recap  - 3 arrows of 3-5 words each, plus the save CTA\nHARD BUDGET: total text across all four slides must stay under ~280 characters. At a readable pace that is a 30-second Reel; every extra 11 characters is another second on screen and another slice of the audience swiping away. Write like a billboard, not a paragraph. No prompt slide and no stat slide — they cannot fit.\nCAPTION: this is where the value lives, and it has room (under 2000 characters). Open with the workflow in 2-4 short paragraphs, give the copy-paste prompt IN FULL when the workflow needs one, then the save prompt, the CTA line, and 8-10 lowercase hashtags."
 }

@@ -96,5 +96,9 @@
     "es cuando",
     "es como cuando"
   ],
-  "reel_ratio": 4
+  "reel_ratio": 4,
+  "reel_target_seconds": 45,
+  "slide_limits": {
+    "body": 180
+  }
 }

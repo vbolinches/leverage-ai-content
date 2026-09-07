@@ -68,6 +68,16 @@ def _flat(v):
     return "".join(x.get("t", "") for x in v)
 
 
+def over_target(secs, target):
+    """True when a rendered Reel runs past what the account budgeted.
+
+    Duration is governed by reading time, so the real fix is always less text
+    (see the slide budget in generate_batch.validate). This is the backstop
+    that makes a miss visible instead of silently shipping a 67-second Reel.
+    """
+    return bool(target) and secs > target * 1.15
+
+
 def slide_seconds(slide, is_last):
     """Dwell time a human needs to actually read this slide.
 

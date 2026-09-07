@@ -114,9 +114,7 @@ __REQUIRED_SLIDE__  {"kind":"step","eyebrow":"STEP 1","headline":"Short imperati
   {"kind":"recap","eyebrow":"RECAP","headline":"The system","items":["step","step","step"],"cta_title":"Save this for later","cta_sub":"__CTA_SUB__","footer_right":"SAVE THIS ↓"}
 
 Hard limits (text overflows the canvas otherwise):
-  headline <= 40 chars   sub <= 90 chars   body <= 260 chars
-  code <= 9 lines, each <= 46 chars       stat <= 22 chars
-  items: 3-4, each <= 44 chars            eyebrow <= 16 chars"""
+__LIMITS__"""
 
 # The schema examples must show this account's CTA and eyebrow series, not
 # placeholders — the model copies examples far more reliably than instructions.
@@ -137,7 +135,23 @@ if _GLOSS:
         '{"t":"día a día, y qué pasa si lo ignoras.","c":"green","b":true}]}'
         '   <- MANDATORY whenever a slide quotes official English text' + chr(10)
     )
+# Slide text limits are per-account: an account whose Reels must land in 30
+# seconds needs a far tighter budget than the canvas alone would impose,
+# because on a Reel the binding constraint is reading time, not pixels.
+_LIM = {"headline": 40, "sub": 90, "body": 260, "items": 44, "stat": 22,
+        "eyebrow": 16}
+_LIM.update(ACCT.get("slide_limits") or {})
+_LIMITS = (f"  headline <= {_LIM['headline']} chars   "
+           f"sub <= {_LIM['sub']} chars   body <= {_LIM['body']} chars" + chr(10) +
+           f"  code <= 9 lines, each <= 46 chars       "
+           f"stat <= {_LIM['stat']} chars" + chr(10) +
+           f"  items: 3-4, each <= {_LIM['items']} chars            "
+           f"eyebrow <= {_LIM['eyebrow']} chars")
+if _LIM.get("slides_max"):
+    _LIMITS += chr(10) + f"  AT MOST {_LIM['slides_max']} slides per post."
+
 SCHEMA = (SCHEMA.replace("__CTA_SUB__", ACCT["cta_line"].rstrip("."))
+                .replace("__LIMITS__", _LIMITS)
                 .replace("__SERIES__", SERIES)
                 .replace("__REQUIRED_SLIDE__", _REQ_LINE))
 
@@ -613,11 +627,38 @@ def validate(post):
                     errs.append(f"'{gloss}' slide is only {len(body)} chars - too "
                                 f"thin to actually explain the legal text")
 
+    if _LIM.get("slides_max") and len(slides) > _LIM["slides_max"]:
+        errs.append(f"{len(slides)} slides, but this account's Reels must fit "
+                    f"{ACCT.get('reel_target_seconds', 30)}s — max "
+                    f"{_LIM['slides_max']}")
+
+    # Reading time, not pixels, is what caps a Reel. Budget the whole post.
+    target = ACCT.get("reel_target_seconds")
+    if target:
+        total = 0
+        for sl in slides:
+            for key in ("eyebrow", "sub", "stat", "label"):
+                total += len(sl.get(key) or "")
+            total += len(hooks.flatten(sl.get("headline")))
+            total += len(hooks.flatten(sl.get("body")))
+            total += sum(len(hooks.flatten(x)) for x in (sl.get("items") or []))
+        budget = int(target * 11 * 0.95)   # ~11 chars/sec readable pace
+        if total > budget:
+            errs.append(f"{total} chars of slide text needs about "
+                        f"{total / 11:.0f}s to read; this account's Reels must "
+                        f"land near {target}s (budget {budget} chars)")
+
     for i, s in enumerate(slides, 1):
         hl = s.get("headline")
         flat = hl if isinstance(hl, str) else "".join(x.get("t", "") for x in hl or [])
-        if len(flat) > 60:
+        if len(flat) > max(60, _LIM["headline"]):
             errs.append(f"slide {i}: headline {len(flat)} chars, will overflow")
+        for key, cap in (("sub", _LIM["sub"]), ("stat", _LIM["stat"])):
+            if len(s.get(key) or "") > cap:
+                errs.append(f"slide {i}: {key} {len(s[key])} chars > {cap}")
+        body_len = len(hooks.flatten(s.get("body")))
+        if body_len > _LIM["body"]:
+            errs.append(f"slide {i}: body {body_len} chars > {_LIM['body']}")
         for ln in (s.get("code") or "").split("\n"):
             if len(ln) > 52:
                 errs.append(f"slide {i}: code line {len(ln)} chars, will overflow")
