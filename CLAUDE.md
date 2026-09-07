@@ -62,10 +62,22 @@ data 2026-09-07, independently on both accounts:
 | leverageai | 2 (n=6, range 1-2) | 40 (n=8, range 6-108) |
 | inmigraforma | 3 (n=6, range 2-7) | 22 (n=6, range 2-59) |
 
-Both accounts are therefore **Reels-only** (`"reel_ratio": "all"`). Do not
-reintroduce carousels while an account is still in discovery: a carousel slot
-is a publishing day that reaches nobody. Revisit only once an account has a
-real audience to serve. Judge posts on reach, not likes.
+Both accounts therefore run **6 Reels to 1 carousel** (`"reel_ratio": 6`).
+
+That last carousel is deliberate and is **not** there for reach — it is a
+measurement tax (owner's call 2026-09-07). Reels win 10-20x *today*, but
+carousels are a follower-facing format and that gap should narrow as an
+account grows; freezing September's numbers into the config would mean never
+noticing. One carousel in seven costs about one low-reach day a week and keeps
+the comparison alive. `monitor.format_read()` prints median reach by format in
+every daily digest, and raises a notice if carousels ever come within 2x of
+Reels — that is the signal to rebalance. Do not remove the carousel share
+without replacing the measurement.
+
+Note the number that makes this less obvious than it looks: inmigraforma has
+164 followers and its carousels reach 3 — under 2% of its own audience, with
+0 profile views. Having followers is not sufficient for carousels to work.
+Judge posts on reach, not likes.
 
 **5b. Reel length is the retention lever, and it is capped by reading time.**
 At the deliberately slow CHAR_RATE (11 chars/sec, owner's call — see point 6),

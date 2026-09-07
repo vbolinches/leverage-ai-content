@@ -173,6 +173,43 @@ def collect():
     return report
 
 
+def format_read(report):
+    """Median reach by format, printed in the daily digest.
+
+    Both accounts carry a deliberate ~1-in-7 carousel share as a measurement
+    tax (owner's call 2026-09-07): Reels out-reached carousels 10-20x in the
+    September data, but freezing that into the config forever would mean never
+    noticing if the gap closes as an account grows. The tax only pays for
+    itself if somebody actually reads it, so it goes in the digest rather than
+    waiting for a human to run an analysis nobody schedules.
+    """
+    import statistics
+    import performance
+    # posts_recent is keyed by Instagram media id; format lives in the queue,
+    # so join through the same mapping performance.py uses.
+    m2s = performance.media_to_slug()
+    s2f = performance.slug_to_format()
+    by = {}
+    for p in report.get("posts_recent") or []:
+        if p.get("reach") is None:
+            continue
+        fmt = s2f.get(m2s.get(p["id"]))
+        if fmt:
+            by.setdefault(fmt, []).append(p["reach"])
+    if len(by) < 2:
+        return
+    parts = [f"{k} median {statistics.median(v):.0f} (n={len(v)})"
+             for k, v in sorted(by.items())]
+    print("\nreach by format: " + " | ".join(parts))
+    reel = by.get("reel")
+    car = by.get("carousel")
+    if reel and car:
+        rm, cm = statistics.median(reel), statistics.median(car)
+        if cm and rm / cm < 2:
+            print("::notice::carousels are within 2x of Reels here — worth "
+                  "revisiting the Reels-only default for this account.")
+
+
 def render(report):
     if "fatal" in report:
         print(f"::error::[{ACCT['slug']}] {report['fatal']}")
@@ -212,6 +249,8 @@ def render(report):
             line += (f" {p.get('reach', '?'):>6} reach"
                      f" {p.get('saved', '?'):>4} saves")
         print(f"{line}  {p['hook']}")
+
+    format_read(report)
 
     # The diagnosis the whole exercise is for.
     reached = [p for p in report["posts_recent"] if p.get("reach")]
