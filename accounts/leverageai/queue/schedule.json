@@ -899,6 +899,20 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post49-claude-pro-worth-it/reel.mp4"
+    },
+    {
+      "id": "post50-chatgpt-builds-the-file",
+      "date": "2026-09-13",
+      "slides": [
+        "accounts/leverageai/queue/post50-chatgpt-builds-the-file/slide01.png",
+        "accounts/leverageai/queue/post50-chatgpt-builds-the-file/slide02.png",
+        "accounts/leverageai/queue/post50-chatgpt-builds-the-file/slide03.png",
+        "accounts/leverageai/queue/post50-chatgpt-builds-the-file/slide04.png"
+      ],
+      "caption": "ChatGPT just changed how it hands you work. As of this week, the new model behind ChatGPT — GPT-6 Astra — can build a finished document, spreadsheet, or presentation directly inside the chat, not just draft the words for you to paste into Word or Canva.\n\nFor a proposal or quote, that means you can ask for the finished file in one message and get something close to send-ready, instead of writing the text then formatting it yourself.\n\nTry this prompt the next time a client wants a quote fast:\n\n\"Write a one-page proposal for [client name] covering: the problem, the scope, three deliverables, timeline, and price of $[X]. Format it as a clean document with headers, not a wall of text.\"\n\nThe catch: it's still guessing at your formatting preferences and your numbers. Read every figure before it goes anywhere near a client's inbox — a wrong price or an invented deliverable costs you the deal, not just time.\n\nSave this for the next time a client needs a quote by end of day.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #clientwork #consultantlife #selfemployed #aiforbusiness #aiworkflow",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post50-chatgpt-builds-the-file/reel.mp4"
     }
   ]
 }

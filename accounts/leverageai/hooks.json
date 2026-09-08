@@ -1021,6 +1021,391 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post50-chatgpt-builds-the-file",
+      "graded": "2026-09-08",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You're still copying ChatGPT into Word.",
+        "sub": "it can build the file itself now",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "mistake",
+        "stopping": "still copying",
+        "reason": "Names a habit the reader recognises as their own and calls it outdated — accusation plus fix in seven words.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You're still copying ChatGPT into Word.",
+          "rank": 1,
+          "score": 8.2,
+          "shape": "mistake",
+          "stopping": "still copying",
+          "reason": "Names a habit the reader recognises as their own and calls it outdated — accusation plus fix in seven words.",
+          "authored": false
+        },
+        {
+          "headline": "ChatGPT can finish the document.",
+          "rank": 2,
+          "score": 7.4,
+          "shape": "change",
+          "stopping": "Not text. The whole file.",
+          "reason": "The sub's correction beat does the work; cover line alone is flat but the pair lands a real capability shift.",
+          "authored": true
+        },
+        {
+          "headline": "Can ChatGPT just send you the file?",
+          "rank": 3,
+          "score": 6.3,
+          "shape": "question",
+          "stopping": "yes — as of this week",
+          "reason": "Question covers make the reader answer instead of stop; the recency in the sub is the only pull.",
+          "authored": false
+        },
+        {
+          "headline": "One prompt now builds 3 file types.",
+          "rank": 4,
+          "score": 5.1,
+          "shape": "number-claim",
+          "stopping": "nothing",
+          "reason": "Reads as a feature-spec label — no pain, no deficiency, just a count of file types.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post51-should-you-block-ai-crawlers",
+      "graded": "2026-09-08",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "5 bots are reading your site today.",
+        "sub": "most site owners never blocked one",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "number-claim",
+        "stopping": "today",
+        "reason": "Concrete number plus \"today\" makes it feel like it's happening to you right now, and the sub names a deficiency you almost certainly have.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "5 bots are reading your site today.",
+          "rank": 1,
+          "score": 7.5,
+          "shape": "number-claim",
+          "stopping": "today",
+          "reason": "Concrete number plus \"today\" makes it feel like it's happening to you right now, and the sub names a deficiency you almost certainly have.",
+          "authored": false
+        },
+        {
+          "headline": "Blocking every AI bot is the wrong move.",
+          "rank": 2,
+          "score": 7.2,
+          "shape": "contrarian",
+          "stopping": "wrong move",
+          "reason": "Contradicts the obvious action and the sub pays it off with customers — the only word this audience cares about.",
+          "authored": false
+        },
+        {
+          "headline": "Is AI training on your website?",
+          "rank": 3,
+          "score": 5.5,
+          "shape": "question",
+          "stopping": "training on your website",
+          "reason": "Real anxiety, but it's a yes/no question the reader can answer in their head and keep scrolling.",
+          "authored": true
+        },
+        {
+          "headline": "AI bots changed names again this year.",
+          "rank": 4,
+          "score": 4.5,
+          "shape": "change",
+          "stopping": "already outdated",
+          "reason": "Only bites if you already have a block list, which the median solo operator doesn't — presumes a habit they lack.",
+          "authored": false
+        },
+        {
+          "headline": "Before: wide open. After: five lines.",
+          "rank": 5,
+          "score": 3.5,
+          "shape": "before-after",
+          "stopping": "nothing",
+          "reason": "\"Wide open\" means nothing without context and \"five lines\" reads like a config chore, not a threat.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post52-check-ai-content-before-publishing",
+      "graded": "2026-09-08",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "88 words, copied word for word.",
+        "sub": "from a lawsuit filed against ChatGPT this month",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "number-claim",
+        "stopping": "88 words, copied word for word",
+        "reason": "Concrete number plus a named threat gives an actual stopping beat; A is just vague dread.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": "88 words, copied word for word.",
+          "rank": 1,
+          "score": 6.5,
+          "shape": "number-claim",
+          "stopping": "88 words, copied word for word",
+          "reason": "Concrete number plus a named threat gives an actual stopping beat; A is just vague dread.",
+          "authored": true
+        },
+        {
+          "headline": "AI drafting just got a lot riskier.",
+          "rank": 2,
+          "score": 4.0,
+          "shape": "change",
+          "stopping": "riskier",
+          "reason": "Generic scare framing with no specific, and 'lawsuit news' is meta-commentary about AI culture rather than a task the median solo operator has.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post53-chatgpt-folder-of-files",
+      "graded": "2026-09-08",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Which of your invoices are still unpaid?",
+        "sub": "ChatGPT can check the whole folder",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "question",
+        "stopping": "still unpaid",
+        "reason": "Unpaid invoices is a live nerve for every solo operator; the question forces a mental check before the thumb moves.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Which of your invoices are still unpaid?",
+          "rank": 1,
+          "score": 6.5,
+          "shape": "question",
+          "stopping": "still unpaid",
+          "reason": "Unpaid invoices is a live nerve for every solo operator; the question forces a mental check before the thumb moves.",
+          "authored": false
+        },
+        {
+          "headline": "5 client files, one ChatGPT question.",
+          "rank": 2,
+          "score": 5.5,
+          "shape": "number-claim",
+          "stopping": "5 client files",
+          "reason": "Concrete number and a whiff of change, but 'client files' is a vague chore nobody feels urgently.",
+          "authored": false
+        },
+        {
+          "headline": "One folder. One ask. Every file.",
+          "rank": 3,
+          "score": 3.5,
+          "shape": "category",
+          "stopping": "nothing",
+          "reason": "Three-beat slogan naming a capability category — no pain, no deficiency, reads like a feature tagline.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post54-ai-bookkeeping-agent-beta-check",
+      "graded": "2026-09-08",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Your books aren't autopilot yet.",
+        "sub": "the 'AI agent' feature may still be beta",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "contrarian",
+        "stopping": "aren't autopilot yet",
+        "reason": "Names a deficiency the reader is quietly worried about and punctures an assumption they may already be acting on.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": "Your books aren't autopilot yet.",
+          "rank": 1,
+          "score": 6.5,
+          "shape": "contrarian",
+          "stopping": "aren't autopilot yet",
+          "reason": "Names a deficiency the reader is quietly worried about and punctures an assumption they may already be acting on.",
+          "authored": true
+        },
+        {
+          "headline": "Is your bookkeeping AI even finished?",
+          "rank": 2,
+          "score": 5.5,
+          "shape": "question",
+          "stopping": "even finished?",
+          "reason": "Doubt-seeding question lands, but a question cover is weaker than a flat claim and 'finished' is vague.",
+          "authored": false
+        },
+        {
+          "headline": "8 named AI agents. Some still beta.",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "number-claim",
+          "stopping": "nothing",
+          "reason": "A count of named tools is a round-up in disguise — the exact framing this account has already killed.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post55-chatgpt-reads-your-texts",
+      "graded": "2026-09-08",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": [
+          {
+            "t": "The client text you forgot to answer."
+          }
+        ],
+        "sub": "ChatGPT can now find it for you",
+        "rank": 1,
+        "score": 8.2,
+        "shape": "mistake",
+        "stopping": "forgot to answer",
+        "reason": "Names a specific guilt every solo operator has felt this week, then offers the fix — the pain is the hook, not the tool.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "The client text you forgot to answer."
+            }
+          ],
+          "rank": 1,
+          "score": 8.2,
+          "shape": "mistake",
+          "stopping": "forgot to answer",
+          "reason": "Names a specific guilt every solo operator has felt this week, then offers the fix — the pain is the hook, not the tool.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Half your client work lives in texts."
+            }
+          ],
+          "rank": 2,
+          "score": 7.4,
+          "shape": "cost",
+          "stopping": "none of it is searchable",
+          "reason": "Reframes client texts as a buried liability; deficiency stated cleanly, though it stays abstract where E gets personal.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Your Mac just learned to read iMessage."
+            }
+          ],
+          "rank": 3,
+          "score": 6.6,
+          "shape": "change",
+          "stopping": "drafted before you open them",
+          "reason": "The subline does all the work; the cover line itself is a feature announcement, not a pain.",
+          "authored": false
+        },
+        {
+          "headline": "ChatGPT can read your texts now.",
+          "rank": 4,
+          "score": 5.5,
+          "shape": "change",
+          "stopping": "read your texts",
+          "reason": "Mild privacy jolt, but it's a product-news headline about a tool rather than a problem the reader owns.",
+          "authored": true
+        },
+        {
+          "headline": "3 message types ChatGPT can now read.",
+          "rank": 5,
+          "score": 3.5,
+          "shape": "number-claim",
+          "stopping": "nothing",
+          "reason": "Category-label counting of message protocols — exactly the topic-label framing this account has already buried.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post56-chatgpt-builds-a-landing-page",
+      "graded": "2026-09-08",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "You still pay a builder for one page",
+        "sub": "That line can leave your books",
+        "rank": 1,
+        "score": 7.5,
+        "shape": "cost",
+        "stopping": "still pay",
+        "reason": "Names a recurring bill the reader recognises and implies it can be deleted — pain plus money, the only one that touches the wallet.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You still pay a builder for one page",
+          "rank": 1,
+          "score": 7.5,
+          "shape": "cost",
+          "stopping": "still pay",
+          "reason": "Names a recurring bill the reader recognises and implies it can be deleted — pain plus money, the only one that touches the wallet.",
+          "authored": false
+        },
+        {
+          "headline": "Landing page: two days, or one prompt",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "before-after",
+          "stopping": "two days, or one prompt",
+          "reason": "Concrete time collapse with a sub that kills the obvious objection; strong contrast, slightly cold opening word.",
+          "authored": false
+        },
+        {
+          "headline": "One prompt, one hosted page, no builder.",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "no builder",
+          "reason": "The triple beat lands but it reads like a spec line, not a pain; sub slides into topic-label framing.",
+          "authored": false
+        },
+        {
+          "headline": "ChatGPT now hosts the page it writes",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "now hosts",
+          "reason": "Announcement, not a deficiency — news about a feature rather than something wrong in the reader's month.",
+          "authored": false
+        },
+        {
+          "headline": "Can ChatGPT build a landing page?",
+          "rank": 5,
+          "score": 3.5,
+          "shape": "question",
+          "stopping": "nothing",
+          "reason": "Yes/no question a reader answers in their head and scrolls; closest thing here to a category label.",
+          "authored": true
+        }
+      ]
     }
   ]
 }
