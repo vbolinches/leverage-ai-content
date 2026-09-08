@@ -794,9 +794,12 @@
         "accounts/leverageai/queue/post43-claude-sends-your-email/slide07.png"
       ],
       "caption": "You know the email. Client's invoice is 15 days overdue, and you're staring at a blank reply trying to sound firm without sounding rude.\n\nAs of August 18, Claude can actually send that email for you — not just draft it. Connect Gmail, give it the invoice details, and it prepares the message. You still click approve before anything goes out.\n\nThe prompt on slide 4 is what to paste once you've connected Gmail. Save this so you're not rewriting the same overdue-payment email every month.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #claudeai #aiworkflow #selfemployed #clientwork #consultantlife #latepayments",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post43-claude-sends-your-email/reel.mp4"
+      "video": "accounts/leverageai/queue/post43-claude-sends-your-email/reel.mp4",
+      "published_media_id": "17971536180130286",
+      "published_on": "2026-09-08",
+      "threads_posted": true
     },
     {
       "id": "post44-claude-cowork-paperwork",
