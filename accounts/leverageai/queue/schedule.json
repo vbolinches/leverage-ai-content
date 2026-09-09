@@ -814,9 +814,12 @@
         "accounts/leverageai/queue/post44-claude-cowork-paperwork/slide07.png"
       ],
       "caption": "Somewhere on your drive is a folder of receipts and intake forms you keep meaning to sort. Claude Cowork can go through it without you opening each file one at a time.\n\nCowork is Anthropic's desktop agent — you describe an outcome, step away, and come back to a finished spreadsheet. It's included with Claude Pro and up, not the free plan, and it now runs on both Mac and Windows.\n\nIt's not free of limits: long jobs burn through your usage fast, and it won't touch banking or single sign-on logins unless you add them yourself. Save this for the next time paperwork piles up.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #claudeai #aiworkflow #selfemployed #clientwork #consultantlife #adminwork",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post44-claude-cowork-paperwork/reel.mp4"
+      "video": "accounts/leverageai/queue/post44-claude-cowork-paperwork/reel.mp4",
+      "published_media_id": "18110430518026655",
+      "published_on": "2026-09-09",
+      "threads_posted": true
     },
     {
       "id": "post45-instagram-ai-label-rules",
