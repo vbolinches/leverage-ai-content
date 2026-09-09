@@ -1,0 +1,61 @@
+{
+  "slug": "post51-notebooklm-renamed-gemini",
+  "art": "document",
+  "caption": "NotebookLM has a new name: Gemini Notebook. Google renamed it in mid-July 2026 — same product, same source-grounded summaries, just a different label showing up in your Workspace apps.\n\nIf you use it for client research — reading through contracts, meeting transcripts, market reports — nothing about how it works changed. What did change: old bookmarks, browser shortcuts, or any internal notes where you wrote \"open NotebookLM\" might now point to a stale name.\n\nHere's a prompt to get more out of it either way — paste it once you've uploaded a folder of client documents:\n\n\"Summarize the uploaded sources into three sections: key facts, open questions, and anything that contradicts another source. Flag which source each point came from.\"\n\nSave this so you don't lose track of the tool next time you go looking for it by its old name.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #notebooklm #googleai #clientwork #consultantlife #aiworkflow #selfemployed",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 051",
+      "headline": "Your saved NotebookLM link may be dead.",
+      "sub": "The tool moved under a new name.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE CHANGE",
+      "headline": "Google renamed it in July 2026.",
+      "body": "Same uploads. Same summaries. New label."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE CATCH",
+      "headline": "Old bookmarks may not open.",
+      "body": "Update saved links to the new name."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "What to do",
+      "items": [
+        "Same features stay",
+        "Only the name changed",
+        "Update saved links"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "1 rename. 0 feature changes.",
+      "sub": "NotebookLM's July 2026 update, decoded."
+    },
+    {
+      "headline": "You're still calling it NotebookLM.",
+      "sub": "Google renamed it three months ago."
+    },
+    {
+      "headline": "Still searching for 'NotebookLM'?",
+      "sub": "It goes by a different name now."
+    },
+    {
+      "headline": "Your saved NotebookLM link may be dead.",
+      "sub": "The tool moved under a new name."
+    },
+    {
+      "headline": "NotebookLM isn't gone. It's renamed.",
+      "sub": "Nothing about the tool actually changed."
+    }
+  ]
+}

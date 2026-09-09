@@ -916,6 +916,48 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post50-chatgpt-builds-the-file/reel.mp4"
+    },
+    {
+      "id": "post51-notebooklm-renamed-gemini",
+      "date": "2026-09-14",
+      "slides": [
+        "accounts/leverageai/queue/post51-notebooklm-renamed-gemini/slide01.png",
+        "accounts/leverageai/queue/post51-notebooklm-renamed-gemini/slide02.png",
+        "accounts/leverageai/queue/post51-notebooklm-renamed-gemini/slide03.png",
+        "accounts/leverageai/queue/post51-notebooklm-renamed-gemini/slide04.png"
+      ],
+      "caption": "NotebookLM has a new name: Gemini Notebook. Google renamed it in mid-July 2026 — same product, same source-grounded summaries, just a different label showing up in your Workspace apps.\n\nIf you use it for client research — reading through contracts, meeting transcripts, market reports — nothing about how it works changed. What did change: old bookmarks, browser shortcuts, or any internal notes where you wrote \"open NotebookLM\" might now point to a stale name.\n\nHere's a prompt to get more out of it either way — paste it once you've uploaded a folder of client documents:\n\n\"Summarize the uploaded sources into three sections: key facts, open questions, and anything that contradicts another source. Flag which source each point came from.\"\n\nSave this so you don't lose track of the tool next time you go looking for it by its old name.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #notebooklm #googleai #clientwork #consultantlife #aiworkflow #selfemployed",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post51-notebooklm-renamed-gemini/reel.mp4"
+    },
+    {
+      "id": "post54-chatgpt-go-eight-dollars",
+      "date": "2026-09-15",
+      "slides": [
+        "accounts/leverageai/queue/post54-chatgpt-go-eight-dollars/slide01.png",
+        "accounts/leverageai/queue/post54-chatgpt-go-eight-dollars/slide02.png",
+        "accounts/leverageai/queue/post54-chatgpt-go-eight-dollars/slide03.png",
+        "accounts/leverageai/queue/post54-chatgpt-go-eight-dollars/slide04.png"
+      ],
+      "caption": "OpenAI's cheapest paid tier, ChatGPT Go, is $8 a month. Before you downgrade to save $12, know what you're giving up.\n\nGo doesn't include Agent mode, Deep Research, ChatGPT Sites, or ChatGPT Work — the features most useful for actual client work: research, drafting sites, and delegating multi-step tasks. It also shows ads. Plus, at $20, is the first tier that unlocks all of that.\n\nIf you're deciding between the two, ask yourself this before you pick a plan:\n\n\"List every task I use ChatGPT for in a normal week. For each one, tell me whether ChatGPT Go or ChatGPT Plus supports it, based on: Agent mode, Deep Research, Sites, Work, and ad-free use.\"\n\nPaste your own task list into that prompt and you'll get a clearer answer than any pricing page.\n\nSave this before your next renewal.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aitools #consultantlife #selfemployed #aiworkflow #smallbusiness",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post54-chatgpt-go-eight-dollars/reel.mp4"
+    },
+    {
+      "id": "post55-ai-subscription-overlap-audit",
+      "date": "2026-09-16",
+      "slides": [
+        "accounts/leverageai/queue/post55-ai-subscription-overlap-audit/slide01.png",
+        "accounts/leverageai/queue/post55-ai-subscription-overlap-audit/slide02.png",
+        "accounts/leverageai/queue/post55-ai-subscription-overlap-audit/slide03.png",
+        "accounts/leverageai/queue/post55-ai-subscription-overlap-audit/slide04.png"
+      ],
+      "caption": "ChatGPT, Claude, and Perplexity all write, research, and summarize now. A year ago they had different strengths. In 2026 the overlap is real — and so is the chance you're paying full price for the same job three times.\n\nThis isn't an argument to cancel everything. Some overlap is a legitimate backup plan. But most solo operators have never actually mapped which subscription does which task.\n\nCopy-paste this into whichever AI tool you trust most:\n\n\"Here are my AI subscriptions and what I pay for each: [list them with monthly cost]. Here's what I actually use them for in a normal week: [list tasks]. Tell me which subscriptions overlap on the same task, and which one I could drop without losing a capability I use weekly.\"\n\nFill in your real numbers and let it do the arithmetic.\n\nSave this before your next batch of renewals hits.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #aitools #consultantlife #selfemployed #productivity #aiworkflow #smallbusiness",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post55-ai-subscription-overlap-audit/reel.mp4"
     }
   ]
 }

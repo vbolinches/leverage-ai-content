@@ -1,0 +1,61 @@
+{
+  "slug": "post55-ai-subscription-overlap-audit",
+  "art": "spreadsheet",
+  "caption": "ChatGPT, Claude, and Perplexity all write, research, and summarize now. A year ago they had different strengths. In 2026 the overlap is real — and so is the chance you're paying full price for the same job three times.\n\nThis isn't an argument to cancel everything. Some overlap is a legitimate backup plan. But most solo operators have never actually mapped which subscription does which task.\n\nCopy-paste this into whichever AI tool you trust most:\n\n\"Here are my AI subscriptions and what I pay for each: [list them with monthly cost]. Here's what I actually use them for in a normal week: [list tasks]. Tell me which subscriptions overlap on the same task, and which one I could drop without losing a capability I use weekly.\"\n\nFill in your real numbers and let it do the arithmetic.\n\nSave this before your next batch of renewals hits.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #aitools #consultantlife #selfemployed #productivity #aiworkflow #smallbusiness",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 055",
+      "headline": "You're paying for the same job twice.",
+      "sub": "ChatGPT, Claude, and Perplexity now overlap.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE SHIFT",
+      "headline": "Map what each tool covers.",
+      "body": "One audit stops triple-paying for one task."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE CATCH",
+      "headline": "Overlap isn't always waste.",
+      "body": "Redundancy can be your backup plan."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The audit",
+      "items": [
+        "List your AI tools",
+        "Match tool to task",
+        "Cut the duplicate"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "3 AI tools. 1 overlapping job.",
+      "sub": "Most solo operators never audit this."
+    },
+    {
+      "headline": "You're paying for the same job twice.",
+      "sub": "ChatGPT, Claude, and Perplexity now overlap."
+    },
+    {
+      "headline": "What does each AI sub really do?",
+      "sub": "Most solo operators have never checked."
+    },
+    {
+      "headline": "Overlapping AI subs add up fast.",
+      "sub": "A five-minute audit finds the waste."
+    },
+    {
+      "headline": "More AI tools isn't more power.",
+      "sub": "Past a point, they just repeat each other."
+    }
+  ]
+}

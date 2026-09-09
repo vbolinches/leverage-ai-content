@@ -1,0 +1,61 @@
+{
+  "slug": "post54-chatgpt-go-eight-dollars",
+  "art": "chart",
+  "caption": "OpenAI's cheapest paid tier, ChatGPT Go, is $8 a month. Before you downgrade to save $12, know what you're giving up.\n\nGo doesn't include Agent mode, Deep Research, ChatGPT Sites, or ChatGPT Work — the features most useful for actual client work: research, drafting sites, and delegating multi-step tasks. It also shows ads. Plus, at $20, is the first tier that unlocks all of that.\n\nIf you're deciding between the two, ask yourself this before you pick a plan:\n\n\"List every task I use ChatGPT for in a normal week. For each one, tell me whether ChatGPT Go or ChatGPT Plus supports it, based on: Agent mode, Deep Research, Sites, Work, and ad-free use.\"\n\nPaste your own task list into that prompt and you'll get a clearer answer than any pricing page.\n\nSave this before your next renewal.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aitools #consultantlife #selfemployed #aiworkflow #smallbusiness",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 054",
+      "headline": "Go saves $12. Costs Agent mode.",
+      "sub": "Know the trade before you switch plans.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE GAP",
+      "headline": "No Agent mode. No Sites. No Work.",
+      "body": "Those are the tools client work needs."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "THE CATCH",
+      "headline": "Go still shows you ads.",
+      "body": "Plus removes them for $12 more a month."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Pick by task",
+      "items": [
+        "Go = ads, fewer tools",
+        "Plus = full toolkit",
+        "Match plan to tasks"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "hook_candidates": [
+    {
+      "headline": "OpenAI added a cheaper ChatGPT.",
+      "sub": "Here's what Go leaves out for business use."
+    },
+    {
+      "headline": "Downgrading might cost you tools.",
+      "sub": "Go saves $12 but cuts your best features."
+    },
+    {
+      "headline": "Which ChatGPT plan fits you?",
+      "sub": "Go and Plus cover very different tasks."
+    },
+    {
+      "headline": "Go saves $12. Costs Agent mode.",
+      "sub": "Know the trade before you switch plans."
+    },
+    {
+      "headline": "Go looks cheap. It isn't complete.",
+      "sub": "The $8 plan skips your most-used tools."
+    }
+  ]
+}
