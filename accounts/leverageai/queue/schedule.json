@@ -834,9 +834,12 @@
         "accounts/leverageai/queue/post45-instagram-ai-label-rules/slide07.png"
       ],
       "caption": "Instagram just tightened its rules on AI-generated influencers — accounts built around a fake person now need an 'AI-generated profile' label or they lose reach in Reels and Explore.\n\nIf you use ChatGPT to write captions or Canva to build graphics for your own business account, this isn't about you. The rule targets the identity behind the account, not the tools that touched the post.\n\nThe prompt on slide 4 is a quick way to check your own content history is clean. Save this before you assume a policy change applies to you when it doesn't — or worse, when it does.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #instagram #contentcreation #selfemployed #aiworkflow #consultantlife #marketing",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post45-instagram-ai-label-rules/reel.mp4"
+      "video": "accounts/leverageai/queue/post45-instagram-ai-label-rules/reel.mp4",
+      "published_media_id": "18097041404162895",
+      "published_on": "2026-09-10",
+      "threads_posted": true
     },
     {
       "id": "post46-gemini-notebook-expert-books",
