@@ -854,9 +854,12 @@
         "accounts/leverageai/queue/post46-gemini-notebook-expert-books/slide07.png"
       ],
       "caption": "NotebookLM quietly became Gemini Notebook in July. Same tool, same notebooks — but it just picked up a feature worth knowing about if you buy business books and never get past chapter three.\n\nExpert Intelligence lets you add an ebook you own from Google Play Books as a grounded source, alongside your own client notes. Ask it to apply the book's framework to a real situation, and it cites the exact page.\n\nIt only works with select titles bought through Play Books — not PDFs, not library copies. Save this for the next book you buy for a specific client problem.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #notebooklm #aiworkflow #selfemployed #clientwork #consultantlife #research",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post46-gemini-notebook-expert-books/reel.mp4"
+      "video": "accounts/leverageai/queue/post46-gemini-notebook-expert-books/reel.mp4",
+      "published_media_id": "18111234869009275",
+      "published_on": "2026-09-11",
+      "threads_posted": true
     },
     {
       "id": "post47-chatgpt-upwork-discovery",
