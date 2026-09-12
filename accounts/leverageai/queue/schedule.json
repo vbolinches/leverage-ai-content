@@ -874,9 +874,12 @@
         "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/slide07.png"
       ],
       "caption": "Since April, Upwork's marketplace lives inside ChatGPT. A client can describe their project in plain language and get matched straight to a freelancer — no browsing profiles first.\n\nThat changes what makes a profile work. Matching runs on how specifically you've described your service, not how professional your resume-style bio sounds. 'Graphic designer' loses to 'logo redesign for small bakeries, 5-day turnaround.'\n\nThe prompt on slide 4 rewrites your profile the way a client would actually phrase their need. Save this before your next profile update.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #upwork #selfemployed #clientwork #consultantlife #freelanceclients",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/reel.mp4"
+      "video": "accounts/leverageai/queue/post47-chatgpt-upwork-discovery/reel.mp4",
+      "published_media_id": "18116479735950988",
+      "published_on": "2026-09-12",
+      "threads_posted": true
     },
     {
       "id": "post48-perplexity-model-council",
