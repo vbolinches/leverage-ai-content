@@ -2152,6 +2152,429 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post57-eb1-visa-category-may-run-out",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "EB-1 India: ¡No esperes más!",
+        "sub": "Si no envías ahora, podrías esperar hasta octubre 2026.",
+        "rank": 1,
+        "score": 1.0,
+        "shape": "contrarian",
+        "stopping": "false hook: claims 2026 (should be 2025), making readers panic unnecessarily",
+        "reason": "Overstated consequence (2026 instead of 2025) — readers might delay action thinking it's more urgent, but the penalty is exaggerated. This violates trust.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "EB-1 India: ¡No esperes más!",
+          "rank": 1,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "false hook: claims 2026 (should be 2025), making readers panic unnecessarily",
+          "reason": "Overstated consequence (2026 instead of 2025) — readers might delay action thinking it's more urgent, but the penalty is exaggerated. This violates trust.",
+          "authored": false
+        },
+        {
+          "headline": "¿Pensaste que tenías tiempo?",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "false hook: claims 2024 (should be 2025) and misuses 'agotarán' (visas don't 'run out')",
+          "reason": "Overstated consequence (2024 instead of 2025) — readers may wrongly believe they have more time, risking missed deadlines.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¡Se acaba el plazo para EB-1 India!",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "false hook: claims 2024 (should be 2025) — same error as D but less engaging hook",
+          "reason": "Overstated consequence (2024 instead of 2025) — false urgency damages trust, though hook is slightly weaker than D.",
+          "authored": true
+        },
+        {
+          "headline": "¡No esperes a último momento!",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "accurate, clear deadline, strong urgency without exaggeration",
+          "reason": "Correctly states deadline (Sept 30) and consequence (deadline lost), no false claims. 'Último momento' is relatable.",
+          "authored": false
+        },
+        {
+          "headline": "EB-1 India: ¿Crees que tienes tiempo?",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "accurate (2025 correct), but weak hook ('¿Crees que tienes tiempo?') lacks urgency",
+          "reason": "Correct info but phrasing feels passive. '¿Crees que tienes tiempo?' is less actionable than F's direct command.",
+          "authored": false
+        },
+        {
+          "headline": "El plazo para EB-1 India termina pronto",
+          "rank": 6,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "vague ('termina pronto'), no deadline or consequence specified",
+          "reason": "No specific date or consequence — readers scroll past easily. 'Termina pronto' means nothing to someone without legal context.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post58-federal-register-index-2026",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No te pierdas los cambios de USCIS",
+        "sub": "El índice del Registro Federal de 2026 está actualizado",
+        "rank": 1,
+        "score": 2.0,
+        "shape": "category",
+        "stopping": "The main hook ('No te pierdas los cambios') is simple and urgent, making it slightly harder to scroll past than others. The sub's '2026' still confuses, but the main line might make someone pause for a second before realizing it's a future year.",
+        "reason": "Confusing future year in sub, but main hook is a simple call to action",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No te pierdas los cambios de USCIS",
+          "rank": 1,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "The main hook ('No te pierdas los cambios') is simple and urgent, making it slightly harder to scroll past than others. The sub's '2026' still confuses, but the main line might make someone pause for a second before realizing it's a future year.",
+          "reason": "Confusing future year in sub, but main hook is a simple call to action",
+          "authored": false
+        },
+        {
+          "headline": "¿Sabes dónde están los cambios de USCIS?",
+          "rank": 2,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Starts with a question ('¿Sabes...?'), which can stop a scroll, but the sub's '2026' immediately undermines it. The question feels rhetorical and unhelpful for a practical need.",
+          "reason": "Question format might briefly stop scroll, but 2026 error makes it feel irrelevant",
+          "authored": false
+        },
+        {
+          "headline": "2026: ¿Dónde están los cambios de USCIS?",
+          "rank": 3,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Leads with '2026' as a headline topic, which screams 'not current' to someone needing today's info. The colon feels like a typo, making it seem unprofessional.",
+          "reason": "2026 headline makes audience instantly scroll past as 'not relevant'",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Índice del Registro Federal 2026"
+            },
+            {
+              "t": "¿Dónde están los cambios?",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Mashes '2026' into the headline without context ('Índice del Registro Federal 2026¿Dónde...?'), creating a jarring, unprofessional mess that feels like a mistake.",
+          "reason": "Confusing headline structure with 2026 makes it feel like a typo, not a real hook",
+          "authored": true
+        },
+        {
+          "headline": "El índice de 2026 ya está listo",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "The worst: 'El índice de 2026 ya está listo' falsely claims the 2026 index is ready now. This is a factual error that would make readers think they’re being misled, costing trust instantly.",
+          "reason": "Overstates the facts (2026 index is not current) — scores below 3 due to false urgency",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post60-i485-form-edition-change",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "¡Atención! Tu formulario I-485 antiguo no servirá",
+            "c": "blue"
+          }
+        ],
+        "sub": "Empezando el 18 de septiembre de 2026",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "before-after",
+        "stopping": "¡Atención! is a proven stopper for urgent warnings. 'No servirá' (won't work) is simple and actionable, overriding the jargon.",
+        "reason": "The '¡Atención!' grabs attention instantly. 'No servirá' is a clear, simple phrase non-legal people understand. The jargon 'I-485' is unavoidable but the urgency makes them pause to read further.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "¡Atención! Tu formulario I-485 antiguo no servirá",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 6.0,
+          "shape": "before-after",
+          "stopping": "¡Atención! is a proven stopper for urgent warnings. 'No servirá' (won't work) is simple and actionable, overriding the jargon.",
+          "reason": "The '¡Atención!' grabs attention instantly. 'No servirá' is a clear, simple phrase non-legal people understand. The jargon 'I-485' is unavoidable but the urgency makes them pause to read further.",
+          "authored": true
+        },
+        {
+          "headline": "Tu I-485 viejo se convierte en basura",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "before-after",
+          "stopping": "‘Basura’ (trash) is vivid but confusing—does it mean the form is trash, or their effort? Weakens impact.",
+          "reason": "‘Basura’ is attention-grabbing but misleads (forms don’t become trash, applications do). The phrase feels like an exaggeration, making it less trustworthy than D.",
+          "authored": false
+        },
+        {
+          "headline": "¡No envíes tu I-485 antiguo!",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "‘No envíes’ (don’t send) is direct but vague—what does ‘envíes’ mean? (mail? submit?)",
+          "reason": "‘No envíes’ is a good command, but ‘I-485 antiguo’ (old I-485) uses jargon without context. They scroll past because it’s unclear what to do.",
+          "authored": false
+        },
+        {
+          "headline": "Olvida el formulario I-485 que tienes",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "before-after",
+          "stopping": "‘Olvida’ (forget) is passive and non-urgent—no reason to stop.",
+          "reason": "‘Olvida’ feels like advice, not a warning. No urgency, no clarity on why it matters. They scroll past immediately.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post61-asylum-application-info",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Asilo? ¡Sí, es posible!",
+        "sub": "Paso a paso sin jerga",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "number-claim",
+        "stopping": "High",
+        "reason": "Directly answers the audience's fear ('Is this possible?') with urgent positivity. '¡Sí, es posible!' cuts through doubt; 'Paso a paso sin jerga' targets their need for simplicity. No vague urgency or false alarm.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Asilo? ¡Sí, es posible!",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "number-claim",
+          "stopping": "High",
+          "reason": "Directly answers the audience's fear ('Is this possible?') with urgent positivity. '¡Sí, es posible!' cuts through doubt; 'Paso a paso sin jerga' targets their need for simplicity. No vague urgency or false alarm.",
+          "authored": false
+        },
+        {
+          "headline": "¿Crees que el asilo es complicado?",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "High",
+          "reason": "Challenges the core fear ('complicado') with 'No, es sencillo.' The subhead reinforces trust. More compelling than D's generic 'no sabes'.",
+          "authored": false
+        },
+        {
+          "headline": "¿No sabes cómo pedir asilo?",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "Medium",
+          "reason": "Clear but weaker than C. '¿No sabes?' feels slightly accusatory; 'más fácil' lacks C's emotional punch. Still stops scrollers who feel lost.",
+          "authored": false
+        },
+        {
+          "headline": "Nunca más confusiones con el asilo",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "number-claim",
+          "stopping": "Low",
+          "reason": "Vague promise ('Nunca más confusiones') with no concrete hook. 'Todo lo que necesitas' overpromises—readers scroll past as 'more marketing'.",
+          "authored": false
+        },
+        {
+          "headline": "Pide asilo antes de 1 año",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "Very Low",
+          "reason": "Urgent but meaningless. 'Antes de 1 año' is a deadline with zero context (why? what happens?). Feels like random alarm; readers scroll past.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¿Cómo pedir asilo?",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 3.0,
+          "shape": "number-claim",
+          "stopping": "Very Low",
+          "reason": "Generic question ('¿Cómo...?') with no emotional hook. 'Proceso explicado' is a promise, not a stop. Feels like every other boring post—scroll past instantly.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post62-policy-manual-for-uscis-processing-standards",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No es un documento secreto",
+        "sub": "El manual de USCIS está en internet, gratis",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "number-claim",
+        "stopping": "The word 'secreto' creates immediate tension (fear of being locked out) and 'gratis' directly addresses budget stress. This stops scrollers because it attacks a core fear: 'Is this hidden from me?' and immediately solves it with a free, accessible solution.",
+        "reason": "Strongest hook: 'secreto' triggers urgency, 'gratis' is a pain point. Perfect for audience who think government docs are hidden or costly.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No es un documento secreto",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "The word 'secreto' creates immediate tension (fear of being locked out) and 'gratis' directly addresses budget stress. This stops scrollers because it attacks a core fear: 'Is this hidden from me?' and immediately solves it with a free, accessible solution.",
+          "reason": "Strongest hook: 'secreto' triggers urgency, 'gratis' is a pain point. Perfect for audience who think government docs are hidden or costly.",
+          "authored": false
+        },
+        {
+          "headline": "Nadie te ha dicho esto",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "number-claim",
+          "stopping": "Nadie te ha dicho esto' creates FOMO (fear of missing out) + the sub reveals a specific, high-stakes gap: 'what they ask for' (a common reason for denials). Stops scrollers because it implies insider knowledge they’ve been denied.",
+          "reason": "High emotional pull: 'nadie' + concrete problem (missing requirements). Audience scrolls past generic 'rules' but stops for 'what they ask for'.",
+          "authored": false
+        },
+        {
+          "headline": "¿Crees que es complicado?",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "The question '¿Crees que es complicado?' is relatable, but 'sin jerga' is a negative hook (focuses on what it *isn’t*). It’s a decent stopper but doesn’t solve a burning pain point like 'what they ask for' or 'free access'.",
+          "reason": "Moderate stop: Relatable question but weak sub (jargon is expected, not a surprise). Audience scrolls past 'complicado' unless they’re actively struggling.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "El manual de USCIS es una guía de reglas"
+            },
+            {
+              "t": "para todos los trámites.",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "Generic 'guía de reglas' and '¿Dónde encontrar?' feel like advice they’ve heard before. No urgency, no emotional hook. Scrollers keep moving because it’s just information, not a solution to a problem they’re facing *now*.",
+          "reason": "Mediocre: 'guía' is boring, 'dónde encontrar' assumes they already know it exists (they don’t).",
+          "authored": true
+        },
+        {
+          "headline": "¿Sabes dónde están las reglas?",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "number-claim",
+          "stopping": "The question '¿Sabes dónde están las reglas?' implies they *don’t* know, but it’s passive. The sub is vague ('cómo procesan tu caso'—not *why* it matters to them). Scrollers skip because it’s not urgent or personal.",
+          "reason": "Weak: Passive question + vague benefit. Audience scrolls past 'where rules are'—they care about *what happens if they don’t know*.",
+          "authored": false
+        },
+        {
+          "headline": "El manual de USCIS no cambia cada día",
+          "rank": 6,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "‘No cambia cada día’ is abstract and irrelevant. It doesn’t address *why* they should care *today*. The sub ('revisarlo cada vez que aplicas') is a weak instruction, not a hook. Scrollers move on because it feels like a boring reminder, not a problem they’re facing.",
+          "reason": "Weakest: No emotional hook, no pain point. 'No cambia' is meaningless to someone who just got denied for a missing form.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post63-forms-list-available",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No vas a perder tu cita por esto",
+        "sub": "¡Más fácil ahora!",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "number-claim",
+        "stopping": "Directly addresses a top fear (losing appointment) with a clear, positive solution. 'Más fácil ahora' implies immediate relief—no jargon, no ambiguity. Scrollers with appointment anxiety will stop.",
+        "reason": "Strongest hook: solves a specific, urgent pain point (fear of missing appointments) with a reassuring, actionable tone. No confusion, no false claims.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No vas a perder tu cita por esto",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "Directly addresses a top fear (losing appointment) with a clear, positive solution. 'Más fácil ahora' implies immediate relief—no jargon, no ambiguity. Scrollers with appointment anxiety will stop.",
+          "reason": "Strongest hook: solves a specific, urgent pain point (fear of missing appointments) with a reassuring, actionable tone. No confusion, no false claims.",
+          "authored": false
+        },
+        {
+          "headline": "Formularios en línea: ¿Es obligatorio?",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "Clear question + answer ('No, hay opciones') tackles a common worry (online forms being mandatory). But less urgent than B; audience might scroll past if they don’t need forms *right now*.",
+          "reason": "Good but not as immediately compelling as B. Relieves anxiety but lacks the 'must-stop' urgency of a lost appointment.",
+          "authored": false
+        },
+        {
+          "headline": "Envía tus papeles en línea ¿O no?",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "Confusing double question ('¿O no?') and vague subtext ('¿Sabes si...?') make it feel like a technical manual. Audience will scroll past—no clear 'this affects me' hook.",
+          "reason": "Mediocre: too abstract for non-lawyers. 'Sabes si...' implies they *should* know, which makes it feel inaccessible.",
+          "authored": true
+        },
+        {
+          "headline": "Tienes que mandar tus papeles en línea",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Overstates consequence: 'Tienes que mandar' falsely implies mandatory action. If policy allows alternatives (as A clarifies), this causes panic and erodes trust. Scored below 3 per account’s rule.",
+          "reason": "False alarm: 'Tienes que' misrepresents reality. Would make readers panic over a non-issue, risking loss of trust.",
+          "authored": false
+        }
+      ]
     }
   ]
 }

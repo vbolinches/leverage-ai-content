@@ -1,0 +1,83 @@
+{
+  "slug": "post60-zapflow-api-first-automation",
+  "hook_candidates": [
+    {
+      "headline": "API-first isn't for devs",
+      "sub": "It's for you."
+    },
+    {
+      "headline": "Stop copying workflows",
+      "sub": "Build your own."
+    },
+    {
+      "headline": "Your invoice tool is broken",
+      "sub": "Fix it with code."
+    },
+    {
+      "headline": "Custom automation costs $500",
+      "sub": "ZapFlow does it free."
+    },
+    {
+      "headline": "You don't need Zapier",
+      "sub": "Use API instead."
+    }
+  ],
+  "art": "scales",
+  "caption": "You’re using invoice tools that don’t fit your workflow. They force you to follow their rules instead of yours. ZapFlow fixes this with API-first automation. You get to build exactly what you need, no extra features or bloat.\n\nZapFlow supports Zapier and Make integrations, but it’s built for people who want to customize their own workflows. You can connect it to your existing tools without learning complex coding.\n\nUse this prompt to generate a custom invoice template that matches your brand:\n\n\"Create an invoice template for [service] using [brand colors], including payment terms and client details. Format: [PDF/Google Doc].\"\n\nSave this workflow for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#leverageai #aiworkflows #smallbusiness #invoicing #automation #zapflow #api #smb #freelancer #ai",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 060",
+      "headline": "Your invoice tool is broken",
+      "sub": "Fix it with code.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Connect ZapFlow to tools.",
+      "body": [
+        {
+          "t": "Use your existing ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "tools.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Generate template",
+      "body": [
+        {
+          "t": "with: ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "\"Create invoice for [service]...",
+          "c": "blue"
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Build your workflow",
+        "No extra features",
+        "Use with Zapier"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://techdailyshot.com/blog/ai-workflow-automation-small-business-invoicing-tools-2026"
+}

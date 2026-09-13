@@ -1840,6 +1840,160 @@
       ]
     },
     {
+      "slug": "post56-ledge-ai-invoicing-ocr",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Your invoice mistakes cost you",
+        "sub": "90% accuracy at last",
+        "rank": 1,
+        "score": 9.5,
+        "shape": "cost",
+        "stopping": "Makes scrolling feel like a financial loss (\"cost you\") — direct pain trigger. Sub clarifies *how* it solves it (accuracy) without fluff.",
+        "reason": "Hits the confirmed 'pain/deficiency' rule perfectly. 'Cost you' implies lost revenue, not just wasted time. Sub adds concrete proof ('90% accuracy') that addresses the pain.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Your invoice mistakes cost you",
+          "rank": 1,
+          "score": 9.5,
+          "shape": "cost",
+          "stopping": "Makes scrolling feel like a financial loss (\"cost you\") — direct pain trigger. Sub clarifies *how* it solves it (accuracy) without fluff.",
+          "reason": "Hits the confirmed 'pain/deficiency' rule perfectly. 'Cost you' implies lost revenue, not just wasted time. Sub adds concrete proof ('90% accuracy') that addresses the pain.",
+          "authored": false
+        },
+        {
+          "headline": "Invoices taking too long?",
+          "rank": 2,
+          "score": 7.2,
+          "shape": "change",
+          "stopping": "Names a common pain ('taking too long') but the sub feels like a sales pitch. Not urgent enough.",
+          "reason": "Better than generic hooks, but '9/10 OCR accuracy' is technical jargon. Solo operators care about *why* it matters (time/money), not the metric. Weak urgency.",
+          "authored": false
+        },
+        {
+          "headline": "Freelancers: stop re-keying",
+          "rank": 3,
+          "score": 6.8,
+          "shape": "change",
+          "stopping": "Targets audience ('Freelancers') but 're-keying' is too technical. Sub doesn't explain the value.",
+          "reason": "Fails 'change' rule — 'stop re-keying' is a task, not a pain. 'Auto-categorizes' is vague. Audience scrolls past because it doesn't feel like *their* problem.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "9/10 invoices parsed",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 5.3,
+          "shape": "number-claim",
+          "stopping": "9/10 claim without context. Sub ('beats competitors') is irrelevant to the user's need.",
+          "reason": "Classic 'number-claim' trap. No pain point, just a cold metric. 'Beats competitors' is a sales tactic, not a solution to a deficiency. Worst of the batch.",
+          "authored": true
+        },
+        {
+          "headline": "9/10 invoices parsed",
+          "rank": 5,
+          "score": 5.1,
+          "shape": "number-claim",
+          "stopping": "Identical to C. Redundant, same weak structure.",
+          "reason": "Same as C — no emotional hook, just a repeat of the weakest format. Wastes the audience's scroll time.",
+          "authored": false
+        },
+        {
+          "headline": "Stop wasting time on invoices",
+          "rank": 6,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "Vague, unprovocative. 'Wasting time' is the default for all business tasks.",
+          "reason": "The most generic hook. 'Stop wasting time' is meaningless — everyone knows this. No stakes, no specificity. Highest scroll-through rate.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post57-free-ai-invoicing-for-freelancers",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You're paying for invoicing.",
+        "sub": "Free tier available",
+        "rank": 1,
+        "score": 9.2,
+        "shape": "change",
+        "stopping": "Personal financial pain (overpaying) + clear solution. Hits 'deficiency' rule perfectly. Scrollers think 'I'm paying for this too' and stop.",
+        "reason": "Directly names the audience's deficiency (unnecessary cost) using 'You're' — creates instant personal relevance. 'Paying for invoicing' implies they're wasting money *now*, which is a high-stakes pain point. Matches the proven 'change' shape (before: paying, after: free).",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You're paying for invoicing.",
+          "rank": 1,
+          "score": 9.2,
+          "shape": "change",
+          "stopping": "Personal financial pain (overpaying) + clear solution. Hits 'deficiency' rule perfectly. Scrollers think 'I'm paying for this too' and stop.",
+          "reason": "Directly names the audience's deficiency (unnecessary cost) using 'You're' — creates instant personal relevance. 'Paying for invoicing' implies they're wasting money *now*, which is a high-stakes pain point. Matches the proven 'change' shape (before: paying, after: free).",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Stop wasting time on invoices.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 8.0,
+          "shape": "change",
+          "stopping": "Strong 'wasting time' pain + urgency. But 'stop wasting' feels slightly generic vs. E's financial punch.",
+          "reason": "Uses 'wasting time' — a universal freelancer pain — but lacks E's financial specificity. Still fits 'change' shape (before: wasting time, after: free). Slightly weaker than E due to vagueness.",
+          "authored": true
+        },
+        {
+          "headline": "Stop wasting time on invoices.",
+          "rank": 3,
+          "score": 7.8,
+          "shape": "change",
+          "stopping": "Identical to D. Duplicate text loses rank to D despite same score.",
+          "reason": "Exact same phrasing as D. Account's rules require unique hooks. D gets rank 2 as first instance; F is a weaker duplicate.",
+          "authored": false
+        },
+        {
+          "headline": "Your invoices are wrong.",
+          "rank": 4,
+          "score": 6.5,
+          "shape": "category",
+          "stopping": "Accusatory 'wrong' — feels like a judgment, not a pain. Breaks 'deficiency' rule.",
+          "reason": "Names a category ('wrong invoices') instead of a deficiency. 'Wrong' makes freelancers defensive (e.g., 'My invoices aren't wrong!'), so they scroll past immediately. Violates confirmed rule: 'never a category'.",
+          "authored": false
+        },
+        {
+          "headline": "Invoices take too long.",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Vague 'too long' — no urgency or specificity. Feels like a generic complaint.",
+          "reason": "Uses a general category ('invoices take too long') instead of a personal deficiency. 'Too long' is meaningless without context (e.g., 'too long vs. what?'). Easy to scroll past as unremarkable.",
+          "authored": false
+        },
+        {
+          "headline": "AI invoicing is expensive.",
+          "rank": 6,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Worst violation: names a *tool's* category ('expensive AI invoicing'), not the audience's pain. Makes them scroll away.",
+          "reason": "Breaks the core rule: 'cover names a pain/deficiency, not a category'. 'AI invoicing is expensive' is a *tool* problem, not the freelancer's deficiency. Scrollers think 'I don't care about AI tool pricing' and skip immediately. Matches the disconfirmed rule: 'broad topic'.",
+          "authored": false
+        }
+      ]
+    },
+    {
       "slug": "post57-openai-rogue-agents-wiki",
       "graded": "2026-09-09",
       "threshold": 6.0,
@@ -1908,6 +2062,361 @@
           "stopping": "nothing",
           "reason": "Open rhetorical question with no stake, no specifics, and a subline that only teases someone else's problem.",
           "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post58-ai-fraud-detection-in-invoicing",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop losing money to fake invoices",
+        "sub": "AI catches fraud before you pay",
+        "rank": 1,
+        "score": 9.5,
+        "shape": "change",
+        "stopping": "Directly names financial loss (pain) + specific cause (fake invoices). 'Stop losing' is visceral, urgent, and mirrors how the audience thinks about money. No ambiguity.",
+        "reason": "Top-tier pain trigger. Solo operators live in fear of payment fraud; this skips all fluff and lands on the core financial bleed point.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop losing money to fake invoices",
+          "rank": 1,
+          "score": 9.5,
+          "shape": "change",
+          "stopping": "Directly names financial loss (pain) + specific cause (fake invoices). 'Stop losing' is visceral, urgent, and mirrors how the audience thinks about money. No ambiguity.",
+          "reason": "Top-tier pain trigger. Solo operators live in fear of payment fraud; this skips all fluff and lands on the core financial bleed point.",
+          "authored": false
+        },
+        {
+          "headline": "You’re not seeing invoice fraud",
+          "rank": 2,
+          "score": 7.8,
+          "shape": "change",
+          "stopping": "Focuses on blindness ('not seeing') which is a deficiency, but weaker than A. 'You're not seeing' feels passive and less urgent than 'stop losing'.",
+          "reason": "Better than average but lacks the visceral punch of A. Feels like an observation, not a threat to their wallet.",
+          "authored": false
+        },
+        {
+          "headline": "Fraud hits 7% of small business payments",
+          "rank": 3,
+          "score": 6.2,
+          "shape": "number-claim",
+          "stopping": "Uses a statistic (7% fraud) but feels distant and impersonal. 'Hits 7%' is a category, not a personal deficiency. Audience scrolls past generic stats.",
+          "reason": "Feels like a news headline, not a pain point they face daily. Fails the 'median solo operator' test (they don't care about 7% industry data).",
+          "authored": false
+        },
+        {
+          "headline": "Invoices with hidden errors",
+          "rank": 4,
+          "score": 5.1,
+          "shape": "before-after",
+          "stopping": "Vague 'hidden errors'—what errors? How does it hurt? No clear financial or operational pain. Feels like a technical glitch, not a business threat.",
+          "reason": "Too abstract. Solo operators would scroll past wondering 'what errors?' without a clear consequence.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Stop losing money to ",
+              "c": "blue"
+            },
+            {
+              "t": "fake invoices.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 3.7,
+          "shape": "change",
+          "stopping": "Identical to A but with a period. The period makes it feel like a completed sentence (not a hook), killing urgency. 'Stop losing money to fake invoices.' looks like a typo or a full sentence, not a scroll-stopper.",
+          "reason": "The period is a fatal flaw. Instagram covers need fragmented, urgent phrasing. This feels like a poorly written email subject line, not a hook.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post59-invoicing-automation-for-non-tech-businesses",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Invoicing shouldn't be this hard.",
+        "sub": "Non-tech users, fix it",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Direct pain + specificity (invoicing), no fluff, audience-aligned",
+        "reason": "‘Invoicing shouldn’t be this hard’ names a universal, daily pain point for non-tech solopreneurs. ‘Non-tech users, fix it’ specifies the audience and implies immediate relief. Zero jargon, zero future-dated nonsense. This is the *only* hook that mirrors the account’s proven top-performers (e.g., ‘Stop wasting hours on invoicing’ in their 051-057 batch).",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Invoicing shouldn't be this hard.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Direct pain + specificity (invoicing), no fluff, audience-aligned",
+          "reason": "‘Invoicing shouldn’t be this hard’ names a universal, daily pain point for non-tech solopreneurs. ‘Non-tech users, fix it’ specifies the audience and implies immediate relief. Zero jargon, zero future-dated nonsense. This is the *only* hook that mirrors the account’s proven top-performers (e.g., ‘Stop wasting hours on invoicing’ in their 051-057 batch).",
+          "authored": false
+        },
+        {
+          "headline": "Stop wasting hours on invoicing.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Good pain point but fatally undermined by ‘2026’",
+          "reason": "‘Stop wasting hours on invoicing’ is strong (matches B’s pain depth), but ‘2026 fix’ is the *exact* mistake the account learned to avoid (see Disproven section: ‘2026’ = instant scroll past). Audience cares about *now*, not 2026.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Onboard ",
+              "c": "blue"
+            },
+            {
+              "t": "faster.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Vague, category-based, no clear pain",
+          "reason": "‘Onboard faster’ is a category (not a pain/deficiency), and ‘no tech skills’ is generic. Solopreneurs scroll past vague ‘onboarding’ hooks—they need to see *what* they’re onboarding *for* (e.g., clients, tools).",
+          "authored": true
+        },
+        {
+          "headline": "You're missing out on paid work.",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Weak pain framing + ‘2026’ disaster",
+          "reason": "‘Missing out on paid work’ is a lazy, non-specific pain (not tied to a *current* task like invoicing). ‘How 2026 tools fix invoicing’ combines future-dated nonsense with a weak hook. This is why the account avoids ‘missing out’ hooks (see Disproven: ‘Meta-commentary about productivity’).",
+          "authored": false
+        },
+        {
+          "headline": "Onboard faster with no tech skills.",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Vague + ‘2026’ + non-pain",
+          "reason": "‘Onboard faster’ is vague, ‘2026’s top tool’ is the *worst* trap (see Disproven: ‘2026’ = instant scroll). No actual pain point named—just a category with a future gimmick. Solopreneurs will skip this instantly.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post60-zapflow-api-first-automation",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Your invoice tool is broken",
+        "sub": "Fix it with code.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "painless deficiency",
+        "reason": "Names universal pain (broken invoice tool) + uses 'deficiency' language. Audience *immediately* recognizes this as their own reality. Sub 'with code' is bad, but cover itself is a perfect deficiency hook.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Your invoice tool is broken",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "painless deficiency",
+          "reason": "Names universal pain (broken invoice tool) + uses 'deficiency' language. Audience *immediately* recognizes this as their own reality. Sub 'with code' is bad, but cover itself is a perfect deficiency hook.",
+          "authored": false
+        },
+        {
+          "headline": "Custom automation costs $500",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "concrete cost pain",
+          "reason": "'$500' creates visceral cost pain. 'Custom automation' is vague but 'costs $500' makes it feel real. Audience thinks 'That's me!' before realizing it's not specific.",
+          "authored": false
+        },
+        {
+          "headline": "You don't need Zapier",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "Zapier relatability",
+          "reason": "Mentions Zapier (known tool), but 'use API' triggers 'not for me' instinct. Scrolling starts at 'API'.",
+          "authored": false
+        },
+        {
+          "headline": "API-first isn't for devs",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "dev jargon",
+          "reason": "API-first = immediate scroll. 'Isn't for devs' confirms they're not the audience. Classic dev-tool mistake.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "API-first isn't for devs"
+            },
+            {
+              "t": ".",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "dev jargon + typo",
+          "reason": "Identical to A but with period. The typo makes it look unprofessional → faster scroll.",
+          "authored": true
+        },
+        {
+          "headline": "Stop copying workflows",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "meta-commentary",
+          "reason": "Meta 'stop copying' is exactly what they banned. Audience thinks 'Not about me' before finishing the sentence.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post61-gpt6-astra-business-workflows",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "GPT-6 Astra: Not for devs only.",
+        "sub": "It’s for your business",
+        "rank": 1,
+        "score": 6.2,
+        "shape": "change",
+        "stopping": "barely earns a pause (mentions 'not for devs' + 'your business' as weak pain anchor)",
+        "reason": "Only one that avoids 'stop' language and directly addresses 'your business' in sub. Still fake 'GPT-6' but least likely to trigger scroll-away instinct vs. B's aggressive 'stop'.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "GPT-6 Astra: Not for devs only.",
+          "rank": 1,
+          "score": 6.2,
+          "shape": "change",
+          "stopping": "barely earns a pause (mentions 'not for devs' + 'your business' as weak pain anchor)",
+          "reason": "Only one that avoids 'stop' language and directly addresses 'your business' in sub. Still fake 'GPT-6' but least likely to trigger scroll-away instinct vs. B's aggressive 'stop'.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "GPT-6 Astra",
+              "c": "blue"
+            },
+            {
+              "t": "is here.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 5.8,
+          "shape": "category",
+          "stopping": "scrolls past immediately (fake tool + 'not just devs' feels defensive)",
+          "reason": "Names fictional 'GPT-6 Astrais' (category) and uses defensive 'not just devs' — no real pain point. Audience scrolls past as it feels like dev fluff.",
+          "authored": true
+        },
+        {
+          "headline": "Stop using GPT-4 for business workflows.",
+          "rank": 3,
+          "score": 4.1,
+          "shape": "category",
+          "stopping": "scrolls past instantly (aggressive 'stop' + fake tool)",
+          "reason": "Worst: 'Stop using GPT-4' is irrelevant to solo operators (they don't care about GPT versions), and 'GPT-6 Astra' is pure fiction. Triggers immediate scroll.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post62-blender-coding-agents-for-content-creation",
+      "graded": "2026-09-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop paying designers",
+        "sub": "For simple animations",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Clear pain point ('stop paying designers') + specific task ('simple animations') aligns with median solo-op reality. No jargon, no niche tool. Instantly stops scroll for anyone who's ever paid for basic visuals.",
+        "reason": "C directly names a common pain ('stop paying designers') and specifies a median task ('simple animations'), avoiding technical terms. 'Stop paying' is a high-impact change hook that matches the account's proven formula.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop paying designers",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Clear pain point ('stop paying designers') + specific task ('simple animations') aligns with median solo-op reality. No jargon, no niche tool. Instantly stops scroll for anyone who's ever paid for basic visuals.",
+          "reason": "C directly names a common pain ('stop paying designers') and specifies a median task ('simple animations'), avoiding technical terms. 'Stop paying' is a high-impact change hook that matches the account's proven formula.",
+          "authored": false
+        },
+        {
+          "headline": "Cut visual costs 80%",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "The '80%' claim is strong, but 'AI agents' feels slightly technical for median audience. Still beats vague alternatives.",
+          "reason": "80% is a hard number-claim (proven effective), but 'AI agents' risks sounding like a dev-tool (disproven category). Still better than vague hooks.",
+          "authored": false
+        },
+        {
+          "headline": "No design skills?",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "question",
+          "stopping": "Weak pain point ('No design skills?') without a concrete solution or task. 'Visual content' is too broad (fails 'specific task' rule).",
+          "reason": "Uses a question (not forbidden), but 'visual content' is vague and fails the 'must name a task' rule. Fails to specify *what* visual content, making it scroll-past.",
+          "authored": false
+        },
+        {
+          "headline": "Designs built in 2 clicks",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "Blender (dev-tool) + 'agents' = technical trap. '2 clicks' is good, but Blender kills it immediately.",
+          "reason": "Blender is explicitly disallowed (disproven rule: 'dev-tool topics'). '2 clicks' is a good hook, but the tool name makes it instantly scroll-past for solo ops.",
+          "authored": false
+        },
+        {
+          "headline": "AI creates Blender files",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "change",
+          "stopping": "Duplicate of A. 'Blender files' = technical tool. Same as F but with extra repetition.",
+          "reason": "Identical to A, but ranked higher than A only because it's listed later (arbitrary tiebreaker). Still fails the 'no dev-tools' rule.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "AI creates Blender files",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "change",
+          "stopping": "Worst. Identical to D, but ranked last due to being first in list. 'Blender files' is the exact dev-tool trap.",
+          "reason": "Blender is a professional 3D tool (not for median solo ops). 'Non-designers build visuals' is inaccurate for the audience (they don't build Blender files). Kills scroll.",
+          "authored": true
         }
       ]
     }

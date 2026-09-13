@@ -1,0 +1,74 @@
+{
+  "slug": "post58-ai-fraud-detection-in-invoicing",
+  "hook_candidates": [
+    {
+      "headline": "Stop losing money to fake invoices",
+      "sub": "AI catches fraud before you pay"
+    },
+    {
+      "headline": "Your invoicing tool is already doing this",
+      "sub": "2026 feature you haven't used"
+    },
+    {
+      "headline": "Fraud hits 7% of small business payments",
+      "sub": "AI blocks it in real-time"
+    },
+    {
+      "headline": "You’re not seeing invoice fraud",
+      "sub": "AI finds it for you"
+    },
+    {
+      "headline": "Invoices with hidden errors",
+      "sub": "AI flags them before you pay"
+    }
+  ],
+  "art": "chart",
+  "caption": "Invoices with duplicate line items or fake payee names cost small businesses thousands. AutoBill Pro’s new AI feature now flags these in real-time with 95%+ accuracy—no extra setup needed. Just enable it in your invoicing tool. The workflow is simple: 1. Enable AI fraud detection in your invoicing tool (AutoBill Pro, 2026). 2. Let it monitor all new and pending invoices. 3. Get alerts for duplicates or suspicious payee names. \n\nHere’s the prompt to prompt your tool: \n\"Flag any invoice with duplicate line items or payee names that don't match your records. Report as 'Suspicious' if found.\"\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #smallbusiness #invoicing #fraudprevention #businessautomation #money #freelancer #consultant #aiworkflow #aihacks",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 058",
+      "headline": "Stop losing money to fake invoices",
+      "sub": "AI catches fraud before you pay",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Enable AI fraud detection",
+      "body": [
+        {
+          "t": "In your invoicing tool (AutoBill Pro, 2026).",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Let it monitor all invoices",
+      "body": [
+        {
+          "t": "Duplicate line items or fake payees get flagged.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Enable it",
+        "Monitor all",
+        "Get alerts"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://techdailyshot.com/blog/ai-workflow-automation-small-business-invoicing-tools-2026"
+}

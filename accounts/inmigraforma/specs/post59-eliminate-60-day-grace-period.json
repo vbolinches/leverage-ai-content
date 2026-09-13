@@ -1,0 +1,95 @@
+{
+  "slug": "post59-eliminate-60-day-grace-period",
+  "hook_candidates": [
+    {
+      "headline": "¿Vas a perder tu visa si pierdes trabajo?",
+      "sub": "El gobierno propone eliminar el plazo de 60 días para trabajar en EE.UU."
+    },
+    {
+      "headline": "¡No más 60 días para buscar otro trabajo!",
+      "sub": "El gobierno quiere eliminar el plazo de gracia para trabajadores extranjeros."
+    },
+    {
+      "headline": "Si pierdes tu trabajo, no tendrás tiempo para reorganizarte.",
+      "sub": "El gobierno propone eliminar el plazo de 60 días para visas laborales."
+    },
+    {
+      "headline": "¿Te quedarás sin visa si pierdes tu trabajo?",
+      "sub": "El gobierno propone eliminar el plazo de 60 días para trabajar en EE.UU."
+    },
+    {
+      "headline": "El gobierno quiere que dejes EE.UU. inmediatamente si pierdes tu trabajo.",
+      "sub": "Propuesta para eliminar el plazo de 60 días para visas laborales."
+    }
+  ],
+  "art": "folder",
+  "caption": "El Departamento de Seguridad Nacional (DHS) propuso eliminar el plazo de 60 días de gracia para trabajadores con visas E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1 y TN después de perder su empleo. El texto oficial dice: «Eliminando el período de gracia discrecional de 60 días para los titulares de visas no inmigrantes». En palabras simples: Si pierdes tu trabajo con estas visas, el gobierno quiere que salgas de EE.UU. inmediatamente, no te dará 60 días para buscar otro trabajo. Si ignoras esto y esperas más tiempo, puedes ser deportado. En plain words: If you lose your job with these visas, you must leave the U.S. immediately; no 60-day grace period. Fuente oficial: https://www.federalregister.gov/documents/2026/09/11/2026-18631/eliminating-the-discretionary-60-day-grace-period\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #visas #trabajo #dhs #inmigraforma #gracias #puntosdeconocimiento #estadosunidos",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 059",
+      "headline": [
+        {
+          "t": "¿Perderás tu visa si pierdes tu trabajo?",
+          "c": "blue"
+        }
+      ],
+      "sub": "Propuesta para eliminar el plazo de 60 días de gracia para visas laborales.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Si pierdes trabajo, sal de EE.UU. ahora.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Igual que el boleto de autobús que se acaba, debes bajar ya.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": "Eliminando el periodo de gracia de 60 días: si pierdes trabajo, sal de EE. UU. en 0 días."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "¿Quién se ve afectado?",
+      "body": [
+        {
+          "t": "Afecta si tienes visa E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1 o TN.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "No afecta si ya tienes Green Card.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "Sal de EE.UU. inmediatamente",
+        "No esperes los 60 días",
+        "Comenta antes de noviembre 10"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.federalregister.gov/documents/2026/09/11/2026-18631/eliminating-the-discretionary-60-day-grace-period"
+}

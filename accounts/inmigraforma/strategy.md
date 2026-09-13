@@ -257,3 +257,7 @@ Open items for next batch, in search order:
    Seven briefs in a row have been below the level where any post-level
    conclusion is legitimate. Without those metrics this file cannot move
    anything into Confirmed or Disproven, and it will not pretend otherwise.
+
+### Batch — posts 57-63, drafted 2026-09-13
+
+>{0} The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold required for post-level comparisons. The hook grader's pre-publish scores do not correlate with actual reach (e.g., the highest-graded hook [post50: 8.2] had the lowest reach [3]). No hypothesis is settled due to insufficient data.

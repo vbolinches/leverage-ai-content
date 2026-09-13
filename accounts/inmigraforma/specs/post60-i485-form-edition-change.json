@@ -1,0 +1,106 @@
+{
+  "slug": "post60-i485-form-edition-change",
+  "hook_candidates": [
+    {
+      "headline": "¡Atención! Tu formulario I-485 antiguo no servirá",
+      "sub": "Empezando el 18 de septiembre de 2026"
+    },
+    {
+      "headline": "Olvida el formulario I-485 que tienes",
+      "sub": "El 18 de septiembre, USCIS lo rechazará"
+    },
+    {
+      "headline": "No uses tu I-485 de antes del 18 de septiembre",
+      "sub": "Empieza a usar el nuevo desde hoy"
+    },
+    {
+      "headline": "Tu I-485 viejo se convierte en basura",
+      "sub": "Empezando el 18 de septiembre de 2026"
+    },
+    {
+      "headline": "¡No envíes tu I-485 antiguo!",
+      "sub": "El 18 de septiembre, USCIS lo rechazará"
+    }
+  ],
+  "art": "form",
+  "caption": "USCIS anunció que a partir del 18 de septiembre de 2026, rechazarán cualquier formulario I-485 antiguo. El I-485 es el formulario para pedir la tarjeta verde desde dentro de EE.UU. Si ya tienes tu formulario listo, ¡debes usar el nuevo! En palabras simples: Los formularios antiguos ya no valen para pedir la tarjeta verde. Si mandas uno viejo, USCIS lo devuelve sin procesar. \n\nEn palabras simples: \nEl texto oficial dice: 'Older editions of Form I-485 will be rejected starting September 18, 2026.' \nSignifica: No uses el formulario antiguo el 18 de septiembre. Si lo usas, tu solicitud se pierde y debes mandar otro. \n\nIn plain words: Older forms for adjustment of status will no longer be accepted after September 18, 2026.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-to-publish-new-edition-of-form-i-485-older-editions-will-be-rejected-starting-sept-18\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #formularios #greencard #i485 #uscis #noticias #inmigracioneeuu #formulariosuscis #estadosunidos #legal",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 060",
+      "headline": [
+        {
+          "t": "¡Atención! Tu formulario I-485 antiguo no servirá",
+          "c": "blue"
+        }
+      ],
+      "sub": "Empezando el 18 de septiembre de 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Los formularios antiguos ya no valen para pedir la tarjeta verde.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Si mandas uno viejo, USCIS lo devuelve sin procesar.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Formularios antiguos se rechazarán desde el 18 de septiembre.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Si usas uno viejo, tu solicitud se pierde.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Ya tienes tu I-485 listo?",
+      "body": [
+        {
+          "t": "Si tienes el formulario listo para mandar antes del 18, usa el nuevo.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Si ya mandaste uno antiguo, debes mandar otro.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "Usa el nuevo I-485",
+        "Mandar el 18 de septiembre",
+        "Rechazo si usas viejo"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/alerts/uscis-to-publish-new-edition-of-form-i-485-older-editions-will-be-rejected-starting-sept-18"
+}

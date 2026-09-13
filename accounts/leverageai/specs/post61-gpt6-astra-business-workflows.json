@@ -1,0 +1,74 @@
+{
+  "slug": "post61-gpt6-astra-business-workflows",
+  "hook_candidates": [
+    {
+      "headline": "GPT-6 Astra is here. For business workflows.",
+      "sub": "September 2026 release"
+    },
+    {
+      "headline": "Stop using GPT-4 for business workflows.",
+      "sub": "GPT-6 Astra is live now"
+    },
+    {
+      "headline": "You’re wasting time on business workflows.",
+      "sub": "GPT-6 Astra fixes that"
+    },
+    {
+      "headline": "GPT-6 Astra: Not for devs only.",
+      "sub": "It’s for your business"
+    },
+    {
+      "headline": "GPT-6 Astra costs zero. Time saved? 2 hours.",
+      "sub": "September 2026 release"
+    }
+  ],
+  "art": "document",
+  "caption": "GPT-6 Astra launched in September 2026, marketed as a developer tool but useful for business workflows. It’s used internally at OpenAI for 'agentic engineering' — meaning it handles complex, multi-step tasks like managing client projects.\n\nIt’s a new model, but you can’t use it directly yet. OpenAI hasn’t opened it to the public. So the real value is learning how it *might* work so you can prepare for when it’s available.\n\nHere’s a prompt to help you simulate GPT-6-like workflow automation today:\n\n\"Act as a business workflow assistant. For each task I describe, break it into 3 clear steps, assign each to a tool (e.g., email, calendar, CRM), and suggest how to check progress. Use simple language.\"\n\nSave this prompt to test GPT-4 with this new workflow style. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #business #workflow #gpt6 #astra #aiworkflow #businessautomation #soloconsultant #freelancer #aiassistant",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 061",
+      "headline": "GPT-6 Astra: Not for devs only.",
+      "sub": "It’s for your business",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Use this prompt",
+      "body": [
+        {
+          "t": "with GPT-4 to simulate ",
+          "c": "green"
+        },
+        {
+          "t": "GPT-6-like workflow automation.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Simulate GPT-6",
+      "sub": "Workflows today",
+      "label": "COPY THIS PROMPT",
+      "code": "Act as a business workflow assistant.\nFor each task I describe,\nbreak it into 3 clear steps,\nassign each to a tool (e.g., email, calendar, CRM),\nsuggest how to check progress.\nUse simple language."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Simulate GPT-6",
+        "3 steps per task",
+        "Check progress"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://simonwillison.net/2026/Sep/7/llm/"
+}

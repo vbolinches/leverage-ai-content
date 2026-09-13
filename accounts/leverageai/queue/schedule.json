@@ -970,6 +970,60 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post55-ai-subscription-overlap-audit/reel.mp4"
+    },
+    {
+      "id": "post56-ledge-ai-invoicing-ocr",
+      "date": "2026-09-17",
+      "slides": [
+        "accounts/leverageai/queue/post56-ledge-ai-invoicing-ocr/slide01.png",
+        "accounts/leverageai/queue/post56-ledge-ai-invoicing-ocr/slide02.png",
+        "accounts/leverageai/queue/post56-ledge-ai-invoicing-ocr/slide03.png",
+        "accounts/leverageai/queue/post56-ledge-ai-invoicing-ocr/slide04.png"
+      ],
+      "caption": "Freelancers waste hours manually entering invoice data from messy PDFs. Ledge AI solves this: its OCR correctly parsed 9/10 test invoices (including multi-page), outperforming competitors. After a few invoices, it auto-categorizes expenses based on your preferences.\n\nUse this prompt to generate a clean invoice from a messy PDF:\n\n\"Convert this invoice PDF into a clean, structured format with lines for date, vendor, items, amounts, and total. List all line items clearly. Do not include the original PDF's formatting.\"\n\nSave this workflow for when you're drowning in invoices. Comment 'invoice' to save — or just save the post.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #freelancerlife #invoicing #aiassistant #invoiceautomation #freelance #ai #businessautomation #aiassistant #freelancebusiness",
+      "status": "queued"
+    },
+    {
+      "id": "post58-ai-fraud-detection-in-invoicing",
+      "date": "2026-09-18",
+      "slides": [
+        "accounts/leverageai/queue/post58-ai-fraud-detection-in-invoicing/slide01.png",
+        "accounts/leverageai/queue/post58-ai-fraud-detection-in-invoicing/slide02.png",
+        "accounts/leverageai/queue/post58-ai-fraud-detection-in-invoicing/slide03.png",
+        "accounts/leverageai/queue/post58-ai-fraud-detection-in-invoicing/slide04.png"
+      ],
+      "caption": "Invoices with duplicate line items or fake payee names cost small businesses thousands. AutoBill Pro’s new AI feature now flags these in real-time with 95%+ accuracy—no extra setup needed. Just enable it in your invoicing tool. The workflow is simple: 1. Enable AI fraud detection in your invoicing tool (AutoBill Pro, 2026). 2. Let it monitor all new and pending invoices. 3. Get alerts for duplicates or suspicious payee names. \n\nHere’s the prompt to prompt your tool: \n\"Flag any invoice with duplicate line items or payee names that don't match your records. Report as 'Suspicious' if found.\"\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #smallbusiness #invoicing #fraudprevention #businessautomation #money #freelancer #consultant #aiworkflow #aihacks",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post58-ai-fraud-detection-in-invoicing/reel.mp4"
+    },
+    {
+      "id": "post60-zapflow-api-first-automation",
+      "date": "2026-09-19",
+      "slides": [
+        "accounts/leverageai/queue/post60-zapflow-api-first-automation/slide01.png",
+        "accounts/leverageai/queue/post60-zapflow-api-first-automation/slide02.png",
+        "accounts/leverageai/queue/post60-zapflow-api-first-automation/slide03.png",
+        "accounts/leverageai/queue/post60-zapflow-api-first-automation/slide04.png"
+      ],
+      "caption": "You’re using invoice tools that don’t fit your workflow. They force you to follow their rules instead of yours. ZapFlow fixes this with API-first automation. You get to build exactly what you need, no extra features or bloat.\n\nZapFlow supports Zapier and Make integrations, but it’s built for people who want to customize their own workflows. You can connect it to your existing tools without learning complex coding.\n\nUse this prompt to generate a custom invoice template that matches your brand:\n\n\"Create an invoice template for [service] using [brand colors], including payment terms and client details. Format: [PDF/Google Doc].\"\n\nSave this workflow for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#leverageai #aiworkflows #smallbusiness #invoicing #automation #zapflow #api #smb #freelancer #ai",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post60-zapflow-api-first-automation/reel.mp4"
+    },
+    {
+      "id": "post61-gpt6-astra-business-workflows",
+      "date": "2026-09-20",
+      "slides": [
+        "accounts/leverageai/queue/post61-gpt6-astra-business-workflows/slide01.png",
+        "accounts/leverageai/queue/post61-gpt6-astra-business-workflows/slide02.png",
+        "accounts/leverageai/queue/post61-gpt6-astra-business-workflows/slide03.png",
+        "accounts/leverageai/queue/post61-gpt6-astra-business-workflows/slide04.png"
+      ],
+      "caption": "GPT-6 Astra launched in September 2026, marketed as a developer tool but useful for business workflows. It’s used internally at OpenAI for 'agentic engineering' — meaning it handles complex, multi-step tasks like managing client projects.\n\nIt’s a new model, but you can’t use it directly yet. OpenAI hasn’t opened it to the public. So the real value is learning how it *might* work so you can prepare for when it’s available.\n\nHere’s a prompt to help you simulate GPT-6-like workflow automation today:\n\n\"Act as a business workflow assistant. For each task I describe, break it into 3 clear steps, assign each to a tool (e.g., email, calendar, CRM), and suggest how to check progress. Use simple language.\"\n\nSave this prompt to test GPT-4 with this new workflow style. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #business #workflow #gpt6 #astra #aiworkflow #businessautomation #soloconsultant #freelancer #aiassistant",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post61-gpt6-astra-business-workflows/reel.mp4"
     }
   ]
 }

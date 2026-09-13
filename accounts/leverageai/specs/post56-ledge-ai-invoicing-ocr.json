@@ -1,0 +1,74 @@
+{
+  "slug": "post56-ledge-ai-invoicing-ocr",
+  "hook_candidates": [
+    {
+      "headline": "9/10 invoices parsed",
+      "sub": "Ledge beats competitors"
+    },
+    {
+      "headline": "Stop wasting time on invoices",
+      "sub": "Auto-categorize them"
+    },
+    {
+      "headline": "Your invoice mistakes cost you",
+      "sub": "90% accuracy at last"
+    },
+    {
+      "headline": "Invoices taking too long?",
+      "sub": "Ledge's 9/10 OCR accuracy"
+    },
+    {
+      "headline": "Freelancers: stop re-keying",
+      "sub": "Ledge auto-categorizes"
+    }
+  ],
+  "art": "passport",
+  "caption": "Freelancers waste hours manually entering invoice data from messy PDFs. Ledge AI solves this: its OCR correctly parsed 9/10 test invoices (including multi-page), outperforming competitors. After a few invoices, it auto-categorizes expenses based on your preferences.\n\nUse this prompt to generate a clean invoice from a messy PDF:\n\n\"Convert this invoice PDF into a clean, structured format with lines for date, vendor, items, amounts, and total. List all line items clearly. Do not include the original PDF's formatting.\"\n\nSave this workflow for when you're drowning in invoices. Comment 'invoice' to save — or just save the post.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #freelancerlife #invoicing #aiassistant #invoiceautomation #freelance #ai #businessautomation #aiassistant #freelancebusiness",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 056",
+      "headline": "Your invoice mistakes cost you",
+      "sub": "90% accuracy at last",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Fix messy PDFs",
+      "body": [
+        {
+          "t": "Ledge’s OCR handles multi-page",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Auto-categorize",
+      "body": [
+        {
+          "t": "Learns your preferences after 3 invoices",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Auto-OCR",
+        "Categorizes",
+        "Saves time"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://deepusecase.com/blog/hands-on-review-ai-invoicing-tools-2026/"
+}

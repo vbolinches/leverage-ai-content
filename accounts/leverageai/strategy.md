@@ -183,6 +183,10 @@ Every post in this batch was screened against the median-solo-operator topic
 test before writing. No caption promises a DM, file, template, or reply; CTAs
 are save/share only, per the standing rule that nobody is watching the inbox.
 
+## Batch notes — posts 56-62 (2026-09-13)
+
+No new data for 051-057; no change to strategy. No reach data reported for posts 051-057 in the brief. Current strategy remains unchanged per prior Confirmed (reels > carousels) and Working hypotheses.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —
