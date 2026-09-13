@@ -44,7 +44,10 @@ about to be public anyway.
 | `render_reel.py` | Spec or slide PNGs → 1080×1920 MP4 Reel |
 | `build_reels.py` | Converts alternate queued posts into Reels |
 | `performance.py` | Performance history + the brief that feeds generation |
-| `generate_batch.py` | Authors the next batch with Claude, renders, queues it |
+| `generate_batch.py` | Authors the next batch with the local model, renders, queues it |
+| `llm.py` | The model seam — every generative call goes through here (Ollama) |
+| `search.py` | Web search + page reading, and the record of what was really retrieved |
+| `run_local_batch.py` | The nightly local run: queue gate, generate, commit, push |
 | `monitor.py` | Read-only account digest (see `MONITORING.md`) |
 | `brand/avatar.png` | Profile picture |
 | `build_schedule.py` | **Dead code** — points at `03-content/`, `07-automation/`, which don't exist here. Superseded by `generate_batch.py` |
@@ -107,8 +110,10 @@ That is the only route Meta provides.
 `ideas.py` watches each account's configured sources — X accounts, RSS feeds,
 Hacker News queries (`idea_sources` in `account.json`) — and accumulates recent
 signals in `accounts/<slug>/ideas.json`. A Tuesday workflow refreshes it; the
-Wednesday generator folds fresh items into its prompt as *leads to verify by
-web search*, never as facts.
+nightly generator folds fresh items into its research prompt as *leads to
+verify by web search*, never as facts. `search.py` runs those searches, and
+every URL it returns is recorded so a caption cannot cite one that was never
+retrieved.
 
 RSS and HN are free and always on. **X requires a developer account with
 pay-per-use billing** (~$0.005/post read since Feb 2026 — a few dollars a month
@@ -123,11 +128,57 @@ python ideas.py --show     # print the digest the generator would see
 
 ## Producing the next batch
 
+Generation runs on a local model through [Ollama](https://ollama.com), so it
+costs nothing and needs no API key. One-time setup:
+
 ```bash
-export ANTHROPIC_API_KEY=...
+ollama pull qwen3:30b-a3b
+pip install ddgs
+python llm.py                                  # check the server and the model
+```
+
+```bash
 python generate_batch.py --count 7 --dry-run   # author + render, review first
 python generate_batch.py --count 7             # author, render, queue
 ```
+
+Nightly, this happens by itself on the owner's PC rather than in Actions — a
+GitHub runner cannot reach Ollama on localhost:
+
+```bash
+powershell -ExecutionPolicy Bypass -File setup_schedule.ps1   # 03:00 daily
+python run_local_batch.py --check                             # is this host ready?
+python run_local_batch.py --dry-run                           # try it by hand
+```
+
+### Moving it to a VPS
+
+The pipeline is host-agnostic; only the scheduler differs. On a Debian or
+Ubuntu box:
+
+```bash
+sudo bash deploy/vps-setup.sh        # deps, Ollama, model, systemd timer
+python3 run_local_batch.py --check   # must print "ready"
+```
+
+Two things the script cannot decide for you.
+
+**Push credentials.** The batch commits and pushes, so the host needs write
+access — a deploy key or a fine-grained PAT, never a personal password.
+`--check` verifies it can reach the remote.
+
+**Whether the box is big enough.** `qwen3:30b-a3b` needs about 24 GB of RAM
+and there is no GPU on a normal VPS. It activates only 3B parameters per
+token, so CPU inference is far quicker than a dense 30B, but still several
+times slower than a GPU. Measured here on an RTX 5090: about 15k output
+tokens per post, and roughly 40 minutes for a 7-post batch. Budget several
+hours for the same batch on CPU — which is fine for a job that starts at
+03:00, and is why the systemd unit allows six.
+
+Do not guess at this. Run `python3 run_local_batch.py --dry-run --force
+--count 2` on the VPS and time it before a schedule depends on it. If it is
+too slow, the knob is `OLLAMA_MODEL`, and a smaller model costs quality on
+the account with the strictest rules first.
 
 `--dry-run` writes specs and slides without scheduling them — the intended way to
 keep a human between the model and the audience. Without it, generated posts go
@@ -140,7 +191,8 @@ Per account, under the names recorded in its `account.json`:
 - token secret (leverageai: `IG_ACCESS_TOKEN`) — long-lived Instagram user access token
 - user-id secret (leverageai: `IG_USER_ID`) — Instagram professional account ID
 
-Shared: `ANTHROPIC_API_KEY` (generation), `GH_PAT` (token auto-refresh).
+Shared: `GH_PAT` (token auto-refresh). Generation needs no secret — it runs on
+a local model, off GitHub entirely.
 
 ## Deployment status (as of 2026-07-25)
 

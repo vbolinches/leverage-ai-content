@@ -9,7 +9,7 @@ account's accent color at low opacity, away from the text zone.
 Everything is drawn procedurally: no stock photos (licensing + relevance risk
 on a public repo, and tone risk for the immigration audience), no image-model
 dependency. Adding a tag = adding a draw function here plus the enum entry in
-generate_batch.SUBMIT_TOOL.
+generate_batch.POST_SCHEMA.
 
     python illustrations.py   # contact sheet of every tag -> scratchpad
 """

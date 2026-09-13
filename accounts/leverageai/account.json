@@ -44,7 +44,7 @@
       "AI productivity"
     ]
   },
-  "model": "claude-sonnet-5",
+  "model": "qwen3:30b-a3b",
   "reel_target_seconds": 30,
   "slide_limits": {
     "slides_max": 4,

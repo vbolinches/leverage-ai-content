@@ -115,14 +115,17 @@ def main():
     print(f" 4. Put that same numeric id in {root}/account.json (ig_user_id), "
           "and record the token dates in a new "
           f"{root}/token_status.json ({{\"minted\": ..., \"expires\": ...}}).")
-    print(f" 5. Fill the queue: ANTHROPIC_API_KEY=... ACCOUNT={a.slug} "
-          "python generate_batch.py --count 7 --dry-run  (review, then re-run "
-          "without --dry-run), or drop in hand-made posts.")
+    print(f" 5. Fill the queue: ACCOUNT={a.slug} python generate_batch.py "
+          "--count 7 --dry-run  (review, then re-run without --dry-run), or "
+          "drop in hand-made posts. Generation runs on the local Ollama model "
+          "and needs no key — check it first with: python llm.py")
     print(f" 6. Set \"enabled\": true in {root}/account.json, commit, push.")
     print(" 7. Run the 'Verify Instagram credentials' workflow and confirm the "
           f"'{a.slug}' job is green before the next 10:00 UTC publish.")
-    print("\nThe daily publish, monitor, queue-health, generate and token-refresh "
-          "workflows all pick the account up automatically once it is enabled.")
+    print("\nThe daily publish, monitor, queue-health and token-refresh "
+          "workflows all pick the account up automatically once it is enabled. "
+          "Generation is not a workflow — it runs nightly on the owner's PC "
+          "(run_local_batch.py) and picks the account up from the same list.")
 
 
 if __name__ == "__main__":

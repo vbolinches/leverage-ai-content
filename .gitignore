@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 review/
 review_out/
+logs/

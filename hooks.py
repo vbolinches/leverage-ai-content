@@ -26,8 +26,15 @@ import argparse, io, json, os, random, sys
 from datetime import date
 
 import accounts
+import llm
 
-SCORER_MODEL = "claude-opus-5"
+# Grading used to run on a stronger model than authoring (Opus grading
+# Sonnet), so the grader brought an outside opinion as well as blindness.
+# Running locally there is one model, and only the blindness survives — which
+# is the property this file's docstring calls load-bearing, so the loop still
+# works. Set OLLAMA_SCORER_MODEL to a second pulled model to get the
+# independence back.
+SCORER_MODEL = llm.SCORER_MODEL
 
 # A hook's structure, independent of its topic. Recorded per post so the
 # generator can be told what it has been leaning on, and so performance.py has
@@ -57,49 +64,16 @@ MIN_SCORE = 6.0
 MAX_HEADLINE = 40
 
 
-def cached(text):
-    """A system-prompt string as a single cacheable block.
-
-    Every Anthropic call in this repo puts its system prompt through this
-    (never a bare string) so a static instruction block gets reused instead
-    of re-billed on every call. The payoff here is concrete, not theoretical:
-    grade() runs once per post in a batch with an IDENTICAL system prompt and
-    tool schema each time, so post 2 onward reads what post 1 wrote instead
-    of paying full input price again. Anthropic caches by content hash, not
-    object identity, so a freshly-built string with the same bytes still
-    hits — this doesn't need memoising on our side, only marking as cacheable.
-    Default 5-minute TTL: every call site here fires within seconds of the
-    last one in the same run, never across separate daily workflow runs, so
-    there is no case in this repo where the 1h TTL's 2x write cost would earn
-    its keep over the default's 1.25x.
-    """
-    return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
-
-
-def cached_tools(*tools):
-    """Tool list with cache_control on the last one, caching all of them.
-
-    A cache_control block on a tool caches that tool AND every tool before it
-    in the list — so it belongs on the LAST tool only, never on all of them.
-    """
-    tools = [dict(t) for t in tools]
-    tools[-1] = dict(tools[-1], cache_control={"type": "ephemeral"})
-    return tools
-
-
-def log_cache_usage(resp, label):
-    """One-line cache read/write report, matching this repo's print-based
-    diagnostics elsewhere (e.g. generate_batch's 'grounded on N web search').
-    Silent about zero-token reads/writes so healthy steady-state calls (all
-    read, nothing written) don't spam output.
-    """
-    u = getattr(resp, "usage", None)
-    if u is None:
-        return
-    read = getattr(u, "cache_read_input_tokens", 0) or 0
-    write = getattr(u, "cache_creation_input_tokens", 0) or 0
-    if read or write:
-        print(f"  [cache:{label}] read={read} write={write}")
+# A note on what used to live here. The Anthropic version wrapped every
+# system prompt in cached() and every tool list in cached_tools(), because
+# prompt caching turned a repeated instruction block into a tenth of its
+# input price. Ollama has no such parameter — it keeps a KV cache of the
+# longest matching prompt PREFIX automatically, per loaded model. The
+# discipline still pays, it is just no longer expressed in the request: keep
+# the system prompt byte-identical across the calls in a run (grade() does,
+# once per post) and the prefix is reused. Change the system prompt per call
+# and it is recomputed every time. llm.log_usage prints the token counts that
+# make that visible.
 
 
 def flatten(rich):
@@ -223,10 +197,11 @@ def rubric(acct):
 
 # ----------------------------------------------------------------- grading ---
 
-GRADE_TOOL = {
-    "name": "submit_grades",
-    "description": "Grade every candidate hook.",
-    "input_schema": {
+# Constrained decoding, not a forced tool call. Ollama's `format` takes a JSON
+# schema and restricts the sampler to tokens that keep the output valid
+# against it — a stricter guarantee than tool_choice ever gave us, and the
+# reason a 30B local model can be trusted with this shape at all.
+GRADE_SCHEMA = {
         "type": "object",
         "properties": {
             "gradings": {
@@ -271,8 +246,35 @@ GRADE_TOOL = {
             }
         },
         "required": ["gradings"],
-    },
 }
+
+
+def _accuracy_floor(acct):
+    """The one exception to grading on stopping power alone.
+
+    Scoring only "how hard is this to scroll past" is deliberate and it works
+    — until the account reports news people act on. Grading a real batch, this
+    rubric ranked "¿Usas el I-864 viejo? ¡Detente! / pierde tu Green Card"
+    first *because* it was the most alarming, and using an outdated form does
+    not cost anyone a Green Card they already hold. The grader was working as
+    specified; the specification had a hole on exactly the account whose own
+    arc says ACCURACY OVER BREVITY, because people act on it.
+
+    Applied only to accounts that must cite an official source. Everywhere
+    else the single axis stands.
+    """
+    if not acct.get("require_source_url"):
+        return ""
+    return (
+        "\n\nONE OVERRIDE, and only this one. This account reports news that "
+        "readers act on, so a hook that overstates what happened is not a "
+        "strong hook — it is a false one. If a candidate claims a worse "
+        "consequence than the facts support, names a penalty that does not "
+        "follow, or would make a reader think they are in danger when they "
+        "are not, score it below 3 and say so in the reason, however hard it "
+        "is to scroll past. Alarm is not stopping power here; it is the thing "
+        "that costs this account the trust it runs on."
+    )
 
 
 def _grader_system(acct):
@@ -300,11 +302,12 @@ def _grader_system(acct):
         "When two hooks feel equally strong, do not leave it a coin flip — "
         "decide, using what this account has actually learned. Refusing to "
         "separate them just hands the choice to whatever order they arrived in."
+        + _accuracy_floor(acct)
         + ru_block
     )
 
 
-def grade(client, acct, slug, pool):
+def grade(acct, slug, pool):
     """Grade a pool of candidates blind. Returns them scored, best first.
 
     `pool` is a list of {"headline": rich, "sub": str, "authored": bool}.
@@ -325,26 +328,24 @@ def grade(client, acct, slug, pool):
            f"{len(labelled)} in total, ranked 1 to {len(labelled)} with no "
            f"rank used twice.\n\n{listing}")
 
-    # system + tools are byte-identical on every grade() call for this acct
-    # within a run (one call per post in the batch) -- cache_control here is
-    # the whole reason post 2 onward is cheap.
-    resp = client.messages.create(
+    # The system prompt is byte-identical on every grade() call for this
+    # account within a run, so Ollama reuses its KV prefix from post 2 onward.
+    # Thinking stays ON here: this is a judgement call on eight short strings,
+    # the output is tiny, and reasoning before scoring is what stops the model
+    # handing everything a 7.
+    data = llm.structured(
+        _grader_system(acct),
+        msg,
+        GRADE_SCHEMA,
         model=SCORER_MODEL,
-        max_tokens=4000,
-        system=cached(_grader_system(acct)),
-        tools=cached_tools(GRADE_TOOL),
-        tool_choice={"type": "tool", "name": "submit_grades"},
-        messages=[{"role": "user", "content": msg}],
+        require=("gradings",),
+        label=f"grade:{slug}",
+        think=True,
     )
-    log_cache_usage(resp, f"grade:{slug}")
 
-    grades = {}
-    for block in resp.content:
-        if block.type == "tool_use" and block.name == "submit_grades":
-            for g in block.input["gradings"]:
-                grades[g["label"]] = g
+    grades = {g["label"]: g for g in data.get("gradings") or []}
     if not grades:
-        raise RuntimeError("grader returned no submit_grades call")
+        raise RuntimeError("grader returned no gradings")
 
     scored = []
     for c in labelled:
@@ -368,10 +369,7 @@ def grade(client, acct, slug, pool):
     return scored
 
 
-RETRY_TOOL = {
-    "name": "submit_hooks",
-    "description": "Submit replacement cover hooks.",
-    "input_schema": {
+RETRY_SCHEMA = {
         "type": "object",
         "properties": {
             "hooks": {
@@ -388,11 +386,10 @@ RETRY_TOOL = {
             }
         },
         "required": ["hooks"],
-    },
 }
 
 
-def retry(client, acct, brand, post, scored, n=4):
+def retry(acct, brand, post, scored, n=4, max_sub=None):
     """Ask for fresh hooks after a round graded below threshold.
 
     Deliberately shows the writer the grades and the reasons: "rewrite the
@@ -415,27 +412,27 @@ def retry(client, acct, brand, post, scored, n=4):
         f"Write {n} genuinely different cover hooks for it. Fix what the grader "
         f"named. Vary the SHAPE, not the wording:\n\n{ban_list(acct)}\n\n"
         f"Headline must be at most {MAX_HEADLINE} characters — it is set very "
-        f"large and overflows the canvas past that. Submit with submit_hooks."
+        f"large and overflows the canvas past that."
+        + (f" The sub line must be at most {max_sub} characters; a longer one "
+           f"is discarded unread." if max_sub else "")
     )
-    # Caches are per-model, so this does NOT hit author()'s cache write (that
-    # runs on MODEL, this runs on SCORER_MODEL) -- but a batch can call retry()
-    # for more than one post, and every call here shares the same `brand` text
-    # and SCORER_MODEL, so the second retry in a batch reads the first's write.
-    resp = client.messages.create(
-        model=SCORER_MODEL,
-        max_tokens=4000,
-        system=cached(brand),
-        tools=cached_tools(RETRY_TOOL),
-        tool_choice={"type": "tool", "name": "submit_hooks"},
-        messages=[{"role": "user", "content": msg}],
-    )
-    log_cache_usage(resp, f"retry:{post.get('slug', '?')}")
-    for block in resp.content:
-        if block.type == "tool_use" and block.name == "submit_hooks":
-            return [{"headline": h["headline"], "sub": h.get("sub", ""),
-                     "authored": False, "retry": True}
-                    for h in block.input["hooks"]]
-    return []
+    # Writing, not judging — so thinking is off and the temperature is up.
+    # A retry exists because the first four hooks were too alike; sampling at
+    # the grader's temperature would hand back four more of the same.
+    try:
+        data = llm.structured(
+            brand, msg, RETRY_SCHEMA,
+            model=SCORER_MODEL,
+            require=("hooks",),
+            label=f"retry:{post.get('slug', '?')}",
+            temperature=0.9,
+        )
+    except llm.LLMError as e:
+        print(f"  ::warning::hook retry failed ({e}) — grading the originals")
+        return []
+    return [{"headline": h["headline"], "sub": h.get("sub", ""),
+             "authored": False, "retry": True}
+            for h in (data.get("hooks") or [])]
 
 
 def report(slug, scored, chosen):
