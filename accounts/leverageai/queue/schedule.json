@@ -894,9 +894,12 @@
         "accounts/leverageai/queue/post48-perplexity-model-council/slide07.png"
       ],
       "caption": "You paste a tricky client email into whatever AI you have open, get an answer, and send it. But that answer is one model's opinion — not a verified fact.\n\nPerplexity's Model Council runs your question past several frontier models at once and shows you where they agree and where they don't. Use it for the sentences that actually carry risk: a price justification, a contract paraphrase, a claim you can't easily walk back.\n\nIt's a Pro-tier feature, and it won't pick a winner for you — that part's still your call. Save this for the next email you're not sure about.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #perplexity #aiworkflow #selfemployed #clientwork #consultantlife #proposals",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post48-perplexity-model-council/reel.mp4"
+      "video": "accounts/leverageai/queue/post48-perplexity-model-council/reel.mp4",
+      "published_media_id": "18088043915284113",
+      "published_on": "2026-09-13",
+      "threads_posted": true
     },
     {
       "id": "post49-claude-pro-worth-it",
