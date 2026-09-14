@@ -914,9 +914,12 @@
         "accounts/leverageai/queue/post49-claude-pro-worth-it/slide07.png"
       ],
       "caption": "Free Claude and Claude Pro look similar until you actually try to get work done — then the gap shows up fast.\n\nPro, at $17-20 a month, is the first tier that includes Cowork, the agent that works across your files and connectors, plus write access to Gmail and Drive with your approval. Free Claude has none of that.\n\nBefore you upgrade, run the audit on slide 4: count what you actually do by hand each week and whether an agent could take the first pass. Save this before your next subscription renewal.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #claudeai #aiworkflow #selfemployed #clientwork #consultantlife #aitools",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post49-claude-pro-worth-it/reel.mp4"
+      "video": "accounts/leverageai/queue/post49-claude-pro-worth-it/reel.mp4",
+      "published_media_id": "17922828150204006",
+      "published_on": "2026-09-14",
+      "threads_posted": true
     },
     {
       "id": "post50-chatgpt-builds-the-file",
