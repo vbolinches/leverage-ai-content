@@ -2575,6 +2575,227 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post64-children-foreign-government-employees-green-card",
+      "graded": "2026-09-14",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¡Tu hijo ya puede pedir su Green Card!",
+        "sub": "Sin documentos extra por ser hijo de funcionario.",
+        "rank": 1,
+        "score": 5.0,
+        "shape": "category",
+        "stopping": "Personalized urgency: 'tu hijo' targets parents directly, implies immediate action ('ya puede'), and sub clarifies no extra docs. Clear, simple, and accurate—no jargon or false claims. This audience stops for *their family*, not abstract rules.",
+        "reason": "E",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¡Tu hijo ya puede pedir su Green Card!",
+          "rank": 1,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Personalized urgency: 'tu hijo' targets parents directly, implies immediate action ('ya puede'), and sub clarifies no extra docs. Clear, simple, and accurate—no jargon or false claims. This audience stops for *their family*, not abstract rules.",
+          "reason": "E",
+          "authored": false
+        },
+        {
+          "headline": "¡Hasta 500.000 niños pueden aplicar!",
+          "rank": 2,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Numbers grab attention ('500.000 niños'), but 'hijos de funcionarios' is vague. Audience may scroll past if they don’t recognize 'funcionarios' (e.g., think it means *any* foreigner, not diplomatic staff). Still, the scale feels relevant enough to pause.",
+          "reason": "C",
+          "authored": false
+        },
+        {
+          "headline": "Hijos de funcionarios extranjeros pueden aplicar.",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Vague phrasing ('funcionarios extranjeros') and repetitive 'no ciudadano' confusion. Audience can’t tell if it applies to them (e.g., 'Is my dad a *funcionario*?'). Too much jargon for a 1-second scroll.",
+          "reason": "B",
+          "authored": true
+        },
+        {
+          "headline": "No necesitas 'no ciudadano' para tu papá",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Confusing term 'no ciudadano' (not a real document/term) makes readers question if it’s even about them. Sub adds no clarity—just repeats the confusion. They scroll past, thinking 'What is this?'",
+          "reason": "A",
+          "authored": false
+        },
+        {
+          "headline": "¿Por qué no te dijeron esto antes?",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "False urgency: Claims rule 'clarified in 1940' (not current news), making readers feel misled. This *destroys trust*—a reader might think, 'Why would they mention 1940? I’m not affected,' and skip *and* lose faith. Override violation.",
+          "reason": "D",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post65-diplomatic-children-lpr-registration",
+      "graded": "2026-09-14",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Diplomáticos: Green Card sin documentos",
+        "sub": "Desde hoy, sin papeleo adicional.",
+        "rank": 1,
+        "score": 2.0,
+        "shape": "contrarian",
+        "stopping": "False promise of universal Green Card access without docs. Audience will scroll past (or worse, try to apply and get rejected), destroying trust. Violates override rule: no such rule exists for regular immigrants.",
+        "reason": "B falsely claims 'Green Card sin documentos' (no documents) for diplomats, implying all immigrants can skip paperwork. This is a dangerous overstatement of a niche diplomatic rule. Audience would either scroll past (thinking it's a scam) or act on it and face denial, costing the account trust. Score below 3 per override.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": "Diplomáticos: Green Card sin documentos",
+          "rank": 1,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "False promise of universal Green Card access without docs. Audience will scroll past (or worse, try to apply and get rejected), destroying trust. Violates override rule: no such rule exists for regular immigrants.",
+          "reason": "B falsely claims 'Green Card sin documentos' (no documents) for diplomats, implying all immigrants can skip paperwork. This is a dangerous overstatement of a niche diplomatic rule. Audience would either scroll past (thinking it's a scam) or act on it and face denial, costing the account trust. Score below 3 per override.",
+          "authored": true
+        },
+        {
+          "headline": "No más papeleo para hijos de embajadas",
+          "rank": 2,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Mildly misleading but less severe than B. Targets a non-existent 'hijos de embajadas' group, but sub 'como todos' (like everyone) still falsely suggests regular immigrants benefit. Audience may scroll past due to skepticism or confusion, but less likely to act than B.",
+          "reason": "A falsely claims 'no más papeleo' for embassy children (not a real category), but at least specifies a narrow (though invented) group. Sub 'como todos' still overstates benefits. Less alarmist than B but still violates trust. Score 3 (above 2 but still low).",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post66-wage-data-shift-i129",
+      "graded": "2026-09-14",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Sabías que el promedio no es lo mismo?",
+        "sub": "H-1B, L-1, O-1, TN: datos de salarios actualizados",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "category",
+        "stopping": "Strong curiosity hook using familiar term 'promedio' (average) that directly ties to money concerns. '¿Sabías que...' creates instant pause for non-native speakers who know 'promedio' from daily life, not legal jargon.",
+        "reason": "C",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Sabías que el promedio no es lo mismo?",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "category",
+          "stopping": "Strong curiosity hook using familiar term 'promedio' (average) that directly ties to money concerns. '¿Sabías que...' creates instant pause for non-native speakers who know 'promedio' from daily life, not legal jargon.",
+          "reason": "C",
+          "authored": false
+        },
+        {
+          "headline": "No es promedio, es mediana en visas",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Uses 'promedio' correctly but 'mediana' is confusing jargon. 'No es promedio' sparks brief pause but 'mediana' makes some scroll away faster than C.",
+          "reason": "B",
+          "authored": false
+        },
+        {
+          "headline": "Los salarios en visas de trabajo cambian",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Vague 'cambian' (changes) with no urgency. 'Media' typo confuses (sounds like 'media' as in news outlets), making it feel like generic noise.",
+          "reason": "A",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Los salarios en visas de trabajo cambian",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Identical to A but 'media' typo makes it feel more misleading (like 'media' not 'average'). Audience scrolls past instantly as it's both confusing and irrelevant to their daily concerns.",
+          "reason": "D",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post68-public-charge-rule-takes-effect",
+      "graded": "2026-09-14",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Ya tienes la tarjeta verde?",
+        "sub": "No necesitas hacer nada: la regla del 'público' ya no aplica.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "category",
+        "stopping": "Direct personal question + instant relief. '¿Ya tienes la tarjeta verde?' forces a pause (they check their wallet). 'No necesitas hacer nada' removes fear—exactly what the audience craves. No fluff, no false urgency.",
+        "reason": "Strongest hook for this audience. They stop because it answers their silent question: 'Does this affect ME?'",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Ya tienes la tarjeta verde?",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "category",
+          "stopping": "Direct personal question + instant relief. '¿Ya tienes la tarjeta verde?' forces a pause (they check their wallet). 'No necesitas hacer nada' removes fear—exactly what the audience craves. No fluff, no false urgency.",
+          "reason": "Strongest hook for this audience. They stop because it answers their silent question: 'Does this affect ME?'",
+          "authored": false
+        },
+        {
+          "headline": "El 18 de septiembre, la regla cambia",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "category",
+          "stopping": "Date + simple reassurance. 'El 18 de septiembre' creates mild urgency, but 'la regla cambia' is too vague. Still, 'No te afecta' is clear enough to make some scroll less.",
+          "reason": "Mediocre but accurate. Not great, but not bad enough to scroll past immediately.",
+          "authored": false
+        },
+        {
+          "headline": "¡No te afecta si ya tienes tarjeta verde! ¿Qué pasó?",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Vague hook ('¿Qué pasó?') + generic sub. 'No te afecta' is good, but '¿Qué pasó?' feels like news, not personal relevance. Most scroll past.",
+          "reason": "Fails to make the reader feel seen. 'What happened?' is not why they’d stop.",
+          "authored": true
+        },
+        {
+          "headline": "Olvídate de lo que te dijeron",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Creates anxiety ('Olvídate de lo que te dijeron') without solving it. 'Ya no es la misma' is confusing. Makes readers think they made a mistake.",
+          "reason": "Fails the trust test. Anxiety is not stopping power—it’s a trust-killer.",
+          "authored": false
+        },
+        {
+          "headline": "¡No pagarás más por el subsidio!",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "False claim: 'subsidio' (subsidy) has nothing to do with public charge rules. Readers might panic they’ll lose benefits they don’t even use, or pay more for nothing.",
+          "reason": "Override: Overstates consequence (subsidy vs. green card rule). This would destroy trust and cost real reach. Score below 3.",
+          "authored": false
+        }
+      ]
     }
   ]
 }

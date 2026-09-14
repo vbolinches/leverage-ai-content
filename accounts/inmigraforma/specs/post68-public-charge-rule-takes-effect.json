@@ -1,0 +1,68 @@
+{
+  "slug": "post68-public-charge-rule-takes-effect",
+  "hook_candidates": [
+    {
+      "headline": "¡No pagarás más por el subsidio!",
+      "sub": "La regla del 'público' para la tarjeta verde cambia el 18 de septiembre."
+    },
+    {
+      "headline": "¿Vas a perder tu tarjeta verde?",
+      "sub": "La regla del 'público' ha vuelto a cambiar — pero no te afecta si ya tienes la tarjeta."
+    },
+    {
+      "headline": "Olvídate de lo que te dijeron",
+      "sub": "La regla de 'público' para visa verde ya no es la misma."
+    },
+    {
+      "headline": "¿Ya tienes la tarjeta verde?",
+      "sub": "No necesitas hacer nada: la regla del 'público' ya no aplica."
+    },
+    {
+      "headline": "El 18 de septiembre, la regla cambia",
+      "sub": "No te afecta si ya tienes tu tarjeta verde de EE.UU."
+    }
+  ],
+  "art": "globe",
+  "caption": "El 18 de septiembre de 2026, el gobierno de EE.UU. pone en efecto una nueva regla sobre quién puede obtener una tarjeta verde. Esto rescinde la regla de 2022 que exigía que los solicitantes no usaran servicios públicos como Medicaid o alimentos gratis.\n\nEn palabras simples: ya no te quitan la tarjeta verde por usar Medicaid o comida gratis, siempre que no estén usando esos servicios para vivir.\n\nThe official text reads: \"The public charge rule rescinds the 2022 public charge rule that was in effect. The new rule does not consider the use of Medicaid or SNAP for the purposes of determining public charge inadmissibility.\"\n\nIn plain words: You don't have to worry about losing your Green Card for using programs like Medicaid or food stamps anymore.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-issues-guidance-on-making-public-charge-inadmissibility-determination\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #tarjetaverde #publiccharge #medicaid #alimentosgratis #greencard #inmigracioneeuu #asilo #visas #inmigracionlegal",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 068",
+      "headline": "¿Ya tienes la tarjeta verde?",
+      "sub": "No necesitas hacer nada: la regla del 'público' ya no aplica.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": "No quitan tarjeta verde por Medicaid o comida gratis. Si ya la tienes, no hagas nada."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": "Nueva regla excluye Medicaid y comida gratis para visa verde. Si ya tienes, no actuar. Si no, seguir usando servicios."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Quién se ve afectado?",
+      "body": "Solicitar tarjeta verde desde 18 sep."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "No te afecta si ya tienes tarjeta",
+        "Si buscas tarjeta, usa Medicaid o comida gratis sin miedo",
+        "No hay que hacer nada con el 18 de septiembre"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/alerts/uscis-issues-guidance-on-making-public-charge-inadmissibility-determination"
+}

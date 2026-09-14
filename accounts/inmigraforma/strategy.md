@@ -261,3 +261,7 @@ Open items for next batch, in search order:
 ### Batch — posts 57-63, drafted 2026-09-13
 
 >{0} The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold required for post-level comparisons. The hook grader's pre-publish scores do not correlate with actual reach (e.g., the highest-graded hook [post50: 8.2] had the lowest reach [3]). No hypothesis is settled due to insufficient data.
+
+### Batch — posts 63-68, drafted 2026-09-14
+
+The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold required for post-level comparisons. The hook grader's pre-publish scores do not correlate with actual reach (e.g., the highest-graded hook [post50: 8.2] had the lowest reach [3]). No hypothesis is settled due to insufficient data. Total signal 57 < 150 threshold; hook grader scores (post50: 8.2) did not correlate with reach (3); no post-level comparisons possible.
