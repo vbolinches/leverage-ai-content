@@ -1,0 +1,70 @@
+{
+  "slug": "post62-siri-claude-integration",
+  "hook_candidates": [
+    {
+      "headline": "Siri now runs on ChatGPT",
+      "sub": "No more app switching"
+    },
+    {
+      "headline": "Stop switching apps for AI",
+      "sub": "Claude/ChatGPT talks to Siri"
+    },
+    {
+      "headline": "Your AI is your new Siri",
+      "sub": "Apple's iOS 27 lets you swap"
+    },
+    {
+      "headline": "Siri is outdated. Fix it.",
+      "sub": "Claude/ChatGPT as your AI"
+    },
+    {
+      "headline": "Apple just made Siri obsolete",
+      "sub": "Swap to ChatGPT/Claude"
+    }
+  ],
+  "art": "scales",
+  "caption": "Freelancers: you can now set Claude or ChatGPT as your Siri AI on iOS 27. No more juggling between apps to draft a message or create a reminder.\n\nUsing the new Model Delegation framework, you can say:\n\n'Hey Siri, send a follow-up to Sarah about the proposal draft.'\n\nClaude will handle it via Messages without you opening the app.\n\nCopy-paste this prompt to set up your 'Siri' AI:\n\n'You are my AI assistant. When I say \"Hey Siri,\" respond with the appropriate action. Do not say you are an AI.'\n\nSave this workflow. It wins back 3-5 minutes per task, no more app switching.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #freelancer #aiassistant #siri #claude #chatgpt #ios27 #aifreelancer #aiassistant #aiintegration",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 062",
+      "headline": "Stop switching apps for AI",
+      "sub": "Claude/ChatGPT talks to Siri",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Set your AI as Siri",
+      "body": [
+        {
+          "t": "Use this prompt in Claude/ChatGPT:",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Copy this prompt",
+      "sub": "To set up your 'Siri' AI",
+      "label": "COPY THIS PROMPT",
+      "code": "You are my AI assistant.\nWhen I say \"Hey Siri,\"\nrespond with the appropriate action.\nDo not say you are an AI."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Claude/ChatGPT",
+        "Siri-like",
+        "No app switching"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/"
+}

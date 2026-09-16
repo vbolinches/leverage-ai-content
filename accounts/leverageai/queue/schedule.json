@@ -1033,6 +1033,60 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post61-gpt6-astra-business-workflows/reel.mp4"
+    },
+    {
+      "id": "post62-siri-claude-integration",
+      "date": "2026-09-21",
+      "slides": [
+        "accounts/leverageai/queue/post62-siri-claude-integration/slide01.png",
+        "accounts/leverageai/queue/post62-siri-claude-integration/slide02.png",
+        "accounts/leverageai/queue/post62-siri-claude-integration/slide03.png",
+        "accounts/leverageai/queue/post62-siri-claude-integration/slide04.png"
+      ],
+      "caption": "Freelancers: you can now set Claude or ChatGPT as your Siri AI on iOS 27. No more juggling between apps to draft a message or create a reminder.\n\nUsing the new Model Delegation framework, you can say:\n\n'Hey Siri, send a follow-up to Sarah about the proposal draft.'\n\nClaude will handle it via Messages without you opening the app.\n\nCopy-paste this prompt to set up your 'Siri' AI:\n\n'You are my AI assistant. When I say \"Hey Siri,\" respond with the appropriate action. Do not say you are an AI.'\n\nSave this workflow. It wins back 3-5 minutes per task, no more app switching.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #freelancer #aiassistant #siri #claude #chatgpt #ios27 #aifreelancer #aiassistant #aiintegration",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post62-siri-claude-integration/reel.mp4"
+    },
+    {
+      "id": "post63-microsoft-humanist-ai-oversight",
+      "date": "2026-09-22",
+      "slides": [
+        "accounts/leverageai/queue/post63-microsoft-humanist-ai-oversight/slide01.png",
+        "accounts/leverageai/queue/post63-microsoft-humanist-ai-oversight/slide02.png",
+        "accounts/leverageai/queue/post63-microsoft-humanist-ai-oversight/slide03.png",
+        "accounts/leverageai/queue/post63-microsoft-humanist-ai-oversight/slide04.png"
+      ],
+      "caption": "Microsoft's new 'humanist AI' policy means their tools won't execute tasks that might violate rules. For example, if you ask it to draft an email that could be seen as unprofessional, it will fail instead of sending it. \n\nThis affects tools like Copilot for Business. If you try to send client communications through AI, you'll need to manually approve them first. It's a safety move but it means you can't rely on AI to handle client outreach alone anymore. \n\nSave this prompt to make your AI tools obey your rules:\n\n\"Write a professional email to [Client Name] about [Topic]. Avoid any phrases that could be seen as unprofessional or risky. If unsure, fail instead of sending.\" \n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #aiassistant #aiagencies #aiagents #aiops #aifreelancer #aibusiness #aiforbusiness #aiautomation #aiforfreelancers",
+      "status": "queued"
+    },
+    {
+      "id": "post66-ai-pricing-comparison",
+      "date": "2026-09-23",
+      "slides": [
+        "accounts/leverageai/queue/post66-ai-pricing-comparison/slide01.png",
+        "accounts/leverageai/queue/post66-ai-pricing-comparison/slide02.png",
+        "accounts/leverageai/queue/post66-ai-pricing-comparison/slide03.png",
+        "accounts/leverageai/queue/post66-ai-pricing-comparison/slide04.png"
+      ],
+      "caption": "Just got a notification that Microsoft Copilot is now $10/month for non-enterprise users. That's a 4x price jump from the previous $2.50 tier.\n\nIf you're using AI for client proposals, content, and research (like most freelancers), you'll need a plan that doesn't cost more than $10/month. Here's a breakdown of real pricing that matters to you:\n\nChatGPT: $20/mo (for $20/mo, you get full GPT-4 access and unlimited use)\nClaude: $20/mo (for $20/mo, you get full Claude 3.5 Sonnet access)\nGemini: Free (for non-enterprise use, but limited to Gemini 1.5 Pro)\nCopilot: $10/mo (for non-enterprise, including GPT-4 access)\n\nUse this prompt when you're comparing tools for your next project:\n\n'Compare AI tools with these needs: [Your Need]. Prioritize price under $10/month, then speed, then features.'\n\nCopy and paste this prompt. You'll save 30+ minutes each time you're choosing a tool for a client project.\n\nSave this for when you need to choose a tool. If you use it, you'll avoid wasting $10+ per month on a tool that's too expensive for your needs.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #freelancer #aiassistant #aipricing #aicomparison #aiplanning #aiwork #aiautomation #aiusedaily #aifreelancer",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post66-ai-pricing-comparison/reel.mp4"
+    },
+    {
+      "id": "post67-chatgpt-ios-task-management",
+      "date": "2026-09-24",
+      "slides": [
+        "accounts/leverageai/queue/post67-chatgpt-ios-task-management/slide01.png",
+        "accounts/leverageai/queue/post67-chatgpt-ios-task-management/slide02.png",
+        "accounts/leverageai/queue/post67-chatgpt-ios-task-management/slide03.png",
+        "accounts/leverageai/queue/post67-chatgpt-ios-task-management/slide04.png"
+      ],
+      "caption": "ChatGPT for iOS 1.2026.188 added task management features—no more switching apps to track client projects.\n\nWhen a client sends a proposal request, instead of opening Trello or Notes, you can now create tasks directly in ChatGPT. Just click the task icon in the chat, type the project name, and add details. The task appears in your chat history, so you never lose track of next steps.\n\nHere's the copy-paste prompt to automate this:\n\n\"Create a task for [Client Name]'s [Project Name] with these details: [Summary of what they need]. Include a deadline of [Date].\"\n\nSave this workflow. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #freelancer #soloconsultant #aiassistant #taskmanagement #clientprojects #chatgpt #aihacks #productivity #time saving",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post67-chatgpt-ios-task-management/reel.mp4"
     }
   ]
 }

@@ -1,0 +1,84 @@
+{
+  "slug": "post67-chatgpt-ios-task-management",
+  "hook_candidates": [
+    {
+      "headline": "Stop juggling apps for client projects",
+      "sub": "ChatGPT iOS now tracks them"
+    },
+    {
+      "headline": "Your inbox isn't your task list",
+      "sub": "New ChatGPT feature fixes that"
+    },
+    {
+      "headline": "You're wasting 3+ hours weekly",
+      "sub": "On task switching, says ChatGPT"
+    },
+    {
+      "headline": "Client project tracking: done",
+      "sub": "Inside your ChatGPT chat"
+    },
+    {
+      "headline": "Task management isn't optional",
+      "sub": "It's built into ChatGPT iOS now"
+    }
+  ],
+  "art": "chat",
+  "caption": "ChatGPT for iOS 1.2026.188 added task management features—no more switching apps to track client projects.\n\nWhen a client sends a proposal request, instead of opening Trello or Notes, you can now create tasks directly in ChatGPT. Just click the task icon in the chat, type the project name, and add details. The task appears in your chat history, so you never lose track of next steps.\n\nHere's the copy-paste prompt to automate this:\n\n\"Create a task for [Client Name]'s [Project Name] with these details: [Summary of what they need]. Include a deadline of [Date].\"\n\nSave this workflow. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #freelancer #soloconsultant #aiassistant #taskmanagement #clientprojects #chatgpt #aihacks #productivity #time saving",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 067",
+      "headline": [
+        {
+          "t": "Stop switching apps for",
+          "c": "blue"
+        },
+        {
+          "t": "client tasks.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Track projects inside ChatGPT iOS",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Add a task in chat",
+      "body": [
+        {
+          "t": "Click task icon,",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "fill details.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Use this prompt",
+      "sub": "For instant task creation",
+      "label": "COPY THIS PROMPT",
+      "code": "Create a task for [Client Name]'s [Project Name]\nwith these details: [Summary].\nInclude deadline of [Date]."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "ChatGPT tasks",
+        "No app switching",
+        "Client projects tracked"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://learn.chatgpt.com/docs/whats-new"
+}

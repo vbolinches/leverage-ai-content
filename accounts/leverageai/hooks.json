@@ -2419,6 +2419,594 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post62-siri-claude-integration",
+      "graded": "2026-09-16",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "Stop switching apps for AI",
+        "sub": "Claude/ChatGPT talks to Siri",
+        "rank": 1,
+        "score": 4.0,
+        "shape": "change",
+        "stopping": "vaguely hints at time waste (but misframed)",
+        "reason": "Only hook that *almost* touches a real pain ('stop switching' = time waste). But it’s still about Siri (not their workflow), so it’s barely stoppable. The *least bad* among these, but still fails the 'median task' test.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop switching apps for AI",
+          "rank": 1,
+          "score": 4.0,
+          "shape": "change",
+          "stopping": "vaguely hints at time waste (but misframed)",
+          "reason": "Only hook that *almost* touches a real pain ('stop switching' = time waste). But it’s still about Siri (not their workflow), so it’s barely stoppable. The *least bad* among these, but still fails the 'median task' test.",
+          "authored": false
+        },
+        {
+          "headline": "Siri now runs on ChatGPT",
+          "rank": 2,
+          "score": 3.5,
+          "shape": "change",
+          "stopping": "barely addresses time waste but misframes as Siri tech update",
+          "reason": "Uses 'Siri' which is a tech distraction; audience cares about *their* time, not Apple's OS. Sub 'No app switching' is a weak pain point but tied to irrelevant topic (Siri), making it scroll-past-able.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Siri now runs on ChatGPT",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 3.2,
+          "shape": "change",
+          "stopping": "identical to A but weaker sub",
+          "reason": "Same as A but sub 'No more app switching' is redundant. Still misframes the pain as a Siri problem, not a workflow problem.",
+          "authored": true
+        },
+        {
+          "headline": "Apple just made Siri obsolete",
+          "rank": 4,
+          "score": 2.8,
+          "shape": "change",
+          "stopping": "Apple news = irrelevant distraction",
+          "reason": "Focuses on Apple’s update (not the user’s task). 'Fix it' is passive; audience doesn’t care about Apple’s product. Scroll-past rate high.",
+          "authored": false
+        },
+        {
+          "headline": "Siri is outdated. Fix it.",
+          "rank": 5,
+          "score": 2.5,
+          "shape": "change",
+          "stopping": "vague 'outdated' claim",
+          "reason": "Says Siri is outdated but doesn’t say *how it hurts their business*. 'Fix it' feels like a tech support ask, not a solopreneur’s pain.",
+          "authored": false
+        },
+        {
+          "headline": "You’re doing AI wrong right now",
+          "rank": 6,
+          "score": 2.2,
+          "shape": "number-claim",
+          "stopping": "scammy 'wrong' framing",
+          "reason": "Uses 'you're doing AI wrong' — a top scroll-past trigger. No concrete deficiency; just fear-mongering. Matches the 'disproven' rule (meta-commentary).",
+          "authored": false
+        },
+        {
+          "headline": "Why are you using Siri for AI?",
+          "rank": 7,
+          "score": 2.0,
+          "shape": "question",
+          "stopping": "generic 'why' question with no real pain",
+          "reason": "Fails the 'deficiency' test. 'Why using Siri?' implies a problem that doesn't exist for solopreneurs (they don't use Siri for AI). Question feels like a trap, not a pain.",
+          "authored": false
+        },
+        {
+          "headline": "Your AI is your new Siri",
+          "rank": 8,
+          "score": 1.8,
+          "shape": "change",
+          "stopping": "confusing tech claim (AI = Siri?)",
+          "reason": "Merges Apple's product with AI tools. Audience would scroll past because it’s not about *their* workflow. 'Your AI is new Siri' is factually wrong and irrelevant.",
+          "authored": false
+        },
+        {
+          "headline": "Switching AI apps costs $25 hourly",
+          "rank": 9,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "fake $25 cost = scammy hook",
+          "reason": "Fabricated cost ($25 hourly) is a classic scroll-past trigger. Audience knows this is a lie. Worst possible violation of 'no fake urgency'.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post63-microsoft-humanist-ai-oversight",
+      "graded": "2026-09-16",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "AI won't send client emails",
+        "sub": "without your review",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Names exact pain (emails not sending) + solution (your review) in natural freelancer language. Matches 'before-after' format perfectly. No fluff.",
+        "reason": "Directly addresses a daily task (email comms) with zero jargon. 'Without your review' is how solo operators actually talk.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "AI won't send client emails",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Names exact pain (emails not sending) + solution (your review) in natural freelancer language. Matches 'before-after' format perfectly. No fluff.",
+          "reason": "Directly addresses a daily task (email comms) with zero jargon. 'Without your review' is how solo operators actually talk.",
+          "authored": false
+        },
+        {
+          "headline": "Human review before client comms",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Correct pain (review needed) but 'comms' is slightly jargony. Sub implies AI is broken, not the *user's* process.",
+          "reason": "Close, but 'client comms' isn't how freelancers describe their work. Less urgent than F.",
+          "authored": false
+        },
+        {
+          "headline": "AI now needs your sign-off",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Uses vague corporate term 'sign-off' instead of 'review'. Pain isn't named.",
+          "reason": "Fails 'pain/deficiency' test. 'Sign-off' sounds like a manager, not a solo freelancer.",
+          "authored": false
+        },
+        {
+          "headline": "Your AI tool won't act",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Vague 'won't act' - no idea what 'act' means. Feels like a developer tool.",
+          "reason": "Matches 'dev-tool' disapproval. Solo operators don't say 'AI tool won't act'.",
+          "authored": false
+        },
+        {
+          "headline": "Microsoft's AI fails tasks",
+          "rank": 5,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Wrong tool (Microsoft) - irrelevant to median solo operator. Pain isn't named.",
+          "reason": "Violates 'median task' rule. Freelancers don't use Microsoft AI for client emails.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Microsoft's AI",
+              "c": "blue"
+            },
+            {
+              "t": "fails tasks"
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Typos ('AIfails') + wrong tool. Looks unprofessional and off-topic.",
+          "reason": "Typos = instant scroll. 'Microsoft' + typo = confirms it's not for *them*.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post64-meta-one-content-ai",
+      "graded": "2026-09-16",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You're wasting time on client content",
+        "sub": "Meta One fixes it",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "pain named directly (wasting time)",
+        "reason": "Names universal pain (time wasted) without feature talk. 'Fixes it' implies solution without sounding salesy.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You're wasting time on client content",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "pain named directly (wasting time)",
+          "reason": "Names universal pain (time wasted) without feature talk. 'Fixes it' implies solution without sounding salesy.",
+          "authored": false
+        },
+        {
+          "headline": "Stop using free AI for client work",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "change",
+          "stopping": "deficiency named (free AI use) but weaker than A",
+          "reason": "Good deficiency ('stop using free AI') but 'unlocks pro features' leans into features vs pain. Less visceral than A.",
+          "authored": false
+        },
+        {
+          "headline": "Meta One: Now it's a subscription",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "change named (subscription) but negative framing",
+          "reason": "Names a change ('now subscription') but 'no more free tools' is weak negative. Feels like a product update, not a pain.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Meta One: "
+            },
+            {
+              "t": "50+ AI tools",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "category naming (50+ tools) - violates core rule",
+          "reason": "Directly violates 'never a category' rule. '50+ AI tools' is feature listing, not pain/deficiency.",
+          "authored": true
+        },
+        {
+          "headline": "Meta One: 50+ AI tools inside",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "category naming + 'inside' salesy language",
+          "reason": "Worse than F: '50+ AI tools inside' is aggressively feature-focused. 'inside' makes it feel like a sales pitch.",
+          "authored": false
+        },
+        {
+          "headline": "Meta One AI for client content",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "category + weak urgency (\"before it's too late\")",
+          "reason": "Worst: 'Meta One AI for client content' is pure category. 'Before it's too late' is a discredited urgency tactic they've rejected.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post65-webflow-ai-assistant-website-sections",
+      "graded": "2026-09-16",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You're wasting 3+ hours weekly",
+        "sub": "On website sections",
+        "rank": 1,
+        "score": 9.2,
+        "shape": "change",
+        "stopping": "Directly names time waste (3+ hours) + specific task (website sections). Hits daily pain point without fluff. Solves the 'what's in it for me?' instantly.",
+        "reason": "Top-tier pain naming. 'Wasting 3+ hours weekly' is visceral for solo operators drowning in admin. 'On website sections' targets the *exact* micro-task they hate.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You're wasting 3+ hours weekly",
+          "rank": 1,
+          "score": 9.2,
+          "shape": "change",
+          "stopping": "Directly names time waste (3+ hours) + specific task (website sections). Hits daily pain point without fluff. Solves the 'what's in it for me?' instantly.",
+          "reason": "Top-tier pain naming. 'Wasting 3+ hours weekly' is visceral for solo operators drowning in admin. 'On website sections' targets the *exact* micro-task they hate.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Stop building sections",
+              "c": "blue"
+            },
+            {
+              "t": "from scratch."
+            }
+          ],
+          "rank": 2,
+          "score": 8.7,
+          "shape": "change",
+          "stopping": "Strong 'stop' command for a common frustration. Solution implied but not as urgent as D's quantified pain.",
+          "reason": "Close second, but 'stop building sections' is generic compared to D's specific time loss. Still stops scrolls better than others.",
+          "authored": true
+        },
+        {
+          "headline": "Stop building sections from scratch",
+          "rank": 3,
+          "score": 7.4,
+          "shape": "change",
+          "stopping": "Same strong opener as E, but 'paid plans' distracts from the pain. Audience scrolls past pricing details.",
+          "reason": "The 'paid plans' detail is irrelevant to the core pain. It feels like a sales tactic, not a solution to their problem.",
+          "authored": false
+        },
+        {
+          "headline": "Webflow AI doesn't build sites",
+          "rank": 4,
+          "score": 6.1,
+          "shape": "change",
+          "stopping": "Negative framing ('doesn't build sites') but still explains *what it does*, not a pain. 'Marketing sections' is vague.",
+          "reason": "Fails the 'name a pain' rule. It’s a functional description (like A/B), not a deficiency they feel daily.",
+          "authored": false
+        },
+        {
+          "headline": "Webflow AI writes sections for your site",
+          "rank": 5,
+          "score": 5.3,
+          "shape": "change",
+          "stopping": "Too technical ('landing pages, not full sites'). Sounds like a developer manual, not a solo operator's pain.",
+          "reason": "The subnote is jargon-heavy and misses the mark. They don’t care about 'landing pages'—they care about *saving time*.",
+          "authored": false
+        },
+        {
+          "headline": "Webflow AI is for designers",
+          "rank": 6,
+          "score": 3.8,
+          "shape": "category",
+          "stopping": "Explicitly violates the 'no category' rule. 'For designers' is a niche label, not a pain. Instant scroll.",
+          "reason": "The worst possible hook. It’s a category label (not a pain/deficiency), and 'designers' is a sub-niche they avoid. Audience scrolls before reading the first word.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post66-ai-pricing-comparison",
+      "graded": "2026-09-16",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You're paying too much for AI",
+        "sub": "Breakdown for freelancers",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Direct pain + audience specificity",
+        "reason": "‘You’re paying too much for AI’ names a universal pain (money waste) with zero fluff; ‘Breakdown for freelancers’ targets *exactly* who scrolls. No vague future-dating, no tool names, no category. This makes someone pause to check if it’s about *them*.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You're paying too much for AI",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Direct pain + audience specificity",
+          "reason": "‘You’re paying too much for AI’ names a universal pain (money waste) with zero fluff; ‘Breakdown for freelancers’ targets *exactly* who scrolls. No vague future-dating, no tool names, no category. This makes someone pause to check if it’s about *them*.",
+          "authored": false
+        },
+        {
+          "headline": "Microsoft Copilot now costs $10",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Pain named but tool-specific",
+          "reason": "‘No more free AI for freelancers’ nails a pain, but ‘Microsoft Copilot’ alienates non-MS users. The audience scrolls past if they don’t use it—unlike F’s universal ‘AI’.",
+          "authored": false
+        },
+        {
+          "headline": "Your AI costs are about to rise",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Vague future threat",
+          "reason": "‘Costs are about to rise’ is a category, not a pain/deficiency. ‘About to’ feels like generic news—no urgency or specificity. Solo operators scroll past ‘what you need to know’ fluff.",
+          "authored": false
+        },
+        {
+          "headline": "Copilot pricing: $10/month",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Violates core rule",
+          "reason": "‘Copilot pricing: $10/month’ + ‘comparisons’ is exactly the ‘broad tool round-up’ they learned to avoid. It’s a category, not a task the median operator has (they don’t compare tools—they want to *use* AI).",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Copilot now $10",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "2026 is irrelevant",
+          "reason": "‘Guide for 2026’ is a category + future-dating. Solo operators ignore anything not *now*—they’ve seen too many ‘2026’ scams. ‘Copilot’ adds tool specificity.",
+          "authored": true
+        },
+        {
+          "headline": "AI pricing changes in 2026",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "2026 + newsy",
+          "reason": "‘AI pricing changes in 2026’ is the worst combo: category + irrelevant future date. The audience scrolls past ‘what you need to know’ as unactionable noise.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post67-chatgpt-ios-task-management",
+      "graded": "2026-09-16",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Stop switching apps for",
+            "c": "blue"
+          },
+          {
+            "t": "client tasks.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Track projects inside ChatGPT iOS",
+        "rank": 1,
+        "score": 9.2,
+        "shape": "change",
+        "stopping": "Direct pain + urgent action verb + clear solution. 'Stop switching apps' is visceral for solo operators drowning in context-switching. Sub specifies iOS (high-value detail) without fluff.",
+        "reason": "This is the strongest pain-trigger: 'stop switching' names the daily friction (not just 'tasks' but the actual app-hopping agony). 'iOS' adds platform specificity they care about. The 'stop' verb is proven to halt scrolls per their history.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Stop switching apps for",
+              "c": "blue"
+            },
+            {
+              "t": "client tasks.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 9.2,
+          "shape": "change",
+          "stopping": "Direct pain + urgent action verb + clear solution. 'Stop switching apps' is visceral for solo operators drowning in context-switching. Sub specifies iOS (high-value detail) without fluff.",
+          "reason": "This is the strongest pain-trigger: 'stop switching' names the daily friction (not just 'tasks' but the actual app-hopping agony). 'iOS' adds platform specificity they care about. The 'stop' verb is proven to halt scrolls per their history.",
+          "authored": true
+        },
+        {
+          "headline": "Your inbox isn't your task list",
+          "rank": 2,
+          "score": 8.7,
+          "shape": "change",
+          "stopping": "Names a core misconception (inbox ≠ task list) + new feature as solution. Avoids vague 'productivity' talk.",
+          "reason": "Refutes a common false belief ('inbox is task list') which creates instant cognitive dissonance. 'New ChatGPT feature' is specific but not technical – lands at median task level.",
+          "authored": false
+        },
+        {
+          "headline": "You're wasting 3+ hours weekly",
+          "rank": 3,
+          "score": 7.1,
+          "shape": "number-claim",
+          "stopping": "Quantifies pain (3+ hours) but 'says ChatGPT' makes it sound like a generic claim, not a solution.",
+          "reason": "The 3+ hours is strong, but 'says ChatGPT' undermines credibility – feels like a generic stat, not a workflow fix. 'Task switching' is good, but the sub weakens it.",
+          "authored": false
+        },
+        {
+          "headline": "Stop juggling apps for client projects",
+          "rank": 4,
+          "score": 6.3,
+          "shape": "change",
+          "stopping": "Similar to D but 'juggling' is weaker than 'switching' – feels less urgent. Sub is redundant with D's phrasing.",
+          "reason": "Uses 'stop' but 'juggling' is a softer verb than 'switching' (which is the actual pain point). Sub repeats D's structure, making it feel derivative.",
+          "authored": false
+        },
+        {
+          "headline": "Client project tracking: done",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Names a category ('client project tracking') not a pain. 'Done' is meaningless and vague.",
+          "reason": "Fails the core rule: covers must name a *pain*, not a category. 'Done' is unhelpful – doesn't say *what* is done or why it matters.",
+          "authored": false
+        },
+        {
+          "headline": "Task management isn't optional",
+          "rank": 6,
+          "score": 3.5,
+          "shape": "category",
+          "stopping": "Preachy, abstract, and a category ('task management'). No concrete pain or change.",
+          "reason": "The worst: 'isn't optional' is a lecture, not a pain point. It's a generic productivity trope they've proven doesn't stop scrolls (per 'disproven' rules).",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post68-meta-muse-spark-1-3",
+      "graded": "2026-09-16",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Save $200 per client on visuals",
+        "sub": "Meta Muse Spark 1.3",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "number-claim",
+        "stopping": "Saves $200 = concrete financial pain point. Directly addresses solo operator's cost waste (not client need). Matches confirmed 'number-claim' pattern in top posts.",
+        "reason": "Only hook naming a specific, quantifiable pain (money saved) the operator actually experiences. 'Save $200 per client' is the exact 'change' format that stops scrollers.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Save $200 per client on visuals",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "Saves $200 = concrete financial pain point. Directly addresses solo operator's cost waste (not client need). Matches confirmed 'number-claim' pattern in top posts.",
+          "reason": "Only hook naming a specific, quantifiable pain (money saved) the operator actually experiences. 'Save $200 per client' is the exact 'change' format that stops scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "Stop paying designers for social posts",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Names cost pain ('stop paying designers'), but framed negatively. Less effective than D's positive 'save' framing.",
+          "reason": "Strong pain point but 'stop paying' feels reactive vs. D's proactive 'save'. Still better than vague or client-centric hooks.",
+          "authored": false
+        },
+        {
+          "headline": "Client images done in 30 seconds",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "Claims speed ('30 seconds'), but 'client images' misframes the pain as client need (not operator cost/time waste). Sub 'Meta Muse Spark 1.3' feels technical.",
+          "reason": "Closest to good, but 'client images' violates 'names operator pain' rule. Subheading adds no value (disconfirmed: avoid technical tool names).",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Client images done in 30 seconds",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 4.0,
+          "shape": "change",
+          "stopping": "Identical text to B but with vaguer sub 'Meta's new model'. Wastes scroller's time with fluff. No concrete pain.",
+          "reason": "Same flawed framing as B, but weaker subheading (less credible than 'Meta Muse Spark 1.3') makes it scroll-past easier.",
+          "authored": true
+        },
+        {
+          "headline": "Marketing images without a designer",
+          "rank": 5,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Vague 'marketing images without a designer' = category framing (disconfirmed rule). No pain, no number, no change.",
+          "reason": "Fails 'name a pain/deficiency' rule. Sounds like a generic topic, not a specific operator pain. 'Marketing images' is the wrong lens.",
+          "authored": false
+        },
+        {
+          "headline": "Your clients need marketing visuals",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Worst violation: 'Your clients need marketing visuals' frames client's need as pain (not operator pain). Exactly the disconfirmed meta-commentary mistake.",
+          "reason": "Directly contradicts 'cover names a pain, a change, or a deficiency' rule. This is the hook that gets 0 reach (see worst posts: 0/1/2 reach).",
+          "authored": false
+        }
+      ]
     }
   ]
 }

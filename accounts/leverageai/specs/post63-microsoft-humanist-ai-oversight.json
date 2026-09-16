@@ -1,0 +1,74 @@
+{
+  "slug": "post63-microsoft-humanist-ai-oversight",
+  "hook_candidates": [
+    {
+      "headline": "Microsoft's AI fails tasks",
+      "sub": "to avoid rule-breaking"
+    },
+    {
+      "headline": "Human review before client comms",
+      "sub": "AI won't send anything"
+    },
+    {
+      "headline": "Your AI tool won't act",
+      "sub": "without your approval"
+    },
+    {
+      "headline": "AI now needs your sign-off",
+      "sub": "before client messages"
+    },
+    {
+      "headline": "AI won't send client emails",
+      "sub": "without your review"
+    }
+  ],
+  "art": "scales",
+  "caption": "Microsoft's new 'humanist AI' policy means their tools won't execute tasks that might violate rules. For example, if you ask it to draft an email that could be seen as unprofessional, it will fail instead of sending it. \n\nThis affects tools like Copilot for Business. If you try to send client communications through AI, you'll need to manually approve them first. It's a safety move but it means you can't rely on AI to handle client outreach alone anymore. \n\nSave this prompt to make your AI tools obey your rules:\n\n\"Write a professional email to [Client Name] about [Topic]. Avoid any phrases that could be seen as unprofessional or risky. If unsure, fail instead of sending.\" \n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #aiassistant #aiagencies #aiagents #aiops #aifreelancer #aibusiness #aiforbusiness #aiautomation #aiforfreelancers",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 063",
+      "headline": "AI won't send client emails",
+      "sub": "without your review",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "AI won't act",
+      "body": [
+        {
+          "t": "without your approval",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Your rule",
+      "body": [
+        {
+          "t": "'Fail instead of sending'",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "AI approval",
+        "Human review",
+        "No client comms"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct"
+}

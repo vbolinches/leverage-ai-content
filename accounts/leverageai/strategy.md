@@ -187,6 +187,10 @@ are save/share only, per the standing rule that nobody is watching the inbox.
 
 No new data for 051-057; no change to strategy. No reach data reported for posts 051-057 in the brief. Current strategy remains unchanged per prior Confirmed (reels > carousels) and Working hypotheses.
 
+## Batch notes — posts 62-68 (2026-09-16)
+
+Disproven — stop using the hook grader. The pre-publish hook grades (8.4, 7.2, 6.5, 7.5, 8.2, 8.2) did not correlate with reach (44, 34, 29, 2, 1, 1). The highest grade (8.4) had the highest reach, but the next two highest grades (8.2) had the lowest reach. The hook grader is not a reliable predictor. 6 graded posts with reach data available; no consistent correlation between grade and reach.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

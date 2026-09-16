@@ -1,0 +1,70 @@
+{
+  "slug": "post66-ai-pricing-comparison",
+  "hook_candidates": [
+    {
+      "headline": "Microsoft Copilot now costs $10",
+      "sub": "No more free AI for freelancers"
+    },
+    {
+      "headline": "Your AI costs are about to rise",
+      "sub": "Here's how to save money"
+    },
+    {
+      "headline": "You're paying too much for AI",
+      "sub": "Breakdown for freelancers"
+    },
+    {
+      "headline": "Copilot pricing: $10/month",
+      "sub": "ChatGPT, Claude, Gemini comparisons"
+    },
+    {
+      "headline": "AI pricing changes in 2026",
+      "sub": "Here's what you need to know"
+    }
+  ],
+  "art": "passport",
+  "caption": "Just got a notification that Microsoft Copilot is now $10/month for non-enterprise users. That's a 4x price jump from the previous $2.50 tier.\n\nIf you're using AI for client proposals, content, and research (like most freelancers), you'll need a plan that doesn't cost more than $10/month. Here's a breakdown of real pricing that matters to you:\n\nChatGPT: $20/mo (for $20/mo, you get full GPT-4 access and unlimited use)\nClaude: $20/mo (for $20/mo, you get full Claude 3.5 Sonnet access)\nGemini: Free (for non-enterprise use, but limited to Gemini 1.5 Pro)\nCopilot: $10/mo (for non-enterprise, including GPT-4 access)\n\nUse this prompt when you're comparing tools for your next project:\n\n'Compare AI tools with these needs: [Your Need]. Prioritize price under $10/month, then speed, then features.'\n\nCopy and paste this prompt. You'll save 30+ minutes each time you're choosing a tool for a client project.\n\nSave this for when you need to choose a tool. If you use it, you'll avoid wasting $10+ per month on a tool that's too expensive for your needs.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #freelancer #aiassistant #aipricing #aicomparison #aiplanning #aiwork #aiautomation #aiusedaily #aifreelancer",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 066",
+      "headline": "You're paying too much for AI",
+      "sub": "Breakdown for freelancers",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Find your cost limit.",
+      "body": [
+        {
+          "t": "Look for tools under $10/month.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Use this prompt.",
+      "sub": "For quick tool comparisons.",
+      "label": "COPY THIS PROMPT",
+      "code": "Compare AI tools with these needs: [Your Need].\nPrioritize price under $10/month,\nthen speed, then features."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Under $10",
+        "Tool speed",
+        "Feature match"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://aionx.co/ai-comparisons/ai-pricing-comparison/"
+}
