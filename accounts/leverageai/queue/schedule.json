@@ -948,9 +948,12 @@
         "accounts/leverageai/queue/post51-notebooklm-renamed-gemini/slide04.png"
       ],
       "caption": "NotebookLM has a new name: Gemini Notebook. Google renamed it in mid-July 2026 — same product, same source-grounded summaries, just a different label showing up in your Workspace apps.\n\nIf you use it for client research — reading through contracts, meeting transcripts, market reports — nothing about how it works changed. What did change: old bookmarks, browser shortcuts, or any internal notes where you wrote \"open NotebookLM\" might now point to a stale name.\n\nHere's a prompt to get more out of it either way — paste it once you've uploaded a folder of client documents:\n\n\"Summarize the uploaded sources into three sections: key facts, open questions, and anything that contradicts another source. Flag which source each point came from.\"\n\nSave this so you don't lose track of the tool next time you go looking for it by its old name.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #notebooklm #googleai #clientwork #consultantlife #aiworkflow #selfemployed",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post51-notebooklm-renamed-gemini/reel.mp4"
+      "video": "accounts/leverageai/queue/post51-notebooklm-renamed-gemini/reel.mp4",
+      "published_media_id": "18031692167670492",
+      "published_on": "2026-09-16",
+      "threads_posted": true
     },
     {
       "id": "post54-chatgpt-go-eight-dollars",
