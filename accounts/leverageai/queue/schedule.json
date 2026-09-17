@@ -965,9 +965,12 @@
         "accounts/leverageai/queue/post54-chatgpt-go-eight-dollars/slide04.png"
       ],
       "caption": "OpenAI's cheapest paid tier, ChatGPT Go, is $8 a month. Before you downgrade to save $12, know what you're giving up.\n\nGo doesn't include Agent mode, Deep Research, ChatGPT Sites, or ChatGPT Work — the features most useful for actual client work: research, drafting sites, and delegating multi-step tasks. It also shows ads. Plus, at $20, is the first tier that unlocks all of that.\n\nIf you're deciding between the two, ask yourself this before you pick a plan:\n\n\"List every task I use ChatGPT for in a normal week. For each one, tell me whether ChatGPT Go or ChatGPT Plus supports it, based on: Agent mode, Deep Research, Sites, Work, and ad-free use.\"\n\nPaste your own task list into that prompt and you'll get a clearer answer than any pricing page.\n\nSave this before your next renewal.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #chatgpt #aitools #consultantlife #selfemployed #aiworkflow #smallbusiness",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post54-chatgpt-go-eight-dollars/reel.mp4"
+      "video": "accounts/leverageai/queue/post54-chatgpt-go-eight-dollars/reel.mp4",
+      "published_media_id": "18189047494404813",
+      "published_on": "2026-09-17",
+      "threads_posted": true
     },
     {
       "id": "post55-ai-subscription-overlap-audit",
