@@ -2796,6 +2796,140 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post69-uscis-visa-bulletin-charts-update",
+      "graded": "2026-09-17",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¡Error común!",
+        "sub": "Mucha gente usa el calendario incorrecto para su solicitud.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "number-claim",
+        "stopping": "Relatable 'error' framing makes readers think 'That's me!'—immediate stop power without overclaiming. Most urgent for the audience.",
+        "reason": "The 'error común' hook taps into a universal fear of making a mistake others are making, which stops scrollers. No false claims (correctly states the calendar change), and it’s simple enough for non-lawyers to grasp instantly.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¡Error común!",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "Relatable 'error' framing makes readers think 'That's me!'—immediate stop power without overclaiming. Most urgent for the audience.",
+          "reason": "The 'error común' hook taps into a universal fear of making a mistake others are making, which stops scrollers. No false claims (correctly states the calendar change), and it’s simple enough for non-lawyers to grasp instantly.",
+          "authored": false
+        },
+        {
+          "headline": "No uses el calendario de antes.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "number-claim",
+          "stopping": "Clear 'don’t use the old one' instruction with direct consequence (must use Sept 2026). No confusion about 'before' vs. 'after'.",
+          "reason": "‘No uses el calendario de antes’ is a strong, actionable warning. The audience instantly understands the stakes without needing legal jargon.",
+          "authored": false
+        },
+        {
+          "headline": "Antes: usabas el calendario de agosto.",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "‘Antes: usabas el calendario de agosto’ risks confusion (August 2023? 2026?)—scrollers might skip if unsure.",
+          "reason": "The ‘agosto’ reference is vague and could mislead. The sub clarifies, but the hook itself feels like a quiz, not a critical alert.",
+          "authored": false
+        },
+        {
+          "headline": "¡Ojo! Usa el calendario correcto.",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "number-claim",
+          "stopping": "‘¡Ojo!’ is generic—feels like every other alert. No urgency beyond 'use correct calendar'.",
+          "reason": "The warning lacks specificity (‘correct’ vs. ‘wrong’ calendar). Scrollers assume it’s another routine update and keep scrolling.",
+          "authored": false
+        },
+        {
+          "headline": "¿Sabes qué calendario usar?",
+          "rank": 5,
+          "score": 3.0,
+          "shape": "number-claim",
+          "stopping": "‘¿Sabes qué calendario usar?’ feels like a test, not a life-or-death update. No urgency.",
+          "reason": "It’s passive and implies the reader should already know—high chance of being scrolled past as ‘not for me.’",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¡Ojo! Usa el calendario correcto."
+            },
+            {
+              "t": "accent.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "Typo ‘correcto.accent’ makes it look unprofessional. Trust is broken before the message is read.",
+          "reason": "The typo undermines credibility for an audience that needs reliable, error-free info. Scrollers will skip immediately to avoid misinformation.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post70-tps-el-salvador-deadline-extended",
+      "graded": "2026-09-17",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¡No pierdas tu TPS para El Salvador!",
+        "sub": "El plazo termina el 30 de septiembre de 2026.",
+        "rank": 1,
+        "score": 5.0,
+        "shape": "before-after",
+        "stopping": "strong urgency ('no pierdas') makes readers stop to confirm if they'll lose TPS now",
+        "reason": "Uses high-stakes language ('no pierdas') that triggers immediate attention. Audience stops to verify, even though deadline is 2026 (they may not grasp the timeline). Most effective at stopping scrolls.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¡No pierdas tu TPS para El Salvador!",
+          "rank": 1,
+          "score": 5.0,
+          "shape": "before-after",
+          "stopping": "strong urgency ('no pierdas') makes readers stop to confirm if they'll lose TPS now",
+          "reason": "Uses high-stakes language ('no pierdas') that triggers immediate attention. Audience stops to verify, even though deadline is 2026 (they may not grasp the timeline). Most effective at stopping scrolls.",
+          "authored": false
+        },
+        {
+          "headline": "¡No te quedes sin TPS de El Salvador!",
+          "rank": 2,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "urgent phrasing ('no te quedes sin') but slightly less direct than C",
+          "reason": "Similar urgency to C, but 'no te quedes sin' feels less personal than 'no pierdas'. Still stops readers, but marginally less than C.",
+          "authored": false
+        },
+        {
+          "headline": "TPS para El Salvador se alarga.",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "before-after",
+          "stopping": "boring, factual update with no urgency - easy to scroll past",
+          "reason": "Neutral phrasing ('se alarga') lacks emotional hook or urgency. Audience scrolls past as it feels like routine news.",
+          "authored": true
+        },
+        {
+          "headline": "El Salvador: ¡Tu TPS no se acaba!",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "before-after",
+          "stopping": "false alarm - makes readers think TPS never ends (but it expires in 2026)",
+          "reason": "Overstates facts: 'no se acaba' implies TPS never ends, which is false. This would make readers delay renewal (or distrust the account), so it's a false hook. Score: 2 (below 3 due to override).",
+          "authored": false
+        }
+      ]
     }
   ]
 }

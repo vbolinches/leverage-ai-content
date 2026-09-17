@@ -1,0 +1,101 @@
+{
+  "slug": "post69-uscis-visa-bulletin-charts-update",
+  "hook_candidates": [
+    {
+      "headline": "¡Ojo! Usa el calendario correcto.",
+      "sub": "Para pedir tu tarjeta verde, debes usar el calendario de septiembre 2026."
+    },
+    {
+      "headline": "No uses el calendario de antes.",
+      "sub": "El calendario de septiembre 2026 ya está en línea, y tienes que usarlo."
+    },
+    {
+      "headline": "¡Error común!",
+      "sub": "Mucha gente usa el calendario incorrecto para su solicitud."
+    },
+    {
+      "headline": "¿Sabes qué calendario usar?",
+      "sub": "Para solicitar tu tarjeta verde, usa el calendario de septiembre 2026."
+    },
+    {
+      "headline": "Antes: usabas el calendario de agosto.",
+      "sub": "Ahora: usa el calendario de septiembre 2026 para tu solicitud."
+    }
+  ],
+  "art": "calendar",
+  "caption": "El Departamento de Estado publicó el calendario de visas de septiembre 2026, y USCIS dice que debes usar la columna 'Dates for Filing' para las solicitudes de tarjeta verde (I-485). Esto es para todas las familias y trabajos que tienen visa de empleo. Si usas el calendario antiguo, tu solicitud se rechazará.\n\nEn palabras simples: Usa el calendario de septiembre para solicitar tu tarjeta verde, no el de antes. Igual que cuando compras un boleto de bus: si usas la fecha equivocada, no te dejarán subir.\n\nUSCIS: \"Applicants must use the Dates for Filing chart from the September 2026 Visa Bulletin for adjustment of status applications.\"\n\nEn inglés: \"Debes usar la columna 'Dates for Filing' del calendario de septiembre 2026 para pedir tu tarjeta verde.\"\n\nSignifica: Si no usas este calendario, tu solicitud se rechazará. Si usas el calendario anterior, no vale. Si esperas, podrías perder tiempo y dinero.\n\nFuente oficial: https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/adjustment-of-status-filing-charts-from-the-visa-bulletin\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #greencard #visabulletin #uscis #visas #immigration #uslaw #migracion #legal #visa",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 069",
+      "headline": "¡Error común!",
+      "sub": "Mucha gente usa el calendario incorrecto para su solicitud.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Usa el calendario de septiembre 2026.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Igual que un boleto de bus: fecha equivocada, no subes.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Debes usar el calendario de septiembre para tu solicitud.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Si usas el de antes, tu solicitud se rechaza.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "Fechas de solicitud",
+      "body": [
+        {
+          "t": "Familias y trabajos usan calendario de septiembre 2026.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "No usen el de agosto 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "Usa calendario septiembre 2026",
+        "No uses calendario de antes",
+        "Si esperas, pierdes tiempo"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/adjustment-of-status-filing-charts-from-the-visa-bulletin"
+}
