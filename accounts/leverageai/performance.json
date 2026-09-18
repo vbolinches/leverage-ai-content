@@ -5483,6 +5483,120 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-09-18",
+      "followers": 10,
+      "posts": [
+        {
+          "slug": "post54-chatgpt-go-eight-dollars",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post51-notebooklm-renamed-gemini",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 14,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post50-chatgpt-builds-the-file",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 38,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post49-claude-pro-worth-it",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 8,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post48-perplexity-model-council",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 5,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post47-chatgpt-upwork-discovery",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post46-gemini-notebook-expert-books",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 9,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post45-instagram-ai-label-rules",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 13,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post44-claude-cowork-paperwork",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 34,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post43-claude-sends-your-email",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post30-drive-files-no-reupload",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post42-dalle-gpt-retiring",
+          "format": "carousel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
