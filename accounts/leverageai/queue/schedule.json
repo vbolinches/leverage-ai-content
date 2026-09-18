@@ -982,9 +982,12 @@
         "accounts/leverageai/queue/post55-ai-subscription-overlap-audit/slide04.png"
       ],
       "caption": "ChatGPT, Claude, and Perplexity all write, research, and summarize now. A year ago they had different strengths. In 2026 the overlap is real — and so is the chance you're paying full price for the same job three times.\n\nThis isn't an argument to cancel everything. Some overlap is a legitimate backup plan. But most solo operators have never actually mapped which subscription does which task.\n\nCopy-paste this into whichever AI tool you trust most:\n\n\"Here are my AI subscriptions and what I pay for each: [list them with monthly cost]. Here's what I actually use them for in a normal week: [list tasks]. Tell me which subscriptions overlap on the same task, and which one I could drop without losing a capability I use weekly.\"\n\nFill in your real numbers and let it do the arithmetic.\n\nSave this before your next batch of renewals hits.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solobusiness #freelancelife #aitools #consultantlife #selfemployed #productivity #aiworkflow #smallbusiness",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post55-ai-subscription-overlap-audit/reel.mp4"
+      "video": "accounts/leverageai/queue/post55-ai-subscription-overlap-audit/reel.mp4",
+      "published_media_id": "17959836003208539",
+      "published_on": "2026-09-18",
+      "threads_posted": true
     },
     {
       "id": "post56-ledge-ai-invoicing-ocr",
