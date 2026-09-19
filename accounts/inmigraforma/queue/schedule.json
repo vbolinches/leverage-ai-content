@@ -1124,9 +1124,12 @@
         "accounts/inmigraforma/queue/post60-i485-form-edition-change/slide05.png"
       ],
       "caption": "USCIS anunció que a partir del 18 de septiembre de 2026, rechazarán cualquier formulario I-485 antiguo. El I-485 es el formulario para pedir la tarjeta verde desde dentro de EE.UU. Si ya tienes tu formulario listo, ¡debes usar el nuevo! En palabras simples: Los formularios antiguos ya no valen para pedir la tarjeta verde. Si mandas uno viejo, USCIS lo devuelve sin procesar. \n\nEn palabras simples: \nEl texto oficial dice: 'Older editions of Form I-485 will be rejected starting September 18, 2026.' \nSignifica: No uses el formulario antiguo el 18 de septiembre. Si lo usas, tu solicitud se pierde y debes mandar otro. \n\nIn plain words: Older forms for adjustment of status will no longer be accepted after September 18, 2026.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-to-publish-new-edition-of-form-i-485-older-editions-will-be-rejected-starting-sept-18\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #formularios #greencard #i485 #uscis #noticias #inmigracioneeuu #formulariosuscis #estadosunidos #legal",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/inmigraforma/queue/post60-i485-form-edition-change/reel.mp4"
+      "video": "accounts/inmigraforma/queue/post60-i485-form-edition-change/reel.mp4",
+      "published_media_id": "18009524744974969",
+      "published_on": "2026-09-19",
+      "facebook_page_posted": true
     },
     {
       "id": "post62-policy-manual-for-uscis-processing-standards",
