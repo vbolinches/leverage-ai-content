@@ -999,7 +999,10 @@
         "accounts/leverageai/queue/post56-ledge-ai-invoicing-ocr/slide04.png"
       ],
       "caption": "Freelancers waste hours manually entering invoice data from messy PDFs. Ledge AI solves this: its OCR correctly parsed 9/10 test invoices (including multi-page), outperforming competitors. After a few invoices, it auto-categorizes expenses based on your preferences.\n\nUse this prompt to generate a clean invoice from a messy PDF:\n\n\"Convert this invoice PDF into a clean, structured format with lines for date, vendor, items, amounts, and total. List all line items clearly. Do not include the original PDF's formatting.\"\n\nSave this workflow for when you're drowning in invoices. Comment 'invoice' to save — or just save the post.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #freelancerlife #invoicing #aiassistant #invoiceautomation #freelance #ai #businessautomation #aiassistant #freelancebusiness",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "18110413132943460",
+      "published_on": "2026-09-19",
+      "threads_posted": true
     },
     {
       "id": "post58-ai-fraud-detection-in-invoicing",
