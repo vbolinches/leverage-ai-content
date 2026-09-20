@@ -1014,9 +1014,12 @@
         "accounts/leverageai/queue/post58-ai-fraud-detection-in-invoicing/slide04.png"
       ],
       "caption": "Invoices with duplicate line items or fake payee names cost small businesses thousands. AutoBill Pro’s new AI feature now flags these in real-time with 95%+ accuracy—no extra setup needed. Just enable it in your invoicing tool. The workflow is simple: 1. Enable AI fraud detection in your invoicing tool (AutoBill Pro, 2026). 2. Let it monitor all new and pending invoices. 3. Get alerts for duplicates or suspicious payee names. \n\nHere’s the prompt to prompt your tool: \n\"Flag any invoice with duplicate line items or payee names that don't match your records. Report as 'Suspicious' if found.\"\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #smallbusiness #invoicing #fraudprevention #businessautomation #money #freelancer #consultant #aiworkflow #aihacks",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post58-ai-fraud-detection-in-invoicing/reel.mp4"
+      "video": "accounts/leverageai/queue/post58-ai-fraud-detection-in-invoicing/reel.mp4",
+      "published_media_id": "18132281122641686",
+      "published_on": "2026-09-20",
+      "threads_posted": true
     },
     {
       "id": "post60-zapflow-api-first-automation",
