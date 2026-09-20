@@ -1142,9 +1142,12 @@
         "accounts/inmigraforma/queue/post62-policy-manual-for-uscis-processing-standards/slide05.png"
       ],
       "caption": "El manual de políticas de USCIS es el libro de reglas que usan los funcionarios para decidir sobre tu caso. Es un documento oficial que explica cómo procesan cada tipo de trámite: desde la ciudadanía hasta las visas. No hay cambios recientes, pero es bueno saber que está ahí para cuando necesites ayuda.\n\nEn palabras simples: El manual de USCIS es como el reglamento de un club de fútbol. Dice qué hacer antes de entrar al campo, qué reglas seguir durante el partido, y qué pasa si no las cumplen. Si quieres saber cómo procesan tu caso, lee el manual en su sitio web.\n\nIn plain words: The USCIS Policy Manual is the official guide that tells officers how to process immigration applications. It explains the rules for each type of case, from citizenship to visas. There are no recent changes, but it's helpful to know it exists.\n\nFuente oficial: https://www.uscis.gov/policy-manual\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #uscis #manual #green #visa #citizenship #procesos #trámites #leyes #inmigrantes",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/inmigraforma/queue/post62-policy-manual-for-uscis-processing-standards/reel.mp4"
+      "video": "accounts/inmigraforma/queue/post62-policy-manual-for-uscis-processing-standards/reel.mp4",
+      "published_media_id": "18059233094717300",
+      "published_on": "2026-09-20",
+      "facebook_page_posted": true
     },
     {
       "id": "post65-diplomatic-children-lpr-registration",
