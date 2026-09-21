@@ -1031,9 +1031,12 @@
         "accounts/leverageai/queue/post60-zapflow-api-first-automation/slide04.png"
       ],
       "caption": "You’re using invoice tools that don’t fit your workflow. They force you to follow their rules instead of yours. ZapFlow fixes this with API-first automation. You get to build exactly what you need, no extra features or bloat.\n\nZapFlow supports Zapier and Make integrations, but it’s built for people who want to customize their own workflows. You can connect it to your existing tools without learning complex coding.\n\nUse this prompt to generate a custom invoice template that matches your brand:\n\n\"Create an invoice template for [service] using [brand colors], including payment terms and client details. Format: [PDF/Google Doc].\"\n\nSave this workflow for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#leverageai #aiworkflows #smallbusiness #invoicing #automation #zapflow #api #smb #freelancer #ai",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post60-zapflow-api-first-automation/reel.mp4"
+      "video": "accounts/leverageai/queue/post60-zapflow-api-first-automation/reel.mp4",
+      "published_media_id": "17861616516692206",
+      "published_on": "2026-09-21",
+      "threads_posted": true
     },
     {
       "id": "post61-gpt6-astra-business-workflows",
