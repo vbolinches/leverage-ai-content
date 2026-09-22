@@ -2878,6 +2878,47 @@
       ]
     },
     {
+      "slug": "post70-diversity-visa-court-order-update",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¡La visa de diversidad se detuvo!",
+        "sub": "El juez dijo que el programa está en pausa por ahora.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "number-claim",
+        "stopping": "The hook uses urgent, clear Spanish ('¡La visa de diversidad se detuvo!') that directly threatens a high-stakes, life-changing opportunity for the audience. 'Detenido' is a common, understandable term for 'paused' in this context (not 'cancelled'), and the sub clarifies it's temporary. This triggers immediate stop-and-read for someone who might rely on this visa—no confusion, no false panic, just a factual, high-stakes alert they need to act on. The audience *will* stop, and it’s accurate.",
+        "reason": "Accurate, urgent, and directly relevant to a top immigration concern (DV lottery). No false alarm—sub clarifies 'en pausa'.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¡La visa de diversidad se detuvo!",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "The hook uses urgent, clear Spanish ('¡La visa de diversidad se detuvo!') that directly threatens a high-stakes, life-changing opportunity for the audience. 'Detenido' is a common, understandable term for 'paused' in this context (not 'cancelled'), and the sub clarifies it's temporary. This triggers immediate stop-and-read for someone who might rely on this visa—no confusion, no false panic, just a factual, high-stakes alert they need to act on. The audience *will* stop, and it’s accurate.",
+          "reason": "Accurate, urgent, and directly relevant to a top immigration concern (DV lottery). No false alarm—sub clarifies 'en pausa'.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¡La visa de diversidad se detuvo!",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 8.0,
+          "shape": "number-claim",
+          "stopping": "Identical to A but ranked second due to the duplicate. The audience would still stop (it’s a strong hook), but since it’s the *same* text as A, it’s slightly less impactful as a unique stop. No downgrade for content—just a technical rank adjustment to avoid ties.",
+          "reason": "Same content as A, so same stopping power. Ranked lower only to comply with 'no shared ranks' rule.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post70-tps-el-salvador-deadline-extended",
       "graded": "2026-09-17",
       "threshold": 6.0,
@@ -2927,6 +2968,362 @@
           "shape": "before-after",
           "stopping": "false alarm - makes readers think TPS never ends (but it expires in 2026)",
           "reason": "Overstates facts: 'no se acaba' implies TPS never ends, which is false. This would make readers delay renewal (or distrust the account), so it's a false hook. Score: 2 (below 3 due to override).",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post71-certificado-cambio-de-formulario",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "Sep 14, 2026: N-600 nuevo",
+        "sub": "Deja de usar el viejo si quieres aplicar",
+        "rank": 1,
+        "score": 1.0,
+        "shape": "number-claim",
+        "stopping": "2026 is a future year (current year 2024). Audience will scroll past as it feels like a scam or error, destroying trust instantly.",
+        "reason": "Date error (2026) makes it feel untrustworthy. Audience has learned to distrust false dates.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Sep 14, 2026: N-600 nuevo",
+          "rank": 1,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "2026 is a future year (current year 2024). Audience will scroll past as it feels like a scam or error, destroying trust instantly.",
+          "reason": "Date error (2026) makes it feel untrustworthy. Audience has learned to distrust false dates.",
+          "authored": false
+        },
+        {
+          "headline": "¡Error! N-600 antiguo no funciona",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Overstates consequence: 'esperarás más tiempo' implies penalty, but actual rule is just processing delay (no penalty). False alarm = lost trust.",
+          "reason": "False consequence (penalty vs. simple delay) violates the override. Trust cost.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "El formulario N-600",
+              "c": "blue"
+            },
+            {
+              "t": "es nuevo.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 3.0,
+          "shape": "number-claim",
+          "stopping": "Typo 'N-600es' makes it look unprofessional. Audience will scroll past as 'this account can't even write correctly'.",
+          "reason": "Typos in legal form name destroy credibility. Audience knows this is a form they must use correctly.",
+          "authored": true
+        },
+        {
+          "headline": "El formulario N-600 se actualizó",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "Vague 'se actualizó' feels like routine update. No urgency or personal impact. Easy to scroll past.",
+          "reason": "No deadline, no 'you'—just a fact. Audience sees this daily and scrolls.",
+          "authored": false
+        },
+        {
+          "headline": "¡Ojo con el formulario N-600!",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "number-claim",
+          "stopping": "‘¡Ojo!’ grabs attention but 'a partir de septiembre' is vague. Still stops some scrollers.",
+          "reason": "Clear but slightly ambiguous. Audience stops to check 'is it me?'",
+          "authored": false
+        },
+        {
+          "headline": "¿Ya usaste el formulario N-600?",
+          "rank": 6,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "‘¿Ya usaste?’ is personal and urgent. 'No es válido desde septiembre' is exact and actionable. Stops all.",
+          "reason": "Direct question + clear consequence + no exaggeration. Matches what the audience needs to know *now*.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post72-apply-action-approved-applications-update",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Sabías que puedes acelerar tu caso?",
+        "sub": "El nuevo formulario I-130/I-751 ya está disponible",
+        "rank": 1,
+        "score": 5.0,
+        "shape": "category",
+        "stopping": "Strong, accurate hook addressing a core pain point (speeding up cases) without misleading. No false urgency or overstatement. Audience stops to learn how to accelerate their case.",
+        "reason": "Accurate and directly solves a universal immigrant pain point (waiting), no overstatement.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Sabías que puedes acelerar tu caso?",
+          "rank": 1,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Strong, accurate hook addressing a core pain point (speeding up cases) without misleading. No false urgency or overstatement. Audience stops to learn how to accelerate their case.",
+          "reason": "Accurate and directly solves a universal immigrant pain point (waiting), no overstatement.",
+          "authored": false
+        },
+        {
+          "headline": "¡Ya no esperes más!",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Strong hook ('¡Ya no esperes más!') stops scrolls, but overstates reality: 'mover tu caso aprobado' implies approved cases can be moved immediately, which is untrue (I-751 is only for conditional cases, not all approved cases). False hope damages trust.",
+          "reason": "Overstates consequence: Makes reader think they can 'move' approved cases now (not true), risking false hope. Score below 3 per override.",
+          "authored": false
+        },
+        {
+          "headline": "¡Cambia tu proceso!",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Weak hook ('¡Cambia tu proceso!') with false promise ('No más esperar'), but not alarmist. Audience scrolls past due to vagueness and inaccuracy (waiting still happens after approval).",
+          "reason": "Misleading promise ('no más esperar') but not dangerous. Still mediocre and easy to scroll past.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¡Nuevo formulario para casos aprobados!",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Weak hook ('¡Nuevo formulario...') with factual error: I-751 is only for conditional cases, not 'casos aprobados' generally. Audience scrolls past due to boredom + confusion.",
+          "reason": "Overstates form applicability (I-751 not for all approved cases), but less dangerous than B. Score below 3.",
+          "authored": true
+        },
+        {
+          "headline": "¡Tu caso aprobado necesita acción!",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Alarmist hook ('¡Tu caso aprobado necesita acción!') stops scrolls via fear, but falsely claims approved cases require immediate action (most approved cases need no action yet). Creates unnecessary panic, violating trust.",
+          "reason": "Overstates consequence: Makes reader think they must act now on approved cases (not true), causing panic. Score below 3 per override.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post73-eb5-investment-rules-update",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Estás invirtiendo para EB-5? Cuidado",
+        "sub": "El formato nuevo entra en septiembre",
+        "rank": 1,
+        "score": 7.0,
+        "shape": "category",
+        "stopping": "Personal question + urgency ('Cuidado') directly targets active applicants",
+        "reason": "Strongest hook: '¿Estás invirtiendo?' forces reader to pause and think 'That's me'.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Estás invirtiendo para EB-5? Cuidado",
+          "rank": 1,
+          "score": 7.0,
+          "shape": "category",
+          "stopping": "Personal question + urgency ('Cuidado') directly targets active applicants",
+          "reason": "Strongest hook: '¿Estás invirtiendo?' forces reader to pause and think 'That's me'.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "El EB-5 ahora exige más papeles"
+            }
+          ],
+          "rank": 2,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Clear pain point ('más papeles') + specific date (septiembre 14, 2026)",
+          "reason": "Addresses immediate hassle; date adds credibility but lacks personal hook.",
+          "authored": true
+        },
+        {
+          "headline": "El EB-5 ahora exige más papeles",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Identical to B but listed later",
+          "reason": "Same content as B but no distinction in audience impact.",
+          "authored": false
+        },
+        {
+          "headline": "El EB-5 no es igual desde septiembre",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Vague ('no es igual') + generic date reference",
+          "reason": "Too broad; no specific pain point to stop scrolling.",
+          "authored": false
+        },
+        {
+          "headline": "¿Sabías que el EB-5 cambió?",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Generic '¿Sabías que...?' with no concrete change",
+          "reason": "Most boring hook; no urgency or specificity to stop scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "El EB-5 necesita más dinero y papeles",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "False claim: EB-5 hasn't increased investment amount",
+          "reason": "Overstates consequence (‘más dinero’); risks reader panic and trust loss. Override rule applies.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post74-carrier-docs-form-i797c",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¡Ya no es lo mismo para los aviones!",
+        "sub": "Aerolíneas deben usar nuevo formulario para inmigrantes desde septiembre",
+        "rank": 1,
+        "score": 5.0,
+        "shape": "mistake",
+        "stopping": "Correctly states airlines must use new form (for passengers), clear timeline ('desde septiembre'). Minor confusion ('aviones' in headline) but no false alarm. Audience pauses to check if it affects their travel.",
+        "reason": "No override issue. Simple phrasing ('nuevo formulario') matches audience's need for actionable clarity. Stops scrollers who think 'my flight might change'.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¡Ya no es lo mismo para los aviones!",
+          "rank": 1,
+          "score": 5.0,
+          "shape": "mistake",
+          "stopping": "Correctly states airlines must use new form (for passengers), clear timeline ('desde septiembre'). Minor confusion ('aviones' in headline) but no false alarm. Audience pauses to check if it affects their travel.",
+          "reason": "No override issue. Simple phrasing ('nuevo formulario') matches audience's need for actionable clarity. Stops scrollers who think 'my flight might change'.",
+          "authored": false
+        },
+        {
+          "headline": "Aerolíneas envían nuevo formulario migrantes",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "mistake",
+          "stopping": "False claim: Airlines don't need forms—this misstates the rule as if planes require I-797C (a USCIS form for petitions), causing panic. Readers might skip thinking 'this is wrong' or worse, avoid flights unnecessarily.",
+          "reason": "Override violation: Claims a consequence that doesn't exist (airlines needing forms), risking trust. Audience would scroll past instantly.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post75-refugee-waiver-process-update",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¡Tu papeleo de refugiado ya no es igual!",
+        "sub": "Más requisitos desde el 14 de septiembre de 2026.",
+        "rank": 1,
+        "score": 2.0,
+        "shape": "before-after",
+        "stopping": "The exclamation mark and 2026 date make it feel like a scam (common in fraudulent immigration advice). The audience knows 'refugee paperwork' changes *now*—not in 2 years. They'd scroll past instantly, thinking 'This is fake' or 'Not for me.' This violates the trust rule by creating false urgency about a non-existent deadline.",
+        "reason": "False urgency + misleading date (2026) = immediate scroll past. Overstates consequence (no one cares about 2026 rules now).",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¡Tu papeleo de refugiado ya no es igual!",
+          "rank": 1,
+          "score": 2.0,
+          "shape": "before-after",
+          "stopping": "The exclamation mark and 2026 date make it feel like a scam (common in fraudulent immigration advice). The audience knows 'refugee paperwork' changes *now*—not in 2 years. They'd scroll past instantly, thinking 'This is fake' or 'Not for me.' This violates the trust rule by creating false urgency about a non-existent deadline.",
+          "reason": "False urgency + misleading date (2026) = immediate scroll past. Overstates consequence (no one cares about 2026 rules now).",
+          "authored": false
+        },
+        {
+          "headline": "Tu papeleo de refugiado ya no es igual",
+          "rank": 2,
+          "score": 3.0,
+          "shape": "before-after",
+          "stopping": "Plain headline + 2026 date feels irrelevant. Audience thinks 'This isn't about me' and scrolls. Still bad, but less aggressively wrong than B.",
+          "reason": "No exclamation mark, but the 2026 date is so far off it fails to stop scrollers. No false danger, but no reason to pause.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post76-civil-surgeon-designation-update",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Necesitas un médico designado?",
+        "sub": "La regla cambió el 7 de julio, 2026",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "category",
+        "stopping": "Asks '¿Necesitas un médico designado?' — instantly makes readers ask if it applies to *them*. No jargon, no false urgency. They stop to think 'Wait, do I need this?'.",
+        "reason": "Clarifies the core question (need for designated doctor) without confusion. Directly targets the reader's potential need.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Necesitas un médico designado?",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "category",
+          "stopping": "Asks '¿Necesitas un médico designado?' — instantly makes readers ask if it applies to *them*. No jargon, no false urgency. They stop to think 'Wait, do I need this?'.",
+          "reason": "Clarifies the core question (need for designated doctor) without confusion. Directly targets the reader's potential need.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Nuevo requisito para médicos en inmigración",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Feels like a generic rule about 'médicos en inmigración' — readers won't know if it affects *them* (e.g., are they a doctor? Is this about their medical exam?). Too vague to stop scrollers.",
+          "reason": "No clear hook for the reader's life. Sounds like a bureaucratic update, not something they’d care about.",
+          "authored": true
+        },
+        {
+          "headline": "Más tiempo y requisitos para médicos",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Uses 'más tiempo y requisitos' — vague and jargon-heavy ('cirujano civil'). Readers won't understand why this matters or if they're affected.",
+          "reason": "Assumes knowledge of immigration medical terms. Most immigrants wouldn’t know what a 'civil surgeon' is.",
+          "authored": false
+        },
+        {
+          "headline": "¿Cuándo debes reemplazar a tu médico?",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Claims you must 'reemplazar a tu médico' (replace your doctor) — a dangerous misinterpretation. Most readers would panic thinking they need to find a new *personal* doctor immediately, not realizing it’s about immigration-designated doctors. False alarm = loss of trust.",
+          "reason": "Overstates consequence: no penalty for ignoring this, and readers would wrongly believe they’re in danger. Scored below 3 per override.",
           "authored": false
         }
       ]

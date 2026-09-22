@@ -1,0 +1,80 @@
+{
+  "slug": "post73-eb5-investment-rules-update",
+  "hook_candidates": [
+    {
+      "headline": "El EB-5 ahora exige más papeles",
+      "sub": "Desde septiembre 14, 2026"
+    },
+    {
+      "headline": "¿Sabías que el EB-5 cambió?",
+      "sub": "Tu solicitud nueva debe usar el nuevo formato"
+    },
+    {
+      "headline": "El EB-5 no es igual desde septiembre",
+      "sub": "Más requisitos para inversiones"
+    },
+    {
+      "headline": "El EB-5 necesita más dinero y papeles",
+      "sub": "Fechas importantes para tu solicitud"
+    },
+    {
+      "headline": "¿Estás invirtiendo para EB-5? Cuidado",
+      "sub": "El formato nuevo entra en septiembre"
+    }
+  ],
+  "art": "building",
+  "caption": "USCIS acaba de actualizar las reglas para las solicitudes EB-5. Ahora, si vas a invertir $800,000 en un negocio para pedir una Green Card, debes usar el nuevo formato de solicitud a partir del 14 de septiembre de 2026. Si usas el formato antiguo, tu solicitud se rechazará.\n\nEn palabras simples: El gobierno ahora pide más papeles y dinero para los inversionistas. Si no usas el formato nuevo, pierdes tu tiempo y dinero.\n\nOfficial text: \"All new EB-5 petitions filed on or after September 14, 2026, must use the new application form. Petitions filed with the old form will be rejected.\"\nWhat it means: Si ya tienes un negocio o inviertes, debes usar el nuevo formulario desde el 14 de septiembre. Si no, tu solicitud no se acepta.\nIn plain words: The new EB-5 rules mean you need the right paperwork or your application gets tossed out.\n\nFuente oficial: https://www.federalregister.gov/index/2026/u-s-citizenship-and-immigration-services\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#eb5 #green card #immigration #investorvisa #uscis #visa #eb5investor #greencard #immigrationnews #usimmigration",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 073",
+      "headline": "¿Estás invirtiendo para EB-5? Cuidado",
+      "sub": "El formato nuevo entra en septiembre",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Usa el formulario nuevo para tu EB-5. Si no, tu solicitud se rechaza. Igual que un correo sin dirección."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Debes usar el nuevo formulario desde septiembre 14. Si no, tu solicitud no se acepta. Como pagar con una tarjeta rota."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Usa el formulario nuevo.",
+      "body": [
+        {
+          "t": "La nueva solicitud se usa para todo EB-5 nuevo desde septiembre 14, 2026. Incluye el monto correcto de inversión."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "Usa el formulario nuevo",
+        "Invierte $800,000 o más",
+        "No uses el formulario antiguo"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.federalregister.gov/index/2026/u-s-citizenship-and-immigration-services"
+}

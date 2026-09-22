@@ -1,0 +1,86 @@
+{
+  "slug": "post72-apply-action-approved-applications-update",
+  "hook_candidates": [
+    {
+      "headline": "¡Ya no esperes más!",
+      "sub": "Usa el nuevo formulario para mover tu caso aprobado"
+    },
+    {
+      "headline": "¿Sabías que puedes acelerar tu caso?",
+      "sub": "El nuevo formulario I-130/I-751 ya está disponible"
+    },
+    {
+      "headline": "¡Cambia tu proceso!",
+      "sub": "No más esperar por actualizaciones de casos aprobados"
+    },
+    {
+      "headline": "¡Tu caso está listo, pero necesita un paso!",
+      "sub": "Usa el nuevo formulario para activarlo"
+    },
+    {
+      "headline": "¡Tu caso aprobado necesita acción!",
+      "sub": "El nuevo formulario I-130/I-751 reemplaza los métodos anteriores"
+    }
+  ],
+  "art": "clock",
+  "caption": "USCIS introdujo una forma nueva para que puedas pedir a los funcionarios que revisen casos aprobados. Antes tenías que mandar un correo, pero ahora hay un formulario especial. Esto ayuda a que los casos se procesen más rápido.\n\nEn palabras simples: El nuevo formulario I-130/I-751 reemplaza los métodos anteriores de pedir actualizaciones. Si tu caso ya fue aprobado pero no ha avanzado, debes mandar este formulario antes del 14 de septiembre de 2026. Si no lo mandas, tu caso puede seguir esperando.\n\nIn plain words: USCIS has introduced a new form for applicants to request action on previously approved applications or petitions. You must submit it for all pending cases as of September 14, 2026.\n\nFuente oficial: https://www.federalregister.gov/index/2026/u-s-citizenship-and-immigration-services\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #greencard #uscis #formularios #aplicaciones #inmigrantes #trabajo #visas #procesos #noticias",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 072",
+      "headline": "¿Sabías que puedes acelerar tu caso?",
+      "sub": "El nuevo formulario I-130/I-751 ya está disponible",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Si tu caso aprobado no avanzó, usa I-130/I-751 antes del 14 sep. Igual que enviar mensaje para confirmar pago.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Reemplaza pedir actualizaciones por correo. Si no mandas formulario, esperarás más. Como no enviar recibo para cobrar.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Usa formulario I-130/I-751.",
+      "body": [
+        {
+          "t": "Si caso aprobado no avanzó, mandalo antes del 14 sep 2026. Si no, esperarás más.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "Mandar formulario antes del 14 sep",
+        "No esperar por correo",
+        "Verifica en uscis.gov"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.federalregister.gov/index/2026/u-s-citizenship-and-immigration-services"
+}

@@ -1,0 +1,86 @@
+{
+  "slug": "post76-civil-surgeon-designation-update",
+  "hook_candidates": [
+    {
+      "headline": "Nuevo requisito para médicos en inmigración",
+      "sub": "Aplicaciones nuevas desde el 7 de julio, 2026"
+    },
+    {
+      "headline": "¿Necesitas un médico designado?",
+      "sub": "La regla cambió el 7 de julio, 2026"
+    },
+    {
+      "headline": "Error común: No sabes si tu médico es válido",
+      "sub": "Aplica a todas las nuevas solicitudes desde el 7 de julio"
+    },
+    {
+      "headline": "¿Cuándo debes reemplazar a tu médico?",
+      "sub": "Si ya tienes designación, debes hacerlo antes del 31 de diciembre, 2026"
+    },
+    {
+      "headline": "Más tiempo y requisitos para médicos",
+      "sub": "Nuevas reglas para aplicar como cirujano civil, desde el 7 de julio, 2026"
+    }
+  ],
+  "art": "document",
+  "caption": "USCIS actualizó los requisitos para que los médicos sean designados como cirujanos civiles. Ahora, los nuevos aplicantes deben completar capacitación adicional y todas las solicitudes nuevas deben enviarse después del 7 de julio de 2026. Los médicos ya designados tendrán que volver a aplicar antes del 31 de diciembre de 2026.\n\nEn palabras simples: Los médicos que quieren ser parte del sistema de inmigración deben tomar un curso extra, y los que ya están en el sistema tendrán que actualizar su papel antes de fin de año.\n\nOfficial English: \"All new applications for designation as a civil surgeon must include evidence of completion of the required training. Designated civil surgeons must reapply under the new standards by December 31, 2026.\"\n\nWhat it means: Los médicos que quieren ser designados deben probar que tomaron el curso nuevo. Si ya son designados y no renuevan, pierden su estatus. Si no se actualizan, no pueden hacer exámenes médicos para inmigrantes.\n\nEn palabras simples: Igual que cuando cambian los requisitos para entrar a la escuela, ahora los médicos deben cumplir con un nuevo curso antes de seguir trabajando.\n\nFuente oficial: https://www.federalregister.gov/index/2026/u-s-citizenship-and-immigration-services\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigración #greencard #medico #civicsurgeon #uscis #inmigracionfacil #inmigracionenmexico #inmigracionenusa",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 076",
+      "headline": "¿Necesitas un médico designado?",
+      "sub": "La regla cambió el 7 de julio, 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Médicos necesitan curso extra. Ya designados: actualiza antes del 31 de diciembre.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Nuevos: curso nuevo. Ya designados: reingresa antes del 31. Si no, no harán exámenes.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Este cambio te toca?",
+      "body": [
+        {
+          "t": "Si buscas médico para solicitud, asegúrate de que esté designado. Ya designados: actualiza antes del 31 de diciembre.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Nuevos médicos: curso nuevo",
+        "Ya designados: reaplica antes del 31",
+        "Si no, no podrás hacer exámenes"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.federalregister.gov/index/2026/u-s-citizenship-and-immigration-services"
+}

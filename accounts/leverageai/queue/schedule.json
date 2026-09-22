@@ -1105,6 +1105,48 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post67-chatgpt-ios-task-management/reel.mp4"
+    },
+    {
+      "id": "post69-shot-scraper-1-12-automate-competitor-pricing",
+      "date": "2026-09-25",
+      "slides": [
+        "accounts/leverageai/queue/post69-shot-scraper-1-12-automate-competitor-pricing/slide01.png",
+        "accounts/leverageai/queue/post69-shot-scraper-1-12-automate-competitor-pricing/slide02.png",
+        "accounts/leverageai/queue/post69-shot-scraper-1-12-automate-competitor-pricing/slide03.png",
+        "accounts/leverageai/queue/post69-shot-scraper-1-12-automate-competitor-pricing/slide04.png"
+      ],
+      "caption": "Competitor price tracking used to eat hours of your time, and storage costs for screenshots added up. Now, with shot-scraper 1.12’s WebP support, you can take screenshots of competitor pricing pages with 80% smaller file sizes than JPEG/PNG — and it’s free to use.\n\nThe key is the --quality flag (default: lossless). For pricing screenshots, this means you’ll store 50% less data while keeping quality high enough to read text.\n\nIf you’re tracking a competitor’s pricing page daily, this cuts your storage costs by half. At $0.05 per GB, that’s $0.025 saved per screenshot.\n\nCOPY THIS PROMPT:\n\nTake a screenshot of [competitor url] using shot-scraper, save as a WebP file with 80% quality.\n\n--quality 80\n\nSave this for later to make competitor price tracking effortless. Comment 'tracking' below and we’ll share a free template for your competitor list.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #freelancer #businessautomation #pricetracking #competitoranalysis #screenshot #shotscraper #webp #pricemonitoring #savings",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post69-shot-scraper-1-12-automate-competitor-pricing/reel.mp4"
+    },
+    {
+      "id": "post71-pdf-to-markdown-ai",
+      "date": "2026-09-26",
+      "slides": [
+        "accounts/leverageai/queue/post71-pdf-to-markdown-ai/slide01.png",
+        "accounts/leverageai/queue/post71-pdf-to-markdown-ai/slide02.png",
+        "accounts/leverageai/queue/post71-pdf-to-markdown-ai/slide03.png",
+        "accounts/leverageai/queue/post71-pdf-to-markdown-ai/slide04.png"
+      ],
+      "caption": "Convert PDF contracts or reports to editable Markdown in seconds. No more screenshots or manual reformatting. Just paste and save.\n\nPDFtoMarkdown.ai preserves headings and tables so you can edit in Notion or Google Docs. Saves 2+ hours per client document.\n\nCopy-paste this prompt:\n\n‘Convert this PDF to Markdown format, preserving headings, tables, and structure. Keep all content intact.’\n\nSave this workflow — it’s a time-saver for anyone who deals with PDFs regularly. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #pdftocsv #markdown #notion #freelancer #productivity #aiassistant #smallbusiness #aihacks #businessautomation",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post71-pdf-to-markdown-ai/reel.mp4"
+    },
+    {
+      "id": "post74-client-approval-invoices",
+      "date": "2026-09-27",
+      "slides": [
+        "accounts/leverageai/queue/post74-client-approval-invoices/slide01.png",
+        "accounts/leverageai/queue/post74-client-approval-invoices/slide02.png",
+        "accounts/leverageai/queue/post74-client-approval-invoices/slide03.png",
+        "accounts/leverageai/queue/post74-client-approval-invoices/slide04.png"
+      ],
+      "caption": "Stop chasing clients for invoice approvals. InvoSync 2026 uses AI to generate client-specific invoice summaries that get approvals faster.\n\nThe system: When you send an invoice, AI creates a one-sentence summary of the work done and costs. Clients click 'Approve' — no extra emails or calls. Works with QuickBooks/Xero.\n\nCopy-paste this prompt to test it:\n\n\"Generate a 1-sentence summary of the invoice for [Client Name]. Include the project name, total amount, and key deliverable. Keep it professional but simple.\"\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #invoicing #smallbusiness #freelancer #aiassistant #clientapproval #bookkeeping #time-saving #invoiceautomation #aiassistant",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post74-client-approval-invoices/reel.mp4"
     }
   ]
 }

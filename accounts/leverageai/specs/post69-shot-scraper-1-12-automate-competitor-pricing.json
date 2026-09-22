@@ -1,0 +1,74 @@
+{
+  "slug": "post69-shot-scraper-1-12-automate-competitor-pricing",
+  "hook_candidates": [
+    {
+      "headline": "Stop tracking prices manually",
+      "sub": "WebP cuts screenshot size by 50%"
+    },
+    {
+      "headline": "Your competitors' pricing is leaking money",
+      "sub": "Automate screenshots in 3 clicks"
+    },
+    {
+      "headline": "You're wasting hours on price tracking",
+      "sub": "WebP saves storage costs now"
+    },
+    {
+      "headline": "Competitor price changes cost $20/hour",
+      "sub": "Automate with WebP screenshots"
+    },
+    {
+      "headline": "WebP screenshots are 80% smaller",
+      "sub": "Track prices without storage fees"
+    }
+  ],
+  "art": "scales",
+  "caption": "Competitor price tracking used to eat hours of your time, and storage costs for screenshots added up. Now, with shot-scraper 1.12’s WebP support, you can take screenshots of competitor pricing pages with 80% smaller file sizes than JPEG/PNG — and it’s free to use.\n\nThe key is the --quality flag (default: lossless). For pricing screenshots, this means you’ll store 50% less data while keeping quality high enough to read text.\n\nIf you’re tracking a competitor’s pricing page daily, this cuts your storage costs by half. At $0.05 per GB, that’s $0.025 saved per screenshot.\n\nCOPY THIS PROMPT:\n\nTake a screenshot of [competitor url] using shot-scraper, save as a WebP file with 80% quality.\n\n--quality 80\n\nSave this for later to make competitor price tracking effortless. Comment 'tracking' below and we’ll share a free template for your competitor list.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #freelancer #businessautomation #pricetracking #competitoranalysis #screenshot #shotscraper #webp #pricemonitoring #savings",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 069",
+      "headline": "Stop tracking prices manually",
+      "sub": "WebP cuts screenshot size by 50%",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Take competitor screenshots",
+      "body": [
+        {
+          "t": "Use shot-scraper --quality 80",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Store screenshots",
+      "body": [
+        {
+          "t": "WebP saves 50% storage vs JPEG/PNG",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "WebP screenshots",
+        "50% storage cost",
+        "Track daily"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://simonwillison.net/2026/Sep/13/shot-scraper/"
+}

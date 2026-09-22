@@ -1,0 +1,71 @@
+{
+  "slug": "post71-pdf-to-markdown-ai",
+  "hook_candidates": [
+    {
+      "headline": "Stop reformatting PDFs.",
+      "sub": "2+ hours saved per client"
+    },
+    {
+      "headline": "PDFs ruin your workflow.",
+      "sub": "Fix it in seconds"
+    },
+    {
+      "headline": "Your PDFs are wasting time.",
+      "sub": "Convert them now"
+    },
+    {
+      "headline": "Reformatting PDFs costs $100s.",
+      "sub": "Use PDFtoMarkdown.ai"
+    },
+    {
+      "headline": "PDF to Excel takes hours.",
+      "sub": "Done in seconds"
+    }
+  ],
+  "art": "passport",
+  "caption": "Convert PDF contracts or reports to editable Markdown in seconds. No more screenshots or manual reformatting. Just paste and save.\n\nPDFtoMarkdown.ai preserves headings and tables so you can edit in Notion or Google Docs. Saves 2+ hours per client document.\n\nCopy-paste this prompt:\n\n‘Convert this PDF to Markdown format, preserving headings, tables, and structure. Keep all content intact.’\n\nSave this workflow — it’s a time-saver for anyone who deals with PDFs regularly. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #pdftocsv #markdown #notion #freelancer #productivity #aiassistant #smallbusiness #aihacks #businessautomation",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 071",
+      "headline": "PDF to Excel takes hours.",
+      "sub": "Done in seconds",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Paste your PDF link.",
+      "body": [
+        {
+          "t": "No upload, just paste."
+        },
+        {
+          "t": "URL works.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "stat",
+      "eyebrow": "THE PAYOFF",
+      "headline": "Time saved:",
+      "stat": "2+ hours per doc"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Paste PDF link",
+        "Preserve formatting",
+        "Edit in Notion/Docs"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://launchaijam.com/new-ai-tools"
+}

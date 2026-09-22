@@ -191,6 +191,10 @@ No new data for 051-057; no change to strategy. No reach data reported for posts
 
 Disproven — stop using the hook grader. The pre-publish hook grades (8.4, 7.2, 6.5, 7.5, 8.2, 8.2) did not correlate with reach (44, 34, 29, 2, 1, 1). The highest grade (8.4) had the highest reach, but the next two highest grades (8.2) had the lowest reach. The hook grader is not a reliable predictor. 6 graded posts with reach data available; no consistent correlation between grade and reach.
 
+## Batch notes — posts 68-74 (2026-09-22)
+
+Confirmed: Concrete-pain hooks beat instruction/scold hooks. Disproven: Hook grader predicting reach. Best posts (post55, post50, post44) all used concrete-pain hooks (cost/mistake) and had high reach (61, 38, 34). Worst posts (post47, post54) used similar hook shapes but had low reach (4, 4) due to unclear framing (e.g., post54: 'Go saves $12. Costs Agent mode.' was technical, not pain-focused). Hook grades (8.6, 8.2, 7.2, 6.5, 8.2, 9.5) showed no correlation with reach (61, 38, 34, 4, 4, 1).
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

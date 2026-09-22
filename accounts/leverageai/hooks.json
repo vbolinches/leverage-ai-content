@@ -3007,6 +3007,553 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post68-siri-integration-claude-chatgpt",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You don't need Siri anymore.",
+        "sub": "Swap it for ChatGPT or Claude.",
+        "rank": 1,
+        "score": 6.5,
+        "shape": "change",
+        "stopping": "barely avoids iOS fiction, implies simple swap",
+        "reason": "No fictional iOS version, frames as actionable swap (least likely to feel scammy)",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You don't need Siri anymore.",
+          "rank": 1,
+          "score": 6.5,
+          "shape": "change",
+          "stopping": "barely avoids iOS fiction, implies simple swap",
+          "reason": "No fictional iOS version, frames as actionable swap (least likely to feel scammy)",
+          "authored": false
+        },
+        {
+          "headline": "Stop using Siri for AI tasks.",
+          "rank": 2,
+          "score": 5.8,
+          "shape": "change",
+          "stopping": "mentions 'AI tasks' (slightly business-adjacent)",
+          "reason": "Avoids iOS lie but still frames as phone setting, not business workflow",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Siri's being replaced.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 4.2,
+          "shape": "change",
+          "stopping": "identical to D but listed earlier",
+          "reason": "Identical to D; both over-index on fictional iOS 27",
+          "authored": true
+        },
+        {
+          "headline": "Siri's being replaced.",
+          "rank": 4,
+          "score": 3.9,
+          "shape": "change",
+          "stopping": "identical to C",
+          "reason": "Identical to C; no improvement over C",
+          "authored": false
+        },
+        {
+          "headline": "Siri is obsolete on iOS 27.",
+          "rank": 5,
+          "score": 2.1,
+          "shape": "change",
+          "stopping": "explicit 'iOS 27' (fictional)",
+          "reason": "Emphasizes non-existent iOS version as solution",
+          "authored": false
+        },
+        {
+          "headline": "iOS 27 lets you ditch Siri.",
+          "rank": 6,
+          "score": 1.3,
+          "shape": "change",
+          "stopping": "worst: 'iOS 27 lets you ditch Siri' (scammy)",
+          "reason": "Makes iOS 27 sound like the hero; most likely to trigger scroll",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post69-shot-scraper-1-12-automate-competitor-pricing",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop tracking prices manually",
+        "sub": "WebP cuts screenshot size by 50%",
+        "rank": 1,
+        "score": 9.5,
+        "shape": "change",
+        "stopping": "direct pain name: 'Stop tracking prices manually' - no fluff, uses 'manually' to imply wasted effort, matches median task (price tracking is universal for solo operators) and follows confirmed rule. Instantly stops scrollers.",
+        "reason": "Names pain directly with 'Stop tracking prices manually' - perfect for solo operators (no niche, no category). 'Manually' implies wasted time/cost, which is the core deficiency. Short, clear, and actionable.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop tracking prices manually",
+          "rank": 1,
+          "score": 9.5,
+          "shape": "change",
+          "stopping": "direct pain name: 'Stop tracking prices manually' - no fluff, uses 'manually' to imply wasted effort, matches median task (price tracking is universal for solo operators) and follows confirmed rule. Instantly stops scrollers.",
+          "reason": "Names pain directly with 'Stop tracking prices manually' - perfect for solo operators (no niche, no category). 'Manually' implies wasted time/cost, which is the core deficiency. Short, clear, and actionable.",
+          "authored": false
+        },
+        {
+          "headline": "Competitor price changes cost $20/hour",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "change",
+          "stopping": "Uses $20/hour to quantify pain (strong), but 'competitor' slightly narrows the audience vs. D's universal 'price tracking'. Still stops scrollers.",
+          "reason": "Quantifies pain ($20/hour) effectively, making it visceral. 'Competitor price changes' is slightly niche (not all solo operators track competitors), but still stops scrollers better than weaker options.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Stop tracking prices manually"
+            },
+            {
+              "t": "WebP cuts size 50%",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 4.5,
+          "shape": "category",
+          "stopping": "Run-on phrase ('Stop tracking prices manuallyWebP cuts size 50%') creates confusion. 'WebP cuts size' is a category, not a pain/deficiency. Easily scrolled past.",
+          "reason": "Run-on cover makes it hard to process. 'WebP cuts size' is a category (violates confirmed rule), not a pain. Sub is strong but cover fails.",
+          "authored": true
+        },
+        {
+          "headline": "You're wasting hours on price tracking",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Generic pain ('wasting hours') with no specific task. 'Price tracking' is implied but not named. Feels like a vague complaint - scrolls past instantly.",
+          "reason": "No specific pain/deficiency (just 'wasting hours'). 'Price tracking' is a task but not named in the cover, making it sound like a broad complaint. Fails to trigger urgency.",
+          "authored": false
+        },
+        {
+          "headline": "WebP screenshots are 80% smaller",
+          "rank": 5,
+          "score": 0.5,
+          "shape": "category",
+          "stopping": "Pure category statement ('WebP screenshots are 80% smaller'). No pain, no change, no deficiency. Instant scroll past - most basic type of hook.",
+          "reason": "States a fact about WebP, not a pain/deficiency. 'WebP screenshots' is a category (violates confirmed rule). Zero urgency, zero relevance to solo operator pain point.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post70-ship-video-ads-24-hours",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Video ads without dev help",
+        "sub": "Custom templates now",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "names deficiency ('without dev help') + concrete solution ('custom templates') with zero fluff or jargon",
+        "reason": "Directly names the pain (dependency on devs), ends with usable solution, no tech buzzwords. Matches all confirmed rules.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Video ads without dev help",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "names deficiency ('without dev help') + concrete solution ('custom templates') with zero fluff or jargon",
+          "reason": "Directly names the pain (dependency on devs), ends with usable solution, no tech buzzwords. Matches all confirmed rules.",
+          "authored": false
+        },
+        {
+          "headline": "Ship video ads in 24 hours",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "'No coding needed' is a deficiency but 'ship' is technical jargon solo operators avoid. Better than most but still off-brand.",
+          "reason": "Slightly better than E/D due to 'no coding' specificity, but 'ship' violates 'avoid dev-tool language' (confirmed to fail).",
+          "authored": false
+        },
+        {
+          "headline": "Stop waiting for devs",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "'Stop waiting' names pain but 'ship' is jargon; 'today' is weak and vague. Worse than B.",
+          "reason": "Uses 'ship' (disproven dev-tool language), 'today' feels empty. More scroll-pastable than B.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Ship video ads in 24 hours"
+            },
+            {
+              "t": "no dev help",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "Typos ('24 hoursno') + 'ship' + vague 'custom templates' (not a *usable block*).",
+          "reason": "Typo makes it look unprofessional; 'ship' and no clear solution (e.g., 'templates' isn't actionable without context).",
+          "authored": true
+        },
+        {
+          "headline": "Your video ad team",
+          "rank": 5,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Names a *category* ('Your video ad team'), which is the #1 confirmed scroll-killer.",
+          "reason": "Category framing (disproven rule) — solo operators don’t think of themselves as 'video ad teams'.",
+          "authored": false
+        },
+        {
+          "headline": "GPT-6 Astra builds video features",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Fictional tech ('GPT-6 Astra') + dev-tool framing ('faster than devs'). Worst possible combo.",
+          "reason": "Violates *all* disproofs: fake tech, dev-tool topic, and 'faster than devs' is power-user jargon. Instant scroll-past.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post71-pdf-to-markdown-ai",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "PDF to Excel takes hours.",
+        "sub": "Done in seconds",
+        "rank": 1,
+        "score": 9.5,
+        "shape": "change",
+        "stopping": "Names specific pain (PDF to Excel takes hours), clear solution (Done in seconds), no fluff. Matches confirmed winner pattern.",
+        "reason": "Perfectly follows 'change/before-after' rule. 'PDF to Excel' specifies the *task* (not a category), 'takes hours' quantifies pain, 'Done in seconds' is the immediate win. No vague CTAs like 'Convert now'.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "PDF to Excel takes hours.",
+          "rank": 1,
+          "score": 9.5,
+          "shape": "change",
+          "stopping": "Names specific pain (PDF to Excel takes hours), clear solution (Done in seconds), no fluff. Matches confirmed winner pattern.",
+          "reason": "Perfectly follows 'change/before-after' rule. 'PDF to Excel' specifies the *task* (not a category), 'takes hours' quantifies pain, 'Done in seconds' is the immediate win. No vague CTAs like 'Convert now'.",
+          "authored": false
+        },
+        {
+          "headline": "Stop reformatting PDFs.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "change",
+          "stopping": "Strong pain point ('Stop reformatting'), quantifies savings ('2+ hours'), but misses task specificity (vs. D's 'PDF to Excel').",
+          "reason": "Close to D but lacks the concrete task. 'Reformatting PDFs' is vague – D's 'PDF to Excel' tells them *exactly* what workflow is broken.",
+          "authored": false
+        },
+        {
+          "headline": "Reformatting PDFs costs $100s.",
+          "rank": 3,
+          "score": 6.5,
+          "shape": "cost",
+          "stopping": "Mentions cost ($100s) but pushes a specific tool ('PDFtoMarkdown.ai'). Violates 'no tool name' rule.",
+          "reason": "Fails 'every post must end in something usable' – it's a sales pitch, not a reusable workflow. 'Costs $100s' is weak (not 'per client' like E).",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Stop reformatting PDFs."
+            },
+            {
+              "t": "in seconds.",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 5.0,
+          "shape": "mistake",
+          "stopping": "Typo ('PDFs.in'), misleading metric ('per client document' vs. 'per client'), and 'Stop' feels passive.",
+          "reason": "Typos kill scroll-stopping power. '2+ hours per client document' is factually wrong (it's per client, not document), creating distrust. 'in seconds' is redundant.",
+          "authored": true
+        },
+        {
+          "headline": "PDFs ruin your workflow.",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Vague pain ('ruin your workflow'), weak CTA ('Fix it'). 'Ruin' is not a *deficiency*.",
+          "reason": "Fails 'name a pain/deficiency' rule. 'Ruins workflow' is abstract – no specific task or cost. 'Fix it' offers zero clarity.",
+          "authored": false
+        },
+        {
+          "headline": "Your PDFs are wasting time.",
+          "rank": 6,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Worst: 'Your PDFs are wasting time' is passive, 'Convert them now' is generic and non-quantified.",
+          "reason": "The weakest. 'Wasting time' is a category, not a specific deficiency. 'Convert now' is a low-intent CTA – no 'how' or 'why' to stop scrolling.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post72-safe-net-creations-multilingual-whatsapp",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop wasting hours on WhatsApp",
+        "sub": "AI does it for you",
+        "rank": 1,
+        "score": 9.2,
+        "shape": "change",
+        "stopping": "Urgent pain (wasting hours) + universal tool (WhatsApp) + clear solution. Hits median pain point without niche traps.",
+        "reason": "Most visceral scroll-stopper. 'Wasting hours' triggers immediate recognition for *every* freelancer using WhatsApp daily. Sub 'AI does it for you' is direct and solution-focused. No niche assumptions.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop wasting hours on WhatsApp",
+          "rank": 1,
+          "score": 9.2,
+          "shape": "change",
+          "stopping": "Urgent pain (wasting hours) + universal tool (WhatsApp) + clear solution. Hits median pain point without niche traps.",
+          "reason": "Most visceral scroll-stopper. 'Wasting hours' triggers immediate recognition for *every* freelancer using WhatsApp daily. Sub 'AI does it for you' is direct and solution-focused. No niche assumptions.",
+          "authored": false
+        },
+        {
+          "headline": "2 hours/week gone?",
+          "rank": 2,
+          "score": 8.5,
+          "shape": "number-claim",
+          "stopping": "Quantifiable loss ('2 hours/week') creates urgency, but question format ('gone?') is weaker than B's command.",
+          "reason": "Strong pain point (time loss), but 'gone?' feels passive. Less punchy than B's 'Stop wasting' command. Still a top-tier pain trigger.",
+          "authored": false
+        },
+        {
+          "headline": "Your WhatsApp isn't smart enough",
+          "rank": 3,
+          "score": 7.8,
+          "shape": "change",
+          "stopping": "Deficiency ('not smart enough') is valid, but 'Fix it now' is generic and lacks urgency.",
+          "reason": "Familiar pain (WhatsApp), but 'not smart enough' is vague. 'Fix it now' feels like a generic ad. Less compelling than B/E.",
+          "authored": false
+        },
+        {
+          "headline": "Multilingual clients? Yes.",
+          "rank": 4,
+          "score": 6.3,
+          "shape": "category",
+          "stopping": "Niche topic ('multilingual') violates 'median operator' rule. Audience scrolls past immediately.",
+          "reason": "Only relevant to a tiny subset (non-English freelancers). Explicitly banned by 'disproven' rules. High scroll rate.",
+          "authored": false
+        },
+        {
+          "headline": "Automate client follow-ups",
+          "rank": 5,
+          "score": 5.1,
+          "shape": "category",
+          "stopping": "Generic task ('automate follow-ups') + sub-niche ('Tamil/English') = double violation.",
+          "reason": "Follow-ups are common, but 'Tamil/English' makes it feel like a sub-niche (violating 'median operator' rule). Generic + niche = scroll past.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Automate client ",
+              "c": "blue"
+            },
+            {
+              "t": "follow-ups",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 4.7,
+          "shape": "category",
+          "stopping": "Identical to A but ranked lower due to position (A was listed first in the file). Still a duplicate violation.",
+          "reason": "Same exact hook as A. Identical low fit. Positional rank (C comes after A in the list) forces it to rank lower.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post73-ai-powered-document-understanding-for-invoicing",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Invoicing takes 30 mins/day.",
+        "sub": "Cut to zero",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "number-claim",
+        "stopping": "Specific time loss (30 mins) is visceral pain; 'cut to zero' implies instant change—highly relatable to time-starved solo operators.",
+        "reason": "Quantifies the pain (30 mins/day) and offers a clear, dramatic before/after—exactly the 'change' format proven to stop scrolls.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Invoicing takes 30 mins/day.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "Specific time loss (30 mins) is visceral pain; 'cut to zero' implies instant change—highly relatable to time-starved solo operators.",
+          "reason": "Quantifies the pain (30 mins/day) and offers a clear, dramatic before/after—exactly the 'change' format proven to stop scrolls.",
+          "authored": false
+        },
+        {
+          "headline": "Handwritten invoices? No more.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "before-after",
+          "stopping": "Specific pain (handwritten) + 'no more' creates urgency; 'AI processes them now' implies immediate fix.",
+          "reason": "Handwritten is a concrete, embarrassing pain point for freelancers; 'no more' is stronger than generic 'stop'.",
+          "authored": false
+        },
+        {
+          "headline": "Your invoices are wasting your time.",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "before-after",
+          "stopping": "Passive phrasing ('are wasting') feels like a generic complaint; 'fix it' is weak.",
+          "reason": "Fails to name the *specific* waste (e.g., '30 mins' or 'handwritten')—too vague for a scroll.",
+          "authored": false
+        },
+        {
+          "headline": "You're manually entering data.",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "Vague 'data' (not 'invoices') dilutes the pain; 'Let AI do it' is a weak hook.",
+          "reason": "Uses 'data' instead of 'invoices'—misses the specificity rule; feels like a generic AI ad.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Stop typing invoices.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 3.0,
+          "shape": "change",
+          "stopping": "Generic 'Stop typing'—feels like every other 'AI saves time' ad; no urgency or specificity.",
+          "reason": "Zero quantification or concrete pain; 'typing' is too broad (not 'handwritten' or 'manual invoice entry'). Fails the 'deficiency' test.",
+          "authored": true
+        },
+        {
+          "headline": "Stop typing invoices.",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "change",
+          "stopping": "Identical to A—redundant and equally weak; wastes the user's time to read twice.",
+          "reason": "Same flaws as A, but the duplication makes it *worse* for scroll-stopping (adds cognitive load).",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post74-client-approval-invoices",
+      "graded": "2026-09-22",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Approval emails are endless",
+        "sub": "AI summaries stop the loop",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Visceral pain ('endless' emails = emotional dread), sub promises immediate loop stop. Hits core freelancer anxiety.",
+        "reason": "Most specific, emotional pain point; 'endless' implies daily suffering. Sub uses active verb 'stop' + 'loop' (relatable email chaos). Beats A's generic '2 days'.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Approval emails are endless",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Visceral pain ('endless' emails = emotional dread), sub promises immediate loop stop. Hits core freelancer anxiety.",
+          "reason": "Most specific, emotional pain point; 'endless' implies daily suffering. Sub uses active verb 'stop' + 'loop' (relatable email chaos). Beats A's generic '2 days'.",
+          "authored": false
+        },
+        {
+          "headline": "Invoices take 2 days",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "before-after",
+          "stopping": "Specific time pain ('2 days') + dramatic improvement ('minutes'). But 'invoices' is slightly generic vs B's email loop.",
+          "reason": "Strong number claim, but 'invoices' as pain is less urgent than email chaos. Still lands above others.",
+          "authored": false
+        },
+        {
+          "headline": "Clients never approve",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "Strong pain ('never approve') but sub is weak ('fix it' = vague promise). 'Clients' feels distant vs B's 'emails'.",
+          "reason": "Pain is real, but sub lacks urgency. 'Fix it' sounds like a band-aid, not a workflow change.",
+          "authored": false
+        },
+        {
+          "headline": "Invoices get stuck",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "number-claim",
+          "stopping": "Vague pain ('get stuck' = could mean technical or payment issue). Sub 'get them paid' is awkward phrasing.",
+          "reason": "Fails to name *what* is stuck. 'Get them paid' implies invoices are the object, not the process. Mediocre.",
+          "authored": false
+        },
+        {
+          "headline": "You're wasting time",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Generic accusation ('You're wasting time') + sub doesn't connect. Feels like a generic ad.",
+          "reason": "Violates 'name a pain' rule. 'Wasting time' is not actionable. Audience scrolls past as noise.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Plain ",
+              "c": "blue"
+            },
+            {
+              "t": "AI summaries",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Pure category ('Plain AI summaries') + sub is a feature, not a pain. 'One-click' is a tech term, not a solution.",
+          "reason": "Worst violation: cover *is* the tool, not the pain. Audience knows this is just another 'AI tool' post. Scroll-past guaranteed.",
+          "authored": true
+        }
+      ]
     }
   ]
 }

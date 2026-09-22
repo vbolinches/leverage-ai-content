@@ -1,0 +1,80 @@
+{
+  "slug": "post71-certificado-cambio-de-formulario",
+  "hook_candidates": [
+    {
+      "headline": "El formulario N-600 es nuevo a partir de hoy",
+      "sub": "¿Necesitas actualizar tus papeles?"
+    },
+    {
+      "headline": "¿Ya usaste el formulario N-600?",
+      "sub": "No es válido para nuevas solicitudes desde septiembre"
+    },
+    {
+      "headline": "¡Ojo con el formulario N-600!",
+      "sub": "No sirve para nuevas solicitudes a partir de septiembre"
+    },
+    {
+      "headline": "El formulario N-600 se actualizó",
+      "sub": "Necesitas el nuevo para pedir tu certificado"
+    },
+    {
+      "headline": "Sep 14, 2026: N-600 nuevo",
+      "sub": "Deja de usar el viejo si quieres aplicar"
+    }
+  ],
+  "art": "form",
+  "caption": "USCIS lanzó una nueva versión del formulario N-600 para pedir el Certificado de Ciudadanía. Si ya tienes el certificado, no necesitas hacer nada. Si vas a pedirlo por primera vez, usa el nuevo formulario a partir del 14 de septiembre. \n\nEn palabras simples: El formulario N-600 que usabas ya no sirve para nuevas solicitudes. Empiezas a usar el nuevo desde septiembre 14. Si usas el antiguo después de esa fecha, tu solicitud se rechaza.\n\nOfficial text from USCIS: \"The N-600 form, which is used to apply for a Certificate of Citizenship, must be submitted in its new edition beginning on September 14, 2026. Applications using the previous edition of the form will be rejected.\"\n\nThis means: The new version is required for all new applications starting September 14, 2026. Do not use the old form after that date or your application will be rejected.\n\nFuente oficial: https://www.federalregister.gov/index/2026/u-s-citizenship-and-immigration-services\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #uscis #n600 #certificadocivil #ciudadania #formularios #inmigracionenmexico #mexicanoenusa #papeleria",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 071",
+      "headline": "Sep 14, 2026: N-600 nuevo",
+      "sub": "Deja de usar el viejo si quieres aplicar",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": "Formulario antiguo no sirve. Usa nuevo desde 14 sep. Rechazo si no. Igual que banco: chequera antigua, devuelven."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "El N-600 nuevo se usa desde septiembre 14. El antiguo no sirve para nuevas solicitudes. Si lo usas, rechazo.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "¿Es para ti?",
+      "body": [
+        {
+          "t": "Si ya tienes certificado, no cambia nada. Si vas a pedirlo, necesitas el nuevo desde sept 14.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "Usa el N-600 nuevo",
+        "No uses el viejo después de sept 14",
+        "Solicitud rechazada si usas antiguo"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.federalregister.gov/index/2026/u-s-citizenship-and-immigration-services"
+}

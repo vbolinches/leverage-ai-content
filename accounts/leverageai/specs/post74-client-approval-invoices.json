@@ -1,0 +1,74 @@
+{
+  "slug": "post74-client-approval-invoices",
+  "hook_candidates": [
+    {
+      "headline": "Invoices take 2 days",
+      "sub": "AI summaries cut it to minutes"
+    },
+    {
+      "headline": "Clients never approve",
+      "sub": "One-click AI summaries fix it"
+    },
+    {
+      "headline": "You're wasting time",
+      "sub": "AI summaries automate approval"
+    },
+    {
+      "headline": "Approval emails are endless",
+      "sub": "AI summaries stop the loop"
+    },
+    {
+      "headline": "Invoices get stuck",
+      "sub": "AI summaries get them paid faster"
+    }
+  ],
+  "art": "chart",
+  "caption": "Stop chasing clients for invoice approvals. InvoSync 2026 uses AI to generate client-specific invoice summaries that get approvals faster.\n\nThe system: When you send an invoice, AI creates a one-sentence summary of the work done and costs. Clients click 'Approve' — no extra emails or calls. Works with QuickBooks/Xero.\n\nCopy-paste this prompt to test it:\n\n\"Generate a 1-sentence summary of the invoice for [Client Name]. Include the project name, total amount, and key deliverable. Keep it professional but simple.\"\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #invoicing #smallbusiness #freelancer #aiassistant #clientapproval #bookkeeping #time-saving #invoiceautomation #aiassistant",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 074",
+      "headline": "Approval emails are endless",
+      "sub": "AI summaries stop the loop",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Send invoice",
+      "body": [
+        {
+          "t": "AI generates a summary",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Client clicks 'Approve'",
+      "body": [
+        {
+          "t": "No email follow-up needed",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "AI summaries",
+        "One-click approval",
+        "QuickBooks/Xero"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://techdailyshot.com/blog/ai-workflow-automation-small-business-invoicing-tools-2026"
+}
