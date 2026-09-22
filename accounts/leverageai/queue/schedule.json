@@ -1048,9 +1048,12 @@
         "accounts/leverageai/queue/post61-gpt6-astra-business-workflows/slide04.png"
       ],
       "caption": "GPT-6 Astra launched in September 2026, marketed as a developer tool but useful for business workflows. It’s used internally at OpenAI for 'agentic engineering' — meaning it handles complex, multi-step tasks like managing client projects.\n\nIt’s a new model, but you can’t use it directly yet. OpenAI hasn’t opened it to the public. So the real value is learning how it *might* work so you can prepare for when it’s available.\n\nHere’s a prompt to help you simulate GPT-6-like workflow automation today:\n\n\"Act as a business workflow assistant. For each task I describe, break it into 3 clear steps, assign each to a tool (e.g., email, calendar, CRM), and suggest how to check progress. Use simple language.\"\n\nSave this prompt to test GPT-4 with this new workflow style. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #business #workflow #gpt6 #astra #aiworkflow #businessautomation #soloconsultant #freelancer #aiassistant",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post61-gpt6-astra-business-workflows/reel.mp4"
+      "video": "accounts/leverageai/queue/post61-gpt6-astra-business-workflows/reel.mp4",
+      "published_media_id": "18079253915355844",
+      "published_on": "2026-09-22",
+      "threads_posted": true
     },
     {
       "id": "post62-siri-claude-integration",
