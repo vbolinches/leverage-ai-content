@@ -107,6 +107,27 @@ def available():
         return []
 
 
+def unload_all():
+    """Free the GPU: ask Ollama to drop every loaded model now.
+
+    For work that needs the card after writing is done - motion.py's video
+    model will not fit beside a 30B text model in 24GB. Ollama reloads a
+    model on its next request, so this costs the next call a load, nothing
+    else. Returns the names it unloaded.
+    """
+    try:
+        with urllib.request.urlopen(HOST + "/api/ps", timeout=10) as r:
+            loaded = [m["name"] for m in json.load(r).get("models", [])]
+    except Exception:
+        return []
+    for name in loaded:
+        try:
+            _post("/api/generate", {"model": name, "keep_alive": 0}, 60)
+        except LLMError:
+            pass
+    return loaded
+
+
 def ensure(model=None):
     """Fail early and with the exact fix, rather than mid-batch."""
     model = model or DEFAULT_MODEL

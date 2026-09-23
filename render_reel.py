@@ -124,20 +124,97 @@ def zoomed(img, z):
     return img.crop((x, y, x + w, y + h)).resize((W, H), Image.LANCZOS)
 
 
+def _frame_at(c, f):
+    """Frame f of card c: a slow zoom on a still, or the card's own motion."""
+    img, secs = c[0], c[1]
+    motion = c[2] if len(c) > 2 else None
+    if motion:
+        return motion(f)
+    n = max(int(secs * FPS), 1)
+    return zoomed(img, 1.0 + ZOOM * (f / n))
+
+
 def frames(cards):
-    """Yield every output frame: zooming holds, cross-faded between cards."""
+    """Yield every output frame: zooming holds, cross-faded between cards.
+
+    A card is (image, seconds) or (image, seconds, motion), where motion(f)
+    returns frame f of a moving cover - see MotionCover.
+    """
     xf = int(XFADE * FPS)
-    for i, (img, secs) in enumerate(cards):
-        n = max(int(secs * FPS), 1)
+    for i, c in enumerate(cards):
+        n = max(int(c[1] * FPS), 1)
         for f in range(n):
-            cur = zoomed(img, 1.0 + ZOOM * (f / n))
+            cur = _frame_at(c, f)
             # Cross-fade the opening frames of every card after the first.
             if i and f < xf:
-                prev_img, _ = cards[i - 1]
-                prev = zoomed(prev_img, 1.0 + ZOOM)
+                p = cards[i - 1]
+                prev = _frame_at(p, max(int(p[1] * FPS), 1) - 1)
                 yield Image.blend(prev, cur, (f + 1) / xf)
             else:
                 yield cur
+
+
+class MotionCover:
+    """The cover slide over a few seconds of generated motion.
+
+    A static first frame is the weakest second of a Reel: the viewer decides
+    to stay or swipe before the text is read. Motion behind the hook is what
+    the accounts that grow do. The TEXT is still drawn by render_slides, so it
+    is exactly what the spec says - the clip is only ever background, never a
+    carrier of words, which a video model gets wrong.
+
+    The slide's background colour becomes transparent and the clip shows
+    through, dimmed toward the brand background so the hook stays legible.
+    """
+
+    DIM = 0.58          # share of brand background laid over the clip
+
+    def __init__(self, clip, slide, index, total):
+        import numpy as np
+        self.np = np
+        self.frames = self._decode(clip)
+        a = np.asarray(slide, dtype=np.int16)
+        dist = np.abs(a - np.array(render_slides.BG, dtype=np.int16)).max(axis=2)
+        self.mask = Image.fromarray(np.clip(dist * 4, 0, 255).astype("uint8"))
+        self.slide = slide
+        self.index, self.total = index, total
+        self.bg = Image.new("RGB", (W, H), render_slides.BG)
+
+    @staticmethod
+    def _decode(clip):
+        # Decode small and upscale per frame: 4s of 1080x1920 RGB is 600MB,
+        # of 540x960 a quarter of that. A background loses nothing to it.
+        w, h = W // 2, H // 2
+        cmd = [_ffmpeg(), "-v", "error", "-i", clip,
+               "-vf", f"scale={w}:{h}:force_original_aspect_ratio=increase,"
+                      f"crop={w}:{h},fps={FPS}",
+               "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
+        raw = subprocess.run(cmd, capture_output=True, check=True).stdout
+        size = w * h * 3
+        out = [Image.frombytes("RGB", (w, h), raw[i:i + size])
+               for i in range(0, len(raw) - size + 1, size)]
+        if not out:
+            raise ValueError(f"no frames decoded from {clip}")
+        return out
+
+    def __call__(self, f):
+        # Ping-pong past the end, so a 4s clip holds a 5s cover without a jump.
+        n = len(self.frames)
+        k = f % (2 * n - 2) if n > 1 else 0
+        src = self.frames[k if k < n else 2 * n - 2 - k]
+        frame = Image.blend(src.resize((W, H), Image.BILINEAR), self.bg, self.DIM)
+        frame.paste(self.slide, (0, (H - self.slide.height) // 2), self.mask)
+        _progress(frame, self.index, self.total)
+        return frame
+
+
+def _progress(frame, index, total):
+    from PIL import ImageDraw
+    d = ImageDraw.Draw(frame)
+    y = H - 90
+    d.rectangle([0, y, W, y + PROGRESS_H], fill=(28, 36, 52))
+    d.rectangle([0, y, int(W * index / total), y + PROGRESS_H],
+                fill=render_slides.COLORS["mark"])
 
 
 def card_from_image(path, index, total):
@@ -219,7 +296,10 @@ def render_from_images(slug, image_paths, out_root="queue"):
     return _encode(cards, slug, out_root)
 
 
-def render(spec, out_root="queue"):
+def render(spec, out_root="queue", motion=None):
+    """Render the Reel. `motion` is an optional clip to run behind the cover;
+    without one - or if it cannot be read - the cover is the still it always
+    was, so a missing clip never costs a post."""
     slides = spec["slides"]
     total = len(slides)
     cards = [
@@ -227,6 +307,14 @@ def render(spec, out_root="queue"):
          slide_seconds(s, i == total - 1))
         for i, s in enumerate(slides)
     ]
+    if motion:
+        try:
+            still = render_slides.render_slide(slides[0], 1, total,
+                                               art=spec.get("art"))
+            cards[0] = (cards[0][0], cards[0][1],
+                        MotionCover(motion, still, 1, total))
+        except Exception as e:                              # noqa: BLE001
+            print(f"  ::warning::motion cover skipped ({type(e).__name__}: {e})")
     cards.append((endcard(), ENDCARD_HOLD))
     return _encode(cards, spec["slug"], out_root)
 
@@ -237,7 +325,7 @@ def timeline(cards):
     Mirrors the frame arithmetic in frames() so the audio bed lines up with the
     video sample-for-sample instead of drifting by a frame per card.
     """
-    counts = [max(int(secs * FPS), 1) for _, secs in cards]
+    counts = [max(int(c[1] * FPS), 1) for c in cards]
     starts = []
     running = 0
     for n in counts[:-1]:
@@ -301,12 +389,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("spec")
     ap.add_argument("--out", default="queue")
+    ap.add_argument("--motion", default=None,
+                    help="a short clip to run behind the cover (see motion.py)")
     a = ap.parse_args()
 
     with open(a.spec, encoding="utf-8") as f:
         spec = json.load(f)
 
-    path, secs = render(spec, a.out)
+    path, secs = render(spec, a.out, motion=a.motion)
     size = os.path.getsize(path) / 1e6
     print(f"{spec['slug']}: {secs:.1f}s reel -> {path} ({size:.1f} MB)")
 

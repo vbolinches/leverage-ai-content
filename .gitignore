@@ -8,3 +8,8 @@ logs/
 # A stale duplicate of CLAUDE.md keeps being regenerated here; CLAUDE.md is
 # the single source of the operating notes (owner's call, 2026-09-07).
 AGENTS.md
+
+# Moving-cover clips and the video model's environment (motion.py).
+# Only the finished reel.mp4 belongs in the public repo.
+motion_cache/
+.venv-motion/

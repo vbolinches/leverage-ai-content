@@ -158,5 +158,15 @@
       ]
     }
   ],
-  "newsroom_skip": "indict|charged|arrest|sentenc|plead|guilty|convict|smuggl|denaturaliz|strip .*citizenship|revoke .*citizenship|takedown|fraud (ring|scheme|conspiracy)|rapist|gang member|terrorist|plays (key|critical|pivotal) role|assists? federal|identity checks lead|vetting efforts lead|voter fraud|illegally voting"
+  "newsroom_skip": "indict|charged|arrest|sentenc|plead|guilty|convict|smuggl|denaturaliz|strip .*citizenship|revoke .*citizenship|takedown|fraud (ring|scheme|conspiracy)|rapist|gang member|terrorist|plays (key|critical|pivotal) role|assists? federal|identity checks lead|vetting efforts lead|voter fraud|illegally voting",
+  "motion_cover": {
+    "enabled": false,
+    "steps": 30,
+    "styles": [
+      "soft golden morning light rays drifting slowly through gentle haze over a deep navy background, calm, abstract",
+      "warm glowing particles floating slowly upward, deep blue background, soft bokeh, hopeful, abstract motion",
+      "gentle waves of soft teal and gold light moving across a dark blue gradient, calm, minimal, abstract",
+      "slow blend of sunrise colours in an abstract gradient, soft and calm, smooth motion, no objects"
+    ]
+  }
 }
