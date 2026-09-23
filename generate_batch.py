@@ -768,9 +768,14 @@ _EVERGREEN = re.compile(
 _MONTH_EN = {m: i for i, m in enumerate(
     ("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct",
      "nov", "dec"), 1)}
+# ACT-BY words only. "Until", "ends", "expires", "termina" describe a status,
+# and a status change is often the news itself: "TPS Extension Until New
+# Announcement" was dropped on 2026-09-23 for naming the old 9 September date,
+# when the news was that protection CONTINUES past it. Only a deadline to ACT
+# that has already gone makes a topic stale.
 _DEADLINE_WORDS = re.compile(
-    r"deadline|expir|re-?regist|register by|file by|ends?\b|until|vence|"
-    r"fecha l[ií]mite|plazo|termina|reg[ií]strate|antes del", re.I)
+    r"deadline|re-?regist|register by|file by|apply by|submit by|"
+    r"fecha l[ií]mite|plazo para|reg[ií]strate|antes del|manda\w* antes", re.I)
 
 
 def _past_deadline(text):
