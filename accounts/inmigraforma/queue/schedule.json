@@ -1196,9 +1196,10 @@
         "accounts/inmigraforma/queue/post68-public-charge-rule-takes-effect/slide05.png"
       ],
       "caption": "El 18 de septiembre de 2026, el gobierno de EE.UU. pone en efecto una nueva regla sobre quién puede obtener una tarjeta verde. Esto rescinde la regla de 2022 que exigía que los solicitantes no usaran servicios públicos como Medicaid o alimentos gratis.\n\nEn palabras simples: ya no te quitan la tarjeta verde por usar Medicaid o comida gratis, siempre que no estén usando esos servicios para vivir.\n\nThe official text reads: \"The public charge rule rescinds the 2022 public charge rule that was in effect. The new rule does not consider the use of Medicaid or SNAP for the purposes of determining public charge inadmissibility.\"\n\nIn plain words: You don't have to worry about losing your Green Card for using programs like Medicaid or food stamps anymore.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-issues-guidance-on-making-public-charge-inadmissibility-determination\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #tarjetaverde #publiccharge #medicaid #alimentosgratis #greencard #inmigracioneeuu #asilo #visas #inmigracionlegal",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/inmigraforma/queue/post68-public-charge-rule-takes-effect/reel.mp4"
+      "video": "accounts/inmigraforma/queue/post68-public-charge-rule-takes-effect/reel.mp4",
+      "note": "PULLED 2026-09-22, the day before publishing: factually inverted. Told readers to keep using Medicaid/SNAP 'sin miedo' when the USCIS page it cites says benefits received on or after 2026-09-18 CAN count ('USCIS consider any and all benefits'). Also quoted 'official text' that does not appear on that page. Written by the local model; contradicts this account's own verified post48. Could cost a reader their Green Card."
     },
     {
       "id": "post69-uscis-visa-bulletin-charts-update",
