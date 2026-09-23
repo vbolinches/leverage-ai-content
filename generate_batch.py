@@ -778,6 +778,11 @@ _DEADLINE_WORDS = re.compile(
     r"fecha l[ií]mite|plazo para|reg[ií]strate|antes del|manda\w* antes", re.I)
 
 
+_CONTINUES = re.compile(
+    r"not terminated|remains? in effect|retain|continu|still valid|extended|"
+    r"extensi[oó]n|pr[oó]rroga|sigue[n]? vigente|mantiene[n]?|no termina", re.I)
+
+
 def _past_deadline(text):
     """The date, if a topic is ABOUT a deadline and every date it names has
     passed. "TPS expiration date: September 9, 2026" reached the writer on the
@@ -785,6 +790,13 @@ def _past_deadline(text):
     are still news - a court order dated the 12th is kept, because a topic is
     only dropped when it is about a deadline."""
     if not _DEADLINE_WORDS.search(text or ""):
+        return None
+    # Protection that CONTINUES past its old date is news, not a stale
+    # deadline. "El Salvador TPS Not Terminated After Sept 9" was dropped on
+    # 2026-09-23 because its why_now named the old re-registration window -
+    # while the USCIS page said Salvadorans keep TPS and work permits until a
+    # new announcement. That is the story these readers most need.
+    if _CONTINUES.search(text):
         return None
     today, found = date.today(), []
     for m in re.finditer(r"\b([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2})(?:,?\s+(\d{4}))?", text):

@@ -90,7 +90,9 @@
     "federalregister.gov",
     "justice.gov",
     "studyinthestates.dhs.gov",
-    "cbp.gov"
+    "cbp.gov",
+    "ic3.gov",
+    "fbi.gov"
   ],
   "banned_phrases": [
     "es cuando",
