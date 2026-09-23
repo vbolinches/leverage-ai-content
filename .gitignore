@@ -9,7 +9,6 @@ logs/
 # the single source of the operating notes (owner's call, 2026-09-07).
 AGENTS.md
 
-# Moving-cover clips and the video model's environment (motion.py).
+# Moving-cover clips (motion.py); the model environment lives outside the repo.
 # Only the finished reel.mp4 belongs in the public repo.
 motion_cache/
-.venv-motion/

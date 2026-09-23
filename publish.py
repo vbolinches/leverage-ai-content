@@ -412,11 +412,32 @@ def _publish(sched, post, today):
     if post.get("format") == "reel":
         video_url = f"{RAW_BASE}/{urllib.parse.quote(post['video'])}"
         print(f"publishing {post['id']} (reel)")
-        container = api(f"{IG_ID}/media", {
+        params = {
             "media_type": "REELS",
             "video_url": video_url,
             "caption": post["caption"],
-        })
+        }
+        # A moving cover is generated video (motion.py). Meta requires its
+        # "AI info" label on photorealistic generated video; ours is meant to
+        # be abstract, but a light-through-haze clip can pass for footage, so
+        # every such Reel discloses. Creating a container publishes nothing,
+        # so if a route rejects the field it is safe to ask again without it.
+        if post.get("motion"):
+            try:
+                container = api(f"{IG_ID}/media", {**params, "is_ai_generated": "true"})
+            except RuntimeError as e:
+                msg = str(e)
+                # Meta names an unknown field only sometimes; otherwise it is a
+                # generic code 100. A different real problem fails again below
+                # with its own message, so the retry hides nothing.
+                if not ("is_ai_generated" in msg or '"code":100' in msg
+                        or "Invalid parameter" in msg):
+                    raise
+                print(f"::warning::this route rejected is_ai_generated - "
+                      f"publishing without the AI label ({str(e)[:160]})")
+                container = api(f"{IG_ID}/media", params)
+        else:
+            container = api(f"{IG_ID}/media", params)
         # Video transcoding takes far longer than image processing.
         wait_ready(container, tries=90)
         media_id = api(f"{IG_ID}/media_publish", {"creation_id": container})

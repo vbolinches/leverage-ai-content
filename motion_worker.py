@@ -2,7 +2,7 @@
 """Generate short background clips with a local video model. Run by motion.py.
 
 This is the only file that imports the video stack (torch, diffusers), and it
-runs in its own environment (.venv-motion, see motion.py) so those packages
+runs in its own environment (motion.VENV) so those packages
 never touch the interpreter the rest of the pipeline uses. It is handed a JSON
 job file and writes one MP4 per job:
 

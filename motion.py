@@ -18,8 +18,9 @@ Rules this module keeps:
   gibberish. The words stay render_slides' job.
 - It can never cost a post. No clip, a failed clip, a missing model: the Reel
   keeps the still cover it already has.
-- Free and local: Wan 2.1 1.3B (Apache-2.0) in its own environment,
-  .venv-motion, so torch and diffusers never touch the main interpreter.
+- Free and local: Wan 2.1 1.3B (Apache-2.0) in its own environment
+  (~/.cache/leverage-motion/venv), so diffusers never touches the main
+  interpreter.
 
     python motion.py --check                       # is this host ready?
     python motion.py --account leverageai          # the nightly stage
@@ -32,7 +33,10 @@ import accounts
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, "motion_cache")          # gitignored; the repo is public
-VENV = os.path.join(HERE, ".venv-motion")
+# Outside the repo on purpose: the repo lives in a synced Google Drive folder
+# on the owner's PC, and a Python environment is thousands of small files.
+VENV = os.environ.get("MOTION_VENV") or os.path.join(
+    os.path.expanduser("~"), ".cache", "leverage-motion", "venv")
 WORKER = os.path.join(HERE, "motion_worker.py")
 MODEL = "Wan-AI/Wan2.1-T2V-1.3B-Diffusers"
 PER_CLIP_TIMEOUT = 15 * 60

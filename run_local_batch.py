@@ -119,6 +119,16 @@ def check():
     except Exception as e:                              # noqa: BLE001
         row("ffmpeg", False, f"{e}")
 
+    # Optional: only an account with motion_cover on needs it, and without
+    # it those Reels keep still covers. Reported, never a FAIL.
+    motion_on = [s for s in enabled_slugs()
+                 if (accounts.get(s).get("motion_cover") or {}).get("enabled")]
+    if motion_on:
+        import motion
+        mp = motion.python()
+        print(f"  [{'x' if mp else '!'}] moving covers ({', '.join(motion_on)})  "
+              f"{'ready - details: python motion.py --check' if mp else 'environment missing - covers stay still; python motion.py --check'}")
+
     remote = subprocess.run(["git", "remote", "-v"], cwd=REPO,
                             capture_output=True, text=True)
     row("git remote", "push" in remote.stdout, remote.stdout.split("\n")[0][:60])
@@ -232,6 +242,22 @@ def main():
         if not generated:
             say("nothing generated; queue unchanged", log)
             return 0
+
+        # Moving covers, once ALL writing is done: the video model needs the
+        # GPU the text model was holding. Per account and opt-in
+        # ("motion_cover"); a failure here leaves still covers and costs no
+        # post, so it can never stop tonight's commit.
+        if not a.dry_run:
+            for slug in generated:
+                if not (accounts.get(slug).get("motion_cover") or {}).get("enabled"):
+                    continue
+                try:
+                    run([sys.executable, "-u", "motion.py", "--account", slug],
+                        log, env={"PYTHONIOENCODING": "utf-8"})
+                except RuntimeError as e:
+                    say(f"::warning::[{slug}] moving covers failed ({e}); "
+                        f"Reels keep their still covers", log)
+
         if a.dry_run:
             say(f"dry run — review review_out/, nothing queued or committed", log)
             return 0

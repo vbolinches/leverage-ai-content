@@ -333,6 +333,38 @@ Do not remove the fact-check to speed up the nightly run. It adds roughly a
 minute per post on the 5090, and it is the only thing that checks the post
 rather than the source.
 
+**13. Moving covers: generated motion behind the hook (2026-09-23, off
+until the owner reviews a test).** A Reel's first second decides whether a
+stranger stays, and ours opened on a still. `motion.py` runs in the nightly
+job AFTER all writing (the video model does not fit beside the 30B text model
+in 24GB, so it unloads Ollama first), makes a ~4s abstract clip per queued
+Reel with Wan 2.1 1.3B (Apache-2.0, local, free) and re-renders the Reel with
+the clip behind the cover (`render_reel.MotionCover`). Per account, opt-in:
+`"motion_cover": {"enabled": ..., "styles": [...]}`.
+
+- The clip is background only and abstract. The cover's words are still drawn
+  by `render_slides`, exactly as the spec says; a video model's text is
+  gibberish. `motion.NEGATIVE` forbids people, uniforms, flags, borders,
+  documents and text on every clip: on an immigration account a generated
+  officer or border scene is a picture of something that did not happen.
+  Styles never carry the topic - asked for "visa bulletin", the model draws
+  a visa.
+- It can never cost a post: no environment, no model, a failed clip - the
+  Reel keeps its still cover and the night's commit goes ahead.
+- Every Reel with a moving cover publishes with `is_ai_generated=true`
+  (Meta's "AI info" label). Meta requires the label on photorealistic
+  generated video; abstract is the aim, but light through haze can pass for
+  footage, so it always discloses.
+- The model environment lives OUTSIDE the repo (`~/.cache/leverage-motion/
+  venv`, override `MOTION_VENV`/`MOTION_PYTHON`): the repo sits in a synced
+  Google Drive folder. Weights are in the Hugging Face cache (~29GB). Clips
+  are cached in `motion_cache/` (gitignored); only the finished `reel.mp4`
+  is committed. `python motion.py --check` says whether a host is ready; a
+  VPS without a GPU simply keeps still covers.
+- Test without touching the queue: `python motion.py --account <slug>
+  --post <id> --out review_out/motion` (add `--synthetic` for an ffmpeg-made
+  clip that needs no model).
+
 ## Layout
 
 | Path | Purpose |
@@ -354,6 +386,8 @@ rather than the source.
 | `llm.py` | The model seam — every generative call goes through here |
 | `search.py` | Web search and page reading, and the record of what was really retrieved |
 | `factcheck.py` | Checks a finished post's claims against its own source page; `python factcheck.py <spec.json>` checks one by hand |
+| `motion.py` | Moving covers: generates an abstract clip per queued Reel and re-renders it; `--check`, `--synthetic` |
+| `motion_worker.py` | The only file that imports the video model; runs in the motion environment |
 | `run_local_batch.py` | The nightly run: gate, generate, commit, push; `--check` proves a host |
 | `setup_schedule.ps1` | Registers that run with Windows Task Scheduler |
 | `deploy/vps-setup.sh` | The same run on a Debian/Ubuntu VPS, behind a systemd timer |
