@@ -88,6 +88,14 @@ def _post(path, payload, timeout):
             f"Cannot reach Ollama at {HOST} ({reason}). Start it with "
             f"`ollama serve`, or set OLLAMA_HOST if it lives elsewhere."
         ) from e
+    except OSError as e:
+        # A read timeout surfaces as a bare TimeoutError, not a URLError, and
+        # nothing downstream caught it: on 2026-09-23 one fact-check call ran
+        # past the 30-minute limit and took the whole leverageai batch - three
+        # finished, verified posts - down with it. Every caller already knows
+        # what to do with an LLMError; give them one.
+        raise LLMError(f"Ollama call failed after up to {timeout}s: "
+                       f"{type(e).__name__}: {e}") from e
 
 
 def available():

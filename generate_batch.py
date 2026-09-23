@@ -1633,7 +1633,11 @@ def author(count, start_index, avoid):
         n = start_index + len(posts)
         try:
             post = write_post(brief, f"post{n:02d}", n)
-        except llm.LLMError as e:
+        # ANY failure on one post costs that post, never the batch. This is
+        # the third time finished work was lost to a late crash: a bad opener
+        # check (five batches, 2026-09-03..07), and a model timeout that took
+        # three verified leverageai posts on 2026-09-23.
+        except Exception as e:                             # noqa: BLE001
             print(f"::warning::post{n:02d} could not be written ({e}) — skipping "
                   f"this topic")
             continue

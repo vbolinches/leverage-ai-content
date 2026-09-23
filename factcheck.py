@@ -352,7 +352,11 @@ def verify_detail(post, brief, acct, model=None, label=""):
             data = llm.structured(
                 CHECKER, ask, SCHEMA, model=model, require=("claims",),
                 label=f"factcheck:{label}" + (f"/again" if attempt else ""),
-                think=True, temperature=0 if not attempt else 0.2)
+                think=True, temperature=0 if not attempt else 0.2,
+                # A real check thinks for 2-9K tokens. Uncapped, one ran for
+                # 30 minutes and hit the timeout; this bounds a runaway at a
+                # few minutes, and a truncated answer is simply re-asked.
+                max_tokens=20000)
             if not _degenerate(data):
                 break
             print(f"  ::warning::factcheck:{label} returned placeholder "
