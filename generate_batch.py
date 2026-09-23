@@ -176,7 +176,11 @@ def next_index(sched):
 
 
 def next_date(sched):
-    dates = [date.fromisoformat(p["date"]) for p in sched["posts"]]
+    # Only posts that hold a slot on the calendar. A retired post keeps its old
+    # date as a record, and counting it here meant retiring a week of bad posts
+    # pushed every replacement a week out - a silent gap on both accounts.
+    dates = [date.fromisoformat(p["date"]) for p in sched["posts"]
+             if p.get("status") in ("queued", "published")]
     start = max(dates) if dates else date.today()
     return max(start + timedelta(days=1), date.today() + timedelta(days=1))
 
