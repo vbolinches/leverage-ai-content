@@ -1,0 +1,150 @@
+{
+  "slug": "post84-h-2b-cap-reached-fy2027-first-half",
+  "hook_candidates": [
+    {
+      "headline": [
+        {
+          "t": "¿H-2B para 2027?",
+          "c": "blue"
+        },
+        {
+          "t": "Ya no se aceptan peticiones.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Mandar después del 4 de septiembre no sirve para empezar antes de abril."
+    },
+    {
+      "headline": [
+        {
+          "t": "Cambio: H-2B",
+          "c": "blue"
+        },
+        {
+          "t": "para 2027 ya no.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Si tu empleador mandó después del 4 sep, no lo aceptan para abril 2027."
+    },
+    {
+      "headline": [
+        {
+          "t": "Perdiste H-2B para",
+          "c": "blue"
+        },
+        {
+          "t": "abril 2027?",
+          "c": "blue"
+        }
+      ],
+      "sub": "Si mandaste después del 4 de septiembre, no hay más opciones."
+    },
+    {
+      "headline": [
+        {
+          "t": "Antes: H-2B",
+          "c": "blue"
+        },
+        {
+          "t": "para 2027. Ahora: no.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Ya no se aceptan peticiones para empezar antes de abril 2027."
+    },
+    {
+      "headline": [
+        {
+          "t": "¡No! H-2B para",
+          "c": "blue"
+        },
+        {
+          "t": "abril 2027 ya no.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Si mandaste después del 4 de septiembre, no lo aceptan."
+    }
+  ],
+  "art": "scales",
+  "caption": "El 4 de septiembre de 2026, USCIS confirmó que alcanzaron el límite de visas H-2B para el primer semestre de 2027 (del 1 de octubre al 31 de marzo). Esto significa que ya no aceptarán nuevas peticiones para trabajos que comiencen antes del 1 de abril de 2027. Si tu empleador envió la solicitud antes del 4 de septiembre, está bien; si no, la rechazarán.\n\nEn palabras simples:\nEl texto de USCIS dice: \"Alcanzaron el límite H-2B para el primer semestre de 2027. No aceptarán nuevas peticiones para empezar antes de abril de 2027 después del 4 de septiembre.\"\nEsto significa: Si mandaste después del 4 de septiembre, te lo rechazarán para empezar antes de abril 2027.\nSi lo ignoras: Si mandas tu papeleo después del 4 de septiembre, no lo aceptarán.\n\nIn plain words: The H-2B cap for the first half of fiscal year 2027 has been reached. You cannot file new H-2B petitions for work starting before April 1, 2027, after September 4, 2026. If you filed before that date, it's okay.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-reaches-h-2b-cap-for-first-half-of-fy-2027\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #h2b #visa #trabajo #estadosunidos #noticias #inmigraforma #visas #greencard #workvisa",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 084",
+      "headline": [
+        {
+          "t": "Antes: H-2B",
+          "c": "blue"
+        },
+        {
+          "t": "para 2027. Ahora: no.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Ya no se aceptan peticiones para empezar antes de abril 2027.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Ya no se aceptan H-2B nuevos para empezar antes de abril 2027. ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Si mandaste antes del 4 sep, está bien; sino, rechazan.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "El límite se alcanzó.",
+      "body": [
+        {
+          "t": "USCIS alcanzó límite H-2B primer semestre 2027. ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Peticiones H-2B para antes de abril 2027 rechazadas. Fuente: 4 sep",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Quién se ve afectado?",
+      "body": [
+        {
+          "t": "Sí, si tu empleador quiere H-2B para el primer semestre de 2027.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer ahora",
+      "items": [
+        "Para abril: antes del 4 sep.",
+        "Después del 4: rechazan.",
+        "Cap primer semestre 2027"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/alerts/uscis-reaches-h-2b-cap-for-first-half-of-fy-2027"
+}

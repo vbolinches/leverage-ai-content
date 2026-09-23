@@ -3661,6 +3661,177 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post84-h-2b-cap-reached-fy2027-first-half",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Antes: H-2B",
+            "c": "blue"
+          },
+          {
+            "t": "para 2027. Ahora: no.",
+            "c": "blue"
+          }
+        ],
+        "sub": "Ya no se aceptan peticiones para empezar antes de abril 2027.",
+        "rank": 1,
+        "score": 5.0,
+        "shape": "category",
+        "stopping": "Most direct, simple contrast ('Antes/Ahora') with zero jargon. 'H-2B para 2027' is clear enough for non-lawyers. Sub note perfectly matches the hook without confusion. Stops scrollers instantly.",
+        "reason": "D",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Antes: H-2B",
+              "c": "blue"
+            },
+            {
+              "t": "para 2027. Ahora: no.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Most direct, simple contrast ('Antes/Ahora') with zero jargon. 'H-2B para 2027' is clear enough for non-lawyers. Sub note perfectly matches the hook without confusion. Stops scrollers instantly.",
+          "reason": "D",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Cambio: H-2B",
+              "c": "blue"
+            },
+            {
+              "t": "para 2027 ya no.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Clear 'Cambio' framing. Minor typo ('para 2027' missing space) causes slight pause but not enough to scroll past. Sub note is actionable.",
+          "reason": "E",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¡No! H-2B para",
+              "c": "blue"
+            },
+            {
+              "t": "abril 2027 ya no.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Confusing '¡No!' opener makes readers skip. Sounds like rejection, not fact. Sub note correct but hook itself is a mess.",
+          "reason": "B",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Perdiste H-2B para",
+              "c": "blue"
+            },
+            {
+              "t": "abril 2027?",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Overstates consequence: 'Perdiste' implies loss, but fact is only late apps rejected. False alarm = trust killer. Scored below 3 per override.",
+          "reason": "A",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "H-2B cap alcanzado",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Jargon 'cap alcanzado' is completely unintelligible. Audience scrolls past instantly. No clarity, no urgency.",
+          "reason": "C",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post85-public-charge-guidance-update",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Gobierno aclaró reglas de public charge",
+        "sub": "Para Green Card",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "before-after",
+        "stopping": "Directly addresses the audience's core fear (confusing rules) with 'aclaró' (clarified), making it feel urgent and personally relevant. No jargon, no overstatement.",
+        "reason": "D uses 'aclaró' (clarified) which implies relief from confusion—exactly what this audience needs. 'Reglas' (rules) is simpler than 'guía' (guide), and 'para Green Card' makes it actionable. Scores highest for stopping power.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Gobierno aclaró reglas de public charge",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "before-after",
+          "stopping": "Directly addresses the audience's core fear (confusing rules) with 'aclaró' (clarified), making it feel urgent and personally relevant. No jargon, no overstatement.",
+          "reason": "D uses 'aclaró' (clarified) which implies relief from confusion—exactly what this audience needs. 'Reglas' (rules) is simpler than 'guía' (guide), and 'para Green Card' makes it actionable. Scores highest for stopping power.",
+          "authored": false
+        },
+        {
+          "headline": "Ahora hay guía clara para public charge",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "before-after",
+          "stopping": "‘Clara’ (clear) is positive, but ‘ahora hay’ (now there is) feels generic and passive—like an announcement, not a solution.",
+          "reason": "‘Clara’ is good, but lacks urgency. ‘Ahora hay’ doesn’t connect to the reader’s pain point (confusion), so it’s easier to scroll past than D.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Gobierno actualizó guía para public charge"
+            }
+          ],
+          "rank": 3,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "‘Gobierno actualizó’ (Government updated) sounds bureaucratic and impersonal. No hint of why it matters to the reader.",
+          "reason": "Passive voice ('actualizó') and 'Gobierno' make it feel like a government memo, not a reader-focused update. Low stopping power.",
+          "authored": true
+        },
+        {
+          "headline": "Guía para public charge actualizada",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "before-after",
+          "stopping": "‘Guía actualizada’ (Updated guide) is dry, redundant, and fails to explain why it matters. Feels like noise.",
+          "reason": "No emotional hook, no clarity on benefit. Pure fact with zero urgency—easiest to scroll past. Also, 'actualizada' is redundant (updates are always 'actualizadas').",
+          "authored": false
+        }
+      ]
     }
   ]
 }

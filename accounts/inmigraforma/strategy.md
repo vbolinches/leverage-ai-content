@@ -285,3 +285,7 @@ The performance brief reports a total signal of 57 across 12 measured posts, sti
 ### Batch — posts 83-83, drafted 2026-09-23
 
 0.0 The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold required for post-level comparisons. The hook grader's pre-publish scores do not correlate with actual reach (e.g., post50: 8.2 grade, 4 reach; post52: 6.5 grade, 66 reach). No hypothesis is settled due to insufficient data.
+
+### Batch — posts 84-85, drafted 2026-09-23
+
+post52-uscis-levanta-freno-39-paises reach 66

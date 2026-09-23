@@ -1356,9 +1356,40 @@
         "accounts/inmigraforma/queue/post83-visa-bulletin-chart/slide05.png"
       ],
       "caption": "La página de USCIS fue actualizada el 1 de septiembre de 2026. La página dice: para aplicaciones familiares, usa 'Dates for Filing'. Para trabajo, usa 'Final Action Dates'.\n\nEn palabras simples:\nLo que dice: 'Para familias, usa Dates for Filing; para trabajo, usa Final Action Dates'.\nQué significa: Usa la tabla correcta para tu tipo de aplicación.\n\nIn plain words: For family-based applications, use the 'Dates for Filing' chart. For employment-based, use the 'Final Action Dates' chart.\n\nFuente oficial: https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/adjustment-of-status-filing-charts-from-the-visa-bulletin\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigración #visa #greencard #uscis #familia #trabajo #bulletin #aplicación",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/inmigraforma/queue/post83-visa-bulletin-chart/reel.mp4"
+      "video": "accounts/inmigraforma/queue/post83-visa-bulletin-chart/reel.mp4",
+      "note": "RETIRED 2026-09-23 (review): true but thin - cover says 'cambió hoy' (page last updated Sept 1), slides 2 and 3 repeat each other, recap truncated, and the guidance is for September only (October 'coming soon')."
+    },
+    {
+      "id": "post84-h-2b-cap-reached-fy2027-first-half",
+      "date": "2026-09-25",
+      "slides": [
+        "accounts/inmigraforma/queue/post84-h-2b-cap-reached-fy2027-first-half/slide01.png",
+        "accounts/inmigraforma/queue/post84-h-2b-cap-reached-fy2027-first-half/slide02.png",
+        "accounts/inmigraforma/queue/post84-h-2b-cap-reached-fy2027-first-half/slide03.png",
+        "accounts/inmigraforma/queue/post84-h-2b-cap-reached-fy2027-first-half/slide04.png",
+        "accounts/inmigraforma/queue/post84-h-2b-cap-reached-fy2027-first-half/slide05.png"
+      ],
+      "caption": "El 4 de septiembre de 2026, USCIS confirmó que alcanzaron el límite de visas H-2B para el primer semestre de 2027 (del 1 de octubre al 31 de marzo). Esto significa que ya no aceptarán nuevas peticiones para trabajos que comiencen antes del 1 de abril de 2027. Si tu empleador envió la solicitud antes del 4 de septiembre, está bien; si no, la rechazarán.\n\nEn palabras simples:\nEl texto de USCIS dice: \"Alcanzaron el límite H-2B para el primer semestre de 2027. No aceptarán nuevas peticiones para empezar antes de abril de 2027 después del 4 de septiembre.\"\nEsto significa: Si mandaste después del 4 de septiembre, te lo rechazarán para empezar antes de abril 2027.\nSi lo ignoras: Si mandas tu papeleo después del 4 de septiembre, no lo aceptarán.\n\nIn plain words: The H-2B cap for the first half of fiscal year 2027 has been reached. You cannot file new H-2B petitions for work starting before April 1, 2027, after September 4, 2026. If you filed before that date, it's okay.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-reaches-h-2b-cap-for-first-half-of-fy-2027\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #h2b #visa #trabajo #estadosunidos #noticias #inmigraforma #visas #greencard #workvisa",
+      "status": "retired",
+      "note": "RETIRED 2026-09-23 (review): aimed at employers, not this audience; cover 'Antes: H-2Bpara 2027. Ahora: no.' implies no H-2B for all of 2027 (only the first half is full); garbled recap and typos."
+    },
+    {
+      "id": "post85-public-charge-guidance-update",
+      "date": "2026-09-26",
+      "slides": [
+        "accounts/inmigraforma/queue/post85-public-charge-guidance-update/slide01.png",
+        "accounts/inmigraforma/queue/post85-public-charge-guidance-update/slide02.png",
+        "accounts/inmigraforma/queue/post85-public-charge-guidance-update/slide03.png",
+        "accounts/inmigraforma/queue/post85-public-charge-guidance-update/slide04.png",
+        "accounts/inmigraforma/queue/post85-public-charge-guidance-update/slide05.png"
+      ],
+      "caption": "El gobierno actualizó su guía para explicar cómo decide si un solicitante es probable que se convierta en public charge al aplicar para ajuste de estatus (Green Card).\n\nEn palabras simples:\nEl texto oficial dice: \"USCIS officers will consider the five statutory factors and any other factor relevant to assessing the alien's likelihood at any time of becoming a public charge, including the alien's receipt of means-tested public benefits, such as cash assistance for income maintenance, housing assistance, food stamps, financial aid for college, or any other similar benefit.\"\nEn español: USCIS considerará los cinco factores legales y otros factores relevantes, como si usas beneficios públicos.\n\nIn plain words: The government clarified the rule so you know what they're looking for.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-issues-guidance-on-making-public-charge-inadmissibility-determination\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #greencard #publiccharge #uscis #inmigracionenesp #migracion #inmigrantes #asilo #visa #legal",
+      "status": "retired",
+      "format": "reel",
+      "video": "accounts/inmigraforma/queue/post85-public-charge-guidance-update/reel.mp4",
+      "note": "RETIRED 2026-09-23 (review): says the rule does not apply 'si aplicas desde afuera' (consular applicants face public charge under State's rules), tells readers 'No hagas cambios por esto' (benefit-use advice belongs to a lawyer), and never states the actual change."
     }
   ]
 }

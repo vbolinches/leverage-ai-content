@@ -1,0 +1,90 @@
+{
+  "slug": "post85-public-charge-guidance-update",
+  "hook_candidates": [
+    {
+      "headline": "Gobierno actualizó guía para public charge",
+      "sub": "Para aplicar a Green Card"
+    },
+    {
+      "headline": "Ahora hay guía clara para public charge",
+      "sub": "En aplicaciones de Green Card"
+    },
+    {
+      "headline": "Actualizada guía: cómo determinan public charge",
+      "sub": "En ajuste de estatus"
+    },
+    {
+      "headline": "Gobierno aclaró reglas de public charge",
+      "sub": "Para Green Card"
+    },
+    {
+      "headline": "Guía para public charge actualizada",
+      "sub": "En aplicaciones de Green Card"
+    }
+  ],
+  "art": "document",
+  "caption": "El gobierno actualizó su guía para explicar cómo decide si un solicitante es probable que se convierta en public charge al aplicar para ajuste de estatus (Green Card).\n\nEn palabras simples:\nEl texto oficial dice: \"USCIS officers will consider the five statutory factors and any other factor relevant to assessing the alien's likelihood at any time of becoming a public charge, including the alien's receipt of means-tested public benefits, such as cash assistance for income maintenance, housing assistance, food stamps, financial aid for college, or any other similar benefit.\"\nEn español: USCIS considerará los cinco factores legales y otros factores relevantes, como si usas beneficios públicos.\n\nIn plain words: The government clarified the rule so you know what they're looking for.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-issues-guidance-on-making-public-charge-inadmissibility-determination\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #greencard #publiccharge #uscis #inmigracionenesp #migracion #inmigrantes #asilo #visa #legal",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 085",
+      "headline": "Gobierno aclaró reglas de public charge",
+      "sub": "Para Green Card",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": "El gobierno actualizó su guía sobre public charge (si usas beneficios públicos)."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "Se actualizó la guía.",
+      "body": [
+        {
+          "t": "Gobierno aclaró cómo decide public charge en ajuste de estatus (I-485). ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Fuente: uscis.gov, 08/18/2026",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Aplica a ti?",
+      "body": [
+        {
+          "t": "Sí: aplicas para Green Card dentro de EE.UU. (I-485). ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "No: ya tienes Green Card o aplicas desde afuera.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer ahora",
+      "items": [
+        "Lee guía en uscis.gov",
+        "No hagas cambios por esto",
+        "Verifica en uscis.gov"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/alerts/uscis-issues-guidance-on-making-public-charge-inadmissibility-determination"
+}

@@ -138,6 +138,10 @@
     {
       "pattern": "\\bdon'?t (need to )?worry\\b|\\bleave the (country|u\\.?s\\.?)\\b",
       "why": "the English recap orders or reassures in the same way"
+    },
+    {
+      "pattern": "no (hagas|cambies) (ning[uú]n |nada |)?cambios?|no cambies nada|sigue (usando|recibiendo) (tus |los )?beneficios|deja de (usar|recibir)",
+      "why": "whether to keep or drop a benefit is individual legal advice - say 'consulta a un abogado de inmigración' instead"
     }
   ],
   "topic_priorities": "Prefer news that a large share of regular immigrants and their families worry about and would forward to a relative: know-your-rights during enforcement (what to do if ICE comes to your home or work, what to carry, what you do not have to answer), TPS / DACA / parole deadlines and renewals, work permits (EAD), asylum, family petitions and Green Card processing, fees, public charge, scams that impersonate USCIS or lawyers. A reader should be able to tell in one line whether it touches them.\nAvoid: agency press releases announcing arrests or tip lines - they give the reader nothing to act on and only spread fear; indexes, manuals and internal agency procedure; investor visas; rules for diplomats or physicians; a new form edition UNLESS old editions are now being rejected, which is a real consequence people must act on.\nProposals are news, but they are not rules: a proposal must be reported as a proposal, with what happens next and when it could take effect.",
