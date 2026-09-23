@@ -66,6 +66,8 @@ SAFE_ADVICE = re.compile(
     # for when a source names no wider group - it is not a claim about law.
     r"(la p[aá]gina|el aviso|la regla|uscis) no (dice|explica|aclara|menciona)|"
     r"lee\w* el aviso|link en la descripci|"
+    r"(the (page|announcement|post)|google|openai|anthropic|microsoft) "
+    r"(has not|hasn't|does not|doesn't) (said|say)|link in (the )?caption|"
     r"save this|share this|consult an? (immigration )?(attorney|lawyer)|"
     r"check your (case|status|dates)|verify (it |this )?on",
     re.I)

@@ -303,6 +303,10 @@ def _grader_system(acct):
         "decide, using what this account has actually learned. Refusing to "
         "separate them just hands the choice to whatever order they arrived in."
         + _accuracy_floor(acct)
+        + ("\n\nONE MORE FLOOR, on every account: a hook a first-time reader "
+           "cannot understand on its own - a fragment, an unexplained code or "
+           "acronym, a riddle, a word glued to the next - does not stop anyone; "
+           "it gets skipped. Score it below 3 and say why.")
         + ru_block
     )
 

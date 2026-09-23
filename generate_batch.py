@@ -22,6 +22,7 @@ import accounts
 import hooks
 import llm
 import render_slides
+import clarity
 import factcheck
 import search
 
@@ -113,10 +114,10 @@ wasted slot, and your own cover can lose.
 
 Slide kinds and their fields:
   {"kind":"cover","eyebrow":"__SERIES__ NNN","headline":[{"t":"Plain "},{"t":"accent.","c":"blue"}],"sub":"one line","footer_right":"SWIPE →"}
-__REQUIRED_SLIDE__  {"kind":"step","eyebrow":"STEP 1","headline":"Short imperative.","body":[{"t":"explanation "},{"t":"key point.","c":"green","b":true}]}
+__REQUIRED_SLIDE__  {"kind":"step","eyebrow":"STEP 1","headline":"Open the right place first.","body":[{"t":"One complete sentence: which app, where in it, and what to click or paste. "},{"t":"The result, in plain words.","c":"green","b":true}]}
   {"kind":"prompt","eyebrow":"STEP 2","headline":"Short.","sub":"one line","label":"COPY THIS PROMPT","code":"literal prompt\\nwith newlines"}
   {"kind":"stat","eyebrow":"THE PAYOFF","headline":"Framing question:","stat":"~big phrase"}
-  {"kind":"recap","eyebrow":"RECAP","headline":"The system","items":["step","step","step"],"cta_title":"Save this for later","cta_sub":"__CTA_SUB__","footer_right":"SAVE THIS ↓"}
+  {"kind":"recap","eyebrow":"RECAP","headline":"Do this today","items":["A complete short sentence a stranger understands.","The second thing to do, as a full sentence.","What you get, as a full sentence."],"cta_title":"Save this for later","cta_sub":"__CTA_SUB__","footer_right":"SAVE THIS ↓"}
 
 Hard limits (text overflows the canvas otherwise):
 __LIMITS__"""
@@ -127,7 +128,7 @@ _REQ = ACCT.get("required_eyebrow")
 _REQ_LINE = ""
 if _REQ:
     _REQ_LINE = (
-        '  {"kind":"step","eyebrow":"' + _REQ + '","headline":"Qué significa esto.",'
+        '  {"kind":"step","eyebrow":"' + _REQ + '","headline":"La noticia, en una frase completa.",'
         '"body":[{"t":"2-3 frases de todos los días, sin jerga. "},'
         '{"t":"La idea más importante, en una frase.","c":"green","b":true}]}'
         '   <- MANDATORY as slide 2 of EVERY post' + chr(10)
@@ -645,6 +646,15 @@ def research(count, avoid):
                 print(f"  dropped a brief whose source cannot be read, so "
                       f"nothing written from it could be checked: {url}")
                 continue
+            # A topic that promises a result its page never states - "3x
+            # faster", "50% cheaper", "cut drafting time by 50%" - is a post
+            # the fact-check will reject after the writing is paid for. On
+            # 2026-09-23 four of six leverageai topics arrived like that.
+            invented = _invented_metric(b.get("topic", ""), search.PAGES[url])
+            if invented:
+                print(f"  dropped {b.get('topic', '')[:44]!r}: promises "
+                      f"{invented!r}, which its page never says")
+                continue
             if ACCT.get("require_source_url"):
                 # A link shortener or a news write-up is a real URL and still
                 # fails validate(), so it is worth catching here: a brief
@@ -860,6 +870,24 @@ def _paperwork(url):
     return sum(m in low for m in _PAPERWORK) >= 2
 
 
+_METRIC = re.compile(r"\b\d+(?:\.\d+)?\s?(?:%|x\b|×|times\b|hours?\b|minutes?\b|"
+                     r"mins?\b|days?\b)", re.I)
+
+
+def _invented_metric(topic, page):
+    """The first number-with-a-unit in a topic that its page never states."""
+    low = re.sub(r"\s+", " ", (page or "").lower())
+    for m in _METRIC.finditer(topic or ""):
+        num = re.match(r"\d+(?:\.\d+)?", m.group(0)).group(0)
+        # The number itself must appear on the page near a matching unit;
+        # "50" anywhere on a long page proves nothing, so look for the pair.
+        unit = m.group(0)[len(num):].strip().lower()[:1]
+        if not re.search(rf"\b{re.escape(num)}\s?(?:{re.escape(unit)}|%|x|×|times|hour|minute|day|percent|per cent)",
+                         low):
+            return m.group(0)
+    return None
+
+
 def _evergreen(url):
     from urllib.parse import urlparse
     return bool(_EVERGREEN.match(urlparse(url).path or "/"))
@@ -1020,6 +1048,9 @@ def _shorten(text, cap):
     applies to turns a true sentence into a false one.
     """
     protect = (
+        "The result must still be a complete sentence with a subject and a "
+        "verb that a stranger understands on its own - drop a whole detail, "
+        "never the words that make the sentence make sense. "
         "Never drop a date, a number, a form name, or WHO is affected. "
         "Never invent an abbreviation for an agency either — compressing "
         "'Oficina Ejecutiva de Revision de Inmigracion' to 'OEIR' produced an "
@@ -1033,9 +1064,11 @@ def _shorten(text, cap):
         (0.65, "You may drop the least important clause entirely — the slide "
                "carries the news, the caption carries the detail. " + protect),
         (0.55, "Reduce it to its single most important sentence. " + protect),
-        (0.45, "One short clause only: what changed, and for whom. Nothing "
-               "else — no background, no procedure, no consequences. " + protect),
     ]
+    # The 0.45 plan ("one short clause only") is gone: it is what produced
+    # "Para abril: antes del 4 sep." and "to draft proposals". A slide that
+    # cannot be said clearly in its budget fails validate() and is rewritten
+    # or dropped, which is the right outcome.
     return _squeeze(text, cap, plans)
 
 
@@ -1243,6 +1276,60 @@ def _slide_chars(post):
     return total
 
 
+# Sentences on a source page that say HOW to use something or WHO gets it.
+_HOWTO = re.compile(
+    r"\b(to get started|get started|go to|click|tap|open the|select|choose|"
+    r"type @|type the|turn on|enable|settings|sign in|log in|download|install|"
+    r"available (?:in|on|for|to|now|starting|today)|rolling out|roll out|"
+    r"you can now|you can (?:use|try|find|access|connect)|plans?\b|subscribers?|"
+    r"workspace (?:business|enterprise)|pro and ultra|free for|at no cost|"
+    r"cómo|para empezar|visite|ingrese|presente|envíe|llame)\b", re.I)
+
+
+def _page_steps(url, limit=8):
+    """The page's own instructions and availability lines, verbatim.
+
+    The clarity reader asks "where do I click, do I have this?", and a writer
+    pushed to answer it invents the answer: "Type @QuickBooks", "Requires
+    QuickBooks Online plan" (2026-09-23, both rejected by the fact-check, both
+    nowhere on the page). So the answer is lifted from the page in code, and
+    the writer may use only that.
+    """
+    page = search.PAGES.get(url) or ""
+    # A link's text arrives on its own line ("connect your favorite apps in\n
+    # Gemini settings\n, or ..."); rejoin single line breaks so the sentence
+    # keeps the part that says where.
+    page = re.sub(r"[ \t]*\n(?![ \t]*\n)[ \t]*", " ", page)
+    out, seen = [], set()
+    for sent in re.split(r"(?<=[.!?:])\s+|\n+", page):
+        sent = re.sub(r"\s+", " ", sent).strip()
+        if not 30 <= len(sent) <= 300 or not _HOWTO.search(sent):
+            continue
+        key = sent.lower()[:60]
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(sent)
+        if len(out) >= limit:
+            break
+    return out
+
+
+def _how_block(brief):
+    steps = _page_steps(brief.get("source_url", ""))
+    if steps:
+        return ("WHAT THE SOURCE PAGE ITSELF SAYS ABOUT HOW TO USE IT AND WHO "
+                "GETS IT, copied from the page. Any step, menu, button, plan, "
+                "price or availability in the post must come from these lines "
+                "and nowhere else:\n" + "\n".join(f"  - {x}" for x in steps)
+                + "\n\n")
+    return ("THE SOURCE PAGE GIVES NO STEPS AND DOES NOT SAY WHO GETS IT. So "
+            "do not write a how-to and do not name a menu, button, plan or "
+            "price. Write it as news a stranger understands: what it is, what "
+            "it does in one plain everyday example, and - where a step would "
+            "go - that the announcement has not said how or who yet.\n\n")
+
+
 def write_post(brief, slug_prefix, series_no):
     """Author ONE post from a verified brief, then fix what validate() catches.
 
@@ -1273,6 +1360,7 @@ def write_post(brief, slug_prefix, series_no):
         f"WHY NOW: {brief.get('why_now')}\n"
         f"SOURCE: {brief.get('source_title') or ''} {brief.get('source_url')}\n"
         f"VERIFIED FACTS — use only these, invent nothing:\n{facts}\n\n"
+        + _how_block(brief) +
         f"{SCHEMA}\n\n"
         f'Its "slug" must start with "{slug_prefix}-", followed by a short '
         f"kebab-case description of the topic.\n"
@@ -1362,9 +1450,85 @@ def write_post(brief, slug_prefix, series_no):
                 best, errs = trimmed, after
 
     _respace(best)
+    best, unclear = _clarity_pass(best, ask, brief, slug_prefix)
+    before_truth = json.dumps(best, sort_keys=True)
     best, truth = _truth_pass(best, ask, brief, slug_prefix)
+    # A truth fix or a deletion can leave a gap a reader trips on. Read again
+    # only if the post changed - the check costs about a minute.
+    if json.dumps(best, sort_keys=True) != before_truth and not validate(best):
+        unclear, _ = clarity.read(best, brief, ACCT, model=MODEL,
+                                  label=f"{slug_prefix}/final")
     best["_factcheck"] = truth
+    best["_clarity"] = unclear
     return best
+
+
+# At most this many blocking doubts may survive the rewrites. The reader is a
+# 30B model and never reaches zero on a real post - calibrated on the posts
+# the hosted model wrote, it still asked what USCIS was - while the posts the
+# owner held for being unreadable left it 4-5 blockers each.
+CLARITY_MAX = int(ACCT.get("clarity_max_doubts", 1))
+
+
+def _clarity_pass(post, ask, brief, slug_prefix, rounds=2):
+    """Would a first-time reader understand this post, with no doubt left?
+
+    The reader (clarity.py) sees only the slides, as a Reel viewer does, and
+    quotes every place it stopped. The writer gets those quotes back and
+    rewrites; a rewrite that breaks a rule or reads worse is not kept.
+    """
+    if validate(post):
+        return post, []
+    doubts, rep = clarity.read(post, brief, ACCT, model=MODEL, label=slug_prefix)
+    print(f"  clarity:{slug_prefix} {len(doubts)} blocking doubt(s)")
+    for d in doubts[:4]:
+        print(f"    - {d[:200]}")
+    for rnd in range(rounds):
+        if len(doubts) <= 0:
+            break
+        try:
+            cand = llm.structured(
+                BRAND, None, POST_SCHEMA,
+                model=MODEL, require=("slides", "caption"),
+                label=f"clear{rnd + 1}:{slug_prefix}", temperature=0.4,
+                think=WRITER_THINK,
+                messages=[
+                    {"role": "user", "content": ask},
+                    {"role": "assistant",
+                     "content": json.dumps(post, ensure_ascii=False)},
+                    {"role": "user", "content": _clarity_fix_note()
+                        + "\n".join(f"  - {d}" for d in doubts)
+                        + "\n\n" + _slide_plan()},
+                ],
+            )
+        except llm.LLMError as e:
+            print(f"  {slug_prefix}: clarity fix failed ({e})")
+            break
+        _respace(cand)
+        if validate(cand):
+            _tighten(cand)
+        if validate(cand):
+            print(f"  {slug_prefix}: clarity fix broke the format - not kept")
+            continue
+        again, _ = clarity.read(cand, brief, ACCT, model=MODEL,
+                                label=f"{slug_prefix}/clear{rnd + 1}")
+        print(f"  clarity:{slug_prefix} {len(doubts)} -> {len(again)} blocking doubt(s)")
+        if len(again) < len(doubts):
+            post, doubts = cand, again
+    return post, doubts
+
+
+def _clarity_fix_note():
+    return ("A first-time reader - someone who sees ONLY these slides, with no "
+            "caption and no context - read this post and stopped at the places "
+            "below. Rewrite the slides so that reader understands everything "
+            "on the first read: complete sentences with a subject and a verb, "
+            "every term explained in the same sentence, every step saying "
+            "where and how. Keep the same facts - add no fact, number, date "
+            "or instruction that is not already in the post or its source. If "
+            "a slide cannot be made clear in its space, say less and say it "
+            "clearly. Keep the same topic, the same number of slides and the "
+            "caption's source line.\n\nWHERE THE READER STOPPED:\n")
 
 
 def _respace(post):
@@ -1689,6 +1853,7 @@ def author(count, start_index, avoid):
         # queue is recoverable; a published wrong fact on an account people act
         # on is not - post68 would have told readers to keep using Medicaid.
         untrue = post.pop("_factcheck", None) or []
+        unclear = post.pop("_clarity", None) or []
         # Same for a post that still breaks the mechanical rules after every
         # repair: drop it HERE, so the next spare brief takes the slot. It used
         # to be appended and rejected later in main(), where no spare could
@@ -1702,6 +1867,14 @@ def author(count, start_index, avoid):
         if untrue:
             print(f"REJECTED {post.get('slug')} — not true to its source: "
                   + "; ".join(e[:160] for e in untrue[:3]))
+            continue
+        # Unclear to a first-time reader after the rewrites: posts are for
+        # humans, and a true post nobody understands helps nobody (owner,
+        # 2026-09-23).
+        if len(unclear) > CLARITY_MAX:
+            print(f"REJECTED {post.get('slug')} — a first-time reader is left "
+                  f"with {len(unclear)} doubt(s): "
+                  + "; ".join(e[:160] for e in unclear[:3]))
             continue
         post["source_url"] = brief.get("source_url", "")
         posts.append(post)
@@ -1995,9 +2168,55 @@ def _words_of(text):
             if len(w) > 2]
 
 
+# Headlines that say nothing. Each was on real posts, most copied from the
+# schema's own examples ("The system" sat on almost every leverageai recap).
+_FILLER = {"the system", "system", "el sistema", "que significa esto",
+           "qué significa esto", "what this means", "what it means", "recap",
+           "resumen", "summary", "la noticia en una frase completa",
+           "open the right place first", "do this today"}
+# "H-2Bpara": a code glued to the next word by a shortening pass.
+_GLUED = re.compile(r"\b[A-Z0-9]+(?:-[A-Z0-9]+)+[a-záéíóúñ]{2,}\b")
+
+
+def _clarity_rules(post):
+    """Fragments a first-time reader cannot use, caught without a model.
+
+    Added 2026-09-23 when the owner held a week of posts that were true and
+    meaningless: "Spot-check skills. No AI allowed", "Connect tools / Ask
+    Gemini / to draft proposals", a recap of "1. Familiares: Dates". The model
+    reader (clarity.py) judges meaning; these are the shapes that never carry
+    one.
+    """
+    errs = []
+    for i, sl in enumerate(post.get("slides") or [], 1):
+        hl = re.sub(r"[^\w\s]", "", hooks.flatten(sl.get("headline"))).strip().lower()
+        if hl in _FILLER:
+            errs.append(f"slide {i}: the headline '{hooks.flatten(sl.get('headline'))}' "
+                        f"says nothing - write what this slide tells the reader, "
+                        f"as a short full sentence")
+        if sl.get("kind") == "step":
+            body = hooks.flatten(sl.get("body"))
+            if body and len(body.split()) < 6:
+                errs.append(f"slide {i}: '{body}' is a fragment - write one "
+                            f"complete sentence with a subject and a verb that "
+                            f"says what to do, where, or what it means")
+        for item in sl.get("items") or []:
+            t = hooks.flatten(item)
+            if len(t.split()) < 4:
+                errs.append(f"slide {i}: recap item '{t}' is a fragment - each "
+                            f"arrow must be a short complete sentence that "
+                            f"makes sense on its own")
+        for _, key, v in [(i, k, hooks.flatten(sl.get(k))) for k in ("headline", "sub", "body")]:
+            m = _GLUED.search(v or "")
+            if m:
+                errs.append(f"slide {i}: '{m.group(0)}' has two words glued "
+                            f"together - put the space back")
+    return errs
+
+
 def validate(post):
     """Catch the failure modes that would silently ship a broken carousel."""
-    errs = _reader_safety(post)
+    errs = _reader_safety(post) + _clarity_rules(post)
     if not post.get("slug"):
         errs.append("missing slug")
     cap = post.get("caption", "")

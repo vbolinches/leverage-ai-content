@@ -40,8 +40,19 @@ CACHE = os.path.join(HERE, "motion_cache")          # gitignored; the repo is pu
 VENV = os.environ.get("MOTION_VENV") or os.path.join(
     os.path.expanduser("~"), ".cache", "leverage-motion", "venv")
 WORKER = os.path.join(HERE, "motion_worker.py")
-MODEL = "Wan-AI/Wan2.1-T2V-1.3B-Diffusers"
-PER_CLIP_TIMEOUT = 15 * 60
+# Both Apache-2.0 and local. "model" in an account's motion_cover picks one;
+# --model overrides it for a trial. Minutes per clip on the owner's RTX 5090
+# laptop GPU.
+MODELS = {
+    "wan21": {"model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers", "width": 480,
+              "height": 832, "frames": 65, "fps": 16, "steps": 30,
+              "minutes": 15},
+    "wan22": {"model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers", "width": 704,
+              "height": 1280, "frames": 97, "fps": 24, "steps": 40,
+              "minutes": 45},
+}
+DEFAULT_MODEL = "wan21"
+MODEL = MODELS[DEFAULT_MODEL]["model"]
 
 # Said to the model on every clip, on every account. Each account adds its own
 # bans in "motion_cover.negative" - inmigraforma forbids people, uniforms,
@@ -110,9 +121,13 @@ def check():
         row("torch + diffusers", probe.returncode == 0,
             (probe.stdout or probe.stderr).strip().splitlines()[-1][:90]
             if (probe.stdout or probe.stderr) else "")
-    hub = os.path.join(os.path.expanduser("~"), ".cache", "huggingface", "hub",
-                       "models--" + MODEL.replace("/", "--"))
-    row("model downloaded", os.path.isdir(hub), MODEL)
+    for tag, m in MODELS.items():
+        hub = os.path.join(os.path.expanduser("~"), ".cache", "huggingface",
+                           "hub", "models--" + m["model"].replace("/", "--"))
+        have = os.path.isdir(hub)
+        print(f"  [{'x' if have else ' '}] model {tag}  {m['model']}")
+        if tag == DEFAULT_MODEL:
+            ok &= have
     for a in accounts.list_accounts():
         print(f"  {a['slug']}: motion_cover "
               f"{'ON' if config(a).get('enabled') else 'off'}")
@@ -136,23 +151,24 @@ def synthetic(out, seed=0, seconds=4):
     return out
 
 
-def generate(jobs):
+def generate(jobs, model=DEFAULT_MODEL):
     """Run the worker over jobs; return {out_path: True} for the clips made."""
     py = python()
     if not py or not jobs:
         return {}
+    m = MODELS[model]
     import llm
     freed = llm.unload_all()
     if freed:
         print(f"  motion: unloaded {', '.join(freed)} to free the GPU")
     fd, job_file = tempfile.mkstemp(suffix=".json")
     with os.fdopen(fd, "w", encoding="utf-8") as f:
-        json.dump(jobs, f)
+        json.dump({k: v for k, v in m.items() if k != "minutes"} | {"jobs": jobs}, f)
     try:
         proc = subprocess.run([py, "-u", WORKER, job_file], cwd=HERE,
                               capture_output=True, text=True,
                               encoding="utf-8", errors="replace",
-                              timeout=PER_CLIP_TIMEOUT * len(jobs) + 600)
+                              timeout=m["minutes"] * 60 * len(jobs) + 900)
         for line in (proc.stdout or "").splitlines():
             print(f"  motion: {line}")
         if proc.returncode and proc.stderr:
@@ -302,13 +318,14 @@ def _prompts(acct, spec, variants):
 
 
 def run(acct, only=None, out_root=None, use_synthetic=False, force=False,
-        variants=1):
+        variants=1, model=None):
     """The stage. Returns how many Reels got a moving cover.
 
     With out_root (a trial), `only` may name several posts, comma-separated,
     in any status, and `variants` renders each concept as its own Reel.
     """
     cfg = config(acct)
+    model = model or cfg.get("model") or DEFAULT_MODEL
     live = out_root is None
     if live and not cfg.get("enabled"):
         print(f"[{acct['slug']}] motion_cover off - nothing to do")
@@ -335,14 +352,14 @@ def run(acct, only=None, out_root=None, use_synthetic=False, force=False,
     for p in todo:
         spec = _load(os.path.join(acct.spec_dir, f"{p['id']}.json"))
         for k, (prompt, seed, idea) in enumerate(_prompts(acct, spec, variants), 1):
-            tag = f"{p['id']}-v{k}" + ("-synthetic" if use_synthetic else "")
+            tag = f"{p['id']}-v{k}-{model}" + ("-synthetic" if use_synthetic else "")
             out = os.path.join(cache, f"{tag}.mp4")
             plan.append((p, spec, k, out, prompt, seed, idea))
             print(f"  {p['id']} v{k}: {idea[:110]}")
             if os.path.exists(out) and not force:
                 continue
             jobs.append({"prompt": prompt, "negative": negative(acct), "seed": seed,
-                         "out": out, "steps": cfg.get("steps", 30)})
+                         "out": out})
 
     t = time.time()
     if use_synthetic:
@@ -353,7 +370,7 @@ def run(acct, only=None, out_root=None, use_synthetic=False, force=False,
             print(f"[{acct['slug']}] ::warning::motion environment missing - "
                   f"run `python motion.py --check`; covers stay still")
             return 0
-        generate(jobs)
+        generate(jobs, model)
     if jobs:
         print(f"[{acct['slug']}] {len(jobs)} clip(s) in {time.time() - t:.0f}s")
 
@@ -367,9 +384,9 @@ def run(acct, only=None, out_root=None, use_synthetic=False, force=False,
         if live:
             path, secs = render_reel.render(spec, acct.queue_dir, motion=out)
             p["motion"] = {"idea": idea, "prompt": prompt, "seed": seed,
-                           "model": MODEL}
+                           "model": MODELS[model]["model"]}
         else:
-            trial = dict(spec, slug=f"{spec['slug']}-v{k}")
+            trial = dict(spec, slug=f"{spec['slug']}-v{k}-{model}")
             path, secs = render_reel.render(trial, out_root, motion=out)
         print(f"  {p['id']} v{k}: moving cover -> {path} ({secs:.0f}s)")
         done += 1
@@ -392,13 +409,15 @@ def main():
                     help="use an ffmpeg-made clip instead of the model")
     ap.add_argument("--force", action="store_true",
                     help="regenerate even if a clip or moving cover exists")
+    ap.add_argument("--model", choices=sorted(MODELS),
+                    help="override the account's video model (a trial)")
     ap.add_argument("--check", action="store_true")
     a = ap.parse_args()
     if a.check:
         return check()
     acct = accounts.get(a.account)
     run(acct, only=a.post, out_root=a.out, use_synthetic=a.synthetic,
-        force=a.force, variants=a.variants)
+        force=a.force, variants=a.variants, model=a.model)
     return 0
 
 
