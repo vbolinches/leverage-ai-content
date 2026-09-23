@@ -1,0 +1,96 @@
+{
+  "slug": "post83-visa-bulletin-chart",
+  "hook_candidates": [
+    {
+      "headline": "¿Sabes qué gráfico usar?",
+      "sub": "La respuesta cambió hoy: dos gráficos para dos casos."
+    },
+    {
+      "headline": "Antes: confusión en los gráficos",
+      "sub": "Ahora: USCIS dice claramente cuál usar."
+    },
+    {
+      "headline": "Cambio importante hoy",
+      "sub": "Para familiares y trabajo, hay un gráfico nuevo para cada uno."
+    },
+    {
+      "headline": "No es el gráfico que crees",
+      "sub": "Para familiares, no es 'Final Action Dates'."
+    },
+    {
+      "headline": "¿Usas el gráfico correcto?",
+      "sub": "Familiares: Dates for Filing. Trabajo: Final Action Dates."
+    }
+  ],
+  "art": "chart",
+  "caption": "La página de USCIS fue actualizada el 1 de septiembre de 2026. La página dice: para aplicaciones familiares, usa 'Dates for Filing'. Para trabajo, usa 'Final Action Dates'.\n\nEn palabras simples:\nLo que dice: 'Para familias, usa Dates for Filing; para trabajo, usa Final Action Dates'.\nQué significa: Usa la tabla correcta para tu tipo de aplicación.\n\nIn plain words: For family-based applications, use the 'Dates for Filing' chart. For employment-based, use the 'Final Action Dates' chart.\n\nFuente oficial: https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/adjustment-of-status-filing-charts-from-the-visa-bulletin\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigración #visa #greencard #uscis #familia #trabajo #bulletin #aplicación",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 083",
+      "headline": "¿Sabes qué gráfico usar?",
+      "sub": "La respuesta cambió hoy: dos gráficos para dos casos.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Familiares: Dates for Filing. ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Trabajo: Final Action Dates.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "Qué dice el cambio",
+      "body": [
+        {
+          "t": "Familiares: Dates for Filing. Trabajo: Final Action Dates. Fuente: uscis.gov, 01 sep 2026",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Me afecta a mí?",
+      "body": [
+        {
+          "t": "Sí, si aplicas para ajustar estatus. ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "No, si ya tienes Green Card.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "QUE HACER",
+      "items": [
+        "1. Familiares: Dates",
+        "2. Trabajo: Final",
+        "3. Usa tabla correcta."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/adjustment-of-status-filing-charts-from-the-visa-bulletin"
+}

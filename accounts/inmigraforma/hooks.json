@@ -3580,6 +3580,87 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post83-visa-bulletin-chart",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Sabes qué gráfico usar?",
+        "sub": "La respuesta cambió hoy: dos gráficos para dos casos.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "number-claim",
+        "stopping": "Best hook: Directly challenges reader’s assumption with clear urgency ('cambió hoy'), specifies *exactly* what changed ('dos gráficos para dos casos'), and avoids false alarm. They’ll pause to check if they’re using the wrong chart.",
+        "reason": "Direct question + specific change + zero overstatement. Perfect for audience’s pain point: 'I thought I knew, but I didn’t.' (No false urgency or penalty claims.)",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Sabes qué gráfico usar?",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "Best hook: Directly challenges reader’s assumption with clear urgency ('cambió hoy'), specifies *exactly* what changed ('dos gráficos para dos casos'), and avoids false alarm. They’ll pause to check if they’re using the wrong chart.",
+          "reason": "Direct question + specific change + zero overstatement. Perfect for audience’s pain point: 'I thought I knew, but I didn’t.' (No false urgency or penalty claims.)",
+          "authored": false
+        },
+        {
+          "headline": "No es el gráfico que crees",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "number-claim",
+          "stopping": "Strong correction of a common mistake ('No es el gráfico que crees'), with sub giving the *exact* solution (family = Dates for Filing). Stops scrollers who might’ve been using the wrong chart.",
+          "reason": "Truthful correction of a frequent error—no alarm, just clarity. Audience will stop to verify if they’ve been using 'Final Action Dates' for family.",
+          "authored": false
+        },
+        {
+          "headline": "Antes: confusión en los gráficos",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "Before/after framing ('Antes: confusión... Ahora: claramente') works but is vague. USCIS authority helps, but doesn’t name the *specific* confusion (family vs. work dates).",
+          "reason": "Good but passive. 'Confusión' is relatable, but lacks the punch of E/F to stop scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "¿Usas el gráfico correcto?",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "number-claim",
+          "stopping": "Question hook ('¿Usas el gráfico correcto?') is decent, but sub repeats C’s info without urgency. Feels like a generic tip, not a *change* they must act on.",
+          "reason": "Question alone isn’t enough. Sub lacks specificity (e.g., 'cambió hoy' in F) to justify stopping.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Usa el gráfico correcto en el ",
+              "c": "blue"
+            },
+            {
+              "t": "Visa Bulletin",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Passive instruction ('Usa el gráfico correcto') with no hook. No urgency, no pain point. Scrollers will assume 'I already know this' and keep scrolling.",
+          "reason": "Generic advice. No 'why should I stop?' for someone who just wants to get through their phone.",
+          "authored": true
+        },
+        {
+          "headline": "Cambio importante hoy",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "Vague, spammy 'Cambio importante hoy'—no clue what changed. Feels like every other Instagram post. Zero reason to stop.",
+          "reason": "Worst possible hook: uses 'importante' (overused clickbait) without a single concrete detail. Audience knows this is empty.",
+          "authored": false
+        }
+      ]
     }
   ]
 }
