@@ -1,0 +1,74 @@
+{
+  "slug": "post87-gemini-connected-apps",
+  "hook_candidates": [
+    {
+      "headline": "No tab-switching needed.",
+      "sub": "Gemini connects your tools directly."
+    },
+    {
+      "headline": "Gemini connects your tools.",
+      "sub": "No tab-switching for project work."
+    },
+    {
+      "headline": "Project management in one place.",
+      "sub": "Gemini integrates with your apps."
+    },
+    {
+      "headline": "Stop switching apps.",
+      "sub": "Gemini connects your tools directly."
+    },
+    {
+      "headline": "Gemini connects your apps.",
+      "sub": "Project management without tab-switching."
+    }
+  ],
+  "art": "globe",
+  "caption": "Gemini now integrates with Airtable, Linear, monday.com, PandaDoc, Wispr AI, and Zoho without tab-switching.\n\nConnect your app in Gemini's 'Connected Apps' section. Gemini handles project management in one place.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #freelancer #aiassistant #gemini #productivity #soloentrepreneur #aihacks #worksmart #businessowner #aiintegration",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 087",
+      "headline": "Stop switching apps.",
+      "sub": "Gemini connects your tools directly.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Connect your app in Gemini.",
+      "body": [
+        {
+          "t": "Connect your app in Gemini's Connected Apps.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Project management in one place.",
+      "body": [
+        {
+          "t": "Project management in one place.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Connect tools",
+        "Project management",
+        "No tab switch"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/"
+}

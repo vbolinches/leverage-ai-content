@@ -1,0 +1,74 @@
+{
+  "slug": "post84-invideo-color-grading",
+  "hook_candidates": [
+    {
+      "headline": "3x faster color grading",
+      "sub": "Save hours"
+    },
+    {
+      "headline": "Manual grading slows you down",
+      "sub": "AI does it 3x faster"
+    },
+    {
+      "headline": "Wasting time on video grading?",
+      "sub": "3x faster with AI"
+    },
+    {
+      "headline": "Before: Manual. After: AI.",
+      "sub": "3x faster color grading"
+    },
+    {
+      "headline": "Pro color grading isn't needed",
+      "sub": "AI does it 3x faster"
+    }
+  ],
+  "art": "document",
+  "caption": "InVideo uses GPT-6 Astra to automate color grading. It's 3x faster than manual work for standard videos. You get 50 custom effects in one day.\n\nSave this for later.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #videograting #invideos #workflow #aiworkflow #soloconsultant #freelancer #business #aiassistant",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 084",
+      "headline": "Wasting time on video grading?",
+      "sub": "3x faster with AI",
+      "footer_right": "SWIPE"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "GPT6 plans edits.",
+      "body": [
+        {
+          "t": "AI plans grading.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Apply AI",
+      "body": [
+        {
+          "t": "3x faster, standard.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "System",
+      "items": [
+        "GPT6",
+        "Auto",
+        "Save time"
+      ],
+      "cta_title": "Save this",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS"
+    }
+  ],
+  "source_url": "https://openai.com/index/invideo-builds-with-gpt-6-astra/"
+}

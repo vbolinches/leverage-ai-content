@@ -1,0 +1,74 @@
+{
+  "slug": "post83-gemini-38-live-client-communication",
+  "hook_candidates": [
+    {
+      "headline": "97 languages, automatic switching",
+      "sub": "No more translation delays"
+    },
+    {
+      "headline": "Visual inputs, near real-time",
+      "sub": "Process documents instantly"
+    },
+    {
+      "headline": "Background tool calls",
+      "sub": "During conversations"
+    },
+    {
+      "headline": "Gemini 3.8 Live: Visual only",
+      "sub": "No voice processing"
+    },
+    {
+      "headline": "Real-time visual processing",
+      "sub": "97 languages supported"
+    }
+  ],
+  "art": "email",
+  "caption": "Gemini 3.8 Live processes visual inputs in near real time and supports 97 languages with automatic switching. It executes background tool calls during conversations. The blog post makes no claims about voice call summaries or time savings.\n\nHow it works:\n1. Share documents during meetings.\n2. Gemini processes visual content near real-time.\n3. Get summaries of shared visuals.\n\nThis works for any visual input (PDFs, slides, images) during meetings. No voice call features.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #freelancer #productivity #business #aiworkflows #gemini #clientcommunication #time-saving #aiassistant #soloconsultant",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 083",
+      "headline": "Visual inputs, near real-time",
+      "sub": "Process documents instantly",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Share visual input",
+      "body": [
+        {
+          "t": "Documents, slides, images.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Near real-time processing",
+      "body": [
+        {
+          "t": "97 languages auto-switch.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Visual inputs",
+        "97 languages",
+        "Background calls"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/"
+}

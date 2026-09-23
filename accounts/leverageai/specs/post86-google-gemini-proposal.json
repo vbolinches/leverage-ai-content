@@ -1,0 +1,70 @@
+{
+  "slug": "post86-google-gemini-proposal",
+  "hook_candidates": [
+    {
+      "headline": "You're drafting proposals manually",
+      "sub": "Manual drafting takes time, use Gemini instead"
+    },
+    {
+      "headline": "How long does it take to draft a proposal?",
+      "sub": "Gemini drafts proposals in Docs, saves time"
+    },
+    {
+      "headline": "Before: Manual. After: Docs.",
+      "sub": "Draft client proposals directly in Docs with Gemini"
+    },
+    {
+      "headline": "Manual drafting is outdated",
+      "sub": "Gemini drafts proposals in Docs for faster work"
+    },
+    {
+      "headline": "Draft proposals in Docs",
+      "sub": "Directly with Gemini, no manual work needed"
+    }
+  ],
+  "art": "globe",
+  "caption": "Draft client proposals directly in Google Docs using Gemini.\n\nConnect to Asana, HubSpot, QuickBooks, or Atlassian Rovo in Docs. \n\n\n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #proposal #gemini #googleworkspace #workflow #freelance #solopreneur #smallbusiness #aiworkflow #business",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 086",
+      "headline": "You're drafting proposals manually",
+      "sub": "Manual drafting takes time, use Gemini instead",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Connect tools",
+      "body": [
+        {
+          "t": "Link Asana, HubSpot, QuickBooks"
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Ask Gemini",
+      "body": [
+        {
+          "t": "to draft proposals"
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "",
+      "items": [
+        "Connect tools",
+        "Ask Gemini",
+        "Draft in Docs"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS↓"
+    }
+  ],
+  "source_url": "https://www.taxheal.com/connect-to-more-tools-with-gemini-in-google-workspace.html"
+}

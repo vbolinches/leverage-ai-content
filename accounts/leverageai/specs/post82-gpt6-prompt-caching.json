@@ -1,0 +1,62 @@
+{
+  "slug": "post82-gpt6-prompt-caching",
+  "hook_candidates": [
+    {
+      "headline": "You're paying full price for repeated prompts",
+      "sub": "Pay 90% less on repeats"
+    },
+    {
+      "headline": "How much are you paying for repeated prompts?",
+      "sub": "Pay 90% less on repeats"
+    },
+    {
+      "headline": "90% less on repeated inputs",
+      "sub": "GPT-6 prompt caching"
+    },
+    {
+      "headline": "Repeated inputs cost 90% less",
+      "sub": "GPT-6 prompt caching"
+    },
+    {
+      "headline": "GPT-6: 90% less on repeated prompts",
+      "sub": "Prompt caching"
+    }
+  ],
+  "art": "gavel",
+  "caption": "OpenAI's GPT-6 has better prompt caching, meaning for repeated inputs you pay 90% less for input tokens. The caching is automatic and works by default. Optional controls are available to build on the engine's performance.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #aiworkflow #businessautomation #freelancer #solopreneur #aiassistant #productivity #gpt6 #aihacks #promptengineering",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 082",
+      "headline": "You're overpaying for the same prompts",
+      "sub": "Automatic caching cuts input costs by 90%",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Caching automatic",
+      "body": []
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Controls optional",
+      "body": []
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "System",
+      "items": [
+        "Automatic caching",
+        "Optional controls",
+        "Pay 90% less"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://openai.com/index/better-prompt-caching-for-gpt-6/"
+}

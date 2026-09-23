@@ -1244,6 +1244,88 @@
       "format": "reel",
       "video": "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/reel.mp4",
       "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 9 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'QuickBooks AI now includes expense categorization on all paid tiers — includ | UNVERIFIED — 'If you correct a few entries, the AI gets better at tagging your expenses' was marked supported, but the s. Restore by setting status back to 'queued'."
+    },
+    {
+      "id": "post82-gpt6-prompt-caching",
+      "date": "2026-09-25",
+      "slides": [
+        "accounts/leverageai/queue/post82-gpt6-prompt-caching/slide01.png",
+        "accounts/leverageai/queue/post82-gpt6-prompt-caching/slide02.png",
+        "accounts/leverageai/queue/post82-gpt6-prompt-caching/slide03.png",
+        "accounts/leverageai/queue/post82-gpt6-prompt-caching/slide04.png"
+      ],
+      "caption": "OpenAI's GPT-6 has better prompt caching, meaning for repeated inputs you pay 90% less for input tokens. The caching is automatic and works by default. Optional controls are available to build on the engine's performance.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #aiworkflow #businessautomation #freelancer #solopreneur #aiassistant #productivity #gpt6 #aihacks #promptengineering",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post82-gpt6-prompt-caching/reel.mp4"
+    },
+    {
+      "id": "post83-gemini-38-live-client-communication",
+      "date": "2026-09-26",
+      "slides": [
+        "accounts/leverageai/queue/post83-gemini-38-live-client-communication/slide01.png",
+        "accounts/leverageai/queue/post83-gemini-38-live-client-communication/slide02.png",
+        "accounts/leverageai/queue/post83-gemini-38-live-client-communication/slide03.png",
+        "accounts/leverageai/queue/post83-gemini-38-live-client-communication/slide04.png"
+      ],
+      "caption": "Gemini 3.8 Live processes visual inputs in near real time and supports 97 languages with automatic switching. It executes background tool calls during conversations. The blog post makes no claims about voice call summaries or time savings.\n\nHow it works:\n1. Share documents during meetings.\n2. Gemini processes visual content near real-time.\n3. Get summaries of shared visuals.\n\nThis works for any visual input (PDFs, slides, images) during meetings. No voice call features.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #freelancer #productivity #business #aiworkflows #gemini #clientcommunication #time-saving #aiassistant #soloconsultant",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post83-gemini-38-live-client-communication/reel.mp4"
+    },
+    {
+      "id": "post84-invideo-color-grading",
+      "date": "2026-09-27",
+      "slides": [
+        "accounts/leverageai/queue/post84-invideo-color-grading/slide01.png",
+        "accounts/leverageai/queue/post84-invideo-color-grading/slide02.png",
+        "accounts/leverageai/queue/post84-invideo-color-grading/slide03.png",
+        "accounts/leverageai/queue/post84-invideo-color-grading/slide04.png"
+      ],
+      "caption": "InVideo uses GPT-6 Astra to automate color grading. It's 3x faster than manual work for standard videos. You get 50 custom effects in one day.\n\nSave this for later.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #videograting #invideos #workflow #aiworkflow #soloconsultant #freelancer #business #aiassistant",
+      "status": "queued"
+    },
+    {
+      "id": "post85-gemini-voice-cloning",
+      "date": "2026-09-28",
+      "slides": [
+        "accounts/leverageai/queue/post85-gemini-voice-cloning/slide01.png",
+        "accounts/leverageai/queue/post85-gemini-voice-cloning/slide02.png",
+        "accounts/leverageai/queue/post85-gemini-voice-cloning/slide03.png",
+        "accounts/leverageai/queue/post85-gemini-voice-cloning/slide04.png"
+      ],
+      "caption": "Gemini 3.8 TTS offers 2,000+ expressive voices with voice cloning from 30 seconds of audio. SynthID watermarking prevents misinformation.\n\nRecord 30 seconds of speech. Use Gemini 3.8 TTS to clone your voice. Generate voice content instantly.\n\nSave this for later.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #aiworkflow #gemini #texttospeech #voiceclone #smallbusiness #freelancer #aiassistant",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post85-gemini-voice-cloning/reel.mp4"
+    },
+    {
+      "id": "post86-google-gemini-proposal",
+      "date": "2026-09-29",
+      "slides": [
+        "accounts/leverageai/queue/post86-google-gemini-proposal/slide01.png",
+        "accounts/leverageai/queue/post86-google-gemini-proposal/slide02.png",
+        "accounts/leverageai/queue/post86-google-gemini-proposal/slide03.png",
+        "accounts/leverageai/queue/post86-google-gemini-proposal/slide04.png"
+      ],
+      "caption": "Draft client proposals directly in Google Docs using Gemini.\n\nConnect to Asana, HubSpot, QuickBooks, or Atlassian Rovo in Docs. \n\n\n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #proposal #gemini #googleworkspace #workflow #freelance #solopreneur #smallbusiness #aiworkflow #business",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post86-google-gemini-proposal/reel.mp4"
+    },
+    {
+      "id": "post87-gemini-connected-apps",
+      "date": "2026-09-30",
+      "slides": [
+        "accounts/leverageai/queue/post87-gemini-connected-apps/slide01.png",
+        "accounts/leverageai/queue/post87-gemini-connected-apps/slide02.png",
+        "accounts/leverageai/queue/post87-gemini-connected-apps/slide03.png",
+        "accounts/leverageai/queue/post87-gemini-connected-apps/slide04.png"
+      ],
+      "caption": "Gemini now integrates with Airtable, Linear, monday.com, PandaDoc, Wispr AI, and Zoho without tab-switching.\n\nConnect your app in Gemini's 'Connected Apps' section. Gemini handles project management in one place.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #freelancer #aiassistant #gemini #productivity #soloentrepreneur #aihacks #worksmart #businessowner #aiintegration",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post87-gemini-connected-apps/reel.mp4"
     }
   ]
 }

@@ -1,0 +1,70 @@
+{
+  "slug": "post85-gemini-voice-cloning",
+  "hook_candidates": [
+    {
+      "headline": "2,000+ expressive voices",
+      "sub": "Gemini clones voice from 30s audio"
+    },
+    {
+      "headline": "Voice cloning from 30s audio",
+      "sub": "2,000+ expressive voices available"
+    },
+    {
+      "headline": "Expressive voices now",
+      "sub": "Clone your voice in 30s"
+    },
+    {
+      "headline": "Gemini 3.8 TTS",
+      "sub": "2,000+ voices, voice cloning"
+    },
+    {
+      "headline": "No more voice actor hire",
+      "sub": "2,000+ voices available"
+    }
+  ],
+  "art": "globe",
+  "caption": "Gemini 3.8 TTS offers 2,000+ expressive voices with voice cloning from 30 seconds of audio. SynthID watermarking prevents misinformation.\n\nRecord 30 seconds of speech. Use Gemini 3.8 TTS to clone your voice. Generate voice content instantly.\n\nSave this for later.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #aiworkflow #gemini #texttospeech #voiceclone #smallbusiness #freelancer #aiassistant",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 085",
+      "headline": "No more voice actor hire",
+      "sub": "2,000+ voices available",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Record 30s audio",
+      "body": [
+        {
+          "t": "Voice cloning from 30s audio."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Generate voice content",
+      "body": [
+        {
+          "t": "Use expressive voices instantly."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "System",
+      "items": [
+        "2,000+ voices",
+        "Clone from 30s",
+        "Expressive voices"
+      ],
+      "cta_title": "Save",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
+}

@@ -4190,6 +4190,473 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post82-gpt6-prompt-caching",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "You're overpaying for the same prompts",
+        "sub": "Automatic caching cuts input costs by 90%",
+        "rank": 1,
+        "score": 3.0,
+        "shape": "change",
+        "stopping": "You're overpaying for the same prompts",
+        "reason": "Uses 'overpaying' (pain) and 'same prompts' (relatable task), but 'prompts' is slightly technical. Still the least scroll-able among these.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You're overpaying for the same prompts",
+          "rank": 1,
+          "score": 3.0,
+          "shape": "change",
+          "stopping": "You're overpaying for the same prompts",
+          "reason": "Uses 'overpaying' (pain) and 'same prompts' (relatable task), but 'prompts' is slightly technical. Still the least scroll-able among these.",
+          "authored": false
+        },
+        {
+          "headline": "Stop paying for repeated inputs",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "change",
+          "stopping": "Stop paying for repeated inputs",
+          "reason": "Strong 'stop paying' pain, but 'repeated inputs' is dev jargon that makes solo operators scroll past instantly.",
+          "authored": false
+        },
+        {
+          "headline": "Why you're paying for repeated work",
+          "rank": 3,
+          "score": 2.0,
+          "shape": "change",
+          "stopping": "Why you're paying for repeated work",
+          "reason": "Good 'why' framing, but 'repeated work' is vague and 'work' feels like a corporate term (not their daily grind).",
+          "authored": false
+        },
+        {
+          "headline": "Repeated prompts waste your budget",
+          "rank": 4,
+          "score": 1.0,
+          "shape": "change",
+          "stopping": "Repeated prompts waste your budget",
+          "reason": "Wastes 'budget' (pain) but 'prompts' is a technical term they’d scroll past.",
+          "authored": false
+        },
+        {
+          "headline": "GPT-6: 90% less on repeated prompts",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "change",
+          "stopping": "GPT-6: 90% less on repeated prompts",
+          "reason": "GPT-6 (nonexistent) + 'repeated prompts' = instant scroll. Worst combo of techy and misleading.",
+          "authored": false
+        },
+        {
+          "headline": "90% less on repeated inputs",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "change",
+          "stopping": "90% less on repeated inputs",
+          "reason": "Most jargon-heavy ('repeated inputs' = no one says this). Pure dev-tool speak.",
+          "authored": false
+        },
+        {
+          "headline": "Repeated inputs cost 90% less",
+          "rank": 7,
+          "score": 1.0,
+          "shape": "change",
+          "stopping": "Repeated inputs cost 90% less",
+          "reason": "Grammatically confusing ('cost 90% less' implies inputs are cheaper) + 'inputs' = instant scroll.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Pay 90% less on repeated inputs"
+            }
+          ],
+          "rank": 8,
+          "score": 0.0,
+          "shape": "change",
+          "stopping": "Pay 90% less on repeated inputs",
+          "reason": "False urgency ('pay 90% less' implies current cost is high) + 'repeated inputs' = scammy dev jargon. Most likely to scroll.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post83-gemini-38-live-client-communication",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Visual inputs, near real-time",
+        "sub": "Process documents instantly",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Clear pain point (document processing delays) + instant solution. 'Process documents instantly' is a direct, usable fix for daily workflow. Matches their #aiworkflow/#clientwork hook pattern.",
+        "reason": "Solves a visible, frequent task (document handling) with urgency. 'Instantly' and 'no delays' are proven hooks from their winning batch (e.g., #notebooklm).",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Visual inputs, near real-time",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Clear pain point (document processing delays) + instant solution. 'Process documents instantly' is a direct, usable fix for daily workflow. Matches their #aiworkflow/#clientwork hook pattern.",
+          "reason": "Solves a visible, frequent task (document handling) with urgency. 'Instantly' and 'no delays' are proven hooks from their winning batch (e.g., #notebooklm).",
+          "authored": false
+        },
+        {
+          "headline": "97 languages, automatic switching",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Names translation delays as pain point (strong), but '97 languages' feels like a technical detail, not a user benefit. Slightly less focused than F.",
+          "reason": "Uses 'no translation delays' (proven hook), but '97 languages' distracts from the core pain. Audience scrolls past if it sounds like a feature list.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "97 languages, automatic",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "Same as C but with typo ('automatic' vs 'automatic switching'), reducing credibility. 'No translation delays' is weak without context.",
+          "reason": "Repeats C's flaw with worse phrasing. 'Automatic' alone is vague—audience skips it as generic.",
+          "authored": true
+        },
+        {
+          "headline": "Real-time visual processing",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Vague 'real-time visual processing' sounds like a developer tool. No pain point named—just a feature.",
+          "reason": "Fails their rule: 'never a category.' '97 languages supported' is a feature, not a deficiency.",
+          "authored": false
+        },
+        {
+          "headline": "Gemini 3.8 Live: Visual only",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Names Gemini (tool), not a pain. 'Visual only' is irrelevant—audience doesn’t care about voice processing.",
+          "reason": "Violates 'no tool names' rule. 'Gemini 3.8' is a distraction, not a workflow fix.",
+          "authored": false
+        },
+        {
+          "headline": "Background tool calls",
+          "rank": 6,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Pure tech jargon ('background tool calls'). No pain, no change—just noise for a non-technical audience.",
+          "reason": "Worst possible hook: assumes audience knows terms like 'tool calls.' They scroll past instantly.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post84-invideo-color-grading",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Wasting time on video grading?",
+        "sub": "3x faster with AI",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Wasting time? is visceral and names the pain directly. Solopreneurs feel this daily — no fluff, no jargon. Immediate 'this is me' stop.",
+        "reason": "Uses emotional trigger 'wasting' + question format. Matches 'pain/deficiency' rule perfectly.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Wasting time on video grading?",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Wasting time? is visceral and names the pain directly. Solopreneurs feel this daily — no fluff, no jargon. Immediate 'this is me' stop.",
+          "reason": "Uses emotional trigger 'wasting' + question format. Matches 'pain/deficiency' rule perfectly.",
+          "authored": false
+        },
+        {
+          "headline": "Manual grading slows you down",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "change",
+          "stopping": "Manual grading slows you down directly names the pain. Less emotional than F but still clear and audience-relevant.",
+          "reason": "Explicit pain statement. Avoids vague benefits (unlike D/E).",
+          "authored": false
+        },
+        {
+          "headline": "Before: Manual. After: AI.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Before/After is functional but clinical. Solopreneurs won't pause for a dry comparison — it's a headline, not a pain.",
+          "reason": "Implied pain but lacks emotional punch. Feels like an ad, not a problem they're living.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "3x faster color grading"
+            }
+          ],
+          "rank": 4,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "3x faster color grading is just a benefit claim. No pain, no 'why care?' — scroll past.",
+          "reason": "Violates 'name a pain' rule. Pure category statement. Matches disconfirmed 'broad benefit' pattern.",
+          "authored": true
+        },
+        {
+          "headline": "3x faster color grading",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Identical to D. Same weak benefit claim — no reason to stop.",
+          "reason": "Duplicate of D. Ranked lower because the audience has seen this exact phrasing before.",
+          "authored": false
+        },
+        {
+          "headline": "Pro color grading isn't needed",
+          "rank": 6,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Pro color grading isn't needed is irrelevant. Solopreneurs don't care if 'pro' is needed — it's not their pain.",
+          "reason": "Makes a claim about 'pro work' (disconfirmed meta-commentary). Ignores actual pain points. Worst possible hook.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post85-gemini-voice-cloning",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No more voice actor hire",
+        "sub": "2,000+ voices available",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Names the pain: 'no more hire' (cost/time savings) — directly solves a real solo biz headache",
+        "reason": "Only cover naming a *deficiency* (costly voice actor hire) with clear change. Audience stops because it targets their actual pain point. Sub is weak but cover wins.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No more voice actor hire",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Names the pain: 'no more hire' (cost/time savings) — directly solves a real solo biz headache",
+          "reason": "Only cover naming a *deficiency* (costly voice actor hire) with clear change. Audience stops because it targets their actual pain point. Sub is weak but cover wins.",
+          "authored": false
+        },
+        {
+          "headline": "Voice cloning from 30s audio",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "Mentions 'voice cloning' (relatable term) but frames as tech, not pain. Sub adds '30s audio' (scroll-past tech detail).",
+          "reason": "Close to C but lacks the *pain* angle. 'Cloning' implies benefit but feels like feature listing. Sub adds scroll-past tech detail.",
+          "authored": false
+        },
+        {
+          "headline": "Expressive voices now",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "Weak urgency ('now') + vague 'expressive' (no pain). Sub repeats tech ('30s audio').",
+          "reason": "Worse than B because 'expressive' is meaningless fluff. 'Now' feels spammy. No real pain point.",
+          "authored": false
+        },
+        {
+          "headline": "2,000+ expressive voices",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Pure feature listing ('2,000+ expressive voices'). No pain, no change. Sub adds tech ('clones from 30s audio').",
+          "reason": "Generic list. 'Expressive' is a buzzword they scroll past. Sub confirms it's a tech demo.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "2,000+ voices"
+            }
+          ],
+          "rank": 5,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Worse than D: '2,000+ voices' is even vaguer. Sub repeats tech ('clone from 30s audio').",
+          "reason": "Most generic. 'Voices' alone means nothing to a solo biz owner. Sub is dead tech detail.",
+          "authored": true
+        },
+        {
+          "headline": "Gemini 3.8 TTS",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Names a tool ('Gemini 3.8 TTS') — *exactly* what they've proven fails. Sub is feature dump.",
+          "reason": "Worst possible format. 'Gemini' is a category (disproven), not a pain. Audience scrolls immediately to avoid 'AI tool' fluff.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post86-google-gemini-proposal",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You're drafting proposals manually",
+        "sub": "Manual drafting takes time, use Gemini instead",
+        "rank": 1,
+        "score": 8.5,
+        "shape": "before-after",
+        "stopping": "Personal pain + clear urgency",
+        "reason": "‘You’re drafting proposals manually’ directly confronts the audience’s daily frustration (pain = wasted time), while ‘Manual drafting takes time’ names the deficiency. This matches their confirmed rule: covers must name a pain/deficiency, not just describe a task. It’s impossible to scroll past this — it’s a mirror held up to their current struggle.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You're drafting proposals manually",
+          "rank": 1,
+          "score": 8.5,
+          "shape": "before-after",
+          "stopping": "Personal pain + clear urgency",
+          "reason": "‘You’re drafting proposals manually’ directly confronts the audience’s daily frustration (pain = wasted time), while ‘Manual drafting takes time’ names the deficiency. This matches their confirmed rule: covers must name a pain/deficiency, not just describe a task. It’s impossible to scroll past this — it’s a mirror held up to their current struggle.",
+          "authored": false
+        },
+        {
+          "headline": "Manual drafting is outdated",
+          "rank": 2,
+          "score": 7.2,
+          "shape": "change",
+          "stopping": "Passive pain but clear solution",
+          "reason": "‘Manual drafting is outdated’ names a deficiency (outdated = pain), but it’s a passive observation. ‘Faster work’ is usable but lacks the visceral ‘you’ urgency of E. Still stops scrollers, but not as hard as E.",
+          "authored": false
+        },
+        {
+          "headline": "Draft proposals in Docs",
+          "rank": 3,
+          "score": 5.8,
+          "shape": "category",
+          "stopping": "Task description, no pain",
+          "reason": "‘Draft proposals in Docs’ is a category (like ‘Use Excel’), not a pain/deficiency. The sub adds ‘no manual work’ but the cover fails their core rule: covers must name a pain, not just state what the tool does. Audience scrolls past because it’s generic.",
+          "authored": false
+        },
+        {
+          "headline": "Before: Manual. After: Docs.",
+          "rank": 4,
+          "score": 4.1,
+          "shape": "before-after",
+          "stopping": "Vague before/after, no pain",
+          "reason": "‘Before: Manual. After: Docs’ feels like a feature description, not a pain point. ‘Docs’ isn’t a deficiency — it’s just a tool. No urgency or personal pain named. Scrollers assume it’s another generic tool tip.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Draft proposals in Docs"
+            }
+          ],
+          "rank": 5,
+          "score": 2.3,
+          "shape": "category",
+          "stopping": "Zero pain, pure task",
+          "reason": "‘Draft proposals in Docs’ is the worst violation: it’s a task category (like ‘Make spreadsheets’), not a pain/deficiency. The sub adds nothing. This is exactly what their disproofs say to avoid — a ‘what’ without a ‘why you should care’.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post87-gemini-connected-apps",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop switching apps.",
+        "sub": "Gemini connects your tools directly.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Active pain name (stop = current friction)",
+        "reason": "Names active pain (\"Stop switching apps\")—immediate friction. Sub is weak but cover passes the test. Only one using a verb to frame the pain.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop switching apps.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Active pain name (stop = current friction)",
+          "reason": "Names active pain (\"Stop switching apps\")—immediate friction. Sub is weak but cover passes the test. Only one using a verb to frame the pain.",
+          "authored": false
+        },
+        {
+          "headline": "No tab-switching needed.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Passive deficiency (\"no need\") + better sub verb",
+          "reason": "Passive deficiency (\"no tab-switching needed\") but sub uses active verb \"connects\" (better than \"integrates\"). Weak but less category-focused than others.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "No tab-switching needed.",
+              "c": "blue"
+            }
+          ],
+          "rank": 3,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "Passive deficiency + weak sub verb",
+          "reason": "Same cover as D but sub uses \"integrates\" (passive, technical). Worse than D's \"connects\".",
+          "authored": true
+        },
+        {
+          "headline": "Gemini connects your apps.",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Category statement (Gemini connects apps)",
+          "reason": "Cover is solution-focused (\"Gemini connects your apps\")—not a pain. Category fails the \"never a category\" rule.",
+          "authored": false
+        },
+        {
+          "headline": "Gemini connects your tools.",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Category statement + vague sub",
+          "reason": "Cover names solution (Gemini connects tools), not pain. \"Tools\" less familiar than \"apps\" to solo operators.",
+          "authored": false
+        },
+        {
+          "headline": "Project management in one place.",
+          "rank": 6,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Category statement (project management)",
+          "reason": "Worst—names the *category* \"project management\" (explicitly forbidden). No pain/deficiency.",
+          "authored": false
+        }
+      ]
     }
   ]
 }
