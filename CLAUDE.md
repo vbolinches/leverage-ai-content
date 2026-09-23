@@ -277,6 +277,58 @@ when you touch these rules. Research also drops `audience: "niche"` briefs and
 reads each account's `topic_priorities`: the month the local model took over,
 inmigraforma covered a Federal Register index and civil-surgeon designations.
 
+**What made the local model produce ANY passing post** (2026-09-23, seven
+test batches; the first four yielded zero). Each change answers an observed
+failure - keep them together:
+
+- The writer thinks (`WRITER_THINK`, per-account `writer_think`). It ran with
+  reasoning off while the checker ran with it on; the checker was precise all
+  day, the writer copied English onto Spanish slides and ignored the date.
+- The writer is told TODAY and the publish window. The researcher always was;
+  the writer never was, and wrote "renueva antes del 9 de septiembre" on the
+  23rd.
+- `llm.chat` sends a fresh seed whenever temperature > 0. Without one, repair
+  rounds 2-5 came back byte-identical - four "retries" of one answer.
+- Repair by REMOVAL. `factcheck.strip_claims()` deletes the sentence carrying
+  each still-untrue claim, after two rewrite rounds; `_fit_sentences()` does
+  the same for small length overflows. A rewrite trades one invented detail
+  for another; a deletion only removes. A claim in a headline, or a deletion
+  that would empty a slide, rejects the post instead.
+- One field, one job. English on a Spanish slide is fixed by `_to_spanish()`
+  per field, asked IN Spanish for a field NAMED in Spanish
+  (`texto_en_espanol`) - asked in English for "text", the model echoed the
+  English back unchanged.
+- The checker judges meaning across languages, splits compound sentences into
+  single facts, and accepts a who-is-affected line that follows from the page's
+  own stated coverage. Each fixed a real false rejection. Tips accounts
+  (no `require_source_url`) are checked on world facts only (`WORLD_ONLY`) -
+  what exists, what it does, what it costs, when it shipped, numbers - never
+  on their own prompts and advice, which are the product.
+- Research drops what the writer then turns into invented news: evergreen form
+  and hub pages (`_evergreen`), OMB paperwork notices (`_paperwork` - a Form
+  I-821 collection notice became "DHS proposes extending TPS for several
+  countries"), topics built on a deadline already past (`_past_deadline`), and
+  a second topic citing a page already used. One empty sweep no longer ends
+  research for the night.
+- The total reading budget rejects only above its target; the 5% margin is
+  what the writer aims for, not the line.
+- `next_date()` counts only queued and published posts. Counting retired ones
+  meant retiring a week of bad posts pushed every replacement a week out.
+
+Yield is still the open problem: the checks now stop what they should (in
+testing: an invented TPS deadline, a paperwork notice read as a TPS
+extension, false hope for refugee families, and the public-charge inversion
+generated again from scratch), but a batch produces few posts. Fewer true
+posts is the safe failure - the queue-health alarm catches an empty queue;
+nothing catches a wrong post once it is seen.
+
+On 2026-09-23 the queue audit (every queued post through these checks)
+retired all 8 of inmigraforma's and 12 of leverageai's 13 - invented
+consequences and deadlines, an asylum deadline from January 2025, a leaked
+Siri demo presented as a shipped feature, invented products and prices.
+Retired posts keep their reasons in `note` and restore by setting `status`
+back to `queued`.
+
 Do not remove the fact-check to speed up the nightly run. It adds roughly a
 minute per post on the 5090, and it is the only thing that checks the post
 rather than the source.
