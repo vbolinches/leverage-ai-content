@@ -248,17 +248,29 @@ def _page_for(brief):
     return url, page
 
 
+# The opening of a page is always read: it carries the title, the document
+# type and the summary. A Federal Register proposed rule runs to 183,000
+# characters; centred on a quote from deep in the preamble, the window never
+# showed the checker "Proposed rule" (char 2,425) or the SUMMARY (char 11,252),
+# so it rejected "the government proposed eliminating the 60-day grace period"
+# as not on the page - the one true sentence the post was built on.
+HEAD = 14_000
+
+
 def _window(page, anchor):
-    """The WINDOW characters of the page around the brief's quote, so the
-    passage the post is about is always in view however long the page is."""
+    """The page's opening, plus the passage around the brief's quote, within
+    WINDOW characters - so both what the document IS and the part the post is
+    about are in view however long the page is."""
     if len(page) <= WINDOW:
         return page
     i = _norm(page).find(_norm(anchor)[:60]) if anchor else -1
-    # _norm collapses whitespace, so the index is approximate; the window is
+    # _norm collapses whitespace, so the index is approximate; the section is
     # wide enough that approximate is fine.
-    centre = i if i >= 0 else 0
-    start = max(0, centre - WINDOW // 2)
-    return page[start:start + WINDOW]
+    if i < HEAD:
+        return page[:WINDOW]
+    rest = WINDOW - HEAD
+    start = max(HEAD, i - rest // 2)
+    return page[:HEAD] + "\n\n[...]\n\n" + page[start:start + rest]
 
 
 def post_text(post, acct):
