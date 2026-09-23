@@ -617,11 +617,23 @@ def research(count, avoid):
             # A brief whose URL the model typed rather than received is the
             # exact failure this pass exists to prevent, and dropping it now
             # is cheaper than having validate() reject the finished post.
+            # EVERY account, not only the ones that print their source: on
+            # 2026-09-23 seven of leverageai's ten briefs cited URLs no tool
+            # returned - blog.google/products/gemini/contract-review,
+            # xero.com/blog/ai-expense-automation - all 404, all products the
+            # model imagined. Their posts could not be fact-checked, because
+            # there was no page to check them against.
+            if not _url_seen(url):
+                print(f"  dropped a brief citing a URL no search "
+                      f"returned: {url}")
+                continue
+            if not search.PAGES.get(url):
+                search.fetch(url, max_chars=200_000)
+            if not search.PAGES.get(url):
+                print(f"  dropped a brief whose source cannot be read, so "
+                      f"nothing written from it could be checked: {url}")
+                continue
             if ACCT.get("require_source_url"):
-                if not _url_seen(url):
-                    print(f"  dropped a brief citing a URL no search "
-                          f"returned: {url}")
-                    continue
                 # A link shortener or a news write-up is a real URL and still
                 # fails validate(), so it is worth catching here: a brief
                 # rejected now costs one sweep, the same brief rejected after

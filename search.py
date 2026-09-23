@@ -179,8 +179,12 @@ def _get_curl(url):
     at all. curl ships with Windows 11 and with every CI image, so it costs no
     new dependency.
     """
+    # --fail: an HTTP error is not a page. Without it a 404 body came back as
+    # readable text, went into PAGES and, worse, into RETRIEVED - so a URL
+    # the model invented counted as one a tool had returned (2026-09-23,
+    # xero.com/blog/ai-expense-automation).
     out = subprocess.run(
-        ["curl", "-sSL", "--max-time", "40", "--compressed",
+        ["curl", "-sSL", "--fail", "--max-time", "40", "--compressed",
          "-A", BROWSER_HEADERS["User-Agent"],
          "-H", "Accept: " + BROWSER_HEADERS["Accept"],
          "-H", "Accept-Language: " + BROWSER_HEADERS["Accept-Language"],

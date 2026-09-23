@@ -325,12 +325,13 @@ def verify_detail(post, brief, acct, model=None, label=""):
     """
     strict = bool(acct.get("require_source_url"))
     url, page = _page_for(brief)
+    # No page, no post - on every account. Tips accounts used to pass
+    # unchecked here, and that is exactly how invented products got through:
+    # the model imagines a tool, imagines its blog URL, the URL 404s, and the
+    # one check that would have caught it silently steps aside.
     if not page:
-        if strict:
-            return ([f"the source page ({url or 'none'}) could not be read, so "
-                     f"nothing in this post can be checked against it"], [])
-        print(f"  ::warning::{label}: source unreadable, post not fact-checked")
-        return [], []
+        return ([f"the source page ({url or 'none'}) could not be read, so "
+                 f"nothing in this post can be checked against it"], [])
 
     excerpt = _window(page, (brief or {}).get("quote"))
     ask = (f"SOURCE PAGE ({url}):\n\n{excerpt}\n\n"
