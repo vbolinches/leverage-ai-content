@@ -1198,7 +1198,8 @@
         "accounts/leverageai/queue/post77-code-review-flaws/slide04.png"
       ],
       "caption": "You’re hiring developers but AI-generated code can’t pass a basic review. 20-25 minutes per candidate, test for real skills with intentional flaws.  \n\nAsk them to spot critical errors in sample code (e.g., missing auth, `System.out` logging). If they miss obvious issues, they don’t understand their output.  \n\nCopy-paste this prompt:\n\nReview this code for critical flaws:\n\n- Missing authentication\n- `System.out` logging in production\n- Unhandled exceptions\n\nExplain why each is a problem and how to fix it.\n\nSave this workflow for your next dev interview.  \nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #hiring #dev #tech #interview #recruiting #coding #developer #aihiring #devhiring",
-      "status": "queued"
+      "status": "held",
+      "note": "HELD 2026-09-23 (owner's call): slides read as telegraphic fragments - a stranger cannot tell what to do, where, or whether it applies to them. Rewrite for clarity before publishing; restore by setting status to queued."
     },
     {
       "id": "post78-mcp-secure-client-data-integrations",
@@ -1298,9 +1299,10 @@
         "accounts/leverageai/queue/post85-gemini-voice-cloning/slide04.png"
       ],
       "caption": "Gemini 3.8 TTS offers 2,000+ expressive voices with voice cloning from 30 seconds of audio. SynthID watermarking prevents misinformation.\n\nRecord 30 seconds of speech. Use Gemini 3.8 TTS to clone your voice. Generate voice content instantly.\n\nSave this for later.\n\nWhere it works: voice replication runs in Google AI Studio and only for your own voice or one you have the rights to use. Not available in Illinois, Texas, the EEA, the UK, Switzerland or India.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #aiworkflow #gemini #texttospeech #voiceclone #smallbusiness #freelancer #aiassistant",
-      "status": "queued",
+      "status": "held",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post85-gemini-voice-cloning/reel.mp4"
+      "video": "accounts/leverageai/queue/post85-gemini-voice-cloning/reel.mp4",
+      "note": "HELD 2026-09-23 (owner's call): slides read as telegraphic fragments - a stranger cannot tell what to do, where, or whether it applies to them. Rewrite for clarity before publishing; restore by setting status to queued."
     },
     {
       "id": "post86-google-gemini-proposal",
@@ -1312,9 +1314,10 @@
         "accounts/leverageai/queue/post86-google-gemini-proposal/slide04.png"
       ],
       "caption": "Draft client proposals directly in Google Docs using Gemini.\n\nConnect to Asana, HubSpot, QuickBooks, or Atlassian Rovo in Docs. \n\n\n\nSave this for later.\n\nWho gets it: Google Workspace Business Standard and Plus, Enterprise Standard and Plus, and Google AI Pro and Ultra. On by default; a Workspace admin can switch it off. The connectors open from the Gemini side panel in Docs, Sheets and Slides.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #proposal #gemini #googleworkspace #workflow #freelance #solopreneur #smallbusiness #aiworkflow #business",
-      "status": "queued",
+      "status": "held",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post86-google-gemini-proposal/reel.mp4"
+      "video": "accounts/leverageai/queue/post86-google-gemini-proposal/reel.mp4",
+      "note": "HELD 2026-09-23 (owner's call): slides read as telegraphic fragments - a stranger cannot tell what to do, where, or whether it applies to them. Rewrite for clarity before publishing; restore by setting status to queued."
     },
     {
       "id": "post87-gemini-connected-apps",
