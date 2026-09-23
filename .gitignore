@@ -4,3 +4,7 @@ __pycache__/
 review/
 review_out/
 logs/
+
+# A stale duplicate of CLAUDE.md keeps being regenerated here; CLAUDE.md is
+# the single source of the operating notes (owner's call, 2026-09-07).
+AGENTS.md
