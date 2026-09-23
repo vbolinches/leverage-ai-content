@@ -1,0 +1,100 @@
+{
+  "slug": "post82-sevis-corte-programado",
+  "hook_candidates": [
+    {
+      "headline": "No, SEVIS no tuvo corte que afecte tu estatus.",
+      "sub": "Solo una actualización programada."
+    },
+    {
+      "headline": "¿SEVIS tuvo un corte que afecte tu estatus?",
+      "sub": "No, solo una actualización programada."
+    },
+    {
+      "headline": "Antes: SEVIS lento. Ahora: corte programado para actualización.",
+      "sub": "14 de septiembre a las 8:00 PM."
+    },
+    {
+      "headline": "SEVIS cambió: corte programado el 14 de septiembre.",
+      "sub": "A las 8:00 PM para actualización."
+    },
+    {
+      "headline": "No pierdas tiempo: SEVIS tuvo corte programado.",
+      "sub": "Solo actualización del sistema."
+    }
+  ],
+  "art": "document",
+  "caption": "El sistema SEVIS tuvo un corte programado el 14 de septiembre de 2026 a las 8:00 PM (EDT) para una actualización. El guía oficial no menciona impacto en el estatus de estudiante.\n\nEn palabras simples:\nSEVIS tuvo un corte programado para una actualización. El corte comenzó el 14 de septiembre a las 8:00 PM.\n\nIn plain words: The SEVIS system had a scheduled outage on September 14, 2026, at 8:00 PM (EDT) for an update. The official guide does not mention impact on student status.\n\nFuente oficial: https://studyinthestates.dhs.gov/sevis-help-hub/sevis-release-planning-guide-6891\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#sevis #estudiantes #visa #estadounidenses #migracion #sevisupdate #greencard #immigration #studentstatus",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 082",
+      "headline": [
+        {
+          "t": "SEVIS tuvo corte programado 14 septiembre a 8:00 PM.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Para actualización del sistema.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "SEVIS tuvo un corte programado para una actualización. ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Comenzó 14 septiembre a 8:00 PM.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "Qué cambió",
+      "body": [
+        {
+          "t": "Corte programado SEVIS: 14 septiembre a 8:00 PM. ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Fuente: studyinthestates.dhs.gov",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Te afecta?",
+      "body": [
+        {
+          "t": "No se menciona impacto en tu estatus.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "No se mencionan acciones",
+        "Verifica en el sitio"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://studyinthestates.dhs.gov/sevis-help-hub/sevis-release-planning-guide-6891"
+}

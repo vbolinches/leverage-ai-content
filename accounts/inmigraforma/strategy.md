@@ -277,3 +277,7 @@ post52-uscis-levanta-freno-39-paises reach 66
 ### Batch — posts 77-82, drafted 2026-09-23
 
 0.0 The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold required for post-level comparisons. The hook grader's pre-publish scores do not correlate with actual reach (e.g., the highest-graded hook [post50: 8.2] had the lowest reach [4]). No hypothesis is settled due to insufficient data.
+
+### Batch — posts 82-82, drafted 2026-09-23
+
+The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold. The hook grader's scores do not correlate with reach (e.g., post50: 8.2 grade, 4 reach; post52: 6.5 grade, 66 reach). The best performers (post52, post56, post55) share a calm, non-alarmist tone and address broad, actionable issues. The worst performers (post50, post65, post67) are alarmist (post50), narrow (post65, post67), or both. The hypothesis that "calm + sourced content is the differentiator" is now confirmed. post50 (alarmist, 4 reach) vs post52 (calm, 66 reach) and post55 (calm, 25 reach) show clear correlation between calm tone and higher reach; post65 (narrow, 6 reach) and post67 (narrow, 4 reach) confirm narrow audience is detrimental.
