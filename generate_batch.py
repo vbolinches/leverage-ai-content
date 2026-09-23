@@ -489,7 +489,7 @@ if ACCT.get("official_domains"):
     )
 
 
-def _sweep(want, avoid, signals):
+def _sweep(want, avoid, signals, office=("", [])):
     """One self-contained research conversation: search, read, hand back briefs.
 
     Deliberately short-lived. Every page read costs a couple of thousand
@@ -503,6 +503,7 @@ def _sweep(want, avoid, signals):
         f"{ACCT['search_brief']}.\n\n"
         + (f"WHAT THIS ACCOUNT'S READERS CARE ABOUT:\n{ACCT['topic_priorities']}\n\n"
            if ACCT.get("topic_priorities") else "")
+        + (office[0] + "\n\n" if office[0] else "")
         + (signals + "\n\n" if signals else "")
         + ("Those leads are suggestions about what is being discussed. They "
            "are not facts and some will be wrong — verify anything you use.\n\n"
@@ -526,6 +527,10 @@ def _sweep(want, avoid, signals):
     # first local run on this account was dropped for that. Selection from a
     # list is a task it can do; recall is not.
     found = [u for u in search.since(mark) if _official(u) and _specific(u)]
+    # The official listing's URLs were recorded before this sweep began, so
+    # since(mark) cannot see them - and they are the best URLs it has.
+    found += [u for u in office[1]
+              if u not in found and _official(u) and _specific(u)]
     if not found:
         print("  ::warning::this sweep retrieved no usable URLs")
         return [], calls
@@ -565,8 +570,14 @@ def research(count, avoid):
     Two spare topics, because briefs get dropped: a made-up URL fails the
     check below, and a post can still fail to author afterwards.
     """
-    import ideas
+    import ideas, newsroom
     signals = ideas.digest(ACCT)
+    # What the official sources themselves published, read in code: real,
+    # dated, exact URLs to choose from. Shown on EVERY sweep - unlike the
+    # leads, it is the part of the prompt most likely to become a true post.
+    office = newsroom.digest(ACCT)
+    if office[1]:
+        print(f"  newsroom: {len(office[1])} official item(s) offered to research")
 
     # Three spares: posts are now dropped for being untrue or still broken
     # after repair, and each dropped post is a spare consumed.
@@ -577,7 +588,8 @@ def research(count, avoid):
             break
         # The ideas digest goes in once. It is large, it is the same every
         # sweep, and a later sweep needs the avoid list far more than leads.
-        found, n = _sweep(want - len(briefs), taken, signals if not sweep else "")
+        found, n = _sweep(want - len(briefs), taken, signals if not sweep else "",
+                          office)
         calls += n
 
         for b in found:

@@ -140,5 +140,19 @@
       "why": "the English recap orders or reassures in the same way"
     }
   ],
-  "topic_priorities": "Prefer news that a large share of regular immigrants and their families worry about and would forward to a relative: know-your-rights during enforcement (what to do if ICE comes to your home or work, what to carry, what you do not have to answer), TPS / DACA / parole deadlines and renewals, work permits (EAD), asylum, family petitions and Green Card processing, fees, public charge, scams that impersonate USCIS or lawyers. A reader should be able to tell in one line whether it touches them.\nAvoid: agency press releases announcing arrests or tip lines - they give the reader nothing to act on and only spread fear; indexes, manuals and internal agency procedure; investor visas; rules for diplomats or physicians; a new form edition UNLESS old editions are now being rejected, which is a real consequence people must act on.\nProposals are news, but they are not rules: a proposal must be reported as a proposal, with what happens next and when it could take effect."
+  "topic_priorities": "Prefer news that a large share of regular immigrants and their families worry about and would forward to a relative: know-your-rights during enforcement (what to do if ICE comes to your home or work, what to carry, what you do not have to answer), TPS / DACA / parole deadlines and renewals, work permits (EAD), asylum, family petitions and Green Card processing, fees, public charge, scams that impersonate USCIS or lawyers. A reader should be able to tell in one line whether it touches them.\nAvoid: agency press releases announcing arrests or tip lines - they give the reader nothing to act on and only spread fear; indexes, manuals and internal agency procedure; investor visas; rules for diplomats or physicians; a new form edition UNLESS old editions are now being rejected, which is a real consequence people must act on.\nProposals are news, but they are not rules: a proposal must be reported as a proposal, with what happens next and when it could take effect.",
+  "newsroom": [
+    {
+      "kind": "uscis"
+    },
+    {
+      "kind": "federal_register",
+      "agencies": [
+        "u-s-citizenship-and-immigration-services",
+        "u-s-immigration-and-customs-enforcement",
+        "executive-office-for-immigration-review"
+      ]
+    }
+  ],
+  "newsroom_skip": "indict|charged|arrest|sentenc|plead|guilty|convict|smuggl|denaturaliz|strip .*citizenship|revoke .*citizenship|takedown|fraud (ring|scheme|conspiracy)|rapist|gang member|terrorist|plays (key|critical|pivotal) role|assists? federal|identity checks lead|vetting efforts lead|voter fraud|illegally voting"
 }
