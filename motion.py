@@ -47,7 +47,7 @@ NEGATIVE = ("text, letters, words, numbers, captions, subtitles, watermark, "
             "police, officer, uniform, soldier, flag, border, wall, fence, "
             "document, passport, money, building, city, car, "
             "blurry, lowres, jpeg artifacts, flicker, distorted, "
-            "overexposed, static, still image")
+            "overexposed, static, still image, flat, plain gradient, empty")
 
 
 def python():
@@ -143,6 +143,7 @@ def generate(jobs):
     try:
         proc = subprocess.run([py, "-u", WORKER, job_file], cwd=HERE,
                               capture_output=True, text=True,
+                              encoding="utf-8", errors="replace",
                               timeout=PER_CLIP_TIMEOUT * len(jobs) + 600)
         for line in (proc.stdout or "").splitlines():
             print(f"  motion: {line}")
@@ -177,10 +178,15 @@ def run(acct, only=None, out_root=None, use_synthetic=False, force=False):
         print(f"[{acct['slug']}] motion_cover off - nothing to do")
         return 0
     sched = _load(acct.queue)
-    todo = [p for p in sched["posts"]
-            if p.get("status") == "queued" and p.get("format") == "reel"
-            and (force or not p.get("motion"))
-            and (only is None or p["id"] == only)]
+    if only and not live:
+        # A named post in a test render may be anything - held, retired, a
+        # carousel - since nothing is written back.
+        todo = [p for p in sched["posts"] if p["id"] == only]
+    else:
+        todo = [p for p in sched["posts"]
+                if p.get("status") == "queued" and p.get("format") == "reel"
+                and (force or not p.get("motion"))
+                and (only is None or p["id"] == only)]
     if not todo:
         print(f"[{acct['slug']}] no queued Reel needs a moving cover")
         return 0

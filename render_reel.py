@@ -167,15 +167,20 @@ class MotionCover:
     through, dimmed toward the brand background so the hook stays legible.
     """
 
-    DIM = 0.58          # share of brand background laid over the clip
+    DIM = 0.64          # share of brand background laid over the clip; at 0.58
+                        # small sub text over a bright ink cloud lost contrast
 
     def __init__(self, clip, slide, index, total):
         import numpy as np
         self.np = np
         self.frames = self._decode(clip)
+        # Cut the text out against the slide's own EMPTY canvas, not the flat
+        # brand colour: the canvas is a subtle gradient, and measured against
+        # BG it came out as a half-opaque box over the clip.
         a = np.asarray(slide, dtype=np.int16)
-        dist = np.abs(a - np.array(render_slides.BG, dtype=np.int16)).max(axis=2)
-        self.mask = Image.fromarray(np.clip(dist * 4, 0, 255).astype("uint8"))
+        empty = np.asarray(render_slides._canvas().convert("RGB"), dtype=np.int16)
+        dist = np.abs(a - empty).max(axis=2)
+        self.mask = Image.fromarray(np.clip(dist * 3, 0, 255).astype("uint8"))
         self.slide = slide
         self.index, self.total = index, total
         self.bg = Image.new("RGB", (W, H), render_slides.BG)
