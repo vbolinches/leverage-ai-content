@@ -62,6 +62,10 @@ SAFE_ADVICE = re.compile(
     r"abogad[oa] de inmigraci|asesor[ií]a legal|"
     r"revisa\w* (bien )?(tu|el|las|los|en)\b|verifica\w*\b|confirma\w* (en|con|que)|"
     r"no pagues a nadie|estafa|fraude|desconf[ií]a|"
+    # Saying what the page does NOT say is the honest fallback the arc asks
+    # for when a source names no wider group - it is not a claim about law.
+    r"(la p[aá]gina|el aviso|la regla|uscis) no (dice|explica|aclara|menciona)|"
+    r"lee\w* el aviso|link en la descripci|"
     r"save this|share this|consult an? (immigration )?(attorney|lawyer)|"
     r"check your (case|status|dates)|verify (it |this )?on",
     re.I)
