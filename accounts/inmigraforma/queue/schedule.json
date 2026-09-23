@@ -1328,6 +1328,22 @@
       "format": "reel",
       "video": "accounts/inmigraforma/queue/post81-policy-manual-update/reel.mp4",
       "note": "RETIRED 2026-09-23 by the queue audit, before publishing: written by the local model before the fact-check existed, and it fails it (9 problem(s)), e.g. slide 5: the headline 'El sistema' is the template's placeholder, not a headline — write what this slide actually tells  | CONTRADICTS THE SOURCE — the post says: 'El manual USCIS es su guía. Actualizado, sin nuevas reglas. Como el de una tien. Restore by setting status back to 'queued'."
+    },
+    {
+      "id": "post82-sevis-corte-programado",
+      "date": "2026-09-24",
+      "slides": [
+        "accounts/inmigraforma/queue/post82-sevis-corte-programado/slide01.png",
+        "accounts/inmigraforma/queue/post82-sevis-corte-programado/slide02.png",
+        "accounts/inmigraforma/queue/post82-sevis-corte-programado/slide03.png",
+        "accounts/inmigraforma/queue/post82-sevis-corte-programado/slide04.png",
+        "accounts/inmigraforma/queue/post82-sevis-corte-programado/slide05.png"
+      ],
+      "caption": "El sistema SEVIS tuvo un corte programado el 14 de septiembre de 2026 a las 8:00 PM (EDT) para una actualización. El guía oficial no menciona impacto en el estatus de estudiante.\n\nEn palabras simples:\nSEVIS tuvo un corte programado para una actualización. El corte comenzó el 14 de septiembre a las 8:00 PM.\n\nIn plain words: The SEVIS system had a scheduled outage on September 14, 2026, at 8:00 PM (EDT) for an update. The official guide does not mention impact on student status.\n\nFuente oficial: https://studyinthestates.dhs.gov/sevis-help-hub/sevis-release-planning-guide-6891\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#sevis #estudiantes #visa #estadounidenses #migracion #sevisupdate #greencard #immigration #studentstatus",
+      "status": "held",
+      "format": "reel",
+      "video": "accounts/inmigraforma/queue/post82-sevis-corte-programado/reel.mp4",
+      "note": "HELD 2026-09-23 (owner's call): true but aimed at school officials rather than regular immigrants, so fresh posts go first. Goes back in the queue after them."
     }
   ]
 }
