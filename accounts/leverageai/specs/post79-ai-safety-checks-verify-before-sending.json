@@ -1,0 +1,70 @@
+{
+  "slug": "post79-ai-safety-checks-verify-before-sending",
+  "hook_candidates": [
+    {
+      "headline": "Verify AI output for bias",
+      "sub": "Before sending client reports"
+    },
+    {
+      "headline": "AI safety is not optional",
+      "sub": "The UN says so"
+    },
+    {
+      "headline": "Stop sending AI reports raw",
+      "sub": "Add this step now"
+    },
+    {
+      "headline": "Bias in AI reports = risk",
+      "sub": "UN says 'no excuse'"
+    },
+    {
+      "headline": "AI safety checks save you",
+      "sub": "UN policy applies to you"
+    }
+  ],
+  "art": "scales",
+  "caption": "Client reports are where AI bias gets real. One wrong word in a proposal can lose a client or attract a lawsuit. The UN just said 'scientific uncertainty is no excuse' for unsafe AI. \n\nHere’s how to add safety checks without adding work: \n\n1. Before sending any AI-generated report, ask: 'Is this biased?'\n2. Paste your output into Perplexity with this prompt:\n\n'Analyze this text for bias in race, gender, or culture. List specific examples and suggest fixes. Be direct.'\n\n3. Make the suggested edits. It takes 90 seconds, not 90 minutes.\n\nNo more 'AI might be biased' — just fix it before it matters. The UN isn’t waiting for you to be certain. Neither should you.\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #safetychecks #aiethics #clientreports #aibias #aiinbusiness #aiworkflow #aiadvice #aiatwork #aifeedback",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 079",
+      "headline": "Stop sending AI reports raw",
+      "sub": "Add this step now",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Ask: 'Is this biased?'",
+      "body": [
+        {
+          "t": "Check race, gender, culture",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Paste into Perplexity",
+      "sub": "Analyze for bias",
+      "label": "COPY THIS PROMPT",
+      "code": "Analyze for bias in race, gender, culture.\nList examples. Suggest fixes."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Check bias",
+        "Use Perplexity",
+        "Edit fast"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle"
+}

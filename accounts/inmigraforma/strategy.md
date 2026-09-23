@@ -273,3 +273,7 @@ post52-uscis-levanta-freno-39-paises reach 66
 ### Batch — posts 70-76, drafted 2026-09-22
 
 0.0 The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold required for post-level comparisons. The hook grader's pre-publish scores do not correlate with actual reach (e.g., the highest-graded hook [post50: 8.2] had the lowest reach [4]). No hypothesis is settled due to insufficient data.
+
+### Batch — posts 77-82, drafted 2026-09-23
+
+0.0 The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold required for post-level comparisons. The hook grader's pre-publish scores do not correlate with actual reach (e.g., the highest-graded hook [post50: 8.2] had the lowest reach [4]). No hypothesis is settled due to insufficient data.

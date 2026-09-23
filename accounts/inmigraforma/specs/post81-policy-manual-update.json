@@ -1,0 +1,80 @@
+{
+  "slug": "post81-policy-manual-update",
+  "hook_candidates": [
+    {
+      "headline": "No es una nueva regla, es la guía actualizada",
+      "sub": "La guía de USCIS ahora tiene más detalles para tu caso."
+    },
+    {
+      "headline": "Tu caso no cambia, pero la guía sí",
+      "sub": "USCIS actualizó su manual de políticas."
+    },
+    {
+      "headline": "Nunca hay que ignorar el manual",
+      "sub": "USCIS lo actualizó y ahora es más claro."
+    },
+    {
+      "headline": "¿Sabías que el manual de USCIS cambió?",
+      "sub": "No es una nueva regla, pero es importante."
+    },
+    {
+      "headline": "El manual de USCIS está más claro ahora",
+      "sub": "No significa un cambio en tus derechos."
+    }
+  ],
+  "art": "document",
+  "caption": "El manual de políticas de USCIS se actualizó hoy con más detalles para casos de inmigración. Contiene información sobre ciudadanía, naturalización y ajuste de estatus.\n\nEn palabras simples: El manual de políticas de USCIS es una guía que explica cómo toman decisiones. Ahora está actualizado, pero no hay cambios nuevos en las reglas.\n\nEl texto oficial dice: 'El Manual de Políticas de USCIS contiene las políticas y procedimientos que aplican a las solicitudes de inmigración.'\n\nEn palabras simples: Esto significa que el manual explica cómo funcionan las reglas. Si no sigues las reglas en el manual, tu caso podría retrasarse o ser rechazado.\n\nIn plain words: The USCIS Policy Manual now has more details on immigration cases, but no new rules.\n\nFuente oficial: https://www.uscis.gov/policy-manual\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #greencard #uscis #politicas #manual #inmigrante #proceso #estadosunidos #inmigracionen espanol #noticiasinmigracion",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 081",
+      "headline": "Tu caso no cambia, pero la guía sí",
+      "sub": "USCIS actualizó su manual de políticas.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": "El manual USCIS es su guía. Actualizado, sin nuevas reglas. Como el de una tienda, solo más detalles."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "El manual explica cómo USCIS toma decisiones. Ahora está más detallado, pero las reglas son las mismas.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Te toca?",
+      "body": [
+        {
+          "t": "Si ya tienes tu Green Card, no afecta. Si estás aplicando, usa el manual actualizado.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "Usa el manual actualizado",
+        "No hay cambios en las reglas",
+        "Verifica en uscis.gov"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/policy-manual"
+}

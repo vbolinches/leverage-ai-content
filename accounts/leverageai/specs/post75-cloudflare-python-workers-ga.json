@@ -1,0 +1,74 @@
+{
+  "slug": "post75-cloudflare-python-workers-ga",
+  "hook_candidates": [
+    {
+      "headline": "Stop buying server time",
+      "sub": "Build AI tools on Cloudflare"
+    },
+    {
+      "headline": "No servers needed",
+      "sub": "Python AI tools with Cloudflare Workers"
+    },
+    {
+      "headline": "Your AI tools don't need servers",
+      "sub": "Deploy with Python on Cloudflare"
+    },
+    {
+      "headline": "Serverless AI tools: done",
+      "sub": "Python on Cloudflare Workers"
+    },
+    {
+      "headline": "AI tools without servers",
+      "sub": "Python on Cloudflare Workers"
+    }
+  ],
+  "art": "folder",
+  "caption": "Freelancers often waste hours setting up servers for simple AI tools. Now, Python Workers on Cloudflare are generally available—no servers, no scaling headaches. You run Python via Pyodide in WebAssembly (123MB binary). It’s ideal for client portals, automated reports, or internal tools.\n\nCopy this prompt to generate a Cloudflare Worker template:\n\n\"Create a Cloudflare Worker template using Python with Pyodide. Include:\n- A simple API endpoint\n- Handling HTTP requests\n- Basic error handling\n- Notes on WebAssembly limitations (no multiprocessing)\"\n\nSave this workflow for when you need to deploy a custom AI tool without managing servers. \n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #freelancer #cloudflare #python #serverless #ai #aidevelopment #devtools #freelancebusiness #aiagents",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 075",
+      "headline": "No more Python setup headaches",
+      "sub": "Save 3 hours/week on AI tool deployment",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Python on Cloudflare",
+      "body": [
+        {
+          "t": "Run Python via Pyodide in WebAssembly.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "No servers, no scaling",
+      "body": [
+        {
+          "t": "Use 123MB binary for client portals or reports.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Python Workers",
+        "No servers",
+        "WebAssembly"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/"
+}

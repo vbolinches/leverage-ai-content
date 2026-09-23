@@ -1,0 +1,74 @@
+{
+  "slug": "post78-mcp-secure-client-data-integrations",
+  "hook_candidates": [
+    {
+      "headline": "Stop sharing keys with clients.",
+      "sub": "MCP keeps data safe."
+    },
+    {
+      "headline": "Your AI leaks API keys. Fix it.",
+      "sub": "MCP enforces access."
+    },
+    {
+      "headline": "You're giving away keys. Stop.",
+      "sub": "MCP controls integrations."
+    },
+    {
+      "headline": "API keys in client chats? No.",
+      "sub": "MCP blocks leaks."
+    },
+    {
+      "headline": "Clients see your keys. Fix now.",
+      "sub": "MCP secures access."
+    }
+  ],
+  "art": "email",
+  "caption": "Client proposals often include API keys accidentally, risking data leaks. MCP (Model Context Protocol) stops this by letting your AI connect only to approved services like Stripe without manual code.\n\nMCP lets you create a UI to connect services securely. It logs every action, so you can audit who accessed what. You don't need to write code to enforce 'only Stripe can access client data'.\n\nCopy this prompt to set up MCP:\n\n\"Set up secure integration with Stripe for [client name]. Only allow Stripe to access client data. Log all actions for audit.\"\n\nSave this workflow for when your AI tries to share keys. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #aiworkflow #mcp #datasecurity #clientproposals #aiintegration #secureai #businesssecurity #aiagent #aibusiness",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 078",
+      "headline": "Your AI leaks API keys. Fix it.",
+      "sub": "MCP enforces access.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Connect services via UI",
+      "body": [
+        {
+          "t": "No code. MCP lets AI connect to approved services only.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Enforce access rules",
+      "body": [
+        {
+          "t": "Define 'only Stripe can access data.' MCP handles it.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Secure UI",
+        "Audit logs",
+        "No code"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://simonwillison.net/2026/Sep/20/hn-49779718/"
+}

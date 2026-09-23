@@ -1150,6 +1150,88 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post74-client-approval-invoices/reel.mp4"
+    },
+    {
+      "id": "post75-cloudflare-python-workers-ga",
+      "date": "2026-09-28",
+      "slides": [
+        "accounts/leverageai/queue/post75-cloudflare-python-workers-ga/slide01.png",
+        "accounts/leverageai/queue/post75-cloudflare-python-workers-ga/slide02.png",
+        "accounts/leverageai/queue/post75-cloudflare-python-workers-ga/slide03.png",
+        "accounts/leverageai/queue/post75-cloudflare-python-workers-ga/slide04.png"
+      ],
+      "caption": "Freelancers often waste hours setting up servers for simple AI tools. Now, Python Workers on Cloudflare are generally available—no servers, no scaling headaches. You run Python via Pyodide in WebAssembly (123MB binary). It’s ideal for client portals, automated reports, or internal tools.\n\nCopy this prompt to generate a Cloudflare Worker template:\n\n\"Create a Cloudflare Worker template using Python with Pyodide. Include:\n- A simple API endpoint\n- Handling HTTP requests\n- Basic error handling\n- Notes on WebAssembly limitations (no multiprocessing)\"\n\nSave this workflow for when you need to deploy a custom AI tool without managing servers. \n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #freelancer #cloudflare #python #serverless #ai #aidevelopment #devtools #freelancebusiness #aiagents",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post75-cloudflare-python-workers-ga/reel.mp4"
+    },
+    {
+      "id": "post76-jev-client-decision-models",
+      "date": "2026-09-29",
+      "slides": [
+        "accounts/leverageai/queue/post76-jev-client-decision-models/slide01.png",
+        "accounts/leverageai/queue/post76-jev-client-decision-models/slide02.png",
+        "accounts/leverageai/queue/post76-jev-client-decision-models/slide03.png",
+        "accounts/leverageai/queue/post76-jev-client-decision-models/slide04.png"
+      ],
+      "caption": "Client scoring has always been guesswork. What if you could get a confidence score instead? Jev’s API gives floating-point numbers for yes/no questions, like 'Is this client likely to pay on time?'\n\nAt $0.042/million tokens (input only), it’s cheaper than GPT-5 Nano for high-volume use. Here’s how to use it:\n\nCopy this prompt:\n\n'Rate this client on a scale of 0.0 to 1.0:\n\nName: [Client Name]\nCompany: [Company]\nPayment history: [History]\n\nScore:'\n\nThe API will return a number like 0.87. Use that to prioritize clients or reject bad ones.\n\nSave this prompt — it’s a time-saver for every client decision.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #clientdecisions #aiassistant #businessautomation #freelancerlife #soloconsultant #smallbusiness #aiforbusiness #jevapi #aiplanning",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post76-jev-client-decision-models/reel.mp4"
+    },
+    {
+      "id": "post77-code-review-flaws",
+      "date": "2026-09-30",
+      "slides": [
+        "accounts/leverageai/queue/post77-code-review-flaws/slide01.png",
+        "accounts/leverageai/queue/post77-code-review-flaws/slide02.png",
+        "accounts/leverageai/queue/post77-code-review-flaws/slide03.png",
+        "accounts/leverageai/queue/post77-code-review-flaws/slide04.png"
+      ],
+      "caption": "You’re hiring developers but AI-generated code can’t pass a basic review. 20-25 minutes per candidate, test for real skills with intentional flaws.  \n\nAsk them to spot critical errors in sample code (e.g., missing auth, `System.out` logging). If they miss obvious issues, they don’t understand their output.  \n\nCopy-paste this prompt:\n\nReview this code for critical flaws:\n\n- Missing authentication\n- `System.out` logging in production\n- Unhandled exceptions\n\nExplain why each is a problem and how to fix it.\n\nSave this workflow for your next dev interview.  \nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #hiring #dev #tech #interview #recruiting #coding #developer #aihiring #devhiring",
+      "status": "queued"
+    },
+    {
+      "id": "post78-mcp-secure-client-data-integrations",
+      "date": "2026-10-01",
+      "slides": [
+        "accounts/leverageai/queue/post78-mcp-secure-client-data-integrations/slide01.png",
+        "accounts/leverageai/queue/post78-mcp-secure-client-data-integrations/slide02.png",
+        "accounts/leverageai/queue/post78-mcp-secure-client-data-integrations/slide03.png",
+        "accounts/leverageai/queue/post78-mcp-secure-client-data-integrations/slide04.png"
+      ],
+      "caption": "Client proposals often include API keys accidentally, risking data leaks. MCP (Model Context Protocol) stops this by letting your AI connect only to approved services like Stripe without manual code.\n\nMCP lets you create a UI to connect services securely. It logs every action, so you can audit who accessed what. You don't need to write code to enforce 'only Stripe can access client data'.\n\nCopy this prompt to set up MCP:\n\n\"Set up secure integration with Stripe for [client name]. Only allow Stripe to access client data. Log all actions for audit.\"\n\nSave this workflow for when your AI tries to share keys. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #aiworkflow #mcp #datasecurity #clientproposals #aiintegration #secureai #businesssecurity #aiagent #aibusiness",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post78-mcp-secure-client-data-integrations/reel.mp4"
+    },
+    {
+      "id": "post79-ai-safety-checks-verify-before-sending",
+      "date": "2026-10-02",
+      "slides": [
+        "accounts/leverageai/queue/post79-ai-safety-checks-verify-before-sending/slide01.png",
+        "accounts/leverageai/queue/post79-ai-safety-checks-verify-before-sending/slide02.png",
+        "accounts/leverageai/queue/post79-ai-safety-checks-verify-before-sending/slide03.png",
+        "accounts/leverageai/queue/post79-ai-safety-checks-verify-before-sending/slide04.png"
+      ],
+      "caption": "Client reports are where AI bias gets real. One wrong word in a proposal can lose a client or attract a lawsuit. The UN just said 'scientific uncertainty is no excuse' for unsafe AI. \n\nHere’s how to add safety checks without adding work: \n\n1. Before sending any AI-generated report, ask: 'Is this biased?'\n2. Paste your output into Perplexity with this prompt:\n\n'Analyze this text for bias in race, gender, or culture. List specific examples and suggest fixes. Be direct.'\n\n3. Make the suggested edits. It takes 90 seconds, not 90 minutes.\n\nNo more 'AI might be biased' — just fix it before it matters. The UN isn’t waiting for you to be certain. Neither should you.\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #safetychecks #aiethics #clientreports #aibias #aiinbusiness #aiworkflow #aiadvice #aiatwork #aifeedback",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post79-ai-safety-checks-verify-before-sending/reel.mp4"
+    },
+    {
+      "id": "post81-ai-expense-categorization-in-quickbooks",
+      "date": "2026-10-03",
+      "slides": [
+        "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/slide01.png",
+        "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/slide02.png",
+        "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/slide03.png",
+        "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/slide04.png"
+      ],
+      "caption": "QuickBooks AI now includes expense categorization on all paid tiers — including Essentials, which used to require Advanced. If you correct a few entries, the AI gets better at tagging your expenses, saving you 80% of manual work.\n\nHere’s how to train it:\n\n1. Go to Expenses > Auto-Categorize\n2. Correct a few expense categories manually (e.g., \"Coffee Run\" → \"Office Supplies\")\n3. Confirm corrections to train the AI\n\nNo need for separate tools or complex setups — it’s built right into QuickBooks. Accuracy improves the more you correct.\n\nCopy this prompt:\n\n\"Categorize these expenses: [paste list here]\"\n\n(Use this when you need to manually tag a batch.)\n\nSave this for later, and follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#quickbooks #ai #bookkeeping #smallbusiness #freelancer #aiworkflow #expensetracking #quickbooksai #bookkeepingtips #aiassistant",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/reel.mp4"
     }
   ]
 }

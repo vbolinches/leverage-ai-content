@@ -1,0 +1,90 @@
+{
+  "slug": "post80-asylum-application-process",
+  "hook_candidates": [
+    {
+      "headline": "Aplica por asilo antes de 1 año",
+      "sub": "No esperes más, el plazo se acerca"
+    },
+    {
+      "headline": "¿Sabías que el plazo para asilo es de 1 año?",
+      "sub": "No es 3 años ni 2 meses, es 1."
+    },
+    {
+      "headline": "No esperes a llegar a 2 años para aplicar por asilo",
+      "sub": "La regla es clara: 1 año desde tu entrada."
+    },
+    {
+      "headline": "Aplica por asilo hoy, no mañana",
+      "sub": "El plazo de 1 año cuenta desde que llegaste."
+    },
+    {
+      "headline": "1 año para aplicar por asilo, no más",
+      "sub": "¿Ya pasó tu año? No te preocupes, lee esto."
+    }
+  ],
+  "art": "folder",
+  "caption": "¿Quieres aplicar por asilo en EE.UU.? La regla es clara: debes mandar tu formulario (I-589) dentro de 1 año desde que llegaste al país. Si no lo haces, podrías perder el derecho a pedir asilo.\n\nEn palabras simples: si llegaste el 15 de enero de 2024, debes enviar el I-589 antes del 15 de enero de 2025. Si llegaste después de 1 año, no puedes aplicar por asilo de forma afirmativa.\n\nOfficial text: \"Applicants must file Form I-589 within one year of arrival.\" (Source: USCIS, 2023).\n\nIn plain words: You must file your asylum application within 1 year of entering the U.S. Filing late means you can't apply for asylum.\n\nFuente oficial: https://www.uscis.gov/humanitarian/refugees-and-asylum/asylum\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#asilo #inmigracion #uscis #greencard #refugiados #solicitud #proceso #migracion #lealtad #inmigrantes",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 080",
+      "headline": "Aplica por asilo hoy, no mañana",
+      "sub": "El plazo de 1 año cuenta desde que llegaste.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": "Llegaste a EE. UU.? Envía I-589 en 1 año. Pasar año = no asilo. Igual que el permiso: si no renovas, pierdes derecho."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": [
+        {
+          "t": "Mandar papeles en 1 año desde llegada. Pasar = no asilo.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Green Card no afecta. Pasó año? No aplicar.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Quién debe aplicar?",
+      "body": [
+        {
+          "t": "Últimos 365 días: mandar I-589 ahora.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Green Card: no afecta. Pasó año? No aplicar.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "Aplica en 1 año",
+        "No esperes",
+        "No aplicar tarde"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/humanitarian/refugees-and-asylum/asylum"
+}

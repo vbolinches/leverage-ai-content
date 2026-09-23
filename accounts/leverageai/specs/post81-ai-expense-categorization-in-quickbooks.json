@@ -1,0 +1,74 @@
+{
+  "slug": "post81-ai-expense-categorization-in-quickbooks",
+  "hook_candidates": [
+    {
+      "headline": "Cut bookkeeping time 80%.",
+      "sub": "Train QuickBooks AI now"
+    },
+    {
+      "headline": "80% less bookkeeping time.",
+      "sub": "With QuickBooks AI"
+    },
+    {
+      "headline": "QuickBooks AI now on Essentials.",
+      "sub": "Train it in 3 steps"
+    },
+    {
+      "headline": "You don't need Advanced.",
+      "sub": "Use QuickBooks AI on Essentials"
+    },
+    {
+      "headline": "Manual bookkeeping costs $200/month.",
+      "sub": "Automate with QuickBooks AI"
+    }
+  ],
+  "art": "scales",
+  "caption": "QuickBooks AI now includes expense categorization on all paid tiers — including Essentials, which used to require Advanced. If you correct a few entries, the AI gets better at tagging your expenses, saving you 80% of manual work.\n\nHere’s how to train it:\n\n1. Go to Expenses > Auto-Categorize\n2. Correct a few expense categories manually (e.g., \"Coffee Run\" → \"Office Supplies\")\n3. Confirm corrections to train the AI\n\nNo need for separate tools or complex setups — it’s built right into QuickBooks. Accuracy improves the more you correct.\n\nCopy this prompt:\n\n\"Categorize these expenses: [paste list here]\"\n\n(Use this when you need to manually tag a batch.)\n\nSave this for later, and follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#quickbooks #ai #bookkeeping #smallbusiness #freelancer #aiworkflow #expensetracking #quickbooksai #bookkeepingtips #aiassistant",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 081",
+      "headline": "Manual bookkeeping costs $200/month.",
+      "sub": "Automate with QuickBooks AI",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Go to Expenses > Auto-Categorize",
+      "body": [
+        {
+          "t": "Correct 2-3 entries",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Correct entries manually",
+      "body": [
+        {
+          "t": "e.g. \"Coffee Run\" → \"Office Supplies\"",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Auto-categorize",
+        "Correct 2-3",
+        "Train AI"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://aisotools.com/pricing/quickbooks-ai"
+}

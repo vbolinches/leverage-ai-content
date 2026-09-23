@@ -1,0 +1,70 @@
+{
+  "slug": "post76-jev-client-decision-models",
+  "hook_candidates": [
+    {
+      "headline": "Score clients with AI, not guesswork.",
+      "sub": "0.87 confidence score"
+    },
+    {
+      "headline": "Stop guessing if clients will pay on time.",
+      "sub": "AI gives a number"
+    },
+    {
+      "headline": "Your client scoring is wrong.",
+      "sub": "It’s time for a number"
+    },
+    {
+      "headline": "Is this client worth your time?",
+      "sub": "Answer: 0.87"
+    },
+    {
+      "headline": "Client decisions cost you time.",
+      "sub": "AI answers in seconds"
+    }
+  ],
+  "art": "chart",
+  "caption": "Client scoring has always been guesswork. What if you could get a confidence score instead? Jev’s API gives floating-point numbers for yes/no questions, like 'Is this client likely to pay on time?'\n\nAt $0.042/million tokens (input only), it’s cheaper than GPT-5 Nano for high-volume use. Here’s how to use it:\n\nCopy this prompt:\n\n'Rate this client on a scale of 0.0 to 1.0:\n\nName: [Client Name]\nCompany: [Company]\nPayment history: [History]\n\nScore:'\n\nThe API will return a number like 0.87. Use that to prioritize clients or reject bad ones.\n\nSave this prompt — it’s a time-saver for every client decision.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #clientdecisions #aiassistant #businessautomation #freelancerlife #soloconsultant #smallbusiness #aiforbusiness #jevapi #aiplanning",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 076",
+      "headline": "Score clients with AI, not guesswork.",
+      "sub": "0.87 confidence score",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Ask the API a question.",
+      "body": [
+        {
+          "t": "Input: 'Rate on 0.0 to 1.0: [Client details]'",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "eyebrow": "STEP 2",
+      "headline": "Copy this prompt.",
+      "sub": "Use it for any yes/no question",
+      "label": "COPY THIS PROMPT",
+      "code": "Rate this client on a scale of 0.0 to 1.0:\n\nName: [Client Name]\nCompany: [Company]\nPayment history: [History]\n\nScore:"
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "0.0 to 1.0 score",
+        "0.042/million tokens",
+        "Prioritize clients"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://simonwillison.net/2026/Sep/21/jev/"
+}

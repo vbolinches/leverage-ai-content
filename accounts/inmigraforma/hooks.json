@@ -3327,6 +3327,259 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post77-visa-bulletin-2026-final",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Cómo saber si ya puedes aplicar?",
+        "sub": "El boletín de septiembre 2026 te dice cuándo es tu turno.",
+        "rank": 1,
+        "score": 7.0,
+        "shape": "category",
+        "stopping": "Directly answers a critical, urgent question they’re asking ('¿Cómo saber si ya puedes aplicar?') using simple, actionable language ('te dice cuándo es tu turno'). No jargon, no confusion, just 'this tells you your answer'.",
+        "reason": "This is the only hook that cuts through the noise with a clear, personal 'how do I know?' question they actually need answered. It’s the only one that makes them stop because it feels like a direct solution to their immediate anxiety.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Cómo saber si ya puedes aplicar?",
+          "rank": 1,
+          "score": 7.0,
+          "shape": "category",
+          "stopping": "Directly answers a critical, urgent question they’re asking ('¿Cómo saber si ya puedes aplicar?') using simple, actionable language ('te dice cuándo es tu turno'). No jargon, no confusion, just 'this tells you your answer'.",
+          "reason": "This is the only hook that cuts through the noise with a clear, personal 'how do I know?' question they actually need answered. It’s the only one that makes them stop because it feels like a direct solution to their immediate anxiety.",
+          "authored": false
+        },
+        {
+          "headline": "Error común: ¡no esperes más!",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Flags a common mistake ('Error común') and creates urgency ('¡no esperes más!'), but the subheading’s confusion about 'próximo año' (next year) might make them doubt if it’s relevant now.",
+          "reason": "Good instinct but the 'próximo año' phrasing risks making them skip it thinking 'this isn’t for me yet'—a common misstep this audience makes, but not strong enough to override the confusion.",
+          "authored": false
+        },
+        {
+          "headline": "¿Ya revisaste tu fecha de prioridad?",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Uses 'fecha de prioridad' (a term they might not understand) and feels passive ('¿Ya revisaste?'). It’s factual but not urgent enough to stop scrolling.",
+          "reason": "They’d scroll past because it assumes they already know what 'fecha de prioridad' means, which they likely don’t. No urgency to act now.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "¡Boletín de visas de septiembre",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Boring bureaucratic phrasing ('boletín de visas de septiembre', 'año fiscal 2026'). Feels like a generic government notice they’ve seen before.",
+          "reason": "No hook, just a dry announcement. They’d scroll past without a second thought.",
+          "authored": true
+        },
+        {
+          "headline": "¡Ojo con las fechas!",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Overstates urgency: '¡Ojo con las fechas!' and '¡No esperes más!' imply immediate danger if they don’t act *now*, but the bulletin’s release doesn’t change deadlines for most people. This could make them panic unnecessarily.",
+          "reason": "This violates the override rule: it falsely claims urgency (no penalty for waiting 24 hours), risking trust. A low score for false alarm.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post78-h2a-fraud-charge-impact",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "El fraude en visas H-2A sigue creciendo",
+        "sub": "Cinco acusados por explotación",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "category",
+        "stopping": "H-2A is a specific visa they’d recognize from their own experience. 'Sigue creciendo' (keeps growing) creates urgency without exaggeration. They’ll pause: 'Is my visa affected?'",
+        "reason": "Strong hook with concrete visa term, clear trend, and zero overstatement. Directly taps into their lived reality.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "El fraude en visas H-2A sigue creciendo",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "category",
+          "stopping": "H-2A is a specific visa they’d recognize from their own experience. 'Sigue creciendo' (keeps growing) creates urgency without exaggeration. They’ll pause: 'Is my visa affected?'",
+          "reason": "Strong hook with concrete visa term, clear trend, and zero overstatement. Directly taps into their lived reality.",
+          "authored": false
+        },
+        {
+          "headline": "5 acusados fraude visas.",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Too vague: 'fraude visas' isn’t how they’d say it, '5 acusados' feels like news for lawyers, not workers. No 'you' or 'your situation'.",
+          "reason": "Passive language, jargon, and no personal relevance. They’ll scroll past thinking 'Not about me'.",
+          "authored": true
+        },
+        {
+          "headline": "Trabajo en campo no es siempre seguro",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "‘Trabajo en campo’ is confusing (field? crop field? general?) and ‘no es seguro’ is a weak, passive pain point. No visa name, no clarity.",
+          "reason": "Generic, untargeted, and feels like advice they’ve heard before. No reason to stop.",
+          "authored": false
+        },
+        {
+          "headline": "No es solo el salario bajo",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Overstates consequence: ‘No es solo salario bajo’ implies *all* low pay = fraud. But H-2A fraud is specific (e.g., withholding wages, fake contracts), not just low pay. Could make readers panic they’re being scammed when they’re not.",
+          "reason": "Override rule: False alarm risks trust. They’d think 'My $10/hour job is fraud?' → panic → scroll away, then distrust the account. Score 2.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post80-asylum-application-process",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Aplica por asilo hoy, no mañana",
+        "sub": "El plazo de 1 año cuenta desde que llegaste.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "number-claim",
+        "stopping": "Clear urgency + factual correction. 'Hoy, no mañana' forces action, and subtext fixes the #1 misunderstanding (deadline starts at arrival, not now). No false alarm.",
+        "reason": "D is the only one that correctly states the deadline starts from arrival (not 'before 1 year' from now), so it stops people who might otherwise scroll past thinking 'I have a year'—but actually, if they arrived 11 months ago, they’re already past the deadline. This is the *only* hook that prevents dangerous misinterpretation.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Aplica por asilo hoy, no mañana",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "Clear urgency + factual correction. 'Hoy, no mañana' forces action, and subtext fixes the #1 misunderstanding (deadline starts at arrival, not now). No false alarm.",
+          "reason": "D is the only one that correctly states the deadline starts from arrival (not 'before 1 year' from now), so it stops people who might otherwise scroll past thinking 'I have a year'—but actually, if they arrived 11 months ago, they’re already past the deadline. This is the *only* hook that prevents dangerous misinterpretation.",
+          "authored": false
+        },
+        {
+          "headline": "1 año para aplicar por asilo, no más",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "Urgency ('no más') but confusing subtext. '¿Ya pasó tu año?' assumes people know their arrival date—most don’t, so they scroll past.",
+          "reason": "The 'no más' creates false urgency, but the subtext's question ('¿Ya pasó tu año?') will make most readers scroll past because they can’t answer it. They’ll think 'I don’t even know when I arrived' and move on.",
+          "authored": false
+        },
+        {
+          "headline": "Aplica por asilo antes de 1 año",
+          "rank": 3,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "False hook: 'antes de 1 año' implies deadline is from now (not arrival), risking people delaying until it’s too late. This is the override violation.",
+          "reason": "A and C both falsely claim a general '1 year' deadline (like 'apply within 1 year'), when it’s actually 1 year *from arrival*. This is a known trap that causes people to miss the deadline—so it gets a low score for being false, per the override rule.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Aplica por asilo antes de 1 año",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "Identical to A but ranked lower to avoid tie. Still a false hook with the same dangerous misstatement.",
+          "reason": "C is a duplicate of A (same text), so it’s equally false. Scored lower only to comply with 'no shared ranks'—but both are equally damaging.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post81-policy-manual-update",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Tu caso no cambia, pero la guía sí",
+        "sub": "USCIS actualizó su manual de políticas.",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "mistake",
+        "stopping": "Directly answers 'what does this mean for me?' with 'tu caso no cambia' (no impact) + 'guía sí' (actionable clarity). Instantly relevant to the audience's fear of change. Sub confirms it's not a rule change. Stops scrollers by resolving uncertainty.",
+        "reason": "Personalized urgency + immediate clarity on no impact.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Tu caso no cambia, pero la guía sí",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "mistake",
+          "stopping": "Directly answers 'what does this mean for me?' with 'tu caso no cambia' (no impact) + 'guía sí' (actionable clarity). Instantly relevant to the audience's fear of change. Sub confirms it's not a rule change. Stops scrollers by resolving uncertainty.",
+          "reason": "Personalized urgency + immediate clarity on no impact.",
+          "authored": false
+        },
+        {
+          "headline": "¿Sabías que el manual de USCIS cambió?",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "mistake",
+          "stopping": "Question hook ('¿Sabías...?') is engaging but vague. Sub clarifies it's not a rule change but 'important'—which feels like a weak sell. Scrollers may think 'I don't need to know this' and skip.",
+          "reason": "Question format wastes attention; 'important' lacks concrete relevance.",
+          "authored": false
+        },
+        {
+          "headline": "El manual de USCIS está más claro ahora",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "mistake",
+          "stopping": "States fact ('más claro') but offers no why-care. Sub clarifies no rights change, but the hook itself is passive and boring. Easy to scroll past as 'just another update'.",
+          "reason": "Factual but emotionally inert; no hook for panic or relief.",
+          "authored": false
+        },
+        {
+          "headline": "Nunca hay que ignorar el manual",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "mistake",
+          "stopping": "Emotional scare ('Nunca ignorar') without explaining *why*. Sub says it's clearer, but the hook makes readers feel guilty for not knowing—without showing how it helps them. Scrollers think 'not my problem'.",
+          "reason": "False urgency; no clear benefit stated.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "No hay nuevos cambios,",
+              "c": "blue"
+            },
+            {
+              "t": "solo más guía.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "mistake",
+          "stopping": "‘No hay nuevos cambios’ implies *nothing changed* (false, since manual updated), making readers think it’s irrelevant. ‘Solo más guía’ sounds dismissive. Actual sub clarifies it’s updated, but hook contradicts the sub’s urgency.",
+          "reason": "Misleading hook: claims 'no new changes' while manual *did* change (just not rules). Undermines trust. Scores below 3 due to false implication.",
+          "authored": true
+        }
+      ]
     }
   ]
 }

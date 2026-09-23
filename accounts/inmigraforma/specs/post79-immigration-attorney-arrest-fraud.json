@@ -1,0 +1,90 @@
+{
+  "slug": "post79-immigration-attorney-arrest-fraud",
+  "hook_candidates": [
+    {
+      "headline": "¡Atención! Tu asesor de inmigración podría ser falso.",
+      "sub": "¿Qué debes hacer si te contactan?"
+    },
+    {
+      "headline": "¿Sabías que hay abogados de inmigración que engañan?",
+      "sub": "El gobierno está actuando."
+    },
+    {
+      "headline": "¡Cuidado con los abogados de inmigración fraudulentos!",
+      "sub": "La policía atrapó a uno en Houston."
+    },
+    {
+      "headline": "No te dejes engañar: los abogados falsos son un riesgo real.",
+      "sub": "¿Cómo protegerte?"
+    },
+    {
+      "headline": "¿Te ofrecieron ayuda por dinero? Esto es lo que debes saber.",
+      "sub": "El gobierno está investigando."
+    }
+  ],
+  "art": "folder",
+  "caption": "El gobierno de EE.UU. arrestó a un abogado de inmigración en Houston por un esquema de fraude. La oficina de USCIS ayudó en la investigación. Esto no afecta a todos, pero es importante saber cómo identificar a los que no son legítimos.\n\nEn palabras simples: Si alguien te dice que puede ayudarte a obtener tu Green Card por una cantidad fija de dinero, ¡puede ser una estafa! Algunos abogados falsos prometen resultados rápidos y cobran mucho sin hacer nada. El gobierno está trabajando para proteger a las personas de estos engaños.\n\nOfficial text: 'The defendant allegedly recruited clients and charged fees for immigration services, but failed to provide the promised services or return payments.'\n\nWhat it means: They took money from people, promised help with immigration, but didn't do the work or give the money back. If you paid someone and they didn't help you, you can report them.\n\nIn plain words: Si te engañaron, reporta al gobierno.\n\nFuente oficial: https://www.uscis.gov/newsroom/news-releases/immigration-attorney-arrested-in-alleged-fraud-scheme\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #abogados #fraude #greencard #inmigracionenusa #asilo #noticias #proteccion #estafas #inmigrantes",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 079",
+      "headline": "¡Atención! Asesor falso 2024.",
+      "sub": "¿Qué hacer si te contactan?",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Qué significa esto.",
+      "body": [
+        {
+          "t": "Si te prometen ayuda por dinero fijo, ¡puede ser estafa!",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Abogados falsos cobran mucho y no hacen nada.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Qué dice ese texto.",
+      "body": "Arrestan abogado en Houston por engañar con promesas inmigratorias. Si pagaste y no ayudaron, reporta. Es crimen."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Me afecta a mí?",
+      "body": [
+        {
+          "t": "Si usaste un servicio, verifica si es real.",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Si no usaste ninguno, no te afecta.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "El sistema",
+      "items": [
+        "Verifica el abogado",
+        "No pagues por promesas",
+        "Reporta si te engañaron"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/news-releases/immigration-attorney-arrested-in-alleged-fraud-scheme"
+}

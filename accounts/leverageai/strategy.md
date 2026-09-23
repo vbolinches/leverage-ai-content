@@ -195,6 +195,10 @@ Disproven — stop using the hook grader. The pre-publish hook grades (8.4, 7.2,
 
 Confirmed: Concrete-pain hooks beat instruction/scold hooks. Disproven: Hook grader predicting reach. Best posts (post55, post50, post44) all used concrete-pain hooks (cost/mistake) and had high reach (61, 38, 34). Worst posts (post47, post54) used similar hook shapes but had low reach (4, 4) due to unclear framing (e.g., post54: 'Go saves $12. Costs Agent mode.' was technical, not pain-focused). Hook grades (8.6, 8.2, 7.2, 6.5, 8.2, 9.5) showed no correlation with reach (61, 38, 34, 4, 4, 1).
 
+## Batch notes — posts 75-81 (2026-09-23)
+
+Performance of posts 50-56 confirms concrete-pain hooks (e.g., 'You're paying for the same job twice' for post55, 'Your invoice tool is broken' for post60) drive higher reach than vague/technical hooks (e.g., 'Go saves $12. Costs Agent mode' for post54). The hook grader is disproven. All posts in this batch use concrete-pain hooks with specific pain points (e.g., 'Stop buying server time', 'Score clients with AI') and maintain reel format. Topic screened against median-solo-operator task test. Avoid framing that led to low reach (vague/technical hooks). Best posts (50,55,60) used concrete-pain hooks with specific pain points (cost/mistake/change shapes) and reached 38-100. Worst posts (47,54,56) used vague/technical hooks despite similar shapes (cost/mistake) and reached 1-4. Hook grades (6.5-9.5) showed no correlation with reach (4-100).
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

@@ -1,0 +1,83 @@
+{
+  "slug": "post77-code-review-flaws",
+  "hook_candidates": [
+    {
+      "headline": "Spot-check devs' skills",
+      "sub": "No AI allowed"
+    },
+    {
+      "headline": "Stop trusting AI code",
+      "sub": "Test for flaws"
+    },
+    {
+      "headline": "Find AI-generated code",
+      "sub": "Real skills test"
+    },
+    {
+      "headline": "Dev test: spot flaws",
+      "sub": "20 mins/candidate"
+    },
+    {
+      "headline": "AI code fails here",
+      "sub": "Real skills test"
+    }
+  ],
+  "art": "checklist",
+  "caption": "You’re hiring developers but AI-generated code can’t pass a basic review. 20-25 minutes per candidate, test for real skills with intentional flaws.  \n\nAsk them to spot critical errors in sample code (e.g., missing auth, `System.out` logging). If they miss obvious issues, they don’t understand their output.  \n\nCopy-paste this prompt:\n\nReview this code for critical flaws:\n\n- Missing authentication\n- `System.out` logging in production\n- Unhandled exceptions\n\nExplain why each is a problem and how to fix it.\n\nSave this workflow for your next dev interview.  \nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #hiring #dev #tech #interview #recruiting #coding #developer #aihiring #devhiring",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 077",
+      "headline": [
+        {
+          "t": "Spot-check ",
+          "c": "blue"
+        },
+        {
+          "t": "skills.",
+          "c": "blue"
+        }
+      ],
+      "sub": "No AI allowed",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Review code",
+      "body": [
+        {
+          "t": "Spot flaws",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 2",
+      "headline": "Find errors",
+      "body": [
+        {
+          "t": "Missing auth, `System.out`, exceptions",
+          "c": "blue",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The system",
+      "items": [
+        "Spot flaws",
+        "Find errors",
+        "Real skills test"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://news.ycombinator.com/item?id=49768826"
+}

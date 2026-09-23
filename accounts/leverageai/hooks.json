@@ -3554,6 +3554,642 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post75-cloudflare-python-workers-ga",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "No more Python setup headaches",
+        "sub": "Save 3 hours/week on AI tool deployment",
+        "rank": 1,
+        "score": 1.0,
+        "shape": "before-after",
+        "stopping": "Dev jargon (Python setup) + irrelevant pain (no solo operator does this)",
+        "reason": "Directly violates 'dev-tool topics' disproof. 'Setup headaches' is a developer pain, not a solo operator's reality. Instant scroll.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No more Python setup headaches",
+          "rank": 1,
+          "score": 1.0,
+          "shape": "before-after",
+          "stopping": "Dev jargon (Python setup) + irrelevant pain (no solo operator does this)",
+          "reason": "Directly violates 'dev-tool topics' disproof. 'Setup headaches' is a developer pain, not a solo operator's reality. Instant scroll.",
+          "authored": false
+        },
+        {
+          "headline": "No servers needed",
+          "rank": 2,
+          "score": 1.2,
+          "shape": "change",
+          "stopping": "Dev jargon (Python, Cloudflare Workers) + false promise",
+          "reason": "Uses 'Python' and 'Cloudflare Workers' - explicitly rejected in disproofs. Audience scrolls past 'not for me'.",
+          "authored": false
+        },
+        {
+          "headline": "Your AI tools don't need servers",
+          "rank": 3,
+          "score": 1.5,
+          "shape": "change",
+          "stopping": "Dev jargon ('Deploy') + irrelevant pain",
+          "reason": "‘Deploy with Python’ is a developer task. Solo operators don’t deploy tools - they use SaaS. Scrolling default.",
+          "authored": false
+        },
+        {
+          "headline": "Serverless AI tools: done",
+          "rank": 4,
+          "score": 1.8,
+          "shape": "change",
+          "stopping": "Tech term ('Serverless') + dev jargon",
+          "reason": "‘Serverless AI tools’ is a developer phrase. Audience sees ‘serverless’ and scrolls - no relevance to their daily work.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Stop buying server time",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 2.1,
+          "shape": "change",
+          "stopping": "Dev framing ('Build AI tools') + vague pain",
+          "reason": "‘Build AI tools’ implies technical skill. Solo operators don’t build tools - they use them. Weak stop.",
+          "authored": true
+        },
+        {
+          "headline": "Stop buying server time",
+          "rank": 6,
+          "score": 2.3,
+          "shape": "change",
+          "stopping": "Identical to C - same dev misalignment",
+          "reason": "Duplicate of C (identical text). Ranked after C due to position in list, but same failure.",
+          "authored": false
+        },
+        {
+          "headline": "AI tools without servers",
+          "rank": 7,
+          "score": 2.5,
+          "shape": "change",
+          "stopping": "Worst dev combo (Python + Cloudflare)",
+          "reason": "‘Python on Cloudflare Workers’ is the most technical phrase. Audience scrolls immediately.",
+          "authored": false
+        },
+        {
+          "headline": "Your AI tools are crashing daily",
+          "rank": 8,
+          "score": 3.0,
+          "shape": "before-after",
+          "stopping": "Irrelevant pain ('crashing') + false urgency",
+          "reason": "‘Crashing daily’ isn’t a solo operator pain (they use pre-built tools). Stops scrollers briefly but fails relevance test.",
+          "authored": false
+        },
+        {
+          "headline": "Server costs are eating your profits",
+          "rank": 9,
+          "score": 3.5,
+          "shape": "change",
+          "stopping": "Misaligned pain ('server costs' - not a real cost for them)",
+          "reason": "‘Server costs’ is a dev myth. Solo operators pay for SaaS, not servers. Feels like a non-issue.",
+          "authored": false
+        },
+        {
+          "headline": "Stop overpaying for AI infrastructure",
+          "rank": 10,
+          "score": 4.0,
+          "shape": "change",
+          "stopping": "Jargon-heavy ('AI infrastructure') + weak pain",
+          "reason": "‘Infrastructure’ is tech-speak. Audience doesn’t care about infrastructure - just overpaying for tools. Mediocre stop.",
+          "authored": false
+        },
+        {
+          "headline": "You're wasting $120/month on servers",
+          "rank": 11,
+          "score": 5.0,
+          "shape": "before-after",
+          "stopping": "Concrete waste ($120/month) + universal pain (money)",
+          "reason": "‘$120/month’ is specific, relatable, and stops scrollers. Matches ‘wasting money’ pain point (not dev-related). Only hook that fits audience reality.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post76-jev-client-decision-models",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Score clients with AI, not guesswork.",
+        "sub": "0.87 confidence score",
+        "rank": 1,
+        "score": 8.5,
+        "shape": "change",
+        "stopping": "Names deficiency (guesswork) + specific number (0.87) that feels actionable. 'Score clients with AI' is a concrete task the median operator does, not a category.",
+        "reason": "Directly names a deficiency (guesswork) and uses a specific number (0.87) that implies a measurable solution. Matches the 'change/before-after' shape the account confirmed works.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Score clients with AI, not guesswork.",
+          "rank": 1,
+          "score": 8.5,
+          "shape": "change",
+          "stopping": "Names deficiency (guesswork) + specific number (0.87) that feels actionable. 'Score clients with AI' is a concrete task the median operator does, not a category.",
+          "reason": "Directly names a deficiency (guesswork) and uses a specific number (0.87) that implies a measurable solution. Matches the 'change/before-after' shape the account confirmed works.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Score clients with AI, not guesswork.",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 8.3,
+          "shape": "change",
+          "stopping": "Identical to B but ranked second due to identical content (account's data shows repetition would not boost performance).",
+          "reason": "Same hook as B, so ranks just below it. The account's data shows identical hooks don't outperform each other.",
+          "authored": true
+        },
+        {
+          "headline": "Your client scoring is wrong.",
+          "rank": 3,
+          "score": 6.9,
+          "shape": "change",
+          "stopping": "Names deficiency ('wrong') but sub 'It’s time for a number' is vague and doesn't feel concrete like B/C's '0.87'.",
+          "reason": "Fails to match B/C's specificity. 'A number' could mean anything, whereas B/C's 0.87 implies a real, copyable metric.",
+          "authored": false
+        },
+        {
+          "headline": "Client decisions cost you time.",
+          "rank": 4,
+          "score": 5.2,
+          "shape": "cost",
+          "stopping": "Names pain ('cost you time') but 'Client decisions' is too broad (not a specific task). Sub 'AI answers in seconds' feels generic.",
+          "reason": "Too vague. 'Client decisions' isn't a task the median operator *actually does* (e.g., 'screening clients' is specific, but this isn't). Sub lacks the concrete number.",
+          "authored": false
+        },
+        {
+          "headline": "Is this client worth your time?",
+          "rank": 5,
+          "score": 3.1,
+          "shape": "question",
+          "stopping": "Phrased as a question ('Is this client worth your time?'), which is passive and makes scrollers skip. Sub 'Answer: 0.87' feels random and unexplained.",
+          "reason": "Questions are the worst format (account confirmed: 'Meta-commentary' and question hooks fail). Sub adds no clarity—just a number without context.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post77-code-review-flaws",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": [
+          {
+            "t": "Spot-check ",
+            "c": "blue"
+          },
+          {
+            "t": "skills.",
+            "c": "blue"
+          }
+        ],
+        "sub": "No AI allowed",
+        "rank": 1,
+        "score": 2.0,
+        "shape": "change",
+        "stopping": "Most vague headline; 'skills' could briefly mislead a non-dev scroller (e.g., 'Do I need to spot-check my *own* skills?'), but instantly fails upon realizing it's dev-focused.",
+        "reason": "Avoids 'devs' entirely; 'no AI allowed' feels like a generic rule, not a dev-specific pain. Least explicitly niche.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "Spot-check ",
+              "c": "blue"
+            },
+            {
+              "t": "skills.",
+              "c": "blue"
+            }
+          ],
+          "rank": 1,
+          "score": 2.0,
+          "shape": "change",
+          "stopping": "Most vague headline; 'skills' could briefly mislead a non-dev scroller (e.g., 'Do I need to spot-check my *own* skills?'), but instantly fails upon realizing it's dev-focused.",
+          "reason": "Avoids 'devs' entirely; 'no AI allowed' feels like a generic rule, not a dev-specific pain. Least explicitly niche.",
+          "authored": true
+        },
+        {
+          "headline": "AI code fails here",
+          "rank": 2,
+          "score": 3.0,
+          "shape": "change",
+          "stopping": "Vague 'AI code fails here' + 'Real skills test' could almost work for non-devs if skimmed fast, but 'skills test' implies technical context.",
+          "reason": "No 'devs' word, but 'skills test' is a dev jargon trap. Closest to generic.",
+          "authored": false
+        },
+        {
+          "headline": "AI code fails here",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "change",
+          "stopping": "'Spot flaws in samples' is pure dev terminology; audience instantly recognizes it's not for them.",
+          "reason": "Explicit 'spot flaws' = dev workflow. More niche than D.",
+          "authored": false
+        },
+        {
+          "headline": "Stop trusting AI code",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "'Test for flaws' is a dev phrase; audience scrolls past before processing.",
+          "reason": "Same as E but weaker subtext. Still dev-adjacent.",
+          "authored": false
+        },
+        {
+          "headline": "Find AI-generated code",
+          "rank": 5,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "'Find AI-generated code' is a dev-specific task; no chance to stop.",
+          "reason": "Directly names a dev workflow. Audience knows it's irrelevant.",
+          "authored": false
+        },
+        {
+          "headline": "Find AI-generated code",
+          "rank": 6,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "'Real developers test for intentional flaws' is a full dev niche signal.",
+          "reason": "Explicitly says 'developers' in subtext. Worst wording for this audience.",
+          "authored": false
+        },
+        {
+          "headline": "Dev test: spot flaws",
+          "rank": 7,
+          "score": 8.0,
+          "shape": "change",
+          "stopping": "'Dev test' in headline is an immediate scroll-off trigger.",
+          "reason": "Headline uses 'Dev' as a keyword. Most blatant niche.",
+          "authored": false
+        },
+        {
+          "headline": "Spot-check devs' skills",
+          "rank": 8,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "'Spot-check devs' skills' is unambiguous dev topic.",
+          "reason": "Headline says 'devs' directly. No chance to engage.",
+          "authored": false
+        },
+        {
+          "headline": "Spot-check devs' skills",
+          "rank": 9,
+          "score": 10.0,
+          "shape": "change",
+          "stopping": "Same as C; 'devs' in headline + 'no AI allowed' feels like a dev rule.",
+          "reason": "Identical to C. Slower to scroll than G but same niche.",
+          "authored": false
+        },
+        {
+          "headline": "Stop trusting AI code",
+          "rank": 10,
+          "score": 11.0,
+          "shape": "change",
+          "stopping": "'Real devs miss flaws' is a dev-specific pain point; audience scrolls instantly.",
+          "reason": "Uses 'devs' in subtext. Still a dev topic.",
+          "authored": false
+        },
+        {
+          "headline": "Spot-check skills.",
+          "rank": 11,
+          "score": 12.0,
+          "shape": "change",
+          "stopping": "'you're hiring devs' is a direct, unambiguous niche signal; no doubt it's not for the audience.",
+          "reason": "Explicitly states the audience (solos) don't do this. Worst possible hook for this account.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post78-mcp-secure-client-data-integrations",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Your AI leaks API keys. Fix it.",
+        "sub": "MCP enforces access.",
+        "rank": 1,
+        "score": 9.2,
+        "shape": "change",
+        "stopping": "Specific pain (API leaks) + concrete fix (MCP). 'Your AI' makes it personal and urgent. 'API keys' is precise—no vagueness that makes freelancers scroll.",
+        "reason": "Most specific pain point. 'API keys' is a known pain for solo operators using AI tools (not vague 'keys'). 'Leaks' is visceral. 'Your AI' creates immediate ownership. Best at making the audience *feel* the problem.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Your AI leaks API keys. Fix it.",
+          "rank": 1,
+          "score": 9.2,
+          "shape": "change",
+          "stopping": "Specific pain (API leaks) + concrete fix (MCP). 'Your AI' makes it personal and urgent. 'API keys' is precise—no vagueness that makes freelancers scroll.",
+          "reason": "Most specific pain point. 'API keys' is a known pain for solo operators using AI tools (not vague 'keys'). 'Leaks' is visceral. 'Your AI' creates immediate ownership. Best at making the audience *feel* the problem.",
+          "authored": false
+        },
+        {
+          "headline": "API keys in client chats? No.",
+          "rank": 2,
+          "score": 8.7,
+          "shape": "change",
+          "stopping": "Clear pain ('API keys in client chats?') but the 'No' feels like a technical alert, not a *relatable* pain. Still better than vague 'keys'.",
+          "reason": "'API keys' avoids vagueness. 'Client chats' is a real scenario. But 'No' is less urgent than 'Fix it' in D. Still stops scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "Clients see your keys. Fix now.",
+          "rank": 3,
+          "score": 6.3,
+          "shape": "change",
+          "stopping": "Vague 'keys' (could mean physical keys). 'Clients see your keys' is a pain but not *specific* enough. Feels like a generic security tip.",
+          "reason": "Fails the 'API' specificity test. 'Keys' is too broad—freelancers might not connect it to their AI workflows. Weak enough to make them scroll.",
+          "authored": false
+        },
+        {
+          "headline": "You're giving away keys. Stop.",
+          "rank": 4,
+          "score": 5.9,
+          "shape": "change",
+          "stopping": "Vague 'keys' + 'giving away' is too abstract. 'MCP controls integrations' sounds like a tech spec, not a pain.",
+          "reason": "Same 'keys' vagueness as A. 'Giving away' feels passive and unrelatable. Subtext is too technical for the cover.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Stop sharing keys with clients.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 4.1,
+          "shape": "change",
+          "stopping": "Passive 'Stop sharing' + vague 'keys'. No urgency. Feels like a boring compliance notice.",
+          "reason": "Worst possible phrasing: tells them what to stop *doing* without naming the *pain*. 'Keys' is ambiguous. Worst fit for the audience.",
+          "authored": true
+        },
+        {
+          "headline": "Stop sharing keys with clients.",
+          "rank": 6,
+          "score": 4.1,
+          "shape": "change",
+          "stopping": "Identical to C. Same vague 'keys' and passive 'Stop sharing'. Duplicate = twice as weak.",
+          "reason": "Same as C but listed later. Redundant hook. No reason to stop scrolling.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post79-ai-safety-checks-verify-before-sending",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop sending AI reports raw",
+        "sub": "Add this step now",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Direct pain (raw reports = client trust risk) + urgent fix ('add this step now'). No fluff, no UN crutch. Solopreneurs *feel* this daily.",
+        "reason": "Names the deficiency ('raw reports') and the change needed. 'Save you' in F is vague; E's 'stop sending' is visceral.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop sending AI reports raw",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Direct pain (raw reports = client trust risk) + urgent fix ('add this step now'). No fluff, no UN crutch. Solopreneurs *feel* this daily.",
+          "reason": "Names the deficiency ('raw reports') and the change needed. 'Save you' in F is vague; E's 'stop sending' is visceral.",
+          "authored": false
+        },
+        {
+          "headline": "AI safety checks save you",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Uses 'save you' but relies on UN policy (distracting authority). Better than generic, but not as sharp as E.",
+          "reason": "UN policy reference weakens urgency. Solopreneurs care about *their* clients, not UN policy.",
+          "authored": false
+        },
+        {
+          "headline": "Bias in AI reports = risk",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Names 'bias' (category, not pain). UN is irrelevant noise. Solopreneurs don't care about 'bias'—they care about losing clients.",
+          "reason": "Fails the 'pain/deficiency' test. 'Risk' is too abstract for daily workflow.",
+          "authored": false
+        },
+        {
+          "headline": "Verify AI output for bias",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Identical to D. 'Verify AI output' is a technical task, not a solopreneur's pain. 'Before sending client reports' is weak.",
+          "reason": "Duplicated hook. Technical framing ('verify') fails the 'median task' rule.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Verify AI output for bias",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Duplicated B. Same technical fluff. 'Before sending client reports' is a non-pain (all solopreneurs do this).",
+          "reason": "Worse than B because it's the second copy of a weak hook. No added value.",
+          "authored": true
+        },
+        {
+          "headline": "AI safety is not optional",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Pure meta-statement ('AI safety is not optional'). No concrete deficiency. UN reference feels like an empty threat.",
+          "reason": "Fails all core rules: no pain, no change, no solopreneur context. The weakest possible hook.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post80-quickbooks-ai-pricing-update-freelancers-save-30-month",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop overpaying for AI invoicing",
+        "sub": "QuickBooks AI cuts prices",
+        "rank": 1,
+        "score": 9.5,
+        "shape": "change",
+        "stopping": "Names pain (overpaying) + specific task (AI invoicing) — instantly relevant to daily work. No fluff, no math errors, no future dates. This is the only hook that makes you think 'I need this' before reading the sub.",
+        "reason": "E directly names the pain point ('overpaying') and specifies the task ('AI invoicing') — exactly what the account learned to prioritize. The sub reinforces the solution without confusion. Every other hook either lacks urgency (A, D), has math errors (C, F), or is passive (B). E is the only one that forces a stop.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop overpaying for AI invoicing",
+          "rank": 1,
+          "score": 9.5,
+          "shape": "change",
+          "stopping": "Names pain (overpaying) + specific task (AI invoicing) — instantly relevant to daily work. No fluff, no math errors, no future dates. This is the only hook that makes you think 'I need this' before reading the sub.",
+          "reason": "E directly names the pain point ('overpaying') and specifies the task ('AI invoicing') — exactly what the account learned to prioritize. The sub reinforces the solution without confusion. Every other hook either lacks urgency (A, D), has math errors (C, F), or is passive (B). E is the only one that forces a stop.",
+          "authored": false
+        },
+        {
+          "headline": "QuickBooks AI: $30 less per year",
+          "rank": 2,
+          "score": 7.2,
+          "shape": "change",
+          "stopping": "Lead with benefit ($30 less), but phrasing is awkward ('less per year' vs 'saves'). Sub excludes non-freelancers, which is bad for audience (all solo operators).",
+          "reason": "B leads with a benefit but the phrasing ('$30 less per year') is confusing and unprofessional. The sub's 'For freelancers only' accidentally alienates the target audience (solo consultants use invoicing too). Still better than the math errors in C/F, but not as sharp as E.",
+          "authored": false
+        },
+        {
+          "headline": "QuickBooks AI now $10 cheaper",
+          "rank": 3,
+          "score": 3.8,
+          "shape": "change",
+          "stopping": "Cover is okay but sub has a math error: '$10 cheaper' implies $10/month savings, but sub claims $30/month. Credibility killer — people scroll past immediately.",
+          "reason": "The cover 'now $10 cheaper' is decent, but the sub's math error ($10 cheaper monthly = $120/year, not $30/month) destroys trust. The account has learned that even small inaccuracies make people scroll. This is why it’s ranked higher than A/D — at least it tries to be benefit-focused.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "QuickBooks AI now $10 cheaper",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 3.6,
+          "shape": "change",
+          "stopping": "Identical to C (cover + sub), but listed later. Math error same as C, but ranked slightly lower due to no real distinction.",
+          "reason": "F is a carbon copy of C. Since the account learned that identical hooks must be ranked by order (not merit), F gets a slightly lower rank than C just because it’s listed after. Math error is the same — no trust, no stop.",
+          "authored": true
+        },
+        {
+          "headline": "QuickBooks AI pricing changed",
+          "rank": 5,
+          "score": 2.1,
+          "shape": "change",
+          "stopping": "Passive cover ('pricing changed') with no pain/difference stated. Sub is weak ('save $10/month') — feels like a generic update, not a business impact.",
+          "reason": "A is the most generic of all. 'Pricing changed' is a category, not a pain or deficiency. The sub doesn’t explain *why* $10/month matters — it’s just a number. Audience scrolls past because it feels like a newsletter update, not a daily workflow fix.",
+          "authored": false
+        },
+        {
+          "headline": "Your QuickBooks AI cost went down",
+          "rank": 6,
+          "score": 1.3,
+          "shape": "change",
+          "stopping": "Worst: 'Your cost went down' is passive, and sub adds a useless future date (Sept 23, 2026). Feels like a scam or outdated info — no one cares about a 2026 date.",
+          "reason": "D combines the worst traits: passive language ('went down'), a random future date (2026), and no real relevance. The audience thinks 'This isn’t for me' and scrolls immediately. The date alone is enough to kill engagement.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post81-ai-expense-categorization-in-quickbooks",
+      "graded": "2026-09-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Manual bookkeeping costs $200/month.",
+        "sub": "Automate with QuickBooks AI",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "cost",
+        "stopping": "Specific $ pain + solution implied",
+        "reason": "Manually costs $200/month is the *exact* deficiency format they confirmed. Solo ops know this cost. Instant stop.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Manual bookkeeping costs $200/month.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "cost",
+          "stopping": "Specific $ pain + solution implied",
+          "reason": "Manually costs $200/month is the *exact* deficiency format they confirmed. Solo ops know this cost. Instant stop.",
+          "authored": false
+        },
+        {
+          "headline": "80% less bookkeeping time.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Clear benefit phrasing",
+          "reason": "80% less time is natural, usable phrasing. No fluff. Stops scrollers who know bookkeeping is slow.",
+          "authored": false
+        },
+        {
+          "headline": "Cut bookkeeping time 80%.",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "Slightly awkward phrasing",
+          "reason": "‘Cut time 80%’ is grammatically off (should be ‘80% less’). Causes micro-hesitation. Still stops, but weaker than F.",
+          "authored": false
+        },
+        {
+          "headline": "You don't need Advanced.",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Negative framing without pain",
+          "reason": "‘Don’t need Advanced’ is meta-commentary. Doesn’t name a *deficiency* (e.g., cost, time). Scrollers scroll past trying to figure out why they care.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Cut bookkeeping time 80%."
+            },
+            {
+              "t": "Train",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Typos kill credibility",
+          "reason": "‘Cut bookkeeping time 80%.Train’ has a broken line and typo. Looks like a mistake. Solo ops scroll past instantly.",
+          "authored": true
+        },
+        {
+          "headline": "QuickBooks AI now on Essentials.",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Feature announcement, no pain",
+          "reason": "‘QuickBooks AI now on Essentials’ is a tech update, not a deficiency. No ‘why should I care?’ Scrollers think ‘So what?’ and keep scrolling.",
+          "authored": false
+        }
+      ]
     }
   ]
 }
