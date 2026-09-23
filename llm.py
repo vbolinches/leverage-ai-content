@@ -146,6 +146,14 @@ def chat(messages, system=None, model=None, tools=None, schema=None,
     }
     if temperature is not None:
         payload["options"]["temperature"] = temperature
+        # A fresh seed on every call that asked for randomness. Without one,
+        # Ollama samples the same way for the same prompt, and the repair loop
+        # sends the same prompt each round: on 2026-09-23 fix rounds 2-5 came
+        # back byte-identical, four "retries" that were one answer repeated.
+        # temperature 0 (the fact-check) stays deterministic, as it should.
+        if temperature > 0:
+            import random
+            payload["options"]["seed"] = random.randint(1, 2**31 - 1)
     if tools:
         payload["tools"] = list(tools)
     if schema:

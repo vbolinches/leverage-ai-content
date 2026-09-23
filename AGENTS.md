@@ -222,65 +222,6 @@ anything much shorter than what is on disk. That file is the loop's memory;
 the first local run offered a 327-character summary to replace 15,027
 characters of earned findings.
 
-**12. Every post is fact-checked against its own source before it queues.**
-Added 2026-09-22 after the local model published harmful immigration advice.
-Everything upstream proved something narrower: `search.RETRIEVED` proves a
-source is real; `search.supports()` proves the brief's quote is on it. Nothing
-proved the finished POST says what the page says. So the local model, with a
-real source and a verified quote, wrote that Medicaid and food stamps "no
-longer count" toward public charge - citing the USCIS page whose operative
-sentence is that benefits received on or after 2026-09-18 now DO count. It was
-pulled the day before publishing. Three others had already gone out: two told
-readers to leave the US over a rule still open for public comment, one said a
-priority date is lost when it is kept. leverageai recommended "AutoBill Pro",
-which does not exist. The owner deleted what could be deleted.
-
-`factcheck.verify()` has the model list every claim and instruction in the
-post, each with the page sentence that decides it and a verdict. A small model
-checks far better than it writes accurately - but only if it cannot bluff, so
-the evidence sentence is looked up on the page in code (`factcheck.on_page`):
-three quarters of its four-word runs must be there. That tolerates a copying
-slip (three dropped words, a colon added to "Release Date") and rejects a
-fabricated quote, a real sentence bent to say the opposite, or a wrong date -
-all seven calibration cases pass.
-
-The strict bar lives in ONE place. `search.supports()`, at the research stage,
-only asks whether the page is ABOUT the topic, and stays lenient (the quote's
-opening, or half its word-runs, on the page). It was briefly made as strict as
-the fact-check and research starved - nine good topics dropped in one run,
-TPS, EAD and a scam alert among them - because the model drifts when copying
-at that stage. Truth is decided on the finished post, claim by claim; do not
-move that bar back upstream.
-
-`generate_batch._truth_pass()` runs last in `write_post()`, shows the model
-the contradictions WITH the page's own sentence, gives it two fix rounds, and
-`author()` drops whatever is still untrue - a spare brief takes the slot. A
-gap in the queue is recoverable; a published wrong fact on an account people
-act on is not.
-
-Calibrated on real posts before it shipped: post68 (inverted) failed 1/10
-supported with the operative sentence quoted back; post48 (correct, same page)
-passed 10/10. Safe advice is allowed without a source (`SAFE_ADVICE`: save
-this, consult a lawyer, check your case, beware scams) because the danger is
-asymmetric - "consulta a un abogado" cannot hurt anyone, "sal de EE.UU." can.
-Anything telling the reader to change what they do about status, benefits,
-residence or a deadline must be on the page.
-
-The mechanical half is `_reader_safety()` in `validate()`, fast and model-free
-so it runs inside every repair round: `forbidden_advice` patterns per account
-(leave the country, "sin miedo", "no te preocupes"); English on a Spanish
-slide; "Embajadores'" possessives; the "El sistema" template placeholder; and
-an action deadline that will have passed by publish day ("manda ... antes del
-14 sep" went out on the 26th). Tested against the 6 posts that did the damage
-(all caught) and the 21 Sonnet-era posts (all clean) - keep both sets passing
-when you touch these rules. Research also drops `audience: "niche"` briefs and
-reads each account's `topic_priorities`: the month the local model took over,
-inmigraforma covered a Federal Register index and civil-surgeon designations.
-
-Do not remove the fact-check to speed up the nightly run. It adds roughly a
-minute per post on the 5090, and it is the only thing that checks the post
-rather than the source.
-
 ## Layout
 
 | Path | Purpose |
@@ -301,7 +242,6 @@ rather than the source.
 | `generate_batch.py` | Authors a batch with the local model, renders, queues |
 | `llm.py` | The model seam — every generative call goes through here |
 | `search.py` | Web search and page reading, and the record of what was really retrieved |
-| `factcheck.py` | Checks a finished post's claims against its own source page; `python factcheck.py <spec.json>` checks one by hand |
 | `run_local_batch.py` | The nightly run: gate, generate, commit, push; `--check` proves a host |
 | `setup_schedule.ps1` | Registers that run with Windows Task Scheduler |
 | `deploy/vps-setup.sh` | The same run on a Debian/Ubuntu VPS, behind a systemd timer |

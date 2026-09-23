@@ -61,14 +61,25 @@ def supports(url, quote, need=40):
         page = PAGES.get(url)
     if page is None:
         return "the page could not be opened, so the citation cannot be checked"
-    def norm(s):
-        return re.sub(r"\s+", " ", (s or "")).strip().lower()
-    q, p = norm(quote), norm(page)
-    if len(q) < need:
-        return f"the quote is too short to check ({len(q)} chars)"
-    # A fetched page is truncated, so match on the opening of the quote
-    # rather than demanding the whole sentence survived the clip.
-    return None if q[:need] in p else "that sentence is not on that page"
+    if len(re.sub(r"\s+", " ", quote or "").strip()) < need:
+        return f"the quote is too short to check ({len((quote or '').strip())} chars)"
+    # This check answers ONE question: is the page about this topic? It is
+    # not the truth check - factcheck.verify() is, on the finished post, claim
+    # by claim, with evidence looked up in code. On 2026-09-23 this was made
+    # as strict as that one and research starved: nine topics dropped in one
+    # run, TPS, EAD, a scam alert, asylum and an I-485 fee among them, because
+    # a 30B model copying a sentence at the research stage drifts after the
+    # first clause. The opening of the quote on the page is enough to prove
+    # the page discusses the topic; whatever the post later claims from it
+    # still has to survive the fact-check.
+    from factcheck import _norm, on_page, share   # here: factcheck imports us
+    if on_page(page, quote) or _norm(quote)[:need] in _norm(page) \
+            or share(page, quote) >= 0.5:
+        return None
+    # Say how close it came. 0% is an invented quote; 30% is a loose
+    # paraphrase; those need different fixes, and a bare message cannot tell.
+    return (f"that sentence is not on that page "
+            f"({share(page, quote):.0%} of it found): {quote[:90]!r}")
 
 
 def since(mark):

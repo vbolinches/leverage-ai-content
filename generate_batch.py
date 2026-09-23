@@ -22,6 +22,7 @@ import accounts
 import hooks
 import llm
 import render_slides
+import factcheck
 import search
 
 # Authoring model. Per-account override via "model" in account.json, and a
@@ -128,7 +129,7 @@ if _REQ:
     _REQ_LINE = (
         '  {"kind":"step","eyebrow":"' + _REQ + '","headline":"Qué significa esto.",'
         '"body":[{"t":"2-3 frases de todos los días, sin jerga. "},'
-        '{"t":"Una comparación concreta de la vida diaria.","c":"green","b":true}]}'
+        '{"t":"La idea más importante, en una frase.","c":"green","b":true}]}'
         '   <- MANDATORY as slide 2 of EVERY post' + chr(10)
     )
 _GLOSS = ACCT.get("legal_gloss_eyebrow")
@@ -327,6 +328,17 @@ BRIEF_SCHEMA = {
                                         "search result or read_page. Never typed "
                                         "from memory, never a home page."),
                     },
+                    "audience": {
+                        "type": "string",
+                        "enum": ["broad", "narrow", "niche"],
+                        "description": (
+                            "Who this touches among THIS account's readers. "
+                            "broad = a large share of them; narrow = a specific "
+                            "but sizeable group; niche = a small specialist "
+                            "group (diplomats, investors, physicians, one rare "
+                            "visa category, developer-only tooling, enterprise "
+                            "software). Niche topics are dropped."),
+                    },
                     "facts": {
                         "type": "array",
                         "items": {"type": "string"},
@@ -335,7 +347,7 @@ BRIEF_SCHEMA = {
                                         "from the source above."),
                     },
                 },
-                "required": ["topic", "angle", "why_now", "source_url",
+                "required": ["topic", "angle", "why_now", "audience", "source_url",
                              "quote", "published", "facts"],
             },
         }
@@ -485,6 +497,8 @@ def _sweep(want, avoid, signals):
     ask = (
         f"Find {want} DIFFERENT topics worth a post right now: "
         f"{ACCT['search_brief']}.\n\n"
+        + (f"WHAT THIS ACCOUNT'S READERS CARE ABOUT:\n{ACCT['topic_priorities']}\n\n"
+           if ACCT.get("topic_priorities") else "")
         + (signals + "\n\n" if signals else "")
         + ("Those leads are suggestions about what is being discussed. They "
            "are not facts and some will be wrong — verify anything you use.\n\n"
@@ -550,7 +564,9 @@ def research(count, avoid):
     import ideas
     signals = ideas.digest(ACCT)
 
-    want = count + 2
+    # Three spares: posts are now dropped for being untrue or still broken
+    # after repair, and each dropped post is a spare consumed.
+    want = count + 3
     briefs, taken, calls = [], list(avoid), 0
     for sweep in range(4):
         if len(briefs) >= want:
@@ -568,6 +584,18 @@ def research(count, avoid):
             # nothing in it produces a post with nothing in it.
             if len(b.get("facts") or []) < 2 or len(b.get("topic", "")) < 15:
                 print(f"  dropped an empty brief: {b.get('topic', '')!r}")
+                continue
+            # Relevance before accuracy: a true post nobody it is for cares
+            # about still reaches nobody. The month the local model took over,
+            # inmigraforma covered a Federal Register index, civil-surgeon
+            # designations, diplomats' children and $800,000 investor visas.
+            if b.get("audience") == "niche":
+                print(f"  dropped {b.get('topic', '')[:44]!r}: niche audience")
+                continue
+            past = _past_deadline(f"{b.get('topic', '')} {b.get('why_now', '')}")
+            if past:
+                print(f"  dropped {b.get('topic', '')[:44]!r}: built on a "
+                      f"deadline that has passed ({past})")
                 continue
             stale = _not_news(b.get("published"))
             if stale:
@@ -602,12 +630,32 @@ def research(count, avoid):
                     print(f"  dropped a brief citing a home page rather than "
                           f"a notice: {url}")
                     continue
+                if _paperwork(url):
+                    print(f"  dropped {b.get('topic', '')[:44]!r}: a paperwork "
+                          f"notice about a form's approval, not news: {url}")
+                    continue
+                if _evergreen(url):
+                    print(f"  dropped a brief citing a page that explains "
+                          f"rather than reports: {url}")
+                    continue
             if any(b.get("topic", "").lower() == x.lower() for x in taken):
+                continue
+            # One post per source page. The model reuses whichever page it has
+            # to hand: four queued posts cited the same Federal Register index,
+            # and a public-charge brief cited uscis.gov/avoid-scams. A page
+            # that genuinely covers two topics can carry the second next batch.
+            if any(url == x.get("source_url") for x in briefs):
+                print(f"  dropped {b.get('topic', '')[:44]!r}: its source is "
+                      f"already used by another topic in this batch")
                 continue
             briefs.append(b)
             taken.append(b.get("topic", ""))
+        # One unlucky sweep - search came back with nothing official, or the
+        # model searched badly - used to end research for the whole night,
+        # and an unattended run then queued nothing. The loop is already
+        # capped at four sweeps, so a genuinely broken search still stops.
         if not found:
-            break
+            continue
 
     if not calls:
         print("::warning::Research ran ZERO searches — the topics below come "
@@ -698,6 +746,89 @@ def _url_seen(url):
     return bool(target) and any(norm(seen) == target for seen in search.RETRIEVED)
 
 
+# Pages that describe how something works rather than report that something
+# changed: a form's own page (/i-730, /forms/i-129), and hub pages for a whole
+# program. Given one, the model manufactures the news - on 2026-09-23 the I-730
+# page became "ahora hay nuevos pasos para traer a tu esposa e hijos ... no
+# años", and the TPS hub page became an Ethiopia deadline that does not exist.
+# Both were caught by the fact-check, but a topic dropped here costs one brief
+# instead of three minutes of writing and fixing.
+_EVERGREEN = re.compile(
+    r"^/(forms/)?[a-z]{1,2}-\d{1,4}[a-z]?/?$"          # /i-730, /forms/i-129
+    r"|^/policy-manual/?$"
+    r"|^/humanitarian/temporary-protected-status/?$"
+    r"|^/humanitarian/refugees-and-asylum/asylum/?$"
+    r"|^/green-card/?$|^/citizenship/?$|^/working-in-the-united-states/?$", re.I)
+
+
+_MONTH_EN = {m: i for i, m in enumerate(
+    ("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct",
+     "nov", "dec"), 1)}
+_DEADLINE_WORDS = re.compile(
+    r"deadline|expir|re-?regist|register by|file by|ends?\b|until|vence|"
+    r"fecha l[ií]mite|plazo|termina|reg[ií]strate|antes del", re.I)
+
+
+def _past_deadline(text):
+    """The date, if a topic is ABOUT a deadline and every date it names has
+    passed. "TPS expiration date: September 9, 2026" reached the writer on the
+    23rd and came back as "regístrate antes del 9 septiembre". Recent events
+    are still news - a court order dated the 12th is kept, because a topic is
+    only dropped when it is about a deadline."""
+    if not _DEADLINE_WORDS.search(text or ""):
+        return None
+    today, found = date.today(), []
+    for m in re.finditer(r"\b([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2})(?:,?\s+(\d{4}))?", text):
+        mon = _MONTH_EN.get(m.group(1).lower())
+        if mon:
+            found.append((int(m.group(3) or today.year), mon, int(m.group(2))))
+    for m in re.finditer(r"\b(\d{1,2})\s+de\s+([a-záéíóú]+)(?:\s+de\s+(\d{4}))?", text, re.I):
+        mon = _MONTHS.get(m.group(2)[:3].lower())
+        if mon:
+            found.append((int(m.group(3) or today.year), mon, int(m.group(1))))
+    dates = []
+    for y, mo, d in found:
+        try:
+            dates.append(date(y, mo, d))
+        except ValueError:
+            pass
+    if dates and max(dates) < today:
+        return max(dates).isoformat()
+    return None
+
+
+# Paperwork Reduction Act notices: OMB extending or revising the approval of a
+# FORM. They read like news and are not. On 2026-09-23 one titled "Extension
+# ... Currently Approved Collection" for Form I-821 became a post telling TPS
+# holders DHS had proposed extending TPS for several countries - it extends no
+# country's TPS. The fact-check rejected it; this stops the topic earlier.
+_PAPERWORK = ("omb control number", "currently approved collection",
+              "information collection", "paperwork reduction act")
+
+
+def _paperwork(url):
+    page = search.PAGES.get(url)
+    if page is None:
+        search.fetch(url, max_chars=200_000)
+        page = search.PAGES.get(url) or ""
+    low = page[:6000].lower()
+    return sum(m in low for m in _PAPERWORK) >= 2
+
+
+def _evergreen(url):
+    from urllib.parse import urlparse
+    return bool(_EVERGREEN.match(urlparse(url).path or "/"))
+
+
+# qwen3 is a reasoning model, and until 2026-09-23 the writer ran with its
+# reasoning switched off while the fact-checker ran with it on. The checker
+# was precise all day; the writer copied English source text onto Spanish
+# slides, ignored the date it had been given, and reached for a public-charge
+# rule from its training data. Thinking roughly doubles the minutes per post,
+# and the nightly run has hours. Per-account override: "writer_think": false.
+WRITER_THINK = bool(ACCT.get("writer_think", True))
+
+
 def _slide_plan():
     """The slide count and the mandated slides, stated as an instruction.
 
@@ -759,7 +890,10 @@ def _space_sentences(text):
     and a following capital letter, so decimals, URLs and abbreviations are
     left alone.
     """
-    return re.sub(r"([.!?])([A-ZÁÉÍÓÚÑ¿¡])", r"\1 \2", text or "")
+    # A lowercase letter before the mark is what makes it a sentence end:
+    # without that guard "EE.UU." became "EE. UU." and "U.S." "U. S.".
+    return re.sub(r"([a-záéíóúñ0-9)])([.!?])([A-ZÁÉÍÓÚÑ¿¡])", r"\1\2 \3",
+                  text or "")
 
 
 def _strip_meta(text):
@@ -787,6 +921,41 @@ def _same_language(before, after):
         return sum(1 for w in re.findall(r"[a-záéíóúñü]+", s.lower())
                    if w in _ES_MARKERS)
     return marks(before) < 3 or marks(after) > 0
+
+
+def _fit_sentences(text, cap):
+    """Make text fit by REMOVING, never rewriting. The last resort.
+
+    The model cannot land under a character limit on dense legal Spanish
+    without dropping something, and when every rewrite it tries still misses,
+    _shorten gives up and the post is lost - a USCIS scam warning went on
+    2026-09-23 for one slide 25 characters over. Removing text cannot turn a
+    true sentence into a false one the way a rewrite can, and anything this
+    returns still goes through the fact-check afterwards.
+
+    Whole sentences first, from the end: the first sentence of a slide is the
+    news, the last is the elaboration. A single sentence that is itself too
+    long is cut at its last clause break that fits. A stub shorter than 40% of
+    the limit is not worth shipping, so that returns None instead.
+    """
+    text = (text or "").strip()
+    if len(text) <= cap:
+        return text
+    sents = re.split(r"(?<=[.!?])\s+", text)
+    kept = []
+    for sent in sents:
+        trial = " ".join(kept + [sent])
+        if len(trial) > cap:
+            break
+        kept.append(sent)
+    if kept:
+        return " ".join(kept)
+    first = sents[0]
+    cuts = [m.start() for m in re.finditer(r"[,;:]\s|\s[-\u2014]\s", first)
+            if m.start() <= cap - 1]
+    if not cuts or cuts[-1] < cap * 0.4:
+        return None
+    return first[:cuts[-1]].rstrip(" ,;:-\u2014") + "."
 
 
 def _shorten(text, cap):
@@ -894,6 +1063,64 @@ def _one_pass(text, cap, plans):
     return best
 
 
+def _to_spanish(text):
+    """One slide string in plain Spanish, or None.
+
+    The whole-post repair was told "this slide reads as English" and handed
+    back the same slide, round after round - "USCIS: 'No needs rep for your
+    application.'" survived five of them. Handed one sentence and one job,
+    the model translates reliably, the same way _shorten lands a length the
+    whole-post pass could not.
+    """
+    # Asked in English for a field called "text", the model echoed the input
+    # back unchanged. Asked in Spanish, for a field named in Spanish, it
+    # translated all three calibration cases cleanly: the schema key steers a
+    # local model harder than the instruction does (see CLAUDE.md conventions).
+    try:
+        out = llm.structured(
+            "Eres un traductor del inglés al español. Respondes solo en español.",
+            "Traduce este texto de una diapositiva al español sencillo, para "
+            "inmigrantes sin formación legal. Deja en inglés solo los nombres "
+            "oficiales (USCIS, Green Card, TPS, EAD, I-485, Visa Bulletin, "
+            "Final Action Dates, Dates for Filing, parole). Mantén cada dato, "
+            "fecha y número. No agregues nada.\n\nTEXTO EN INGLÉS:\n" + text,
+            {"type": "object",
+             "properties": {"texto_en_espanol": {
+                 "type": "string",
+                 "description": "The same message, written in Spanish."}},
+             "required": ["texto_en_espanol"]},
+            model=MODEL, require=("texto_en_espanol",), label="to_spanish",
+            temperature=0.2, max_tokens=400)
+    except llm.LLMError:
+        return None
+    new = _space_sentences((out.get("texto_en_espanol") or "").strip())
+    return new if new and not _reads_english(new) else None
+
+
+def _spanishify(post):
+    """Translate every slide field that reads as English. True if any changed."""
+    if ACCT.get("slide_language") != "es":
+        return False
+    changed = False
+    for sl in post.get("slides") or []:
+        for key in ("headline", "sub", "body"):
+            cur = hooks.flatten(sl.get(key))
+            if cur and _reads_english(cur):
+                new = _to_spanish(cur)
+                if new:
+                    sl[key] = new
+                    changed = True
+        items = sl.get("items")
+        if isinstance(items, list):
+            for i, it in enumerate(items):
+                if isinstance(it, str) and _reads_english(it):
+                    new = _to_spanish(it)
+                    if new:
+                        items[i] = new
+                        changed = True
+    return changed
+
+
 def _tighten(post):
     """Shorten only the fields that overflow, instead of rewriting the post.
 
@@ -907,7 +1134,7 @@ def _tighten(post):
     """
     fields = (("headline", _LIM["headline"]), ("sub", _LIM["sub"]),
               ("body", _LIM["body"]), ("stat", _LIM["stat"]))
-    changed = False
+    changed = _spanishify(post)
     for s in post.get("slides") or []:
         for key, cap in fields:
             cur = hooks.flatten(s.get(key))
@@ -918,8 +1145,13 @@ def _tighten(post):
             # still helps the whole-post budget, and validate() remains the
             # thing that decides whether the post ships.
             if new and len(new) < len(cur):
-                s[key] = new
+                s[key] = cur = new
                 changed = True
+            if len(cur) > _slack(cap):
+                fit = _fit_sentences(cur, cap)
+                if fit and len(fit) < len(cur):
+                    s[key] = fit
+                    changed = True
 
     # Whole-post reading budget, once every field is individually legal.
     # Trim the longest body each pass: it is the one with the most slack and
@@ -944,7 +1176,10 @@ def _tighten(post):
             # improved it.
             want = min(_LIM["body"], len(cur) - over)
             new = _shorten(cur, max(40, want))
-            if not new:
+            if not new or len(new) >= len(cur):
+                # The rewrite could not land: remove instead of rewriting.
+                new = _fit_sentences(cur, max(40, want))
+            if not new or len(new) >= len(cur):
                 break
             longest["body"] = new
             changed = True
@@ -975,8 +1210,19 @@ def write_post(brief, slug_prefix, series_no):
     to fix it. That turns rejections into posts instead of into gaps.
     """
     facts = "\n".join(f"  - {f}" for f in brief.get("facts") or [])
+    today = date.today()
     ask = (
         f"Write ONE post.\n\n"
+        # The researcher was always told the date; the writer never was, and a
+        # model without it cannot know a deadline has passed. It wrote "renueva
+        # tu EAD antes del 9 de septiembre" on the 23rd, for a post that would
+        # publish days later still.
+        f"TODAY IS {today.isoformat()}. This post will publish between "
+        f"{(today + timedelta(days=1)).isoformat()} and "
+        f"{(today + timedelta(days=10)).isoformat()}. Never tell the reader to "
+        f"act by a date that falls before then. If the source's deadline has "
+        f"already passed, say what that means NOW - what happens next, or what "
+        f"someone who missed it can still do - or leave the date out.\n\n"
         f"TOPIC: {brief.get('topic')}\n"
         f"ANGLE FOR THE READER: {brief.get('angle')}\n"
         f"WHY NOW: {brief.get('why_now')}\n"
@@ -1000,7 +1246,7 @@ def write_post(brief, slug_prefix, series_no):
     best = llm.structured(
         BRAND, ask, POST_SCHEMA,
         model=MODEL, require=("slides", "caption"),
-        label=f"write:{slug_prefix}", temperature=0.8,
+        label=f"write:{slug_prefix}", temperature=0.8, think=WRITER_THINK,
     )
     errs = validate(best)
 
@@ -1018,7 +1264,7 @@ def write_post(brief, slug_prefix, series_no):
             candidate = llm.structured(
                 BRAND, None, POST_SCHEMA,
                 model=MODEL, require=("slides", "caption"),
-                label=f"fix{rnd + 1}:{slug_prefix}", temperature=0.5,
+                label=f"fix{rnd + 1}:{slug_prefix}", temperature=0.5, think=WRITER_THINK,
                 messages=[
                     {"role": "user", "content": ask},
                     {"role": "assistant",
@@ -1069,7 +1315,128 @@ def write_post(brief, slug_prefix, series_no):
                       f"rule(s), {_slide_chars(best)} -> "
                       f"{_slide_chars(trimmed)} chars")
                 best, errs = trimmed, after
+
+    _respace(best)
+    best, truth = _truth_pass(best, ask, brief, slug_prefix)
+    best["_factcheck"] = truth
     return best
+
+
+def _respace(post):
+    """Put back the spaces the model drops between sentences, on every slide.
+
+    _space_sentences only ever ran on text that went through the shortener,
+    so "no documentos.Si no lo haces" reached a published slide untouched.
+    """
+    for sl in post.get("slides") or []:
+        for key in ("headline", "sub", "body"):
+            v = sl.get(key)
+            if isinstance(v, str):
+                sl[key] = _space_sentences(v)
+            elif isinstance(v, list):
+                for seg in v:
+                    if isinstance(seg, dict) and isinstance(seg.get("t"), str):
+                        seg["t"] = _space_sentences(seg["t"])
+                # A segment boundary is where the space went missing: the
+                # schema example split slide 2 into "the explanation" and "the
+                # comparison", and "Usa tarjeta o transferencia." + "Igual que
+                # ..." rendered as "transferencia.Igual" on a slide.
+                segs = [x for x in v if isinstance(x, dict)
+                        and isinstance(x.get("t"), str)]
+                for a, b in zip(segs, segs[1:]):
+                    if a["t"] and b["t"] and not a["t"][-1].isspace() \
+                            and not b["t"][0].isspace():
+                        a["t"] += " "
+        if isinstance(sl.get("items"), list):
+            sl["items"] = [_space_sentences(x) if isinstance(x, str) else x
+                           for x in sl["items"]]
+
+
+def _truth_fix_note():
+    note = ("A fact-checker compared this post with its source page and found "
+            "the problems below. Fix every one by saying only what the source "
+            "page says: where the post contradicts the page, say what the page "
+            "says instead; where the post says something the page does not, "
+            "remove it. Do not add any fact, number, deadline, consequence or "
+            "instruction that is not on the page.")
+    if ACCT.get("require_source_url"):
+        note += (" This account publishes immigration news that people act "
+                 "on, and a wrong fact can cost a reader their status. Never "
+                 "tell the reader to leave the country, never tell them not to "
+                 "worry, never tell them to keep or stop using a benefit unless "
+                 "the page says exactly that. If the source is a proposal, the "
+                 "cover and slide 2 must say it is a proposal that is not yet "
+                 "in force.")
+    return note + (" Keep the same topic, the same source and every slide; "
+                   "change only what the problems require.\n\nPROBLEMS:\n")
+
+
+def _truth_pass(post, ask, brief, slug_prefix, rounds=2):
+    """Is the post TRUE to its source? If not, show the model exactly where it
+    is not, give it two chances to fix that, and hand back what remains.
+
+    Runs last, on a post that already satisfies every mechanical rule - a
+    format problem is cheaper to fix and cheaper to find, and fact-checking a
+    post that will be rejected anyway is wasted minutes. A truth fix that
+    breaks the format is not kept. The errors that survive are returned, and
+    author() treats any as a rejection: a spare topic takes the slot.
+    """
+    if validate(post):
+        return post, []
+    errs, bad = factcheck.verify_detail(post, brief, ACCT, model=MODEL,
+                                        label=slug_prefix)
+    for rnd in range(rounds):
+        if not errs:
+            break
+        print(f"  {slug_prefix}: {len(errs)} factual problem(s) — "
+              f"truth fix {rnd + 1}/{rounds}")
+        try:
+            cand = llm.structured(
+                BRAND, None, POST_SCHEMA,
+                model=MODEL, require=("slides", "caption"),
+                label=f"truth{rnd + 1}:{slug_prefix}", temperature=0.3, think=WRITER_THINK,
+                messages=[
+                    {"role": "user", "content": ask},
+                    {"role": "assistant",
+                     "content": json.dumps(post, ensure_ascii=False)},
+                    {"role": "user", "content": _truth_fix_note()
+                        + "\n".join(f"  - {e}" for e in errs)
+                        + "\n\n" + _slide_plan()},
+                ],
+            )
+        except llm.LLMError as e:
+            print(f"  {slug_prefix}: truth fix failed ({e})")
+            break
+        _respace(cand)
+        if validate(cand):
+            _tighten(cand)
+        if validate(cand):
+            print(f"  {slug_prefix}: truth fix broke the format — not kept")
+            continue
+        again, again_bad = factcheck.verify_detail(
+            cand, brief, ACCT, model=MODEL, label=f"{slug_prefix}/fix{rnd + 1}")
+        if len(again) < len(errs):
+            post, errs, bad = cand, again, again_bad
+        else:
+            break
+
+    # Last: delete what is still untrue instead of asking for another rewrite.
+    # A rewrite trades one invented detail for another; a deletion only
+    # removes, so it is the one repair that cannot make the post less true.
+    # The result is re-checked in full - deletion is a repair, not a pass.
+    if errs and bad:
+        cut = factcheck.strip_claims(post, bad)
+        if cut is not None and not validate(cut):
+            left, left_bad = factcheck.verify_detail(
+                cut, brief, ACCT, model=MODEL, label=f"{slug_prefix}/cut")
+            print(f"  {slug_prefix}: deleted {len(bad)} untrue claim(s) — "
+                  f"{len(errs)} -> {len(left)} problem(s)")
+            if len(left) < len(errs):
+                post, errs = cut, left
+        else:
+            print(f"  {slug_prefix}: untrue claims sit in a headline or would "
+                  f"empty a slide — cannot delete them safely")
+    return post, errs
 
 
 STRATEGIST = """You maintain the strategy notes for an Instagram account.
@@ -1268,6 +1635,25 @@ def author(count, start_index, avoid):
             topic = re.sub(r"[^a-z0-9]+", "-",
                            (brief.get("topic") or "post").lower()).strip("-")
             post["slug"] = f"post{n:02d}-{topic[:40].rstrip('-')}"
+        # Not true to its source, after the truth pass had its chances: the
+        # post is dropped and the next spare brief takes the slot. A gap in the
+        # queue is recoverable; a published wrong fact on an account people act
+        # on is not - post68 would have told readers to keep using Medicaid.
+        untrue = post.pop("_factcheck", None) or []
+        # Same for a post that still breaks the mechanical rules after every
+        # repair: drop it HERE, so the next spare brief takes the slot. It used
+        # to be appended and rejected later in main(), where no spare could
+        # replace it - one bad post meant one fewer post, every time.
+        broken = validate(post)
+        if broken:
+            print(f"REJECTED {post.get('slug')} — still breaks "
+                  f"{len(broken)} rule(s) after repair: "
+                  + "; ".join(e[:120] for e in broken[:3]))
+            continue
+        if untrue:
+            print(f"REJECTED {post.get('slug')} — not true to its source: "
+                  + "; ".join(e[:160] for e in untrue[:3]))
+            continue
         post["source_url"] = brief.get("source_url", "")
         posts.append(post)
         print(f"  wrote {post['slug']} ({len(post.get('slides') or [])} slides)")
@@ -1379,9 +1765,147 @@ def repeated_openers(posts):
     return {k: v for k, v in seen.items() if len(v) > 1}
 
 
+_MONTHS = {"ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6,
+           "jul": 7, "ago": 8, "sep": 9, "set": 9, "oct": 10, "nov": 11,
+           "dic": 12}
+# A date is only a DEADLINE when the reader is told to act by it. "Ayuda
+# recibida antes del 18 de septiembre" describes a cutoff and is fine to
+# repeat after the 18th; "manda el formulario antes del 14 de septiembre" is
+# an instruction, and publishing it on the 26th - which happened - is wrong.
+# Present-tense and infinitive forms only: "mandaste ... antes del 31 de
+# agosto" is a condition about the past, not an order.
+_ACTION = (r"(?:manda|mandar|mandes|mandas|mande|env[ií]a|env[ií]e|env[ií]as|"
+           r"enviar|presenta|presentar|presentes|solicita|solicitar|aplica|"
+           r"aplicar|reg[ií]strate|registrar|paga|pagar|renueva|renovar|llena|"
+           r"llenar|completa|completar|comenta|comentar|opina|opinar)\b")
+_DEADLINE = re.compile(
+    r"(?:" + _ACTION + r"[^.]{0,50}?(?:antes del?|hasta el|a m[aá]s tardar el)"
+    r"|tienes hasta el|fecha l[ií]mite:?|vence el|vencen el|plazo:? hasta el)"
+    r"\s+(\d{1,2})\s*(?:de\s+)?([a-záéíóú]{3,10})\.?"
+    r"(?:\s+(?:de\s+)?(\d{4}))?", re.I)
+
+# Official names that stay in English by the account's own voice rule, and
+# must not make a Spanish slide read as English: "Familia: Dates for Filing".
+_OFFICIAL_EN = ("dates for filing", "final action dates", "final action date",
+                "visa bulletin", "green card", "public charge",
+                "federal register", "admit until date", "notice to appear",
+                "parole in place", "adjustment of status", "request for evidence",
+                "employment authorization", "priority date", "policy manual")
+
+# Words that only Spanish uses. A slide sentence of four words or more with
+# none of them is English - "USCIS 2026 changes listed, no notice search
+# needed." published on inmigraforma's plain-language slide. "no", "a" and "o"
+# are left out on purpose: English has them too.
+_ES_WORDS = {"el", "la", "los", "las", "de", "del", "que", "y", "en", "un",
+             "una", "por", "para", "con", "si", "tu", "tus", "es", "se", "al",
+             "lo", "su", "sus", "más", "ya", "hay", "te", "le", "les", "esto",
+             "este", "esta", "como", "pero", "cuando", "donde", "qué", "cómo",
+             "sí", "está", "están", "son", "puedes", "debes", "tienes"}
+
+
+_EN_FUNCTION = {"the", "and", "with", "your", "you", "is", "are", "for",
+                "this", "that", "will", "of", "to", "it", "be", "have", "has",
+                "not", "can", "should", "must", "need", "before", "after",
+                "from", "by", "if", "or"}
+
+
+def _reads_english(text):
+    """Is this slide text English, on an account that publishes in Spanish?
+
+    Calibrated on real posts in both directions. Two things prove Spanish
+    outright and English never has either: an accent, a tilde or an opening
+    ¿/¡ - "¿Me afecta a mí?" uses no word from any list and is plainly
+    Spanish. Short text is left alone. Beyond that it must lack every Spanish
+    function word AND show something English - a function word, or the -ed
+    and -ing endings that gave "USCIS 2026 changes listed, no notice search
+    needed." away. "Usa formulario I-130" has neither, and is Spanish.
+    """
+    if re.search(r"[áéíóúñü¿¡]", text.lower()):
+        return False
+    low = text.lower()
+    for name in _OFFICIAL_EN:
+        low = low.replace(name, " ")
+    words = re.findall(r"[a-z]+", low)
+    if len(words) < 4 or _ES_WORDS & set(words):
+        return False
+    return bool(_EN_FUNCTION & set(words)) or any(
+        len(w) >= 5 and w.endswith(("ed", "ing")) for w in words)
+
+
+def _slide_strings(post):
+    for i, sl in enumerate(post.get("slides") or [], 1):
+        for key in ("headline", "sub", "body"):
+            v = hooks.flatten(sl.get(key))
+            if v:
+                yield i, key, v
+        for item in sl.get("items") or []:
+            if isinstance(item, str):
+                yield i, "item", item
+
+
+def _slack(cap):
+    """A field cap plus 5% (at least 3 characters). See validate()."""
+    return cap + max(3, cap // 20)
+
+
+def _reader_safety(post, today=None):
+    """Rules about what a reader is TOLD, which the fact-check backs up but
+    should never be the only thing standing between a reader and harm.
+
+    Each one is here because the local model did it on a published post:
+    telling readers to leave the country over a rule still open for comment;
+    "use Medicaid sin miedo" the week benefits started to count; English on a
+    Spanish account's plain-language slide; "Embajadores' hijos"; a deadline
+    that had already passed by the day the post went out.
+    """
+    errs = []
+    text = " ".join(v for _, _, v in _slide_strings(post)) + " " + (post.get("caption") or "")
+    low = re.sub(r"ee\.?\s*uu\.?", "eeuu", text.lower())
+
+    for rule in ACCT.get("forbidden_advice") or []:
+        if re.search(rule["pattern"], low):
+            errs.append(f"tells the reader something this account never says: "
+                        f"{rule['why']} (matched {rule['pattern']!r}). Remove it.")
+
+    if ACCT.get("slide_language") == "es":
+        for i, key, v in _slide_strings(post):
+            if _reads_english(v):
+                errs.append(f"slide {i}: this {key} reads as English on a "
+                            f"Spanish account: {v[:60]!r}")
+            # "Embajadores' hijos" - a capitalised plural, an apostrophe, then
+            # the noun it owns. Deliberately narrow: an English phrase quoted
+            # from the source ('strongly disagrees' con la orden) is allowed.
+            if re.search(r"\b[A-ZÁÉÍÓÚ][a-záéíóúñ]+s'\s+[a-záéíóúñ]|\b[A-Za-z]+'s\b", v):
+                errs.append(f"slide {i}: English possessive in Spanish text: "
+                            f"{v[:60]!r}")
+        for i, sl in enumerate(post.get("slides") or [], 1):
+            hl = hooks.flatten(sl.get("headline")).strip().lower().rstrip(".")
+            if hl in ("the system", "el sistema"):
+                errs.append(f"slide {i}: the headline 'El sistema' is the "
+                            f"template's placeholder, not a headline — write "
+                            f"what this slide actually tells the reader")
+
+    # A deadline has to still be ahead on the day the post publishes, and the
+    # post is queued behind up to a week of others.
+    today = today or date.today()
+    for m in _DEADLINE.finditer(text):
+        mon = _MONTHS.get(m.group(2)[:3].lower())
+        if not mon:
+            continue
+        try:
+            when = date(int(m.group(3) or today.year), mon, int(m.group(1)))
+        except ValueError:
+            continue
+        if when < today + timedelta(days=7):
+            errs.append(f"deadline {m.group(0)!r} will have passed, or nearly, "
+                        f"by the time this post publishes — drop it or pick a "
+                        f"topic that is still actionable")
+    return errs
+
+
 def validate(post):
     """Catch the failure modes that would silently ship a broken carousel."""
-    errs = []
+    errs = _reader_safety(post)
     if not post.get("slug"):
         errs.append("missing slug")
     cap = post.get("caption", "")
@@ -1521,7 +2045,12 @@ def validate(post):
             total += len(hooks.flatten(sl.get("body")))
             total += sum(len(hooks.flatten(x)) for x in (sl.get("items") or []))
         budget = int(target * 11 * 0.95)   # ~11 chars/sec readable pace
-        if total > budget:
+        # The 5% margin is what the WRITER aims for (it is in the message
+        # below, and _tighten trims toward it). It is not the rejection line:
+        # on 2026-09-23 a post about a court order lifting asylum holds was
+        # thrown away at 633 characters against 627 - "needs about 58s" for a
+        # 60-second target. A post that reads inside its target ships.
+        if total > int(target * 11):
             # Say how much to cut. "502 chars against a 470 budget" leaves the
             # model to do the subtraction and it reliably overshoots the other
             # way; "cut at least 32 characters" it can act on.
@@ -1535,12 +2064,17 @@ def validate(post):
         flat = hl if isinstance(hl, str) else "".join(x.get("t", "") for x in hl or [])
         if len(flat) > max(60, _LIM["headline"]):
             errs.append(f"slide {i}: headline {len(flat)} chars, will overflow")
+        # The per-field caps only stop one slide eating the post; the TOTAL
+        # reading-time budget above is what keeps the Reel short, and it stays
+        # exact. So a field may run a few characters over its own cap: a post
+        # was thrown away on 2026-09-23 for a body of 121 against 120, and the
+        # model cannot count closely enough to land on the character.
         for key, cap in (("sub", _LIM["sub"]), ("stat", _LIM["stat"])):
-            if len(s.get(key) or "") > cap:
+            if len(s.get(key) or "") > _slack(cap):
                 errs.append(f"slide {i}: {key} {len(s[key])} chars > {cap}, "
                             f"cut {len(s[key]) - cap}")
         body_len = len(hooks.flatten(s.get("body")))
-        if body_len > _LIM["body"]:
+        if body_len > _slack(_LIM["body"]):
             errs.append(f"slide {i}: body {body_len} chars > {_LIM['body']}, "
                         f"cut {body_len - _LIM['body']}")
         for ln in (s.get("code") or "").split("\n"):
