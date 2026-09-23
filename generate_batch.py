@@ -1937,7 +1937,50 @@ def _reader_safety(post, today=None):
             errs.append(f"deadline {m.group(0)!r} will have passed, or nearly, "
                         f"by the time this post publishes — drop it or pick a "
                         f"topic that is still actionable")
+
+    # A post is written days before it is seen. "La respuesta cambió hoy" went
+    # into a queue on 2026-09-23 about a page last updated on the 1st, to
+    # publish on the 24th: false on every one of those days. Name the date.
+    for i, key, v in _slide_strings(post):
+        m = _RELATIVE_DAY.search(v)
+        if m:
+            errs.append(f"slide {i}: {m.group(0)!r} — the reader sees this days "
+                        f"after it is written, so it is not true then. Say the "
+                        f"date the source gives instead")
+
+    # Two explaining slides that say the same thing are one slide of content
+    # and a wasted 8 seconds of Reel. The same post put "Familiares: Dates for
+    # Filing. Trabajo: Final Action Dates." on slides 2 and 3.
+    bodies = [(i, set(_words_of(hooks.flatten(sl.get("body")))))
+              for i, sl in enumerate(post.get("slides") or [], 1)
+              if sl.get("kind") == "step"]
+    for a in range(len(bodies)):
+        for b in range(a + 1, len(bodies)):
+            (i, x), (j, y) = bodies[a], bodies[b]
+            if len(x) >= 4 and len(y) >= 4 and len(x & y) / min(len(x), len(y)) >= 0.7:
+                errs.append(f"slides {i} and {j} say the same thing — each "
+                            f"explaining slide must add something the reader "
+                            f"did not have yet: what it means day to day, who "
+                            f"it applies to, what to do")
     return errs
+
+
+# Only a CHANGE dated to the writing day. "Revisa hoy tu caso" is advice and
+# true whenever it is read; "cambió hoy" is a news claim with a date on it.
+_RELATIVE_DAY = re.compile(
+    r"\b(?:cambi|anunci|public|lanz|actualiz)\w*\s+(?:\w+\s+)?(?:hoy|ayer|esta semana)\b"
+    r"|\b(?:desde|a partir de)\s+hoy\b"
+    r"|\bhoy\s+(?:cambi|anunci|public|entr|lanz)\w*"
+    r"|\b(?:changed|announced|launched|released|shipped|updated|published)"
+    r"\s+(?:today|yesterday|this week)\b"
+    r"|\b(?:as of|starting|from) today\b"
+    r"|\b(?:today|yesterday)\s+(?:\w+\s+)?(?:announced|launched|released|shipped|changed)\b",
+    re.I)
+
+
+def _words_of(text):
+    return [w for w in re.findall(r"[a-záéíóúñü0-9]+", (text or "").lower())
+            if len(w) > 2]
 
 
 def validate(post):
