@@ -170,6 +170,16 @@ WORLD_ONLY = (
     "\n\n=====\n\n")
 
 
+def _degenerate(data):
+    """True when the checker's answer is a shape with nothing in it."""
+    claims = (data or {}).get("claims") or []
+    if not claims:
+        return True
+    empty = sum(1 for c in claims
+                if len((c.get("claim") or "").strip(" .\u2026")) < 4)
+    return empty * 2 >= len(claims)
+
+
 def _norm(s):
     """Normalise for a literal lookup: case, whitespace, and the typographic
     variants an HTML-to-text strip and a model's copy both introduce."""
@@ -332,9 +342,23 @@ def verify_detail(post, brief, acct, model=None, label=""):
            f"comparisons, analogies and general encouragement. Then give the "
            f"status of the change.")
     try:
-        data = llm.structured(CHECKER, ask, SCHEMA, model=model,
-                              require=("claims",), label=f"factcheck:{label}",
-                              think=True, temperature=0)
+        data = None
+        # A check that did not really run is not a verdict. On 2026-09-23 one
+        # came back with every claim and every piece of evidence literally
+        # "...", and the post was rejected on that. Placeholder output gets
+        # one more run - at a small temperature, so it is a real resample -
+        # before anything is concluded from it.
+        for attempt in range(2):
+            data = llm.structured(
+                CHECKER, ask, SCHEMA, model=model, require=("claims",),
+                label=f"factcheck:{label}" + (f"/again" if attempt else ""),
+                think=True, temperature=0 if not attempt else 0.2)
+            if not _degenerate(data):
+                break
+            print(f"  ::warning::factcheck:{label} returned placeholder "
+                  f"claims - checking again")
+        if _degenerate(data):
+            raise llm.LLMError("the checker returned placeholder claims twice")
     except llm.LLMError as e:
         # A checker that could not run has checked nothing. On an account whose
         # posts people act on, that is a rejection, not a pass.
