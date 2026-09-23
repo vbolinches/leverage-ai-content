@@ -2166,7 +2166,14 @@ def validate(post):
                 errs.append(f"slide {i}: {key} {len(s[key])} chars > {cap}, "
                             f"cut {len(s[key]) - cap}")
         body_len = len(hooks.flatten(s.get("body")))
-        if body_len > _slack(_LIM["body"]):
+        # When the whole post reads inside its target, one body may run up to
+        # a quarter over: "one slide eats the post" is exactly what the total
+        # budget measures. A court-order post was thrown away unchecked on
+        # 2026-09-23 for a body of 128 against 120, inside its budget. The
+        # canvas has rendered bodies past 300 characters.
+        in_budget = bool(target) and total <= int(target * 11)
+        body_cap = _LIM["body"] * 5 // 4 if in_budget else _slack(_LIM["body"])
+        if body_len > body_cap:
             errs.append(f"slide {i}: body {body_len} chars > {_LIM['body']}, "
                         f"cut {body_len - _LIM['body']}")
         for ln in (s.get("code") or "").split("\n"):
