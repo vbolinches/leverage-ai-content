@@ -167,6 +167,11 @@
       "warm golden smoke gently swirling and rising through soft light, fluid motion, dark blue background",
       "aurora ribbons of teal and gold light waving across a dark night sky, flowing motion, no ground, no horizon",
       "sparkles of warm golden light drifting and swirling through dark blue space, bokeh, flowing motion"
-    ]
+    ],
+    "mode": "topic",
+    "audience": "Spanish-speaking immigrants in the US and their families, reading official immigration news",
+    "palette": "deep navy with warm gold and soft coral accents",
+    "visual_rules": "Generated people, officers, flags and borders MAY appear (owner's call 2026-09-23) - but never a real or recognisable person, never a real named place presented as footage, and never a scene that implies a specific event happened. Tone stays calm, respectful and hopeful, never alarmist: no violence, no arrests, no handcuffs, no detention, no raids, no weapons, no crying or fear. Prefer scenes and symbols a family recognises: a kitchen table with papers, a calendar, a mailbox, a door opening to light, a bridge, a clock, a waiting room bench, a flag moving in the wind.",
+    "negative": "handcuffs, arrest, detention, jail, prison, cage, raid, violence, weapon, gun, blood, crying, fear, fire, storm, dark alley, celebrity, recognisable real person"
   }
 }
