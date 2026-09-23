@@ -1065,9 +1065,10 @@
         "accounts/leverageai/queue/post62-siri-claude-integration/slide04.png"
       ],
       "caption": "Freelancers: you can now set Claude or ChatGPT as your Siri AI on iOS 27. No more juggling between apps to draft a message or create a reminder.\n\nUsing the new Model Delegation framework, you can say:\n\n'Hey Siri, send a follow-up to Sarah about the proposal draft.'\n\nClaude will handle it via Messages without you opening the app.\n\nCopy-paste this prompt to set up your 'Siri' AI:\n\n'You are my AI assistant. When I say \"Hey Siri,\" respond with the appropriate action. Do not say you are an AI.'\n\nSave this workflow. It wins back 3-5 minutes per task, no more app switching.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #freelancer #aiassistant #siri #claude #chatgpt #ios27 #aifreelancer #aiassistant #aiintegration",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post62-siri-claude-integration/reel.mp4"
+      "video": "accounts/leverageai/queue/post62-siri-claude-integration/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. CONTRADICTS THE SOURCE — the post says: 'Freelancers: you can now set Claude or ChatGPT as your Siri AI on iOS 27.'. The | CONTRADICTS THE SOURCE — the post says: \"Using the new Model Delegation framework, you can say: 'Hey Siri, send a follow. Restore by setting status back to 'queued'."
     },
     {
       "id": "post63-microsoft-humanist-ai-oversight",
@@ -1079,7 +1080,8 @@
         "accounts/leverageai/queue/post63-microsoft-humanist-ai-oversight/slide04.png"
       ],
       "caption": "Microsoft's new 'humanist AI' policy means their tools won't execute tasks that might violate rules. For example, if you ask it to draft an email that could be seen as unprofessional, it will fail instead of sending it. \n\nThis affects tools like Copilot for Business. If you try to send client communications through AI, you'll need to manually approve them first. It's a safety move but it means you can't rely on AI to handle client outreach alone anymore. \n\nSave this prompt to make your AI tools obey your rules:\n\n\"Write a professional email to [Client Name] about [Topic]. Avoid any phrases that could be seen as unprofessional or risky. If unsure, fail instead of sending.\" \n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #aiassistant #aiagencies #aiagents #aiops #aifreelancer #aibusiness #aiforbusiness #aiautomation #aiforfreelancers",
-      "status": "queued"
+      "status": "retired",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'For example, if you ask it to draft an email that could be seen as unprofess | NOT IN THE SOURCE — the page does not say: 'This affects tools like Copilot for Business.'. Remove it or state only what. Restore by setting status back to 'queued'."
     },
     {
       "id": "post66-ai-pricing-comparison",
@@ -1091,9 +1093,10 @@
         "accounts/leverageai/queue/post66-ai-pricing-comparison/slide04.png"
       ],
       "caption": "Just got a notification that Microsoft Copilot is now $10/month for non-enterprise users. That's a 4x price jump from the previous $2.50 tier.\n\nIf you're using AI for client proposals, content, and research (like most freelancers), you'll need a plan that doesn't cost more than $10/month. Here's a breakdown of real pricing that matters to you:\n\nChatGPT: $20/mo (for $20/mo, you get full GPT-4 access and unlimited use)\nClaude: $20/mo (for $20/mo, you get full Claude 3.5 Sonnet access)\nGemini: Free (for non-enterprise use, but limited to Gemini 1.5 Pro)\nCopilot: $10/mo (for non-enterprise, including GPT-4 access)\n\nUse this prompt when you're comparing tools for your next project:\n\n'Compare AI tools with these needs: [Your Need]. Prioritize price under $10/month, then speed, then features.'\n\nCopy and paste this prompt. You'll save 30+ minutes each time you're choosing a tool for a client project.\n\nSave this for when you need to choose a tool. If you use it, you'll avoid wasting $10+ per month on a tool that's too expensive for your needs.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #freelancer #aiassistant #aipricing #aicomparison #aiplanning #aiwork #aiautomation #aiusedaily #aifreelancer",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post66-ai-pricing-comparison/reel.mp4"
+      "video": "accounts/leverageai/queue/post66-ai-pricing-comparison/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 6 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: \"Microsoft Copilot is now $10/month for non-enterprise users. That's a 4x pri | CONTRADICTS THE SOURCE — the post says: 'ChatGPT: $20/mo (for $20/mo, you get full GPT-4 access and unlimited use)'. Restore by setting status back to 'queued'."
     },
     {
       "id": "post67-chatgpt-ios-task-management",
@@ -1105,9 +1108,10 @@
         "accounts/leverageai/queue/post67-chatgpt-ios-task-management/slide04.png"
       ],
       "caption": "ChatGPT for iOS 1.2026.188 added task management features—no more switching apps to track client projects.\n\nWhen a client sends a proposal request, instead of opening Trello or Notes, you can now create tasks directly in ChatGPT. Just click the task icon in the chat, type the project name, and add details. The task appears in your chat history, so you never lose track of next steps.\n\nHere's the copy-paste prompt to automate this:\n\n\"Create a task for [Client Name]'s [Project Name] with these details: [Summary of what they need]. Include a deadline of [Date].\"\n\nSave this workflow. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #freelancer #soloconsultant #aiassistant #taskmanagement #clientprojects #chatgpt #aihacks #productivity #time saving",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post67-chatgpt-ios-task-management/reel.mp4"
+      "video": "accounts/leverageai/queue/post67-chatgpt-ios-task-management/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'ChatGPT for iOS 1.2026.188 added task management features'. Remove it or sta | NOT IN THE SOURCE — the page does not say: \"Use this prompt: Create a task for [Client Name]'s [Project Name] with these. Restore by setting status back to 'queued'."
     },
     {
       "id": "post69-shot-scraper-1-12-automate-competitor-pricing",
@@ -1119,9 +1123,10 @@
         "accounts/leverageai/queue/post69-shot-scraper-1-12-automate-competitor-pricing/slide04.png"
       ],
       "caption": "Competitor price tracking used to eat hours of your time, and storage costs for screenshots added up. Now, with shot-scraper 1.12’s WebP support, you can take screenshots of competitor pricing pages with 80% smaller file sizes than JPEG/PNG — and it’s free to use.\n\nThe key is the --quality flag (default: lossless). For pricing screenshots, this means you’ll store 50% less data while keeping quality high enough to read text.\n\nIf you’re tracking a competitor’s pricing page daily, this cuts your storage costs by half. At $0.05 per GB, that’s $0.025 saved per screenshot.\n\nCOPY THIS PROMPT:\n\nTake a screenshot of [competitor url] using shot-scraper, save as a WebP file with 80% quality.\n\n--quality 80\n\nSave this for later to make competitor price tracking effortless. Comment 'tracking' below and we’ll share a free template for your competitor list.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #freelancer #businessautomation #pricetracking #competitoranalysis #screenshot #shotscraper #webp #pricemonitoring #savings",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post69-shot-scraper-1-12-automate-competitor-pricing/reel.mp4"
+      "video": "accounts/leverageai/queue/post69-shot-scraper-1-12-automate-competitor-pricing/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 6 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'WebP cuts screenshot size by 50%'. Remove it or state only what the page sta | NOT IN THE SOURCE — the page does not say: 'WebP saves 50% storage vs JPEG/PNG'. Remove it or state only what the page s. Restore by setting status back to 'queued'."
     },
     {
       "id": "post71-pdf-to-markdown-ai",
@@ -1133,9 +1138,10 @@
         "accounts/leverageai/queue/post71-pdf-to-markdown-ai/slide04.png"
       ],
       "caption": "Convert PDF contracts or reports to editable Markdown in seconds. No more screenshots or manual reformatting. Just paste and save.\n\nPDFtoMarkdown.ai preserves headings and tables so you can edit in Notion or Google Docs. Saves 2+ hours per client document.\n\nCopy-paste this prompt:\n\n‘Convert this PDF to Markdown format, preserving headings, tables, and structure. Keep all content intact.’\n\nSave this workflow — it’s a time-saver for anyone who deals with PDFs regularly. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #pdftocsv #markdown #notion #freelancer #productivity #aiassistant #smallbusiness #aihacks #businessautomation",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post71-pdf-to-markdown-ai/reel.mp4"
+      "video": "accounts/leverageai/queue/post71-pdf-to-markdown-ai/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 8 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'PDF to Excel takes hours.'. Remove it or state only what the page states. | NOT IN THE SOURCE — the page does not say: 'Done in seconds'. Remove it or state only what the page states.. Restore by setting status back to 'queued'."
     },
     {
       "id": "post74-client-approval-invoices",
@@ -1147,9 +1153,10 @@
         "accounts/leverageai/queue/post74-client-approval-invoices/slide04.png"
       ],
       "caption": "Stop chasing clients for invoice approvals. InvoSync 2026 uses AI to generate client-specific invoice summaries that get approvals faster.\n\nThe system: When you send an invoice, AI creates a one-sentence summary of the work done and costs. Clients click 'Approve' — no extra emails or calls. Works with QuickBooks/Xero.\n\nCopy-paste this prompt to test it:\n\n\"Generate a 1-sentence summary of the invoice for [Client Name]. Include the project name, total amount, and key deliverable. Keep it professional but simple.\"\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #invoicing #smallbusiness #freelancer #aiassistant #clientapproval #bookkeeping #time-saving #invoiceautomation #aiassistant",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post74-client-approval-invoices/reel.mp4"
+      "video": "accounts/leverageai/queue/post74-client-approval-invoices/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'InvoSync 2026 uses AI to generate client-specific invoice summaries that get | NOT IN THE SOURCE — the page does not say: 'When you send an invoice, AI creates a one-sentence summary of the work done. Restore by setting status back to 'queued'."
     },
     {
       "id": "post75-cloudflare-python-workers-ga",
@@ -1161,9 +1168,10 @@
         "accounts/leverageai/queue/post75-cloudflare-python-workers-ga/slide04.png"
       ],
       "caption": "Freelancers often waste hours setting up servers for simple AI tools. Now, Python Workers on Cloudflare are generally available—no servers, no scaling headaches. You run Python via Pyodide in WebAssembly (123MB binary). It’s ideal for client portals, automated reports, or internal tools.\n\nCopy this prompt to generate a Cloudflare Worker template:\n\n\"Create a Cloudflare Worker template using Python with Pyodide. Include:\n- A simple API endpoint\n- Handling HTTP requests\n- Basic error handling\n- Notes on WebAssembly limitations (no multiprocessing)\"\n\nSave this workflow for when you need to deploy a custom AI tool without managing servers. \n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #freelancer #cloudflare #python #serverless #ai #aidevelopment #devtools #freelancebusiness #aiagents",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post75-cloudflare-python-workers-ga/reel.mp4"
+      "video": "accounts/leverageai/queue/post75-cloudflare-python-workers-ga/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 3 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'It’s ideal for client portals, automated reports, or internal tools.'. Remov | NOT IN THE SOURCE — the page does not say: 'No servers, no scaling'. Remove it or state only what the page states.. Restore by setting status back to 'queued'."
     },
     {
       "id": "post76-jev-client-decision-models",
@@ -1175,9 +1183,10 @@
         "accounts/leverageai/queue/post76-jev-client-decision-models/slide04.png"
       ],
       "caption": "Client scoring has always been guesswork. What if you could get a confidence score instead? Jev’s API gives floating-point numbers for yes/no questions, like 'Is this client likely to pay on time?'\n\nAt $0.042/million tokens (input only), it’s cheaper than GPT-5 Nano for high-volume use. Here’s how to use it:\n\nCopy this prompt:\n\n'Rate this client on a scale of 0.0 to 1.0:\n\nName: [Client Name]\nCompany: [Company]\nPayment history: [History]\n\nScore:'\n\nThe API will return a number like 0.87. Use that to prioritize clients or reject bad ones.\n\nSave this prompt — it’s a time-saver for every client decision.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #clientdecisions #aiassistant #businessautomation #freelancerlife #soloconsultant #smallbusiness #aiforbusiness #jevapi #aiplanning",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post76-jev-client-decision-models/reel.mp4"
+      "video": "accounts/leverageai/queue/post76-jev-client-decision-models/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 1 claim(s) about products, prices or features not backed by its source, e.g. CONTRADICTS THE SOURCE — the post says: \"The prompt 'Rate on 0.0 to 1.0: [Client details]' is for a yes/no question.\". T. Restore by setting status back to 'queued'."
     },
     {
       "id": "post77-code-review-flaws",
@@ -1201,9 +1210,10 @@
         "accounts/leverageai/queue/post78-mcp-secure-client-data-integrations/slide04.png"
       ],
       "caption": "Client proposals often include API keys accidentally, risking data leaks. MCP (Model Context Protocol) stops this by letting your AI connect only to approved services like Stripe without manual code.\n\nMCP lets you create a UI to connect services securely. It logs every action, so you can audit who accessed what. You don't need to write code to enforce 'only Stripe can access client data'.\n\nCopy this prompt to set up MCP:\n\n\"Set up secure integration with Stripe for [client name]. Only allow Stripe to access client data. Log all actions for audit.\"\n\nSave this workflow for when your AI tries to share keys. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #aiworkflow #mcp #datasecurity #clientproposals #aiintegration #secureai #businesssecurity #aiagent #aibusiness",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post78-mcp-secure-client-data-integrations/reel.mp4"
+      "video": "accounts/leverageai/queue/post78-mcp-secure-client-data-integrations/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 3 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'Client proposals often include API keys accidentally, risking data leaks'. R | NOT IN THE SOURCE — the page does not say: 'MCP stops data leaks'. Remove it or state only what the page states.. Restore by setting status back to 'queued'."
     },
     {
       "id": "post79-ai-safety-checks-verify-before-sending",
@@ -1215,9 +1225,10 @@
         "accounts/leverageai/queue/post79-ai-safety-checks-verify-before-sending/slide04.png"
       ],
       "caption": "Client reports are where AI bias gets real. One wrong word in a proposal can lose a client or attract a lawsuit. The UN just said 'scientific uncertainty is no excuse' for unsafe AI. \n\nHere’s how to add safety checks without adding work: \n\n1. Before sending any AI-generated report, ask: 'Is this biased?'\n2. Paste your output into Perplexity with this prompt:\n\n'Analyze this text for bias in race, gender, or culture. List specific examples and suggest fixes. Be direct.'\n\n3. Make the suggested edits. It takes 90 seconds, not 90 minutes.\n\nNo more 'AI might be biased' — just fix it before it matters. The UN isn’t waiting for you to be certain. Neither should you.\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #safetychecks #aiethics #clientreports #aibias #aiinbusiness #aiworkflow #aiadvice #aiatwork #aifeedback",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post79-ai-safety-checks-verify-before-sending/reel.mp4"
+      "video": "accounts/leverageai/queue/post79-ai-safety-checks-verify-before-sending/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 9 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'Client reports are where AI bias gets real.'. Remove it or state only what t | NOT IN THE SOURCE — the page does not say: 'One wrong word in a proposal can lose a client or attract a lawsuit.'. Remov. Restore by setting status back to 'queued'."
     },
     {
       "id": "post81-ai-expense-categorization-in-quickbooks",
@@ -1229,9 +1240,10 @@
         "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/slide04.png"
       ],
       "caption": "QuickBooks AI now includes expense categorization on all paid tiers — including Essentials, which used to require Advanced. If you correct a few entries, the AI gets better at tagging your expenses, saving you 80% of manual work.\n\nHere’s how to train it:\n\n1. Go to Expenses > Auto-Categorize\n2. Correct a few expense categories manually (e.g., \"Coffee Run\" → \"Office Supplies\")\n3. Confirm corrections to train the AI\n\nNo need for separate tools or complex setups — it’s built right into QuickBooks. Accuracy improves the more you correct.\n\nCopy this prompt:\n\n\"Categorize these expenses: [paste list here]\"\n\n(Use this when you need to manually tag a batch.)\n\nSave this for later, and follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#quickbooks #ai #bookkeeping #smallbusiness #freelancer #aiworkflow #expensetracking #quickbooksai #bookkeepingtips #aiassistant",
-      "status": "queued",
+      "status": "retired",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/reel.mp4"
+      "video": "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/reel.mp4",
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 9 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'QuickBooks AI now includes expense categorization on all paid tiers — includ | UNVERIFIED — 'If you correct a few entries, the AI gets better at tagging your expenses' was marked supported, but the s. Restore by setting status back to 'queued'."
     }
   ]
 }

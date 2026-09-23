@@ -154,6 +154,22 @@ SCHEMA = {
 }
 
 
+# For accounts whose own advice IS the product. On immigration news any
+# instruction not backed by the page is dangerous; on an AI-productivity
+# account the workflow steps, the copy-paste prompt and the opinion are
+# original content the reader came for. The queue audit on 2026-09-23 failed
+# leverageai's post77 for its prompt and post75 for "no more Python setup
+# headaches" - neither is a claim about the world. What must be sourced there
+# is what a product does, what it costs, when it shipped, and the numbers.
+WORLD_ONLY = (
+    "THIS ACCOUNT'S OWN CONTENT IS NOT A CLAIM. The post gives its own "
+    "workflow steps, a copy-paste prompt, tips and opinions - do not list "
+    "those. List only FACTUAL CLAIMS ABOUT THE WORLD: that a product or "
+    "feature exists, what it does, what it costs, which plan includes it, "
+    "when it launched, and any number or statistic. Those must be on the page."
+    "\n\n=====\n\n")
+
+
 def _norm(s):
     """Normalise for a literal lookup: case, whitespace, and the typographic
     variants an HTML-to-text strip and a model's copy both introduce."""
@@ -296,6 +312,7 @@ def verify_detail(post, brief, acct, model=None, label=""):
 
     excerpt = _window(page, (brief or {}).get("quote"))
     ask = (f"SOURCE PAGE ({url}):\n\n{excerpt}\n\n"
+           + ("" if strict else WORLD_ONLY) +
            f"=====\n\nPOST TO CHECK:\n\n{post_text(post, acct)}\n\n"
            f"=====\n\nList every factual claim and every instruction the post "
            f"makes — dates, who is affected, what changed, amounts, "
