@@ -1316,6 +1316,12 @@ def _explain(brief, slug_prefix, rounds=4):
             f"{_LIM['body']}) - split it: {s!r}" for s in long]
         print(f"  {slug_prefix}: explanation {rnd + 1} - {len(doubts)} "
               f"doubt(s), {len(untrue)} untrue, {len(long)} too long")
+        # The counts alone cannot tell a real error from an over-strict
+        # checker; the sentences and the objections are what a review needs.
+        for s in sents:
+            print(f"      | {s}")
+        for pr in problems[:8]:
+            print(f"      ! {pr[:260]}")
         if best is None or len(problems) < len(best_doubts):
             best, best_doubts = sents, problems
         if not problems:

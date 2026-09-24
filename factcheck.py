@@ -58,7 +58,10 @@ PROPOSAL_WORDS = ("propuesta", "propone", "propuso", "proponen", "todavía no",
 # or residence still has to be on the page.
 SAFE_ADVICE = re.compile(
     r"guard(a|en|ar|alo|ala)\b|compart(e|ir|elo|ela)\b|sigue (a|la cuenta)|"
-    r"consulta\w* (a|con) (un|una) abogad|habla con (un|una) abogad|"
+    # Any form of the verb: "consulte" (formal) was missed and rejected a
+    # true, clear post on 2026-09-24.
+    r"consult\w* (a|con) (un|una) abogad|habl\w* con (un|una) abogad|"
+    r"pregunt\w* a (un|una) abogad|busc\w* (ayuda|asesor[ií]a) legal|"
     r"abogad[oa] de inmigraci|asesor[ií]a legal|"
     r"revisa\w* (bien )?(tu|el|las|los|en)\b|verifica\w*\b|confirma\w* (en|con|que)|"
     r"no pagues a nadie|estafa|fraude|desconf[ií]a|"
