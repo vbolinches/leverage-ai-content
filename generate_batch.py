@@ -1611,7 +1611,7 @@ def write_post(brief, slug_prefix, series_no):
     _respace(best)
     best, unclear = _clarity_pass(best, ask, brief, slug_prefix, cleared=cleared)
     before_truth = json.dumps(best, sort_keys=True)
-    best, truth = _truth_pass(best, ask, brief, slug_prefix)
+    best, truth = _truth_pass(best, ask, brief, slug_prefix, cleared=cleared)
     # A truth fix or a deletion can leave a gap a reader trips on. Read again
     # only if the post changed - the check costs about a minute.
     if json.dumps(best, sort_keys=True) != before_truth and not validate(best):
@@ -1746,7 +1746,25 @@ def _truth_fix_note():
                    "change only what the problems require.\n\nPROBLEMS:\n")
 
 
-def _truth_pass(post, ask, brief, slug_prefix, rounds=2):
+def _verify(post, brief, label, cleared=()):
+    """factcheck.verify_detail, minus objections to sentences the explanation
+    stage already verified. The checker is not stable (see _explain), and on
+    2026-09-24 it re-judged five verified bodies as unsupported and failed
+    the post on 'only 1 claim backed'. With cleared sentences on the post,
+    that total is meaningless and is dropped too."""
+    errs, bad = factcheck.verify_detail(post, brief, ACCT, model=MODEL,
+                                        label=label)
+    if not cleared:
+        return errs, bad
+    errs = [e for e in _uncleared(errs, cleared)
+            if not e.startswith("only ") or not cleared]
+    errs = [e for e in errs if not e.startswith("only ")]
+    bad = [b for b in bad
+           if not any(clarity._norm(b) in clarity._norm(s) for s in cleared)]
+    return errs, bad
+
+
+def _truth_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
     """Is the post TRUE to its source? If not, show the model exactly where it
     is not, give it two chances to fix that, and hand back what remains.
 
@@ -1758,8 +1776,7 @@ def _truth_pass(post, ask, brief, slug_prefix, rounds=2):
     """
     if validate(post):
         return post, []
-    errs, bad = factcheck.verify_detail(post, brief, ACCT, model=MODEL,
-                                        label=slug_prefix)
+    errs, bad = _verify(post, brief, slug_prefix, cleared)
     for rnd in range(rounds):
         if not errs:
             break
@@ -1788,8 +1805,8 @@ def _truth_pass(post, ask, brief, slug_prefix, rounds=2):
         if validate(cand):
             print(f"  {slug_prefix}: truth fix broke the format — not kept")
             continue
-        again, again_bad = factcheck.verify_detail(
-            cand, brief, ACCT, model=MODEL, label=f"{slug_prefix}/fix{rnd + 1}")
+        again, again_bad = _verify(cand, brief, f"{slug_prefix}/fix{rnd + 1}",
+                                   cleared)
         if len(again) < len(errs):
             post, errs, bad = cand, again, again_bad
         else:
@@ -1802,8 +1819,7 @@ def _truth_pass(post, ask, brief, slug_prefix, rounds=2):
     if errs and bad:
         cut = factcheck.strip_claims(post, bad)
         if cut is not None and not validate(cut):
-            left, left_bad = factcheck.verify_detail(
-                cut, brief, ACCT, model=MODEL, label=f"{slug_prefix}/cut")
+            left, left_bad = _verify(cut, brief, f"{slug_prefix}/cut", cleared)
             print(f"  {slug_prefix}: deleted {len(bad)} untrue claim(s) — "
                   f"{len(errs)} -> {len(left)} problem(s)")
             if len(left) < len(errs):
