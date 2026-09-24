@@ -333,37 +333,98 @@ Do not remove the fact-check to speed up the nightly run. It adds roughly a
 minute per post on the 5090, and it is the only thing that checks the post
 rather than the source.
 
-**13. Moving covers: generated motion behind the hook (2026-09-23, off
-until the owner reviews a test).** A Reel's first second decides whether a
-stranger stays, and ours opened on a still. `motion.py` runs in the nightly
-job AFTER all writing (the video model does not fit beside the 30B text model
-in 24GB, so it unloads Ollama first), makes a ~4s abstract clip per queued
-Reel with Wan 2.1 1.3B (Apache-2.0, local, free) and re-renders the Reel with
-the clip behind the cover (`render_reel.MotionCover`). Per account, opt-in:
-`"motion_cover": {"enabled": ..., "styles": [...]}`.
+**13. Moving covers: generated motion behind the hook (2026-09-23/24, off
+until the text is fixed - see point 14).** A Reel's first second decides
+whether a stranger stays, and ours opened on a still. `motion.py` runs in
+the nightly job AFTER all writing (the video model does not fit beside the
+text model in 24GB, so it unloads Ollama first), makes a ~4s clip per queued
+Reel with Wan 2.2 TI2V 5B (Apache-2.0, local, free, ~32GB in the Hugging
+Face cache) and re-renders the Reel with the clip behind the cover
+(`render_reel.MotionCover`). Per account, opt-in: `"motion_cover":
+{"enabled": ..., "mode": "topic", ...}`.
 
-- The clip is background only and abstract. The cover's words are still drawn
-  by `render_slides`, exactly as the spec says; a video model's text is
-  gibberish. `motion.NEGATIVE` forbids people, uniforms, flags, borders,
-  documents and text on every clip: on an immigration account a generated
-  officer or border scene is a picture of something that did not happen.
-  Styles never carry the topic - asked for "visa bulletin", the model draws
-  a visa.
+- The clip is RELATED TO THE POST (owner's call after seeing abstract
+  clips: "boring"). `motion.concepts()` has the local text model say what
+  the post is about, then write one LITERAL and one METAPHOR prompt for it.
+  Generated people, officers, flags, borders, places and datacenters MAY
+  appear (owner, 2026-09-23) - never a real or recognisable person, never a
+  brand's product, and on inmigraforma nothing frightening (`negative`,
+  `visual_rules` per account). The cover's WORDS are still drawn by
+  `render_slides`; a video model renders writing as gibberish, so
+  `_unreadable()` sends back any prompt that asks for a word, digit, label,
+  stamp or date and `_scrub()` is the last resort.
+- Wan 2.1 1.3B was tried first and deleted: five minutes a clip, but flat,
+  near-static, and it drew fake text. The owner compared both; Wan 2.2 won
+  clearly (real hands, real motion, no text) at 20-23 minutes a clip on the
+  5090 laptop. That means 1-3 Reels a night, not twelve. Untested lever:
+  fewer inference steps.
+- The GPU is shared. Another project on this PC (`fed-bid-workflow`,
+  `qwen2.5:14b`) loaded a model mid-run twice and cost 8 of 12 clips
+  (out-of-memory) and a 30-minute text stall. The nightly window must have
+  the GPU to itself, or the stage waits.
 - It can never cost a post: no environment, no model, a failed clip - the
   Reel keeps its still cover and the night's commit goes ahead.
 - Every Reel with a moving cover publishes with `is_ai_generated=true`
-  (Meta's "AI info" label). Meta requires the label on photorealistic
-  generated video; abstract is the aim, but light through haze can pass for
-  footage, so it always discloses.
+  (Meta's "AI info" label; required on photorealistic generated video, and
+  these are). `publish.py` retries without the field if a route rejects it -
+  container creation publishes nothing, so that retry is safe.
 - The model environment lives OUTSIDE the repo (`~/.cache/leverage-motion/
   venv`, override `MOTION_VENV`/`MOTION_PYTHON`): the repo sits in a synced
-  Google Drive folder. Weights are in the Hugging Face cache (~29GB). Clips
-  are cached in `motion_cache/` (gitignored); only the finished `reel.mp4`
-  is committed. `python motion.py --check` says whether a host is ready; a
-  VPS without a GPU simply keeps still covers.
-- Test without touching the queue: `python motion.py --account <slug>
-  --post <id> --out review_out/motion` (add `--synthetic` for an ffmpeg-made
-  clip that needs no model).
+  Google Drive folder. Clips are cached in `motion_cache/` (gitignored);
+  only the finished `reel.mp4` is committed. `python motion.py --check` says
+  whether a host is ready; a VPS without a GPU simply keeps still covers.
+- Trials never touch the queue: `python motion.py --account <slug> --post
+  <id>,<id> --variants 2 --out review_out/motion` renders each concept as
+  its own Reel; `--synthetic` uses an ffmpeg-made clip that needs no model.
+
+**14. Posts must inform a first-time reader, and the writer is the limit
+(2026-09-23/24).** The owner read a week of queued posts that had passed
+every truth and format check and could not tell what they were about:
+"Spot-check skills. No AI allowed", "Connect tools / Ask Gemini / to draft
+proposals", "Antes: H-2Bpara 2027. Ahora: no.", a recap of "1. Familiares:
+Dates". His rule: posts are for informing people; someone with limited
+knowledge must finish clear and without doubts, not feeling they wasted
+their time. Clarity outranks yield; an empty queue is the acceptable
+failure.
+
+What now enforces it:
+
+- `clarity.py`: a first-time reader (per-account persona in
+  `clarity_reader` - a solo owner who knows ChatGPT but not "API";
+  an immigrant who knows "Green Card" but not "I-485") reads ONLY the
+  slides, says what it understood, and quotes every place it stopped. Quotes
+  not on the slides are discarded in code; only "blocks" severity counts;
+  new version numbers and current-year dates are not doubts.
+  `author()` drops a post with more than `clarity_max_doubts` (1).
+- `_clarity_rules()` in `validate()`, model-free: filler headlines ("The
+  system", "Qué significa esto." - both were copied from the schema's own
+  examples, now replaced), step bodies under 6 words, recap items under 4,
+  words glued by a shortener ("H-2Bpara").
+- Explain first (`_explain`): the writer produces 5-8 self-contained plain
+  sentences for that reader, each clarity-read AND fact-checked, up to four
+  rounds; the slides must carry those sentences word for word (`_snap`
+  restores trimmed ones). Rewriting SLIDES for clarity was measured never to
+  converge (4->4, 5->5, 4->6) and is gone; the model shortener (64-74 calls
+  a run, the source of the fragments) is gone - length is fixed only by
+  removing whole sentences. Budgets allow full sentences: inmigraforma 70s,
+  leverageai 55s.
+- The writer sees the source page's own how-to and availability lines
+  (`_page_steps`) and may cite steps, menus, plans and prices from those
+  only; with none it writes news, not an invented how-to ("Type
+  @QuickBooks" was invented and rejected). Research drops topics that
+  promise a number their page never states ("50% cheaper", "3x faster").
+- The hook grader scores an unreadable hook below 3.
+
+**The finding these produced:** with `qwen3:30b-a3b` as the writer, 0 of 14
+posts met the bar in the final test, and the explanation stage trades
+clarity for truth round by round (0 doubts / 3 untrue, then 4 doubts / 0
+untrue). The checks work; the writer cannot satisfy them. It activates 3B of
+its 30B parameters per token, which is why it is fast and why it checks
+better than it writes. The next step (in progress) is a dense writer that
+fits 24GB - `qwen3.6:27b` first, `gemma4:31b` if needed - kept SEPARATE from
+the checker (`writer_model` per account) so checking stays cheap and the
+writer stays under a reader it did not train with. Slower is accepted:
+fewer, clear posts.
 
 ## Layout
 
