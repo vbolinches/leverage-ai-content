@@ -334,11 +334,15 @@ _DEFINITION = re.compile(
 _NOT_DEFINITION = re.compile(
     r"\d|\b(desde|hasta|antes|después|plazo|fecha|deadline|until|before|after|"
     r"debes?|tienes? que|must|should|ahora|now|ya no|cambi|nuevo|nueva|new)\b", re.I)
+# Form and visa codes carry digits that are not dates or amounts: I-485,
+# H-2B, N-400, EB-5, DV-2026 is NOT one (a year).
+_CODE = re.compile(r"\b[A-Z]{1,2}-?\d{1,3}[A-Z]?\b")
 
 
 def _definitional(claim):
     """True for a sentence that only defines a term."""
-    return bool(_DEFINITION.match(claim.strip())) and not _NOT_DEFINITION.search(claim)
+    claim = claim.strip()
+    return bool(_DEFINITION.match(claim)) and not _NOT_DEFINITION.search(_CODE.sub("X", claim))
 
 
 def verify(post, brief, acct, model=None, label=""):
