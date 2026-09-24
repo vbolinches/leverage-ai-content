@@ -131,7 +131,9 @@ benefit or a status the page never mentions at all.
 For every claim, copy the ONE sentence from the page that decides it, word for \
 word, exactly as it appears. It will be searched for on the page. If you \
 cannot find a sentence that decides it, the verdict is not_on_page and the \
-evidence is the closest sentence you found."""
+evidence is the closest sentence you found.
+
+DEFINITIONS. A sentence that only says what a term IS - what a program, form, agency, visa or word means (e.g. "El Programa de Visas de Diversidad es el sorteo anual que otorga visas de residencia permanente") - and makes no claim about what happened, changed, or who it applies to, is judged on whether the definition is CORRECT in general, not on whether the page states it. Mark it supported with the evidence exactly "definition" if it is correct; contradicted with a one-line correction as evidence if it is wrong. Anything beyond the definition must be on the page as usual."""
 
 SCHEMA = {
     "type": "object",
@@ -326,6 +328,19 @@ def post_text(post, acct):
     return "SLIDES:\n" + "\n".join(parts) + "\n\nCAPTION:\n" + "\n".join(keep)
 
 
+_DEFINITION = re.compile(
+    r"^(?:el |la |los |las |un |una |the |a |an )?[A-ZÁÉÍÓÚÑ][^.;:]{1,70}?"
+    r"\s(?:es|son|is|are)\s(?:un|una|el|la|los|las|the|a|an)\s", re.I)
+_NOT_DEFINITION = re.compile(
+    r"\d|\b(desde|hasta|antes|después|plazo|fecha|deadline|until|before|after|"
+    r"debes?|tienes? que|must|should|ahora|now|ya no|cambi|nuevo|nueva|new)\b", re.I)
+
+
+def _definitional(claim):
+    """True for a sentence that only defines a term."""
+    return bool(_DEFINITION.match(claim.strip())) and not _NOT_DEFINITION.search(claim)
+
+
 def verify(post, brief, acct, model=None, label=""):
     """Problems as text for the author; empty means the post is true to its
     source. verify_detail() also returns the offending claims themselves."""
@@ -412,6 +427,13 @@ def verify_detail(post, brief, acct, model=None, label=""):
         ev = (c.get("evidence") or "").strip()
         verdict = c.get("verdict")
         real = on_page(page, ev)
+        # A definition the checker vouched for. The shape is enforced here so
+        # the checker cannot wave a news claim through by calling it one:
+        # "<Term> es/son/is/are <un|una|el|la|the|a|an> ..." and nothing about
+        # a date, a deadline or an instruction.
+        if (verdict == "supported" and ev.lower().strip(" .") == "definition"
+                and _definitional(claim)):
+            continue
         if verdict == "contradicted":
             bad.append(claim)
             errs.append(f"CONTRADICTS THE SOURCE — the post says: {claim!r}. "
