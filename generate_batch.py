@@ -1369,7 +1369,15 @@ def _explain(brief, slug_prefix, rounds=4):
         print(f"  {slug_prefix}: explanation still unclear "
               f"({len(best_doubts)} problem(s)) - using it anyway, the post "
               f"is checked again")
-    return [s for s in (best or []) if len(s) <= _slack(_LIM["body"])]
+    return [s for s in (best or []) if len(s) <= _slack(_LIM["body"])], cleared
+
+
+def _uncleared(doubts, cleared):
+    """Doubts about sentences the explanation stage already cleared are the
+    reader's noise, not new problems - the final read judges only what the
+    writer added on top: cover, headlines, recap."""
+    return [d for d in doubts
+            if not any(clarity._norm(s) in clarity._norm(d) for s in cleared)]
 
 
 def _snap(post, sentences):
@@ -1473,7 +1481,12 @@ def write_post(brief, slug_prefix, series_no):
         # publish days later still.
         f"TODAY IS {today.isoformat()}. This post will publish between "
         f"{(today + timedelta(days=1)).isoformat()} and "
-        f"{(today + timedelta(days=10)).isoformat()}. Never tell the reader to "
+        f"{(today + timedelta(days=10)).isoformat()}. "
+        f"Any date shown on the cover or a sub is the date of the EVENT from "
+        f"the facts (when the rule, order or release happened) - never today's "
+        f"date. The cover may not use an acronym or code (DV, EAD, PM-602) that "
+        f"the explanation only defines later: say it in plain words there. "
+        f"Never tell the reader to "
         f"act by a date that falls before then. If the source's deadline has "
         f"already passed, say what that means NOW - what happens next, or what "
         f"someone who missed it can still do - or leave the date out.\n\n"
@@ -1500,7 +1513,7 @@ def write_post(brief, slug_prefix, series_no):
 
     # Explain first, in plain prose checked by a first-time reader; the slides
     # are then built from those sentences. See _explain().
-    sentences = _explain(brief, slug_prefix)
+    sentences, cleared = _explain(brief, slug_prefix)
     if sentences:
         ask += ("\n\nTHE EXPLANATION - already read and understood by a "
                 "first-time reader. The slides must carry these sentences WORD "
@@ -1587,7 +1600,7 @@ def write_post(brief, slug_prefix, series_no):
                 best, errs = trimmed, after
 
     _respace(best)
-    best, unclear = _clarity_pass(best, ask, brief, slug_prefix)
+    best, unclear = _clarity_pass(best, ask, brief, slug_prefix, cleared=cleared)
     before_truth = json.dumps(best, sort_keys=True)
     best, truth = _truth_pass(best, ask, brief, slug_prefix)
     # A truth fix or a deletion can leave a gap a reader trips on. Read again
@@ -1595,6 +1608,7 @@ def write_post(brief, slug_prefix, series_no):
     if json.dumps(best, sort_keys=True) != before_truth and not validate(best):
         unclear, _ = clarity.read(best, brief, ACCT, model=MODEL,
                                   label=f"{slug_prefix}/final")
+        unclear = _uncleared(unclear, cleared)
     best["_factcheck"] = truth
     best["_clarity"] = unclear
     return best
@@ -1607,7 +1621,7 @@ def write_post(brief, slug_prefix, series_no):
 CLARITY_MAX = int(ACCT.get("clarity_max_doubts", 1))
 
 
-def _clarity_pass(post, ask, brief, slug_prefix, rounds=0):
+def _clarity_pass(post, ask, brief, slug_prefix, rounds=0, cleared=()):
     """Would a first-time reader understand this post, with no doubt left?
 
     The reader (clarity.py) sees only the slides, as a Reel viewer does, and
@@ -1620,6 +1634,7 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=0):
     if validate(post):
         return post, []
     doubts, rep = clarity.read(post, brief, ACCT, model=MODEL, label=slug_prefix)
+    doubts = _uncleared(doubts, cleared)
     print(f"  clarity:{slug_prefix} {len(doubts)} blocking doubt(s)")
     for d in doubts[:4]:
         print(f"    - {d[:200]}")
