@@ -1329,11 +1329,16 @@ def _explain(brief, slug_prefix, rounds=4):
         msgs = msgs + [
             {"role": "assistant", "content": json.dumps(data, ensure_ascii=False)},
             {"role": "user", "content":
-                "A first-time reader and a fact-checker read these sentences. "
-                "Rewrite the explanation so nothing below is left unclear and "
-                "nothing contradicts or goes beyond the source - where the "
-                "checker quotes the page, say what the page says; where it "
-                "says something is not on the page, remove it:\n"
+                "A first-time reader and a fact-checker read these sentences "
+                "and objected ONLY to the ones quoted below. Return the same "
+                "list with every other sentence copied EXACTLY as it is - do "
+                "not rephrase, reorder, merge or improve a sentence nobody "
+                "objected to; a full rewrite has been measured to break more "
+                "than it fixes. For each quoted sentence: where the checker "
+                "quotes the page, say what the page says; where it says "
+                "something is not on the page, delete that part or the whole "
+                "sentence; where the reader had a doubt, add the missing "
+                "words to that sentence:\n"
                 + "\n".join(f"  - {p}" for p in problems)}]
     if best and len(best_doubts) > CLARITY_MAX:
         print(f"  {slug_prefix}: explanation still unclear "
