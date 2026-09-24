@@ -79,7 +79,7 @@
       "url": "https://www.notion.com/releases/rss.xml"
     }
   ],
-  "newsroom_skip": "academy|customer|case study|residency|grant|podcast|hiring|birds of a feather|\\bwith openai$|cyber access|safety (report|card)|research|paper|benchmark|policy|government|election|ukraine",
+  "newsroom_skip": "academy|customer|case study|residency|grant|podcast|hiring|birds of a feather|\\bwith openai$|cyber access|safety (report|card)|research|paper|benchmark|policy|government|election|ukraine|\\bapi\\b|caching|developer|\\bsdk\\b|builds with|with (gpt-6 )?astra|from context to|enterprise|for law|legal teams|datasette|llm-|^llm |quoting|^how [\\w\\s]+ (improves|is accelerating|gives|uses|builds)|remarks|bench\\b|benchmark|standards|principles|advisory|blueprint|widens access|sea lion|cormorant|roger rabbit|rustaceans|shadow roots|note on|devfest|workers are now|mcp was",
   "motion_cover": {
     "enabled": false,
     "steps": 30,

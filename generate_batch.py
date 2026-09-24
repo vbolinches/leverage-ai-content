@@ -115,8 +115,8 @@ wasted slot, and your own cover can lose.
 Slide kinds and their fields:
   {"kind":"cover","eyebrow":"__SERIES__ NNN","headline":[{"t":"Plain "},{"t":"accent.","c":"blue"}],"sub":"one line","footer_right":"SWIPE →"}
 __REQUIRED_SLIDE__  {"kind":"step","eyebrow":"STEP 1","headline":"Open the right place first.","body":[{"t":"One complete sentence: which app, where in it, and what to click or paste. "},{"t":"The result, in plain words.","c":"green","b":true}]}
-  {"kind":"prompt","eyebrow":"STEP 2","headline":"Short.","sub":"one line","label":"COPY THIS PROMPT","code":"literal prompt\\nwith newlines"}
-  {"kind":"stat","eyebrow":"THE PAYOFF","headline":"Framing question:","stat":"~big phrase"}
+  {"kind":"prompt","eyebrow":"STEP 2","headline":"Paste this into the chat.","sub":"A full sentence saying where to paste it.","label":"COPY THIS PROMPT","code":"literal prompt\\nwith newlines"}
+  {"kind":"stat","eyebrow":"THE PAYOFF","headline":"A full sentence that sets up the number.","stat":"the number from the source"}
   {"kind":"recap","eyebrow":"RECAP","headline":"Do this today","items":["A complete short sentence a stranger understands.","The second thing to do, as a full sentence.","What you get, as a full sentence."],"cta_title":"Save this for later","cta_sub":"__CTA_SUB__","footer_right":"SAVE THIS ↓"}
 
 Hard limits (text overflows the canvas otherwise):
@@ -202,6 +202,23 @@ RICH_TEXT = hooks.RICH_TEXT
 POST_SCHEMA = {
                     "type": "object",
                     "properties": {
+                        # FIRST, on purpose: the sampler fills fields in order,
+                        # so the model has said the idea plainly before it
+                        # writes a single slide. Without it the slides came out
+                        # as fragments and the clarity rewrites plateaued at
+                        # the same 4-5 doubts (2026-09-23): a model cannot
+                        # clarify a thought it never finished. Dropped before
+                        # the spec is saved.
+                        "explain_it_to_a_friend": {
+                            "type": "string",
+                            "description": (
+                                "3-5 plain sentences, in the slides' language, "
+                                "as you would say it to a friend who has never "
+                                "heard of this: what it is, who it is for, what "
+                                "changes for them, and how to start - only what "
+                                "the source says. The slides are cut from this."
+                            ),
+                        },
                         "slug": {"type": "string"},
                         "hook_candidates": {
                             "type": "array",
@@ -283,8 +300,8 @@ POST_SCHEMA = {
                             },
                         },
                     },
-                    "required": ["slug", "art", "caption", "slides",
-                                 "hook_candidates"],
+                    "required": ["explain_it_to_a_friend", "slug", "art",
+                                 "caption", "slides", "hook_candidates"],
 }
 
 # What the research pass hands the writing pass: a verified subject, and the
@@ -1521,7 +1538,9 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=2):
 def _clarity_fix_note():
     return ("A first-time reader - someone who sees ONLY these slides, with no "
             "caption and no context - read this post and stopped at the places "
-            "below. Rewrite the slides so that reader understands everything "
+            "below. First rewrite explain_it_to_a_friend so that it answers "
+            "every question below in plain words; then cut the slides again "
+            "from that explanation. The reader must understand everything "
             "on the first read: complete sentences with a subject and a verb, "
             "every term explained in the same sentence, every step saying "
             "where and how. Keep the same facts - add no fact, number, date "
@@ -1854,6 +1873,7 @@ def author(count, start_index, avoid):
         # on is not - post68 would have told readers to keep using Medicaid.
         untrue = post.pop("_factcheck", None) or []
         unclear = post.pop("_clarity", None) or []
+        post.pop("explain_it_to_a_friend", None)
         # Same for a post that still breaks the mechanical rules after every
         # repair: drop it HERE, so the next spare brief takes the slot. It used
         # to be appended and rejected later in main(), where no spare could
@@ -2173,7 +2193,9 @@ def _words_of(text):
 _FILLER = {"the system", "system", "el sistema", "que significa esto",
            "qué significa esto", "what this means", "what it means", "recap",
            "resumen", "summary", "la noticia en una frase completa",
-           "open the right place first", "do this today"}
+           "open the right place first", "do this today", "framing question",
+           "short", "paste this into the chat",
+           "a full sentence that sets up the number"}
 # "H-2Bpara": a code glued to the next word by a shortening pass.
 _GLUED = re.compile(r"\b[A-Z0-9]+(?:-[A-Z0-9]+)+[a-záéíóúñ]{2,}\b")
 
