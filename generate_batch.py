@@ -1650,15 +1650,19 @@ def write_post(brief, slug_prefix, series_no):
 CLARITY_MAX = int(ACCT.get("clarity_max_doubts", 1))
 
 
-def _clarity_pass(post, ask, brief, slug_prefix, rounds=0, cleared=()):
+def _clarity_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
     """Would a first-time reader understand this post, with no doubt left?
 
     The reader (clarity.py) sees only the slides, as a Reel viewer does, and
-    quotes every place it stopped. Rounds default to 0 since 2026-09-24: the
-    slides are built from sentences the reader has already passed
-    (_explain), and rewriting SLIDES for clarity was measured not to
-    converge - 4->4, 5->5, 4->6 across a dozen posts - at 10-20 model calls
-    a run. The read stays as the gate; the fixing happens in _explain.
+    quotes every place it stopped. The bodies are sentences the reader has
+    already passed (_explain) and are exempt; what is left is the writer's
+    own layer - cover, headlines, subs, recap arrows - and a vague headline
+    made of allowed words ('La guía aclara las categorías') passes every
+    mechanical rule and still stops a reader. So the repair is TARGETED:
+    only the quoted fields change, everything else is copied verbatim, and
+    the bodies are restored from the checked sentences. Whole-post rewrites
+    were measured not to converge (2026-09-23); targeted repair is what made
+    the explanation stage converge (2026-09-24).
     """
     if validate(post):
         return post, []
@@ -1689,6 +1693,10 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=0, cleared=()):
             print(f"  {slug_prefix}: clarity fix failed ({e})")
             break
         _respace(cand)
+        # The candidate must carry the checked sentences (validate() holds
+        # its headlines to them) and get its bodies restored from them.
+        cand["_sentences"] = post.get("_sentences")
+        _snap(cand, post.get("_sentences") or [])
         if validate(cand):
             _tighten(cand)
         if validate(cand):
@@ -1704,17 +1712,18 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=0, cleared=()):
 
 def _clarity_fix_note():
     return ("A first-time reader - someone who sees ONLY these slides, with no "
-            "caption and no context - read this post and stopped at the places "
-            "below. First rewrite explain_it_to_a_friend so that it answers "
-            "every question below in plain words; then cut the slides again "
-            "from that explanation. The reader must understand everything "
-            "on the first read: complete sentences with a subject and a verb, "
-            "every term explained in the same sentence, every step saying "
-            "where and how. Keep the same facts - add no fact, number, date "
-            "or instruction that is not already in the post or its source. If "
-            "a slide cannot be made clear in its space, say less and say it "
-            "clearly. Keep the same topic, the same number of slides and the "
-            "caption's source line.\n\nWHERE THE READER STOPPED:\n")
+            "caption and no context - read this post and stopped ONLY at the "
+            "fields quoted below. Return the same post with every other field "
+            "copied EXACTLY as it is: do not touch a body, a headline, a sub, "
+            "an arrow or the caption that is not quoted below. For each quoted "
+            "field, rewrite that field alone so the reader understands it on "
+            "first read: a complete sentence with a subject and a verb, the "
+            "term it uses explained in the same words the step bodies use, no "
+            "new term, number, date, consequence or instruction. A headline "
+            "must say what its slide tells the reader, not name a category "
+            "('La guía aclara las categorías' says nothing; 'Qué ayudas cuentan "
+            "para la carga pública desde el 18 de septiembre' says something)."
+            "\n\nWHERE THE READER STOPPED:\n")
 
 
 def _respace(post):
@@ -1817,6 +1826,8 @@ def _truth_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
             print(f"  {slug_prefix}: truth fix failed ({e})")
             break
         _respace(cand)
+        cand["_sentences"] = post.get("_sentences")
+        _snap(cand, post.get("_sentences") or [])
         if validate(cand):
             _tighten(cand)
         if validate(cand):
