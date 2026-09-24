@@ -1404,6 +1404,8 @@ def _snap(post, sentences):
     def words(t):
         return set(re.findall(r"\w+", (t or "").lower()))
     pool = [(s, words(s)) for s in sentences]
+    if not pool:
+        return
     for sl in post.get("slides") or []:
         if sl.get("kind") != "step":
             continue
@@ -1600,6 +1602,12 @@ def write_post(brief, slug_prefix, series_no):
         # overlong slide for another is a fresh sample of the same attempt,
         # and the round cap is what stops this, not the first non-improvement.
         # Several posts have sat one error from shipping when the loop gave up.
+        # A fresh candidate carries no checked sentences: without them the
+        # off-script rule is silent on it and _snap later crashes on an empty
+        # list (2026-09-24, lost a post that had reached one doubt).
+        candidate["_sentences"] = sentences
+        if sentences:
+            _snap(candidate, sentences)
         fresh = validate(candidate)
         if len(fresh) <= len(errs):
             best, errs = candidate, fresh
@@ -2048,8 +2056,13 @@ def author(count, start_index, avoid):
         # check (five batches, 2026-09-03..07), and a model timeout that took
         # three verified leverageai posts on 2026-09-23.
         except Exception as e:                             # noqa: BLE001
+            import traceback
             print(f"::warning::post{n:02d} could not be written ({e}) — skipping "
                   f"this topic")
+            if not isinstance(e, llm.LLMError):
+                # A crash, not a model failure: the line that raised is the
+                # only thing that makes it fixable.
+                print("  " + traceback.format_exc().strip().replace("\n", "\n  ")[-1500:])
             continue
         # The model names its own slug and drifts from the prefix it was given;
         # the queue keys on post number, so the prefix is not negotiable.
