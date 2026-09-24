@@ -1068,7 +1068,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post62-siri-claude-integration/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. CONTRADICTS THE SOURCE — the post says: 'Freelancers: you can now set Claude or ChatGPT as your Siri AI on iOS 27.'. The | CONTRADICTS THE SOURCE — the post says: \"Using the new Model Delegation framework, you can say: 'Hey Siri, send a follow. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. CONTRADICTS THE SOURCE — the post says: 'Freelancers: you can now set Claude or ChatGPT as your Siri AI on iOS 27.'. The | CONTRADICTS THE SOURCE — the post says: \"Using the new Model Delegation framework, you can say: 'Hey Siri, send a follow. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post63-microsoft-humanist-ai-oversight",
@@ -1081,7 +1082,8 @@
       ],
       "caption": "Microsoft's new 'humanist AI' policy means their tools won't execute tasks that might violate rules. For example, if you ask it to draft an email that could be seen as unprofessional, it will fail instead of sending it. \n\nThis affects tools like Copilot for Business. If you try to send client communications through AI, you'll need to manually approve them first. It's a safety move but it means you can't rely on AI to handle client outreach alone anymore. \n\nSave this prompt to make your AI tools obey your rules:\n\n\"Write a professional email to [Client Name] about [Topic]. Avoid any phrases that could be seen as unprofessional or risky. If unsure, fail instead of sending.\" \n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #aiassistant #aiagencies #aiagents #aiops #aifreelancer #aibusiness #aiforbusiness #aiautomation #aiforfreelancers",
       "status": "retired",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'For example, if you ask it to draft an email that could be seen as unprofess | NOT IN THE SOURCE — the page does not say: 'This affects tools like Copilot for Business.'. Remove it or state only what. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'For example, if you ask it to draft an email that could be seen as unprofess | NOT IN THE SOURCE — the page does not say: 'This affects tools like Copilot for Business.'. Remove it or state only what. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post66-ai-pricing-comparison",
@@ -1096,7 +1098,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post66-ai-pricing-comparison/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 6 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: \"Microsoft Copilot is now $10/month for non-enterprise users. That's a 4x pri | CONTRADICTS THE SOURCE — the post says: 'ChatGPT: $20/mo (for $20/mo, you get full GPT-4 access and unlimited use)'. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 6 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: \"Microsoft Copilot is now $10/month for non-enterprise users. That's a 4x pri | CONTRADICTS THE SOURCE — the post says: 'ChatGPT: $20/mo (for $20/mo, you get full GPT-4 access and unlimited use)'. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post67-chatgpt-ios-task-management",
@@ -1111,7 +1114,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post67-chatgpt-ios-task-management/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'ChatGPT for iOS 1.2026.188 added task management features'. Remove it or sta | NOT IN THE SOURCE — the page does not say: \"Use this prompt: Create a task for [Client Name]'s [Project Name] with these. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'ChatGPT for iOS 1.2026.188 added task management features'. Remove it or sta | NOT IN THE SOURCE — the page does not say: \"Use this prompt: Create a task for [Client Name]'s [Project Name] with these. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post69-shot-scraper-1-12-automate-competitor-pricing",
@@ -1126,7 +1130,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post69-shot-scraper-1-12-automate-competitor-pricing/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 6 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'WebP cuts screenshot size by 50%'. Remove it or state only what the page sta | NOT IN THE SOURCE — the page does not say: 'WebP saves 50% storage vs JPEG/PNG'. Remove it or state only what the page s. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 6 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'WebP cuts screenshot size by 50%'. Remove it or state only what the page sta | NOT IN THE SOURCE — the page does not say: 'WebP saves 50% storage vs JPEG/PNG'. Remove it or state only what the page s. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post71-pdf-to-markdown-ai",
@@ -1141,7 +1146,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post71-pdf-to-markdown-ai/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 8 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'PDF to Excel takes hours.'. Remove it or state only what the page states. | NOT IN THE SOURCE — the page does not say: 'Done in seconds'. Remove it or state only what the page states.. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 8 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'PDF to Excel takes hours.'. Remove it or state only what the page states. | NOT IN THE SOURCE — the page does not say: 'Done in seconds'. Remove it or state only what the page states.. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post74-client-approval-invoices",
@@ -1156,7 +1162,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post74-client-approval-invoices/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'InvoSync 2026 uses AI to generate client-specific invoice summaries that get | NOT IN THE SOURCE — the page does not say: 'When you send an invoice, AI creates a one-sentence summary of the work done. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 5 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'InvoSync 2026 uses AI to generate client-specific invoice summaries that get | NOT IN THE SOURCE — the page does not say: 'When you send an invoice, AI creates a one-sentence summary of the work done. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post75-cloudflare-python-workers-ga",
@@ -1171,7 +1178,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post75-cloudflare-python-workers-ga/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 3 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'It’s ideal for client portals, automated reports, or internal tools.'. Remov | NOT IN THE SOURCE — the page does not say: 'No servers, no scaling'. Remove it or state only what the page states.. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 3 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'It’s ideal for client portals, automated reports, or internal tools.'. Remov | NOT IN THE SOURCE — the page does not say: 'No servers, no scaling'. Remove it or state only what the page states.. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post76-jev-client-decision-models",
@@ -1186,7 +1194,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post76-jev-client-decision-models/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 1 claim(s) about products, prices or features not backed by its source, e.g. CONTRADICTS THE SOURCE — the post says: \"The prompt 'Rate on 0.0 to 1.0: [Client details]' is for a yes/no question.\". T. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 1 claim(s) about products, prices or features not backed by its source, e.g. CONTRADICTS THE SOURCE — the post says: \"The prompt 'Rate on 0.0 to 1.0: [Client details]' is for a yes/no question.\". T. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post77-code-review-flaws",
@@ -1214,7 +1223,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post78-mcp-secure-client-data-integrations/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 3 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'Client proposals often include API keys accidentally, risking data leaks'. R | NOT IN THE SOURCE — the page does not say: 'MCP stops data leaks'. Remove it or state only what the page states.. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 3 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'Client proposals often include API keys accidentally, risking data leaks'. R | NOT IN THE SOURCE — the page does not say: 'MCP stops data leaks'. Remove it or state only what the page states.. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post79-ai-safety-checks-verify-before-sending",
@@ -1229,7 +1239,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post79-ai-safety-checks-verify-before-sending/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 9 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'Client reports are where AI bias gets real.'. Remove it or state only what t | NOT IN THE SOURCE — the page does not say: 'One wrong word in a proposal can lose a client or attract a lawsuit.'. Remov. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 9 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'Client reports are where AI bias gets real.'. Remove it or state only what t | NOT IN THE SOURCE — the page does not say: 'One wrong word in a proposal can lose a client or attract a lawsuit.'. Remov. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post81-ai-expense-categorization-in-quickbooks",
@@ -1244,7 +1255,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post81-ai-expense-categorization-in-quickbooks/reel.mp4",
-      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 9 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'QuickBooks AI now includes expense categorization on all paid tiers — includ | UNVERIFIED — 'If you correct a few entries, the AI gets better at tagging your expenses' was marked supported, but the s. Restore by setting status back to 'queued'."
+      "note": "RETIRED 2026-09-23 by the queue audit (world-facts mode), before publishing: written by the local model before the fact-check existed; 9 claim(s) about products, prices or features not backed by its source, e.g. NOT IN THE SOURCE — the page does not say: 'QuickBooks AI now includes expense categorization on all paid tiers — includ | UNVERIFIED — 'If you correct a few entries, the AI gets better at tagging your expenses' was marked supported, but the s. Restore by setting status back to 'queued'.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post82-gpt6-prompt-caching",
@@ -1259,7 +1271,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post82-gpt6-prompt-caching/reel.mp4",
-      "note": "RETIRED 2026-09-23 (review): 'Pay 90% less' / 'cuts input costs by 90%' overstates the page - discounts of UP TO 90% on CACHED input tokens only; slides carry almost nothing."
+      "note": "RETIRED 2026-09-23 (review): 'Pay 90% less' / 'cuts input costs by 90%' overstates the page - discounts of UP TO 90% on CACHED input tokens only; slides carry almost nothing.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post83-gemini-38-live-client-communication",
@@ -1274,7 +1287,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post83-gemini-38-live-client-communication/reel.mp4",
-      "note": "RETIRED 2026-09-23 (review): caption contains leftover fact-check notes ('The blog post makes no claims...', 'No voice call features.') and an invented summaries step."
+      "note": "RETIRED 2026-09-23 (review): caption contains leftover fact-check notes ('The blog post makes no claims...', 'No voice call features.') and an invented summaries step.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post84-invideo-color-grading",
@@ -1287,7 +1301,8 @@
       ],
       "caption": "InVideo uses GPT-6 Astra to automate color grading. It's 3x faster than manual work for standard videos. You get 50 custom effects in one day.\n\nSave this for later.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#ai #videograting #invideos #workflow #aiworkflow #soloconsultant #freelancer #business #aiassistant",
       "status": "retired",
-      "note": "RETIRED 2026-09-23 (review): an OpenAI customer story about InVideo's own engineering, not a workflow a solo owner can run; hashtag typo #videograting."
+      "note": "RETIRED 2026-09-23 (review): an OpenAI customer story about InVideo's own engineering, not a workflow a solo owner can run; hashtag typo #videograting.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     },
     {
       "id": "post85-gemini-voice-cloning",
@@ -1332,7 +1347,8 @@
       "status": "retired",
       "format": "reel",
       "video": "accounts/leverageai/queue/post87-gemini-connected-apps/reel.mp4",
-      "note": "RETIRED 2026-09-23 (review): slides 2-3 repeat 'Project management in one place' as headline and body; 'Gemini handles project management' overstates what connected apps do."
+      "note": "RETIRED 2026-09-23 (review): slides 2-3 repeat 'Project management in one place' as headline and body; 'Gemini handles project management' overstates what connected apps do.",
+      "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
     }
   ]
 }
