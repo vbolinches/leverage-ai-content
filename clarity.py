@@ -54,7 +54,10 @@ If the slides are genuinely clear, the list is empty - do not invent doubts \
 to look thorough. A Reel has a caption underneath it with the official link \
 and the details, so "link en la descripción" / "link in the caption" points \
 to something real and is not a doubt. Being told to check your own case, \
-read the official notice or consult a lawyer is never a doubt either. Dates in the current year or the next are normal: today's \
+read the official notice or consult a lawyer is never a doubt either. And a \
+sentence that honestly says the official notice does NOT specify something \
+(who is exempt, what to do next) is the answer, not a doubt: the post is \
+telling you the limit of what is known, which is better than a guess. Dates in the current year or the next are normal: today's \
 date is given in the message. So are version numbers you have not seen \
 (GPT-6, Gemini 3.8, Claude Opus 5.5): products you know release new \
 versions all the time, and a newer number than you remember is not a doubt.
