@@ -1293,6 +1293,141 @@ def _slide_chars(post):
     return total
 
 
+EXPLAIN_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "sentences": {"type": "array", "minItems": 5, "maxItems": 8,
+                      "items": {"type": "string"}},
+    },
+    "required": ["sentences"],
+}
+
+
+def _explainer_system():
+    lang = "Spanish" if ACCT.get("slide_language") == "es" else "English"
+    who = ACCT.get("clarity_reader") or "someone new to the subject"
+    cap = _LIM["body"]
+    return (
+        f"You explain one piece of news to one person: {who} They know little "
+        f"about the subject and stop reading the moment they have to guess. "
+        f"Your job is that they finish informed - knowing what happened, what "
+        f"it means for them and what to do - not feeling they wasted their "
+        f"time.\n\n"
+        f"Write 5-8 sentences in {lang}.\n"
+        f"- Each sentence is complete and makes sense ALONE, because it will "
+        f"be shown alone on a slide. Never 'this', 'it', 'they' or 'esto' "
+        f"pointing back to an earlier sentence - name the thing again.\n"
+        f"- Everyday words. The first time a term, program, form, product or "
+        f"acronym appears, say what it is in the same sentence.\n"
+        f"- In this order: (1) what happened, with who did it and when; (2) "
+        f"what the key term means; (3) what it does or changes, with one "
+        f"everyday example; (4) who it affects - and who it does not - only as "
+        f"the source says; (5) what the reader can do now, only as the source "
+        f"says, or else where to read more or whom to ask.\n"
+        f"- At most {cap} characters per sentence. Two short sentences beat "
+        f"one long one.\n"
+        f"- Only what the facts and source lines below say. Invent nothing: "
+        f"no number, date, step, price, plan, consequence or promise that is "
+        f"not there. Name the agency or company the facts name - never a "
+        f"different one.\n"
+        f"- Dates: only a date the facts give. Today's date is NOT the date "
+        f"anything happened; if the facts give no date, write no date.")
+
+
+def _explain(brief, slug_prefix, rounds=4):
+    """Plain-prose explanation, read by a first-time reader until clear.
+
+    The writer was asked for slides directly - headline, fragment, arrows -
+    and compressing an idea into slide pieces is exactly where it lost the
+    meaning: on 2026-09-23 every draft on both accounts left a first-time
+    reader with 4-6 blocking doubts, and rewriting the slides never brought
+    that down. Prose is what a small model writes well. So the explaining
+    happens first, as sentences, checked by the same reader; the slides are
+    then built from those sentences (_snap) instead of composed from scratch.
+    Returns the sentences, or [] if no explanation could be made.
+    """
+    facts = "\n".join(f"  - {f}" for f in brief.get("facts") or [])
+    ask = (f"TODAY IS {date.today().isoformat()}.\n"
+           f"THE NEWS: {brief.get('topic')}\n"
+           f"WHY NOW: {brief.get('why_now')}\n"
+           f"SOURCE: {brief.get('source_url')}\n"
+           f"VERIFIED FACTS:\n{facts}\n\n" + _how_block(brief)
+           + "Write the explanation.")
+    msgs = [{"role": "user", "content": ask}]
+    best, best_doubts = None, None
+    for rnd in range(rounds):
+        try:
+            data = llm.structured(_explainer_system(), None, EXPLAIN_SCHEMA,
+                                  model=MODEL, require=("sentences",),
+                                  label=f"explain{rnd + 1}:{slug_prefix}",
+                                  temperature=0.5, think=WRITER_THINK,
+                                  messages=msgs)
+        except llm.LLMError as e:
+            print(f"  {slug_prefix}: explanation failed ({e})")
+            break
+        sents = [re.sub(r"\s+", " ", s).strip() for s in data["sentences"]
+                 if s and s.strip()]
+        long = [s for s in sents if len(s) > _slack(_LIM["body"])]
+        probe = {"slides": [{"kind": "step", "body": s} for s in sents]}
+        doubts, _ = clarity.read(probe, brief, ACCT, model=MODEL,
+                                 label=f"{slug_prefix}/explain{rnd + 1}")
+        # True as well as clear: every slide is built from these sentences,
+        # so an error here is an error on every slide. On 2026-09-24 the first
+        # explanation dated a court order to the day it was written and named
+        # the wrong agency; the post was then rejected, after all its work.
+        untrue, _ = factcheck.verify_detail(probe, brief, ACCT, model=MODEL,
+                                            label=f"{slug_prefix}/explain{rnd + 1}")
+        problems = doubts + untrue + [
+            f"too long for one slide ({len(s)} characters, limit "
+            f"{_LIM['body']}) - split it: {s!r}" for s in long]
+        print(f"  {slug_prefix}: explanation {rnd + 1} - {len(doubts)} "
+              f"doubt(s), {len(untrue)} untrue, {len(long)} too long")
+        if best is None or len(problems) < len(best_doubts):
+            best, best_doubts = sents, problems
+        if not problems:
+            break
+        msgs = msgs + [
+            {"role": "assistant", "content": json.dumps(data, ensure_ascii=False)},
+            {"role": "user", "content":
+                "A first-time reader and a fact-checker read these sentences. "
+                "Rewrite the explanation so nothing below is left unclear and "
+                "nothing contradicts or goes beyond the source - where the "
+                "checker quotes the page, say what the page says; where it "
+                "says something is not on the page, remove it:\n"
+                + "\n".join(f"  - {p}" for p in problems)}]
+    if best and len(best_doubts) > CLARITY_MAX:
+        print(f"  {slug_prefix}: explanation still unclear "
+              f"({len(best_doubts)} problem(s)) - using it anyway, the post "
+              f"is checked again")
+    return [s for s in (best or []) if len(s) <= _slack(_LIM["body"])]
+
+
+def _snap(post, sentences):
+    """Put the checked sentences back where the writer paraphrased them.
+
+    The writer is told to copy them word for word and mostly does; when it
+    trims one into a fragment, the body is restored to the whole sentence it
+    came from. Only when the match is unambiguous - half the words shared -
+    and never on the cover, whose hook is the writer's own.
+    """
+    def words(t):
+        return set(re.findall(r"\w+", (t or "").lower()))
+    pool = [(s, words(s)) for s in sentences]
+    for sl in post.get("slides") or []:
+        if sl.get("kind") != "step":
+            continue
+        body = hooks.flatten(sl.get("body"))
+        if not body or body in sentences:
+            continue
+        w = words(body)
+        if not w:
+            continue
+        best, score = max(((s, len(w & sw) / len(w | sw)) for s, sw in pool),
+                          key=lambda x: x[1])
+        if score >= 0.5 and best != body:
+            sl["body"] = best
+
+
 # Sentences on a source page that say HOW to use something or WHO gets it.
 _HOWTO = re.compile(
     r"\b(to get started|get started|go to|click|tap|open the|select|choose|"
@@ -1393,11 +1528,26 @@ def write_post(brief, slug_prefix, series_no):
           f"A caption missing either one is discarded unread."
     )
 
+    # Explain first, in plain prose checked by a first-time reader; the slides
+    # are then built from those sentences. See _explain().
+    sentences = _explain(brief, slug_prefix)
+    if sentences:
+        ask += ("\n\nTHE EXPLANATION - already read and understood by a "
+                "first-time reader. The slides must carry these sentences WORD "
+                "FOR WORD: every step slide's body is one of them (or two, if "
+                "they fit), copied exactly, in this order. You write the "
+                "headlines, the cover, the recap arrows and the caption; the "
+                "explaining is already done - do not shorten, merge or "
+                "paraphrase these sentences:\n"
+                + "\n".join(f"  {i}. {s}" for i, s in enumerate(sentences, 1)))
+
     best = llm.structured(
         BRAND, ask, POST_SCHEMA,
         model=MODEL, require=("slides", "caption"),
         label=f"write:{slug_prefix}", temperature=0.8, think=WRITER_THINK,
     )
+    if sentences:
+        _snap(best, sentences)
     errs = validate(best)
 
     # Five rounds, because three was not enough. A single pass typically

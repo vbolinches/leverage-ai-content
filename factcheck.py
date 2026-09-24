@@ -68,6 +68,13 @@ SAFE_ADVICE = re.compile(
     r"lee\w* el aviso|link en la descripci|"
     r"(the (page|announcement|post)|google|openai|anthropic|microsoft) "
     r"(has not|hasn't|does not|doesn't) (said|say)|link in (the )?caption|"
+    # A tips account's own framing and its own suggested prompts are the
+    # product, not claims about the world (see WORLD_ONLY). Checked anyway,
+    # "This is for freelancers and small business owners" was rejected as
+    # 'not on the page' (2026-09-23).
+    r"\b(this is )?for (freelancers|solo|small[- ]business|business owners|"
+    r"consultants|creators|coaches)|if you (run|own|are) (a|an) |"
+    r"\b(the |this |a )?prompt (to use )?(is|:)|try (this|asking)|ask it to|"
     r"save this|share this|consult an? (immigration )?(attorney|lawyer)|"
     r"check your (case|status|dates)|verify (it |this )?on",
     re.I)
