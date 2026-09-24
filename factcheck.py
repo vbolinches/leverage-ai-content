@@ -451,6 +451,13 @@ def verify_detail(post, brief, acct, model=None, label=""):
         elif verdict == "not_on_page":
             if SAFE_ADVICE.search(claim):
                 continue
+            # A correct definition is never on a news page; the checker
+            # labels it not_on_page rather than "definition" more often than
+            # not (2026-09-24, four rounds running). Its shape - no number,
+            # date, deadline or instruction - is the guard; a WRONG definition
+            # still arrives as contradicted and is rejected above.
+            if _definitional(claim):
+                continue
             bad.append(claim)
             errs.append(f"NOT IN THE SOURCE — the page does not say: {claim!r}. "
                         f"Remove it or state only what the page states.")
