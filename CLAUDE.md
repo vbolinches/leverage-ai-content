@@ -426,6 +426,31 @@ the checker (`writer_model` per account) so checking stays cheap and the
 writer stays under a reader it did not train with. Slower is accepted:
 fewer, clear posts.
 
+**What the writer test found (2026-09-24, eight runs, `qwen3.6:27b`
+writing):** the explanation stage converged on 7 of 7 topics (0 doubts, 0
+untrue in 2-4 rounds) once three things were true, and on none before:
+the repair touches only the flagged sentences; a sentence cleared once
+stays cleared while unchanged (the checkers flip verdicts on identical
+text - three verbatim sentences went "supported" to "contradicted" between
+rounds); and a correct DEFINITION of a term is judged on correctness, not
+page presence (the clarity gate demands definitions, the truth gate was
+rejecting them). Every remaining failure was in what the slide writer
+adds on top of the verified sentences, and each is now mechanical in
+`validate()`: `_off_script()` - headlines, subs and recap arrows may use
+only the explanation's own words, and the cover no acronym its first
+sentence lacks; subs under five words and step bodies under six are
+fragments. The truth pass and the final read exempt cleared sentences
+(`_verify`, `_uncleared`), so they judge only the writer's additions.
+
+Not yet proven: a post through every gate end to end, because the test
+could not finish on a shared GPU. `wings_agent/sandbox/trader.py` uses the
+same Ollama with `qwen2.5:14b` (14.5GB); with the 16.5GB writer and the
+18GB checker, three models thrash through 24GB and an 80-second call takes
+30 minutes. Batches need the card to themselves. Ollama also auto-updates
+and restarts mid-run (14:41 that day); a lost round is survived, not a
+lost post - `_explain` continues on error and `factcheck` retries a cap
+overrun with reasoning off.
+
 ## Layout
 
 | Path | Purpose |
