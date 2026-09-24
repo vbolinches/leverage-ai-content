@@ -1270,8 +1270,16 @@ def _explainer_system():
         f"no number, date, step, price, plan, consequence or promise that is "
         f"not there. Name the agency or company the facts name - never a "
         f"different one.\n"
-        f"- Dates: only a date the facts give. Today's date is NOT the date "
-        f"anything happened; if the facts give no date, write no date.")
+        f"- Dates: only a date the facts give, attached to the same event the "
+        f"facts attach it to (a date something starts is not the date it was "
+        f"announced). Today's date is NOT the date anything happened; if the "
+        f"facts give no date, write no date. The post is read AFTER today: a "
+        f"date already past is described as what applies now ('desde el 18 "
+        f"de septiembre USCIS rechaza la versión vieja'), never as something "
+        f"still ahead ('antes del 18 de septiembre').\n"
+        f"- The first sentence names the concrete thing that changed - the "
+        f"form, program, fee or rule by name - not 'a new version' or 'a "
+        f"change'.")
 
 
 def _explain(brief, slug_prefix, rounds=6):
@@ -1504,6 +1512,9 @@ def write_post(brief, slug_prefix, series_no):
         f"the facts (when the rule, order or release happened) - never today's "
         f"date. The cover may not use an acronym or code (DV, EAD, PM-602) that "
         f"the explanation only defines later: say it in plain words there. "
+        f"The cover headline NAMES the thing that changed - the form, program, "
+        f"fee or rule ('USCIS cambia el formulario I-485 de la Green Card'), "
+        f"never just 'una nueva versión' or 'un cambio'. "
         f"Never tell the reader to "
         f"act by a date that falls before then. If the source's deadline has "
         f"already passed, say what that means NOW - what happens next, or what "
@@ -2365,6 +2376,24 @@ def _reader_safety(post, today=None):
             errs.append(f"deadline {m.group(0)!r} will have passed, or nearly, "
                         f"by the time this post publishes — drop it or pick a "
                         f"topic that is still actionable")
+
+    # "Acepta el formulario viejo antes del 18 de septiembre", written on the
+    # 24th: the reader is told about a window that closed last week. A
+    # past date is described as what applies now, never as still ahead.
+    for m in re.finditer(r"\b(antes del|hasta el|before|until|by)\s+"
+                         r"(?:(\d{1,2})\s+de\s+([a-záéíóú]+)|([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2}))"
+                         r"(?:,?\s+(?:de\s+)?(\d{4}))?", text, re.I):
+        day = m.group(2) or m.group(5)
+        mon = _MONTHS.get((m.group(3) or "")[:3].lower()) or _MONTH_EN.get((m.group(4) or "").lower())
+        if not (day and mon):
+            continue
+        try:
+            when = date(int(m.group(6) or today.year), mon, int(day))
+        except ValueError:
+            continue
+        if when < today:
+            errs.append(f"{m.group(0)!r} is already past - say what applies "
+                        f"now ('desde el ...'), not a window that has closed")
 
     # A post is written days before it is seen. "La respuesta cambió hoy" went
     # into a queue on 2026-09-23 about a page last updated on the 1st, to

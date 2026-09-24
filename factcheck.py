@@ -128,6 +128,12 @@ who or what the page covers. It is still "contradicted" if the page says the \
 excluded group IS affected, and "not_on_page" if it names a group, a \
 benefit or a status the page never mentions at all.
 
+DATES. A date is only supported for the EVENT the page attaches it to. "El 18 \
+de septiembre USCIS anunció..." is contradicted when the page says older \
+editions are rejected starting September 18 and the announcement was in \
+August - the date is on the page, the claim about it is not. Check what \
+happened on the date, not whether the date appears.
+
 For every claim, copy the ONE sentence from the page that decides it, word for \
 word, exactly as it appears. It will be searched for on the page. If you \
 cannot find a sentence that decides it, the verdict is not_on_page and the \
