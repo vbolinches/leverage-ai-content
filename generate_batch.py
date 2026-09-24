@@ -1314,7 +1314,7 @@ def _explain(brief, slug_prefix, rounds=4):
                                   # 5-8 sentences plus thinking. Uncapped,
                                   # one round thought for 30,757 tokens, hit
                                   # the context limit and ended the loop.
-                                  max_tokens=8000, messages=msgs)
+                                  max_tokens=12000, messages=msgs)
         except llm.LLMError as e:
             print(f"  {slug_prefix}: explanation round {rnd + 1} failed ({e})")
             continue
