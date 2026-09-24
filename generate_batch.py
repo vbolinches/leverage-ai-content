@@ -1588,8 +1588,10 @@ def write_post(brief, slug_prefix, series_no):
         fresh = validate(candidate)
         if len(fresh) <= len(errs):
             best, errs = candidate, fresh
-        else:
-            break
+        # A worse round is not a signal to stop: every round samples with a
+        # fresh seed, so one regression is noise. Stopping at the first one
+        # abandoned a post over a one-word filler headline with three of five
+        # rounds unused (2026-09-24). The best candidate is kept either way.
 
     # Last resort, and the one that actually lands the close ones: stop
     # rewriting the post and just shorten the fields that overflow.
