@@ -1721,7 +1721,7 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
             continue
         again, _ = clarity.read(cand, brief, ACCT, model=MODEL,
                                 label=f"{slug_prefix}/clear{rnd + 1}")
-        again = _uncleared(again, cleared | stable)
+        again = _uncleared(again, set(cleared) | stable)
         print(f"  clarity:{slug_prefix} {len(doubts)} -> {len(again)} blocking doubt(s)")
         if len(again) < len(doubts):
             post, doubts = cand, again
