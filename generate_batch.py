@@ -1536,6 +1536,10 @@ def write_post(brief, slug_prefix, series_no):
     )
     if sentences:
         _snap(best, sentences)
+        # validate() holds headlines, subs and recap arrows to these words
+        # (_off_script). Kept on the post until main() has validated the
+        # graded cover too; dropped before the spec is saved.
+        best["_sentences"] = sentences
     errs = validate(best)
 
     # Five rounds, because three was not enough. A single pass typically
@@ -2343,6 +2347,56 @@ _FILLER = {"the system", "system", "el sistema", "que significa esto",
 _GLUED = re.compile(r"\b[A-Z0-9]+(?:-[A-Z0-9]+)+[a-záéíóúñ]{2,}\b")
 
 
+# Glue words of six letters or more that a headline may use freely.
+_GLUE = set("""puede pueden podría podrían ahora antes después desde hasta porque
+cuando también sobre entre mientras aunque donde todos todas mucho mucha muchos
+muchas otros otras nuevo nueva nuevos nuevas mismo misma cómo quién quiénes dónde
+cuándo tiene tienen tener hacer hacen hecho cambia cambio cambios significa afecta
+afectan aplica aplican todavía siempre nunca además dentro fuera manera través
+about after before could would should there their these those which while where
+every other others still today thing things maybe might really change changes
+changed means affects apply applies works using yours already without through
+because inside outside always never""".split())
+
+
+def _stem(word):
+    import unicodedata
+    w = unicodedata.normalize("NFD", word.lower())
+    return "".join(c for c in w if not unicodedata.combining(c))[:5]
+
+
+def _off_script(post):
+    """Headlines, subs and recap arrows may only say what the checked
+    explanation says. Five posts in a row (2026-09-24) passed the explanation
+    stage 0/0 and were then rejected for a benefit, an agency or a synonym
+    the writer added on top ('los trámites etíopes pueden ir más rápido',
+    'DHS', 'residentes legales permanentes'). Telling it not to did nothing;
+    this makes it a rule the repair loop enforces. A content word of six or
+    more letters whose stem the explanation never uses is the tell.
+    """
+    sents = post.get("_sentences")
+    if not sents:
+        return []
+    script = " ".join(sents) + " " + (ACCT.get("username") or "") + " " + \
+        (ACCT.get("cta_line") or "")
+    known = {_stem(w) for w in re.findall(r"[a-záéíóúñü]+", script.lower())
+             if len(w) >= 6} | {_stem(w) for w in _GLUE}
+    errs = []
+    for i, sl in enumerate(post.get("slides") or [], 1):
+        fields = [("headline", hooks.flatten(sl.get("headline"))),
+                  ("sub", hooks.flatten(sl.get("sub")))]
+        fields += [("recap arrow", hooks.flatten(x)) for x in sl.get("items") or []]
+        for key, text in fields:
+            for w in re.findall(r"[a-záéíóúñü]+", (text or "").lower()):
+                if len(w) >= 6 and _stem(w) not in known:
+                    errs.append(f"slide {i}: the {key} says '{w}', a word the "
+                                f"checked explanation never uses - headlines, "
+                                f"subs and recap arrows may only say what the "
+                                f"explanation says, in its own words")
+                    break
+    return errs
+
+
 def _clarity_rules(post):
     """Fragments a first-time reader cannot use, caught without a model.
 
@@ -2385,7 +2439,7 @@ def _clarity_rules(post):
 
 def validate(post):
     """Catch the failure modes that would silently ship a broken carousel."""
-    errs = _reader_safety(post) + _clarity_rules(post)
+    errs = _reader_safety(post) + _clarity_rules(post) + _off_script(post)
     if not post.get("slug"):
         errs.append("missing slug")
     cap = post.get("caption", "")
@@ -2665,6 +2719,7 @@ def main():
             print(f"REJECTED {post.get('slug')}: {'; '.join(errs)}")
             continue
 
+        post.pop("_sentences", None)
         with open(os.path.join(spec_dir, f"{post['slug']}.json"), "w",
                   encoding="utf-8") as f:
             json.dump(post, f, indent=2, ensure_ascii=False)
