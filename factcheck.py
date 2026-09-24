@@ -406,14 +406,23 @@ def verify_detail(post, brief, acct, model=None, label=""):
         # one more run - at a small temperature, so it is a real resample -
         # before anything is concluded from it.
         for attempt in range(2):
-            data = llm.structured(
-                CHECKER, ask, SCHEMA, model=model, require=("claims",),
-                label=f"factcheck:{label}" + (f"/again" if attempt else ""),
-                think=True, temperature=0 if not attempt else 0.2,
-                # A real check thinks for 2-9K tokens. Uncapped, one ran for
-                # 30 minutes and hit the timeout; this bounds a runaway at a
-                # few minutes, and a truncated answer is simply re-asked.
-                max_tokens=20000)
+            try:
+                data = llm.structured(
+                    CHECKER, ask, SCHEMA, model=model, require=("claims",),
+                    label=f"factcheck:{label}" + (f"/again" if attempt else ""),
+                    # A real check thinks for 2-9K tokens. Uncapped, one ran
+                    # for 30 minutes and hit the timeout; the cap bounds a
+                    # runaway, and the second attempt runs with reasoning
+                    # off, which cannot run away (a 20K overrun on a long
+                    # Federal Register page rejected a post, 2026-09-24).
+                    think=(attempt == 0), temperature=0 if not attempt else 0.2,
+                    max_tokens=20000)
+            except llm.LLMError as e:
+                if attempt == 0 and "cap" in str(e):
+                    print(f"  ::warning::factcheck:{label} ran past its cap - "
+                          f"checking again without reasoning")
+                    continue
+                raise
             if not _degenerate(data):
                 break
             print(f"  ::warning::factcheck:{label} returned placeholder "
