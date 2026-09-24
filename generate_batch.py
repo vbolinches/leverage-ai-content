@@ -2387,6 +2387,10 @@ def _off_script(post):
                   ("sub", hooks.flatten(sl.get("sub")))]
         fields += [("recap arrow", hooks.flatten(x)) for x in sl.get("items") or []]
         for key, text in fields:
+            # The always-allowed arrows (read the notice, consult a lawyer,
+            # beware of scams) are never in the explanation, by design.
+            if factcheck.SAFE_ADVICE.search(text or ""):
+                continue
             for w in re.findall(r"[a-záéíóúñü]+", (text or "").lower()):
                 if len(w) >= 6 and _stem(w) not in known:
                     errs.append(f"slide {i}: the {key} says '{w}', a word the "
