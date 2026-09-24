@@ -1253,6 +1253,12 @@ def _explainer_system():
         f"pointing back to an earlier sentence - name the thing again.\n"
         f"- Everyday words. The first time a term, program, form, product or "
         f"acronym appears, say what it is in the same sentence.\n"
+        f"- Never name an internal policy, memo or docket code (PM-602-0193, "
+        f"FR 5953, 26-cv-6332): no reader knows them. Say what the rule or "
+        f"order DID instead. A form a reader files (I-485) may be named, "
+        f"explained.\n"
+        f"- 'Temporarily', 'proposed', 'for the plaintiffs' and other limits "
+        f"the source states are part of the fact - keep them.\n"
         f"- In this order: (1) what happened, with who did it and when; (2) "
         f"what the key term means; (3) what it does or changes, with one "
         f"everyday example; (4) who it affects - and who it does not - only as "
@@ -1294,7 +1300,7 @@ def _explain(brief, slug_prefix, rounds=4):
             data = llm.structured(_explainer_system(), None, EXPLAIN_SCHEMA,
                                   model=WRITER, require=("sentences",),
                                   label=f"explain{rnd + 1}:{slug_prefix}",
-                                  temperature=0.5, think=WRITER_THINK,
+                                  temperature=0.3, think=WRITER_THINK,
                                   messages=msgs)
         except llm.LLMError as e:
             print(f"  {slug_prefix}: explanation failed ({e})")
