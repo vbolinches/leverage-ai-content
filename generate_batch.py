@@ -1274,7 +1274,7 @@ def _explainer_system():
         f"anything happened; if the facts give no date, write no date.")
 
 
-def _explain(brief, slug_prefix, rounds=4):
+def _explain(brief, slug_prefix, rounds=6):
     """Plain-prose explanation, read by a first-time reader until clear.
 
     The writer was asked for slides directly - headline, fragment, arrows -
