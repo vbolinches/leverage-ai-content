@@ -2381,7 +2381,9 @@ because inside outside always never""".split())
 def _stem(word):
     import unicodedata
     w = unicodedata.normalize("NFD", word.lower())
-    return "".join(c for c in w if not unicodedata.combining(c))[:5]
+    # Four letters: Spanish verb forms diverge after that ('propone' /
+    # 'propuso'), and a lenient stem only ever lets a synonym through.
+    return "".join(c for c in w if not unicodedata.combining(c))[:4]
 
 
 def _off_script(post):
@@ -2405,12 +2407,15 @@ def _off_script(post):
     # the explanation defines later stops a reader at the first frame; the
     # six-letter rule below cannot see a three-letter acronym. The cover
     # paraphrases the first sentence, so that sentence sets what it may use.
-    first = sents[0] if sents else ""
+    # ...plus whatever the account's reader persona is said to know (USCIS,
+    # ICE) and the account's own name.
+    first = (sents[0] if sents else "") + " " + (ACCT.get("clarity_reader") or "") \
+        + " " + (ACCT.get("username") or "")
     cover = (post.get("slides") or [{}])[0]
     for key in ("headline", "sub"):
         text = hooks.flatten(cover.get(key)) or ""
         for tok in re.findall(r"\b[A-Z]{2,5}\b|\b[A-Z]{1,2}-\d{1,4}[A-Z]?\b", text):
-            if tok not in first and tok != (ACCT.get("username") or ""):
+            if tok not in first:
                 errs.append(f"slide 1: the cover {key} uses '{tok}' before "
                             f"anything explains it - say it in plain words "
                             f"on the cover, as the explanation's first "
