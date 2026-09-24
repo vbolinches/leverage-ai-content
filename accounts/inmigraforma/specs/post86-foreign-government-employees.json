@@ -1,0 +1,91 @@
+{
+  "slug": "post86-foreign-government-employees",
+  "hook_candidates": [
+    {
+      "headline": "Regla cambia: ahora aplicas para Green Card",
+      "sub": "Para hijos de empleados de gobierno"
+    },
+    {
+      "headline": "No pierdas tiempo: aplica para Green Card",
+      "sub": "Hijos de empleados de gobierno"
+    },
+    {
+      "headline": "¿Naciste en EE.UU. de empleado de gobierno? Ahora",
+      "sub": "Regla nueva"
+    },
+    {
+      "headline": "No, no eres ciudadano automático (pero sí aplicas).",
+      "sub": "Regla permite Green Card"
+    },
+    {
+      "headline": "Regla nueva: hijos de gobierno aplican",
+      "sub": "Aplica desde 4 sep 2026"
+    }
+  ],
+  "art": "folder",
+  "caption": "Ahora, los hijos de empleados de gobiernos extranjeros (no diplomáticos) nacidos en EE.UU. pueden aplicar para una Green Card. Esto cambia la regla para muchos que antes no podían.\n\nEn palabras simples: Si naciste en EE.UU. de un empleado de gobierno extranjero, ahora aplicas. Antes no podías.\n\nIn plain words: Children of foreign government employees (not diplomats) born in the U.S. can now apply for a Green Card. This change means they were previously not eligible.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/dhs-announces-rule-for-certain-children-born-in-the-united-states-to-foreign-government-employees\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigración #greencard #noticias #mexico #usa #inmigracion #familia #proceso #asilo",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 086",
+      "headline": "Hijos de empleados de gobierno: aplicas",
+      "sub": "Aplica a nacidos en EE.UU. desde 4 sep 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Ahora sí aplicas para Green Card",
+      "body": [
+        {
+          "t": "Si naciste en EE.UU. de un empleado de gobierno extranjero, ahora aplicas. Antes no podías.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "Qué cambió",
+      "body": [
+        {
+          "t": "Ahora incluye empleados de gobierno extranjero (no solo diplomáticos). ",
+          "c": "green",
+          "b": true
+        },
+        {
+          "t": "Aplica desde 4 sep 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "¿Te afecta?",
+      "body": [
+        {
+          "t": "Afecta: hijos de empleados de gobierno extranjero nacidos en EE.UU. desde 4 sep 2026.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Qué hacer",
+      "items": [
+        "Lee aviso en descripción",
+        "Consulta abogado si afecta",
+        "Desconfía de quien cobra"
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/alerts/dhs-announces-rule-for-certain-children-born-in-the-united-states-to-foreign-government-employees"
+}

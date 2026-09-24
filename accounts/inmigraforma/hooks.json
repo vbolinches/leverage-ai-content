@@ -3832,6 +3832,42 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post86-foreign-government-employees",
+      "graded": "2026-09-24",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Hijos de empleados de gobierno: aplicas",
+        "sub": "Aplica a nacidos en EE.UU. desde 4 sep 2026",
+        "rank": 1,
+        "score": 5.0,
+        "shape": "mistake",
+        "stopping": "The typo 'aplicas' (should be 'aplica') is jarring but not dangerously wrong. The sub clarifies it's about birth dates, so most readers will pause to understand the core point ('children of government workers apply'). It's mediocre but not confusing enough to skip.",
+        "reason": "Typo makes it feel unpolished, but the meaning is salvageable. No false alarms.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": "Hijos de empleados de gobierno: aplicas",
+          "rank": 1,
+          "score": 5.0,
+          "shape": "mistake",
+          "stopping": "The typo 'aplicas' (should be 'aplica') is jarring but not dangerously wrong. The sub clarifies it's about birth dates, so most readers will pause to understand the core point ('children of government workers apply'). It's mediocre but not confusing enough to skip.",
+          "reason": "Typo makes it feel unpolished, but the meaning is salvageable. No false alarms.",
+          "authored": true
+        },
+        {
+          "headline": "Regla nueva: hijos de gobierno aplican",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "mistake",
+          "stopping": "Critical error: 'hijos de gobierno' (children of government) implies automatic citizenship, not 'hijos de empleados de gobierno' (children of government employees). This could scare readers into thinking *all* government children are now citizens. Violates override rule.",
+          "reason": "Overstates consequence: Reads like a new citizenship rule. Actual rule is about birth dates for specific workers. This would make readers panic unnecessarily.",
+          "authored": false
+        }
+      ]
     }
   ]
 }
