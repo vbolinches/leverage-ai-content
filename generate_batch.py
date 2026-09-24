@@ -2443,6 +2443,14 @@ def _off_script(post):
         (ACCT.get("cta_line") or "")
     known = {_stem(w) for w in re.findall(r"[a-záéíóúñü]+", script.lower())
              if len(w) >= 6} | {_stem(w) for w in _GLUE}
+    # The cover is stricter: it paraphrases the FIRST sentence, the plain
+    # 'what happened' line, and may not reach for a term the explanation
+    # only defines later ('Nueva regla de carga pública' on a cover, with
+    # 'carga pública' explained two slides on - 2026-09-24).
+    first_script = ((sents[0] if sents else "") + " " + (ACCT.get("username") or "")
+                    + " " + (ACCT.get("cta_line") or ""))
+    known_cover = {_stem(w) for w in re.findall(r"[a-záéíóúñü]+", first_script.lower())
+                   if len(w) >= 6} | {_stem(w) for w in _GLUE}
     errs = []
     # The cover is read first. An acronym or code on it ('DHS', 'H-1B') that
     # the explanation defines later stops a reader at the first frame; the
@@ -2472,12 +2480,19 @@ def _off_script(post):
             # beware of scams) are never in the explanation, by design.
             if factcheck.SAFE_ADVICE.search(text or ""):
                 continue
+            allowed = known_cover if i == 1 else known
             for w in re.findall(r"[a-záéíóúñü]+", (text or "").lower()):
-                if len(w) >= 6 and _stem(w) not in known:
-                    errs.append(f"slide {i}: the {key} says '{w}', a word the "
-                                f"checked explanation never uses - headlines, "
-                                f"subs and recap arrows may only say what the "
-                                f"explanation says, in its own words")
+                if len(w) >= 6 and _stem(w) not in allowed:
+                    where = ("the explanation's first sentence" if i == 1
+                             else "the checked explanation")
+                    errs.append(f"slide {i}: the {key} says '{w}', a word "
+                                f"{where} never uses - "
+                                + ("the cover may only say what the first "
+                                   "sentence says, in its plain words"
+                                   if i == 1 else
+                                   "headlines, subs and recap arrows may only "
+                                   "say what the explanation says, in its own "
+                                   "words"))
                     break
     return errs
 
@@ -2510,6 +2525,14 @@ def _clarity_rules(post):
                             f"says what to do, where, or what it means")
         for item in sl.get("items") or []:
             t = hooks.flatten(item)
+            # "Lee la página oficial." - which page? The template's arrow
+            # says where; the writer drops it and the reader asks.
+            if re.search(r"\b(lee|revis[ae]|consult[ae]|read|check)\w*\b.{0,30}"
+                         r"(p[aá]gina|aviso|sitio|notice|page|site)\b", t, re.I) \
+                    and not re.search(r"descripci|caption|enlace|link", t, re.I):
+                errs.append(f"slide {i}: recap arrow '{t}' says to read the "
+                            f"official page without saying where - add "
+                            f"'(link en la descripción)' or 'link in the caption'")
             if len(t.split()) < 4:
                 errs.append(f"slide {i}: recap item '{t}' is a fragment - each "
                             f"arrow must be a short complete sentence that "
