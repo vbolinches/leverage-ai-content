@@ -1682,6 +1682,12 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
     print(f"  clarity:{slug_prefix} {len(doubts)} blocking doubt(s)")
     for d in doubts[:4]:
         print(f"    - {d[:200]}")
+    # The writer's own fields get the same stability the bodies have: a
+    # headline, sub or arrow that drew no doubt stays cleared while its text
+    # is unchanged. Without it the reader re-flagged passed fields and a
+    # targeted round went 3 -> 4 (2026-09-24).
+    stable = {v for _, _, v in _slide_strings(post)
+              if not any(_mentions(d, v) for d in doubts)}
     for rnd in range(rounds):
         if len(doubts) <= 0:
             break
@@ -1715,9 +1721,12 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
             continue
         again, _ = clarity.read(cand, brief, ACCT, model=MODEL,
                                 label=f"{slug_prefix}/clear{rnd + 1}")
+        again = _uncleared(again, cleared | stable)
         print(f"  clarity:{slug_prefix} {len(doubts)} -> {len(again)} blocking doubt(s)")
         if len(again) < len(doubts):
             post, doubts = cand, again
+            stable |= {v for _, _, v in _slide_strings(cand)
+                       if not any(_mentions(d, v) for d in again)}
     return post, doubts
 
 
