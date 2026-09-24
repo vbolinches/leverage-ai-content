@@ -332,6 +332,27 @@ def verify(post, brief, acct, model=None, label=""):
     return verify_detail(post, brief, acct, model=model, label=label)[0]
 
 
+_RECOPY_SCHEMA = {"type": "object",
+                  "properties": {"sentence": {"type": "string"}},
+                  "required": ["sentence"]}
+
+
+def _recopy(excerpt, claim, model, label):
+    """The one page sentence that supports `claim`, copied exactly - or ""."""
+    try:
+        data = llm.structured(
+            "You copy text. Given a page and a claim, return the ONE sentence "
+            "from the page that states what the claim says, copied character "
+            "for character - no paraphrase, no trimming, no added words. If no "
+            "sentence on the page states it, return an empty string.",
+            f"PAGE:\n\n{excerpt}\n\n=====\n\nCLAIM: {claim}",
+            _RECOPY_SCHEMA, model=model, label=f"recopy:{label}",
+            temperature=0, max_tokens=600)
+        return (data.get("sentence") or "").strip()
+    except llm.LLMError:
+        return ""
+
+
 def verify_detail(post, brief, acct, model=None, label=""):
     """Return (problems, bad_claims): the problems as text, and the exact claim
     strings behind them, which strip_claims() uses to delete them.
@@ -404,7 +425,14 @@ def verify_detail(post, brief, acct, model=None, label=""):
                         f"Remove it or state only what the page states.")
         elif not real:
             # "supported", but the sentence offered as proof is not on the
-            # page. A verdict without real evidence is a verdict nobody made.
+            # page. A verdict without real evidence is a verdict nobody made
+            # - but on a long Federal Register page the checker's copy of the
+            # sentence drifts, and a true claim was rejected twice for that
+            # on 2026-09-24. One targeted retry: copy the exact sentence, or
+            # say there is none.
+            ev2 = _recopy(excerpt, claim, model, label)
+            if ev2 and on_page(page, ev2):
+                continue
             bad.append(claim)
             errs.append(f"UNVERIFIED — {claim!r} was marked supported, but "
                         f"the sentence given as proof is not on the page.")
