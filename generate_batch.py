@@ -1295,6 +1295,16 @@ def _explain(brief, slug_prefix, rounds=4):
            + "Write the explanation.")
     msgs = [{"role": "user", "content": ask}]
     best, best_doubts = None, None
+    # Sentences that drew no objection in an earlier round. The checkers are
+    # not stable: on 2026-09-24 three sentences copied verbatim between rounds
+    # were passed in round 1 and marked CONTRADICTED in round 2, and the
+    # "best round" selection was measuring that noise. A sentence's truth does
+    # not change while its text does not, so a cleared sentence stays cleared.
+    cleared = set()
+
+    def _about(problem, sentence):
+        return clarity._norm(sentence) in clarity._norm(problem)
+
     for rnd in range(rounds):
         try:
             data = llm.structured(_explainer_system(), None, EXPLAIN_SCHEMA,
@@ -1320,6 +1330,15 @@ def _explain(brief, slug_prefix, rounds=4):
         problems = doubts + untrue + [
             f"too long for one slide ({len(s)} characters, limit "
             f"{_LIM['body']}) - split it: {s!r}" for s in long]
+        # Drop objections to sentences already cleared, and whole-post
+        # messages that quote no sentence (the "only N claims backed" total)
+        # once anything has been cleared - they swing with the same noise.
+        problems = [p for p in problems
+                    if not any(_about(p, s) for s in cleared)
+                    and (not cleared or any(_about(p, s) for s in sents))]
+        doubts = [p for p in doubts if p in problems]
+        untrue = [p for p in untrue if p in problems]
+        cleared |= {s for s in sents if not any(_about(p, s) for p in problems)}
         print(f"  {slug_prefix}: explanation {rnd + 1} - {len(doubts)} "
               f"doubt(s), {len(untrue)} untrue, {len(long)} too long")
         # The counts alone cannot tell a real error from an over-strict
