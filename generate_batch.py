@@ -41,6 +41,11 @@ render_slides.configure(ACCT)
 QUEUE = ACCT.queue
 SPEC_DIR = ACCT.spec_dir
 MODEL = ACCT.get("model", DEFAULT_MODEL)
+# The WRITER may differ from the checker. qwen3:30b-a3b checks well and
+# writes badly (point 14): 0 of 14 posts met the owner's clarity bar. A
+# dense model writes; the cheap one keeps reading, fact-checking and grading
+# - and a writer judged by a reader it did not train with is the point.
+WRITER = ACCT.get("writer_model") or MODEL
 
 # account.json used to name an Anthropic model. Leaving a stale "claude-*" in
 # there would send every request to a model Ollama has never heard of, and the
@@ -1062,7 +1067,7 @@ def _one_pass(text, cap, plans):
                 f"Rewrite this in AT MOST {target} characters — shorter is "
                 f"fine. It is currently {len(text)}. Same language.\n\n{how}"
                 f"\n\n{text}",
-                _TEXT_SCHEMA, model=MODEL, require=("text",),
+                _TEXT_SCHEMA, model=WRITER, require=("text",),
                 label="tighten", temperature=0.2 + 0.15 * attempt, attempts=1,
                 # One sentence in, one sentence out. Without a cap the model
                 # once spent eighty seconds emitting 13,000 tokens here.
@@ -1287,7 +1292,7 @@ def _explain(brief, slug_prefix, rounds=4):
     for rnd in range(rounds):
         try:
             data = llm.structured(_explainer_system(), None, EXPLAIN_SCHEMA,
-                                  model=MODEL, require=("sentences",),
+                                  model=WRITER, require=("sentences",),
                                   label=f"explain{rnd + 1}:{slug_prefix}",
                                   temperature=0.5, think=WRITER_THINK,
                                   messages=msgs)
@@ -1472,7 +1477,7 @@ def write_post(brief, slug_prefix, series_no):
 
     best = llm.structured(
         BRAND, ask, POST_SCHEMA,
-        model=MODEL, require=("slides", "caption"),
+        model=WRITER, require=("slides", "caption"),
         label=f"write:{slug_prefix}", temperature=0.8, think=WRITER_THINK,
     )
     if sentences:
@@ -1492,7 +1497,7 @@ def write_post(brief, slug_prefix, series_no):
         try:
             candidate = llm.structured(
                 BRAND, None, POST_SCHEMA,
-                model=MODEL, require=("slides", "caption"),
+                model=WRITER, require=("slides", "caption"),
                 label=f"fix{rnd + 1}:{slug_prefix}", temperature=0.5, think=WRITER_THINK,
                 messages=[
                     {"role": "user", "content": ask},
@@ -1588,7 +1593,7 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=0):
         try:
             cand = llm.structured(
                 BRAND, None, POST_SCHEMA,
-                model=MODEL, require=("slides", "caption"),
+                model=WRITER, require=("slides", "caption"),
                 label=f"clear{rnd + 1}:{slug_prefix}", temperature=0.4,
                 think=WRITER_THINK,
                 messages=[
@@ -1703,7 +1708,7 @@ def _truth_pass(post, ask, brief, slug_prefix, rounds=2):
         try:
             cand = llm.structured(
                 BRAND, None, POST_SCHEMA,
-                model=MODEL, require=("slides", "caption"),
+                model=WRITER, require=("slides", "caption"),
                 label=f"truth{rnd + 1}:{slug_prefix}", temperature=0.3, think=WRITER_THINK,
                 messages=[
                     {"role": "user", "content": ask},
@@ -1920,7 +1925,7 @@ def author(count, start_index, avoid):
     in a single 128K response; a 30B local model cannot, and the failure mode
     was all-or-nothing. Splitting it keeps every output main() consumes.
     """
-    llm.ensure(MODEL)
+    llm.ensure(MODEL); llm.ensure(WRITER)
 
     briefs = research(count, avoid)
     if not briefs:
