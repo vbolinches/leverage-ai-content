@@ -162,7 +162,7 @@
       ]
     }
   ],
-  "newsroom_skip": "indict|charged|arrest|sentenc|plead|guilty|convict|smuggl|denaturaliz|strip .*citizenship|revoke .*citizenship|takedown|fraud (ring|scheme|conspiracy)|rapist|gang member|terrorist|plays (key|critical|pivotal) role|assists? federal|identity checks lead|vetting efforts lead|voter fraud|illegally voting|foreign government employees|diplomat|field office in|opens new|diversity (immigrant )?visa program hold|h-2b cap|h-2b visas",
+  "newsroom_skip": "indict|charged|arrest|sentenc|plead|guilty|convict|smuggl|denaturaliz|strip .*citizenship|revoke .*citizenship|takedown|fraud (ring|scheme|conspiracy)|rapist|gang member|terrorist|plays (key|critical|pivotal) role|assists? federal|identity checks lead|vetting efforts lead|voter fraud|illegally voting|foreign government employees|diplomat|field office in|opens new|diversity (immigrant )?visa program hold|h-2b cap|h-2b visas|inflation adjustment",
   "motion_cover": {
     "enabled": false,
     "steps": 30,

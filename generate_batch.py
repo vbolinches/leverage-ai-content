@@ -1368,9 +1368,12 @@ def _explain(brief, slug_prefix, rounds=4):
                 "words to that sentence:\n"
                 + "\n".join(f"  - {p}" for p in problems)}]
     if best and len(best_doubts) > CLARITY_MAX:
-        print(f"  {slug_prefix}: explanation still unclear "
-              f"({len(best_doubts)} problem(s)) - using it anyway, the post "
-              f"is checked again")
+        # A body sentence the reader still doubts cannot be repaired later:
+        # the slide repair rewrites it and _snap restores the checked one,
+        # so the same doubt returns (3 -> 3, 2026-09-24). Ten more minutes
+        # of slides cannot save this topic; a spare one can use the time.
+        raise llm.LLMError(f"explanation still unclear after {rounds} rounds "
+                           f"({len(best_doubts)} problem(s))")
     return [s for s in (best or []) if len(s) <= _slack(_LIM["body"])], cleared
 
 
