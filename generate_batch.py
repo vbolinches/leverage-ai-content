@@ -1556,6 +1556,10 @@ def write_post(brief, slug_prefix, series_no):
         BRAND, ask, POST_SCHEMA,
         model=WRITER, require=("slides", "caption"),
         label=f"write:{slug_prefix}", temperature=0.8, think=WRITER_THINK,
+        # A post with thinking runs 8-11K tokens; one repair round ran to
+        # 27K (2026-09-24). The cap bounds a runaway; a cut-off answer is
+        # an LLMError the caller already handles.
+        max_tokens=20000,
     )
     if sentences:
         _snap(best, sentences)
@@ -1580,6 +1584,7 @@ def write_post(brief, slug_prefix, series_no):
                 BRAND, None, POST_SCHEMA,
                 model=WRITER, require=("slides", "caption"),
                 label=f"fix{rnd + 1}:{slug_prefix}", temperature=0.5, think=WRITER_THINK,
+                max_tokens=16000,
                 messages=[
                     {"role": "user", "content": ask},
                     {"role": "assistant",
@@ -1696,6 +1701,7 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
                 BRAND, None, POST_SCHEMA,
                 model=WRITER, require=("slides", "caption"),
                 label=f"clear{rnd + 1}:{slug_prefix}", temperature=0.4,
+                max_tokens=16000,
                 think=WRITER_THINK,
                 messages=[
                     {"role": "user", "content": ask},
@@ -1833,6 +1839,7 @@ def _truth_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
                 BRAND, None, POST_SCHEMA,
                 model=WRITER, require=("slides", "caption"),
                 label=f"truth{rnd + 1}:{slug_prefix}", temperature=0.3, think=WRITER_THINK,
+                max_tokens=16000,
                 messages=[
                     {"role": "user", "content": ask},
                     {"role": "assistant",
