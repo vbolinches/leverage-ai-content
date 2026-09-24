@@ -1311,10 +1311,13 @@ def _explain(brief, slug_prefix, rounds=4):
                                   model=WRITER, require=("sentences",),
                                   label=f"explain{rnd + 1}:{slug_prefix}",
                                   temperature=0.3, think=WRITER_THINK,
-                                  messages=msgs)
+                                  # 5-8 sentences plus thinking. Uncapped,
+                                  # one round thought for 30,757 tokens, hit
+                                  # the context limit and ended the loop.
+                                  max_tokens=8000, messages=msgs)
         except llm.LLMError as e:
-            print(f"  {slug_prefix}: explanation failed ({e})")
-            break
+            print(f"  {slug_prefix}: explanation round {rnd + 1} failed ({e})")
+            continue
         sents = [re.sub(r"\s+", " ", s).strip() for s in data["sentences"]
                  if s and s.strip()]
         long = [s for s in sents if len(s) > _slack(_LIM["body"])]
