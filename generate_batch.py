@@ -1048,73 +1048,6 @@ def _fit_sentences(text, cap):
     return first[:cuts[-1]].rstrip(" ,;:-\u2014") + "."
 
 
-def _shorten(text, cap):
-    """Rewrite one string to fit, or return None. Meaning must survive.
-
-    Asked for "at most 110 characters" the model returns 112, every time, for
-    the same reason the whole-post repair plateaued: it cannot count what it
-    is writing. So it is asked for a fraction of the limit and judged against
-    the real one — the overshoot that made the strict target fail is what
-    makes a margin land.
-
-    One margin was not enough either. Dense Spanish legal sentences came back
-    at 115, 131 and 139 against a 110 limit while the instruction said to keep
-    every fact; the model was obeying, and the text would not compress that
-    far without losing something. So each attempt asks for less and says more
-    plainly what may go — and names what may not, because dropping WHO a rule
-    applies to turns a true sentence into a false one.
-    """
-    protect = (
-        "The result must still be a complete sentence with a subject and a "
-        "verb that a stranger understands on its own - drop a whole detail, "
-        "never the words that make the sentence make sense. "
-        "Never drop a date, a number, a form name, or WHO is affected. "
-        "Never invent an abbreviation for an agency either — compressing "
-        "'Oficina Ejecutiva de Revision de Inmigracion' to 'OEIR' produced an "
-        "acronym that does not exist. Use the agency's real short name or "
-        "write around it. Getting one of these wrong is worse than being "
-        "too long."
-    )
-    plans = [
-        (0.85, "Same facts, same meaning, just fewer words."),
-        (0.75, "Cut adjectives, hedges and repetition. " + protect),
-        (0.65, "You may drop the least important clause entirely — the slide "
-               "carries the news, the caption carries the detail. " + protect),
-        (0.55, "Reduce it to its single most important sentence. " + protect),
-    ]
-    # The 0.45 plan ("one short clause only") is gone: it is what produced
-    # "Para abril: antes del 4 sep." and "to draft proposals". A slide that
-    # cannot be said clearly in its budget fails validate() and is rewritten
-    # or dropped, which is the right outcome.
-    return _squeeze(text, cap, plans)
-
-
-def _squeeze(text, cap, plans, rounds=5):
-    """Run the plans, and if none fits, run them again on the best result.
-
-    Returns the shortest rewrite it reached, WHICH MAY STILL BE TOO LONG. The
-    caller keeps it if it is shorter than what it had; validate() is what
-    decides whether the post ships. Returning None on a near miss was the
-    expensive mistake here — twice. A 175-character sentence came back at
-    149, failed the 110 test, and the 149 was discarded, so the slide stayed
-    at 175 and the post died with it. Compression works in steps: feed the
-    shorter version back in and it keeps giving, where one pass from the
-    original never gets there.
-    """
-    original = text
-    for _ in range(rounds):
-        got = _one_pass(text, cap, plans)
-        if got and len(got) <= cap:
-            return got
-        if not got or len(got) >= len(text):
-            break
-        text = got
-    if text == original:
-        return None
-    print(f"  could not fit {cap} chars (best {len(text)}, keeping it anyway)")
-    return text
-
-
 def _one_pass(text, cap, plans):
     """One sweep of the plans. Returns the shortest usable rewrite, or None."""
     best = None
@@ -1233,20 +1166,18 @@ def _tighten(post):
     for s in post.get("slides") or []:
         for key, cap in fields:
             cur = hooks.flatten(s.get(key))
-            if not cur or len(cur) <= cap:
+            if not cur or len(cur) <= _slack(cap):
                 continue
-            new = _shorten(cur, cap)
-            # Take any shortening, even one that did not reach the limit. It
-            # still helps the whole-post budget, and validate() remains the
-            # thing that decides whether the post ships.
-            if new and len(new) < len(cur):
-                s[key] = cur = new
+            # Removal only, no model. The model shortener (_shorten) was the
+            # single biggest cost of a run - 64-74 calls, a quarter of the
+            # night - and the thing that turned sentences into fragments
+            # ("Para abril: antes del 4 sep."). Whole sentences are dropped;
+            # a field that still does not fit is rewritten by the writer,
+            # with validate()'s message, or the post is dropped.
+            fit = _fit_sentences(cur, cap)
+            if fit and len(fit) < len(cur):
+                s[key] = fit
                 changed = True
-            if len(cur) > _slack(cap):
-                fit = _fit_sentences(cur, cap)
-                if fit and len(fit) < len(cur):
-                    s[key] = fit
-                    changed = True
 
     # Whole-post reading budget, once every field is individually legal.
     # Trim the longest body each pass: it is the one with the most slack and
@@ -1270,10 +1201,8 @@ def _tighten(post):
             # limit — so the post was rejected by the very pass that had just
             # improved it.
             want = min(_LIM["body"], len(cur) - over)
-            new = _shorten(cur, max(40, want))
-            if not new or len(new) >= len(cur):
-                # The rewrite could not land: remove instead of rewriting.
-                new = _fit_sentences(cur, max(40, want))
+            # Remove whole sentences, never rewrite (see above).
+            new = _fit_sentences(cur, max(40, want))
             if not new or len(new) >= len(cur):
                 break
             longest["body"] = new
@@ -1637,12 +1566,15 @@ def write_post(brief, slug_prefix, series_no):
 CLARITY_MAX = int(ACCT.get("clarity_max_doubts", 1))
 
 
-def _clarity_pass(post, ask, brief, slug_prefix, rounds=2):
+def _clarity_pass(post, ask, brief, slug_prefix, rounds=0):
     """Would a first-time reader understand this post, with no doubt left?
 
     The reader (clarity.py) sees only the slides, as a Reel viewer does, and
-    quotes every place it stopped. The writer gets those quotes back and
-    rewrites; a rewrite that breaks a rule or reads worse is not kept.
+    quotes every place it stopped. Rounds default to 0 since 2026-09-24: the
+    slides are built from sentences the reader has already passed
+    (_explain), and rewriting SLIDES for clarity was measured not to
+    converge - 4->4, 5->5, 4->6 across a dozen posts - at 10-20 model calls
+    a run. The read stays as the gate; the fixing happens in _explain.
     """
     if validate(post):
         return post, []

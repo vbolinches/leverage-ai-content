@@ -20,7 +20,7 @@ Rules this module keeps:
   happen. Without "mode" the account's abstract "styles" are used.
 - It can never cost a post. No clip, a failed clip, a missing model: the Reel
   keeps the still cover it already has.
-- Free and local: Wan 2.1 1.3B (Apache-2.0) in its own environment
+- Free and local: Wan 2.2 TI2V 5B (Apache-2.0) in its own environment
   (~/.cache/leverage-motion/venv), so diffusers never touches the main
   interpreter.
 
@@ -40,18 +40,17 @@ CACHE = os.path.join(HERE, "motion_cache")          # gitignored; the repo is pu
 VENV = os.environ.get("MOTION_VENV") or os.path.join(
     os.path.expanduser("~"), ".cache", "leverage-motion", "venv")
 WORKER = os.path.join(HERE, "motion_worker.py")
-# Both Apache-2.0 and local. "model" in an account's motion_cover picks one;
-# --model overrides it for a trial. Minutes per clip on the owner's RTX 5090
-# laptop GPU.
+# Apache-2.0 and local. Wan 2.1 1.3B was tried first (2026-09-23): five
+# minutes a clip, but flat, near-static and prone to drawing gibberish text;
+# the owner compared both and Wan 2.2 won clearly, so 2.1 was deleted.
+# "minutes" is the per-clip timeout allowance on the owner's RTX 5090 laptop
+# GPU (measured: 20-23 min at these settings).
 MODELS = {
-    "wan21": {"model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers", "width": 480,
-              "height": 832, "frames": 65, "fps": 16, "steps": 30,
-              "minutes": 15},
     "wan22": {"model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers", "width": 704,
               "height": 1280, "frames": 97, "fps": 24, "steps": 40,
               "minutes": 45},
 }
-DEFAULT_MODEL = "wan21"
+DEFAULT_MODEL = "wan22"
 MODEL = MODELS[DEFAULT_MODEL]["model"]
 
 # Said to the model on every clip, on every account. Each account adds its own

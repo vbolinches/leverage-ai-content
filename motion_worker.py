@@ -10,19 +10,10 @@ writes one MP4 per job:
      "fps": 24, "steps": 40,
      "jobs": [{"prompt": "...", "negative": "...", "seed": 123, "out": "x.mp4"}]}
 
-(A bare list of jobs is still accepted and runs on Wan 2.1 1.3B.) The model
-loads once per invocation and serves every job in the file.
-
-Models (both Apache-2.0, both local, see motion.MODELS):
-- Wan 2.1 1.3B - small and fast (~5 min a clip), but little motion and flat
-  compositions; judged "boring" by the owner on 2026-09-23.
-- Wan 2.2 TI2V 5B - 720p at 24 fps, more motion and detail, slower.
+The model loads once per invocation and serves every job in the file.
+Model: Wan 2.2 TI2V 5B (Apache-2.0, local) - 720p at 24 fps; see motion.MODELS.
 """
 import json, sys, time
-
-LEGACY = {"model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers", "width": 480,
-          "height": 832, "frames": 65, "fps": 16, "steps": 30}
-
 
 def main(job_file):
     import numpy as np
@@ -32,8 +23,6 @@ def main(job_file):
 
     with open(job_file, encoding="utf-8") as f:
         spec = json.load(f)
-    if isinstance(spec, list):
-        spec = dict(LEGACY, jobs=spec)
     w, h, n, fps = spec["width"], spec["height"], spec["frames"], spec["fps"]
 
     t0 = time.time()
