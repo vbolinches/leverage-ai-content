@@ -2401,6 +2401,21 @@ def _off_script(post):
     known = {_stem(w) for w in re.findall(r"[a-záéíóúñü]+", script.lower())
              if len(w) >= 6} | {_stem(w) for w in _GLUE}
     errs = []
+    # The cover is read first. An acronym or code on it ('DHS', 'H-1B') that
+    # the explanation defines later stops a reader at the first frame; the
+    # six-letter rule below cannot see a three-letter acronym. The cover
+    # paraphrases the first sentence, so that sentence sets what it may use.
+    first = sents[0] if sents else ""
+    cover = (post.get("slides") or [{}])[0]
+    for key in ("headline", "sub"):
+        text = hooks.flatten(cover.get(key)) or ""
+        for tok in re.findall(r"\b[A-Z]{2,5}\b|\b[A-Z]{1,2}-\d{1,4}[A-Z]?\b", text):
+            if tok not in first and tok != (ACCT.get("username") or ""):
+                errs.append(f"slide 1: the cover {key} uses '{tok}' before "
+                            f"anything explains it - say it in plain words "
+                            f"on the cover, as the explanation's first "
+                            f"sentence does")
+                break
     for i, sl in enumerate(post.get("slides") or [], 1):
         fields = [("headline", hooks.flatten(sl.get("headline"))),
                   ("sub", hooks.flatten(sl.get("sub")))]
