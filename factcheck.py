@@ -332,7 +332,7 @@ _DEFINITION = re.compile(
     r"^(?:el |la |los |las |un |una |the |a |an )?[A-ZÁÉÍÓÚÑ][^.;:]{1,70}?"
     r"\s(?:es|son|is|are)\s(?:un|una|el|la|los|las|the|a|an|para|for)\s", re.I)
 _NOT_DEFINITION = re.compile(
-    r"\d|\b(desde|hasta|antes|después|plazo|fecha|deadline|until|before|after|"
+    r"\d|\b(plazo|fecha l[ií]mite|deadline|vence|expira|"
     r"debes?|tienes? que|must|should|ahora|now|ya no|cambi|nuevo|nueva|new)\b", re.I)
 # Form and visa codes carry digits that are not dates or amounts: I-485,
 # H-2B, N-400, EB-5, DV-2026 is NOT one (a year).

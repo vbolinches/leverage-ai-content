@@ -1302,8 +1302,7 @@ def _explain(brief, slug_prefix, rounds=4):
     # not change while its text does not, so a cleared sentence stays cleared.
     cleared = set()
 
-    def _about(problem, sentence):
-        return clarity._norm(sentence) in clarity._norm(problem)
+    _about = _mentions
 
     for rnd in range(rounds):
         try:
@@ -1338,7 +1337,7 @@ def _explain(brief, slug_prefix, rounds=4):
         # once anything has been cleared - they swing with the same noise.
         problems = [p for p in problems
                     if not any(_about(p, s) for s in cleared)
-                    and (not cleared or any(_about(p, s) for s in sents))]
+                    and not (cleared and p.startswith("only "))]
         doubts = [p for p in doubts if p in problems]
         untrue = [p for p in untrue if p in problems]
         cleared |= {s for s in sents if not any(_about(p, s) for p in problems)}
@@ -1375,12 +1374,23 @@ def _explain(brief, slug_prefix, rounds=4):
     return [s for s in (best or []) if len(s) <= _slack(_LIM["body"])], cleared
 
 
+def _mentions(problem, sentence):
+    """Is this objection about that sentence? The reader quotes the slide
+    verbatim, but the fact-checker quotes its own paraphrase of a claim, so a
+    substring test missed most of them (2026-09-24 review). Word overlap:
+    at least 60% of the sentence's content words appear in the objection."""
+    sw = {w for w in re.findall(r"\w+", clarity._norm(sentence)) if len(w) > 3}
+    if not sw:
+        return False
+    pw = set(re.findall(r"\w+", clarity._norm(problem)))
+    return len(sw & pw) / len(sw) >= 0.6
+
+
 def _uncleared(doubts, cleared):
     """Doubts about sentences the explanation stage already cleared are the
     reader's noise, not new problems - the final read judges only what the
     writer added on top: cover, headlines, recap."""
-    return [d for d in doubts
-            if not any(clarity._norm(s) in clarity._norm(d) for s in cleared)]
+    return [d for d in doubts if not any(_mentions(d, s) for s in cleared)]
 
 
 def _snap(post, sentences):
@@ -1517,6 +1527,11 @@ def write_post(brief, slug_prefix, series_no):
     # Explain first, in plain prose checked by a first-time reader; the slides
     # are then built from those sentences. See _explain().
     sentences, cleared = _explain(brief, slug_prefix)
+    if not sentences:
+        # Every round failed (an Ollama restart did this on 2026-09-24).
+        # Writing slides with no checked sentences is the pre-explanation
+        # path that produced the unreadable posts; a spare topic is cheaper.
+        raise llm.LLMError("no explanation could be produced for this topic")
     if sentences:
         ask += ("\n\nTHE EXPLANATION - already read and understood by a "
                 "first-time reader. The slides must carry these sentences WORD "
@@ -1761,11 +1776,8 @@ def _verify(post, brief, label, cleared=()):
                                         label=label)
     if not cleared:
         return errs, bad
-    errs = [e for e in _uncleared(errs, cleared)
-            if not e.startswith("only ") or not cleared]
-    errs = [e for e in errs if not e.startswith("only ")]
-    bad = [b for b in bad
-           if not any(clarity._norm(b) in clarity._norm(s) for s in cleared)]
+    errs = [e for e in _uncleared(errs, cleared) if not e.startswith("only ")]
+    bad = [b for b in bad if not any(_mentions(b, s) for s in cleared)]
     return errs, bad
 
 
@@ -2416,7 +2428,8 @@ def _off_script(post):
     cover = (post.get("slides") or [{}])[0]
     for key in ("headline", "sub"):
         text = hooks.flatten(cover.get(key)) or ""
-        for tok in re.findall(r"\b[A-Z]{2,5}\b|\b[A-Z]{1,2}-\d{1,4}[A-Z]?\b", text):
+        # Three letters minimum: "AI" on an AI-tools account is not jargon.
+        for tok in re.findall(r"\b[A-Z]{3,5}\b|\b[A-Z]{1,2}-\d{1,4}[A-Z]?\b", text):
             if tok not in first:
                 errs.append(f"slide 1: the cover {key} uses '{tok}' before "
                             f"anything explains it - say it in plain words "
@@ -2757,7 +2770,22 @@ def main():
 
     for post in posts:
         if not a.no_hook_test:
+            import copy
+            authored = copy.deepcopy(post["slides"][0])
             print(hook_test(post, a.min_hook_score, log_path=hook_log))
+            # The winning candidate replaces the cover AFTER every check ran.
+            # The cover is the most-read line; check it, and fall back to the
+            # authored cover (which passed) rather than lose the post.
+            if post["slides"][0] != authored and post.get("source_url"):
+                probe = {"slides": [post["slides"][0]]}
+                cover_errs, _ = factcheck.verify_detail(
+                    probe, {"source_url": post["source_url"]}, ACCT,
+                    model=MODEL, label=f"{post['slug']}/cover")
+                cover_errs = [e for e in cover_errs if not e.startswith("only ")]
+                if cover_errs or validate(post):
+                    print(f"  {post['slug']}: graded cover fails a check - "
+                          f"keeping the authored cover ({(cover_errs or validate(post))[0][:90]})")
+                    post["slides"][0] = authored
 
         errs = validate(post)
         if errs:

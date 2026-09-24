@@ -90,8 +90,10 @@ def check():
     row("ollama", bool(tags), f"{len(tags)} model(s) pulled" if tags
         else "not answering — start it with `ollama serve`")
 
-    wanted = {a.get("model", llm.DEFAULT_MODEL)
-              for a in (accounts.get(s) for s in enabled_slugs())}
+    wanted = set()
+    for a in (accounts.get(s) for s in enabled_slugs()):
+        wanted.add(a.get("model", llm.DEFAULT_MODEL))
+        wanted.add(a.get("writer_model") or a.get("model", llm.DEFAULT_MODEL))
     for m in sorted(wanted):
         have = m in tags or m.split(":")[0] in {t.split(":")[0] for t in tags}
         row(f"model {m}", have, "" if have else f"run: ollama pull {m}")
