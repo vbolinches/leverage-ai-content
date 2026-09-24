@@ -6167,6 +6167,120 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-09-24",
+      "followers": 10,
+      "posts": [
+        {
+          "slug": "post61-gpt6-astra-business-workflows",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 17,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post60-zapflow-api-first-automation",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 100,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post58-ai-fraud-detection-in-invoicing",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 9,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post56-ledge-ai-invoicing-ocr",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post55-ai-subscription-overlap-audit",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 62,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post54-chatgpt-go-eight-dollars",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 5,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post51-notebooklm-renamed-gemini",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 14,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post50-chatgpt-builds-the-file",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 38,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post49-claude-pro-worth-it",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 8,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post48-perplexity-model-council",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post47-chatgpt-upwork-discovery",
+          "format": "reel",
+          "likes": 1,
+          "comments": 0,
+          "reach": 5,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post46-gemini-notebook-expert-books",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 10,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
