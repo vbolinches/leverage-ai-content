@@ -2359,6 +2359,10 @@ def _clarity_rules(post):
             errs.append(f"slide {i}: the headline '{hooks.flatten(sl.get('headline'))}' "
                         f"says nothing - write what this slide tells the reader, "
                         f"as a short full sentence")
+        sub = hooks.flatten(sl.get("sub"))
+        if sub and len(sub.split()) < 5:
+            errs.append(f"slide {i}: the sub '{sub}' is a fragment - write one "
+                        f"complete sentence (what is new, or when it happened)")
         if sl.get("kind") == "step":
             body = hooks.flatten(sl.get("body"))
             if body and len(body.split()) < 6:

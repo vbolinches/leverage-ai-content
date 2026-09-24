@@ -431,6 +431,11 @@ def verify_detail(post, brief, acct, model=None, label=""):
         ev = (c.get("evidence") or "").strip()
         verdict = c.get("verdict")
         real = on_page(page, ev)
+        # A scrap under four words ("Para solicitantes.") states no fact to
+        # check; it is a writing problem, and _clarity_rules rejects it.
+        # forbidden_advice still guards short dangerous phrases.
+        if len(re.findall(r"\w+", claim)) < 4 and not re.search(r"\d", claim):
+            continue
         # A definition the checker vouched for. The shape is enforced here so
         # the checker cannot wave a news claim through by calling it one:
         # "<Term> es/son/is/are <un|una|el|la|the|a|an> ..." and nothing about
