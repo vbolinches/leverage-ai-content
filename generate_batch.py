@@ -1521,7 +1521,12 @@ def write_post(brief, slug_prefix, series_no):
                 "they fit), copied exactly, in this order. You write the "
                 "headlines, the cover, the recap arrows and the caption; the "
                 "explaining is already done - do not shorten, merge or "
-                "paraphrase these sentences:\n"
+                "paraphrase these sentences. Headlines, the cover and the "
+                "recap arrows may use ONLY terms these sentences already use, "
+                "in the same plain words - no new agency name, acronym, legal "
+                "term or synonym (not 'DHS' if the sentences say 'el "
+                "gobierno', not 'residentes legales permanentes' if they say "
+                "'Green Card'):\n"
                 + "\n".join(f"  {i}. {s}" for i, s in enumerate(sentences, 1)))
 
     best = llm.structured(
