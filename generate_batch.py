@@ -1279,7 +1279,15 @@ def _explainer_system():
         f"still ahead ('antes del 18 de septiembre').\n"
         f"- The first sentence names the concrete thing that changed - the "
         f"form, program, fee or rule by name - not 'a new version' or 'a "
-        f"change'.")
+        f"change'."
+        + ("" if ACCT.get("require_source_url") else
+           f"\n- A use YOU suggest is a suggestion, never a fact about the "
+           f"product: 'you could ask it to draft a client contract' is yours; "
+           f"'it drafts client contracts' is a claim the page must make. The "
+           f"page's own examples may be stated as facts.")
+        + f"\n- Every product, feature or plan you name is explained in the "
+        f"same sentence, in plain words ('Cowork, the part of Claude that "
+        f"works on your files'; 'the paid Pro and Max subscriptions').")
 
 
 def _explain(brief, slug_prefix, rounds=6):
