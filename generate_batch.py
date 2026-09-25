@@ -2444,6 +2444,7 @@ _RELATIVE_DAY = re.compile(
     r"|\b(?:desde|a partir de)\s+hoy\b"
     r"|\bhoy\s+(?:cambi|anunci|public|entr|lanz)\w*"
     r"|\b(?:changed|announced|launched|released|shipped|updated|published|"
+    r"added|adds|introduced|brought|unveiled|now has|now have|"
     r"rolling out|rolls out|roll out|available|starts|starting|begins|beginning)"
     r"(?:[^.,;!?]{0,40}?\s)?(?:today|yesterday|this week)\b"
     r"|\b(?:as of|starting|from) today\b"
