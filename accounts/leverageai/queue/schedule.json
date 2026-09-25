@@ -1361,10 +1361,10 @@
         "accounts/leverageai/queue/post88-voice-commands-gmail-docs-keep/slide05.png"
       ],
       "caption": "You handle sales, delivery, and admin alone. Typing standard follow-ups and formatting proposals eats your day. Google added voice commands to Gmail, Docs, and Keep on September 3, 2026. You can now use your voice to manage tasks through the new Gemini 3.5 Live integration. Just talk to your apps to find emails, write documents, or organize your notes. It replaces repetitive typing with direct voice input.\n\nThese features are rolling out since September 3, 2026, for specific Google Workspace subscribers. They are available in Gmail and Keep for Google AI Plus, Pro, and Ultra subscribers, and in Docs for Pro and Ultra subscribers. All of these features are coming soon for Google Workspace business customers.\n\nCheck the official Google blog for the full rollout details. Save this for later when you are stuck in a typing loop.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneurtips #gmaillife #productivityhack #voiceassistant #freelancertools #adminautomation #googleworkspace #businesstools #timemanagement",
-      "status": "held",
+      "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post88-voice-commands-gmail-docs-keep/reel.mp4",
-      "note": "HELD 2026-09-25: draft for owner review; 'this week' corrected to the source date (Sept 3) by the reviewer"
+      "note": "HELD 2026-09-25: draft for owner review; 'this week' corrected to the source date (Sept 3) by the reviewer. RELEASED 2026-09-25 by the owner."
     }
   ]
 }
