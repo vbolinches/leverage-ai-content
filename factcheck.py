@@ -78,6 +78,11 @@ SAFE_ADVICE = re.compile(
     r"\b(this is )?for (freelancers|solo|small[- ]business|business owners|"
     r"consultants|creators|coaches)|if you (run|own|are) (a|an) |"
     r"\b(the |this |a )?prompt (to use )?(is|:)|try (this|asking)|ask it to|"
+    # A use the account SUGGESTS, phrased as a suggestion (the explainer is
+    # told to write it this way on tips accounts): not a claim about the
+    # product. "It drafts client contracts" still has to be on the page.
+    r"\byou (could|can|might) (ask|tell|use|try|have) (it|gmail|docs|gemini|chatgpt|claude|copilot|the tool|the app)\b|"
+    r"\bfor example, you (could|can)\b|\bpodr[ií]as (pedirle|usarlo|probar)\b|"
     r"save this|share this|consult an? (immigration )?(attorney|lawyer)|"
     r"check your (case|status|dates)|verify (it |this )?on",
     re.I)
