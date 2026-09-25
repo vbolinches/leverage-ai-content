@@ -87,6 +87,8 @@ in. Do not treat the absence of new data as new evidence either way.
 
 ## Confirmed — do more of this
 
+- Concrete-pain hooks beat instruction/scold hooks (High-reach reels used specific pain points (cost/mistake/change); low-reach reels used vague/technical phrasing despite similar shapes. — batch of 2026-09-25)
+
 - **Reels outreach carousels with no exception in the latest brief.** All
   three best posts (108/93/44 reach) are reels; all three worst (2/1/0) are
   carousels. The generator still only authors one structure; whether a given
@@ -202,6 +204,10 @@ Performance of posts 50-56 confirms concrete-pain hooks (e.g., 'You're paying fo
 ## Batch notes — posts 82-87 (2026-09-23)
 
 The hook grader is disproven: pre-publish hook grades (6.5-9.5) showed no correlation with reach (1-100) across six posts. Best posts used concrete-pain hooks (e.g., "Your invoice tool is broken", "You're paying for the same job twice") and reached 38-100, while worst posts used vague/technical hooks (e.g., "Go saves $12. Costs Agent mode.") and reached 1-4. Hook grades (6.5-9.5) and reach (1-100) across six posts showed no correlation: highest grade (9.5) had lowest reach (1), second-highest grade (8.2) had lowest reach (4).
+
+## Batch notes — posts 88-88 (2026-09-25)
+
+Best reels (50,55,60) used concrete-pain hooks; worst reels (47,54) used vague/technical hooks. Reel format confirmed as necessary for reach (post56 carousel failed despite concrete-pain hook).
 
 ## Next brief — what to ask for
 

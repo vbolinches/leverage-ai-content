@@ -1349,6 +1349,21 @@
       "video": "accounts/leverageai/queue/post87-gemini-connected-apps/reel.mp4",
       "note": "RETIRED 2026-09-23 (review): slides 2-3 repeat 'Project management in one place' as headline and body; 'Gemini handles project management' overstates what connected apps do.",
       "media_removed": "2026-09-24: slides and reel deleted to keep the public repo lean; re-render from specs/<id>.json before restoring"
+    },
+    {
+      "id": "post88-voice-commands-gmail-docs-keep",
+      "date": "2026-09-26",
+      "slides": [
+        "accounts/leverageai/queue/post88-voice-commands-gmail-docs-keep/slide01.png",
+        "accounts/leverageai/queue/post88-voice-commands-gmail-docs-keep/slide02.png",
+        "accounts/leverageai/queue/post88-voice-commands-gmail-docs-keep/slide03.png",
+        "accounts/leverageai/queue/post88-voice-commands-gmail-docs-keep/slide04.png",
+        "accounts/leverageai/queue/post88-voice-commands-gmail-docs-keep/slide05.png"
+      ],
+      "caption": "You handle sales, delivery, and admin alone. Typing standard follow-ups and formatting proposals eats your day. Google added voice commands to Gmail, Docs, and Keep this week. You can now use your voice to manage tasks through the new Gemini 3.5 Live integration. Just talk to your apps to find emails, write documents, or organize your notes. It replaces repetitive typing with direct voice input.\n\nThese features are rolling out this week for specific Google Workspace subscribers. They are available in Gmail and Keep for Google AI Plus, Pro, and Ultra subscribers, and in Docs for Pro and Ultra subscribers. All of these features are coming soon for Google Workspace business customers.\n\nCheck the official Google blog for the full rollout details. Save this for later when you are stuck in a typing loop.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneurtips #gmaillife #productivityhack #voiceassistant #freelancertools #adminautomation #googleworkspace #businesstools #timemanagement",
+      "status": "held",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post88-voice-commands-gmail-docs-keep/reel.mp4"
     }
   ]
 }
