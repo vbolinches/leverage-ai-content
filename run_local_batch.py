@@ -233,7 +233,12 @@ def main():
             if a.dry_run:
                 cmd += ["--dry-run", "--out", os.path.join(REPO, "review_out", slug)]
             try:
-                run(cmd, log, env={"ACCOUNT": slug, "PYTHONIOENCODING": "utf-8"})
+                # New posts are queued as HELD drafts by default: the owner
+                # reads them and releases each one (status -> queued). Set
+                # QUEUE_STATUS=queued to publish unreviewed again, once the
+                # pipeline has earned that back (owner's rule, 2026-09-24).
+                run(cmd, log, env={"ACCOUNT": slug, "PYTHONIOENCODING": "utf-8",
+                                   "QUEUE_STATUS": os.environ.get("QUEUE_STATUS", "held")})
             except RuntimeError as e:
                 # One account failing must not cost the other its batch, the
                 # same reason the workflow matrix ran with fail-fast: false.
