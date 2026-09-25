@@ -1321,17 +1321,24 @@ def _explain(brief, slug_prefix, rounds=6):
     _about = _mentions
 
     for rnd in range(rounds):
-        try:
-            data = llm.structured(_explainer_system(), None, EXPLAIN_SCHEMA,
-                                  model=WRITER, require=("sentences",),
-                                  label=f"explain{rnd + 1}:{slug_prefix}",
-                                  temperature=0.3, think=WRITER_THINK,
-                                  # 5-8 sentences plus thinking. Uncapped,
-                                  # one round thought for 30,757 tokens, hit
-                                  # the context limit and ended the loop.
-                                  max_tokens=12000, messages=msgs)
-        except llm.LLMError as e:
-            print(f"  {slug_prefix}: explanation round {rnd + 1} failed ({e})")
+        data = None
+        # Thinking first; on a runaway past the cap (four times on
+        # 2026-09-24), the same round again with reasoning off, which cannot
+        # run away and which a dense model writes acceptably without.
+        for think in ([WRITER_THINK, False] if WRITER_THINK else [False]):
+            try:
+                data = llm.structured(_explainer_system(), None, EXPLAIN_SCHEMA,
+                                      model=WRITER, require=("sentences",),
+                                      label=f"explain{rnd + 1}:{slug_prefix}"
+                                            + ("" if think else "/nothink"),
+                                      temperature=0.3, think=think,
+                                      max_tokens=12000, messages=msgs)
+                break
+            except llm.LLMError as e:
+                print(f"  {slug_prefix}: explanation round {rnd + 1} failed ({e})")
+                if "cap" not in str(e):
+                    break
+        if data is None:
             continue
         sents = [re.sub(r"\s+", " ", s).strip() for s in data["sentences"]
                  if s and s.strip()]
