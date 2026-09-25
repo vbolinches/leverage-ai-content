@@ -2430,7 +2430,7 @@ _RELATIVE_DAY = re.compile(
     r"|\bhoy\s+(?:cambi|anunci|public|entr|lanz)\w*"
     r"|\b(?:changed|announced|launched|released|shipped|updated|published|"
     r"rolling out|rolls out|roll out|available|starts|starting|begins|beginning)"
-    r"\s+(?:to\s+\w+\s+)?(?:today|yesterday|this week)\b"
+    r"(?:[^.,;!?]{0,40}?\s)?(?:today|yesterday|this week)\b"
     r"|\b(?:as of|starting|from) today\b"
     r"|\b(?:today|yesterday)\s+(?:\w+\s+)?(?:announced|launched|released|shipped|changed)\b",
     re.I)
