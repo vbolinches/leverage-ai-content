@@ -204,8 +204,16 @@ def _degenerate(data):
     claims = (data or {}).get("claims") or []
     if not claims:
         return True
+    # "The post to check is missing" / "The source page content is missing":
+    # the checker describing an absence in a prompt that contained both
+    # (2026-09-25, a post at 0 doubts). A claim ABOUT the input is not a
+    # claim from the post.
+    meta = re.compile(r"\b(is|are|was|were) (missing|not provided|empty|absent)"
+                      r"|\bno (post|page|content|text) (was|is|to)\b"
+                      r"|\bplaceholder\b", re.I)
     empty = sum(1 for c in claims
-                if len((c.get("claim") or "").strip(" .\u2026")) < 4)
+                if len((c.get("claim") or "").strip(" .\u2026")) < 4
+                or meta.search(c.get("claim") or ""))
     return empty * 2 >= len(claims)
 
 
