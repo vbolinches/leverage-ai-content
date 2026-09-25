@@ -60,7 +60,10 @@ sentence that honestly says the official notice does NOT specify something \
 telling you the limit of what is known, which is better than a guess. And \
 a law, program, form or product you have never heard of is not a doubt when \
 the sentence that names it also says what it is - the sentence just told \
-you; laws and products newer than your memory exist. Dates in the current year or the next are normal: today's \
+you; laws and products newer than your memory exist. Plan or tier names \
+(Plus, Pro, Ultra, Max, Business) are not a doubt when the sentence says \
+they are the paid plans - companies rename plans after your memory ends, \
+and the post takes its names from the official page. Dates in the current year or the next are normal: today's \
 date is given in the message. So are version numbers you have not seen \
 (GPT-6, Gemini 3.8, Claude Opus 5.5): products you know release new \
 versions all the time, and a newer number than you remember is not a doubt.
