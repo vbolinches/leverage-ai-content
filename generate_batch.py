@@ -2918,7 +2918,10 @@ def main():
             "date": cursor.isoformat(),
             "slides": slides,
             "caption": post["caption"],
-            "status": "queued",
+            # QUEUE_STATUS=held queues the batch as drafts the owner reviews
+            # and releases (status -> queued); the publisher only takes
+            # "queued". Used while the pipeline earns back trust (2026-09-24).
+            "status": os.environ.get("QUEUE_STATUS", "queued"),
         }
 
         if is_reel(post["slug"]):
