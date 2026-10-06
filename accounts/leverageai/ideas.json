@@ -1,12 +1,212 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-10-06",
   "items": [
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Amazon Alexa Plus keeps creepily singing ‘lalala’ for minutes on end",
+      "url": "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end",
+      "at": "2026-10-06",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Felix Rieseberg",
+      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Gemini Call for Me might tell your mom you&#8217;re running late",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "This startup is issuing AI-generated acne prescriptions",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "All the drama around AI&#8217;s takeover of mathematics",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Wikipedia operator says OpenAI&#8217;s &#8216;rogue&#8217; bots may be linked to a May outage",
+      "url": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "OpenAI is adding text watermarking in ChatGPT and Codex",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "OpenAI PR tells journalist to ‘move on’ while asking Sam Altman about a ChatGPT user&#8217;s suicide",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Sam Altman says ‘some bad things&#8217; will happen, but AI is totally worth it",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004811/openai-altman-bad-things-ai-tradeoff",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Sen. Adam Schiff on AI regulation, free speech, and impeaching Trump one more time",
+      "url": "https://www.theverge.com/podcast/1004286/senator-adam-schiff-ai-trump-regulation-corruption",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "An open-source tool lets you delete 12GB of Apple Intelligence data on macOS",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool",
+      "at": "2026-10-05",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Religious scholars met with Anthropic",
+      "url": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
+      "at": "2026-10-04",
+      "signal": 165,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Qwen3.8 27B addition in words",
+      "url": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
+      "at": "2026-10-04",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "We're going to need default hard budget caps on pretty much everything",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "at": "2026-10-03",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "September sponsors-only newsletter",
+      "url": "https://simonwillison.net/2026/Oct/3/newsletter/",
+      "at": "2026-10-03",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Show HN: Made an open-source Lego AI generator",
+      "url": "https://github.com/anteloc/ldraw-nova",
+      "at": "2026-10-02",
+      "signal": 165,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Rex's Dino Store",
+      "url": "https://simonwillison.net/2026/Oct/2/rex-s-dino-store/",
+      "at": "2026-10-02",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "pwasm 0.2a0",
+      "url": "https://simonwillison.net/2026/Oct/1/pwasm/",
+      "at": "2026-10-01",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Matthew Green",
+      "url": "https://simonwillison.net/2026/Oct/1/matthew-green/",
+      "at": "2026-10-01",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "He Built This City",
+      "url": "https://simonwillison.net/2026/Sep/30/he-built-this-city/",
+      "at": "2026-09-30",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "hn/NotebookLM",
+      "title": "Show HN: Ledge.sh – Runnable Markdown Notes",
+      "url": "https://ledge.sh",
+      "at": "2026-09-29",
+      "signal": 204,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Anthropic Frontier Red Team",
+      "url": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/",
+      "at": "2026-09-29",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+      "url": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
+      "at": "2026-09-29",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Photo Scrubber — local face blur & metadata removal",
+      "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber/",
+      "at": "2026-09-29",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "OpenAI DevDay 2026 live blog",
+      "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+      "at": "2026-09-29",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
     {
       "source": "hn/NotebookLM",
       "title": "Pirating the Pirates",
       "url": "https://mubi.com/en/notebook/posts/pirating-the-pirates",
       "at": "2026-09-28",
-      "signal": 614,
+      "signal": 712,
       "seen": "2026-09-29"
     },
     {
@@ -115,6 +315,14 @@
     },
     {
       "source": "rss/simonwillison.net",
+      "title": "llm-anthropic 0.30",
+      "url": "https://simonwillison.net/2026/Sep/28/llm-anthropic/",
+      "at": "2026-09-28",
+      "signal": 0,
+      "seen": "2026-10-06"
+    },
+    {
+      "source": "rss/simonwillison.net",
       "title": "2026 in LLMs (so far)",
       "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
       "at": "2026-09-27",
@@ -150,7 +358,7 @@
       "title": "Show HN: Ekselio – Loveable for finance workflows (local first)",
       "url": "https://www.gptbeyond.com/try?home=1",
       "at": "2026-09-25",
-      "signal": 41,
+      "signal": 43,
       "seen": "2026-09-29"
     },
     {
@@ -198,7 +406,7 @@
       "title": "I am done with this shit",
       "url": "https://www.reddit.com/r/ClaudeAI/comments/1wm5c21/i_am_done_with_this_shit/",
       "at": "2026-09-23",
-      "signal": 256,
+      "signal": 258,
       "seen": "2026-09-29"
     },
     {
@@ -206,7 +414,7 @@
       "title": "Once Claude can measure something, it can make it faster",
       "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
       "at": "2026-09-23",
-      "signal": 230,
+      "signal": 231,
       "seen": "2026-09-29"
     },
     {
@@ -432,214 +640,6 @@
       "at": "2026-09-19",
       "signal": 0,
       "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
-      "url": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
-      "at": "2026-09-19",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Meta’s Muse is creepy, but maybe not for the reasons you think",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
-      "at": "2026-09-19",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Gemini went rogue, hacked three companies, and Google hid it",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
-      "at": "2026-09-19",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
-      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-      "at": "2026-09-18",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Note on 18th September 2026",
-      "url": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/",
-      "at": "2026-09-18",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Thariq Shihipar",
-      "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-      "at": "2026-09-18",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "The Creative Spirit of Who Framed Roger Rabbit",
-      "url": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit/",
-      "at": "2026-09-18",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "hn/Claude AI",
-      "title": "Launch HN: Skillsync (YC W26) – AI chat sessions made portable across agents",
-      "url": "https://news.ycombinator.com/item?id=49743049",
-      "at": "2026-09-17",
-      "signal": 68,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "hn/NotebookLM",
-      "title": "Faster NumPy in the Browser",
-      "url": "https://notebook.link/blog/the-last-mile-faster-numpy/",
-      "at": "2026-09-17",
-      "signal": 50,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Be alert: targeted attacks on prominent Rustaceans",
-      "url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
-      "at": "2026-09-17",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "How To Write With An LLM",
-      "url": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
-      "at": "2026-09-17",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Self-generated prompt injections in compaction summaries",
-      "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-      "at": "2026-09-17",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "datasette 1.0a40",
-      "url": "https://simonwillison.net/2026/Sep/16/datasette/",
-      "at": "2026-09-16",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "datasette 0.65.5",
-      "url": "https://simonwillison.net/2026/Sep/16/datasette-2/",
-      "at": "2026-09-16",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Claude Cowork and chat are now one Claude",
-      "url": "https://simonwillison.net/2026/Sep/16/one-claude/",
-      "at": "2026-09-16",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Mustafa Suleyman",
-      "url": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
-      "at": "2026-09-16",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "hn/Claude AI",
-      "title": "Show HN: Pizza Bot – An inbox for AI agents that work in the background",
-      "url": "https://github.com/pizza-bot-app/pizza-bot",
-      "at": "2026-09-15",
-      "signal": 61,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
-      "at": "2026-09-15",
-      "signal": 0,
-      "seen": "2026-09-15"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Gemini Live audio",
-      "url": "https://simonwillison.net/2026/Sep/15/gemini-live/",
-      "at": "2026-09-15",
-      "signal": 0,
-      "seen": "2026-09-22"
-    },
-    {
-      "source": "hn/Claude AI",
-      "title": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-      "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
-      "at": "2026-09-14",
-      "signal": 228,
-      "seen": "2026-09-15"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "The contagion of fear",
-      "url": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
-      "at": "2026-09-14",
-      "signal": 0,
-      "seen": "2026-09-15"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "What blog posts influenced your thinking the most?",
-      "url": "https://simonwillison.net/2026/Sep/14/influences/",
-      "at": "2026-09-14",
-      "signal": 0,
-      "seen": "2026-09-15"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Laurie Voss",
-      "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
-      "at": "2026-09-14",
-      "signal": 0,
-      "seen": "2026-09-15"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "commit-rewriter 0.1",
-      "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
-      "at": "2026-09-14",
-      "signal": 0,
-      "seen": "2026-09-15"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "What execs and politicians are saying about slowing down AI development",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
-      "at": "2026-09-14",
-      "signal": 0,
-      "seen": "2026-09-15"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Jensen Huang puts Trump on speakerphone onstage to announce robots won’t take over the world",
-      "url": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
-      "at": "2026-09-14",
-      "signal": 0,
-      "seen": "2026-09-15"
     }
   ]
 }
