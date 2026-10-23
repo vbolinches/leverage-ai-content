@@ -210,6 +210,20 @@ before believing it. `OLLAMA_MODEL` is the knob, and a smaller model costs
 inmigraforma first — its rules are the ones already at the edge of what a 30B
 can satisfy.
 
+**Nothing generated from 2026-09-26 to 2026-10-23, and the job said
+nothing.** Three faults stacked: the checker model was removed from Ollama
+(other projects on this PC manage their own models there), and
+`llm.ensure()`'s "not pulled" message went to devnull under pythonw, so 26
+logs held one header line each; the children ran under pythonw.exe too, so
+the 09-26/27 runs logged nothing from `generate_batch.py`; and the task's
+3-hour limit killed every full batch before its single end-of-run commit
+(with the dense writer a post costs about an hour). Now: stderr goes to the
+day's log, every model each account uses is checked with the reason
+logged, children run under python.exe with CREATE_NO_WINDOW, each account
+commits and pushes as soon as it finishes, the default is 3 attempts per
+account, and the task limit is 10 hours. If a log is one line long again,
+run `python run_local_batch.py --check` first.
+
 What it changes about authoring. A hosted frontier model wrote seven posts
 and rewrote strategy.md in one 128K response; a 30B local model cannot hold
 that shape, and the failure was all-or-nothing. `author()` is three passes
