@@ -32,13 +32,46 @@ REPO = os.path.dirname(os.path.abspath(__file__))
 # at 3am. pythonw has no stdout at all — sys.stdout is None — and the first
 # print() would end the run with an AttributeError before anything generated.
 # The log file is the real output either way.
+#
+# stderr goes to the day's log rather than to devnull. It used to be devnull,
+# and from 2026-09-28 every run died on `llm.ensure()` - the checker model had
+# been removed from Ollama - with its "Model ... is not pulled" message thrown
+# away. Each log held one header line for 26 nights and said nothing about why.
 if sys.stdout is None:
-    sys.stdout = sys.stderr = open(os.devnull, "w", encoding="utf-8")
+    sys.stdout = open(os.devnull, "w", encoding="utf-8")
+    _logs = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
+    os.makedirs(_logs, exist_ok=True)
+    sys.stderr = open(os.path.join(
+        _logs, f"batch-{datetime.now(timezone.utc).strftime('%Y-%m-%d')}.log"),
+        "a", encoding="utf-8")
 
 # Generate when fewer than this many posts are queued. A 7-post batch is about
 # two weeks of runway and the run is free, so checking nightly means a queue
 # never gets close to empty. Same number the workflow used.
 REFILL_BELOW = 8
+
+# Posts ATTEMPTED per account per night. With the dense writer a post takes
+# about an hour to explain, write and check (2026-09-25: two attempts per
+# account took four hours), so seven per account no longer fits a night. A
+# rejected topic is replaced by a spare brief, which can add attempts.
+DEFAULT_COUNT = 3
+
+
+def child_python():
+    """The interpreter for child processes: python.exe, never pythonw.exe.
+
+    The scheduled task starts this file under pythonw.exe so no console
+    flashes up, and sys.executable is then pythonw.exe too. Children started
+    with it have no usable stdout, so the 2026-09-26/27 runs logged nothing
+    at all from generate_batch.py for three hours. python.exe with
+    CREATE_NO_WINDOW (see run()) is just as invisible and its output arrives.
+    """
+    exe = sys.executable
+    if os.path.basename(exe).lower() == "pythonw.exe":
+        alt = os.path.join(os.path.dirname(exe), "python.exe")
+        if os.path.exists(alt):
+            return alt
+    return exe
 
 LOG_DIR = os.path.join(REPO, "logs")
 
@@ -57,7 +90,8 @@ def run(cmd, log, env=None, check=True):
     proc = subprocess.Popen(cmd, cwd=REPO, stdout=subprocess.PIPE,
                             stderr=subprocess.STDOUT, text=True,
                             encoding="utf-8", errors="replace",
-                            env={**os.environ, **(env or {})})
+                            env={**os.environ, **(env or {})},
+                            creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
     for line in proc.stdout:
         line = line.rstrip()
         print(line, flush=True)
@@ -165,7 +199,7 @@ def queued(slug):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--count", type=int, default=7)
+    ap.add_argument("--count", type=int, default=DEFAULT_COUNT)
     ap.add_argument("--force", action="store_true",
                     help="generate even when the queue still has runway")
     ap.add_argument("--dry-run", action="store_true",
@@ -194,14 +228,25 @@ def main():
             say(f"::error::Ollama is not answering at {llm.HOST}. Nothing "
                 f"generated.", log)
             return 1
-        llm.ensure()
-
         enabled = enabled_slugs()
         if a.account:
             if a.account not in enabled:
                 say(f"::error::no enabled account {a.account!r}", log)
                 return 1
             enabled = [a.account]
+
+        # Every model each account uses - checker AND writer - checked here,
+        # with the reason in the log. Both have gone missing: the checker was
+        # removed from Ollama around 2026-09-28 and nothing ran for 26 nights.
+        for slug in enabled:
+            acct = accounts.get(slug)
+            for m in {acct.get("model") or llm.DEFAULT_MODEL,
+                      acct.get("writer_model") or acct.get("model") or llm.DEFAULT_MODEL}:
+                try:
+                    llm.ensure(m)
+                except SystemExit as e:
+                    say(f"::error::[{slug}] {e}. Nothing generated.", log)
+                    return 1
 
         # Pull first, and REFUSE TO GENERATE if it fails. The publish workflow
         # commits to main every day, so this box is always behind when it
@@ -228,7 +273,7 @@ def main():
                     f"— skipping", log)
                 continue
             say(f"[{slug}] {n} posts queued — generating {a.count}", log)
-            cmd = [sys.executable, "-u", "generate_batch.py",
+            cmd = [child_python(), "-u", "generate_batch.py",
                    "--count", str(a.count)]
             if a.dry_run:
                 cmd += ["--dry-run", "--out", os.path.join(REPO, "review_out", slug)]
@@ -246,49 +291,54 @@ def main():
                 continue
             generated.append(slug)
 
-        if not generated:
-            say("nothing generated; queue unchanged", log)
-            return 0
-
-        # Moving covers, once ALL writing is done: the video model needs the
-        # GPU the text model was holding. Per account and opt-in
-        # ("motion_cover"); a failure here leaves still covers and costs no
-        # post, so it can never stop tonight's commit.
-        if not a.dry_run:
-            for slug in generated:
-                if not (accounts.get(slug).get("motion_cover") or {}).get("enabled"):
-                    continue
+            # Moving covers, once this account's writing is done: the video
+            # model needs the GPU the text model was holding. Opt-in per
+            # account; a failure leaves still covers and costs no post.
+            if not a.dry_run and (accounts.get(slug).get("motion_cover") or {}).get("enabled"):
+                llm.unload_all()
                 try:
-                    run([sys.executable, "-u", "motion.py", "--account", slug],
+                    run([child_python(), "-u", "motion.py", "--account", slug],
                         log, env={"PYTHONIOENCODING": "utf-8"})
                 except RuntimeError as e:
                     say(f"::warning::[{slug}] moving covers failed ({e}); "
                         f"Reels keep their still covers", log)
 
-        if a.dry_run:
-            say(f"dry run — review review_out/, nothing queued or committed", log)
-            return 0
+            # Commit and push THIS account now, not after the last one. A run
+            # cut off by the task's time limit used to lose every account's
+            # finished work, because the only commit came at the very end.
+            if not a.dry_run:
+                try:
+                    commit_push(f"generated batch {today} ({slug})", log, a.no_push)
+                except RuntimeError as e:
+                    say(f"::error::[{slug}] commit/push failed: {e}", log)
 
-        run(["git", "add", "accounts"], log)
-        # Only accounts/ is checked for changes and only accounts/ is
-        # committed. A bare `git commit` takes everything staged, and on
-        # 2026-09-12 that swept an unrelated staged workflow deletion into a
-        # commit titled "generated batch".
-        staged = run(["git", "diff", "--cached", "--quiet", "--", "accounts"],
-                     log, check=False)
-        if staged == 0:
-            say("no changes to commit", log)
-            return 0
-        run(["git", "commit", "-m",
-             f"generated batch {today} ({', '.join(generated)})",
-             "--", "accounts"], log)
-        if a.no_push:
-            say("committed locally; push skipped (--no-push)", log)
-            return 0
-        run(["git", "pull", "--rebase", "--autostash"], log)
-        run(["git", "push"], log)
-        say(f"pushed batches for {', '.join(generated)}", log)
+        if not generated:
+            say("nothing generated; queue unchanged", log)
+        elif a.dry_run:
+            say(f"dry run — review review_out/, nothing queued or committed", log)
         return 0
+
+
+def commit_push(message, log, no_push=False):
+    """Commit accounts/ only, then pull --rebase and push.
+
+    Only accounts/ is checked and committed. A bare `git commit` takes
+    everything staged, and on 2026-09-12 that swept an unrelated staged
+    workflow deletion into a commit titled "generated batch".
+    """
+    run(["git", "add", "accounts"], log)
+    if run(["git", "diff", "--cached", "--quiet", "--", "accounts"],
+           log, check=False) == 0:
+        say("no changes to commit", log)
+        return False
+    run(["git", "commit", "-m", message, "--", "accounts"], log)
+    if no_push:
+        say("committed locally; push skipped (--no-push)", log)
+        return True
+    run(["git", "pull", "--rebase", "--autostash"], log)
+    run(["git", "push"], log)
+    say(f"pushed: {message}", log)
+    return True
 
 
 if __name__ == "__main__":

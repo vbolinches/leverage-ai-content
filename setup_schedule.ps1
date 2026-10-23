@@ -46,7 +46,10 @@ $settings = New-ScheduledTaskSettingsSet `
     -StartWhenAvailable `
     -DontStopIfGoingOnBatteries `
     -AllowStartIfOnBatteries `
-    -ExecutionTimeLimit (New-TimeSpan -Hours 3) `
+    # 10 hours, not 3: with the dense writer a post takes about an hour to
+    # write and check, and the 3-hour limit killed every full batch from
+    # 2026-09-24 before it reached its commit.
+    -ExecutionTimeLimit (New-TimeSpan -Hours 10) `
     -MultipleInstances IgnoreNew `
     -RestartCount 2 -RestartInterval (New-TimeSpan -Minutes 15)
 
