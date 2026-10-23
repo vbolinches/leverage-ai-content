@@ -3868,6 +3868,166 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post87-uscis-subida-tarifas-inflacion",
+      "graded": "2026-10-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "USCIS confirmó aumento tarifas"
+          }
+        ],
+        "sub": "Vigente desde 16 octubre 2026",
+        "rank": 1,
+        "score": 1.0,
+        "shape": "number-claim",
+        "stopping": "Unexplained acronym (USCIS) + factual error (2026 date - current year is 2023)",
+        "reason": "USCIS is an unexplained acronym; '2026' is a clear factual error (news can't be about 2 years in the future). This would make readers distrust the account.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "USCIS confirmó aumento tarifas"
+            }
+          ],
+          "rank": 1,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "Unexplained acronym (USCIS) + factual error (2026 date - current year is 2023)",
+          "reason": "USCIS is an unexplained acronym; '2026' is a clear factual error (news can't be about 2 years in the future). This would make readers distrust the account.",
+          "authored": true
+        },
+        {
+          "headline": "El aviso de tarifas ya está activo",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Unexplained acronym (USCIS)",
+          "reason": "USCIS is not explained; first-time readers would skip it as confusing code.",
+          "authored": false
+        },
+        {
+          "headline": "Cambiaron los costos oficiales ya",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "number-claim",
+          "stopping": "Formal jargon ('vigentes')",
+          "reason": "Target audience can't understand 'vigentes' (legal term for 'in effect'); feels like a government document.",
+          "authored": false
+        },
+        {
+          "headline": "No es que el gobierno quiera más dinero",
+          "rank": 4,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "Confusing negative framing ('No es que...')",
+          "reason": "Readers scroll past unclear phrasing; doesn't immediately explain what changed.",
+          "authored": false
+        },
+        {
+          "headline": "¿Paga más por tus papeles este año?",
+          "rank": 5,
+          "score": 8.0,
+          "shape": "number-claim",
+          "stopping": "Relatable question + clear date",
+          "reason": "Uses 'papeles' (everyday word) and 'este año' (immediate relevance); stops scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "Sube el precio de pedir tus papeles",
+          "rank": 6,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "Simple, personal, no jargon",
+          "reason": "Perfect match: 'papeles' (not 'documentos'), 'sube el precio' (direct), 'tu' (personal). Stops all readers.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post88-eb5-fee-adjustments",
+      "graded": "2026-10-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": [
+          {
+            "t": "USCIS lanzó una propuesta de nuevos precios"
+          }
+        ],
+        "sub": "La propuesta todavía no está en vigor.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "category",
+        "stopping": "Clear, names USCIS, and the sub explicitly states it's not in effect yet. This directly addresses the core fear (cost increases) with immediate reassurance.",
+        "reason": "USCIS is a known entity; 'propuesta' and 'no está en vigor' eliminate panic. Stops scrollers.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": [
+            {
+              "t": "USCIS lanzó una propuesta de nuevos precios"
+            }
+          ],
+          "rank": 1,
+          "score": 9.0,
+          "shape": "category",
+          "stopping": "Clear, names USCIS, and the sub explicitly states it's not in effect yet. This directly addresses the core fear (cost increases) with immediate reassurance.",
+          "reason": "USCIS is a known entity; 'propuesta' and 'no está en vigor' eliminate panic. Stops scrollers.",
+          "authored": true
+        },
+        {
+          "headline": "El aviso solo es una propuesta",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "category",
+          "stopping": "Same clarity as E. 'Aviso solo es propuesta' and sub 'precios nuevos no están en vigor' cut through noise. No jargon.",
+          "reason": "Relieves fear without overpromising. 'Aviso' is familiar; no false urgency.",
+          "authored": false
+        },
+        {
+          "headline": "No subirán los precios mañana",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "category",
+          "stopping": "Strong but slightly less precise than E/A. 'No subirán mañana' creates false urgency about timing, though sub clarifies.",
+          "reason": "Good, but 'mañana' implies immediate risk that doesn't exist (it's a proposal). Still stops scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "Gastas más si no esperas la regla",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "False alarm: 'Gastas más si no esperas la regla' suggests current costs are higher, but sub says proposal isn't in effect. Causes unnecessary panic.",
+          "reason": "Overstates consequence (you're not paying more now), eroding trust. Score: 2.",
+          "authored": false
+        },
+        {
+          "headline": "¿Tus papeles costarán más?",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Fragment: 'programa de inversión' is unexplained jargon. First-time readers have no idea what it means.",
+          "reason": "No context for 'programa de inversión' (likely EB-5). Reads like an insider code. Score: 1.",
+          "authored": false
+        },
+        {
+          "headline": "Cambian los costos del programa",
+          "rank": 6,
+          "score": 0.0,
+          "shape": "category",
+          "stopping": "Vague: 'Cambian los costos del programa' offers no clue what program or if costs rise. Sounds like generic news.",
+          "reason": "Unexplained 'programa' makes it incomprehensible alone. First-time readers scroll past. Score: 0.",
+          "authored": false
+        }
+      ]
     }
   ]
 }
