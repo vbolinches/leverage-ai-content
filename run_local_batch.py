@@ -96,6 +96,10 @@ def run(cmd, log, env=None, check=True):
         line = line.rstrip()
         print(line, flush=True)
         log.write(line + "\n")
+        # Flushed per line: an account takes hours, and an unflushed log
+        # looks exactly like a hung run (2026-10-23: 30 quiet minutes while
+        # the writer was busy at 95%).
+        log.flush()
     proc.wait()
     log.flush()
     if check and proc.returncode != 0:
