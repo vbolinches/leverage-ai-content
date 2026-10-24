@@ -1,0 +1,88 @@
+{
+  "slug": "post91-gemini-business-hub",
+  "hook_candidates": [
+    {
+      "headline": "Save 90 minutes weekly on admin.",
+      "sub": "Google launched the Gemini Business Hub on October 20, 2026."
+    },
+    {
+      "headline": "Stop formatting client decks manually.",
+      "sub": "Google launched the Gemini Business Hub on October 20, 2026."
+    },
+    {
+      "headline": "How do you handle brand consistency?",
+      "sub": "Google launched the Gemini Business Hub on October 20, 2026."
+    },
+    {
+      "headline": "You lose hours to spreadsheet math.",
+      "sub": "Google launched the Gemini Business Hub on October 20, 2026."
+    },
+    {
+      "headline": "Run your finances in minutes.",
+      "sub": "Google launched the Gemini Business Hub on October 20, 2026."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "Open the Gemini app on your phone or desktop. Tap the connected apps section and link your Google Sheets account. Upload a PDF of your brand guidelines or a folder with your logo and color codes. The hub reads these files and stores them for every request. \n\nPaste this prompt to test it on your current client project:\n\n\"Analyze my attached spreadsheet for monthly revenue and expenses. Summarize profit margins and flag any cost spikes. Then generate three social media graphics using my uploaded brand guidelines.\"\n\nThe AI reads the columns, calculates totals, and applies your exact colors and fonts to the drafts. You edit the output, not the raw data. This is available now to all Gemini app users worldwide. Use it for client proposals, monthly financial summaries, and your own marketing posts. Save this for later when you face scope creep or admin backlog.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #gemini #googleworkspace #smallbusinessadmin #financialinsights #branding #timeblocking #aiautomation",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 091",
+      "headline": [
+        {
+          "t": "Gemini Business Hub "
+        },
+        {
+          "t": "launched.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Google launched the Gemini Business Hub on October 20, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "AI assistant feature.",
+      "body": [
+        {
+          "t": "The Gemini Business Hub is a new feature inside the separate Gemini app, an AI assistant."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Spreadsheet insights.",
+      "body": [
+        {
+          "t": "The Gemini Business Hub turns your spreadsheets into financial insights with one click."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Rolling out globally.",
+      "body": [
+        {
+          "t": "The Gemini Business Hub begins rolling out globally to all Gemini app users."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Do this.",
+      "items": [
+        "Connect apps and upload brand guidelines.",
+        "Save this for later.",
+        "Turn spreadsheets into financial insights."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/  "
+}

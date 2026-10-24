@@ -4729,6 +4729,86 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post91-gemini-business-hub",
+      "graded": "2026-10-24",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop formatting client decks manually.",
+        "sub": "Google launched the Gemini Business Hub on October 20, 2026.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "contrarian",
+        "stopping": "Concrete pain ('Stop formatting client decks manually'), most visceral freelance pain. Subtext irrelevant, but hook stops scrollers. (Matches best posts: 'Stop formatting client decks manually.')",
+        "reason": "Most specific, actionable pain point (manual formatting = time waste). Audience stops instantly. Score: 6 (best hook).",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop formatting client decks manually.",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain ('Stop formatting client decks manually'), most visceral freelance pain. Subtext irrelevant, but hook stops scrollers. (Matches best posts: 'Stop formatting client decks manually.')",
+          "reason": "Most specific, actionable pain point (manual formatting = time waste). Audience stops instantly. Score: 6 (best hook).",
+          "authored": false
+        },
+        {
+          "headline": "Save 90 minutes weekly on admin.",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain ('Save 90 minutes weekly on admin'), strong hook. Subtext ruins it, but most would pause. (Matches best posts: 'Save 90 minutes weekly on admin.')",
+          "reason": "Best pain hook (specific time savings), but subtext (Google launch) makes it feel like a tool pitch. Stops most scrollers. Score: 5 (strongest hook among these).",
+          "authored": false
+        },
+        {
+          "headline": "You lose hours to spreadsheet math.",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain (losing hours to spreadsheets) but subtext distracts with irrelevant Google launch. Stops some but not most. (Good hook structure, ruined by subtext.)",
+          "reason": "Concrete pain named, but subtext (Google launch) makes it feel like a news post, not a pain point. Audience scrolls past when they realize it's not about their time. Score: 4 (solid hook, but subtext sabotages it).",
+          "authored": false
+        },
+        {
+          "headline": "How do you handle brand consistency?",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Vague question ('How do you handle brand consistency?'), not a pain. Subtext irrelevant. Stops few. (Disproven: 'Topic-label framing on the cover.')",
+          "reason": "Not a pain hook; it's a topic label (brand consistency) phrased as a question. Audience scrolls past without pause. Score: 3 (weak but better than D).",
+          "authored": false
+        },
+        {
+          "headline": "Run your finances in minutes.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Vague benefit claim ('Run your finances in minutes'), not a pain. Subtext irrelevant. Stops almost no one. (Disproven: 'Topic-label framing.')",
+          "reason": "Sounds like a generic tip, but 'run finances' is a category, not a pain. Audience scrolls past immediately. Score: 2 (worse than C).",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Gemini Business Hub "
+            },
+            {
+              "t": "launched.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Pure news headline (Gemini launch), no pain point. Audience scrolls past instantly. (Disproven: 'Broad 'here are some free tools' round-ups.')",
+          "reason": "No pain point, just a product announcement. Audience has no reason to stop. Score: 1 (worst possible).",
+          "authored": true
+        }
+      ]
     }
   ]
 }
