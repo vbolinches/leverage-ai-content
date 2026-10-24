@@ -4657,6 +4657,78 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post89-gemini-business-hub",
+      "graded": "2026-10-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop building brand guides manually.",
+        "sub": "Google released the Gemini Business Hub, a new business section, on October 20, 2026.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "contrarian",
+        "stopping": "Concretely names a time-suck (manual brand guides) solopreneurs face daily. The subtext about Gemini Hub *actually explains how it solves this* (Gemini Hub automates brand guides), making the hook feel urgent and usable. Not a fragment — it’s a pain point with a clear path to relief. Scrollers don’t skip this; they stop to see *how*.",
+        "reason": "Concrete pain + subtext directly supports the cover’s promise. A rare win.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop building brand guides manually.",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "Concretely names a time-suck (manual brand guides) solopreneurs face daily. The subtext about Gemini Hub *actually explains how it solves this* (Gemini Hub automates brand guides), making the hook feel urgent and usable. Not a fragment — it’s a pain point with a clear path to relief. Scrollers don’t skip this; they stop to see *how*.",
+          "reason": "Concrete pain + subtext directly supports the cover’s promise. A rare win.",
+          "authored": false
+        },
+        {
+          "headline": "Save three hours on admin weekly.",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Saves time is a universal solopreneur pain, but the subtext about Gemini Hub doesn’t connect to *admin* work. Scrollers might wonder: 'How does a business hub save admin time?' It feels disconnected, so they scroll past after a second glance.",
+          "reason": "Strong pain point, but subtext fails to explain the link. Good enough to stop, not strong enough to stop and read.",
+          "authored": false
+        },
+        {
+          "headline": "Can your chat app read spreadsheets?",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Spreadsheets are a daily pain, but the hook is phrased as a question (not a claim), making it feel like a fragment. The subtext about Gemini Hub doesn’t clarify *why* chat apps reading spreadsheets matters. Scrollers don’t stop — they skip it as vague.",
+          "reason": "Fails to be a clear claim; feels like a half-idea. Scores like a mediocre hook.",
+          "authored": false
+        },
+        {
+          "headline": "You do not need a designer now.",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "‘You do not need a designer now’ is a strong claim, but the subtext makes it feel like an unexplained fragment. Scrollers don’t know *why* they don’t need a designer (Gemini Hub? How?). It’s a riddle with no answer — scroll past.",
+          "reason": "Unexplained fragment. Matches the ‘do not understand on its own’ rule. Score: 3.",
+          "authored": false
+        },
+        {
+          "headline": "Three apps connect in one click.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "‘Three apps connect in one click’ is a technical feature, not a pain. Solopreneurs don’t care about *how* apps connect — they care about *saving time*. The subtext doesn’t explain the benefit. Scrollers skip it as irrelevant.",
+          "reason": "Feature-focused, not pain-focused. Scores like a low-reach carousel.",
+          "authored": false
+        },
+        {
+          "headline": "Google released the Gemini Business Hub.",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Pure news announcement. ‘Google released...’ is a fragment with no pain point or benefit. The subtext repeats the same thing. Solopreneurs scroll past *immediately* — it’s not a hook, it’s a tweet.",
+          "reason": "Classic ‘do not understand on its own’ failure. Score: 1.",
+          "authored": true
+        }
+      ]
     }
   ]
 }

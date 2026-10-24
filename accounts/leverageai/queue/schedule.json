@@ -1368,6 +1368,36 @@
       "published_media_id": "18126601460483481",
       "published_on": "2026-09-26",
       "threads_posted": true
+    },
+    {
+      "id": "post89-gemini-business-hub",
+      "date": "2026-10-24",
+      "slides": [
+        "accounts/leverageai/queue/post89-gemini-business-hub/slide01.png",
+        "accounts/leverageai/queue/post89-gemini-business-hub/slide02.png",
+        "accounts/leverageai/queue/post89-gemini-business-hub/slide03.png",
+        "accounts/leverageai/queue/post89-gemini-business-hub/slide04.png",
+        "accounts/leverageai/queue/post89-gemini-business-hub/slide05.png"
+      ],
+      "caption": "You handle sales, delivery, and invoicing alone. Branding and finance reports usually eat your afternoon. The new Gemini Business Hub sits inside the Gemini app and connects to Shopify, Canva, and Google Workspace. Upload your brand guidelines once and it generates consistent visuals automatically. Paste your sales spreadsheet and it returns clear money reports without manual formatting.\n\nCopy this prompt into the Gemini chat:\nUpload my brand guidelines and connect my Shopify and Canva accounts. \n\nThis works for any freelancer or solo operator using the Gemini mobile or desktop app. The feature rolls out globally in the coming days for all app users. \n\nSave this post for your next admin block. Share it with a fellow solo operator who dreads spreadsheet work.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solopreneur #freelancetips #aiworkflows #gemini #smallbusinessadmin #branddesign #financeautomation #productivitytools #aiassistant #notionalternatives",
+      "status": "held",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post89-gemini-business-hub/reel.mp4"
+    },
+    {
+      "id": "post90-chatgpt-work-cash-reconciliation",
+      "date": "2026-10-25",
+      "slides": [
+        "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide01.png",
+        "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide02.png",
+        "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide03.png",
+        "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide04.png",
+        "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide05.png"
+      ],
+      "caption": "OpenAI published a case study on October 20, 2026 showing how ChatGPT Work handles daily admin. One independent franchisee used it for pricing analysis and cash reconciliation. \n\n You will need to test the feature yourself with your own spreadsheets or transaction logs. Start by uploading a clean list of daily sales and bank deposits. Ask the model to flag mismatches and summarize the variance. Review the output before posting to your ledger. It is fast, but you still verify the final numbers.\n\nTry this exact prompt with your own files:\n\"Match each bank deposit to the corresponding sales day. Flag any variance over five dollars. Summarize the daily balance.\"\n\nSave this for later when you hit end-of-month bookkeeping. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #solopreneur #cashreconciliation #chatgptwork #smallbusinesstools #adminautomation #bookkeepingtips #freelancerlife #businessefficiency #dailyworkflows",
+      "status": "held",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/reel.mp4"
     }
   ]
 }

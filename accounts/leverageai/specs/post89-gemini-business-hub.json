@@ -1,0 +1,68 @@
+{
+  "slug": "post89-gemini-business-hub",
+  "hook_candidates": [
+    {
+      "headline": "Save three hours on admin weekly.",
+      "sub": "Google released the Gemini Business Hub, a new business section, on October 20, 2026."
+    },
+    {
+      "headline": "Stop building brand guides manually.",
+      "sub": "Google released the Gemini Business Hub, a new business section, on October 20, 2026."
+    },
+    {
+      "headline": "Can your chat app read spreadsheets?",
+      "sub": "Google released the Gemini Business Hub, a new business section, on October 20, 2026."
+    },
+    {
+      "headline": "Three apps connect in one click.",
+      "sub": "Google released the Gemini Business Hub, a new business section, on October 20, 2026."
+    },
+    {
+      "headline": "You do not need a designer now.",
+      "sub": "Google released the Gemini Business Hub, a new business section, on October 20, 2026."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "You handle sales, delivery, and invoicing alone. Branding and finance reports usually eat your afternoon. The new Gemini Business Hub sits inside the Gemini app and connects to Shopify, Canva, and Google Workspace. Upload your brand guidelines once and it generates consistent visuals automatically. Paste your sales spreadsheet and it returns clear money reports without manual formatting.\n\nCopy this prompt into the Gemini chat:\nUpload my brand guidelines and connect my Shopify and Canva accounts. \n\nThis works for any freelancer or solo operator using the Gemini mobile or desktop app. The feature rolls out globally in the coming days for all app users. \n\nSave this post for your next admin block. Share it with a fellow solo operator who dreads spreadsheet work.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solopreneur #freelancetips #aiworkflows #gemini #smallbusinessadmin #branddesign #financeautomation #productivitytools #aiassistant #notionalternatives",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 089",
+      "headline": "Google released the Gemini Business Hub.",
+      "sub": "Google released the Gemini Business Hub, a new business section, on October 20, 2026.",
+      "footer_right": "→"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "New chat program.",
+      "body": "The Gemini Business Hub sits inside Gemini, the Google chat program."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Money reports.",
+      "body": "The Gemini Business Hub uses spreadsheet programs to turn sales numbers into clear money reports."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Every app user.",
+      "body": "The Gemini Business Hub reaches every Gemini app user worldwide in the coming days."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Open the app.",
+      "items": [
+        "Open the app now.",
+        "Find the new tools.",
+        "Use clear money reports."
+      ],
+      "cta_title": "Save this.",
+      "cta_sub": "Follow @leverageai.daily",
+      "footer_right": "↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/"
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "post90-chatgpt-work-cash-reconciliation",
+  "hook_candidates": [
+    {
+      "headline": "Ninety four percent faster cash checks.",
+      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
+    },
+    {
+      "headline": "Stop doing cash checks by hand.",
+      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
+    },
+    {
+      "headline": "You are wasting hours on receipt math.",
+      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
+    },
+    {
+      "headline": "How fast can you match sales to deposits?",
+      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
+    },
+    {
+      "headline": "Ten hours lost each month on ledger checks.",
+      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
+    }
+  ],
+  "art": "chart",
+  "caption": "OpenAI published a case study on October 20, 2026 showing how ChatGPT Work handles daily admin. One independent franchisee used it for pricing analysis and cash reconciliation. \n\n You will need to test the feature yourself with your own spreadsheets or transaction logs. Start by uploading a clean list of daily sales and bank deposits. Ask the model to flag mismatches and summarize the variance. Review the output before posting to your ledger. It is fast, but you still verify the final numbers.\n\nTry this exact prompt with your own files:\n\"Match each bank deposit to the corresponding sales day. Flag any variance over five dollars. Summarize the daily balance.\"\n\nSave this for later when you hit end-of-month bookkeeping. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #solopreneur #cashreconciliation #chatgptwork #smallbusinesstools #adminautomation #bookkeepingtips #freelancerlife #businessefficiency #dailyworkflows",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 090",
+      "headline": "ChatGPT Work case study",
+      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Pricing analysis",
+      "body": "Pricing analysis means checking menu costs against supplier bills to set correct prices."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Shrinks pricing work",
+      "body": "ChatGPT Work shrinks pricing analysis from five days to one or two hours."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Cuts cash checks",
+      "body": "ChatGPT Work cuts cash reconciliation time by ninety four percent, like matching sales to bank deposits."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Use it for daily paperwork.",
+      "items": [
+        "Use ChatGPT Work daily.",
+        "Save this for later.",
+        "Follow for workflow tips."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://openai.com/index/ted-taylor-restaurant"
+}

@@ -209,6 +209,10 @@ The hook grader is disproven: pre-publish hook grades (6.5-9.5) showed no correl
 
 Best reels (50,55,60) used concrete-pain hooks; worst reels (47,54) used vague/technical hooks. Reel format confirmed as necessary for reach (post56 carousel failed despite concrete-pain hook).
 
+## Batch notes — posts 89-90 (2026-10-23)
+
+Performance confirms concrete-pain hooks (specific pain points: cost/mistake/change) drive higher reach than vague/technical hooks (best: 38-100; worst: 5). Reel format is necessary for reach (post56 carousel: 2 reach). Hook grader is disproven: grades (6.5-9.5) showed no correlation with reach (5-100) across 5 reels. Best reels (50,55,60) used concrete-pain hooks with specific pain points (cost/mistake/change) and reached 38-100. Worst reels (47,54) used vague/technical hooks despite similar shapes and reached 5. Carousel (56) had low reach (2) despite concrete-pain hook. Hook grades (6.5-9.5) and reach (5-100) across 5 reels showed no correlation: highest grade (9.5) had lowest reach (2) for carousel, second-highest grade (9.0) had highest reach (100) for reel.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —
