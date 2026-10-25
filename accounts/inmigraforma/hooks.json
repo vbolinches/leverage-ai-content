@@ -4028,6 +4028,194 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post89-new-asylum-office-charlotte",
+      "graded": "2026-10-25",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "¡Cita más cercana!",
+        "sub": "Asilo en Charlotte, solo con cita previa, sin visitas sin cita",
+        "rank": 1,
+        "score": 1.0,
+        "shape": "category",
+        "stopping": "Strongest hook: '¡Cita más cercana!' immediately addresses a universal pain point with high urgency. Clear, actionable, and relevant to all readers.",
+        "reason": "Strongest hook: '¡Cita más cercana!' immediately addresses a universal pain point with high urgency. Clear, actionable, and relevant to all readers.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¡Cita más cercana!",
+          "rank": 1,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Strongest hook: '¡Cita más cercana!' immediately addresses a universal pain point with high urgency. Clear, actionable, and relevant to all readers.",
+          "reason": "Strongest hook: '¡Cita más cercana!' immediately addresses a universal pain point with high urgency. Clear, actionable, and relevant to all readers.",
+          "authored": false
+        },
+        {
+          "headline": "No necesitas viajar tan lejos",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Strong hook: 'No necesitas viajar tan lejos' directly removes a burden. Sub clarifies it's for asylum, making it universally relevant.",
+          "reason": "Strong hook: 'No necesitas viajar tan lejos' directly removes a burden. Sub clarifies it's for asylum, making it universally relevant.",
+          "authored": false
+        },
+        {
+          "headline": "No más viajes largos",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Good hook for pain point, but less direct than C/J. Sub is clear but doesn't maximize urgency.",
+          "reason": "Good hook for pain point, but less direct than C/J. Sub is clear but doesn't maximize urgency.",
+          "authored": false
+        },
+        {
+          "headline": "Cambia la ubicación de tus citas",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Vague: 'cambiar ubicación' implies it's about their specific appointments, but readers outside Charlotte won't care. Default scroll.",
+          "reason": "Vague: 'cambiar ubicación' implies it's about their specific appointments, but readers outside Charlotte won't care. Default scroll.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Nueva oficina de asilo en Charlotte"
+            }
+          ],
+          "rank": 5,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Generic news statement. No personal connection or urgency. 'Nueva oficina' is dry and doesn't explain why it matters.",
+          "reason": "Generic news statement. No personal connection or urgency. 'Nueva oficina' is dry and doesn't explain why it matters.",
+          "authored": true
+        },
+        {
+          "headline": "Nueva oficina de asilo en Charlotte",
+          "rank": 6,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Repeats E with slightly better sub ('centro nuevo' vs 'oficina'), but still lacks urgency or personal relevance.",
+          "reason": "Repeats E with slightly better sub ('centro nuevo' vs 'oficina'), but still lacks urgency or personal relevance.",
+          "authored": false
+        },
+        {
+          "headline": "¿Tu cita de asilo está en Charlotte?",
+          "rank": 7,
+          "score": 7.0,
+          "shape": "category",
+          "stopping": "Assumes reader has an asylum appointment (most don't), making it irrelevant. '¿Tu cita...?' feels like a question for a small subset.",
+          "reason": "Assumes reader has an asylum appointment (most don't), making it irrelevant. '¿Tu cita...?' feels like a question for a small subset.",
+          "authored": false
+        },
+        {
+          "headline": "¿Ya sabes dónde irás?",
+          "rank": 8,
+          "score": 8.0,
+          "shape": "category",
+          "stopping": "Confusing question: '¿Ya sabes dónde irás?' implies they should already know, but most haven't heard. Makes them feel left out.",
+          "reason": "Confusing question: '¿Ya sabes dónde irás?' implies they should already know, but most haven't heard. Makes them feel left out.",
+          "authored": false
+        },
+        {
+          "headline": "Ahorra horas de viaje",
+          "rank": 9,
+          "score": 9.0,
+          "shape": "category",
+          "stopping": "Tense error: 'Ahorraste' (past) implies benefit is already used up. Confusing and inaccurate, losing trust.",
+          "reason": "Tense error: 'Ahorraste' (past) implies benefit is already used up. Confusing and inaccurate, losing trust.",
+          "authored": false
+        },
+        {
+          "headline": "Ahorraste tiempo hoy",
+          "rank": 10,
+          "score": 10.0,
+          "shape": "category",
+          "stopping": "Tense error: 'Ahorraste tiempo hoy' is grammatically wrong (past tense for present benefit). 'Hoy' makes it feel like a lie, destroying trust.",
+          "reason": "Tense error: 'Ahorraste tiempo hoy' is grammatically wrong (past tense for present benefit). 'Hoy' makes it feel like a lie, destroying trust.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post90-eb5-fee-adjustments",
+      "graded": "2026-10-25",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿Afecta a familias inmigrantes?",
+        "sub": "La propuesta solo aplica a la visa de inversión.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "question",
+        "stopping": "directly answers 'does this affect me?' with clear impact on immigrant families (vs. only investors). No jargon, no overstatement. Stops scrollers cold.",
+        "reason": "E: '¿Afecta a familias inmigrantes?' immediately answers the unspoken question. The sub clarifies it's only for investors (not families), which is the core worry. Clear, urgent, and audience-focused. No jargon. Score 6.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿Afecta a familias inmigrantes?",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "question",
+          "stopping": "directly answers 'does this affect me?' with clear impact on immigrant families (vs. only investors). No jargon, no overstatement. Stops scrollers cold.",
+          "reason": "E: '¿Afecta a familias inmigrantes?' immediately answers the unspoken question. The sub clarifies it's only for investors (not families), which is the core worry. Clear, urgent, and audience-focused. No jargon. Score 6.",
+          "authored": false
+        },
+        {
+          "headline": "Sube el costo para inversionistas",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "before-after",
+          "stopping": "clear but generic; says cost rises but doesn't say why it matters to the reader. Scrollers might pause but not stop.",
+          "reason": "B: 'Sube el costo para inversionistas' is understandable but vague. The sub adds no urgency. It's the only one that says 'investors' (not 'families'), but still doesn't connect to reader's life. Score 5.",
+          "authored": false
+        },
+        {
+          "headline": "No está en vigor aún",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "negative statement with no benefit; says 'not in effect' but doesn't say what to do. Scrollers keep scrolling.",
+          "reason": "C: 'No está en vigor aún' is a weak negative. The sub adds no value. It's just a reminder, not a reason to stop. Score 4.",
+          "authored": false
+        },
+        {
+          "headline": "Cambian tarifas visa EB-5",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "mistake",
+          "stopping": "EB-5 is unexplained jargon; first-time readers skip immediately. No way to understand it's about visa costs.",
+          "reason": "A: 'EB-5' is a legal acronym. First-time readers won't know what it means. It's a fragment that gets skipped. Score 2.",
+          "authored": false
+        },
+        {
+          "headline": "USCIS ajusta tarifas de inversión",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "mistake",
+          "stopping": "USCIS is unexplained; readers skip it. Worse than EB-5 because it's a full agency name that's not common knowledge.",
+          "reason": "F: 'USCIS' is unexplained. First-time readers can't understand it. Gets skipped immediately. Score 1.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Cambian tarifas visa EB-5"
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "mistake",
+          "stopping": "Duplicate of A with same unexplained acronym. Wastes space and confuses readers more than a single mistake. Worst of all.",
+          "reason": "D: Identical to A with 'EB-5' jargon. It's a duplicate, making it worse for wasting the reader's time. Score 1.",
+          "authored": true
+        }
+      ]
     }
   ]
 }

@@ -297,3 +297,7 @@ post52-uscis-levanta-freno-39-paises reach 66
 ### Batch — posts 87-88, drafted 2026-10-23
 
 0.0 The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold required for post-level comparisons. The hook grader's pre-publish scores do not correlate with actual reach (e.g., post50: 8.2 grade, 4 reach; post52: 6.5 grade, 66 reach). The best performers (post52, post56, post55) share a calm, non-alarmist tone and address broad, actionable issues. The worst performers (post50, post65, post62) are alarmist (post50), narrow (post65), or both (post62). No hypothesis is settled due to insufficient data.
+
+### Batch — posts 89-90, drafted 2026-10-25
+
+0.0 The performance brief reports a total signal of 57 across 12 measured posts, still below the 150 threshold required for post-level comparisons. The hook grader's pre-publish scores do not correlate with actual reach (e.g., post50: 8.2 grade, 4 reach; post52: 6.5 grade, 66 reach). No hypothesis is settled due to insufficient data.
