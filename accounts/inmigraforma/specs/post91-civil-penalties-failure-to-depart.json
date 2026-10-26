@@ -1,0 +1,79 @@
+{
+  "slug": "post91-civil-penalties-failure-to-depart",
+  "hook_candidates": [
+    {
+      "headline": "No es solo un aviso",
+      "sub": "La multa ya tiene fecha"
+    },
+    {
+      "headline": "No ignores la orden",
+      "sub": "El cobro es más rápido"
+    },
+    {
+      "headline": "Antes tomaba meses",
+      "sub": "Ahora es por escrito"
+    },
+    {
+      "headline": "Evita pagar multas",
+      "sub": "Sal en la fecha dada"
+    },
+    {
+      "headline": "Cambio en las multas",
+      "sub": "Vigor el 14 de octubre"
+    }
+  ],
+  "art": "document",
+  "caption": "El DHS actualizó las reglas para cobrar multas de dinero a quienes no respetan la fecha límite para salir del país. Este cambio entró en vigor el 14 de octubre de 2026 y simplifica el proceso administrativo.\n\nEn palabras simples: Ahora se cobra la multa más rápido si no sales en la fecha que te dieron. El proceso es claro, por escrito y no requiere juicios largos.\n\nOfficial text from the rule: \"DHS believes that the nature of the failure to depart and unlawful entry penalties typically turn on routine and straightforward determinations of fact, meaning that an appeal period greater than 15-days is unnecessary.\" Esto dice literalmente que verificar si alguien se quedó pasado el plazo es un hecho claro. En la práctica, el cobro se decidirá rápido con documentos escritos. La página no dice qué pasa si lo ignoras, pero advierte que el plazo para apelar es corto.\n\nEnglish recap: The new civil penalty rule for failing to depart took effect on October 14, 2026, streamlining how fines are collected for missing voluntary departure deadlines. In plain words: If you miss your official exit date, the government will now process the fine faster and with less paperwork.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/10/14/2026-21024/imposition-and-collection-of-civil-penalties-for-certain-immigration-related-violations\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nGuarda este post para tener la información clara a mano. Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracioneeuu #greencard #noticiasdeinmigracion #dhs #uscis #papeles #migracion #leydeinmigracion #documentacion #estadounidos",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 091",
+      "headline": "La regla de multas de dinero ya vale.",
+      "sub": "La regla final entró en vigor el 14 de octubre.",
+      "footer_right": "→"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Vigor",
+      "body": [
+        {
+          "t": "La regla final de multas civiles, que son multas de dinero, entró en vigor el 14 de octubre de 2026 por el DHS."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "Orden",
+      "body": [
+        {
+          "t": "La salida voluntaria es una orden oficial con fecha límite para salir del país."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "Multas",
+      "body": [
+        {
+          "t": "La propuesta agiliza el cobro de multas por no salir, como procesar un caso claro con documentos escritos."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Actúa",
+      "items": [
+        "La propuesta aplica solo a quienes no salen en la fecha acordada y no afecta a otros casos.",
+        "Lea el registro federal oficial o consulte a un abogado de inmigración para más detalles."
+      ],
+      "cta_title": "Guarda",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.",
+      "footer_right": "↓"
+    }
+  ],
+  "source_url": "https://www.federalregister.gov/documents/2026/10/14/2026-21024/imposition-and-collection-of-civil-penalties-for-certain-immigration-related-violations"
+}

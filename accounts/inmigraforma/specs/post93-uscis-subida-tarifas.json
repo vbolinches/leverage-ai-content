@@ -1,0 +1,68 @@
+{
+  "slug": "post93-uscis-subida-tarifas",
+  "hook_candidates": [
+    {
+      "headline": "No es un error del sistema",
+      "sub": "Los precios suben por ley cada año, no por un fallo"
+    },
+    {
+      "headline": "No pagues lo mismo de antes",
+      "sub": "El costo viejo ya no sirve desde octubre pasado"
+    },
+    {
+      "headline": "Antes pagabas menos",
+      "sub": "Los trámites cuestan más desde el 16 de octubre"
+    },
+    {
+      "headline": "La oficina cambia tarifas",
+      "sub": "Nuevo costo para peticiones ya en efecto"
+    },
+    {
+      "headline": "Tu billetera cambia hoy",
+      "sub": "Los papeles suben de precio para este mes"
+    }
+  ],
+  "art": "document",
+  "caption": "El Servicio de Ciudadanía e Inmigración de EE.UU. (USCIS) anunció el aumento de tarifas para el año fiscal 2027. Los nuevos precios ya están vigentes desde el 16 de octubre de 2026. Este ajuste es parte de un proceso anual por inflación y afecta los costos de presentar peticiones de inmigración.\n\nEn palabras simples: El gobierno ajusta cada año el precio de los trámites para cubrir el costo de la vida. Si vas a mandar papeles para la Green Card o el permiso de trabajo, prepárate para pagar un poco más. La nota oficial no explica cómo pagar ni a quién le toca exactamente, así que todo lo que sabemos es que el precio subió.\n\n\"USCIS announced an inflationary fee increase for FY 2027 effective October 16, 2026.\"\nEsto dice literalmente que la oficina de inmigración subió los precios oficiales por inflación. En la práctica, significa que al momento de pagar tu trámite en línea o por correo, el monto cobrado será el nuevo. La página no dice qué pasa si lo ignoras.\n\nThe U.S. Citizenship and Immigration Services has updated its fee schedule for the new fiscal year. This inflation adjustment is standard procedure and applies to pending and future applications.\nIn plain words: Immigration forms cost more now, and the old prices are gone.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-announces-fy-2027-inflation-increase-for-certain-immigration-related-fees\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #greenCard #uscis #novedades #papeles #eeuu #noticias #inmigrantes #permisodetrabajo #documentos",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 093",
+      "headline": "El aumento de tarifas aplica",
+      "sub": "El aumento aplica a peticiones.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "El aumento aplica",
+      "body": "El aumento de tarifas del USCIS, la oficina de inmigración, aplica a peticiones presentadas desde el 16 de octubre de 2026."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "El ajuste modifica",
+      "body": "El aumento por inflación es un ajuste anual que modifica los precios de los trámites federales."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "El costo eleva",
+      "body": "El ajuste de precios eleva el costo de pedir una Green Card o un permiso de trabajo."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "El cambio aplica",
+      "items": [
+        "Consulte el aviso oficial (link en la descripción).",
+        "El cambio aplica a pagos.",
+        "El ajuste modifica precios."
+      ],
+      "cta_title": "Guarda esto",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/alerts/uscis-announces-fy-2027-inflation-increase-for-certain-immigration-related-fees"
+}

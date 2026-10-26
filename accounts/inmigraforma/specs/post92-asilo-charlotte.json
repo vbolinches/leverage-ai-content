@@ -1,0 +1,76 @@
+{
+  "slug": "post92-asilo-charlotte",
+  "hook_candidates": [
+    {
+      "headline": "USCIS abre oficina de asilo en Charlotte",
+      "sub": "Aviso del 9 de octubre de 2026"
+    },
+    {
+      "headline": "El asilo ya no espera en la cola usual",
+      "sub": "Nueva ventanilla en Charlotte"
+    },
+    {
+      "headline": "No mandes papeles sin leer esto",
+      "sub": "USCIS abre oficina el 9 de octubre"
+    },
+    {
+      "headline": "Antes todo a una ciudad, ahora Charlotte",
+      "sub": "USCIS abre oficina el 9 de octubre"
+    },
+    {
+      "headline": "Ahorra tiempo en tu caso de asilo",
+      "sub": "USCIS abre oficina el 9 de octubre"
+    }
+  ],
+  "art": "building",
+  "caption": "USCIS abrió una oficina de asilo en Charlotte el 9 de octubre de 2026. Este centro revisará casos para Carolina del Norte y del Sur. La página no da pasos ni fechas nuevas, así que verifica actualizaciones en el sitio oficial.\n\nEn palabras simples: USCIS opened a new center for asylum cases in Charlotte. It aims to help people in the Carolinas wait less time for decisions. The page does not list steps or deadlines, so check the official site for updates.\n\n“USCIS Opens Asylum Office in Charlotte.” This means the agency is adding a physical location to review asylum claims in the region. It may shorten wait times for locals. The page does not say what happens if you ignore this update.\n\nIn plain words: A new USCIS office in Charlotte will process asylum cases for the Carolinas. This could mean faster reviews for applicants in that area. No new steps or deadlines are listed yet.\n\nGuarda este post para consultar la fecha y el enlace más tarde. Comenta si ya sabes si tu caso está en la región.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-opens-asylum-office-in-charlotte\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #asilo #uscis #charlotte #carolina #documentos #leyes #noticias",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 092",
+      "headline": [
+        {
+          "t": "USCIS abre oficina de asilo en "
+        },
+        {
+          "t": "Charlotte",
+          "c": "blue"
+        }
+      ],
+      "sub": "Aviso del 9 de octubre de 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "La oficina de asilo en Charlotte",
+      "body": "Desde el 9 de octubre de 2026, USCIS opera una oficina de asilo en Charlotte."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "Qué es el asilo legal",
+      "body": "El asilo es protección legal para quien huye de peligro en su país."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "La región de Carolina del Norte",
+      "body": "La nueva oficina puede reducir los tiempos de espera para la región."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Lee el aviso en la web",
+      "items": [
+        "La oficina atiende casos en Carolina del Norte o del Sur.",
+        "Lee el aviso (link en la descripción) o pregunta a un abogado.",
+        "Pregunta a un abogado de inmigración para tu caso."
+      ],
+      "cta_title": "Guarda esta noticia para luego",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/alerts/uscis-opens-asylum-office-in-charlotte"
+}

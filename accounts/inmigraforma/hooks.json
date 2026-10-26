@@ -4216,6 +4216,230 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post91-civil-penalties-failure-to-depart",
+      "graded": "2026-10-26",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Antes tomaba meses",
+        "sub": "Ahora es por escrito",
+        "rank": 1,
+        "score": 2.0,
+        "shape": "number-claim",
+        "stopping": "least confusing fragment: 'por escrito' is a standard phrase in immigration contexts (e.g., official docs), so it resonates more than others. Still a fragment, but least bad.",
+        "reason": "Least confusing fragment: 'por escrito' is a common phrase for official written requirements. Audience might recognize it from past experiences with government forms.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Antes tomaba meses",
+          "rank": 1,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "least confusing fragment: 'por escrito' is a standard phrase in immigration contexts (e.g., official docs), so it resonates more than others. Still a fragment, but least bad.",
+          "reason": "Least confusing fragment: 'por escrito' is a common phrase for official written requirements. Audience might recognize it from past experiences with government forms.",
+          "authored": false
+        },
+        {
+          "headline": "Cambio en las multas",
+          "rank": 2,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "Vague but short. 'Multas' is common, but no context for what 'cambio' applies to. Audience would scroll past.",
+          "reason": "Too vague: 'cambio en las multas' (change in fines) means nothing without context. Audience doesn't know if it's about traffic tickets or immigration.",
+          "authored": false
+        },
+        {
+          "headline": "No es solo un aviso",
+          "rank": 3,
+          "score": 0.0,
+          "shape": "number-claim",
+          "stopping": "Confuses 'aviso' (notice) with 'multa' (fine), making it seem like an immediate penalty when it's a notice. False alarm.",
+          "reason": "False alarm: 'No es solo un aviso' (not just a notice) followed by 'La multa ya tiene fecha' (fine has a date) implies you're already fined, causing panic. Real consequence is a notice for future fines.",
+          "authored": false
+        },
+        {
+          "headline": "No ignores la orden",
+          "rank": 4,
+          "score": -1.0,
+          "shape": "number-claim",
+          "stopping": "Grammatical error ('ignores' instead of 'ignore') makes it feel unprofessional and confusing. 'Orden' and 'cobro' lack context.",
+          "reason": "Grammatical error: 'No ignores' should be 'No ignores' (imperative 'ignore'). Audience scrolls past due to confusion and poor quality.",
+          "authored": false
+        },
+        {
+          "headline": "Evita pagar multas",
+          "rank": 5,
+          "score": -2.0,
+          "shape": "number-claim",
+          "stopping": "Confusing fragment: 'Sal' (salt) is nonsensical. Likely typo for 'sal' (go out), but written as 'Sal'—first-time reader skips.",
+          "reason": "Fragment: 'Sal en la fecha dada' (Salt on the given date) makes no sense. Audience skips to avoid confusion.",
+          "authored": false
+        },
+        {
+          "headline": "La regla de multas de dinero ya vale.",
+          "rank": 6,
+          "score": -3.0,
+          "shape": "number-claim",
+          "stopping": "Worst phrasing: 'multas de dinero' (fines of money) is redundant and incorrect. 'Ya vale' is slang for 'valid' but sounds unprofessional.",
+          "reason": "Unprofessional phrasing: 'multas de dinero' is grammatically wrong (fines are monetary by default). Audience skips due to bad Spanish.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post92-asilo-charlotte",
+      "graded": "2026-10-26",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "USCIS abre oficina de asilo en Charlotte",
+        "sub": "Aviso del 9 de octubre de 2026",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "category",
+        "stopping": "Clear, simple, action-focused. 'USCIS opens asylum office in Charlotte' uses no jargon, names a specific city (familiar to readers), and implies immediate relevance. No confusion or false urgency.",
+        "reason": "Clear, simple, action-focused. 'USCIS opens asylum office in Charlotte' uses no jargon, names a specific city (familiar to readers), and implies immediate relevance. No confusion or false urgency.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "USCIS abre oficina de asilo en Charlotte",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "category",
+          "stopping": "Clear, simple, action-focused. 'USCIS opens asylum office in Charlotte' uses no jargon, names a specific city (familiar to readers), and implies immediate relevance. No confusion or false urgency.",
+          "reason": "Clear, simple, action-focused. 'USCIS opens asylum office in Charlotte' uses no jargon, names a specific city (familiar to readers), and implies immediate relevance. No confusion or false urgency.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "USCIS abre oficina de asilo en "
+            },
+            {
+              "t": "Charlotte",
+              "c": "blue"
+            }
+          ],
+          "rank": 2,
+          "score": 7.0,
+          "shape": "category",
+          "stopping": "Identical content to D but ranked second due to order. Same clarity and relevance as D, but the account's own rules require breaking ties by order when content is identical.",
+          "reason": "Identical content to D but ranked second due to order. Same clarity and relevance as D, but the account's own rules require breaking ties by order when content is identical.",
+          "authored": true
+        },
+        {
+          "headline": "No mandes papeles sin leer esto",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Creates urgency ('No mandes papeles...') but 'sin leer esto' is vague. Readers won't know what 'this' refers to without context, making them scroll past to avoid confusion.",
+          "reason": "Creates urgency ('No mandes papeles...') but 'sin leer esto' is vague. Readers won't know what 'this' refers to without context, making them scroll past to avoid confusion.",
+          "authored": false
+        },
+        {
+          "headline": "El asilo ya no espera en la cola usual",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Uses relatable concept ('cola' = line) but the passive phrasing ('asilo ya no espera') is confusing. Asylum doesn't wait—it's the person waiting. This creates confusion instead of clarity.",
+          "reason": "Uses relatable concept ('cola' = line) but the passive phrasing ('asilo ya no espera') is confusing. Asylum doesn't wait—it's the person waiting. This creates confusion instead of clarity.",
+          "authored": false
+        },
+        {
+          "headline": "Ahorra tiempo en tu caso de asilo",
+          "rank": 5,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Uses legal jargon 'caso de asilo' (which regular immigrants wouldn't recognize as 'asylum case'). Sounds like a lawyer's phrase, making readers skip it.",
+          "reason": "Uses legal jargon 'caso de asilo' (which regular immigrants wouldn't recognize as 'asylum case'). Sounds like a lawyer's phrase, making readers skip it.",
+          "authored": false
+        },
+        {
+          "headline": "Antes todo a una ciudad, ahora Charlotte",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Unintelligible phrase: 'Antes todo a una ciudad, ahora Charlotte' is grammatically broken and meaningless. First-time readers would scroll past immediately.",
+          "reason": "Unintelligible phrase: 'Antes todo a una ciudad, ahora Charlotte' is grammatically broken and meaningless. First-time readers would scroll past immediately.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post93-uscis-subida-tarifas",
+      "graded": "2026-10-26",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No pagues lo mismo de antes",
+        "sub": "El costo viejo ya no sirve desde octubre pasado",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "category",
+        "stopping": "Direct, personal, urgent language that addresses a clear pain point (paying more than before). Uses simple words like 'pagues' and 'lo mismo' that resonate immediately. No jargon.",
+        "reason": "F uses 'No pagues lo mismo de antes' - a direct warning about their personal cost, which stops scrolling because it's immediately relevant. The sub clarifies 'old cost no longer valid' with no confusion. This is what readers need to know to avoid overpaying.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No pagues lo mismo de antes",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "category",
+          "stopping": "Direct, personal, urgent language that addresses a clear pain point (paying more than before). Uses simple words like 'pagues' and 'lo mismo' that resonate immediately. No jargon.",
+          "reason": "F uses 'No pagues lo mismo de antes' - a direct warning about their personal cost, which stops scrolling because it's immediately relevant. The sub clarifies 'old cost no longer valid' with no confusion. This is what readers need to know to avoid overpaying.",
+          "authored": false
+        },
+        {
+          "headline": "No es un error del sistema",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "category",
+          "stopping": "Addresses a common fear (system error) with a clear, reassuring explanation. 'No es un error' stops scrollers who might panic.",
+          "reason": "E prevents panic by clarifying fees rise 'por ley' not 'error'. This stops readers who might think it's a glitch (a real concern for non-experts), but is slightly less urgent than F.",
+          "authored": false
+        },
+        {
+          "headline": "Tu billetera cambia hoy",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Uses 'billetera' (wallet) for relatability, but 'cambia hoy' lacks context on what changed. Stops some but not as strongly as F/E.",
+          "reason": "C's 'tu billetera' is good, but 'cambia hoy' doesn't say *what* changes. Readers won't stop to wonder 'What changed in my wallet?' - it's too vague.",
+          "authored": false
+        },
+        {
+          "headline": "Antes pagabas menos",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Passive phrasing ('Antes pagabas menos') doesn't connect to current action. Readers scroll past as it feels like old news.",
+          "reason": "A is about past payments ('antes'), not what affects them now. The sub mentions 'desde 16 de octubre' but the hook itself doesn't create urgency for the reader.",
+          "authored": false
+        },
+        {
+          "headline": "El aumento de tarifas aplica",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Dry, bureaucratic language ('El aumento de tarifas aplica') with no personal angle. Easily scrolled past as generic news.",
+          "reason": "D is a textbook news headline - 'the fee increase applies'. No 'you' or 'your' language. It's a fact, not a warning they need.",
+          "authored": true
+        },
+        {
+          "headline": "La oficina cambia tarifas",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Unexplained jargon ('oficina', 'peticiones') makes it a fragment. Readers skip it as confusing.",
+          "reason": "B uses 'oficina' (vague) and 'peticiones' (immigration jargon). A first-time reader can't understand 'peticiones' without context - this gets skipped immediately.",
+          "authored": false
+        }
+      ]
     }
   ]
 }
