@@ -1437,10 +1437,13 @@
         "accounts/inmigraforma/queue/post87-uscis-subida-tarifas-inflacion/slide05.png"
       ],
       "caption": "USCIS subió cuatro tarifas por el ajuste anual por inflación. Los precios nuevos aplican a todo lo que envíes por correo el 16 de octubre de 2026 o después. Cuenta la fecha del matasellos, el día en que lo envías, no el día en que llega.\n\nQué cambió:\n• Tarifa anual de asilo: de $102 a $105\n• Parole (Formulario I-131): de $1,020 a $1,050\n• Primer permiso de trabajo (Formulario I-765) para solicitantes de asilo, parole o TPS: de $560 a $570\n• Solicitud de TPS, el Estatus de Protección Temporal (Formulario I-821): de $510 a $520\n\nEn palabras simples:\nSi mandas uno de estos trámites con la tarifa anterior, USCIS lo rechaza. Los demás trámites no cambian con este aviso.\n\nIn plain words: USCIS raised four fees for inflation, effective October 16, 2026: the annual asylum fee, parole, the initial work permit for asylum seekers, parolees and TPS, and the TPS application. Requests sent with the old fee are rejected.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-announces-fy-2027-inflation-increase-for-certain-immigration-related-fees\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nGuarda este post si tú o alguien de tu familia tiene un trámite de asilo, parole o TPS.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #uscis #asilo #tps #parole #permisodetrabajo #inmigrantes #papeles #noticias",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
       "video": "accounts/inmigraforma/queue/post87-uscis-subida-tarifas-inflacion/reel.mp4",
-      "note": "HELD 2026-10-23, READY TO RELEASE: generated draft overstated the scope (implied all work permits and Green Card renewals rose); rewritten by the reviewer from the page's own fee table, fact-checked 10/10, clarity-read 0 doubts. Release by setting status to queued; owner approval required to publish. RELEASED 2026-10-26 by the owner."
+      "note": "HELD 2026-10-23, READY TO RELEASE: generated draft overstated the scope (implied all work permits and Green Card renewals rose); rewritten by the reviewer from the page's own fee table, fact-checked 10/10, clarity-read 0 doubts. Release by setting status to queued; owner approval required to publish. RELEASED 2026-10-26 by the owner.",
+      "published_media_id": "18092391017219590",
+      "published_on": "2026-10-26",
+      "facebook_page_posted": true
     },
     {
       "id": "post88-eb5-fee-adjustments",
