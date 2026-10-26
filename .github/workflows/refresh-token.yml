@@ -12,10 +12,23 @@ name: Refresh Instagram token
 # account's token secret (the name recorded in its account.json). It is never
 # printed, committed, or stored anywhere else.
 
+# Weekly, not monthly. A monthly refresh left a single failed run 30 days
+# to be noticed (2026-09-01 failed four times before it was fixed by hand).
+# Weekly, a failure is simply retried seven days later with ~50 days still
+# left on the token, and the monitor's 10-day alarm never comes close.
+#
+# It also RECORDS the new expiry in accounts/<slug>/token_status.json and
+# commits it. It used to only print a notice asking a human to do that; the
+# 2026-10-01 refresh renewed leverageai's token to 2026-11-30 but the file
+# kept saying 2026-10-30, and the daily monitor failed for a week on a
+# token that was fine.
 on:
   schedule:
-    - cron: "0 3 1 * *"    # 03:00 UTC on the 1st of every month
+    - cron: "0 3 * * 1"    # Mondays 03:00 UTC
   workflow_dispatch: {}
+
+permissions:
+  contents: write
 
 jobs:
   accounts:
@@ -23,7 +36,7 @@ jobs:
     outputs:
       matrix: ${{ steps.ls.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - id: ls
         run: echo "matrix=$(python3 accounts.py --list-json)" >> "$GITHUB_OUTPUT"
 
@@ -32,10 +45,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      max-parallel: 1       # each job commits its token_status.json
       matrix:
         account: ${{ fromJson(needs.accounts.outputs.matrix) }}
     name: refresh ${{ matrix.account.slug }}
     steps:
+      - uses: actions/checkout@v5
+
       - name: Refresh token and update the secret
         env:
           IG_ACCESS_TOKEN: ${{ secrets[matrix.account.token_secret] }}
@@ -94,8 +110,12 @@ jobs:
             DAYS=$(( EXPIRES / 86400 ))
             echo "New token valid for ~$DAYS days (until $(date -u -d "+$DAYS days" +%F))"
           else
-            echo "New token issued; no expires_in returned (normal for Facebook long-lived tokens)"
+            # Facebook long-lived tokens: the conventional 60 days.
+            DAYS=60
+            echo "New token issued; no expires_in returned (normal for Facebook long-lived tokens), assuming 60 days"
           fi
+          echo "NEW_EXPIRY=$(date -u -d "+$DAYS days" +%F)" >> "$GITHUB_ENV"
+          echo "EXPIRY_ASSUMED=$([ -n "$EXPIRES" ] && echo no || echo yes)" >> "$GITHUB_ENV"
 
           echo "--- Checking GH_PAT ---"
           # Pasted secrets often carry a trailing newline or stray whitespace,
@@ -175,7 +195,46 @@ jobs:
           PY
 
           echo "Done. Token refreshed and stored; nothing was logged."
-          echo "::notice::Update accounts/${{ matrix.account.slug }}/token_status.json with the new expiry date."
+
+      # Dates only, never the token. Runs only if the secret was written.
+      - name: Record the new expiry date
+        env:
+          SLUG: ${{ matrix.account.slug }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os
+          from datetime import date
+          slug, exp = os.environ["SLUG"], os.environ["NEW_EXPIRY"]
+          path = f"accounts/{slug}/token_status.json"
+          try:
+              with open(path, encoding="utf-8") as f:
+                  data = json.load(f)
+          except (OSError, ValueError):
+              data = {}
+          today = date.today().isoformat()
+          data["minted"] = today
+          data["expires"] = exp
+          data["last_refresh"] = (
+              f"auto-refreshed by the Refresh Instagram token workflow on {today}"
+              + (" (no expires_in returned; 60 days assumed)"
+                 if os.environ.get("EXPIRY_ASSUMED") == "yes" else ""))
+          with open(path, "w", encoding="utf-8") as f:
+              json.dump(data, f, indent=2, ensure_ascii=False)
+              f.write("\n")
+          print(f"{path}: expires {exp}")
+          PY
+          git config user.name "leverage-ai-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add "accounts/$SLUG/token_status.json"
+          git diff --cached --quiet && { echo "no change"; exit 0; }
+          git commit -m "token expiry $NEW_EXPIRY ($SLUG)"
+          # Other workflows commit to main too; retry the rebase-and-push.
+          for i in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep $(( i * 10 ))
+          done
+          echo "::warning::could not push token_status.json; the token itself is refreshed"
 
       # Threads tokens are separate (graph.threads.net) and refresh WITHOUT an
       # app secret — th_refresh_token works on any still-valid long-lived token

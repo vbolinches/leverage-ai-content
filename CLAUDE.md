@@ -502,10 +502,10 @@ overrun with reasoning off.
 |---|---|---|
 | Publish daily Instagram post | 16:00 UTC daily | The core job; 16:00 UTC = noon ET, both audiences are US |
 | Account monitor | 08:00 UTC daily | Digest; fails at <10 days token runway |
-| Queue health check | Mon 09:00 UTC | Fails below 5 queued posts |
+| Queue health check | Mon 09:00 UTC | Fails only if fewer than 5 queued AND no new drafts in 7 days; drafts awaiting review are a warning |
 | DM auto-responder | every 2h | Inert (warns) until messaging permission + App Review |
 | Content ideas monitor | Tue 06:00 UTC | Refreshes idea sources; X only with `X_BEARER_TOKEN` |
-| Refresh Instagram token | 1st monthly | Working since 2026-09-01 |
+| Refresh Instagram token | Mon 03:00 UTC weekly | Refreshes, then records the new expiry in token_status.json itself |
 | Verify Instagram credentials | manual | Run after any token change |
 
 Generation is deliberately **not** a workflow any more — see point 11.
@@ -538,10 +538,12 @@ web search. Do not let idea items bypass that rule.
 
 ## Known gaps
 
-- **Token auto-refresh works** (fixed 2026-09-01). The monthly workflow
-  refreshes every account and writes the result back with `GH_PAT`. Still
-  update `accounts/<slug>/token_status.json` after any manual re-mint, or the
-  warning fires against a stale date. The daily monitor now also warns before
+- **Token auto-refresh works** (fixed 2026-09-01). The weekly workflow
+  refreshes every account, writes the token back with `GH_PAT`, and commits
+  the new expiry to `accounts/<slug>/token_status.json`. Until 2026-10-26 it
+  only printed a notice asking a human to update that file; nobody did, and
+  the monitor failed daily from 10-20 on a token that was valid to 11-30.
+  After a MANUAL re-mint, still update the file by hand. The daily monitor now also warns before
   `GH_PAT` itself expires — its lapse is silent and kills refresh.
 - **Insights work on both accounts** (inmigraforma fixed 2026-09-07 by
   re-granting its token with `instagram_manage_insights` — the app already had

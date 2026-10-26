@@ -20,7 +20,7 @@ jobs:
     outputs:
       matrix: ${{ steps.ls.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - id: ls
         run: echo "matrix=$(python3 accounts.py --list-json)" >> "$GITHUB_OUTPUT"
 
@@ -34,7 +34,7 @@ jobs:
         account: ${{ fromJson(needs.accounts.outputs.matrix) }}
     name: publish ${{ matrix.account.slug }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Publish next due post
         env:
           ACCOUNT: ${{ matrix.account.slug }}

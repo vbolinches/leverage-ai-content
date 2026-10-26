@@ -18,7 +18,7 @@ jobs:
     outputs:
       matrix: ${{ steps.ls.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - id: ls
         run: echo "matrix=$(python3 accounts.py --list-json)" >> "$GITHUB_OUTPUT"
 
@@ -27,7 +27,7 @@ jobs:
   pat:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Check GH_PAT expiry
         env:
           # Any enabled slug satisfies monitor.py's account resolution; the
@@ -46,7 +46,7 @@ jobs:
         account: ${{ fromJson(needs.accounts.outputs.matrix) }}
     name: monitor ${{ matrix.account.slug }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Account digest
         env:

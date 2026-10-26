@@ -20,7 +20,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Report remaining runway per account
         run: |
@@ -33,32 +33,44 @@ jobs:
           MIN = int(os.environ["MIN_DAYS_RUNWAY"])
           failed = False
 
+          # Since 2026-09-24 new posts arrive as HELD drafts the owner
+          # releases, and they never count as "queued". Counting only queued
+          # posts made this job fail every Monday from 09-21 to 10-19 while
+          # drafts sat waiting - an email for a decision, not a fault. It
+          # now fails only for what nobody would choose: the generator has
+          # produced nothing recent. A short queue with fresh drafts waiting
+          # is a warning (no email), naming how many await review.
+          from datetime import timedelta
+          recent_since = (date.today() - timedelta(days=7)).isoformat()
+
           for acct in accounts.list_accounts():
               sched = json.load(open(acct.queue, encoding="utf-8"))
               posts = sched["posts"]
               queued = [p for p in posts if p["status"] == "queued"]
               published = [p for p in posts if p["status"] == "published"]
+              drafts = [p for p in posts if p["status"] == "held"
+                        and p["date"] >= recent_since]
 
               print(f"[{acct['slug']}] published: {len(published)}   "
-                    f"queued: {len(queued)}")
+                    f"queued: {len(queued)}   recent drafts awaiting review: "
+                    f"{len(drafts)}")
+              if queued:
+                  last = max(p["date"] for p in queued)
+                  print(f"  next: {min(p['date'] for p in queued)}   last: {last}")
 
-              if not queued:
-                  print(f"::error::[{acct['slug']}] QUEUE EMPTY — nothing will "
-                        f"publish. Posting has stopped until a new batch is added.")
-                  failed = True
-                  continue
-
-              last = max(p["date"] for p in queued)
-              runway = (date.fromisoformat(last) - date.today()).days
-              print(f"  next: {min(p['date'] for p in queued)}   last: {last}   "
-                    f"runway: {runway} days")
-
-              if len(queued) < MIN:
-                  print(f"::error::[{acct['slug']}] Only {len(queued)} post(s) "
-                        f"left, running dry on {last}. Produce the next batch now.")
-                  failed = True
+              if len(queued) >= MIN:
+                  print(f"  OK: {len(queued)} posts queued.")
+              elif drafts:
+                  print(f"::warning::[{acct['slug']}] {len(queued)} post(s) "
+                        f"queued and {len(drafts)} draft(s) awaiting review: "
+                        + ", ".join(p["id"] for p in drafts)
+                        + ". Release the good ones (status -> queued) to publish.")
               else:
-                  print(f"  OK: {len(queued)} posts queued through {last}.")
+                  print(f"::error::[{acct['slug']}] {len(queued)} post(s) queued "
+                        f"and NO new drafts in 7 days: the nightly generator has "
+                        f"stopped. Check logs/batch-<date>.log on the PC and run "
+                        f"python run_local_batch.py --check.")
+                  failed = True
 
           sys.exit(1 if failed else 0)
           PY

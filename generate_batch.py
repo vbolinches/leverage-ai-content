@@ -195,6 +195,29 @@ def existing_topics(sched):
     return [p["id"] for p in sched["posts"]]
 
 
+def used_sources(sched):
+    """Source pages already behind a post of ANY status, mapped to its id.
+
+    The avoid list is post ids, and the model rewrites a topic it has seen
+    under a new title, so the same page came back night after night: an EB-5
+    fee draft retired on 2026-10-23 was drafted again on the 25th, and a
+    Gemini post was drafted twice as post89 and post91. A held or retired
+    post counts too - held drafts are waiting for review and retired ones
+    were rejected; neither is a reason to write the page again.
+    """
+    used = {}
+    for p in sched["posts"]:
+        try:
+            with open(os.path.join(SPEC_DIR, f"{p['id']}.json"),
+                      encoding="utf-8") as f:
+                url = (json.load(f).get("source_url") or "").strip()
+        except (OSError, ValueError):
+            continue
+        if url:
+            used[url.rstrip("/")] = p["id"]
+    return used
+
+
 # Constrained decoding guarantees well-formed JSON. Parsing free text failed on
 # literal newlines inside the `code` field, which are invalid inside a JSON string.
 RICH_TEXT = hooks.RICH_TEXT
@@ -606,6 +629,11 @@ def research(count, avoid):
     # after repair, and each dropped post is a spare consumed.
     want = count + 3
     briefs, taken, calls = [], list(avoid), 0
+    try:
+        covered = used_sources(load_queue())
+    except Exception as e:                              # noqa: BLE001
+        print(f"  could not read earlier sources ({e}); not filtering on them")
+        covered = {}
     for sweep in range(4):
         if len(briefs) >= want:
             break
@@ -704,6 +732,10 @@ def research(count, avoid):
             # to hand: four queued posts cited the same Federal Register index,
             # and a public-charge brief cited uscis.gov/avoid-scams. A page
             # that genuinely covers two topics can carry the second next batch.
+            if url.rstrip("/") in covered:
+                print(f"  dropped {b.get('topic', '')[:44]!r}: its source is "
+                      f"already covered by {covered[url.rstrip('/')]}")
+                continue
             if any(url == x.get("source_url") for x in briefs):
                 print(f"  dropped {b.get('topic', '')[:44]!r}: its source is "
                       f"already used by another topic in this batch")
@@ -2150,7 +2182,12 @@ def author(count, start_index, avoid):
         print(f"  wrote {post['slug']} ({len(post.get('slides') or [])} slides)")
 
     if not posts:
-        sys.exit("Every post failed to author — nothing to queue.")
+        # A normal outcome, not a crash: every topic was rejected for being
+        # untrue, unclear or broken, which is the gates doing their job.
+        # Exiting 1 here made the nightly log read "::error:: generation
+        # failed" on quiet nights, indistinguishable from a real failure.
+        print("Every post failed to author — nothing to queue tonight.")
+        return None
     if len(posts) < count:
         print(f"::warning::asked for {count} posts, authored {len(posts)}")
 
@@ -2823,6 +2860,8 @@ def main():
     sched = load_queue()
     start = next_index(sched)
     result = author(a.count, start, existing_topics(sched))
+    if result is None:
+        return 0
     posts = result["posts"]
     print(f"authored {len(posts)} posts starting at post{start:02d}")
 

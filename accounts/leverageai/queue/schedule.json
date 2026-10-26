@@ -1410,7 +1410,8 @@
         "accounts/leverageai/queue/post91-gemini-business-hub/slide05.png"
       ],
       "caption": "Open the Gemini app on your phone or desktop. Tap the connected apps section and link your Google Sheets account. Upload a PDF of your brand guidelines or a folder with your logo and color codes. The hub reads these files and stores them for every request. \n\nPaste this prompt to test it on your current client project:\n\n\"Analyze my attached spreadsheet for monthly revenue and expenses. Summarize profit margins and flag any cost spikes. Then generate three social media graphics using my uploaded brand guidelines.\"\n\nThe AI reads the columns, calculates totals, and applies your exact colors and fonts to the drafts. You edit the output, not the raw data. This is available now to all Gemini app users worldwide. Use it for client proposals, monthly financial summaries, and your own marketing posts. Save this for later when you face scope creep or admin backlog.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #gemini #googleworkspace #smallbusinessadmin #financialinsights #branding #timeblocking #aiautomation",
-      "status": "held"
+      "status": "retired",
+      "note": "RETIRED 2026-10-26 (housekeeping): duplicate draft of the same source page as post89-gemini-business-hub. Research now drops pages already used by any post."
     }
   ]
 }

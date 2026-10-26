@@ -1,7 +1,7 @@
 {
-  "minted": "2026-09-07",
-  "expires": "2026-11-06",
+  "minted": "2026-10-01",
+  "expires": "2026-11-30",
   "note": "Long-lived FB user token via fb_exchange_token (session-independent). App 2095342677999373. Explorer tokens are session-bound - never store one directly again.",
-  "last_refresh": "re-granted by hand 2026-09-07 to add instagram_manage_insights, then exchanged to a long-lived token via fb_exchange_token. Facebook returns no expires_in, so this is the conventional ~60 days. The monthly workflow keeps it alive from here.",
+  "last_refresh": "auto-refreshed via fb_exchange_token by the Refresh Instagram token workflow on 2026-10-01 (run 36843776214). Facebook returns no expires_in, so the conventional 60 days is assumed. Recorded by hand on 2026-10-26; the workflow now records it itself.",
   "scopes_note": "carries instagram_manage_insights - per-post reach is readable on this account as of 2026-09-07"
 }
