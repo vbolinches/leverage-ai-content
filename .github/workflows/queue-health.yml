@@ -33,44 +33,58 @@ jobs:
           MIN = int(os.environ["MIN_DAYS_RUNWAY"])
           failed = False
 
-          # Since 2026-09-24 new posts arrive as HELD drafts the owner
-          # releases, and they never count as "queued". Counting only queued
-          # posts made this job fail every Monday from 09-21 to 10-19 while
-          # drafts sat waiting - an email for a decision, not a fault. It
-          # now fails only for what nobody would choose: the generator has
-          # produced nothing recent. A short queue with fresh drafts waiting
-          # is a warning (no email), naming how many await review.
-          from datetime import timedelta
-          recent_since = (date.today() - timedelta(days=7)).isoformat()
+          # Fails ONLY when the nightly generator has stopped, which is a
+          # fault someone must fix (PC off, Ollama down, a model missing).
+          # The signal is accounts/<slug>/last_batch.json, which the nightly
+          # job commits every night it runs. Two earlier versions guessed
+          # from the queue and raised false alarms: counting queued posts
+          # failed every Monday while drafts were held (09-21 to 10-19), and
+          # counting held drafts failed on 10-26 an hour after they were
+          # released. A short or empty queue with a live generator means
+          # tonight's topics failed the truth and clarity checks; that is a
+          # warning (no email), not a fault.
+          from datetime import datetime, timedelta, timezone
+          STALE_DAYS = 3
+          week_ago = (date.today() - timedelta(days=7)).isoformat()
 
           for acct in accounts.list_accounts():
-              sched = json.load(open(acct.queue, encoding="utf-8"))
-              posts = sched["posts"]
+              slug = acct["slug"]
+              posts = json.load(open(acct.queue, encoding="utf-8"))["posts"]
               queued = [p for p in posts if p["status"] == "queued"]
-              published = [p for p in posts if p["status"] == "published"]
-              drafts = [p for p in posts if p["status"] == "held"
-                        and p["date"] >= recent_since]
+              held = [p for p in posts if p["status"] == "held"
+                      and p["date"] >= week_ago]
+              print(f"[{slug}] queued: {len(queued)}"
+                    + (f" (through {max(p['date'] for p in queued)})" if queued else "")
+                    + (f"   held drafts: {len(held)}" if held else ""))
 
-              print(f"[{acct['slug']}] published: {len(published)}   "
-                    f"queued: {len(queued)}   recent drafts awaiting review: "
-                    f"{len(drafts)}")
-              if queued:
-                  last = max(p["date"] for p in queued)
-                  print(f"  next: {min(p['date'] for p in queued)}   last: {last}")
+              hb_path = os.path.join("accounts", slug, "last_batch.json")
+              try:
+                  hb = json.load(open(hb_path, encoding="utf-8"))
+                  last = datetime.fromisoformat(hb["last_run"])
+                  age = (datetime.now(timezone.utc) - last).days
+                  print(f"  generator last ran {last:%Y-%m-%d %H:%M} UTC "
+                        f"({hb.get('result')}), {age} day(s) ago")
+                  alive = age < STALE_DAYS
+              except (OSError, ValueError, KeyError):
+                  # No heartbeat yet: alive if anything was produced lately.
+                  alive = any(p["date"] >= week_ago for p in posts)
+                  print(f"  no heartbeat file; recent posts present: {alive}")
 
-              if len(queued) >= MIN:
-                  print(f"  OK: {len(queued)} posts queued.")
-              elif drafts:
-                  print(f"::warning::[{acct['slug']}] {len(queued)} post(s) "
-                        f"queued and {len(drafts)} draft(s) awaiting review: "
-                        + ", ".join(p["id"] for p in drafts)
-                        + ". Release the good ones (status -> queued) to publish.")
-              else:
-                  print(f"::error::[{acct['slug']}] {len(queued)} post(s) queued "
-                        f"and NO new drafts in 7 days: the nightly generator has "
-                        f"stopped. Check logs/batch-<date>.log on the PC and run "
-                        f"python run_local_batch.py --check.")
+              if not alive:
+                  print(f"::error::[{slug}] the nightly generator has not run "
+                        f"for {STALE_DAYS}+ days. Check that the PC is on, then "
+                        f"logs/batch-<date>.log and python run_local_batch.py --check.")
                   failed = True
+              elif not queued:
+                  print(f"::warning::[{slug}] queue empty: the generator is "
+                        f"running but recent topics failed the checks.")
+              elif len(queued) < MIN:
+                  print(f"  {len(queued)} queued, below {MIN}; the generator is running.")
+              else:
+                  print(f"  OK")
+              if held:
+                  print(f"::warning::[{slug}] {len(held)} held draft(s): "
+                        + ", ".join(p["id"] for p in held))
 
           sys.exit(1 if failed else 0)
           PY

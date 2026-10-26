@@ -502,7 +502,7 @@ overrun with reasoning off.
 |---|---|---|
 | Publish daily Instagram post | 16:00 UTC daily | The core job; 16:00 UTC = noon ET, both audiences are US |
 | Account monitor | 08:00 UTC daily | Digest; fails at <10 days token runway |
-| Queue health check | Mon 09:00 UTC | Fails only if fewer than 5 queued AND no new drafts in 7 days; drafts awaiting review are a warning |
+| Queue health check | Mon 09:00 UTC | Fails only if the nightly generator's heartbeat (`accounts/<slug>/last_batch.json`) is 3+ days old; a short or empty queue is a warning |
 | DM auto-responder | every 2h | Inert (warns) until messaging permission + App Review |
 | Content ideas monitor | Tue 06:00 UTC | Refreshes idea sources; X only with `X_BEARER_TOKEN` |
 | Refresh Instagram token | Mon 03:00 UTC weekly | Refreshes, then records the new expiry in token_status.json itself |
@@ -554,8 +554,14 @@ web search. Do not let idea items bypass that rule.
   new account must be added as an Instagram Tester on the Meta app (and accept
   the invite) before its token can be minted. If publishing ever fails on
   permissions, App Review is the cause.
-- **Generated posts publish unreviewed** on the Wednesday schedule. `--dry-run`
-  plus the artifact is the review path.
+- **Generated posts publish unreviewed again** (owner's call, 2026-10-26:
+  "Release the held drafts automatically from now on"). From 2026-09-24 to
+  10-26 every new post was a held draft the owner released by hand; in that
+  window the reviewer found errors the gates had passed in 5 of 7 drafts
+  (an EB-5 final rule called a proposal, a fee increase applied to every
+  work permit, an invented product name). The truth and clarity gates are
+  now the only review. `QUEUE_STATUS=held` restores the hold; `--dry-run`
+  plus the artifact is still the manual review path.
 
 ## Conventions
 

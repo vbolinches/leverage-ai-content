@@ -275,6 +275,9 @@ def main():
             if not a.force and n >= REFILL_BELOW:
                 say(f"[{slug}] {n} posts queued (threshold {REFILL_BELOW}) "
                     f"— skipping", log)
+                heartbeat(slug, "skipped", a.dry_run)
+                if not a.dry_run:
+                    commit_push(f"batch heartbeat {today} ({slug})", log, a.no_push)
                 continue
             say(f"[{slug}] {n} posts queued — generating {a.count}", log)
             cmd = [child_python(), "-u", "generate_batch.py",
@@ -282,18 +285,25 @@ def main():
             if a.dry_run:
                 cmd += ["--dry-run", "--out", os.path.join(REPO, "review_out", slug)]
             try:
-                # New posts are queued as HELD drafts by default: the owner
-                # reads them and releases each one (status -> queued). Set
-                # QUEUE_STATUS=queued to publish unreviewed again, once the
-                # pipeline has earned that back (owner's rule, 2026-09-24).
+                # Posts that pass every gate are QUEUED and publish on their
+                # date (owner's call, 2026-10-26: "Release the held drafts
+                # automatically from now on"). From 2026-09-24 they were held
+                # for the owner to release; QUEUE_STATUS=held restores that.
                 run(cmd, log, env={"ACCOUNT": slug, "PYTHONIOENCODING": "utf-8",
-                                   "QUEUE_STATUS": os.environ.get("QUEUE_STATUS", "held")})
+                                   "QUEUE_STATUS": os.environ.get("QUEUE_STATUS", "queued")})
             except RuntimeError as e:
                 # One account failing must not cost the other its batch, the
                 # same reason the workflow matrix ran with fail-fast: false.
                 say(f"::error::[{slug}] generation failed: {e}", log)
+                heartbeat(slug, "failed", a.dry_run)
+                if not a.dry_run:
+                    try:
+                        commit_push(f"batch heartbeat {today} ({slug})", log, a.no_push)
+                    except RuntimeError as e2:
+                        say(f"::error::[{slug}] commit/push failed: {e2}", log)
                 continue
             generated.append(slug)
+            heartbeat(slug, "ran", a.dry_run)
 
             # Moving covers, once this account's writing is done: the video
             # model needs the GPU the text model was holding. Opt-in per
@@ -321,6 +331,27 @@ def main():
         elif a.dry_run:
             say(f"dry run — review review_out/, nothing queued or committed", log)
         return 0
+
+
+def heartbeat(slug, result, dry_run=False):
+    """Record that tonight's run reached this account, whatever it produced.
+
+    The queue-health workflow in Actions cannot see this PC's logs, so it
+    used to guess whether the generator was alive from the queue itself -
+    first from queued posts (failed every Monday while drafts were held),
+    then from held drafts (failed on 2026-10-26 an hour after the drafts
+    were released). This file is the direct signal: it is committed every
+    night the job runs, so a stale date means the generator has stopped -
+    PC off, Ollama down, a model missing - and nothing else does.
+    """
+    if dry_run:
+        return
+    path = os.path.join(REPO, "accounts", slug, "last_batch.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"last_run": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                   "result": result, "queued_after": queued(slug)},
+                  f, indent=2)
+        f.write(chr(10))
 
 
 def commit_push(message, log, no_push=False):
