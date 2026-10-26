@@ -1347,7 +1347,7 @@
     },
     {
       "id": "post82-sevis-corte-programado",
-      "date": "2026-09-24",
+      "date": "2026-10-30",
       "slides": [
         "accounts/inmigraforma/queue/post82-sevis-corte-programado/slide01.png",
         "accounts/inmigraforma/queue/post82-sevis-corte-programado/slide02.png",
@@ -1356,10 +1356,10 @@
         "accounts/inmigraforma/queue/post82-sevis-corte-programado/slide05.png"
       ],
       "caption": "El sistema SEVIS tuvo un corte programado el 14 de septiembre de 2026 a las 8:00 PM (EDT) para una actualización. El guía oficial no menciona impacto en el estatus de estudiante.\n\nEn palabras simples:\nSEVIS tuvo un corte programado para una actualización. El corte comenzó el 14 de septiembre a las 8:00 PM.\n\nIn plain words: The SEVIS system had a scheduled outage on September 14, 2026, at 8:00 PM (EDT) for an update. The official guide does not mention impact on student status.\n\nFuente oficial: https://studyinthestates.dhs.gov/sevis-help-hub/sevis-release-planning-guide-6891\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#sevis #estudiantes #visa #estadounidenses #migracion #sevisupdate #greencard #immigration #studentstatus",
-      "status": "held",
+      "status": "queued",
       "format": "reel",
       "video": "accounts/inmigraforma/queue/post82-sevis-corte-programado/reel.mp4",
-      "note": "HELD 2026-09-23 (owner's call): true but aimed at school officials rather than regular immigrants, so fresh posts go first. Goes back in the queue after them."
+      "note": "HELD 2026-09-23 (owner's call): true but aimed at school officials rather than regular immigrants, so fresh posts go first. Goes back in the queue after them. RELEASED 2026-10-26 by the owner as held (unclear slides noted); fact-checked, no false claim found."
     },
     {
       "id": "post83-visa-bulletin-chart",
@@ -1412,7 +1412,7 @@
     },
     {
       "id": "post86-foreign-government-employees",
-      "date": "2026-09-25",
+      "date": "2026-10-29",
       "slides": [
         "accounts/inmigraforma/queue/post86-foreign-government-employees/slide01.png",
         "accounts/inmigraforma/queue/post86-foreign-government-employees/slide02.png",
@@ -1420,11 +1420,11 @@
         "accounts/inmigraforma/queue/post86-foreign-government-employees/slide04.png",
         "accounts/inmigraforma/queue/post86-foreign-government-employees/slide05.png"
       ],
-      "caption": "Ahora, los hijos de empleados de gobiernos extranjeros (no diplomáticos) nacidos en EE.UU. pueden aplicar para una Green Card. Esto cambia la regla para muchos que antes no podían.\n\nEn palabras simples: Si naciste en EE.UU. de un empleado de gobierno extranjero, ahora aplicas. Antes no podías.\n\nIn plain words: Children of foreign government employees (not diplomats) born in the U.S. can now apply for a Green Card. This change means they were previously not eligible.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/dhs-announces-rule-for-certain-children-born-in-the-united-states-to-foreign-government-employees\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigración #greencard #noticias #mexico #usa #inmigracion #familia #proceso #asilo",
-      "status": "held",
+      "caption": "El DHS publicó una regla que permite a ciertos niños nacidos en EE.UU. de empleados de gobiernos extranjeros registrarse como residentes permanentes (Green Card). Antes, esa opción existía solo para hijos de diplomáticos.\n\nEn palabras simples:\nAplica a niños nacidos en EE.UU. desde el 4 de septiembre de 2026, cuando ningún padre es ciudadano de EE.UU. y al menos uno trabaja para un gobierno extranjero o un organismo internacional al momento del nacimiento. No aplica a quienes nacieron antes de esa fecha.\n\nImportante: por una orden judicial en el caso Casa contra Trump, el DHS no aplicará la regla a los miembros de ese caso mientras la orden siga vigente.\n\nIn plain words: Children born in the U.S. on or after September 4, 2026, to a foreign government employee, when neither parent is a U.S. citizen, can register as permanent residents. Before, this applied only to children of diplomats. A court injunction limits it for some cases.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/dhs-announces-rule-for-certain-children-born-in-the-united-states-to-foreign-government-employees\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #greencard #uscis #dhs #residencia #inmigrantes #noticias #papeles #familia",
+      "status": "queued",
       "format": "reel",
       "video": "accounts/inmigraforma/queue/post86-foreign-government-employees/reel.mp4",
-      "note": "HELD 2026-09-24 (review): niche topic the account's priorities say to avoid (children of foreign government employees; retired twice before); cover 'Hijos de empleados de gobierno: aplicas' is a fragment and never says apply for what. Not for this audience."
+      "note": "RELEASED 2026-10-26 by the owner. Corrected before release: the draft told anyone born in the US to a foreign government employee they could now apply, and said diplomats were excluded; the rule covers only children born on or after 2026-09-04 (diplomats included) and is partly enjoined. Fact-checked 10/10."
     },
     {
       "id": "post87-uscis-subida-tarifas-inflacion",
