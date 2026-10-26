@@ -2,28 +2,12 @@
   "slug": "post89-new-asylum-office-charlotte",
   "hook_candidates": [
     {
-      "headline": "¿Tu cita de asilo está en Charlotte?",
-      "sub": "Revisa tu aviso oficial ahora"
-    },
-    {
-      "headline": "Cambia la ubicación de tus citas",
-      "sub": "USCIS abrió centro en Charlotte"
-    },
-    {
-      "headline": "No necesitas viajar tan lejos",
-      "sub": "Ya hay una oficina más cerca"
-    },
-    {
-      "headline": "Ahorra horas de viaje",
-      "sub": "Ahora hay citas en Charlotte"
-    },
-    {
       "headline": "Nueva oficina de asilo en Charlotte",
-      "sub": "La agencia abrió un centro nuevo"
+      "sub": "Desde el 13 de octubre atiende asilo de las dos Carolinas."
     }
   ],
   "art": "building",
-  "caption": "USCIS anunció la apertura de una nueva oficina de asilo en Charlotte, Carolina del Norte. La dirección es 128 South Tryon Street, Suite 600. Las entrevistas y servicios se realizan solo con cita previa. La oficina no acepta visitas sin cita.\n\nEn palabras simples:\nEl gobierno abrió un nuevo centro en Charlotte para atender casos de asilo. Solo se recibe a las personas que tengan una cita programada. El aviso no indica pasos adicionales para quienes aún no tienen cita.\n\nTexto oficial: \"USCIS has opened a new Asylum Office in Charlotte, North Carolina. The office will conduct asylum interviews and provide related services by appointment only. The office will not accept walk-in visits.\"\nQué dice: Confirma la nueva dirección y aclara que solo atienden con cita.\nQué significa en la práctica: Las personas con cita en la zona pueden ir al lugar indicado.\nQué pasa si lo ignoras: La página no dice qué pasa si lo ignoras.\n\nIn plain words: A new asylum office is now open in Charlotte, North Carolina. They only see people who already have a scheduled appointment. Walk-ins will not be accepted. Check your case status online or talk to a lawyer if you think this affects you.\n\nGuarda este aviso para consultarlo después. Comenta si tienes dudas sobre tu cita.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-opens-asylum-office-in-charlotte\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #asilo #uscis #carolina #eeuu #novedades #papeles #inmigraforma #informativo #citas",
+  "caption": "USCIS abrió una oficina de asilo en Charlotte, Carolina del Norte. Desde el 13 de octubre de 2026, quienes viven en Carolina del Norte o Carolina del Sur y pidieron asilo pasan a esta oficina, y pueden citarlos aquí para su entrevista.\n\nEn palabras simples:\nSi tienes un caso de asilo y vives en una de las dos Carolinas, tu entrevista puede ser en Charlotte. Tu aviso de entrevista dice a qué oficina ir, así que léelo con cuidado. La oficina atiende solo con cita y no recibe visitas sin cita.\n\nDirección: Charlotte Asylum Office, 128 South Tryon Street, Suite 600, Charlotte, North Carolina 28202.\nPara cambiar tu cita antes de la fecha, llama al Centro de Contacto de USCIS: 1-800-375-5283.\n\nIn plain words: USCIS opened an asylum office in Charlotte. Since October 13, 2026, asylum applicants living in North or South Carolina fall under it and may be interviewed there. Appointments only; check your interview notice for where to go.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/uscis-opens-asylum-office-in-charlotte\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nGuarda este post y compártelo con quien tenga un caso de asilo en las Carolinas.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #asilo #uscis #charlotte #carolinadelnorte #carolinadelsur #inmigrantes #papeles #noticias",
   "slides": [
     {
       "kind": "cover",
@@ -33,46 +17,50 @@
           "t": "Nueva oficina de asilo en Charlotte"
         }
       ],
-      "sub": "La agencia abrió una nueva oficina de asilo en Charlotte.",
+      "sub": "Desde el 13 de octubre atiende asilo de las dos Carolinas.",
       "footer_right": "SWIPE →"
     },
     {
       "kind": "step",
       "eyebrow": "EN PALABRAS SIMPLES",
-      "headline": "La agencia abrió",
+      "headline": "Para Carolina del Norte y del Sur",
       "body": [
         {
-          "t": "La agencia USCIS abrió una nueva oficina de asilo en Charlotte, Carolina del Norte."
+          "t": "Si vives en Carolina del Norte o del Sur y pediste asilo, tu entrevista puede ser en esta nueva oficina de USCIS."
         }
       ]
     },
     {
       "kind": "step",
-      "eyebrow": "QUÉ CAMBIÓ",
-      "headline": "La protección legal",
-      "body": "El asilo es la protección legal que solicita quien huye de peligro en su país natal."
+      "eyebrow": "QUÉ ES EL ASILO",
+      "headline": "Protección para quien huye",
+      "body": [
+        {
+          "t": "El asilo es la protección legal que pide quien huye de peligro en su país natal."
+        }
+      ]
     },
     {
       "kind": "step",
-      "eyebrow": "¿ME AFECTA?",
-      "headline": "Solo con cita previa",
+      "eyebrow": "¿ME AFECTA A MÍ?",
+      "headline": "Tu aviso dice a dónde ir",
       "body": [
         {
-          "t": "La nueva oficina de asilo en Charlotte atiende solo con cita previa, como un consultorio médico."
+          "t": "Revisa tu aviso de entrevista: ahí dice a qué oficina ir. Esta oficina atiende solo con cita, nunca sin ella."
         }
       ]
     },
     {
       "kind": "recap",
-      "eyebrow": "RECAP",
-      "headline": "Qué hacer",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Antes de tu entrevista",
       "items": [
-        "Residentes de Carolina del Norte o del Sur.",
-        "Lea las actualizaciones en el sitio web de USCIS.",
-        "Consulte a un abogado de inmigración si tiene dudas."
+        "Mira en tu aviso a qué oficina te toca",
+        "128 South Tryon Street, Suite 600, Charlotte",
+        "Para cambiar tu cita llama al 1-800-375-5283"
       ],
       "cta_title": "Guarda esto",
-      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.",
+      "cta_sub": "Info general no es asesoría legal",
       "footer_right": "SAVE THIS ↓"
     }
   ],

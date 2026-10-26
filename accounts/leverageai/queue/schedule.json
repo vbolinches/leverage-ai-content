@@ -1371,7 +1371,7 @@
     },
     {
       "id": "post89-gemini-business-hub",
-      "date": "2026-10-24",
+      "date": "2026-10-26",
       "slides": [
         "accounts/leverageai/queue/post89-gemini-business-hub/slide01.png",
         "accounts/leverageai/queue/post89-gemini-business-hub/slide02.png",
@@ -1379,14 +1379,15 @@
         "accounts/leverageai/queue/post89-gemini-business-hub/slide04.png",
         "accounts/leverageai/queue/post89-gemini-business-hub/slide05.png"
       ],
-      "caption": "You handle sales, delivery, and invoicing alone. Branding and finance reports usually eat your afternoon. The new Gemini Business Hub sits inside the Gemini app and connects to Shopify, Canva, and Google Workspace. Upload your brand guidelines once and it generates consistent visuals automatically. Paste your sales spreadsheet and it returns clear money reports without manual formatting.\n\nCopy this prompt into the Gemini chat:\nUpload my brand guidelines and connect my Shopify and Canva accounts. \n\nThis works for any freelancer or solo operator using the Gemini mobile or desktop app. The feature rolls out globally in the coming days for all app users. \n\nSave this post for your next admin block. Share it with a fellow solo operator who dreads spreadsheet work.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solopreneur #freelancetips #aiworkflows #gemini #smallbusinessadmin #branddesign #financeautomation #productivitytools #aiassistant #notionalternatives",
-      "status": "held",
+      "caption": "You run the business alone, so branding and finance reports land on you. On October 20, 2026, Google announced a new business page inside the Gemini app for small business owners. It rolls out worldwide in the coming days.\n\nWhat it does, per Google:\n• Define your brand once by uploading your website, brand kit, fonts or colors, and Gemini keeps that style for new images.\n• Turn messy spreadsheets, receipts and purchase records into clear financial charts.\n• Connect apps like Shopify, Canva, Xero, Wix, Dropbox and Google Workspace.\n\nTry this prompt once it reaches your app, with your own spreadsheet attached:\n\"Turn this spreadsheet into a chart of monthly sales and costs, and tell me which month made the least.\"\n\nCheck the numbers against your books before you act on them.\n\nSource: https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/\n\nSave this for your next admin block.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #smallbusiness #gemini #aiworkflows #googlegemini #branding #bookkeeping #productivity #aitools",
+      "status": "queued",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post89-gemini-business-hub/reel.mp4"
+      "video": "accounts/leverageai/queue/post89-gemini-business-hub/reel.mp4",
+      "note": "RELEASED 2026-10-26 by the owner. Rewritten by the reviewer from the source page (generated draft had errors or unclear slides), then validated, fact-checked and read as a first-time reader."
     },
     {
       "id": "post90-chatgpt-work-cash-reconciliation",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "slides": [
         "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide01.png",
         "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide02.png",
@@ -1394,10 +1395,11 @@
         "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide04.png",
         "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide05.png"
       ],
-      "caption": "OpenAI published a case study on October 20, 2026 showing how ChatGPT Work handles daily admin. One independent franchisee used it for pricing analysis and cash reconciliation. \n\n You will need to test the feature yourself with your own spreadsheets or transaction logs. Start by uploading a clean list of daily sales and bank deposits. Ask the model to flag mismatches and summarize the variance. Review the output before posting to your ledger. It is fast, but you still verify the final numbers.\n\nTry this exact prompt with your own files:\n\"Match each bank deposit to the corresponding sales day. Flag any variance over five dollars. Summarize the daily balance.\"\n\nSave this for later when you hit end-of-month bookkeeping. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #solopreneur #cashreconciliation #chatgptwork #smallbusinesstools #adminautomation #bookkeepingtips #freelancerlife #businessefficiency #dailyworkflows",
-      "status": "held",
+      "caption": "Ted Taylor runs three Schlotzsky's and Cinnabon restaurants in New Mexico. In an OpenAI customer story from October 20, 2026, he says ChatGPT Work cut his monthly cash reconciliation from three hours to 5-10 minutes.\n\nHow he does it: he uploads each store's cash transactions and bank records, and ChatGPT Work matches the transactions to the deposits. He also uses it to reprice his menus, in 1-2 hours instead of 5 days.\n\nHis rule is the useful part: give it the same data you would use yourself, compare its answer with how you would do it, and always review the result before acting on it.\n\nTry this with your own files:\n\"Match each bank deposit to the sales day it belongs to. Flag any difference over $5 and list the days that do not balance.\"\n\nSource: https://openai.com/index/ted-taylor-restaurant\n\nSave this for your next month-end close.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #smallbusiness #chatgpt #aiworkflows #bookkeeping #cashflow #restaurantowner #productivity #aitools",
+      "status": "queued",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/reel.mp4"
+      "video": "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/reel.mp4",
+      "note": "RELEASED 2026-10-26 by the owner. Rewritten by the reviewer from the source page (generated draft had errors or unclear slides), then validated, fact-checked and read as a first-time reader."
     },
     {
       "id": "post91-gemini-business-hub",

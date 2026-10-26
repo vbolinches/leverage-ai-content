@@ -2,77 +2,66 @@
   "slug": "post91-civil-penalties-failure-to-depart",
   "hook_candidates": [
     {
-      "headline": "No es solo un aviso",
-      "sub": "La multa ya tiene fecha"
-    },
-    {
-      "headline": "No ignores la orden",
-      "sub": "El cobro es más rápido"
-    },
-    {
-      "headline": "Antes tomaba meses",
-      "sub": "Ahora es por escrito"
-    },
-    {
-      "headline": "Evita pagar multas",
-      "sub": "Sal en la fecha dada"
-    },
-    {
-      "headline": "Cambio en las multas",
-      "sub": "Vigor el 14 de octubre"
+      "headline": "Multas de ICE: la regla ya es final",
+      "sub": "Desde el 14 de octubre de 2026. Para apelar hay 15 días hábiles."
     }
   ],
   "art": "document",
-  "caption": "El DHS actualizó las reglas para cobrar multas de dinero a quienes no respetan la fecha límite para salir del país. Este cambio entró en vigor el 14 de octubre de 2026 y simplifica el proceso administrativo.\n\nEn palabras simples: Ahora se cobra la multa más rápido si no sales en la fecha que te dieron. El proceso es claro, por escrito y no requiere juicios largos.\n\nOfficial text from the rule: \"DHS believes that the nature of the failure to depart and unlawful entry penalties typically turn on routine and straightforward determinations of fact, meaning that an appeal period greater than 15-days is unnecessary.\" Esto dice literalmente que verificar si alguien se quedó pasado el plazo es un hecho claro. En la práctica, el cobro se decidirá rápido con documentos escritos. La página no dice qué pasa si lo ignoras, pero advierte que el plazo para apelar es corto.\n\nEnglish recap: The new civil penalty rule for failing to depart took effect on October 14, 2026, streamlining how fines are collected for missing voluntary departure deadlines. In plain words: If you miss your official exit date, the government will now process the fine faster and with less paperwork.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/10/14/2026-21024/imposition-and-collection-of-civil-penalties-for-certain-immigration-related-violations\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nGuarda este post para tener la información clara a mano. Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracioneeuu #greencard #noticiasdeinmigracion #dhs #uscis #papeles #migracion #leydeinmigracion #documentacion #estadounidos",
+  "caption": "El DHS y el Departamento de Justicia hicieron final la regla de multas civiles que ICE usa desde junio de 2025. Entró en vigor el 14 de octubre de 2026.\n\nA quién se aplica:\n• A quien no sale de EE.UU. dentro de su plazo de salida voluntaria.\n• A quien no sale a propósito después de una orden final de deportación: hasta $998 por cada día.\n• A quien es detenido al entrar o intentar entrar sin permiso: entre $100 y $500 por cada entrada.\n\nEn palabras simples:\nSi ICE te impone una de estas multas, la apelación se hace por escrito ante un supervisor de ICE, no en una corte. Tienes 15 días hábiles desde que te entregan la decisión, y cuenta la fecha del matasellos. Debes mandar todas tus pruebas con la apelación. Lo único nuevo de esta regla final: si el correo te llegó tarde por causas fuera de tu control y lo puedes demostrar, ICE puede aceptar una apelación tardía.\n\nIn plain words: A final rule, effective October 14, 2026, keeps ICE's faster civil fine process for failing to depart and unlawful entry. Appeals go to an ICE supervisor in writing within 15 business days. New: a late appeal may be accepted if you prove the mail was delayed.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/10/14/2026-21024/imposition-and-collection-of-civil-penalties-for-certain-immigration-related-violations\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nGuarda este post por si tú o alguien de tu familia lo necesita.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #ice #dhs #multas #deportacion #inmigrantes #papeles #leydeinmigracion #noticias",
   "slides": [
     {
       "kind": "cover",
       "eyebrow": "NOTICIA 091",
-      "headline": "La regla de multas de dinero ya vale.",
-      "sub": "La regla final entró en vigor el 14 de octubre.",
-      "footer_right": "→"
+      "headline": [
+        {
+          "t": "Multas de ICE: la regla ya es final"
+        }
+      ],
+      "sub": "Desde el 14 de octubre de 2026. Para apelar hay 15 días hábiles.",
+      "footer_right": "SWIPE →"
     },
     {
       "kind": "step",
       "eyebrow": "EN PALABRAS SIMPLES",
-      "headline": "Vigor",
+      "headline": "A quién pueden multar",
       "body": [
         {
-          "t": "La regla final de multas civiles, que son multas de dinero, entró en vigor el 14 de octubre de 2026 por el DHS."
+          "t": "A quien no sale en su plazo de salida voluntaria, no sale tras una orden final de deportación o entra sin permiso."
         }
       ]
     },
     {
       "kind": "step",
-      "eyebrow": "QUÉ CAMBIO",
-      "headline": "Orden",
+      "eyebrow": "CUÁNTO",
+      "headline": "Cuánto pueden cobrar",
       "body": [
         {
-          "t": "La salida voluntaria es una orden oficial con fecha límite para salir del país."
+          "t": "Hasta $998 por cada día sin salir tras una orden final. Entre $100 y $500 por cada entrada sin permiso."
         }
       ]
     },
     {
       "kind": "step",
-      "eyebrow": "¿ME AFECTA A MI?",
-      "headline": "Multas",
+      "eyebrow": "QUÉ CAMBIÓ",
+      "headline": "Correo tardío: nueva excepción",
       "body": [
         {
-          "t": "La propuesta agiliza el cobro de multas por no salir, como procesar un caso claro con documentos escritos."
+          "t": "Se apela por escrito ante un supervisor de ICE. Si la carta de la multa te llegó tarde y lo pruebas, pueden aceptar una apelación tardía."
         }
       ]
     },
     {
       "kind": "recap",
       "eyebrow": "QUÉ HACER",
-      "headline": "Actúa",
+      "headline": "Si recibes una multa",
       "items": [
-        "La propuesta aplica solo a quienes no salen en la fecha acordada y no afecta a otros casos.",
-        "Lea el registro federal oficial o consulte a un abogado de inmigración para más detalles."
+        "Apela en 15 días hábiles desde que te entregan la multa",
+        "Guarda el sobre y anota el día en que llegó",
+        "Habla pronto con un abogado de inmigración"
       ],
-      "cta_title": "Guarda",
-      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.",
-      "footer_right": "↓"
+      "cta_title": "Guarda esto",
+      "cta_sub": "Info general no es asesoría legal",
+      "footer_right": "SAVE THIS ↓"
     }
   ],
   "source_url": "https://www.federalregister.gov/documents/2026/10/14/2026-21024/imposition-and-collection-of-civil-penalties-for-certain-immigration-related-violations"

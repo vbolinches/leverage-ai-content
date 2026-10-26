@@ -156,7 +156,9 @@ def read(post, brief, acct, model=None, label=""):
     # misreading counts.
     missed = (data.get("what_i_got_wrong_or_missed") or "").strip()
     if data.get("matches_intended_message") == "no" and missed and not re.search(
-            r"(nothing|did not miss|didn't miss|don't think i missed|no misread)", missed, re.I):
+            r"(nothing|did not miss|didn't miss|don't think i missed|no misread)"
+            r"|^\W*(none|n/?a|no)\W*$", missed, re.I):
+        # A bare "none" was counted as a misreading on 2026-10-26.
         doubts.append("A first-time reader came away with the WRONG message: "
                       f"{missed}")
     return doubts, data

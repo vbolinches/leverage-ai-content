@@ -2,62 +2,46 @@
   "slug": "post90-chatgpt-work-cash-reconciliation",
   "hook_candidates": [
     {
-      "headline": "Ninety four percent faster cash checks.",
-      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
-    },
-    {
-      "headline": "Stop doing cash checks by hand.",
-      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
-    },
-    {
-      "headline": "You are wasting hours on receipt math.",
-      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
-    },
-    {
-      "headline": "How fast can you match sales to deposits?",
-      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
-    },
-    {
-      "headline": "Ten hours lost each month on ledger checks.",
-      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool."
+      "headline": "Bank matching: 3 hours down to 5-10 minutes",
+      "sub": "OpenAI story, October 20, 2026. ChatGPT Work is a ChatGPT tool for business files."
     }
   ],
   "art": "chart",
-  "caption": "OpenAI published a case study on October 20, 2026 showing how ChatGPT Work handles daily admin. One independent franchisee used it for pricing analysis and cash reconciliation. \n\n You will need to test the feature yourself with your own spreadsheets or transaction logs. Start by uploading a clean list of daily sales and bank deposits. Ask the model to flag mismatches and summarize the variance. Review the output before posting to your ledger. It is fast, but you still verify the final numbers.\n\nTry this exact prompt with your own files:\n\"Match each bank deposit to the corresponding sales day. Flag any variance over five dollars. Summarize the daily balance.\"\n\nSave this for later when you hit end-of-month bookkeeping. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #solopreneur #cashreconciliation #chatgptwork #smallbusinesstools #adminautomation #bookkeepingtips #freelancerlife #businessefficiency #dailyworkflows",
+  "caption": "Ted Taylor runs three Schlotzsky's and Cinnabon restaurants in New Mexico. In an OpenAI customer story from October 20, 2026, he says ChatGPT Work cut his monthly cash reconciliation from three hours to 5-10 minutes.\n\nHow he does it: he uploads each store's cash transactions and bank records, and ChatGPT Work matches the transactions to the deposits. He also uses it to reprice his menus, in 1-2 hours instead of 5 days.\n\nHis rule is the useful part: give it the same data you would use yourself, compare its answer with how you would do it, and always review the result before acting on it.\n\nTry this with your own files:\n\"Match each bank deposit to the sales day it belongs to. Flag any difference over $5 and list the days that do not balance.\"\n\nSource: https://openai.com/index/ted-taylor-restaurant\n\nSave this for your next month-end close.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #smallbusiness #chatgpt #aiworkflows #bookkeeping #cashflow #restaurantowner #productivity #aitools",
   "slides": [
     {
       "kind": "cover",
       "eyebrow": "WORKFLOW 090",
-      "headline": "ChatGPT Work case study",
-      "sub": "OpenAI shared a report on October twenty, 2026 about ChatGPT Work, the business chatbot tool.",
+      "headline": "Bank matching: 3 hours down to 5-10 minutes",
+      "sub": "OpenAI story, October 20, 2026. ChatGPT Work is a ChatGPT tool for business files.",
       "footer_right": "SWIPE →"
     },
     {
       "kind": "step",
-      "eyebrow": "WHAT IT IS",
-      "headline": "Pricing analysis",
-      "body": "Pricing analysis means checking menu costs against supplier bills to set correct prices."
+      "eyebrow": "WHO",
+      "headline": "Three restaurants, one owner",
+      "body": "Ted Taylor runs three restaurants and does his own back office."
     },
     {
       "kind": "step",
       "eyebrow": "WHAT IT DOES",
-      "headline": "Shrinks pricing work",
-      "body": "ChatGPT Work shrinks pricing analysis from five days to one or two hours."
+      "headline": "Sales vs deposits: 94% faster",
+      "body": "He uploads cash sales and bank records. It matches each sale to a deposit."
     },
     {
       "kind": "step",
-      "eyebrow": "WHO GETS IT",
-      "headline": "Cuts cash checks",
-      "body": "ChatGPT Work cuts cash reconciliation time by ninety four percent, like matching sales to bank deposits."
+      "eyebrow": "ALSO",
+      "headline": "New menu prices: 1-2 hours, not 5 days",
+      "body": "He gives it his menu and price goals. It returns new prices to review."
     },
     {
       "kind": "recap",
       "eyebrow": "RECAP",
-      "headline": "Use it for daily paperwork.",
+      "headline": "Try his method",
       "items": [
-        "Use ChatGPT Work daily.",
-        "Save this for later.",
-        "Follow for workflow tips."
+        "Upload your sales and bank files",
+        "Ask which sales have no deposit",
+        "Check its matches yourself"
       ],
       "cta_title": "Save this for later",
       "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
