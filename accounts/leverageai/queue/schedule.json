@@ -1380,10 +1380,13 @@
         "accounts/leverageai/queue/post89-gemini-business-hub/slide05.png"
       ],
       "caption": "You run the business alone, so branding and finance reports land on you. On October 20, 2026, Google announced a new business page inside the Gemini app for small business owners. It rolls out worldwide in the coming days.\n\nWhat it does, per Google:\n• Define your brand once by uploading your website, brand kit, fonts or colors, and Gemini keeps that style for new images.\n• Turn messy spreadsheets, receipts and purchase records into clear financial charts.\n• Connect apps like Shopify, Canva, Xero, Wix, Dropbox and Google Workspace.\n\nTry this prompt once it reaches your app, with your own spreadsheet attached:\n\"Turn this spreadsheet into a chart of monthly sales and costs, and tell me which month made the least.\"\n\nCheck the numbers against your books before you act on them.\n\nSource: https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/\n\nSave this for your next admin block.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #smallbusiness #gemini #aiworkflows #googlegemini #branding #bookkeeping #productivity #aitools",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
       "video": "accounts/leverageai/queue/post89-gemini-business-hub/reel.mp4",
-      "note": "RELEASED 2026-10-26 by the owner. Rewritten by the reviewer from the source page (generated draft had errors or unclear slides), then validated, fact-checked and read as a first-time reader."
+      "note": "RELEASED 2026-10-26 by the owner. Rewritten by the reviewer from the source page (generated draft had errors or unclear slides), then validated, fact-checked and read as a first-time reader.",
+      "published_media_id": "18271912354305543",
+      "published_on": "2026-10-26",
+      "threads_posted": true
     },
     {
       "id": "post90-chatgpt-work-cash-reconciliation",
