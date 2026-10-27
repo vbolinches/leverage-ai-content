@@ -1399,10 +1399,13 @@
         "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/slide05.png"
       ],
       "caption": "Ted Taylor runs three Schlotzsky's and Cinnabon restaurants in New Mexico. In an OpenAI customer story from October 20, 2026, he says ChatGPT Work cut his monthly cash reconciliation from three hours to 5-10 minutes.\n\nHow he does it: he uploads each store's cash transactions and bank records, and ChatGPT Work matches the transactions to the deposits. He also uses it to reprice his menus, in 1-2 hours instead of 5 days.\n\nHis rule is the useful part: give it the same data you would use yourself, compare its answer with how you would do it, and always review the result before acting on it.\n\nTry this with your own files:\n\"Match each bank deposit to the sales day it belongs to. Flag any difference over $5 and list the days that do not balance.\"\n\nSource: https://openai.com/index/ted-taylor-restaurant\n\nSave this for your next month-end close.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #smallbusiness #chatgpt #aiworkflows #bookkeeping #cashflow #restaurantowner #productivity #aitools",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
       "video": "accounts/leverageai/queue/post90-chatgpt-work-cash-reconciliation/reel.mp4",
-      "note": "RELEASED 2026-10-26 by the owner. Rewritten by the reviewer from the source page (generated draft had errors or unclear slides), then validated, fact-checked and read as a first-time reader."
+      "note": "RELEASED 2026-10-26 by the owner. Rewritten by the reviewer from the source page (generated draft had errors or unclear slides), then validated, fact-checked and read as a first-time reader.",
+      "published_media_id": "18092807237232814",
+      "published_on": "2026-10-27",
+      "threads_posted": true
     },
     {
       "id": "post91-gemini-business-hub",
