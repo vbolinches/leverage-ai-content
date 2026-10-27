@@ -4440,6 +4440,158 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post94-tarifas-inflacion-hr1",
+      "graded": "2026-10-27",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No es un nuevo impuesto",
+        "sub": "Es un ajuste legal por inflación",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "category",
+        "stopping": "Clear, corrects fear of new tax, simple Spanish.",
+        "reason": "Correctly states it's not a new tax, addressing a common fear directly. Simple, accurate, and stops scrollers.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No es un nuevo impuesto",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "category",
+          "stopping": "Clear, corrects fear of new tax, simple Spanish.",
+          "reason": "Correctly states it's not a new tax, addressing a common fear directly. Simple, accurate, and stops scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "No mandes tus papeles ya",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Minor confusion with 'ya' but understandable.",
+          "reason": "Readers might pause on 'papeles' (documents), but 'ya' is ambiguous (now/already). Sub clarifies, but hook itself is slightly unclear.",
+          "authored": false
+        },
+        {
+          "headline": "Antes pagabas menos, ahora más",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Vague but relatable; 'pagabas' implies cost change.",
+          "reason": "Uses 'antes/ahora' which resonates, but doesn't specify immigration context. Many might scroll past as it feels generic.",
+          "authored": false
+        },
+        {
+          "headline": "Tu bolsillo paga la inflación",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "False hook: 'tu bolsillo paga la inflación' misrepresents inflation as personal debt.",
+          "reason": "Overstates consequence: Inflation isn't 'paid' by pockets. Could cause panic (e.g., thinking they owe money), losing trust. Scores below 3 per override.",
+          "authored": false
+        },
+        {
+          "headline": "Suben precios de tarifas",
+          "rank": 5,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Wrong date (2026 vs. 2024) makes it seem irrelevant.",
+          "reason": "Date error makes readers dismiss it as future news. Factually wrong but not as dangerous as B.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Ajuste tarifas "
+            },
+            {
+              "t": "cambió precios.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Unintelligible fragment; 'H.R. 1' unexplained.",
+          "reason": "Readers can't understand 'Ajuste tarifas cambió precios.' 'H.R. 1' is US legislative jargon no immigrant knows. Scores below 3 for being unexplainable.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post95-tps-elsalvador-reinscripcion",
+      "graded": "2026-10-27",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Tu permiso de trabajo caduca pronto",
+        "sub": "Plazo oficial de USCIS",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "category",
+        "stopping": "clear urgency: 'caduca pronto' means expires soon, which directly affects readers' lives. No jargon. Sub confirms it's a deadline they must act on.",
+        "reason": "F: Clear, urgent, and directly relevant. 'Permiso de trabajo caduca pronto' is instantly understandable to anyone with a work permit. Sub 'Plazo oficial' confirms it's a deadline they must act on. No confusion.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Tu permiso de trabajo caduca pronto",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "category",
+          "stopping": "clear urgency: 'caduca pronto' means expires soon, which directly affects readers' lives. No jargon. Sub confirms it's a deadline they must act on.",
+          "reason": "F: Clear, urgent, and directly relevant. 'Permiso de trabajo caduca pronto' is instantly understandable to anyone with a work permit. Sub 'Plazo oficial' confirms it's a deadline they must act on. No confusion.",
+          "authored": false
+        },
+        {
+          "headline": "Cambia el proceso de reinscripción",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "category",
+          "stopping": "Vague but uses 'cambia' (changes) which hints at new info. 'Reinscripción' is wrong but readers might not notice. Sub says 'nueva regla' but doesn't say if it's good/bad.",
+          "reason": "C: 'Cambia el proceso' feels like news, but 'reinscripción' is incorrect (should be 'renovación'). Sub says 'nueva regla' but gives no context. Readers might pause to wonder if it affects them, but it's not clear enough to stop scrolling.",
+          "authored": false
+        },
+        {
+          "headline": "Error común al renovar el permiso",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Mentions 'error común' (common error) which might make readers stop to avoid mistakes. But 'reinscripción' is wrong and 'corrige' (fix) is vague.",
+          "reason": "B: 'Error común' creates mild urgency ('I might make this mistake'), but 'reinscripción' is incorrect and 'corrige tu reinscripción' is confusing. Readers might scroll past because they don't know what 'reinscripción' means.",
+          "authored": false
+        },
+        {
+          "headline": "No pierdes tu permiso si esperas",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "'Si esperas' (if you wait) is ambiguous—does it mean wait or wait for something? 'Permiso' is unclear. Sub is generic 'aviso oficial'.",
+          "reason": "A: 'No pierdes tu permiso si esperas' is confusing—'esperas' could mean 'you wait' or be a typo for 'esperas'. 'Permiso' is vague (work permit? residency?). Sub is too generic. Readers will scroll past.",
+          "authored": false
+        },
+        {
+          "headline": "USCIS abrió reinscripción",
+          "rank": 5,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Uses 'reinscripción' (wrong term) twice. 'Reinscripción temporal' is nonsense—'temporal' is not used that way in immigration.",
+          "reason": "D: 'Reinscripción' is incorrect (should be 'renovación'). 'Reinscripción temporal' is confusing jargon. First-time readers can't understand it. Score below 3.",
+          "authored": true
+        },
+        {
+          "headline": "Antes cerraba, ahora abre reinscripción",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Completely confusing: 'Antes cerraba, ahora abre' implies 'before it closed, now it opens' but 'cerraba' is past tense for 'it closed', making the phrase grammatically broken. 'Reinscripción' is wrong.",
+          "reason": "E: 'Antes cerraba' (before it closed) is grammatically incorrect and confusing. 'Reinscripción' is wrong. First-time readers can't understand this fragment. Score below 3.",
+          "authored": false
+        }
+      ]
     }
   ]
 }

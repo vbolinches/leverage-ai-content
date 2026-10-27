@@ -1,0 +1,68 @@
+{
+  "slug": "post95-tps-elsalvador-reinscripcion",
+  "hook_candidates": [
+    {
+      "headline": "No pierdes tu permiso si esperas",
+      "sub": "Aviso oficial de USCIS"
+    },
+    {
+      "headline": "Error común al renovar el permiso",
+      "sub": "Corrige tu reinscripción ya"
+    },
+    {
+      "headline": "Antes cerraba, ahora abre reinscripción",
+      "sub": "Fechas oficiales de USCIS"
+    },
+    {
+      "headline": "Cambia el proceso de reinscripción",
+      "sub": "Nueva regla publicada por USCIS"
+    },
+    {
+      "headline": "Tu permiso de trabajo caduca pronto",
+      "sub": "Plazo oficial de USCIS"
+    }
+  ],
+  "art": "document",
+  "caption": "USCIS publicó un aviso oficial sobre la reinscripción del estatus de protección temporal para ciudadanos de El Salvador. Si ya tienes este beneficio, puedes renovar tu permiso ahora mismo.\n\nEn palabras simples: el gobierno abrió el periodo para que los beneficiarios actuales mantengan su derecho a vivir y trabajar en Estados Unidos. Debes mandar los papeles a tiempo para no perder tu permiso de trabajo.\n\nTexto oficial: \"Current TPS beneficiaries from El Salvador may re-register during the registration period. Re-registration may be filed online or by mail using Form I-821.\" Esto dice literalmente que el periodo está abierto solo para quienes ya tienen el beneficio. En la práctica, significa que debes enviar el formulario I-821 a tiempo para mantener tu permiso de trabajo. La página no dice qué pasa si lo ignoras.\n\nUSCIS has opened the re-registration window for El Salvador TPS holders. Beneficiaries can now file Form I-821 online or by mail to keep their work authorization. In plain words: if you already have this protection, file your renewal now to keep working legally and avoid removal.\n\nGuarda esta guía para no olvidarte de la fecha. Información general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\nFuente oficial: https://www.uscis.gov/humanitarian/temporary-protected-status/temporary-protected-status-designated-country-el-salvador\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracioneeuu #tpselsalvador #permisodetrabajo #ciudadanias #papeles #inmigrantes #legalizacion #uscis #protecciontemporal",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 095",
+      "headline": "USCIS abrió reinscripción",
+      "sub": "USCIS abrió la reinscripción temporal.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "USCIS abrió reinscripción",
+      "body": "USCIS abrió la reinscripción del estatus de protección temporal, que permite vivir y trabajar en Estados Unidos."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ SIGNIFICA",
+      "headline": "Derechos de residencia y empleo",
+      "body": "El estatus de protección temporal otorga derechos de residencia y empleo a personas de países designados."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "STEP 1",
+      "headline": "Mantiene permiso de trabajo",
+      "body": "La reinscripción mantiene el permiso de trabajo y evita la deportación, como cuando un empleado renueva su documento."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Envía formulario I-821",
+      "items": [
+        "Envía I-821 en línea",
+        "Busca ayuda legal gratuita",
+        "Busca ayuda en la página web"
+      ],
+      "cta_title": "Guarda esta guía",
+      "cta_sub": "Sigue a @inmigraforma para noticias.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/humanitarian/temporary-protected-status/temporary-protected-status-designated-country-el-salvador"
+}

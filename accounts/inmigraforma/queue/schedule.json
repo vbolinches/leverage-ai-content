@@ -1538,6 +1538,36 @@
       "format": "reel",
       "video": "accounts/inmigraforma/queue/post93-uscis-subida-tarifas/reel.mp4",
       "note": "RETIRED 2026-10-26 (housekeeping): duplicate draft of the same source page as post87-uscis-subida-tarifas-inflacion (corrected and checked). Research now drops pages already used by any post."
+    },
+    {
+      "id": "post94-tarifas-inflacion-hr1",
+      "date": "2026-10-31",
+      "slides": [
+        "accounts/inmigraforma/queue/post94-tarifas-inflacion-hr1/slide01.png",
+        "accounts/inmigraforma/queue/post94-tarifas-inflacion-hr1/slide02.png",
+        "accounts/inmigraforma/queue/post94-tarifas-inflacion-hr1/slide03.png",
+        "accounts/inmigraforma/queue/post94-tarifas-inflacion-hr1/slide04.png",
+        "accounts/inmigraforma/queue/post94-tarifas-inflacion-hr1/slide05.png"
+      ],
+      "caption": "A partir del 16 de octubre de 2026, el gobierno ajusta el costo de los trámites migratorios por inflación. Esto significa que si mandas tus papeles después de esa fecha, pagarás el precio nuevo. Si ya los mandaste antes, tu precio no cambia. Guarda este post para consultar las fechas clave antes de enviar tu solicitud.\n\nEn palabras simples: el costo de vivir subió, y la ley exige que el gobierno ajuste las tarifas para cubrir esos gastos. No es un castigo ni una multa extra. Es un cálculo automático.\n\nOfficial text: \"Fees will be adjusted for inflation as mandated by H.R. 1, effective for applications postmarked on or after October 16, 2026.\"\nQué significa: El texto oficial confirma que el aumento entra en vigor el 16 de octubre. Si ignoras esta fecha y mandas tu solicitud después, el sistema cobrará la tarifa nueva automáticamente. No hay forma de pedir el precio anterior.\n\nEnglish recap: The government is updating immigration fees to match inflation. If you mail your forms after October 16, 2026, the new price applies. Check the official site for exact amounts before you pay.\nIn plain words: Prices go up on Oct 16. Mail your forms before that date to pay the old amount, or check the new fees online if you apply later.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/10/01/2026-20187/fiscal-year-2027-inflation-adjustment-to-hr-1-immigration-fees\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #greencard #uscis #papeles #estadosunidos #leyesdemigracion #noticiasinmigracion #visas #trámites #informaciónlegal",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/inmigraforma/queue/post94-tarifas-inflacion-hr1/reel.mp4"
+    },
+    {
+      "id": "post95-tps-elsalvador-reinscripcion",
+      "date": "2026-11-01",
+      "slides": [
+        "accounts/inmigraforma/queue/post95-tps-elsalvador-reinscripcion/slide01.png",
+        "accounts/inmigraforma/queue/post95-tps-elsalvador-reinscripcion/slide02.png",
+        "accounts/inmigraforma/queue/post95-tps-elsalvador-reinscripcion/slide03.png",
+        "accounts/inmigraforma/queue/post95-tps-elsalvador-reinscripcion/slide04.png",
+        "accounts/inmigraforma/queue/post95-tps-elsalvador-reinscripcion/slide05.png"
+      ],
+      "caption": "USCIS publicó un aviso oficial sobre la reinscripción del estatus de protección temporal para ciudadanos de El Salvador. Si ya tienes este beneficio, puedes renovar tu permiso ahora mismo.\n\nEn palabras simples: el gobierno abrió el periodo para que los beneficiarios actuales mantengan su derecho a vivir y trabajar en Estados Unidos. Debes mandar los papeles a tiempo para no perder tu permiso de trabajo.\n\nTexto oficial: \"Current TPS beneficiaries from El Salvador may re-register during the registration period. Re-registration may be filed online or by mail using Form I-821.\" Esto dice literalmente que el periodo está abierto solo para quienes ya tienen el beneficio. En la práctica, significa que debes enviar el formulario I-821 a tiempo para mantener tu permiso de trabajo. La página no dice qué pasa si lo ignoras.\n\nUSCIS has opened the re-registration window for El Salvador TPS holders. Beneficiaries can now file Form I-821 online or by mail to keep their work authorization. In plain words: if you already have this protection, file your renewal now to keep working legally and avoid removal.\n\nGuarda esta guía para no olvidarte de la fecha. Información general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\nFuente oficial: https://www.uscis.gov/humanitarian/temporary-protected-status/temporary-protected-status-designated-country-el-salvador\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracioneeuu #tpselsalvador #permisodetrabajo #ciudadanias #papeles #inmigrantes #legalizacion #uscis #protecciontemporal",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/inmigraforma/queue/post95-tps-elsalvador-reinscripcion/reel.mp4"
     }
   ]
 }
