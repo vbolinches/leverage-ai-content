@@ -217,6 +217,10 @@ Performance confirms concrete-pain hooks (specific pain points: cost/mistake/cha
 
 Performance of posts 50-56 confirms concrete-pain hooks (specific pain points: cost/mistake/change) drive higher reach than vague/technical hooks (best: 38-100; worst: 5). Reel format is necessary for reach (post56 carousel: 2 reach). Hook grader is disproven: pre-publish hook grades (6.5-9.5) showed no correlation with reach (2-100) across six posts. The best posts (50,55,60) all used concrete-pain hooks and had reach 38-100. The worst posts (47,54,56) used vague/technical hooks (for reels) or were carousels (post56) and had reach 5 or 2. The hook grades (6.5-9.5) did not correlate with reach (2-100) as shown by the highest grade (9.5) having the lowest reach (2) and the second-highest grade (9.0) having the highest reach (100).
 
+## Batch notes — posts 92-92 (2026-10-27)
+
+The hook grader is disproven: pre-publish hook grades (6.5-9.5) showed no correlation with reach (2-100) across six posts. The best posts (50,55,60) used concrete-pain hooks with specific pain points (cost/mistake/change) and reached 38-100. The worst posts (47,54) used vague/technical hooks despite similar shapes (cost/mistake) and reached 5. The highest grade (9.5) had the lowest reach (2) and the second-highest grade (9.0) had the highest reach (100). post60 (9.0/10, 100 reach), post55 (8.6/10, 62), post50 (8.2/10, 38), post47 (6.5/10, 5), post54 (8.2/10, 5), post56 (9.5/10, 2)
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

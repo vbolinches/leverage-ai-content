@@ -1,0 +1,86 @@
+{
+  "slug": "post92-gemini-4-argon-proposals",
+  "hook_candidates": [
+    {
+      "headline": "Draft client proposals in 60 seconds.",
+      "sub": "Google released the Gemini 4 Argon update, a new computer program, on October 23, 2026."
+    },
+    {
+      "headline": "Stop writing proposals from blank pages.",
+      "sub": "Google released the Gemini 4 Argon update, a new computer program, on October 23, 2026."
+    },
+    {
+      "headline": "How do you draft proposals faster?",
+      "sub": "Google released the Gemini 4 Argon update, a new computer program, on October 23, 2026."
+    },
+    {
+      "headline": "You waste hours on proposal drafts.",
+      "sub": "Google released the Gemini 4 Argon update, a new computer program, on October 23, 2026."
+    },
+    {
+      "headline": "Turn meeting notes into proposals.",
+      "sub": "Google released the Gemini 4 Argon update, a new computer program, on October 23, 2026."
+    }
+  ],
+  "art": "scales",
+  "caption": "You spend too much time formatting rough meeting notes into client proposals. This workflow turns scattered notes into a polished proposal draft in minutes. It uses the Gemini 4 Argon update, which rolled out on October 23, 2026. You do not need new software. You only need the Gemini app and a paid Pro plan.\n\n Use this exact prompt to structure the output:\n\"Act as a business consultant. Turn the following raw notes into a clear client proposal. Include project scope, deliverables, timeline, and total cost. Use a professional tone. Keep it under 300 words. Notes: [paste your notes here]\"\nReview the draft. Send it to the client.\n\nThis works best for solo operators who handle sales and delivery alone. The model is fast at structuring text but weak at calculating complex pricing or legal terms. Always verify costs and contract details before sending. Save this for later when you have a new lead.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancertips #clientproposals #aiworkflow #businessautomation #consultinglife #smallbusinessowner #productivitytips #gemini4 #aitools",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 092",
+      "headline": "Gemini 4 Argon update released.",
+      "sub": "Google released the Gemini 4 Argon update, a new computer program, on October 23, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Updated Google program name.",
+      "body": [
+        {
+          "t": "Gemini 4 Argon is the name of the updated Google program.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Helps create interactive tools.",
+      "body": [
+        {
+          "t": "The Gemini 4 Argon program helps users create interactive tools and 3D worlds.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Works for Pro subscribers.",
+      "body": [
+        {
+          "t": "The Gemini 4 Argon update works for developers and Pro subscribers, the paid Gemini app plan.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Test the update in the Gemini app.",
+      "items": [
+        "Test the Gemini 4 Argon update.",
+        "Open the Gemini app.",
+        "Use the chat program."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders/"
+}

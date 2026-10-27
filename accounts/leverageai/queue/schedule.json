@@ -1417,6 +1417,21 @@
       "caption": "Open the Gemini app on your phone or desktop. Tap the connected apps section and link your Google Sheets account. Upload a PDF of your brand guidelines or a folder with your logo and color codes. The hub reads these files and stores them for every request. \n\nPaste this prompt to test it on your current client project:\n\n\"Analyze my attached spreadsheet for monthly revenue and expenses. Summarize profit margins and flag any cost spikes. Then generate three social media graphics using my uploaded brand guidelines.\"\n\nThe AI reads the columns, calculates totals, and applies your exact colors and fonts to the drafts. You edit the output, not the raw data. This is available now to all Gemini app users worldwide. Use it for client proposals, monthly financial summaries, and your own marketing posts. Save this for later when you face scope creep or admin backlog.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #gemini #googleworkspace #smallbusinessadmin #financialinsights #branding #timeblocking #aiautomation",
       "status": "retired",
       "note": "RETIRED 2026-10-26 (housekeeping): duplicate draft of the same source page as post89-gemini-business-hub. Research now drops pages already used by any post."
+    },
+    {
+      "id": "post92-gemini-4-argon-proposals",
+      "date": "2026-10-31",
+      "slides": [
+        "accounts/leverageai/queue/post92-gemini-4-argon-proposals/slide01.png",
+        "accounts/leverageai/queue/post92-gemini-4-argon-proposals/slide02.png",
+        "accounts/leverageai/queue/post92-gemini-4-argon-proposals/slide03.png",
+        "accounts/leverageai/queue/post92-gemini-4-argon-proposals/slide04.png",
+        "accounts/leverageai/queue/post92-gemini-4-argon-proposals/slide05.png"
+      ],
+      "caption": "You spend too much time formatting rough meeting notes into client proposals. This workflow turns scattered notes into a polished proposal draft in minutes. It uses the Gemini 4 Argon update, which rolled out on October 23, 2026. You do not need new software. You only need the Gemini app and a paid Pro plan.\n\n Use this exact prompt to structure the output:\n\"Act as a business consultant. Turn the following raw notes into a clear client proposal. Include project scope, deliverables, timeline, and total cost. Use a professional tone. Keep it under 300 words. Notes: [paste your notes here]\"\nReview the draft. Send it to the client.\n\nThis works best for solo operators who handle sales and delivery alone. The model is fast at structuring text but weak at calculating complex pricing or legal terms. Always verify costs and contract details before sending. Save this for later when you have a new lead.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancertips #clientproposals #aiworkflow #businessautomation #consultinglife #smallbusinessowner #productivitytips #gemini4 #aitools",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post92-gemini-4-argon-proposals/reel.mp4"
     }
   ]
 }

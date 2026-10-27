@@ -4809,6 +4809,78 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post92-gemini-4-argon-proposals",
+      "graded": "2026-10-27",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Draft client proposals in 60 seconds.",
+        "sub": "Google released the Gemini 4 Argon update, a new computer program, on October 23, 2026.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "number-claim",
+        "stopping": "strong concrete result (60 seconds) is instantly relatable pain point for solo operators.",
+        "reason": "E's cover 'Draft client proposals in 60 seconds' uses a concrete number-claim shape (approved in batch 051-057), directly addressing the time cost of a universal task. The subtext is irrelevant but the cover itself is fully understandable and stops scrollers.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Draft client proposals in 60 seconds.",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "strong concrete result (60 seconds) is instantly relatable pain point for solo operators.",
+          "reason": "E's cover 'Draft client proposals in 60 seconds' uses a concrete number-claim shape (approved in batch 051-057), directly addressing the time cost of a universal task. The subtext is irrelevant but the cover itself is fully understandable and stops scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "You waste hours on proposal drafts.",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain point ('waste hours') directly ties to audience's daily frustration with proposal work.",
+          "reason": "B's 'You waste hours on proposal drafts' is a clear concrete-pain hook (per batch 2026-09-25 data) that stops scrollers. The subtext is irrelevant but the cover stands on its own as a recognizable pain.",
+          "authored": false
+        },
+        {
+          "headline": "Stop writing proposals from blank pages.",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Relatable pain ('blank pages') but less urgent than B's 'waste hours' cost.",
+          "reason": "F's 'Stop writing proposals from blank pages' describes a common frustration but frames it as a habit rather than a quantifiable cost (e.g., 'waste hours'). Still stops scrollers but slightly less powerfully than B.",
+          "authored": false
+        },
+        {
+          "headline": "Turn meeting notes into proposals.",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Vague solution ('turn notes into proposals') without pain context.",
+          "reason": "A's 'Turn meeting notes into proposals' is a generic instruction hook (disproven per batch 051-057) that doesn't name a pain or deficiency. Scrollers move on.",
+          "authored": false
+        },
+        {
+          "headline": "How do you draft proposals faster?",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "question",
+          "stopping": "Weak question hook ('how do you...') with no urgency.",
+          "reason": "C's 'How do you draft proposals faster?' is a weak question (not a concrete pain) that fails to stop scrollers. The subtext doesn't help.",
+          "authored": false
+        },
+        {
+          "headline": "Gemini 4 Argon update released.",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "Unexplained fragment ('Gemini 4 Argon update') that makes no sense to audience.",
+          "reason": "D's 'Gemini 4 Argon update released' is a fragment (unexplained acronym + 'update') that stops no one. Audience skips immediately (score <3 per rules).",
+          "authored": true
+        }
+      ]
     }
   ]
 }
