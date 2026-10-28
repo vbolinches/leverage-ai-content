@@ -4592,6 +4592,86 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post96-uscis-fee-adjustments-fy2027",
+      "graded": "2026-10-28",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No pagues tarifas viejas hoy",
+        "sub": "Los precios oficiales cambiaron en octubre",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "contrarian",
+        "stopping": "Clear, urgent instruction with no jargon. 'No pagues tarifas viejas' directly stops scrollers by addressing immediate action (today) and simple consequence (paying old fees) - perfect for audience needing to act now.",
+        "reason": "No overstatement, no unexplained terms. 'tarifas viejas' and 'precios oficiales' are everyday words.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No pagues tarifas viejas hoy",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Clear, urgent instruction with no jargon. 'No pagues tarifas viejas' directly stops scrollers by addressing immediate action (today) and simple consequence (paying old fees) - perfect for audience needing to act now.",
+          "reason": "No overstatement, no unexplained terms. 'tarifas viejas' and 'precios oficiales' are everyday words.",
+          "authored": false
+        },
+        {
+          "headline": "¿Toca tu caso esta subida nueva?",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Direct question ('¿Toca tu caso?') creates instant personal relevance. 'Revisa si tu trámite está en la lista' gives clear next step - makes readers stop to check their own situation.",
+          "reason": "No jargon. 'trámite' is common in immigration context for 'application'.",
+          "authored": false
+        },
+        {
+          "headline": "Suben un 3.5% en costos",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "Concrete number ('3.5%') and simple 'costos' stop scrollers. But 'año fiscal' is slightly technical and '2027' feels distant.",
+          "reason": "A 'fiscal' might confuse some, but not dangerously so.",
+          "authored": false
+        },
+        {
+          "headline": "Antes pagabas menos por 2027",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Vague phrasing ('Antes pagabas menos por 2027') doesn't clearly connect to reader's life. 'Ajuste por inflación' is understandable but not urgent.",
+          "reason": "Ambiguous 'por 2027' weakens impact.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "DHS cobra nuevas tarifas "
+            },
+            {
+              "t": ".",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "DANGEROUS OVERSTATEMENT: 'DHS cobra nuevas tarifas' implies fees changed today, but sub says 'desde 16 de octubre de 2026' (future date). Readers might panic or pay incorrectly.",
+          "reason": "Overstates consequence - costs trust. Score below 3.",
+          "authored": true
+        },
+        {
+          "headline": "No suben todos los trámites",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "UNEXPLAINED FRAGMENT: 'cargos de aplicación' is legal jargon. First-time reader has no idea what 'cargos' means (fees? charges?) or why it matters.",
+          "reason": "Not understandable on its own. Score below 3.",
+          "authored": false
+        }
+      ]
     }
   ]
 }
