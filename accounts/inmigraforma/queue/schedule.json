@@ -1356,10 +1356,13 @@
         "accounts/inmigraforma/queue/post82-sevis-corte-programado/slide05.png"
       ],
       "caption": "El sistema SEVIS tuvo un corte programado el 14 de septiembre de 2026 a las 8:00 PM (EDT) para una actualización. El guía oficial no menciona impacto en el estatus de estudiante.\n\nEn palabras simples:\nSEVIS tuvo un corte programado para una actualización. El corte comenzó el 14 de septiembre a las 8:00 PM.\n\nIn plain words: The SEVIS system had a scheduled outage on September 14, 2026, at 8:00 PM (EDT) for an update. The official guide does not mention impact on student status.\n\nFuente oficial: https://studyinthestates.dhs.gov/sevis-help-hub/sevis-release-planning-guide-6891\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#sevis #estudiantes #visa #estadounidenses #migracion #sevisupdate #greencard #immigration #studentstatus",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
       "video": "accounts/inmigraforma/queue/post82-sevis-corte-programado/reel.mp4",
-      "note": "HELD 2026-09-23 (owner's call): true but aimed at school officials rather than regular immigrants, so fresh posts go first. Goes back in the queue after them. RELEASED 2026-10-26 by the owner as held (unclear slides noted); fact-checked, no false claim found."
+      "note": "HELD 2026-09-23 (owner's call): true but aimed at school officials rather than regular immigrants, so fresh posts go first. Goes back in the queue after them. RELEASED 2026-10-26 by the owner as held (unclear slides noted); fact-checked, no false claim found.",
+      "published_media_id": "18033223133916572",
+      "published_on": "2026-10-30",
+      "facebook_page_posted": true
     },
     {
       "id": "post83-visa-bulletin-chart",
