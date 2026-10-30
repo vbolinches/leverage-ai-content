@@ -1207,8 +1207,11 @@
         "accounts/leverageai/queue/post77-code-review-flaws/slide04.png"
       ],
       "caption": "You’re hiring developers but AI-generated code can’t pass a basic review. 20-25 minutes per candidate, test for real skills with intentional flaws.  \n\nAsk them to spot critical errors in sample code (e.g., missing auth, `System.out` logging). If they miss obvious issues, they don’t understand their output.  \n\nCopy-paste this prompt:\n\nReview this code for critical flaws:\n\n- Missing authentication\n- `System.out` logging in production\n- Unhandled exceptions\n\nExplain why each is a problem and how to fix it.\n\nSave this workflow for your next dev interview.  \nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#ai #hiring #dev #tech #interview #recruiting #coding #developer #aihiring #devhiring",
-      "status": "queued",
-      "note": "HELD 2026-09-23 (owner's call): slides read as telegraphic fragments - a stranger cannot tell what to do, where, or whether it applies to them. Rewrite for clarity before publishing; restore by setting status to queued. RELEASED 2026-10-26 by the owner as held (unclear slides noted); fact-checked, no false claim found."
+      "status": "published",
+      "note": "HELD 2026-09-23 (owner's call): slides read as telegraphic fragments - a stranger cannot tell what to do, where, or whether it applies to them. Rewrite for clarity before publishing; restore by setting status to queued. RELEASED 2026-10-26 by the owner as held (unclear slides noted); fact-checked, no false claim found.",
+      "published_media_id": "18113753354624106",
+      "published_on": "2026-10-30",
+      "threads_posted": true
     },
     {
       "id": "post78-mcp-secure-client-data-integrations",
