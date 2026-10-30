@@ -1,0 +1,68 @@
+{
+  "slug": "post94-retell-ai-call-summaries",
+  "hook_candidates": [
+    {
+      "headline": "You miss call details daily.",
+      "sub": "Retell AI call summaries reached one hundred million monthly calls on October twenty seven."
+    },
+    {
+      "headline": "Who writes your call notes?",
+      "sub": "Retell AI call summaries reached one hundred million monthly calls on October twenty seven."
+    },
+    {
+      "headline": "Before you typed notes.",
+      "sub": "Retell AI call summaries reached one hundred million monthly calls on October twenty seven."
+    },
+    {
+      "headline": "Stop wasting admin hours.",
+      "sub": "Retell AI call summaries reached one hundred million monthly calls on October twenty seven."
+    },
+    {
+      "headline": "Automate client call notes.",
+      "sub": "Retell AI call summaries reached one hundred million monthly calls on October twenty seven."
+    }
+  ],
+  "art": "passport",
+  "caption": "You take client calls, handle delivery, and chase invoices. Writing detailed notes after every conversation eats an hour of your afternoon. You get a clean transcript and action items without typing a word.\n\nPaste this into ChatGPT after your call:\n\"Act as a client success manager. I will paste a raw Retell AI call transcript. Extract three clear action items, one client concern, and a polite follow-up email draft. Keep it under 150 words. Use bullet points. Wait for my transcript.\"\n\nThis works for solo consultants, freelancers, and small operators who handle their own sales and support. Check the Retell AI pricing page for current plan costs.\n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #solopreneur #freelancertips #clientcalls #automationtools #smallbusinessowner #productivityhacks #chatgptprompts #retellai #notionworkflow",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WF 094",
+      "headline": "Retell AI call summaries",
+      "sub": "Retell AI call summaries reached one hundred million monthly calls on October twenty seven.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IS",
+      "headline": "GPT-6 Astra model",
+      "body": "The GPT-6 Astra model, a computer program by OpenAI, runs inside the Retell AI service."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT DOES",
+      "headline": "Short call notes",
+      "body": "Retell AI writes short notes after calls and resolves over eighty percent of issues."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS",
+      "headline": "OpenAI programs",
+      "body": "New customers who pick OpenAI computer programs will keep using those same programs."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Do this",
+      "items": [
+        "Read the official page (link in caption)",
+        "Save this for later.",
+        "Retell AI writes notes."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://openai.com/index/retell-ai"
+}

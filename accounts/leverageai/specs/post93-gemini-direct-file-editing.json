@@ -1,0 +1,84 @@
+{
+  "slug": "post93-gemini-direct-file-editing",
+  "hook_candidates": [
+    {
+      "headline": "You still export files to edit them.",
+      "sub": "Google added direct file editing to the Gemini app, the free chat tool, on October 29, 2026."
+    },
+    {
+      "headline": "Why switch apps to fix a spreadsheet?",
+      "sub": "Google added direct file editing to the Gemini app, the free chat tool, on October 29, 2026."
+    },
+    {
+      "headline": "Stop exporting files. Edit inside chat.",
+      "sub": "Google added direct file editing to the Gemini app, the free chat tool, on October 29, 2026."
+    },
+    {
+      "headline": "Wasting hours switching between tools?",
+      "sub": "Google added direct file editing to the Gemini app, the free chat tool, on October 29, 2026."
+    },
+    {
+      "headline": "Gemini now handles file edits alone.",
+      "sub": "Google added direct file editing to the Gemini app, the free chat tool, on October 29, 2026."
+    }
+  ],
+  "art": "scales",
+  "caption": "You run sales, delivery, and admin alone. Switching between apps to tweak a proposal or invoice costs hours every week. Gemini now lets you edit documents, spreadsheets, and PDFs directly in the chat. You stay in one window. You finish faster.\n\nOpen the Gemini app or website. Upload your draft, invoice, or tracker. Type your changes or highlight sections you want fixed. Expand to full screen to edit directly. Ask Gemini to adjust formatting, update totals, or rewrite paragraphs. Check the output carefully. AI can misread complex tables or miss subtle tone shifts. Always review before sending to clients.\n\nCopy this prompt:\nUpload my draft proposal. Keep the pricing table intact. Rewrite the scope section to be stricter about revisions. Adjust the tone to sound firm but professional. Generate the updated version.\n\nThis works for freelancers, consultants, and small operators who handle their own paperwork. It is free and available in every language where Gemini runs. Save this for your next client draft.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#freelancetools #solopreneur #aiforbusiness #productivitytips #smallbusinessowner #consultantlife #aiworkflow #gemini #time-saving #adminhacks",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 093",
+      "headline": [
+        {
+          "t": "Gemini edits files."
+        }
+      ],
+      "sub": "Google added direct file editing to the Gemini app, the free chat tool, on October 29, 2026.",
+      "footer_right": "SWIPE"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Edit documents.",
+      "body": [
+        {
+          "t": "Direct file editing means changing documents without leaving the chat window."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Type changes.",
+      "body": [
+        {
+          "t": "For example, you can type changes into spreadsheets or highlight text for Gemini to fix."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Works for every user.",
+      "body": [
+        {
+          "t": "The new Gemini editing tool works for every user in every supported language."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Open the app today.",
+      "items": [
+        "Open the app today.",
+        "Generate files inside chat.",
+        "Edit documents inside chat."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/"
+}

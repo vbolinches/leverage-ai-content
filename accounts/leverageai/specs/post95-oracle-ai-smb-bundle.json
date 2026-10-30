@@ -1,0 +1,84 @@
+{
+  "slug": "post95-oracle-ai-smb-bundle",
+  "hook_candidates": [
+    {
+      "headline": "You still track invoices manually.",
+      "sub": "A new bundle handles the drag."
+    },
+    {
+      "headline": "Where does chat meet accounting?",
+      "sub": "Inside this October launch."
+    },
+    {
+      "headline": "Spreadsheet tracking yesterday.",
+      "sub": "Connected tools today."
+    },
+    {
+      "headline": "You lose hours on admin daily.",
+      "sub": "This combo cuts the drag."
+    },
+    {
+      "headline": "Two tools just joined forces.",
+      "sub": "Built for solo operators."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "Oracle and OpenAI launched a new bundle on October 27, 2026. It links ChatGPT Business with Oracle accounting programs. \n\nWhile you wait for the official Oracle integration, use ChatGPT Business to streamline your current workflow. Paste your raw client notes or draft invoices into a new chat and use this prompt:\n\n\"Act as my operations assistant. Review the attached notes. Generate a clean invoice table with line items, hours, and total. Then draft a polite email to the client attaching the invoice, requesting payment within 15 days, and offering a quick call if they have scope questions. Keep it under 100 words.\"\n\nThis works for any solo consultant or freelancer handling their own billing and follow-ups. The AI handles the formatting and tone; you review, send, and log it. Save this for later.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solopreneur #freelancerlife #smallbusinessai #chatgptworkflow #invoicingtips #crmtools #adminautomation #consultantlife #businessops #aitools",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 095",
+      "headline": [
+        {
+          "t": "Oracle AI bundle launched"
+        }
+      ],
+      "sub": "The Oracle AI Small Business Bundle launched on October 27, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Links OpenAI with Oracle",
+      "body": [
+        {
+          "t": "The Oracle AI Small Business Bundle links OpenAI, the chatbot maker, with Oracle accounting programs."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Aims at small companies",
+      "body": [
+        {
+          "t": "The Oracle AI Small Business Bundle aims at small companies, though exact rules are unclear."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Combines ChatGPT with Oracle",
+      "body": [
+        {
+          "t": "The Oracle AI Small Business Bundle combines ChatGPT Business with Oracle apps."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Start here",
+      "items": [
+        "Read the OpenAI post.",
+        "Save this for later.",
+        "Follow for daily tips."
+      ],
+      "cta_title": "Save this",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://openai.com/index/oracle-apps-in-chatgpt"
+}

@@ -1441,6 +1441,51 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post92-gemini-4-argon-proposals/reel.mp4"
+    },
+    {
+      "id": "post93-gemini-direct-file-editing",
+      "date": "2026-11-01",
+      "slides": [
+        "accounts/leverageai/queue/post93-gemini-direct-file-editing/slide01.png",
+        "accounts/leverageai/queue/post93-gemini-direct-file-editing/slide02.png",
+        "accounts/leverageai/queue/post93-gemini-direct-file-editing/slide03.png",
+        "accounts/leverageai/queue/post93-gemini-direct-file-editing/slide04.png",
+        "accounts/leverageai/queue/post93-gemini-direct-file-editing/slide05.png"
+      ],
+      "caption": "You run sales, delivery, and admin alone. Switching between apps to tweak a proposal or invoice costs hours every week. Gemini now lets you edit documents, spreadsheets, and PDFs directly in the chat. You stay in one window. You finish faster.\n\nOpen the Gemini app or website. Upload your draft, invoice, or tracker. Type your changes or highlight sections you want fixed. Expand to full screen to edit directly. Ask Gemini to adjust formatting, update totals, or rewrite paragraphs. Check the output carefully. AI can misread complex tables or miss subtle tone shifts. Always review before sending to clients.\n\nCopy this prompt:\nUpload my draft proposal. Keep the pricing table intact. Rewrite the scope section to be stricter about revisions. Adjust the tone to sound firm but professional. Generate the updated version.\n\nThis works for freelancers, consultants, and small operators who handle their own paperwork. It is free and available in every language where Gemini runs. Save this for your next client draft.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#freelancetools #solopreneur #aiforbusiness #productivitytips #smallbusinessowner #consultantlife #aiworkflow #gemini #time-saving #adminhacks",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post93-gemini-direct-file-editing/reel.mp4"
+    },
+    {
+      "id": "post94-retell-ai-call-summaries",
+      "date": "2026-11-02",
+      "slides": [
+        "accounts/leverageai/queue/post94-retell-ai-call-summaries/slide01.png",
+        "accounts/leverageai/queue/post94-retell-ai-call-summaries/slide02.png",
+        "accounts/leverageai/queue/post94-retell-ai-call-summaries/slide03.png",
+        "accounts/leverageai/queue/post94-retell-ai-call-summaries/slide04.png",
+        "accounts/leverageai/queue/post94-retell-ai-call-summaries/slide05.png"
+      ],
+      "caption": "You take client calls, handle delivery, and chase invoices. Writing detailed notes after every conversation eats an hour of your afternoon. You get a clean transcript and action items without typing a word.\n\nPaste this into ChatGPT after your call:\n\"Act as a client success manager. I will paste a raw Retell AI call transcript. Extract three clear action items, one client concern, and a polite follow-up email draft. Keep it under 150 words. Use bullet points. Wait for my transcript.\"\n\nThis works for solo consultants, freelancers, and small operators who handle their own sales and support. Check the Retell AI pricing page for current plan costs.\n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #solopreneur #freelancertips #clientcalls #automationtools #smallbusinessowner #productivityhacks #chatgptprompts #retellai #notionworkflow",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post94-retell-ai-call-summaries/reel.mp4"
+    },
+    {
+      "id": "post95-oracle-ai-smb-bundle",
+      "date": "2026-11-03",
+      "slides": [
+        "accounts/leverageai/queue/post95-oracle-ai-smb-bundle/slide01.png",
+        "accounts/leverageai/queue/post95-oracle-ai-smb-bundle/slide02.png",
+        "accounts/leverageai/queue/post95-oracle-ai-smb-bundle/slide03.png",
+        "accounts/leverageai/queue/post95-oracle-ai-smb-bundle/slide04.png",
+        "accounts/leverageai/queue/post95-oracle-ai-smb-bundle/slide05.png"
+      ],
+      "caption": "Oracle and OpenAI launched a new bundle on October 27, 2026. It links ChatGPT Business with Oracle accounting programs. \n\nWhile you wait for the official Oracle integration, use ChatGPT Business to streamline your current workflow. Paste your raw client notes or draft invoices into a new chat and use this prompt:\n\n\"Act as my operations assistant. Review the attached notes. Generate a clean invoice table with line items, hours, and total. Then draft a polite email to the client attaching the invoice, requesting payment within 15 days, and offering a quick call if they have scope questions. Keep it under 100 words.\"\n\nThis works for any solo consultant or freelancer handling their own billing and follow-ups. The AI handles the formatting and tone; you review, send, and log it. Save this for later.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solopreneur #freelancerlife #smallbusinessai #chatgptworkflow #invoicingtips #crmtools #adminautomation #consultantlife #businessops #aitools",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post95-oracle-ai-smb-bundle/reel.mp4"
     }
   ]
 }

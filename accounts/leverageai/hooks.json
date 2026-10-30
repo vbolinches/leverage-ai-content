@@ -4881,6 +4881,284 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post93-gemini-direct-file-editing",
+      "graded": "2026-10-30",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop exporting files. Edit inside chat.",
+        "sub": "Google added direct file editing to the Gemini app, the free chat tool, on October 29, 2026.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "contrarian",
+        "stopping": "immediate pain/solution",
+        "reason": "Clear pain (exporting files) + solution (edit inside chat) - instantly recognizable to solopreneurs. No jargon, no unexplained terms.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop exporting files. Edit inside chat.",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "immediate pain/solution",
+          "reason": "Clear pain (exporting files) + solution (edit inside chat) - instantly recognizable to solopreneurs. No jargon, no unexplained terms.",
+          "authored": false
+        },
+        {
+          "headline": "Wasting hours switching between tools?",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "relatable pain",
+          "reason": "Wasting hours is a universal pain, but 'fix a spreadsheet' is too narrow - most solopreneurs deal with multiple file types, not just spreadsheets.",
+          "authored": false
+        },
+        {
+          "headline": "You still export files to edit them.",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "specific pain but negative tone",
+          "reason": "Highlights the pain of exporting, but 'still' feels accusatory. Solopreneurs skip when they feel judged.",
+          "authored": false
+        },
+        {
+          "headline": "Why switch apps to fix a spreadsheet?",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "too narrow",
+          "reason": "Focuses only on 'fixing spreadsheets' - most solopreneurs work with diverse files (PDFs, docs, etc.), making this feel irrelevant.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Gemini edits files."
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "unexplained fragment",
+          "reason": "Uses 'Gemini' without explanation - first-time reader has no idea what this refers to. Instant skip.",
+          "authored": true
+        },
+        {
+          "headline": "Gemini now handles file edits alone.",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "unexplained + confusing",
+          "reason": "Same 'Gemini' confusion as A, plus 'handles file edits alone' is vague and unexplained. Feels like a broken fragment.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post94-retell-ai-call-summaries",
+      "graded": "2026-10-30",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "You miss call details daily.",
+        "sub": "Retell AI call summaries reached one hundred million monthly calls on October twenty seven.",
+        "rank": 1,
+        "score": 10.0,
+        "shape": "contrarian",
+        "stopping": "Concrete deficiency + stat: 'You miss call details daily.' — same cover as F, but the sub provides the stat ('reached 100M calls') which makes it feel credible. Solos stop to read the stat. Scored 10. (G is 1st, F is 2nd.)",
+        "reason": "Cover identical to F (strong pain point), but the sub's stat ('reached 100M calls') aligns with the account's high-reach data. Solos stop because it feels validated. Score 10.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You miss call details daily.",
+          "rank": 1,
+          "score": 10.0,
+          "shape": "contrarian",
+          "stopping": "Concrete deficiency + stat: 'You miss call details daily.' — same cover as F, but the sub provides the stat ('reached 100M calls') which makes it feel credible. Solos stop to read the stat. Scored 10. (G is 1st, F is 2nd.)",
+          "reason": "Cover identical to F (strong pain point), but the sub's stat ('reached 100M calls') aligns with the account's high-reach data. Solos stop because it feels validated. Score 10.",
+          "authored": false
+        },
+        {
+          "headline": "You miss call details daily.",
+          "rank": 2,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Concrete deficiency: 'You miss call details daily.' — solos instantly recognize this pain. Stops scrolls. Scored 9. (F is 2nd, G is 1st because G has the stat in caption.)",
+          "reason": "Cover names a real, specific deficiency solos face daily ('You miss call details daily'). Direct pain point. Stops scrolls. Score 9.",
+          "authored": false
+        },
+        {
+          "headline": "Who writes your call notes?",
+          "rank": 3,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Implied pain question + stat: 'Who writes your call notes?' — same cover as K, but sub has stat. Solos stop to read the stat. Scored 8. (L is 3rd, K is 4th.)",
+          "reason": "Cover identical to K (implies pain), but the sub's stat ('reached 100M calls') adds credibility. Solos stop to read the stat. Score 8.",
+          "authored": false
+        },
+        {
+          "headline": "Who writes your call notes?",
+          "rank": 4,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Implied pain question: 'Who writes your call notes?' — solos think 'Me!' and stop. But it's less direct than F/G. Scored 7. (K is 4th, L is 3rd because L has stat in sub.)",
+          "reason": "Cover implies pain (wasting time writing notes), but is a question. Solos stop, but not as strongly as direct pain. Score 7.",
+          "authored": false
+        },
+        {
+          "headline": "Automate client call notes.",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Same cover as A but with stat in sub. The cover still fails concrete-pain rule. Solos still scroll past 'Automate...' as instruction. The sub adds credibility but doesn't fix the cover. Scored 4. (B is 5th, A is 6th because B has the stat in caption.)",
+          "reason": "Cover text identical to A — still an instruction, not a pain. Solos scroll past. The sub's stat doesn't make the cover stop scrolling. Slightly better than A due to stat, but still mediocre. Score 4.",
+          "authored": false
+        },
+        {
+          "headline": "Automate client call notes.",
+          "rank": 6,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Instructional hook fails concrete-pain rule — solos scroll past 'how to' without pain context. Scored 4 for being mediocre but not fragmentary. Not bad, but not good enough to stop scrolls. (Note: A is the 6th-ranked hook, not the 1st.)",
+          "reason": "Cover is a task instruction ('Automate client call notes'), not a pain point. Solos scroll past vague 'how to' without concrete deficiency. Scores 4 — mediocre but not a fragment.",
+          "authored": false
+        },
+        {
+          "headline": "Stop wasting admin hours.",
+          "rank": 7,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Vague: 'Stop wasting admin hours.' — same as E, but sub has stat. The cover is still vague, so solos scroll past. The stat doesn't fix the cover. Scored 3. (I is 7th, E is 8th.)",
+          "reason": "Cover vague ('Stop wasting admin hours'), but sub has stat. Solos still scroll past because the cover doesn't name a concrete pain. Score 3.",
+          "authored": false
+        },
+        {
+          "headline": "Stop wasting admin hours.",
+          "rank": 8,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Vague: 'Stop wasting admin hours.' — solos hear this daily. No specific pain. Scrolls past. Scored 3. (E is 8th, I is 7th because I has stat in sub.)",
+          "reason": "Cover is vague and unoriginal ('Stop wasting admin hours'). Solos scroll past — they've heard this before. Score 3.",
+          "authored": false
+        },
+        {
+          "headline": "Before you typed notes.",
+          "rank": 9,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'Before you typed notes.' — no context, no pain, no clarity. Instant skip. Scored 1. (C is 9th, D is 10th, H 11th, J 12th — all fragments ranked by appearance.)",
+          "reason": "Cover is an incomplete fragment ('Before you typed notes?'). First-time reader cannot understand it. Solos skip instantly. Score 1.",
+          "authored": false
+        },
+        {
+          "headline": "Before you typed notes.",
+          "rank": 10,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Same cover as C — fragment. No context. Solos skip. Scored 1.",
+          "reason": "Cover fragment identical to C. No explanation. Solos skip. Score 1.",
+          "authored": false
+        },
+        {
+          "headline": "Retell AI call summaries",
+          "rank": 11,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'Retell AI call summaries' — unexplained term. Solos skip. Scored 1.",
+          "reason": "Cover is a fragment ('Retell AI call summaries'). No context — solos can't understand what 'Retell' means. Skips instantly. Score 1.",
+          "authored": true
+        },
+        {
+          "headline": "Retell AI call summaries",
+          "rank": 12,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'Retell AI call summaries' — same as H. Solos skip. Scored 1.",
+          "reason": "Cover fragment identical to H. Unexplained. Solos skip. Score 1.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post95-oracle-ai-smb-bundle",
+      "graded": "2026-10-30",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You lose hours on admin daily.",
+        "sub": "This combo cuts the drag.",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "contrarian",
+        "stopping": "concrete pain: 'lose hours' is visceral for time-strapped solopreneurs. 'Admin daily' specifies the task.",
+        "reason": "This is the strongest pain hook. 'Lose hours' is visceral and specific to the audience's daily reality. The sub ('cuts the drag') confirms the solution without vagueness.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You lose hours on admin daily.",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "concrete pain: 'lose hours' is visceral for time-strapped solopreneurs. 'Admin daily' specifies the task.",
+          "reason": "This is the strongest pain hook. 'Lose hours' is visceral and specific to the audience's daily reality. The sub ('cuts the drag') confirms the solution without vagueness.",
+          "authored": false
+        },
+        {
+          "headline": "You still track invoices manually.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Specific pain: 'track invoices manually' is a universal solopreneur headache. 'Still' implies outdated process.",
+          "reason": "Solid concrete pain hook. 'Track invoices manually' is a precise, high-friction task. Sub ('new bundle handles the drag') ties directly to the pain.",
+          "authored": false
+        },
+        {
+          "headline": "Spreadsheet tracking yesterday.",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Partially concrete ('spreadsheet tracking') but phrasing is passive and unclear. 'Connected tools today' sounds like a feature, not a pain solved.",
+          "reason": "The pain ('spreadsheet tracking') is real, but the cover reads like a generic feature announcement ('Connected tools today') rather than a problem solved. Weakens the stop.",
+          "authored": false
+        },
+        {
+          "headline": "Where does chat meet accounting?",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Abstract riddle: 'Where does chat meet accounting?' No context for the pain. Audience skips.",
+          "reason": "This is a fragment. 'Chat' and 'accounting' are unexplained terms. It's a riddle, not a pain point. First-time readers scroll past immediately.",
+          "authored": false
+        },
+        {
+          "headline": "Two tools just joined forces.",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Vague: 'Two tools just joined forces.' No pain, no audience relevance. Feels like generic news.",
+          "reason": "No concrete pain point. 'Tools' is meaningless without context. Solopreneurs scroll past vague corporate fluff.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Oracle AI bundle launched"
+            }
+          ],
+          "rank": 6,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Unexplained term: 'Oracle AI bundle' is a fragment. Audience has no idea what this means.",
+          "reason": "Violates the core rule: unexplained code/acronym. 'Oracle' is a random term (company? product?) with no context. First-time readers skip instantly.",
+          "authored": true
+        }
+      ]
     }
   ]
 }
