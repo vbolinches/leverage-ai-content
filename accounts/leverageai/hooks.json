@@ -5159,6 +5159,78 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post96-ai-basement-labor-workflow",
+      "graded": "2026-10-31",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You lose hours to routine replies.",
+        "sub": "AI drafts them while you manage.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "contrarian",
+        "stopping": "Concrete pain with quantifiable metric (\"lose hours\") + clear solution in sub.",
+        "reason": "B directly names a measurable pain point (\"lose hours\") and positions AI as the solution, perfectly aligning with the account's rule that concrete-pain hooks beat vague ones. The sub \"AI drafts them while you manage\" implies active control without overpromising. This is the only hook with a specific time metric.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You lose hours to routine replies.",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain with quantifiable metric (\"lose hours\") + clear solution in sub.",
+          "reason": "B directly names a measurable pain point (\"lose hours\") and positions AI as the solution, perfectly aligning with the account's rule that concrete-pain hooks beat vague ones. The sub \"AI drafts them while you manage\" implies active control without overpromising. This is the only hook with a specific time metric.",
+          "authored": false
+        },
+        {
+          "headline": "You used to write every reply.",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Names pain (writing replies) but lacks specificity; \"used to\" is vague and weakens urgency.",
+          "reason": "A identifies a common pain (writing replies) but fails to quantify it like B. \"Used to\" implies past behavior without emphasizing current cost, making it less compelling than B. Still better than the rest for naming a pain.",
+          "authored": false
+        },
+        {
+          "headline": "You still write every client note.",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Names pain (writing client notes) but \"client note\" is niche; sub \"Stop typing\" is weak action.",
+          "reason": "D uses a valid pain point but \"client note\" is less universal than \"replies\" (not all freelancers write notes). The sub \"Stop typing\" is vague and doesn't specify the benefit, making it weaker than A.",
+          "authored": false
+        },
+        {
+          "headline": "Who handles your daily grunt work?",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Cover asks a question about grunt work (acceptable), but sub uses unexplained fragment \"basement labor\".",
+          "reason": "C's cover is passable (names pain), but the sub's \"basement labor\" is a fragment that confuses readers. Since the cover itself is understandable, it scores above E/F, but the fragment prevents it from being a stopper.",
+          "authored": false
+        },
+        {
+          "headline": "OpenAI shifted how firms assign tasks.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Meta-commentary (OpenAI shift) + fragment \"basement labor\" in sub; cover fails to name a pain.",
+          "reason": "E's cover is meta-commentary (disproven rule) and the sub uses the unexplained fragment \"basement labor\". The hook fails to connect to the reader's pain, making it scroll-worthy.",
+          "authored": false
+        },
+        {
+          "headline": "Workplace automation",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Cover is a category (\"Workplace automation\") not a pain; sub is meta-commentary about OpenAI report.",
+          "reason": "F violates two confirmed rules: cover is a category (not a pain) and the sub is meta-commentary. No reader would stop to understand this; it's pure news, not a solution.",
+          "authored": true
+        }
+      ]
     }
   ]
 }

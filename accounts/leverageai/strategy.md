@@ -225,6 +225,10 @@ The hook grader is disproven: pre-publish hook grades (6.5-9.5) showed no correl
 
 Performance data not yet available in the brief. The performance brief provided does not include reach data for posts 93-95, so no conclusions can be drawn about their performance. The existing strategy remains unchanged as the brief does not provide new evidence to alter the Confirmed or Disproven sections.
 
+## Batch notes — posts 96-96 (2026-10-31)
+
+0.0 The performance brief confirms existing strategy (concrete-pain hooks, reel format) but does not settle any new hypothesis. No new data for the batch that wrote post96.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

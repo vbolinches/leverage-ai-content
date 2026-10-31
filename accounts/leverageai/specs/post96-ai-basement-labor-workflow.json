@@ -1,0 +1,68 @@
+{
+  "slug": "post96-ai-basement-labor-workflow",
+  "hook_candidates": [
+    {
+      "headline": "You still write every client note.",
+      "sub": "Stop typing drafts that AI handles now."
+    },
+    {
+      "headline": "Who handles your daily grunt work?",
+      "sub": "Your new basement labor does."
+    },
+    {
+      "headline": "You used to write every reply.",
+      "sub": "Now AI drafts them for your review."
+    },
+    {
+      "headline": "OpenAI shifted how firms assign tasks.",
+      "sub": "Grunt work moves to basement labor."
+    },
+    {
+      "headline": "You lose hours to routine replies.",
+      "sub": "AI drafts them while you manage."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "You stop doing the grunt work yourself. You set up computer programs to handle it, then you review and send. It is not about firing staff. It is about shifting your focus from typing to managing.\n\nPaste this into ChatGPT or Claude to start your basement labor queue:\n\"Act as my daily operations assistant. Draft three routine client follow-up emails based on these notes: [paste notes]. Keep the tone professional and direct. Do not send anything. Wait for my approval before formatting the final text.\"\n\nSave this for your next email batch. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #aiworkflow #freelancetips #businessautomation #chatgptprompts #smallbusinesstools #productivityhack #aiworkplace #solofounder #dailygrind",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 096",
+      "headline": "Workplace automation",
+      "sub": "OpenAI published The Future of the Firm analysis on workplace automation.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Computer programs",
+      "body": "Basement labor means computer programs that handle daily grunt work."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Routine emails",
+      "body": "You become a manager of your own basement labor programs that draft routine emails."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Human work",
+      "body": "The analysis states basement labor programs complement human work without replacing any jobs."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Daily workflow",
+      "items": [
+        "Read the OpenAI analysis.",
+        "Draft your routine emails.",
+        "Manage your daily workflow."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Bookmark this guide.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://openai.com/index/the-future-of-the-firm"
+}
