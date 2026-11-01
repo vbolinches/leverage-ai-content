@@ -1580,9 +1580,12 @@
         "accounts/inmigraforma/queue/post95-tps-elsalvador-reinscripcion/slide05.png"
       ],
       "caption": "USCIS publicó un aviso oficial sobre la reinscripción del estatus de protección temporal para ciudadanos de El Salvador. Si ya tienes este beneficio, puedes renovar tu permiso ahora mismo.\n\nEn palabras simples: el gobierno abrió el periodo para que los beneficiarios actuales mantengan su derecho a vivir y trabajar en Estados Unidos. Debes mandar los papeles a tiempo para no perder tu permiso de trabajo.\n\nTexto oficial: \"Current TPS beneficiaries from El Salvador may re-register during the registration period. Re-registration may be filed online or by mail using Form I-821.\" Esto dice literalmente que el periodo está abierto solo para quienes ya tienen el beneficio. En la práctica, significa que debes enviar el formulario I-821 a tiempo para mantener tu permiso de trabajo. La página no dice qué pasa si lo ignoras.\n\nUSCIS has opened the re-registration window for El Salvador TPS holders. Beneficiaries can now file Form I-821 online or by mail to keep their work authorization. In plain words: if you already have this protection, file your renewal now to keep working legally and avoid removal.\n\nGuarda esta guía para no olvidarte de la fecha. Información general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\nFuente oficial: https://www.uscis.gov/humanitarian/temporary-protected-status/temporary-protected-status-designated-country-el-salvador\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracioneeuu #tpselsalvador #permisodetrabajo #ciudadanias #papeles #inmigrantes #legalizacion #uscis #protecciontemporal",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/inmigraforma/queue/post95-tps-elsalvador-reinscripcion/reel.mp4"
+      "video": "accounts/inmigraforma/queue/post95-tps-elsalvador-reinscripcion/reel.mp4",
+      "published_media_id": "18139347529759102",
+      "published_on": "2026-11-01",
+      "facebook_page_posted": true
     },
     {
       "id": "post96-uscis-fee-adjustments-fy2027",
