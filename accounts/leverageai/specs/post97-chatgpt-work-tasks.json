@@ -1,0 +1,88 @@
+{
+  "slug": "post97-chatgpt-work-tasks",
+  "hook_candidates": [
+    {
+      "headline": "One hundred sixty five tracked tasks.",
+      "sub": "OpenAI released a report on ChatGPT work tasks, the daily jobs people ask the AI chatbot to do."
+    },
+    {
+      "headline": "You are still drafting routine steps manually.",
+      "sub": "OpenAI released a report on ChatGPT work tasks, the daily jobs people ask the AI chatbot to do."
+    },
+    {
+      "headline": "Which daily jobs should you automate?",
+      "sub": "OpenAI released a report on ChatGPT work tasks, the daily jobs people ask the AI chatbot to do."
+    },
+    {
+      "headline": "Manual admin becomes AI handled work.",
+      "sub": "OpenAI released a report on ChatGPT work tasks, the daily jobs people ask the AI chatbot to do."
+    },
+    {
+      "headline": "You are losing hours on routine steps.",
+      "sub": "OpenAI released a report on ChatGPT work tasks, the daily jobs people ask the AI chatbot to do."
+    }
+  ],
+  "art": "chat",
+  "caption": "OpenAI published a breakdown of how people use ChatGPT for daily work. The research tracks one hundred sixty five specific activities across individual user plans. You can use this dataset to identify which repetitive steps in your week are ready to automate.\n\nPaste this into any ChatGPT chat to build a custom task list:\n\nI run a small business. List 5 routine administrative or client communication tasks from the OpenAI work tasks report that take me more than 30 minutes a week. Give me a simple prompt for each one so I can automate the first draft. Keep the tone professional and direct.\n\nThis works on any standard ChatGPT subscription. The dataset covers work-related messages on individual plans and does not include enterprise accounts. Visit openai.com/signals/data-download to filter the full list by your region or activity group.\n\nSave this for later when you map out your weekly admin schedule.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancetools #chatgptworkflow #adminautomation #clientcommunication #smallbusinessai #dailyworkflow #productivitytips #businesstools #aiworkflow",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 097",
+      "headline": [
+        {
+          "t": "OpenAI work "
+        },
+        {
+          "t": "report.",
+          "c": "blue"
+        }
+      ],
+      "sub": "OpenAI released a report on ChatGPT work tasks, the daily jobs people ask the AI chatbot to do.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Routine steps.",
+      "body": [
+        {
+          "t": "The report defines work tasks as routine business steps, like drafting client emails."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Daily activities.",
+      "body": [
+        {
+          "t": "OpenAI research shows people bring one hundred sixty five work activities to the chatbot."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "User plans.",
+      "body": [
+        {
+          "t": "The data covers standard ChatGPT user plans, the regular subscriptions, and leaves out company accounts."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Visit the page.",
+      "items": [
+        "Visit the OpenAI data page.",
+        "Explore those work tasks.",
+        "Save this for later."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://openai.com/index/chatgpt-expanding-world-of-work/"
+}

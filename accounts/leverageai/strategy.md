@@ -229,6 +229,10 @@ Performance data not yet available in the brief. The performance brief provided 
 
 0.0 The performance brief confirms existing strategy (concrete-pain hooks, reel format) but does not settle any new hypothesis. No new data for the batch that wrote post96.
 
+## Batch notes — posts 97-97 (2026-11-02)
+
+The hook grader is disproven: pre-publish hook grades (6.0-9.5) showed no correlation with reach (2-100) across 4 posts (post60:9.0/100, post55:8.6/62, post89:6.0/2, post56:9.5/2). Concrete-pain hooks (cost/mistake/change) drive higher reach than vague/technical or news-peg hooks (best: post60 100, post55 62; worst: post89 2, post56 2). Reel format is necessary for reach (post56 carousel: 2 reach, post89 reel: 2 reach due to hook not being a concrete pain). post60 (9.0/100), post55 (8.6/62), post89 (6.0/2), post56 (9.5/2)
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

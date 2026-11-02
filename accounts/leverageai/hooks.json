@@ -5231,6 +5231,51 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post97-chatgpt-work-tasks",
+      "graded": "2026-11-02",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You are losing hours on routine steps.",
+        "sub": "OpenAI released a report on ChatGPT work tasks, the daily jobs people ask the AI chatbot to do.",
+        "rank": 1,
+        "score": 7.0,
+        "shape": "contrarian",
+        "stopping": "concrete pain: 'losing hours' names the deficiency directly, not a category. Solves a daily pain point without fluff. 7/10 is strong for this account's average.",
+        "reason": "Concrete pain (losing hours) > vague question (A) or dry number (E). Matches 'change/before-after' rule. Solves the audience's actual pain.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You are losing hours on routine steps.",
+          "rank": 1,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "concrete pain: 'losing hours' names the deficiency directly, not a category. Solves a daily pain point without fluff. 7/10 is strong for this account's average.",
+          "reason": "Concrete pain (losing hours) > vague question (A) or dry number (E). Matches 'change/before-after' rule. Solves the audience's actual pain.",
+          "authored": false
+        },
+        {
+          "headline": "Manual admin becomes AI handled work.",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "Change statement ('Manual admin becomes AI handled') but no pain. Feels like a category, not a deficiency. 5/10 is mediocre for this account.",
+          "reason": "Describes a change but doesn't name the pain (e.g., 'losing hours'). Feels like a category, not a deficiency. Weakens it.",
+          "authored": false
+        },
+        {
+          "headline": "Which daily jobs should you automate?",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "question",
+          "stopping": "Vague question ('Which daily jobs...') that doesn't name a pain or deficiency. Scrolling past is easy. 4/10 is mediocre.",
+          "reason": "Generic question. Audience scrolls past vague questions. Doesn't solve a concrete pain (e.g., 'losing hours' in C).",
+          "authored": false
+        }
+      ]
     }
   ]
 }

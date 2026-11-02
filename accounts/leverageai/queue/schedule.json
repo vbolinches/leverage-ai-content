@@ -1510,6 +1510,21 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post96-ai-basement-labor-workflow/reel.mp4"
+    },
+    {
+      "id": "post97-chatgpt-work-tasks",
+      "date": "2026-11-05",
+      "slides": [
+        "accounts/leverageai/queue/post97-chatgpt-work-tasks/slide01.png",
+        "accounts/leverageai/queue/post97-chatgpt-work-tasks/slide02.png",
+        "accounts/leverageai/queue/post97-chatgpt-work-tasks/slide03.png",
+        "accounts/leverageai/queue/post97-chatgpt-work-tasks/slide04.png",
+        "accounts/leverageai/queue/post97-chatgpt-work-tasks/slide05.png"
+      ],
+      "caption": "OpenAI published a breakdown of how people use ChatGPT for daily work. The research tracks one hundred sixty five specific activities across individual user plans. You can use this dataset to identify which repetitive steps in your week are ready to automate.\n\nPaste this into any ChatGPT chat to build a custom task list:\n\nI run a small business. List 5 routine administrative or client communication tasks from the OpenAI work tasks report that take me more than 30 minutes a week. Give me a simple prompt for each one so I can automate the first draft. Keep the tone professional and direct.\n\nThis works on any standard ChatGPT subscription. The dataset covers work-related messages on individual plans and does not include enterprise accounts. Visit openai.com/signals/data-download to filter the full list by your region or activity group.\n\nSave this for later when you map out your weekly admin schedule.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancetools #chatgptworkflow #adminautomation #clientcommunication #smallbusinessai #dailyworkflow #productivitytips #businesstools #aiworkflow",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post97-chatgpt-work-tasks/reel.mp4"
     }
   ]
 }
