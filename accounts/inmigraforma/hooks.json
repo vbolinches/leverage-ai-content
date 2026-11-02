@@ -4672,6 +4672,140 @@
           "authored": false
         }
       ]
+    },
+    {
+      "slug": "post97-sileiri-doe-sin-costo",
+      "graded": "2026-11-02",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Antes costaba, ahora no hay cobro.",
+        "sub": "Cambio oficial, 2026",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "number-claim",
+        "stopping": "simple contrast (before/now) using common word 'cobro' - instantly understandable for non-lawyers. No jargon, no false hope. Stops scrollers cold.",
+        "reason": "Simple, clear, everyday language. 'Antes costaba' (before it cost) is how people actually talk. 'Cobro' is the word they use for 'fee' in daily life. Perfect stopper.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Antes costaba, ahora no hay cobro.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "simple contrast (before/now) using common word 'cobro' - instantly understandable for non-lawyers. No jargon, no false hope. Stops scrollers cold.",
+          "reason": "Simple, clear, everyday language. 'Antes costaba' (before it cost) is how people actually talk. 'Cobro' is the word they use for 'fee' in daily life. Perfect stopper.",
+          "authored": false
+        },
+        {
+          "headline": "El gobierno borra el cobro de revisión.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "number-claim",
+          "stopping": "Complete sentence with clear subject ('gobierno'), but 'revisión' is slightly technical. Still stops scrollers because 'cobro' is understood.",
+          "reason": "'Revisión' might confuse some, but 'gobierno' and 'cobro' make it understandable. Better than A/D which use 'casos' or 'revisión' alone.",
+          "authored": false
+        },
+        {
+          "headline": "Cero dólares para volver a abrir casos.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "Uses 'cero dólares' (clear), but 'volver a abrir casos' uses legal jargon. 'Casos' is not how people describe their immigration process - they'd say 'mi caso' but not 'abrir casos'.",
+          "reason": "Jargon in 'casos' lowers stop power. People might scroll past wondering what 'abrir casos' means.",
+          "authored": false
+        },
+        {
+          "headline": "Pides la revisión sin gastar dinero.",
+          "rank": 4,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "Clear 'sin gastar dinero', but 'revisión' is ambiguous. People don't use 'revisión' for immigration - they'd say 'apelo' or 'corregir'.",
+          "reason": "'Revisión' is the same problem as F - not everyday language. Slightly worse than F because 'pides' makes it sound like an action they can take, but 'revisión' is unclear.",
+          "authored": false
+        },
+        {
+          "headline": "Dejas de pagar si tu caso fue negado.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "False implication: 'Dejas de pagar si tu caso fue negado' suggests you don't pay for denied cases, but actually denied cases often require payment to appeal. Makes reader think they're safe when they're not - a trust-killer.",
+          "reason": "Overstates consequence: claims no payment for denied cases, which is false. This is the override rule - false claim, score below 3.",
+          "authored": false
+        },
+        {
+          "headline": "Elimina tarifa oficial.",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "Fragment: 'Elimina tarifa oficial' is an incomplete command. First-time readers can't understand it ('Eliminates official fee' - who? What? Why?).",
+          "reason": "Unexplained fragment. No subject, no context. First-time readers skip it immediately - score below 3 per the rule.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post98-removing-deference-prior-approvals",
+      "graded": "2026-11-02",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "¿El permiso concedido ya no vale?",
+        "sub": "La propuesta afecta a solicitantes",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "question",
+        "stopping": "Direct question about their personal experience ('permiso concedido') using familiar words. They'd pause to find out if this affects them personally. No jargon, no alarm, just clarity about a change they'd worry about. (Scored 9 because it's the only one that feels like something they'd actually say to a friend.)",
+        "reason": "Clear, personal, and actionable. Uses 'permiso' (permit) and 'vale' (valid) - terms they understand. Asks the exact question they'd have. No jargon, no false alarm.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "¿El permiso concedido ya no vale?",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "question",
+          "stopping": "Direct question about their personal experience ('permiso concedido') using familiar words. They'd pause to find out if this affects them personally. No jargon, no alarm, just clarity about a change they'd worry about. (Scored 9 because it's the only one that feels like something they'd actually say to a friend.)",
+          "reason": "Clear, personal, and actionable. Uses 'permiso' (permit) and 'vale' (valid) - terms they understand. Asks the exact question they'd have. No jargon, no false alarm.",
+          "authored": false
+        },
+        {
+          "headline": "Antes permitía usar el permiso",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "before-after",
+          "stopping": "Simple contrast ('Antes... Ahora') they can instantly grasp. 'Permiso' and 'revisar' are everyday words. Explains the change without confusion. (Scored 8 because it's almost as good as D, but less personal than a question.)",
+          "reason": "Clear before/after structure. No jargon. 'Antes permitía usar el permiso' is how they'd explain it to family. Perfect for the audience.",
+          "authored": false
+        },
+        {
+          "headline": "La propuesta de cambio exige revisar",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "before-after",
+          "stopping": "Confusing jargon ('propuesta de cambio', 'solicitud nueva desde cero') makes them scroll. 'Solicitud' is familiar, but 'propuesta' sounds like a government document they'd ignore. (Scored 5 because it's mediocre - not alarming, but too bureaucratic.)",
+          "reason": "Uses unfamiliar terms ('propuesta') that make it feel like a legal notice. 'Solicitud' is okay, but the rest is confusing. They'd skip it as 'not for me'.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "La regla de aprobaciones previas "
+            },
+            {
+              "t": "cambia.",
+              "c": "blue"
+            }
+          ],
+          "rank": 4,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "Jargon-heavy ('aprobaciones previas') and incomplete. They'd stop to read it, then realize they don't understand 'aprobaciones' and scroll past. (Scored 4 because it's confusing but not as bad as E.)",
+          "reason": "Main hook is a complete sentence, but 'aprobaciones previas' is meaningless jargon. Sub is a fragment ('El permiso concedido para casos iguales'). They'd think 'What is this?'",
+          "authored": true
+        }
+      ]
     }
   ]
 }

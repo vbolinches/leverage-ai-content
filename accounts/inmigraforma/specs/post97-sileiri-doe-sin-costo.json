@@ -1,0 +1,81 @@
+{
+  "slug": "post97-sileiri-doe-sin-costo",
+  "hook_candidates": [
+    {
+      "headline": "El gobierno borra el cobro de revisión.",
+      "sub": "Orden judicial, 2026"
+    },
+    {
+      "headline": "Cero dólares para volver a abrir casos.",
+      "sub": "Nuevo aviso oficial, 2026"
+    },
+    {
+      "headline": "Dejas de pagar si tu caso fue negado.",
+      "sub": "Actualización judicial, 2026"
+    },
+    {
+      "headline": "Pides la revisión sin gastar dinero.",
+      "sub": "Regla nueva, 2026"
+    },
+    {
+      "headline": "Antes costaba, ahora no hay cobro.",
+      "sub": "Cambio oficial, 2026"
+    }
+  ],
+  "art": "document",
+  "caption": "USCIS anunció que ya no cobra para pedir la reapertura de ciertos casos. Si tu solicitud fue negada entre abril de 2025 y abril de 2026, puedes solicitar que la oficina vuelva a revisarla sin pagar la tarifa habitual. El aviso explica que este cambio responde a una orden judicial reciente y que no hay fecha límite para hacerlo.\n\nEn palabras simples:\n\"Sileiri Doe class members may request reopening or reconsideration of an adverse decision without paying the applicable fee for applications filed between April 1, 2025, and April 21, 2026.\"\nEsto significa que la oficina federal no cobrará por revisar decisiones negativas en ese periodo. La página no dice qué pasa si lo ignoras.\n\nEnglish recap: USCIS has removed the fee for reopening specific denied cases following a recent court order. In plain words: You can ask them to review your denied case again without paying the usual charge.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts/litigation-related-update-sileiri-doe-class-members-may-request-reopening-or-reconsideration-of-an\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n\n#inmigracion #greencard #uscis #papeles #estadosunidos #inmigrantes #leyes #actualidad #papelesenregla #inmigraforma",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 097",
+      "headline": "Elimina tarifa oficial.",
+      "sub": "La orden judicial elimina tarifa, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Elimina tarifa oficial.",
+      "body": [
+        {
+          "t": "Una orden judicial reciente elimina la tarifa oficial para pedir que USCIS revise decisiones negativas."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "USCIS vuelve a estudiar.",
+      "body": [
+        {
+          "t": "La reapertura de un caso significa que USCIS vuelve a estudiar una solicitud que ya fue denegada."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "Solicita sin costo.",
+      "body": [
+        {
+          "t": "La eliminación del costo permite a las personas solicitar la reapertura sin pagar dinero adicional."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUE HACER",
+      "headline": "Consulta página oficial.",
+      "items": [
+        "Lee las instrucciones oficiales.",
+        "Pide la revisión sin pagar dinero.",
+        "Habla con un abogado si puedes.",
+        "Revisa la web de USCIS hoy."
+      ],
+      "cta_title": "Guarda.",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/alerts/litigation-related-update-sileiri-doe-class-members-may-request-reopening-or-reconsideration-of-an"
+}

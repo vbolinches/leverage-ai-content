@@ -1,0 +1,95 @@
+{
+  "slug": "post98-removing-deference-prior-approvals",
+  "hook_candidates": [
+    {
+      "headline": "Error: usar el permiso concedido",
+      "sub": "La regla de aprobaciones previas ya no"
+    },
+    {
+      "headline": "¿El permiso concedido ya no vale?",
+      "sub": "La propuesta afecta a solicitantes"
+    },
+    {
+      "headline": "Antes permitía usar el permiso",
+      "sub": "Ahora exige revisar cada solicitud"
+    },
+    {
+      "headline": "La propuesta de cambio exige revisar",
+      "sub": "Cada solicitud nueva desde cero"
+    },
+    {
+      "headline": "Revisar cada solicitud nueva",
+      "sub": "La regla de aprobaciones previas ya no"
+    }
+  ],
+  "art": "newspaper",
+  "caption": "El gobierno propuso cambiar una regla que permitía usar aprobaciones anteriores para nuevos casos. Ahora revisarán cada petición nueva desde el inicio. Esto afecta a quien ya tuvo un permiso concedido antes.\n\nEn palabras simples: Antes, si te aprobaban algo, podías usar ese mismo papel para pedir algo parecido. Ahora te pedirán todos los documentos de nuevo. Piénsalo así: igual que en el banco, donde cada préstamo nuevo requiere revisar tus papeles otra vez.\n\nOfficial text: \"Proposed removal of 8 CFR 214.1(c)(5)... No longer deferring to prior approvals for similar cases.\"\nQué dice en palabras normales: El texto oficial propone borrar una regla que daba validez automática a decisiones pasadas.\nQué significa para ti: Si pides algo parecido a lo que ya te aprobaron, el gobierno pedirá revisar toda tu documentación desde cero.\nQué pasa si lo ignoras: La página no dice qué pasa si lo ignoras.\n\nIn plain words: The government wants to review every new application from scratch instead of accepting past approvals. This means extra steps for anyone with previous permits. Check the official page to see if it applies to you.\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #green_card #uscis #papeles #leyes #estadosunidos #noticias #visa #documentos #abogado",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 098",
+      "headline": [
+        {
+          "t": "La regla de aprobaciones previas "
+        },
+        {
+          "t": "cambia.",
+          "c": "blue"
+        }
+      ],
+      "sub": "El permiso concedido para casos iguales.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "La regla",
+      "body": [
+        {
+          "t": "La regla de aprobaciones previas permitía usar un permiso ya concedido para casos iguales.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "La propuesta",
+      "body": [
+        {
+          "t": "La propuesta de cambio exige revisar cada solicitud nueva desde cero, como un permiso de trabajo renovado.",
+          "c": "green",
+          "b": true
+        }
+      ],
+      "footer_right": "Fuente: federalregister.gov"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "La propuesta",
+      "body": [
+        {
+          "t": "La propuesta afecta a solicitantes que ya recibieron aprobaciones oficiales en el pasado.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUE HACER",
+      "headline": "Consulte",
+      "items": [
+        "Lea los detalles oficiales en el registro federal",
+        "Consulte a un abogado de inmigración",
+        "El permiso concedido ya no vale para casos iguales"
+      ],
+      "cta_title": "Guarda esto",
+      "cta_sub": "Sigue a @inmigraforma",
+      "footer_right": "Info general, no asesoría legal."
+    }
+  ],
+  "source_url": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility"
+}
