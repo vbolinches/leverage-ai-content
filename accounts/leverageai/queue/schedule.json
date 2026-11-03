@@ -1495,9 +1495,12 @@
         "accounts/leverageai/queue/post95-oracle-ai-smb-bundle/slide05.png"
       ],
       "caption": "Oracle and OpenAI launched a new bundle on October 27, 2026. It links ChatGPT Business with Oracle accounting programs. \n\nWhile you wait for the official Oracle integration, use ChatGPT Business to streamline your current workflow. Paste your raw client notes or draft invoices into a new chat and use this prompt:\n\n\"Act as my operations assistant. Review the attached notes. Generate a clean invoice table with line items, hours, and total. Then draft a polite email to the client attaching the invoice, requesting payment within 15 days, and offering a quick call if they have scope questions. Keep it under 100 words.\"\n\nThis works for any solo consultant or freelancer handling their own billing and follow-ups. The AI handles the formatting and tone; you review, send, and log it. Save this for later.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solopreneur #freelancerlife #smallbusinessai #chatgptworkflow #invoicingtips #crmtools #adminautomation #consultantlife #businessops #aitools",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post95-oracle-ai-smb-bundle/reel.mp4"
+      "video": "accounts/leverageai/queue/post95-oracle-ai-smb-bundle/reel.mp4",
+      "published_media_id": "18125809075932411",
+      "published_on": "2026-11-03",
+      "threads_posted": true
     },
     {
       "id": "post96-ai-basement-labor-workflow",
