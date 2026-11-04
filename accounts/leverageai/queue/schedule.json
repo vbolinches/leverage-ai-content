@@ -1513,9 +1513,12 @@
         "accounts/leverageai/queue/post96-ai-basement-labor-workflow/slide05.png"
       ],
       "caption": "You stop doing the grunt work yourself. You set up computer programs to handle it, then you review and send. It is not about firing staff. It is about shifting your focus from typing to managing.\n\nPaste this into ChatGPT or Claude to start your basement labor queue:\n\"Act as my daily operations assistant. Draft three routine client follow-up emails based on these notes: [paste notes]. Keep the tone professional and direct. Do not send anything. Wait for my approval before formatting the final text.\"\n\nSave this for your next email batch. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #aiworkflow #freelancetips #businessautomation #chatgptprompts #smallbusinesstools #productivityhack #aiworkplace #solofounder #dailygrind",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post96-ai-basement-labor-workflow/reel.mp4"
+      "video": "accounts/leverageai/queue/post96-ai-basement-labor-workflow/reel.mp4",
+      "published_media_id": "18017958191748319",
+      "published_on": "2026-11-04",
+      "threads_posted": true
     },
     {
       "id": "post97-chatgpt-work-tasks",
