@@ -1,6 +1,78 @@
 {
   "entries": [
     {
+      "slug": "post100-gemini-business-profile",
+      "graded": "2026-11-04",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Gemini Business Profile connection",
+        "sub": "Google released the Gemini Business Profile connection in June.",
+        "rank": 1,
+        "score": 1.0,
+        "shape": "category",
+        "stopping": "Named a feature (Gemini Business Profile) without context. Audience can't understand it's a pain point. Pure category name, violates floor rule.",
+        "reason": "This is a category name, not a pain/change. First-time reader has no way to know what this means or why it matters. Scores lowest.",
+        "authored": true
+      },
+      "candidates": [
+        {
+          "headline": "Gemini Business Profile connection",
+          "rank": 1,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Named a feature (Gemini Business Profile) without context. Audience can't understand it's a pain point. Pure category name, violates floor rule.",
+          "reason": "This is a category name, not a pain/change. First-time reader has no way to know what this means or why it matters. Scores lowest.",
+          "authored": true
+        },
+        {
+          "headline": "Manual edits are now automatic.",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Fragment: 'Manual edits are now automatic' — no context for what edits or why it matters. Audience assumes it's irrelevant and scrolls.",
+          "reason": "Complete sentence but unexplained fragment. 'Manual edits' could mean anything (code, design, etc.). Audience skips because it's not a concrete pain they recognize.",
+          "authored": false
+        },
+        {
+          "headline": "Is your search profile outdated?",
+          "rank": 3,
+          "score": 2.5,
+          "shape": "question",
+          "stopping": "Question with undefined terms: 'search profile' isn't a recognized pain point. Audience doesn't know what to answer and scrolls.",
+          "reason": "Question format but 'search profile' is vague and unexplained. Audience sees no urgency or clarity.",
+          "authored": false
+        },
+        {
+          "headline": "Stop manually updating your search page.",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "change",
+          "stopping": "Vague 'search page' — implies Google Business Profile but doesn't name it. Audience wonders 'What search page?' and scrolls.",
+          "reason": "Close to concrete but 'search page' isn't a term solo operators use. Still feels like a fragment.",
+          "authored": false
+        },
+        {
+          "headline": "Lose 15 minutes on every profile update.",
+          "rank": 5,
+          "score": 3.5,
+          "shape": "number-claim",
+          "stopping": "Lacks clarity: 'Lose 15 minutes' (should be 'save') and 'profile' is undefined. Audience questions if it's relevant.",
+          "reason": "Concrete number but poor phrasing ('lose' vs 'save') and undefined 'profile'. Weak but slightly better than others.",
+          "authored": false
+        },
+        {
+          "headline": "Cut profile editing time by 1 hour.",
+          "rank": 6,
+          "score": 4.0,
+          "shape": "change",
+          "stopping": "Best option: 'Cut profile editing time' implies a clear, time-saving pain. 'Profile' is ambiguous but less severe than others.",
+          "reason": "Most concrete pain point (time saved) among all. 'Profile' is still vague but least bad.",
+          "authored": false
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,
@@ -5274,6 +5346,82 @@
           "stopping": "Vague question ('Which daily jobs...') that doesn't name a pain or deficiency. Scrolling past is easy. 4/10 is mediocre.",
           "reason": "Generic question. Audience scrolls past vague questions. Doesn't solve a concrete pain (e.g., 'losing hours' in C).",
           "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post99-claude-invoice-link",
+      "graded": "2026-11-04",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "Billing used to take twenty minutes.",
+        "sub": "Now, Claude handles client details and invoices in seconds — no more manual typing.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "Concrete pain (20 mins billing) + clear solution (Claude in seconds), directly addresses daily pain. Audience stops immediately because it's their reality.",
+        "reason": "Best possible hook: names specific pain (20 minutes wasted), shows change (seconds), and the sub gives the solution. No fluff.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Billing used to take twenty minutes.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain (20 mins billing) + clear solution (Claude in seconds), directly addresses daily pain. Audience stops immediately because it's their reality.",
+          "reason": "Best possible hook: names specific pain (20 minutes wasted), shows change (seconds), and the sub gives the solution. No fluff.",
+          "authored": false
+        },
+        {
+          "headline": "You still type client details manually.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Direct pain ('still type manually') with implied solution. Stronger than B because it's active ('still' implies current struggle).",
+          "reason": "Names the pain directly ('type manually'), which every freelancer feels. Sub explains how to fix it. Better than B because 'still' creates urgency.",
+          "authored": false
+        },
+        {
+          "headline": "Billing used to take twenty minutes.",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Pain stated ('20 minutes billing'), but sub is feature-focused ('added Claude link'). No benefit explained. Audience scrolls past because it's just a feature.",
+          "reason": "Cover has a pain point, but sub doesn't solve it. It's a 'what' not a 'why'. Audience knows they can't stop for a feature dump.",
+          "authored": false
+        },
+        {
+          "headline": "Can Claude draft your client invoices?",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Unexplained fragment ('Can Claude draft...?'). First-time reader has no idea what this means or why they should care. Skipped immediately.",
+          "reason": "Classic fragment hook. It's a question without an answer, so it doesn't stop anyone. Audience skips because it's confusing and not a pain point.",
+          "authored": false
+        },
+        {
+          "headline": "25 invoices a month on the free plan.",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Random number ('25 invoices') with no context or pain. Audience thinks 'so what?' and scrolls past. Not a pain point, just a product feature.",
+          "reason": "Not a pain hook. It's a statistic that doesn't relate to the audience's struggle. They scroll because it's irrelevant.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Claude links to billing now."
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Nonsense phrase ('Claude links to billing now'). Grammatically broken and uninterpretable. Audience skips because it's confusing.",
+          "reason": "Worst possible hook: it's a fragment with bad grammar. First-time reader can't understand it at all, so they skip immediately.",
+          "authored": true
         }
       ]
     }

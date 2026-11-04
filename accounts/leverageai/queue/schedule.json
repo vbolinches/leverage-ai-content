@@ -1531,6 +1531,49 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post97-chatgpt-work-tasks/reel.mp4"
+    },
+    {
+      "id": "post98-gemini-4-argon-proposals",
+      "date": "2026-11-06",
+      "slides": [
+        "accounts/leverageai/queue/post98-gemini-4-argon-proposals/slide01.png",
+        "accounts/leverageai/queue/post98-gemini-4-argon-proposals/slide02.png",
+        "accounts/leverageai/queue/post98-gemini-4-argon-proposals/slide03.png",
+        "accounts/leverageai/queue/post98-gemini-4-argon-proposals/slide04.png",
+        "accounts/leverageai/queue/post98-gemini-4-argon-proposals/slide05.png"
+      ],
+      "caption": "You spend hours turning meeting notes and scope docs into polished client proposals. Gemini 4 Argon cuts that work down to minutes. It reads your rough project context and builds a structured deck you can send straight to prospects.\n\nOpen the Gemini app. Paste this exact prompt:\n\"Act as a senior consultant. I will paste rough project notes, client goals, and scope details. Turn them into a structured client proposal deck. Include an executive summary, deliverables, timeline, pricing table, and next steps. Keep the tone professional and direct. Output as slide-by-slide markdown.\"\n\nThis workflow runs in the Gemini mobile app. You need a paid Google AI Pro or Ultra subscription to access it. The free tier does not support this feature. It handles structure and drafting well, but you still need to verify pricing numbers and adjust tone to match your brand.\n\nSave this reel for your next client pitch. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #solopreneur #freelancetools #clientproposals #geminiapp #consultingtips #businessautomation #timemanagement #nocode #solobusiness",
+      "status": "queued"
+    },
+    {
+      "id": "post99-claude-invoice-link",
+      "date": "2026-11-07",
+      "slides": [
+        "accounts/leverageai/queue/post99-claude-invoice-link/slide01.png",
+        "accounts/leverageai/queue/post99-claude-invoice-link/slide02.png",
+        "accounts/leverageai/queue/post99-claude-invoice-link/slide03.png",
+        "accounts/leverageai/queue/post99-claude-invoice-link/slide04.png",
+        "accounts/leverageai/queue/post99-claude-invoice-link/slide05.png"
+      ],
+      "caption": "Invoice My Clients now connects directly to Claude. You can link the two through their MCP server. This means you can draft invoices, check client records, and manage estimates using plain language instead of clicking through menus.\n\nOpen Claude on web, desktop, or mobile. Go to Settings, then Connectors, and choose Add custom connector. Sign in with your Invoice My Clients account and approve the permissions. Custom connectors depend on your Claude plan and workspace settings.\n\nEvery Invoice My Clients subscription supports this link, including the free tier. Plan limits still apply, such as the twenty-five invoice cap on the free plan. Check the pricing page for feature details.\n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#claudeai #invoicemyclients #solopreneur #freelancetools #smallbusinessadmin #billingautomation #consultantlife #workflowtips #adminhacks #businessowner",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post99-claude-invoice-link/reel.mp4"
+    },
+    {
+      "id": "post100-gemini-business-profile",
+      "date": "2026-11-08",
+      "slides": [
+        "accounts/leverageai/queue/post100-gemini-business-profile/slide01.png",
+        "accounts/leverageai/queue/post100-gemini-business-profile/slide02.png",
+        "accounts/leverageai/queue/post100-gemini-business-profile/slide03.png",
+        "accounts/leverageai/queue/post100-gemini-business-profile/slide04.png",
+        "accounts/leverageai/queue/post100-gemini-business-profile/slide05.png"
+      ],
+      "caption": "You run your own business and manage your own search presence. Google released the Gemini Business Profile connection in June to help you edit your page directly in the chat. It replaces manual clicking with a simple conversation.\n\nOpen gemini.google.com on your desktop. Sign in with the personal account that manages your location. If the integration does not load automatically, type @Google Business Profile in the chat and follow the connection prompt. Review what it generates. Publish only when the details match your actual schedule.\n\nThis works if you are 18 or older and manage exactly one verified location. Google still reviews every change before it goes live on Search and Maps. The source notes that Google’s Calls metric counts click-throughs to call buttons, not confirmed conversations.\n\nSave this reel so you can run the update next month.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#googlebusinessprofile #solopreneur #freelancertools #smallbusinessmarketing #aiforbusiness #geminiupdates #digitalmarketing #productivitytips #businessautomation #searchengineoptimization",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post100-gemini-business-profile/reel.mp4"
     }
   ]
 }

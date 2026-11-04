@@ -1,0 +1,68 @@
+{
+  "slug": "post100-gemini-business-profile",
+  "hook_candidates": [
+    {
+      "headline": "Cut profile editing time by 1 hour.",
+      "sub": "Google released the Gemini Business Profile connection in June."
+    },
+    {
+      "headline": "Stop manually updating your search page.",
+      "sub": "Google released the Gemini Business Profile connection in June."
+    },
+    {
+      "headline": "Is your search profile outdated?",
+      "sub": "Google released the Gemini Business Profile connection in June."
+    },
+    {
+      "headline": "Manual edits are now automatic.",
+      "sub": "Google released the Gemini Business Profile connection in June."
+    },
+    {
+      "headline": "Lose 15 minutes on every profile update.",
+      "sub": "Google released the Gemini Business Profile connection in June."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "You run your own business and manage your own search presence. Google released the Gemini Business Profile connection in June to help you edit your page directly in the chat. It replaces manual clicking with a simple conversation.\n\nOpen gemini.google.com on your desktop. Sign in with the personal account that manages your location. If the integration does not load automatically, type @Google Business Profile in the chat and follow the connection prompt. Review what it generates. Publish only when the details match your actual schedule.\n\nThis works if you are 18 or older and manage exactly one verified location. Google still reviews every change before it goes live on Search and Maps. The source notes that Google’s Calls metric counts click-throughs to call buttons, not confirmed conversations.\n\nSave this reel so you can run the update next month.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#googlebusinessprofile #solopreneur #freelancertools #smallbusinessmarketing #aiforbusiness #geminiupdates #digitalmarketing #productivitytips #businessautomation #searchengineoptimization",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 100",
+      "headline": "Gemini Business Profile connection",
+      "sub": "Google released the Gemini Business Profile connection in June.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Verified company page",
+      "body": "A Google Business Profile is the verified company page you manage for search results."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Drafts business changes",
+      "body": "Gemini drafts business changes for you, but Google decides if those updates appear."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "One verified location",
+      "body": "Only adults managing one verified location can use the automatic location editor right now."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Do this",
+      "items": [
+        "Open the site to connect.",
+        "Check the draft changes.",
+        "Save this for later."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://dev.to/stephen_marshall_2e887865/google-gemini-can-edit-your-business-profile-heres-what-owners-should-check-first-1i9p"
+}

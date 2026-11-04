@@ -1,0 +1,84 @@
+{
+  "slug": "post99-claude-invoice-link",
+  "hook_candidates": [
+    {
+      "headline": "25 invoices a month on the free plan.",
+      "sub": "Invoice My Clients, a billing program, added a Claude link."
+    },
+    {
+      "headline": "You still type client details manually.",
+      "sub": "Invoice My Clients, a billing program, added a Claude link."
+    },
+    {
+      "headline": "Can Claude draft your client invoices?",
+      "sub": "Invoice My Clients, a billing program, added a Claude link."
+    },
+    {
+      "headline": "Billing used to take twenty minutes.",
+      "sub": "Invoice My Clients, a billing program, added a Claude link."
+    },
+    {
+      "headline": "Claude now links to your invoice software.",
+      "sub": "Invoice My Clients, a billing program, added a Claude link."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "Invoice My Clients now connects directly to Claude. You can link the two through their MCP server. This means you can draft invoices, check client records, and manage estimates using plain language instead of clicking through menus.\n\nOpen Claude on web, desktop, or mobile. Go to Settings, then Connectors, and choose Add custom connector. Sign in with your Invoice My Clients account and approve the permissions. Custom connectors depend on your Claude plan and workspace settings.\n\nEvery Invoice My Clients subscription supports this link, including the free tier. Plan limits still apply, such as the twenty-five invoice cap on the free plan. Check the pricing page for feature details.\n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#claudeai #invoicemyclients #solopreneur #freelancetools #smallbusinessadmin #billingautomation #consultantlife #workflowtips #adminhacks #businessowner",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 099",
+      "headline": [
+        {
+          "t": "Claude links to billing now."
+        }
+      ],
+      "sub": "Invoice My Clients, a billing program, added a Claude link.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Connector tool",
+      "body": [
+        {
+          "t": "The MCP server is a connector tool that links Claude to your billing software."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Plain prompts",
+      "body": [
+        {
+          "t": "Invoice My Clients drafts invoices from plain language prompts, like typing a client name."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Free plan",
+      "body": [
+        {
+          "t": "Every Invoice My Clients subscription works, including the free plan limited to 25 invoices."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Start now",
+      "items": [
+        "Open Connectors and choose Add.",
+        "Sign in and approve.",
+        "Draft invoices from prompts."
+      ],
+      "cta_title": "Save",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.invoicemyclients.com/tech/claude"
+}

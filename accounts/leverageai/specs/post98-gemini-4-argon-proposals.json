@@ -1,0 +1,68 @@
+{
+  "slug": "post98-gemini-4-argon-proposals",
+  "hook_candidates": [
+    {
+      "headline": "Cut proposal drafting to ten minutes",
+      "sub": "Google released Gemini 4 Argon on October 13, 2026."
+    },
+    {
+      "headline": "Stop writing proposals from scratch",
+      "sub": "Google released Gemini 4 Argon on October 13, 2026."
+    },
+    {
+      "headline": "Need client decks faster?",
+      "sub": "Google released Gemini 4 Argon on October 13, 2026."
+    },
+    {
+      "headline": "From rough notes to finished decks",
+      "sub": "Google released Gemini 4 Argon on October 13, 2026."
+    },
+    {
+      "headline": "Gemini 4 Argon handles proposals now",
+      "sub": "Google released Gemini 4 Argon on October 13, 2026."
+    }
+  ],
+  "art": "newspaper",
+  "caption": "You spend hours turning meeting notes and scope docs into polished client proposals. Gemini 4 Argon cuts that work down to minutes. It reads your rough project context and builds a structured deck you can send straight to prospects.\n\nOpen the Gemini app. Paste this exact prompt:\n\"Act as a senior consultant. I will paste rough project notes, client goals, and scope details. Turn them into a structured client proposal deck. Include an executive summary, deliverables, timeline, pricing table, and next steps. Keep the tone professional and direct. Output as slide-by-slide markdown.\"\n\nThis workflow runs in the Gemini mobile app. You need a paid Google AI Pro or Ultra subscription to access it. The free tier does not support this feature. It handles structure and drafting well, but you still need to verify pricing numbers and adjust tone to match your brand.\n\nSave this reel for your next client pitch. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #solopreneur #freelancetools #clientproposals #geminiapp #consultingtips #businessautomation #timemanagement #nocode #solobusiness",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 098",
+      "headline": "Gemini 4 Argon released",
+      "sub": "Google released Gemini 4 Argon on October 13, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Handles complex tasks",
+      "body": "Gemini 4 Argon is a Google program that handles complex real-world tasks."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Turns notes into slides",
+      "body": "Gemini 4 Argon turns rough project notes into finished client proposal slides."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Paid subscribers use the app.",
+      "body": "The app version works for paid subscribers and skips free accounts."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "The Gemini mobile app runs.",
+      "items": [
+        "Try Gemini 4 Argon on your phone.",
+        "Try this for client proposal slides.",
+        "Try the mobile app version."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily for daily tips.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+}
