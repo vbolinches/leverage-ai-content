@@ -237,6 +237,10 @@ The hook grader is disproven: pre-publish hook grades (6.0-9.5) showed no correl
 
 empty No new data to change strategy; existing Confirmed/Disproven remain.
 
+## Batch notes — posts 101-102 (2026-11-05)
+
+empty The performance brief confirms existing strategy (concrete-pain hooks, reel format) but does not settle any new hypothesis. The best posts (post60, post88, post61) use concrete-pain hooks (change shape) and are reels, while the worst posts (post85, post89, post77) use non-concrete-pain hooks and one is a carousel. This aligns with the already Confirmed hypotheses. The hook grader was already disproven in previous batches. No new hypotheses are settled.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

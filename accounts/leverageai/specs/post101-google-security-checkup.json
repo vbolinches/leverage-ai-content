@@ -1,0 +1,68 @@
+{
+  "slug": "post101-google-security-checkup",
+  "hook_candidates": [
+    {
+      "headline": "Secure your inbox in two minutes.",
+      "sub": "Google offers the Google Security Checkup, an account safety tool, since Oct 30, 2026."
+    },
+    {
+      "headline": "You are checking settings manually.",
+      "sub": "Google offers the Google Security Checkup, an account safety tool, since Oct 30, 2026."
+    },
+    {
+      "headline": "Is your account actually secure?",
+      "sub": "Google offers the Google Security Checkup, an account safety tool, since Oct 30, 2026."
+    },
+    {
+      "headline": "Manual reviews are replaced now.",
+      "sub": "Google offers the Google Security Checkup, an account safety tool, since Oct 30, 2026."
+    },
+    {
+      "headline": "Account takeovers cost solo owners.",
+      "sub": "Google offers the Google Security Checkup, an account safety tool, since Oct 30, 2026."
+    }
+  ],
+  "art": "checklist",
+  "caption": "Solo operators waste hours on manual security reviews. Google released the Security Checkup on Oct 30, 2026. It replaces those manual steps with a guided scan. The whole process takes two minutes.\n\nCopy and paste this exact instruction into your notes or task manager:\nSign in quickly and securely with passkeys.\n\nThis workflow is for anyone managing client emails or business accounts. The tool focuses on account safety and does not cover other software. Run it once to lock your login flow.\n\nSave this post to run the scan this week. Share it with your team.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancetips #gmailsecurity #passkeys #smallbusinessadmin #accountsecurity #digitalworkflow #time-saving #businessops #techworkflow",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 101",
+      "headline": "Security Checkup",
+      "sub": "Google offers the Google Security Checkup, an account safety tool, since Oct 30, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Login keys",
+      "body": "Passkeys are digital login keys that speed up secure account access."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Two minutes",
+      "body": "The Google Security Checkup takes two minutes, like checking a lock."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Gmail only",
+      "body": "The Google Security Checkup secures Gmail inboxes and does not cover other programs."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Do this",
+      "items": [
+        "Sign in with passkeys.",
+        "Lock your login flow.",
+        "Run the tool today."
+      ],
+      "cta_title": "Save this.",
+      "cta_sub": "Follow @leverageai.daily.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/technology/safety-security/google-security-checkup/"
+}

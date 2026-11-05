@@ -73,6 +73,141 @@
       ]
     },
     {
+      "slug": "post101-google-security-checkup",
+      "graded": "2026-11-05",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Account takeovers cost solo owners.",
+        "sub": "Google offers the Google Security Checkup, an account safety tool, since Oct 30, 2026.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "Concrete pain: 'Account takeovers cost solo owners' names the financial consequence (cost) AND targets the audience (solo owners) directly. This is the exact pain the account's best posts solve for — it's urgent, specific, and unavoidable for their audience. Stops scrolling by making the reader think 'Oh god, that's happened to me'.",
+        "reason": "Concrete pain hook (cost + audience-specific) — highest-leverage format confirmed by batch data.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Account takeovers cost solo owners.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain: 'Account takeovers cost solo owners' names the financial consequence (cost) AND targets the audience (solo owners) directly. This is the exact pain the account's best posts solve for — it's urgent, specific, and unavoidable for their audience. Stops scrolling by making the reader think 'Oh god, that's happened to me'.",
+          "reason": "Concrete pain hook (cost + audience-specific) — highest-leverage format confirmed by batch data.",
+          "authored": false
+        },
+        {
+          "headline": "Secure your inbox in two minutes.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "before-after",
+          "stopping": "Uses 'inbox' (specific to solo operators' daily workflow) and 'two minutes' (concrete time saving), implying pain avoidance without naming the pain. Strong, but slightly less urgent than D's cost-focused hook. Still stops scrolling.",
+          "reason": "Before-after format with concrete time metric — matches highest-reach hooks.",
+          "authored": false
+        },
+        {
+          "headline": "Is your account actually secure?",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "question",
+          "stopping": "Question is vague ('account' could mean anything) and lacks specificity. Solo operators would scroll past without feeling the pain — it's a meta question, not a concrete pain point. Barely stops scrolling.",
+          "reason": "Fails concrete-pain test — 'Is your account actually secure?' is a fragment without context.",
+          "authored": false
+        },
+        {
+          "headline": "Manual reviews are replaced now.",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Fragment: 'Manual reviews are replaced now' makes no sense alone. 'Replaced' by what? 'Now' what? No audience-specific pain. Instant scroll past.",
+          "reason": "Unexplained fragment — violates 'no fragments' rule.",
+          "authored": false
+        },
+        {
+          "headline": "You are checking settings manually.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Same as A: 'You are checking settings manually' is a statement fragment with no pain or context. 'Settings' is too vague (which settings?) — no concrete harm named. Scrolls past.",
+          "reason": "Unexplained fragment — violates 'no fragments' rule.",
+          "authored": false
+        },
+        {
+          "headline": "Security Checkup",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Just a name: 'Security Checkup'. No pain, no audience, no context. It's a category (like 'Security Tool'), not a pain point. This is exactly what the disconfirmed rules warned against.",
+          "reason": "Topic-label framing — violates 'cover names a pain/deficiency, never a category' rule.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post102-gemini-4-argon-data-reports",
+      "graded": "2026-11-05",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You are still sorting data by hand.",
+        "sub": "Google released Gemini 4 Argon on October 27, 2026.",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "contrarian",
+        "stopping": "Names a universal manual task (sorting data by hand) that solo operators feel daily. The subtext is irrelevant, but the cover itself earns the stop. Highest score for a cover that follows the confirmed rule: 'Cover names a pain, a change, or a deficiency.'",
+        "reason": "This is the only cover that names a concrete pain point the audience feels. 'Sorting data by hand' is a universal, daily struggle for solo business owners. The subtext about Google's release is bad, but the cover itself follows the account's proven rule. Scrollers would pause to recognize their own pain.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You are still sorting data by hand.",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Names a universal manual task (sorting data by hand) that solo operators feel daily. The subtext is irrelevant, but the cover itself earns the stop. Highest score for a cover that follows the confirmed rule: 'Cover names a pain, a change, or a deficiency.'",
+          "reason": "This is the only cover that names a concrete pain point the audience feels. 'Sorting data by hand' is a universal, daily struggle for solo business owners. The subtext about Google's release is bad, but the cover itself follows the account's proven rule. Scrollers would pause to recognize their own pain.",
+          "authored": false
+        },
+        {
+          "headline": "How do you parse client files fast?",
+          "rank": 2,
+          "score": 6.0,
+          "shape": "question",
+          "stopping": "Asks a direct pain-point question ('How do you parse client files fast?'), but the subtext makes it about Google's product launch, not the user's need. The question hook is good, but the subtext kills relevance.",
+          "reason": "The question hook is strong, but the subtext ('Google released Gemini 4 Argon...') makes it about a product announcement, not the user's pain. Scrollers might pause for the question but skip when they realize it's not about their workflow.",
+          "authored": false
+        },
+        {
+          "headline": "80,000 files processed in minutes.",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "number-claim",
+          "stopping": "Uses a number ('80,000 files processed in minutes') but frames it as a product benefit, not a pain. The subtext is irrelevant news. No concrete pain named.",
+          "reason": "The number might grab attention, but it's framed as a product feature (not a user pain). Scrollers see 'files processed' and skip—no connection to their daily struggle.",
+          "authored": false
+        },
+        {
+          "headline": "Google just launched a new data tool.",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "Pure meta-commentary about a Google product launch. No pain point, no deficiency, just news. Matches the disproven rule: 'Meta-commentary about productivity/AI culture.'",
+          "reason": "This is exactly what the account learned to avoid. Scrollers see 'Google just launched...' and scroll past—no relevance to their work.",
+          "authored": false
+        },
+        {
+          "headline": "Google released Gemini 4 Argon.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Unexplained acronym ('Gemini 4 Argon') with no context. First-time readers have no idea what it means or why it matters. Matches the floor rule: 'a fragment, an unexplained code or acronym... does not stop anyone.'",
+          "reason": "This is a direct violation of the account's hard-earned rule. Scrollers see 'Gemini 4 Argon' and skip immediately—no stopping power whatsoever.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

@@ -1577,6 +1577,36 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post100-gemini-business-profile/reel.mp4"
+    },
+    {
+      "id": "post101-google-security-checkup",
+      "date": "2026-11-09",
+      "slides": [
+        "accounts/leverageai/queue/post101-google-security-checkup/slide01.png",
+        "accounts/leverageai/queue/post101-google-security-checkup/slide02.png",
+        "accounts/leverageai/queue/post101-google-security-checkup/slide03.png",
+        "accounts/leverageai/queue/post101-google-security-checkup/slide04.png",
+        "accounts/leverageai/queue/post101-google-security-checkup/slide05.png"
+      ],
+      "caption": "Solo operators waste hours on manual security reviews. Google released the Security Checkup on Oct 30, 2026. It replaces those manual steps with a guided scan. The whole process takes two minutes.\n\nCopy and paste this exact instruction into your notes or task manager:\nSign in quickly and securely with passkeys.\n\nThis workflow is for anyone managing client emails or business accounts. The tool focuses on account safety and does not cover other software. Run it once to lock your login flow.\n\nSave this post to run the scan this week. Share it with your team.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancetips #gmailsecurity #passkeys #smallbusinessadmin #accountsecurity #digitalworkflow #time-saving #businessops #techworkflow",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post101-google-security-checkup/reel.mp4"
+    },
+    {
+      "id": "post102-gemini-4-argon-data-reports",
+      "date": "2026-11-10",
+      "slides": [
+        "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/slide01.png",
+        "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/slide02.png",
+        "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/slide03.png",
+        "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/slide04.png",
+        "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/slide05.png"
+      ],
+      "caption": "Stop copying numbers between spreadsheets. Gemini 4 Argon handles heavy data lifting so you can focus on delivering work. Upload your client files, paste the prompt below, and let it sort the noise.\n\nPaste this into the Gemini app or Search:\n\"I am uploading a batch of client invoices and project notes. Parse the data and generate a clean summary report. List total billed amounts, outstanding balances, and key deliverables from the notes. Format as a markdown table and flag any missing information.\"\n\nThis runs on Google AI Ultra and Pro plans. You can access it in the Gemini app or through Search. The model handles large file sets quickly, but you still need to review the output for accuracy before sending it to clients. AI can misread handwritten notes or poorly scanned PDFs, so keep your source files clear.\n\nSave this post to your collection.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancertips #clientmanagement #dataanalysis #smallbusiness #geminiapp #productivity #consulting #aiworkflows",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/reel.mp4"
     }
   ]
 }

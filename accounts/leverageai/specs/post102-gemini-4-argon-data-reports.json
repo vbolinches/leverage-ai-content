@@ -1,0 +1,68 @@
+{
+  "slug": "post102-gemini-4-argon-data-reports",
+  "hook_candidates": [
+    {
+      "headline": "80,000 files processed in minutes.",
+      "sub": "Google released Gemini 4 Argon on October 27, 2026."
+    },
+    {
+      "headline": "You are still sorting data by hand.",
+      "sub": "Google released Gemini 4 Argon on October 27, 2026."
+    },
+    {
+      "headline": "How do you parse client files fast?",
+      "sub": "Google released Gemini 4 Argon on October 27, 2026."
+    },
+    {
+      "headline": "Manual spreadsheets are out. AI reports are in.",
+      "sub": "Google released Gemini 4 Argon on October 27, 2026."
+    },
+    {
+      "headline": "Google just launched a new data tool.",
+      "sub": "Google released Gemini 4 Argon on October 27, 2026."
+    }
+  ],
+  "art": "spreadsheet",
+  "caption": "Stop copying numbers between spreadsheets. Gemini 4 Argon handles heavy data lifting so you can focus on delivering work. Upload your client files, paste the prompt below, and let it sort the noise.\n\nPaste this into the Gemini app or Search:\n\"I am uploading a batch of client invoices and project notes. Parse the data and generate a clean summary report. List total billed amounts, outstanding balances, and key deliverables from the notes. Format as a markdown table and flag any missing information.\"\n\nThis runs on Google AI Ultra and Pro plans. You can access it in the Gemini app or through Search. The model handles large file sets quickly, but you still need to review the output for accuracy before sending it to clients. AI can misread handwritten notes or poorly scanned PDFs, so keep your source files clear.\n\nSave this post to your collection.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancertips #clientmanagement #dataanalysis #smallbusiness #geminiapp #productivity #consulting #aiworkflows",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 102",
+      "headline": "Google released Gemini 4 Argon.",
+      "sub": "Google released Gemini 4 Argon on October 27, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "New AI assistant",
+      "body": "Gemini 4 Argon is a new version of Google's AI assistant."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Parses data reports",
+      "body": "It parses complex data into reports in minutes."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Replaces file analysis",
+      "body": "It replaces manual analysis of large file sets."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Check your subscription plan.",
+      "items": [
+        "Handle 80,000 files at once.",
+        "Parse data into reports.",
+        "Check your plan includes."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action/"
+}
