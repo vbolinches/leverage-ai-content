@@ -1,0 +1,68 @@
+{
+  "slug": "post104-gemini-resume-bullets",
+  "hook_candidates": [
+    {
+      "headline": "Save two hours on resume updates.",
+      "sub": "Google launched a resume bullet generator in Gemini, the AI chat tool, on October twenty nine."
+    },
+    {
+      "headline": "Stop rewriting resume bullets by hand.",
+      "sub": "Google launched a resume bullet generator in Gemini, the AI chat tool, on October twenty nine."
+    },
+    {
+      "headline": "How do you draft resume bullets faster?",
+      "sub": "Google launched a resume bullet generator in Gemini, the AI chat tool, on October twenty nine."
+    },
+    {
+      "headline": "From messy notes to polished resume lines.",
+      "sub": "Google launched a resume bullet generator in Gemini, the AI chat tool, on October twenty nine."
+    },
+    {
+      "headline": "Lose an hour rewriting your work experience.",
+      "sub": "Google launched a resume bullet generator in Gemini, the AI chat tool, on October twenty nine."
+    }
+  ],
+  "art": "document",
+  "caption": "Gemini now turns rough notes into polished resume bullets. If you are updating your profile for a new role, this saves the hour you would spend rewriting your experience. You can generate, preview, and edit the bullets directly in the Gemini app without switching tools.\n\nOpen Gemini and paste your raw notes. Use this prompt to get immediate results:\n\n\"Turn these rough notes into professional resume bullets with strong action verbs and an executive tone:\n\n[Paste your notes here]\"\n\nReview the output in the preview window and edit lines directly in the app. The source page notes you can now generate, preview, and edit documents directly in Gemini.\n\nSave this post to update your resume faster.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #resumetips #gemini #jobsearch #freelancer #solopreneur #productivity #aitools #writingassistant #careerupdate",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 104",
+      "headline": "Gemini tool",
+      "sub": "Google launched a resume bullet generator in Gemini, the AI chat tool, on October twenty nine.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Drafts.",
+      "body": "A resume bullet generator is a tool that drafts short career lines for job applications."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Turns notes.",
+      "body": "The Gemini resume bullet generator turns rough meeting notes into professional resume bullets."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Edits files.",
+      "body": "The update lets users create and edit work files directly inside the Gemini app."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Start now.",
+      "items": [
+        "Type raw notes into Gemini.",
+        "Preview the new resume bullets.",
+        "Edit them directly in app."
+      ],
+      "cta_title": "Save it.",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/update-resume-with-gemini/"
+}

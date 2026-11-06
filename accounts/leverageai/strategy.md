@@ -241,6 +241,10 @@ empty No new data to change strategy; existing Confirmed/Disproven remain.
 
 empty The performance brief confirms existing strategy (concrete-pain hooks, reel format) but does not settle any new hypothesis. The best posts (post60, post88, post61) use concrete-pain hooks (change shape) and are reels, while the worst posts (post85, post89, post77) use non-concrete-pain hooks and one is a carousel. This aligns with the already Confirmed hypotheses. The hook grader was already disproven in previous batches. No new hypotheses are settled.
 
+## Batch notes — posts 103-104 (2026-11-06)
+
+Performance of posts 103-104 is not yet meaningful: total signal 87 (need 150 to rank posts) across 12 posts. No new hypotheses are settled. The performance brief states 'PERFORMANCE: not yet meaningful — total signal 87 (need 150 to rank posts). (12 posts, 87 total engagement.)', so the note is a direct restatement of the brief. No new hypotheses are settled because the data is insufficient to confirm or disprove anything.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

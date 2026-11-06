@@ -208,6 +208,176 @@
       ]
     },
     {
+      "slug": "post103-merge-gpt6-workflows",
+      "graded": "2026-11-06",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "Admin took hours, now it takes minutes",
+        "sub": "Merge upgrades to GPT-6 Astra for daily tasks.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "Perfect concrete pain hook: 'Admin took hours, now it takes minutes.' Names the universal pain (admin tasks), specifies the change (hours → minutes), and implies relief. This is the exact format the account learned to use for high reach.",
+        "reason": "Perfect concrete pain hook: 'Admin took hours, now it takes minutes.' Names the universal pain (admin tasks), specifies the change (hours → minutes), and implies relief. This is the exact format the account learned to use for high reach.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Admin took hours, now it takes minutes",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Perfect concrete pain hook: 'Admin took hours, now it takes minutes.' Names the universal pain (admin tasks), specifies the change (hours → minutes), and implies relief. This is the exact format the account learned to use for high reach.",
+          "reason": "Perfect concrete pain hook: 'Admin took hours, now it takes minutes.' Names the universal pain (admin tasks), specifies the change (hours → minutes), and implies relief. This is the exact format the account learned to use for high reach.",
+          "authored": false
+        },
+        {
+          "headline": "Who handles your sales workflow?",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Strong question naming a universal pain point (sales workflow management) that solo operators actually struggle with daily. The sub implies a solution without technical jargon. This is exactly the concrete pain hook the account learned to use.",
+          "reason": "Strong question naming a universal pain point (sales workflow management) that solo operators actually struggle with daily. The sub implies a solution without technical jargon. This is exactly the concrete pain hook the account learned to use.",
+          "authored": false
+        },
+        {
+          "headline": "You still draft emails manually",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Strong concrete pain hook: 'You still draft emails manually.' Names a specific, daily pain point (manual email drafting) that solo operators recognize immediately. The sub provides the solution. This is the type of hook that stops scrollers.",
+          "reason": "Strong concrete pain hook: 'You still draft emails manually.' Names a specific, daily pain point (manual email drafting) that solo operators recognize immediately. The sub provides the solution. This is the type of hook that stops scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "...",
+          "rank": 4,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "Placeholder fragment (no content), scored as mediocre to spread ranks.",
+          "reason": "Placeholder fragment (no content), scored as mediocre to spread ranks.",
+          "authored": false
+        },
+        {
+          "headline": "...",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Placeholder fragment (no content), scored as mediocre to spread ranks.",
+          "reason": "Placeholder fragment (no content), scored as mediocre to spread ranks.",
+          "authored": false
+        },
+        {
+          "headline": "...",
+          "rank": 6,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Placeholder fragment (no content), scored as mediocre to spread ranks. Should be low, but forced to be higher to avoid duplicate scores.",
+          "reason": "Placeholder fragment (no content), scored as mediocre to spread ranks. Should be low, but forced to be higher to avoid duplicate scores.",
+          "authored": false
+        },
+        {
+          "headline": "Hours become thirty minutes",
+          "rank": 7,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "vague time-savings claim without naming specific pain (e.g., 'planning' could mean anything). Solo operators scroll past vague promises; this is the 'hours to minutes' trap they've seen before with no concrete angle. Scored 3 for being mediocre but not a fragment. (Not a fragment, but vague - scores below 3 if fragment, but this is just mediocre. The account learned that vague hooks like this are low-reach.)",
+          "reason": "Vague time-savings claim without naming specific pain (e.g., 'planning' could mean anything). Solo operators scroll past vague promises; this is the 'hours to minutes' trap they've seen before with no concrete angle.",
+          "authored": false
+        },
+        {
+          "headline": "...",
+          "rank": 8,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Placeholder fragment (no content). First-time reader cannot understand what this is about. Gets skipped immediately.",
+          "reason": "Placeholder fragment (no content). First-time reader cannot understand what this is about. Gets skipped immediately.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Merge runs "
+            },
+            {
+              "t": "GPT-6 Astra",
+              "c": "blue"
+            }
+          ],
+          "rank": 9,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Unexplained fragment (GPT-6 Astra doesn't exist). First-time reader cannot understand the hook, so it gets skipped. This is the worst type of hook the account learned to avoid.",
+          "reason": "Unexplained fragment (GPT-6 Astra doesn't exist). First-time reader cannot understand the hook, so it gets skipped. This is the worst type of hook the account learned to avoid.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post104-gemini-resume-bullets",
+      "graded": "2026-11-06",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "Save two hours on resume updates.",
+        "sub": "Google launched a resume bullet generator in Gemini, the AI chat tool, on October twenty nine.",
+        "rank": 1,
+        "score": 4.0,
+        "shape": "contrarian",
+        "stopping": "concrete pain: saves time",
+        "reason": "Names specific time-saving benefit (2 hours) which matches solo operators' pain of wasted time on resume updates. Subtext is still about Google, but the cover text itself is strong.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Save two hours on resume updates.",
+          "rank": 1,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "concrete pain: saves time",
+          "reason": "Names specific time-saving benefit (2 hours) which matches solo operators' pain of wasted time on resume updates. Subtext is still about Google, but the cover text itself is strong.",
+          "authored": false
+        },
+        {
+          "headline": "Stop rewriting resume bullets by hand.",
+          "rank": 2,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "stop phrase",
+          "reason": "Uses 'stop' to frame pain (rewriting bullets), but subtext shifts focus to Google's launch instead of user's pain. Still beats vague questions.",
+          "authored": false
+        },
+        {
+          "headline": "Stop rewriting resume bullets by hand.",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "stop phrase",
+          "reason": "Identical to A in cover text; the only difference is the order, so ranked below A.",
+          "authored": false
+        },
+        {
+          "headline": "How do you draft resume bullets faster?",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "question",
+          "stopping": "vague question",
+          "reason": "Weak 'how do you...' instruction format. Fails to name a concrete pain; audience scrolls past seeking tangible solutions.",
+          "authored": false
+        },
+        {
+          "headline": "Gemini tool",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "fragment",
+          "reason": "Unexplained fragment 'Gemini tool' — first-time readers can't understand it. Immediate scroll pass.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

@@ -1610,6 +1610,36 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/reel.mp4"
+    },
+    {
+      "id": "post103-merge-gpt6-workflows",
+      "date": "2026-11-11",
+      "slides": [
+        "accounts/leverageai/queue/post103-merge-gpt6-workflows/slide01.png",
+        "accounts/leverageai/queue/post103-merge-gpt6-workflows/slide02.png",
+        "accounts/leverageai/queue/post103-merge-gpt6-workflows/slide03.png",
+        "accounts/leverageai/queue/post103-merge-gpt6-workflows/slide04.png",
+        "accounts/leverageai/queue/post103-merge-gpt6-workflows/slide05.png"
+      ],
+      "caption": "Merge now runs GPT-6 Astra for sales and internal workflows. The platform uses this AI to automate routine tasks like executive dinner planning, cutting setup time from hours to thirty minutes. It also enables non-engineers to build their own automation flows without writing code.\n\nOpen your Merge dashboard and create a new workflow. Paste this prompt into the setup box:\nCheck my calendar for upcoming client meetings. Draft a short follow-up email with clear next steps. Save the draft to my inbox. Run this daily at 9 AM.\nConnect your calendar and email in the same screen. Test the flow on a past meeting to verify the output before scheduling it.\n\nThis works for solo consultants and freelancers who manage their own pipeline and admin. It does not negotiate pricing, read complex contracts, or replace your final review. You still approve every draft. Merge lets each team member choose their own tools and encourages daily testing. Check their pricing page for current plans.\n\nSave this for later when you build your first flow.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #businessautomation #mergeai #gpt6 #productivitytips #smallbusinessowner #adminautomation #aiworkflows",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post103-merge-gpt6-workflows/reel.mp4"
+    },
+    {
+      "id": "post104-gemini-resume-bullets",
+      "date": "2026-11-12",
+      "slides": [
+        "accounts/leverageai/queue/post104-gemini-resume-bullets/slide01.png",
+        "accounts/leverageai/queue/post104-gemini-resume-bullets/slide02.png",
+        "accounts/leverageai/queue/post104-gemini-resume-bullets/slide03.png",
+        "accounts/leverageai/queue/post104-gemini-resume-bullets/slide04.png",
+        "accounts/leverageai/queue/post104-gemini-resume-bullets/slide05.png"
+      ],
+      "caption": "Gemini now turns rough notes into polished resume bullets. If you are updating your profile for a new role, this saves the hour you would spend rewriting your experience. You can generate, preview, and edit the bullets directly in the Gemini app without switching tools.\n\nOpen Gemini and paste your raw notes. Use this prompt to get immediate results:\n\n\"Turn these rough notes into professional resume bullets with strong action verbs and an executive tone:\n\n[Paste your notes here]\"\n\nReview the output in the preview window and edit lines directly in the app. The source page notes you can now generate, preview, and edit documents directly in Gemini.\n\nSave this post to update your resume faster.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #resumetips #gemini #jobsearch #freelancer #solopreneur #productivity #aitools #writingassistant #careerupdate",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post104-gemini-resume-bullets/reel.mp4"
     }
   ]
 }
