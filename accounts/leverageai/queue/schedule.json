@@ -1643,6 +1643,34 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post104-gemini-resume-bullets/reel.mp4"
+    },
+    {
+      "id": "post105-gemini-omni-video",
+      "date": "2026-11-13",
+      "slides": [
+        "accounts/leverageai/queue/post105-gemini-omni-video/slide01.png",
+        "accounts/leverageai/queue/post105-gemini-omni-video/slide02.png",
+        "accounts/leverageai/queue/post105-gemini-omni-video/slide03.png",
+        "accounts/leverageai/queue/post105-gemini-omni-video/slide04.png",
+        "accounts/leverageai/queue/post105-gemini-omni-video/slide05.png"
+      ],
+      "caption": "Stop spending an hour a week stitching together promo videos for your services. Gemini Omni 1.2 Flash now generates fifteen second clips directly in the chat. You can draft a quick product demo or service explainer without leaving your research tab. The tool handles pacing and scene cuts automatically, but it still struggles with complex camera movements and exact text rendering.\n\nPaste this prompt into your Gemini chat window to test it:\nGenerate a fifteen second video showing a freelancer working at a clean desk, reviewing a client contract on a tablet, then smiling at the camera. Use a bright office setting with natural lighting. Keep the pacing steady and avoid fast cuts.\n\nThis runs on the Gemini API and Google Cloud business accounts. Pricing is roughly $0.07 per second for 720p output, which cuts your weekly video costs by about thirty percent compared to the previous model. Edit the clip by replying to the chat if the lighting or pacing needs adjusting.\n\nSave this post to your AI workflows collection.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #gemini #videomarketing #smallbusinessai #contentcreation #aiautomation #businessowner #marketingtools",
+      "status": "queued"
+    },
+    {
+      "id": "post106-google-vids-free-videos",
+      "date": "2026-11-14",
+      "slides": [
+        "accounts/leverageai/queue/post106-google-vids-free-videos/slide01.png",
+        "accounts/leverageai/queue/post106-google-vids-free-videos/slide02.png",
+        "accounts/leverageai/queue/post106-google-vids-free-videos/slide03.png",
+        "accounts/leverageai/queue/post106-google-vids-free-videos/slide04.png",
+        "accounts/leverageai/queue/post106-google-vids-free-videos/slide05.png"
+      ],
+      "caption": "Google Vids lets you make short videos from text descriptions. You can create quick service ads or client demos without filming. This saves time on content that usually takes hours to shoot and edit.\n\nOpen Google Vids and type a description of the video you want. The tool generates a 15-second clip from your text. You get three videos each month at no cost. This works with your personal Google account or your Workspace subscription. Try this prompt: 'A friendly consultant explaining invoice tips in a bright office.' The tool generates the video from that text.\n\n If you need more than three clips, you will need to wait until next month or use other tools for longer content. Save this workflow for your next content batch.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#googlevids #workspace #aivideo #soloentrepreneur #freelancetools #smallbusinessmarketing #contentcreation #aitools #businesstips #marketingautomation",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post106-google-vids-free-videos/reel.mp4"
     }
   ]
 }

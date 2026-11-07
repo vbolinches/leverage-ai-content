@@ -1,0 +1,88 @@
+{
+  "slug": "post106-google-vids-free-videos",
+  "hook_candidates": [
+    {
+      "headline": "Google Vids launched for free.",
+      "sub": "Google launched Google Vids, a video creation program, on November 5, 2026."
+    },
+    {
+      "headline": "Three free AI videos each month.",
+      "sub": "You can generate up to three fifteen-second videos each month at no cost."
+    },
+    {
+      "headline": "Do you still film your own ads?",
+      "sub": "Google Vids creates short video clips from text, so you could make a quick service ad."
+    },
+    {
+      "headline": "Stop paying for video tools.",
+      "sub": "Free access covers personal Google accounts and Workspace, the paid business plan."
+    },
+    {
+      "headline": "Text becomes video in Google Vids.",
+      "sub": "Google Vids creates short video clips from text, so you could make a quick service ad."
+    }
+  ],
+  "art": "globe",
+  "caption": "Google Vids lets you make short videos from text descriptions. You can create quick service ads or client demos without filming. This saves time on content that usually takes hours to shoot and edit.\n\nOpen Google Vids and type a description of the video you want. The tool generates a 15-second clip from your text. You get three videos each month at no cost. This works with your personal Google account or your Workspace subscription. Try this prompt: 'A friendly consultant explaining invoice tips in a bright office.' The tool generates the video from that text.\n\n If you need more than three clips, you will need to wait until next month or use other tools for longer content. Save this workflow for your next content batch.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#googlevids #workspace #aivideo #soloentrepreneur #freelancetools #smallbusinessmarketing #contentcreation #aitools #businesstips #marketingautomation",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 106",
+      "headline": [
+        {
+          "t": "Google Vids makes "
+        },
+        {
+          "t": "free video.",
+          "c": "blue"
+        }
+      ],
+      "sub": "Google launched Google Vids, a video creation program, on November 5, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Omni 1.2 Flash runs it.",
+      "body": [
+        {
+          "t": "Omni 1.2 Flash is the artificial intelligence that powers Google Vids."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Make a quick ad.",
+      "body": [
+        {
+          "t": "Google Vids creates short video clips from text, so you could make a quick service ad."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Free for you.",
+      "body": [
+        {
+          "t": "Free access covers personal Google accounts and Workspace, the paid business plan."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Do this.",
+      "items": [
+        "You can generate three videos.",
+        "You can make quick service ads.",
+        "Access is free for your account."
+      ],
+      "cta_title": "Save this",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/products-and-platforms/products/workspace/omni-1-2-flash-google-vids/"
+}

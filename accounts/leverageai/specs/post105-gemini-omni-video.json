@@ -1,0 +1,84 @@
+{
+  "slug": "post105-gemini-omni-video",
+  "hook_candidates": [
+    {
+      "headline": "Fifteen second clips now",
+      "sub": "Google released Gemini Omni 1.2 Flash on November 5, 2026."
+    },
+    {
+      "headline": "Cut video costs by thirty percent",
+      "sub": "Google released Gemini Omni 1.2 Flash on November 5, 2026."
+    },
+    {
+      "headline": "Stop editing promo clips manually",
+      "sub": "Google released Gemini Omni 1.2 Flash on November 5, 2026."
+    },
+    {
+      "headline": "From ten seconds to fifteen now",
+      "sub": "Google released Gemini Omni 1.2 Flash on November 5, 2026."
+    },
+    {
+      "headline": "Your weekly video budget drops",
+      "sub": "Google released Gemini Omni 1.2 Flash on November 5, 2026."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "Stop spending an hour a week stitching together promo videos for your services. Gemini Omni 1.2 Flash now generates fifteen second clips directly in the chat. You can draft a quick product demo or service explainer without leaving your research tab. The tool handles pacing and scene cuts automatically, but it still struggles with complex camera movements and exact text rendering.\n\nPaste this prompt into your Gemini chat window to test it:\nGenerate a fifteen second video showing a freelancer working at a clean desk, reviewing a client contract on a tablet, then smiling at the camera. Use a bright office setting with natural lighting. Keep the pacing steady and avoid fast cuts.\n\nThis runs on the Gemini API and Google Cloud business accounts. Pricing is roughly $0.07 per second for 720p output, which cuts your weekly video costs by about thirty percent compared to the previous model. Edit the clip by replying to the chat if the lighting or pacing needs adjusting.\n\nSave this post to your AI workflows collection.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #gemini #videomarketing #smallbusinessai #contentcreation #aiautomation #businessowner #marketingtools",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 105",
+      "headline": [
+        {
+          "t": "Google released Gemini Omni 1.2 Flash."
+        }
+      ],
+      "sub": "Google released Gemini Omni 1.2 Flash on November 5, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "new model",
+      "body": [
+        {
+          "t": "Gemini Omni 1.2 Flash is a new model that creates fifteen second video clips."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "lower cost",
+      "body": [
+        {
+          "t": "You could use the fifteen second clips at thirty percent lower cost for a quick product demo."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "cloud users",
+      "body": [
+        {
+          "t": "Gemini Omni 1.2 Flash applies to Gemini API users and Google Cloud business accounts."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Start using the model today.",
+      "items": [
+        "Start using the flash today.",
+        "Check Google platforms now.",
+        "Save this post later."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+}

@@ -378,6 +378,162 @@
       ]
     },
     {
+      "slug": "post105-gemini-omni-video",
+      "graded": "2026-11-07",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop editing promo clips manually",
+        "sub": "Google released Gemini Omni 1.2 Flash on November 5, 2026.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "concrete pain point (manual editing) directly addresses a time-sink for freelancers. Stops scroll.",
+        "reason": "Direct pain point: 'Stop editing promo clips manually' is the kind of concrete, daily struggle solo operators face. They'll pause to see how to eliminate that tedious task. No ambiguity.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop editing promo clips manually",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "concrete pain point (manual editing) directly addresses a time-sink for freelancers. Stops scroll.",
+          "reason": "Direct pain point: 'Stop editing promo clips manually' is the kind of concrete, daily struggle solo operators face. They'll pause to see how to eliminate that tedious task. No ambiguity.",
+          "authored": false
+        },
+        {
+          "headline": "Cut video costs by thirty percent",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Specific benefit (30% cost cut) is clear and desirable, but less urgent than B's pain point.",
+          "reason": "Cuts costs by 30% is a strong number hook, but 'cut costs' is slightly less visceral than 'stop doing X' for a manual task. Still stops scroll.",
+          "authored": false
+        },
+        {
+          "headline": "Your weekly video budget drops",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Concrete but vague: 'budget drops' could mean good or bad, so less compelling.",
+          "reason": "Weekly budget drop is concrete (money), but 'drops' is ambiguous (good for them? bad?). Less likely to stop scroll than B or C.",
+          "authored": false
+        },
+        {
+          "headline": "From ten seconds to fifteen now",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'From ten seconds to fifteen now' is unexplained and confusing.",
+          "reason": "First-time reader has no idea what this refers to. 'From X to Y' without context is a fragment. Scrolled past immediately.",
+          "authored": false
+        },
+        {
+          "headline": "Fifteen second clips now",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'Fifteen second clips now' is a meaningless phrase without context.",
+          "reason": "No pain, no change, no number to anchor it. Just a fragment. Worst fragment of the group.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Google released Gemini Omni 1.2 Flash."
+            }
+          ],
+          "rank": 6,
+          "score": 0.0,
+          "shape": "contrarian",
+          "stopping": "Topic label: 'Google released...' is a factoid, not a pain/deficiency.",
+          "reason": "This is exactly what the account learned to avoid: announcing a release without linking to a solo operator's pain. Immediate scroll past.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post106-google-vids-free-videos",
+      "graded": "2026-11-07",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop paying for video tools.",
+        "sub": "Free access covers personal Google accounts and Workspace, the paid business plan.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "change",
+        "stopping": "Direct pain: wasting money on video tools. 'Stop paying' is visceral. Sub clarifies *who* gets free access (personal/Workspace), making it actionable for solo ops. No fluff, no jargon. Top-tier concrete pain hook. ✅ Confirmed rule: 'Concrete-pain hooks beat instruction/scold hooks.' ✅ Tagged correctly (no need for sub-tag).",
+        "reason": "Stop paying for video tools. Pain: wasted money. Sub: Free for their accounts. Perfect.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop paying for video tools.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "change",
+          "stopping": "Direct pain: wasting money on video tools. 'Stop paying' is visceral. Sub clarifies *who* gets free access (personal/Workspace), making it actionable for solo ops. No fluff, no jargon. Top-tier concrete pain hook. ✅ Confirmed rule: 'Concrete-pain hooks beat instruction/scold hooks.' ✅ Tagged correctly (no need for sub-tag).",
+          "reason": "Stop paying for video tools. Pain: wasted money. Sub: Free for their accounts. Perfect.",
+          "authored": false
+        },
+        {
+          "headline": "Do you still film your own ads?",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "question",
+          "stopping": "Asks a direct, relatable pain point ('Do you still film your own ads?') that solo operators *actually* do daily. Sub explains the solution (Google Vids for quick ads). Strong enough to stop a scroll. ✅ Confirmed rule: 'Cover names a pain, a change, or a deficiency.' ✅ Uses change/before-after structure (film vs. text-to-video).",
+          "reason": "Do you still film your own ads? Pain: wasted time/money. Sub: Solution (quick service ad).",
+          "authored": false
+        },
+        {
+          "headline": "Three free AI videos each month.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "Numbers create concrete limits ('Three free AI videos each month'). Pain: limited free access vs. unlimited paid tools. Sub clarifies *what* 'three' means (15s each), making it usable. ✅ Confirmed rule: 'Every post must end in something usable.' ✅ Uses number-claim structure (best-performing shape).",
+          "reason": "Three free AI videos each month. Pain: cost/limited free tier. Sub: Clear limit (3x15s).",
+          "authored": false
+        },
+        {
+          "headline": "Google Vids launched for free.",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "before-after",
+          "stopping": "Generic announcement ('launched for free') with no pain point. 'Free' is empty without context. Sub adds a date (Nov 2026) — irrelevant noise. No connection to solo ops' needs. ❌ Disproven rule: 'Meta-commentary about productivity/AI culture' (this is meta-announcement).",
+          "reason": "Google Vids launched for free. Pain: none. Sub: Date (irrelevant).",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Google Vids makes "
+            },
+            {
+              "t": "free video.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Vague statement ('makes free video') that doesn’t name a pain or change. Sub repeats the launch date. Feels like a generic AI news post — not a *business* hook. ❌ Disproven rule: 'Broad 'here are some free tools' round-ups.'",
+          "reason": "Google Vids makes free video. Pain: none. Sub: Date (redundant).",
+          "authored": true
+        },
+        {
+          "headline": "Text becomes video in Google Vids.",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Unexplained fragment ('Text becomes video in Google Vids'). 'Google Vids' is a made-up term (no real product). Audience scrolls past instantly — it reads like a typo or scam. ❌ Confirmed rule: 'A hook a first-time reader cannot understand on its own... does not stop anyone.'",
+          "reason": "Text becomes video in Google Vids. Pain: none. Sub: Explains but can't save a broken hook.",
+          "authored": false
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

@@ -245,6 +245,10 @@ empty The performance brief confirms existing strategy (concrete-pain hooks, ree
 
 Performance of posts 103-104 is not yet meaningful: total signal 87 (need 150 to rank posts) across 12 posts. No new hypotheses are settled. The performance brief states 'PERFORMANCE: not yet meaningful — total signal 87 (need 150 to rank posts). (12 posts, 87 total engagement.)', so the note is a direct restatement of the brief. No new hypotheses are settled because the data is insufficient to confirm or disprove anything.
 
+## Batch notes — posts 105-106 (2026-11-07)
+
+The performance brief states: 'PERFORMANCE: not yet meaningful — total signal 75 (need 150 to rank posts). (12 posts, 75 total engagement.)'
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —
