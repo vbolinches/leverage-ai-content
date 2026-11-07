@@ -1565,9 +1565,12 @@
         "accounts/leverageai/queue/post99-claude-invoice-link/slide05.png"
       ],
       "caption": "Invoice My Clients now connects directly to Claude. You can link the two through their MCP server. This means you can draft invoices, check client records, and manage estimates using plain language instead of clicking through menus.\n\nOpen Claude on web, desktop, or mobile. Go to Settings, then Connectors, and choose Add custom connector. Sign in with your Invoice My Clients account and approve the permissions. Custom connectors depend on your Claude plan and workspace settings.\n\nEvery Invoice My Clients subscription supports this link, including the free tier. Plan limits still apply, such as the twenty-five invoice cap on the free plan. Check the pricing page for feature details.\n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#claudeai #invoicemyclients #solopreneur #freelancetools #smallbusinessadmin #billingautomation #consultantlife #workflowtips #adminhacks #businessowner",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post99-claude-invoice-link/reel.mp4"
+      "video": "accounts/leverageai/queue/post99-claude-invoice-link/reel.mp4",
+      "published_media_id": "18100866362097170",
+      "published_on": "2026-11-07",
+      "threads_posted": true
     },
     {
       "id": "post100-gemini-business-profile",
