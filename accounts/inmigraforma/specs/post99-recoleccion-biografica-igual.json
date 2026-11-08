@@ -1,0 +1,88 @@
+{
+  "slug": "post99-recoleccion-biografica-igual",
+  "hook_candidates": [
+    {
+      "headline": "No busques formularios nuevos",
+      "sub": "La regla dice que todo se queda igual"
+    },
+    {
+      "headline": "Antes pedían datos, ahora siguen igual",
+      "sub": "Sin cambios en los papeles que usas"
+    },
+    {
+      "headline": "No pierdas tiempo buscando novedades",
+      "sub": "Los requisitos se mantienen intactos"
+    },
+    {
+      "headline": "USCIS actualizó la recolección de datos",
+      "sub": "Pero no pide nada diferente hoy"
+    },
+    {
+      "headline": "Tus datos personales siguen los mismos",
+      "sub": "La renovación ya está publicada"
+    }
+  ],
+  "art": "folder",
+  "caption": "USCIS anunció que renovará la recolección de datos personales sin cambios. Esto significa que los formularios que ya usas siguen siendo válidos.\n\nEn palabras simples:\nEl gobierno mantiene la misma lista de información básica para tus trámites. No necesitas llenar nada nuevo ni pagar extra. Pasa lo mismo con un ticket de estacionamiento que se renueva sin cambiar el precio.\n\nOfficial text: “Extension without Change of a Currently Approved Collection Biographic Information Registration”\nQué dice: La agencia seguirá pidiendo tu nombre, dirección y fecha de nacimiento. En el día a día, solo continúas usando los formularios que ya conoces. La página no dice qué pasa si lo ignoras.\n\nEnglish recap:\nUSCIS is renewing the biographic data collection without changes. You will keep using the same forms and provide the same personal details. In plain words: nothing changes for your paperwork today.\n\nFuente oficial: https://www.federalregister.gov/documents/2026/09/28/2026-19756/extension-without-change-of-a-currently-approved-collection-biographic-information-registration\n\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #uscis #greenCard #papeles #nuevasreglas #immigration #eeuu #trámites #visa #informacion",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 099",
+      "headline": [
+        {
+          "t": "USCIS propuso renovar "
+        },
+        {
+          "t": "sin cambios.",
+          "c": "blue"
+        }
+      ],
+      "sub": "La propuesta es del 28 de septiembre de 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "La renovación mantiene tus datos",
+      "body": [
+        {
+          "t": "Desde el 28 de septiembre de 2026, USCIS propuso renovar la recolección de información biográfica sin cambios."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "La renovación mantiene los requisitos",
+      "body": [
+        {
+          "t": "La recolección de información biográfica son los datos personales como nombre y dirección que USCIS solicita."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "La renovación no entra en vigor todavía",
+      "body": [
+        {
+          "t": "La renovación de la recolección de información biográfica mantiene los requisitos actuales."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUÉ HACER",
+      "headline": "Consulta el sitio web oficial",
+      "items": [
+        "Consulta el sitio web oficial (link en la descripción)",
+        "Pregunta a un abogado",
+        "Desconfía de quien te cobre"
+      ],
+      "cta_title": "Guarda este video",
+      "cta_sub": "Sigue a @inmigraforma para noticias.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.federalregister.gov/documents/2026/09/28/2026-19756/extension-without-change-of-a-currently-approved-collection-biographic-information-registration"
+}

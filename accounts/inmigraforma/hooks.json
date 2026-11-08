@@ -4806,6 +4806,86 @@
           "authored": true
         }
       ]
+    },
+    {
+      "slug": "post99-recoleccion-biografica-igual",
+      "graded": "2026-11-08",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No pierdas tiempo buscando novedades",
+        "sub": "Los requisitos se mantienen intactos",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "number-claim",
+        "stopping": "Directly addresses wasting time on non-existent changes. 'Novedades' is a familiar word for 'new things' in daily life, not legal jargon. No confusion, no false alarm. Stops scrollers cold.",
+        "reason": "No pierdas tiempo buscando novedades — speaks to the core frustration of busy immigrants checking for unnecessary changes. 'Novedades' is everyday language, not technical. Clear and actionable.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No pierdas tiempo buscando novedades",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "number-claim",
+          "stopping": "Directly addresses wasting time on non-existent changes. 'Novedades' is a familiar word for 'new things' in daily life, not legal jargon. No confusion, no false alarm. Stops scrollers cold.",
+          "reason": "No pierdas tiempo buscando novedades — speaks to the core frustration of busy immigrants checking for unnecessary changes. 'Novedades' is everyday language, not technical. Clear and actionable.",
+          "authored": false
+        },
+        {
+          "headline": "No busques formularios nuevos",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "number-claim",
+          "stopping": "Clear instruction to 'no busques formularios nuevos' — avoids jargon. 'Formularios' is a known pain point for immigrants. Sub reinforces with 'todo se queda igual.' Strong stop.",
+          "reason": "Uses 'formularios' (forms), a concrete thing readers interact with daily. 'No busques' is urgent and simple.",
+          "authored": false
+        },
+        {
+          "headline": "Antes pedían datos, ahora siguen igual",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "Starts with 'antes' which creates confusion (implied change), though sub clarifies. 'Papeles que usas' is relatable but 'antes' makes readers pause before stopping.",
+          "reason": "The 'antes' makes readers question if there was a past change they missed, adding hesitation before stopping.",
+          "authored": false
+        },
+        {
+          "headline": "USCIS actualizó la recolección de datos",
+          "rank": 4,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "USCIS actualizó... — 'actualizó' sounds like a change (techy word), so readers scroll past thinking 'new thing' without reading sub. Sub is buried.",
+          "reason": "The main hook uses a vague technical term ('actualizó') that triggers scrolling before the sub clarifies no change.",
+          "authored": false
+        },
+        {
+          "headline": "Tus datos personales siguen los mismos",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Confusing fragment: 'La renovación ya está publicada' — 'renovación' (renewal) has no clear link to data collection. First-time reader has no idea what 'renovación' refers to.",
+          "reason": "Uses 'renovación' (renewal) without context, making it a confusing fragment. No stop power, just scroll past.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "USCIS propuso renovar "
+            },
+            {
+              "t": "sin cambios.",
+              "c": "blue"
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "False alarm: 'propuesta... 2026' — implies a change for 2026, making readers think they’re in danger now. Overstates consequence (no change until 2026, but hook makes it feel immediate).",
+          "reason": "Mentions a future date (2026) as if it’s current news, creating unnecessary panic. Breaks trust by overpromising urgency.",
+          "authored": true
+        }
+      ]
     }
   ]
 }

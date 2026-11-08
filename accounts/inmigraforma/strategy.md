@@ -317,3 +317,7 @@ The performance brief reports a total signal of 57 across 12 measured posts, sti
 ### Batch — posts 97-98, drafted 2026-11-02
 
 not enough data to tell total signal 57 < 150 threshold; 12 measured posts; no post-level comparison possible
+
+### Batch — posts 99-99, drafted 2026-11-08
+
+not enough data to tell total signal 69 < 150 threshold; 12 measured posts; no post-level comparison possible
