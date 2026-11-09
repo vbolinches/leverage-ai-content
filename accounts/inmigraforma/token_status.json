@@ -1,7 +1,7 @@
 {
-  "minted": "2026-11-02",
-  "expires": "2027-01-01",
+  "minted": "2026-11-09",
+  "expires": "2027-01-08",
   "note": "Long-lived FB user token via fb_exchange_token (session-independent). App 2095342677999373. Explorer tokens are session-bound - never store one directly again.",
-  "last_refresh": "auto-refreshed by the Refresh Instagram token workflow on 2026-11-02 (no expires_in returned; 60 days assumed)",
+  "last_refresh": "auto-refreshed by the Refresh Instagram token workflow on 2026-11-09 (no expires_in returned; 60 days assumed)",
   "scopes_note": "carries instagram_manage_insights - per-post reach is readable on this account as of 2026-09-07"
 }
