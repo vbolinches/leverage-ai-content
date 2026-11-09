@@ -1,0 +1,68 @@
+{
+  "slug": "post107-chatgpt-images-26-gifs",
+  "hook_candidates": [
+    {
+      "headline": "Five minutes replaces twenty",
+      "sub": "OpenAI introduced Images 2.6, the new picture tool."
+    },
+    {
+      "headline": "Stop drawing static graphics",
+      "sub": "OpenAI introduced Images 2.6, the new picture tool."
+    },
+    {
+      "headline": "Ready to automate your visuals?",
+      "sub": "OpenAI introduced Images 2.6, the new picture tool."
+    },
+    {
+      "headline": "From rough sketch to moving GIF",
+      "sub": "OpenAI introduced Images 2.6, the new picture tool."
+    },
+    {
+      "headline": "Lose twenty minutes per graphic",
+      "sub": "OpenAI introduced Images 2.6, the new picture tool."
+    }
+  ],
+  "art": "chat",
+  "caption": "You spend twenty minutes polishing static graphics for proposals and social posts. This workflow cuts that to five. Open ChatGPT and upload a rough sketch or a simple client logo. The new Images 2.6 model reads the file and turns it into a short animated GIF. You get motion graphics without opening Figma or After Effects.\n\nPaste this prompt into the chat window with your image attached:\n\"Convert this sketch into a clean animated GIF for client proposals. Add a smooth fade-in motion to the main shape. Keep the background solid white and the style flat. Output a file ready for Instagram and LinkedIn.\"\n\nThe tool works best for simple icons, loading animations, or quick story overlays. It will not perfectly match complex brand palettes or handle detailed character animation. Use it to draft placeholders or spice up routine updates. Available to all ChatGPT and Codex subscribers.\n\nSave this for later when you need to draft social assets or proposal visuals quickly.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#chatgpt #freelancetools #solopreneur #aidesign #smallbusinessmarketing #graphicdesignai #workflowtips #consultantlife #businessautomation #timemanagement",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 107",
+      "headline": "OpenAI introduced Images 2.6.",
+      "sub": "OpenAI introduced Images 2.6, the new picture tool.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Updated system inside ChatGPT",
+      "body": "Images 2.6 is the updated system inside ChatGPT that creates pictures and animations."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Generates pictures fifty percent faster",
+      "body": "Images 2.6 generates pictures fifty percent faster, like animating a simple sketch."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Available for all subscribers",
+      "body": "Images 2.6 is available for all ChatGPT and Codex, the OpenAI workspace tool, subscribers."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Read the official update details.",
+      "items": [
+        "Visit the OpenAI website now.",
+        "Test a simple sketch animation.",
+        "Save this for later."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://openai.com/index/introducing-images-2-6/"
+}

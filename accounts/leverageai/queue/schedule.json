@@ -1677,6 +1677,21 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post106-google-vids-free-videos/reel.mp4"
+    },
+    {
+      "id": "post107-chatgpt-images-26-gifs",
+      "date": "2026-11-15",
+      "slides": [
+        "accounts/leverageai/queue/post107-chatgpt-images-26-gifs/slide01.png",
+        "accounts/leverageai/queue/post107-chatgpt-images-26-gifs/slide02.png",
+        "accounts/leverageai/queue/post107-chatgpt-images-26-gifs/slide03.png",
+        "accounts/leverageai/queue/post107-chatgpt-images-26-gifs/slide04.png",
+        "accounts/leverageai/queue/post107-chatgpt-images-26-gifs/slide05.png"
+      ],
+      "caption": "You spend twenty minutes polishing static graphics for proposals and social posts. This workflow cuts that to five. Open ChatGPT and upload a rough sketch or a simple client logo. The new Images 2.6 model reads the file and turns it into a short animated GIF. You get motion graphics without opening Figma or After Effects.\n\nPaste this prompt into the chat window with your image attached:\n\"Convert this sketch into a clean animated GIF for client proposals. Add a smooth fade-in motion to the main shape. Keep the background solid white and the style flat. Output a file ready for Instagram and LinkedIn.\"\n\nThe tool works best for simple icons, loading animations, or quick story overlays. It will not perfectly match complex brand palettes or handle detailed character animation. Use it to draft placeholders or spice up routine updates. Available to all ChatGPT and Codex subscribers.\n\nSave this for later when you need to draft social assets or proposal visuals quickly.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#chatgpt #freelancetools #solopreneur #aidesign #smallbusinessmarketing #graphicdesignai #workflowtips #consultantlife #businessautomation #timemanagement",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post107-chatgpt-images-26-gifs/reel.mp4"
     }
   ]
 }

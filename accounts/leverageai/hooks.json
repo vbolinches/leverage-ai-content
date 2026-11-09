@@ -534,6 +534,78 @@
       ]
     },
     {
+      "slug": "post107-chatgpt-images-26-gifs",
+      "graded": "2026-11-09",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Lose twenty minutes per graphic",
+        "sub": "OpenAI introduced Images 2.6, the new picture tool.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "contrarian",
+        "stopping": "Lose twenty minutes per graphic",
+        "reason": "Names a concrete, measurable pain (time wasted) that resonates with solo operators' daily reality. 'Twenty minutes' is specific and relatable. The 'per graphic' implies recurring cost, making it feel urgent.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Lose twenty minutes per graphic",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "Lose twenty minutes per graphic",
+          "reason": "Names a concrete, measurable pain (time wasted) that resonates with solo operators' daily reality. 'Twenty minutes' is specific and relatable. The 'per graphic' implies recurring cost, making it feel urgent.",
+          "authored": false
+        },
+        {
+          "headline": "Stop drawing static graphics",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Stop drawing static graphics",
+          "reason": "Implies avoiding a pain ('static graphics' as a deficiency), but 'static graphics' is a category, not a pain. Less concrete than F's time loss, but better than vague alternatives.",
+          "authored": false
+        },
+        {
+          "headline": "Five minutes replaces twenty",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Five minutes replaces twenty",
+          "reason": "Uses a number, but 'replaces' is confusing (replaces what?). Doesn't name a pain (e.g., 'lose twenty minutes' is clearer than 'replaces twenty').",
+          "authored": false
+        },
+        {
+          "headline": "From rough sketch to moving GIF",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "From rough sketch to moving GIF",
+          "reason": "'Moving GIF' is irrelevant to most solo operators (not a common pain point). 'Rough sketch' implies a process, but no clear pain or cost is named.",
+          "authored": false
+        },
+        {
+          "headline": "Ready to automate your visuals?",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Ready to automate your visuals?",
+          "reason": "Vague, generic call-to-action. 'Automate' is a buzzword with no concrete pain or cost attached. Typical 'salesy' language that gets scrolled past.",
+          "authored": false
+        },
+        {
+          "headline": "OpenAI introduced Images 2.6.",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "OpenAI introduced Images 2.6.",
+          "reason": "Pure news announcement. No pain, no cost, no relevance to solo operators' work. The audience would immediately scroll past this as irrelevant.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

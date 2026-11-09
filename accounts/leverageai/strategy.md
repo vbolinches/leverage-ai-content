@@ -249,6 +249,10 @@ Performance of posts 103-104 is not yet meaningful: total signal 87 (need 150 to
 
 The performance brief states: 'PERFORMANCE: not yet meaningful — total signal 75 (need 150 to rank posts). (12 posts, 75 total engagement.)'
 
+## Batch notes — posts 107-107 (2026-11-09)
+
+Performance not yet meaningful: total engagement 58 (need 150 to rank posts) across 12 posts. The performance brief states: 'PERFORMANCE: not yet meaningful — total signal 58 (need 150 to rank posts). (12 posts, 58 total engagement.)'
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —
