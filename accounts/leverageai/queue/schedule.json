@@ -1601,9 +1601,12 @@
         "accounts/leverageai/queue/post101-google-security-checkup/slide05.png"
       ],
       "caption": "Solo operators waste hours on manual security reviews. Google released the Security Checkup on Oct 30, 2026. It replaces those manual steps with a guided scan. The whole process takes two minutes.\n\nCopy and paste this exact instruction into your notes or task manager:\nSign in quickly and securely with passkeys.\n\nThis workflow is for anyone managing client emails or business accounts. The tool focuses on account safety and does not cover other software. Run it once to lock your login flow.\n\nSave this post to run the scan this week. Share it with your team.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancetips #gmailsecurity #passkeys #smallbusinessadmin #accountsecurity #digitalworkflow #time-saving #businessops #techworkflow",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post101-google-security-checkup/reel.mp4"
+      "video": "accounts/leverageai/queue/post101-google-security-checkup/reel.mp4",
+      "published_media_id": "18110040947212115",
+      "published_on": "2026-11-10",
+      "threads_posted": true
     },
     {
       "id": "post102-gemini-4-argon-data-reports",
