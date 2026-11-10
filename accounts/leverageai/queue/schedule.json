@@ -1619,9 +1619,12 @@
         "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/slide05.png"
       ],
       "caption": "Stop copying numbers between spreadsheets. Gemini 4 Argon handles heavy data lifting so you can focus on delivering work. Upload your client files, paste the prompt below, and let it sort the noise.\n\nPaste this into the Gemini app or Search:\n\"I am uploading a batch of client invoices and project notes. Parse the data and generate a clean summary report. List total billed amounts, outstanding balances, and key deliverables from the notes. Format as a markdown table and flag any missing information.\"\n\nThis runs on Google AI Ultra and Pro plans. You can access it in the Gemini app or through Search. The model handles large file sets quickly, but you still need to review the output for accuracy before sending it to clients. AI can misread handwritten notes or poorly scanned PDFs, so keep your source files clear.\n\nSave this post to your collection.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solopreneur #freelancertips #clientmanagement #dataanalysis #smallbusiness #geminiapp #productivity #consulting #aiworkflows",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/reel.mp4"
+      "video": "accounts/leverageai/queue/post102-gemini-4-argon-data-reports/reel.mp4",
+      "published_media_id": "18109220819260470",
+      "published_on": "2026-11-10",
+      "threads_posted": true
     },
     {
       "id": "post103-merge-gpt6-workflows",
