@@ -1,6 +1,222 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-10",
   "items": [
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Yonkers Rises",
+      "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Anthropic targets $1.4 trillion IPO",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Adobe is going all in on agentic AI",
+      "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
+      "url": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Hands-on with Ring’s new AI drone camera for your home",
+      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "What could China get from Jensen Huang?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "The global pledge to use AI for climate good is a cruel joke",
+      "url": "https://www.theverge.com/science/1030252/ai-data-center-climate-pledge-united-nations-cop31",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+      "at": "2026-11-09",
+      "signal": 356,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "llm-anthropic 0.31",
+      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+      "at": "2026-11-09",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Locating the source of a mysterious beep with Claude",
+      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+      "at": "2026-11-09",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+      "at": "2026-11-09",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Hide your slop PR descriptions behind <details><summary>",
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+      "at": "2026-11-09",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
+      "url": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
+      "at": "2026-11-09",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Here’s what Trump said he knew about Jensen Huang",
+      "url": "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference",
+      "at": "2026-11-09",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "at": "2026-11-09",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "at": "2026-11-09",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "parse_number() as a SQLite extension: C vs Rust",
+      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+      "at": "2026-11-08",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+      "at": "2026-11-07",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Terry Pratchett's Study",
+      "url": "https://simonwillison.net/2026/Nov/7/hn-50407316/",
+      "at": "2026-11-07",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Nilay Patel",
+      "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+      "at": "2026-11-06",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "My psychophysics as a bilateral cochlear implant user",
+      "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
+      "at": "2026-11-05",
+      "signal": 188,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Paul Ford",
+      "url": "https://simonwillison.net/2026/Nov/5/paul-ford/",
+      "at": "2026-11-05",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "hn/ChatGPT workflow",
+      "title": "Ask HN: What's your current AI agentic setup?",
+      "url": "https://news.ycombinator.com/item?id=50366117",
+      "at": "2026-11-04",
+      "signal": 571,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-llm 0.1a10",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-llm/",
+      "at": "2026-11-04",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-apps 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+      "at": "2026-11-04",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
     {
       "source": "rss/simonwillison.net",
       "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
@@ -18,11 +234,43 @@
       "seen": "2026-11-03"
     },
     {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-agent 0.5a0",
+      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent/",
+      "at": "2026-11-03",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "llm 0.37.1",
+      "url": "https://simonwillison.net/2026/Nov/3/llm/",
+      "at": "2026-11-03",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "AI is destroying my CS degree",
+      "url": "https://simonwillison.net/2026/Nov/3/hn-50354278/",
+      "at": "2026-11-03",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "at": "2026-11-03",
+      "signal": 0,
+      "seen": "2026-11-10"
+    },
+    {
       "source": "hn/Claude AI",
       "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
       "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
       "at": "2026-11-02",
-      "signal": 335,
+      "signal": 352,
       "seen": "2026-11-03"
     },
     {
@@ -70,7 +318,7 @@
       "title": "Show HN: BBRouter – Ben Eater's 8-bit computer, simulated on 3D breadboards",
       "url": "https://bbrouter.com/bbrouter/ben-eater-sap-1",
       "at": "2026-11-01",
-      "signal": 57,
+      "signal": 58,
       "seen": "2026-11-03"
     },
     {
@@ -182,7 +430,7 @@
       "title": "Claude Code regularly sends each background agent’s transcript to its model",
       "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
       "at": "2026-10-29",
-      "signal": 589,
+      "signal": 591,
       "seen": "2026-11-03"
     },
     {
@@ -254,7 +502,7 @@
       "title": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
       "url": "https://github.com/FrigadeHQ/hob",
       "at": "2026-10-26",
-      "signal": 179,
+      "signal": 180,
       "seen": "2026-10-27"
     },
     {
@@ -392,254 +640,6 @@
       "at": "2026-10-23",
       "signal": 0,
       "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "DE STAAT - FREEDOM (Official Music Video)",
-      "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
-      "at": "2026-10-22",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Donating Agent Skills to the Agentic AI Foundation",
-      "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
-      "at": "2026-10-22",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Armin Ronacher",
-      "url": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
-      "at": "2026-10-22",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "hn/Claude AI",
-      "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
-      "url": "https://github.com/omnara-ai/omnara",
-      "at": "2026-10-21",
-      "signal": 114,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
-      "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
-      "at": "2026-10-21",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Panache — RTS Belle Époque pour mobile",
-      "url": "https://simonwillison.net/2026/Oct/21/panache/",
-      "at": "2026-10-21",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "hn/NotebookLM",
-      "title": "The painter behind Manhattan’s Gilded Age interiors",
-      "url": "https://engelsbergideas.com/notebook/the-unknown-painter-behind-manhattans-gilded-age-interiors/",
-      "at": "2026-10-20",
-      "signal": 50,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "CoreWeave&#8217;s debt is becoming the whole AI industry&#8217;s problem",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
-      "at": "2026-10-20",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "eMudhra Intermediate CA Compromise",
-      "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
-      "at": "2026-10-20",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
-      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
-      "at": "2026-10-20",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "hn/Claude AI",
-      "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
-      "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
-      "at": "2026-10-19",
-      "signal": 174,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "hn/NotebookLM",
-      "title": "Show HN: I built a task system to handle the drudgery so I could focus on tasks",
-      "url": "https://3anddoneapp.com/try",
-      "at": "2026-10-19",
-      "signal": 61,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "My obituary for programming",
-      "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
-      "at": "2026-10-19",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "The fossil fuel comeback is here",
-      "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
-      "at": "2026-10-19",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes",
-      "url": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
-      "at": "2026-10-19",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-      "at": "2026-10-19",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Democrats think cracking down on AI could give them an edge",
-      "url": "https://www.theverge.com/policy/1013113/democrats-ai-midterms",
-      "at": "2026-10-19",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "llm-tools-datasette 0.1.1",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
-      "at": "2026-10-18",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "llm-echo 0.5",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
-      "at": "2026-10-18",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "A woman was arrested in Philly for blocking a delivery robot",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-      "at": "2026-10-18",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Inline rendering with document​.currentScript",
-      "url": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
-      "at": "2026-10-17",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "web-edit 0.1a2",
-      "url": "https://simonwillison.net/2026/Oct/17/web-edit/",
-      "at": "2026-10-17",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Meta removes language that may have allowed it to scrape news sites",
-      "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
-      "at": "2026-10-17",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Meta’s new terms may allow it to train AI on news sites for free",
-      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-      "at": "2026-10-17",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "hn/NotebookLM",
-      "title": "Gdynia and the Dream of a Maritime Poland",
-      "url": "https://engelsbergideas.com/notebook/gdynia-and-the-dream-of-a-maritime-poland/",
-      "at": "2026-10-16",
-      "signal": 122,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-      "url": "https://simonwillison.net/2026/Oct/16/code-review/",
-      "at": "2026-10-16",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Websites are closing their doors to AI agents",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "at": "2026-10-16",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
-      "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
-      "at": "2026-10-16",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "sparqlite: SPARQL 1.1 inside SQLite, written in Rust",
-      "url": "https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/",
-      "at": "2026-10-16",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Chirp Pong",
-      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
-      "at": "2026-10-15",
-      "signal": 0,
-      "seen": "2026-10-20"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
-      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
-      "at": "2026-10-15",
-      "signal": 0,
-      "seen": "2026-10-20"
     }
   ]
 }
