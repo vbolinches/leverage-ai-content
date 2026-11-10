@@ -10079,6 +10079,120 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-11-10",
+      "followers": 165,
+      "posts": [
+        {
+          "slug": "post99-recoleccion-biografica-igual",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post98-removing-deference-prior-approvals",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post97-sileiri-doe-sin-costo",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post96-uscis-fee-adjustments-fy2027",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post95-tps-elsalvador-reinscripcion",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 8,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post94-tarifas-inflacion-hr1",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 11,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post82-sevis-corte-programado",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post86-foreign-government-employees",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post91-civil-penalties-failure-to-depart",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 14,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post89-new-asylum-office-charlotte",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post87-uscis-subida-tarifas-inflacion",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 5,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post65-diplomatic-children-lpr-registration",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 6,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
