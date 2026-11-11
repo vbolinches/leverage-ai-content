@@ -1637,9 +1637,12 @@
         "accounts/leverageai/queue/post103-merge-gpt6-workflows/slide05.png"
       ],
       "caption": "Merge now runs GPT-6 Astra for sales and internal workflows. The platform uses this AI to automate routine tasks like executive dinner planning, cutting setup time from hours to thirty minutes. It also enables non-engineers to build their own automation flows without writing code.\n\nOpen your Merge dashboard and create a new workflow. Paste this prompt into the setup box:\nCheck my calendar for upcoming client meetings. Draft a short follow-up email with clear next steps. Save the draft to my inbox. Run this daily at 9 AM.\nConnect your calendar and email in the same screen. Test the flow on a past meeting to verify the output before scheduling it.\n\nThis works for solo consultants and freelancers who manage their own pipeline and admin. It does not negotiate pricing, read complex contracts, or replace your final review. You still approve every draft. Merge lets each team member choose their own tools and encourages daily testing. Check their pricing page for current plans.\n\nSave this for later when you build your first flow.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #businessautomation #mergeai #gpt6 #productivitytips #smallbusinessowner #adminautomation #aiworkflows",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post103-merge-gpt6-workflows/reel.mp4"
+      "video": "accounts/leverageai/queue/post103-merge-gpt6-workflows/reel.mp4",
+      "published_media_id": "18109889543610328",
+      "published_on": "2026-11-11",
+      "threads_posted": true
     },
     {
       "id": "post104-gemini-resume-bullets",
