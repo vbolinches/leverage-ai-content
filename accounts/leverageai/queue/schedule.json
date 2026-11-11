@@ -1698,6 +1698,21 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post107-chatgpt-images-26-gifs/reel.mp4"
+    },
+    {
+      "id": "post108-adobe-generative-remove",
+      "date": "2026-11-16",
+      "slides": [
+        "accounts/leverageai/queue/post108-adobe-generative-remove/slide01.png",
+        "accounts/leverageai/queue/post108-adobe-generative-remove/slide02.png",
+        "accounts/leverageai/queue/post108-adobe-generative-remove/slide03.png",
+        "accounts/leverageai/queue/post108-adobe-generative-remove/slide04.png",
+        "accounts/leverageai/queue/post108-adobe-generative-remove/slide05.png"
+      ],
+      "caption": "You edit client videos and photos yourself. Unwanted objects, logos, or blemishes used to take hours of manual masking. Now you can mask and track an object, click Remove, and let Premiere fill the area with realistic detail. Lightroom also lets you retouch skin in photographs with a single tap on desktop. This saves you billable hours and cuts revision rounds.\n\nOpen Premiere beta or Lightroom on desktop. Mask the unwanted item in your timeline or photo. Click Remove. The app tracks the object across frames and fills the gap with matching background detail. Export your clean file. If you need to batch removal requests for a client shoot, paste this into ChatGPT: \"I am editing a 3-minute corporate video. List 10 common unwanted objects that appear in office footage and the exact frame timestamps where they usually appear. Format as a checklist for my editor.\"\n\nThis tool works for solo videographers, photographers, and content creators who edit their own deliverables. It is in the Premiere beta now and adds skin retouching to Lightroom desktop. Test it on your next draft before the final export.\n\nSave this for your next editing session.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#videoediting #photographytips #freelanceediting #adobepremiere #lightroom #generativeai #soloentrepreneur #contentcreation #smallbusinessowner #editingworkflow",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post108-adobe-generative-remove/reel.mp4"
     }
   ]
 }

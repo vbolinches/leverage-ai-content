@@ -606,6 +606,69 @@
       ]
     },
     {
+      "slug": "post108-adobe-generative-remove",
+      "graded": "2026-11-11",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop losing billable hours on edits.",
+        "sub": "Adobe launched the Generative Remove tool, an automatic eraser, on November 10, 2026.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "billable hours is a concrete, high-stakes pain point for solo operators. They immediately visualize lost income. This is the only hook that makes them stop and think 'Is this about me?'.",
+        "reason": "Concrete pain point (lost billable hours) directly tied to income, not a generic 'time-saving' claim. Matches the account's proven formula.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop losing billable hours on edits.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "billable hours is a concrete, high-stakes pain point for solo operators. They immediately visualize lost income. This is the only hook that makes them stop and think 'Is this about me?'.",
+          "reason": "Concrete pain point (lost billable hours) directly tied to income, not a generic 'time-saving' claim. Matches the account's proven formula.",
+          "authored": false
+        },
+        {
+          "headline": "How do you remove background signs fast?",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'background signs' is unexplained and likely a typo/misphrasing (should be 'backgrounds' or 'signs' as in signage). First-time readers skip this immediately.",
+          "reason": "Unexplained fragment violates the 'no fragments' rule. 'Signs' is unclear and not a standard term in this context.",
+          "authored": false
+        },
+        {
+          "headline": "You are still masking frames manually.",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Niche technical term ('masking frames') that only video editors would understand. Solo consultants don't work with frames daily.",
+          "reason": "Fails the 'median solo operator' test. 'Masking frames' is a specific video editing task, not a common pain point for general solo business owners.",
+          "authored": false
+        },
+        {
+          "headline": "Adobe cuts editing time by hours.",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Vague, non-specific 'cuts editing time by hours' — no concrete pain (e.g., 'billable hours') or metric.",
+          "reason": "Generic instruction/scold hook that doesn't name a specific pain point. Matches the disapproved 'vague/technical phrasing' pattern.",
+          "authored": false
+        },
+        {
+          "headline": "Adobe launches Generative Remove.",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Pure news headline. 'Adobe launches...' is irrelevant to the audience's pain. No hook, just a company update.",
+          "reason": "Fails the 'cover names a pain' rule. This is exactly the type of meta-commentary that gets skipped.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

@@ -1,0 +1,68 @@
+{
+  "slug": "post108-adobe-generative-remove",
+  "hook_candidates": [
+    {
+      "headline": "Adobe cuts editing time by hours.",
+      "sub": "Adobe launched the Generative Remove tool, an automatic eraser, on November 10, 2026."
+    },
+    {
+      "headline": "You are still masking frames manually.",
+      "sub": "Adobe launched the Generative Remove tool, an automatic eraser, on November 10, 2026."
+    },
+    {
+      "headline": "How do you remove background signs fast?",
+      "sub": "Adobe launched the Generative Remove tool, an automatic eraser, on November 10, 2026."
+    },
+    {
+      "headline": "From manual tracking to one-click removal.",
+      "sub": "Adobe launched the Generative Remove tool, an automatic eraser, on November 10, 2026."
+    },
+    {
+      "headline": "Stop losing billable hours on edits.",
+      "sub": "Adobe launched the Generative Remove tool, an automatic eraser, on November 10, 2026."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "You edit client videos and photos yourself. Unwanted objects, logos, or blemishes used to take hours of manual masking. Now you can mask and track an object, click Remove, and let Premiere fill the area with realistic detail. Lightroom also lets you retouch skin in photographs with a single tap on desktop. This saves you billable hours and cuts revision rounds.\n\nOpen Premiere beta or Lightroom on desktop. Mask the unwanted item in your timeline or photo. Click Remove. The app tracks the object across frames and fills the gap with matching background detail. Export your clean file. If you need to batch removal requests for a client shoot, paste this into ChatGPT: \"I am editing a 3-minute corporate video. List 10 common unwanted objects that appear in office footage and the exact frame timestamps where they usually appear. Format as a checklist for my editor.\"\n\nThis tool works for solo videographers, photographers, and content creators who edit their own deliverables. It is in the Premiere beta now and adds skin retouching to Lightroom desktop. Test it on your next draft before the final export.\n\nSave this for your next editing session.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#videoediting #photographytips #freelanceediting #adobepremiere #lightroom #generativeai #soloentrepreneur #contentcreation #smallbusinessowner #editingworkflow",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 108",
+      "headline": "Adobe launches Generative Remove.",
+      "sub": "Adobe launched the Generative Remove tool, an automatic eraser, on November 10, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "AI eraser tool.",
+      "body": "Generative Remove means using artificial intelligence to delete unwanted objects."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Fills empty spaces.",
+      "body": "The Generative Remove tool fills empty spaces with realistic backgrounds, like hiding a sign."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Premiere beta now.",
+      "body": "Generative Remove runs in Premiere beta, the video editor, while Lightroom gets skin retouching."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Read the full list.",
+      "items": [
+        "Check the Adobe blog.",
+        "Test the Premiere beta.",
+        "Save this for later."
+      ],
+      "cta_title": "Save this",
+      "cta_sub": "Save this for later.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates"
+}
