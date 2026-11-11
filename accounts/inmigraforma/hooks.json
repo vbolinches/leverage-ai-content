@@ -1,6 +1,91 @@
 {
   "entries": [
     {
+      "slug": "post100-cambio-direccion-citas-louisville",
+      "graded": "2026-11-11",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "No vayas a la dirección vieja",
+        "sub": "cerró en Louisville los días 29 y 30",
+        "rank": 1,
+        "score": 1.0,
+        "shape": "number-claim",
+        "stopping": "Fragment: 'dirección vieja' unexplained without context (address? website?) - readers scroll past without understanding the core issue. No action is clear.",
+        "reason": "Fragment: 'dirección vieja' unexplained without context (address? website?) - readers scroll past without understanding the core issue. No action is clear.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No vayas a la dirección vieja",
+          "rank": 1,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "Fragment: 'dirección vieja' unexplained without context (address? website?) - readers scroll past without understanding the core issue. No action is clear.",
+          "reason": "Fragment: 'dirección vieja' unexplained without context (address? website?) - readers scroll past without understanding the core issue. No action is clear.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "La oficina del USCIS para citas cerró"
+            }
+          ],
+          "rank": 2,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Acronym 'USCIS' unexplained - first-time readers won't know what it refers to. A fragment hook gets skipped immediately.",
+          "reason": "Acronym 'USCIS' unexplained - first-time readers won't know what it refers to. A fragment hook gets skipped immediately.",
+          "authored": true
+        },
+        {
+          "headline": "Antes cerró, ahora reabrió",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "number-claim",
+          "stopping": "Confusing tense: 'Antes cerró, ahora reabrió' implies past closure but present reopening, which contradicts the sub's dates. Readers scroll past when the meaning is unclear.",
+          "reason": "Confusing tense: 'Antes cerró, ahora reabrió' implies past closure but present reopening, which contradicts the sub's dates. Readers scroll past when the meaning is unclear.",
+          "authored": false
+        },
+        {
+          "headline": "La oficina se mudó en Louisville",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "Vague phrasing: 'La oficina se mudó' suggests relocation but 'en Louisville' is redundant and confusing. Sub doesn't clarify the closure, making it feel like routine change.",
+          "reason": "Vague phrasing: 'La oficina se mudó' suggests relocation but 'en Louisville' is redundant and confusing. Sub doesn't clarify the closure, making it feel like routine change.",
+          "authored": false
+        },
+        {
+          "headline": "Cambio de lugar para tus citas",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "number-claim",
+          "stopping": "Weak urgency: 'Cambio de lugar para tus citas' is too generic - readers scroll past when the consequence ('change' not 'closure') feels minor.",
+          "reason": "Weak urgency: 'Cambio de lugar para tus citas' is too generic - readers scroll past when the consequence ('change' not 'closure') feels minor.",
+          "authored": false
+        },
+        {
+          "headline": "Perderás tiempo si no revisas",
+          "rank": 6,
+          "score": 6.0,
+          "shape": "number-claim",
+          "stopping": "Mild consequence: 'Perderás tiempo' is abstract and not urgent enough to stop scrollers. The sub clarifies but the hook itself lacks punch.",
+          "reason": "Mild consequence: 'Perderás tiempo' is abstract and not urgent enough to stop scrollers. The sub clarifies but the hook itself lacks punch.",
+          "authored": false
+        },
+        {
+          "headline": "No vayas a la dirección vieja",
+          "rank": 7,
+          "score": 7.0,
+          "shape": "number-claim",
+          "stopping": "Clear action + urgency: 'No vayas a la dirección vieja' + sub explains closure dates and instructs 'Revisa antes de salir' - instantly understandable and critical for readers.",
+          "reason": "Clear action + urgency: 'No vayas a la dirección vieja' + sub explains closure dates and instructs 'Revisa antes de salir' - instantly understandable and critical for readers.",
+          "authored": false
+        }
+      ]
+    },
+    {
       "slug": "post29-tps-fechas-en-pagina-oficial-uscis",
       "graded": "2026-08-19",
       "threshold": 6.0,
