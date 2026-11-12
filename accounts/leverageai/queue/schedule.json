@@ -1655,9 +1655,12 @@
         "accounts/leverageai/queue/post104-gemini-resume-bullets/slide05.png"
       ],
       "caption": "Gemini now turns rough notes into polished resume bullets. If you are updating your profile for a new role, this saves the hour you would spend rewriting your experience. You can generate, preview, and edit the bullets directly in the Gemini app without switching tools.\n\nOpen Gemini and paste your raw notes. Use this prompt to get immediate results:\n\n\"Turn these rough notes into professional resume bullets with strong action verbs and an executive tone:\n\n[Paste your notes here]\"\n\nReview the output in the preview window and edit lines directly in the app. The source page notes you can now generate, preview, and edit documents directly in Gemini.\n\nSave this post to update your resume faster.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #resumetips #gemini #jobsearch #freelancer #solopreneur #productivity #aitools #writingassistant #careerupdate",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post104-gemini-resume-bullets/reel.mp4"
+      "video": "accounts/leverageai/queue/post104-gemini-resume-bullets/reel.mp4",
+      "published_media_id": "18105327776653076",
+      "published_on": "2026-11-12",
+      "threads_posted": true
     },
     {
       "id": "post105-gemini-omni-video",
