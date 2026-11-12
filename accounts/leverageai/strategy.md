@@ -257,6 +257,10 @@ Performance not yet meaningful: total engagement 58 (need 150 to rank posts) acr
 
 Performance not yet meaningful: total engagement 50 (need 150 to rank posts) across 12 posts. No new hypotheses are settled. The performance brief states: 'PERFORMANCE: not yet meaningful — total signal 50 (need 150 to rank posts). (12 posts, 50 total engagement.)'
 
+## Batch notes — posts 109-111 (2026-11-12)
+
+not enough data to tell total signal 55 (need 150 to rank posts) across 12 posts
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

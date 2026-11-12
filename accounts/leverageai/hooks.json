@@ -669,6 +669,221 @@
       ]
     },
     {
+      "slug": "post109-gemini-4-carbon-freelancers",
+      "graded": "2026-11-12",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You lose hours on admin work.",
+        "sub": "Google released Gemini 4 Carbon on November 10, 2026.",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "contrarian",
+        "stopping": "concrete pain point (admin work) directly matches solo operator reality. Stops scrollers instantly by naming a universal time-sink they've felt. Best-in-batch fit per their data. No confusion, no jargon, just the pain they feel daily. Highest chance to stop the scroll. This is the gold standard they've learned to chase. Scored 8 because it's the only one that actually stops the scroll for the target audience. It's not just good—it's the kind of hook that *earned* the stop by naming the pain, not the product.",
+        "reason": "Concrete pain point (admin work) directly matches solo operator reality. Stops scrollers instantly by naming a universal time-sink they've felt. Best-in-batch fit per their data. No confusion, no jargon, just the pain they feel daily.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You lose hours on admin work.",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "concrete pain point (admin work) directly matches solo operator reality. Stops scrollers instantly by naming a universal time-sink they've felt. Best-in-batch fit per their data. No confusion, no jargon, just the pain they feel daily. Highest chance to stop the scroll. This is the gold standard they've learned to chase. Scored 8 because it's the only one that actually stops the scroll for the target audience. It's not just good—it's the kind of hook that *earned* the stop by naming the pain, not the product.",
+          "reason": "Concrete pain point (admin work) directly matches solo operator reality. Stops scrollers instantly by naming a universal time-sink they've felt. Best-in-batch fit per their data. No confusion, no jargon, just the pain they feel daily.",
+          "authored": false
+        },
+        {
+          "headline": "Can your AI handle long tasks?",
+          "rank": 2,
+          "score": 3.0,
+          "shape": "question",
+          "stopping": "Asks a question about AI capability but frames it in vague, technical terms ('long tasks') that don't resonate with solo operators. They don't think about 'long tasks'—they think about losing hours. The question feels like a test, not a solution, and gets scrolled past because it doesn't name the pain they actually feel. It's better than the announcements but still fails the 'concrete pain' test.",
+          "reason": "Frames AI capability in vague, technical terms ('long tasks') that don't match solo operator reality. Feels like a test, not a solution. Still too abstract to stop the scroll.",
+          "authored": false
+        },
+        {
+          "headline": "You ignore long prompt limits.",
+          "rank": 3,
+          "score": 2.0,
+          "shape": "question",
+          "stopping": "Uses unexplained technical jargon ('long prompt limits') that solo operators won't recognize or care about. The phrase is a fragment that doesn't make sense on its own. First-time readers would skip it immediately because it feels like insider talk they don't understand. This is the 'unexplained code' they warned against.",
+          "reason": "Unexplained technical jargon ('prompt limits') that solo operators don't use. Feels like insider talk. First-time readers skip it immediately.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Google released Gemini 4 Carbon."
+            }
+          ],
+          "rank": 4,
+          "score": 2.0,
+          "shape": "question",
+          "stopping": "Announces a product release ('Google released Gemini 4 Carbon') without linking it to a pain point. Solo operators don't care about model releases—they care about their own time. The hook is clear but irrelevant, so it gets scrolled past like all other news announcements. It's a generic tech announcement, not a pain point.",
+          "reason": "Announces product release without linking to pain. Solo operators don't care about model releases—they care about time. Clear but irrelevant, so they scroll past.",
+          "authored": true
+        },
+        {
+          "headline": "One new AI tool drops today.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "question",
+          "stopping": "Similar to A but vaguer ('One new AI tool drops today'). Still a product announcement disguised as news. 'Drops today' is a common tech phrase, but it's not a pain point. Solo operators scroll past because it's just another tool announcement they've seen before.",
+          "reason": "Vague product announcement ('new AI tool drops today'). Feels like generic tech news. Solo operators scroll past as they've seen this before.",
+          "authored": false
+        },
+        {
+          "headline": "Old models drop on long tasks.",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "question",
+          "stopping": "Grammatically broken and unexplained ('Old models drop on long tasks'). 'Drop on' is nonsense phrasing—readers would immediately skip it as a typo or error. It's the worst possible type of hook: a fragment that makes no sense. This is exactly the 'unexplained code' they warned against.",
+          "reason": "Grammatically broken phrase ('Old models drop on long tasks'). Makes no sense to first-time readers. Skipped immediately as a typo/error.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post110-chatgpt-business-profiles",
+      "graded": "2026-11-12",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Losing referral traffic daily.",
+        "sub": "OpenAI launched ChatGPT Businesses Profiles on November 10, 2026.",
+        "rank": 1,
+        "score": 7.0,
+        "shape": "contrarian",
+        "stopping": "Concrete pain: 'Losing referral traffic daily' directly impacts revenue. Matches proven high-reach format (specific pain + urgency).",
+        "reason": "Losing referral traffic daily' is a concrete, daily financial pain point for solo operators. No ambiguity, no need for context. This is exactly what the account learned works (see Batch 051-057).",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Losing referral traffic daily.",
+          "rank": 1,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain: 'Losing referral traffic daily' directly impacts revenue. Matches proven high-reach format (specific pain + urgency).",
+          "reason": "Losing referral traffic daily' is a concrete, daily financial pain point for solo operators. No ambiguity, no need for context. This is exactly what the account learned works (see Batch 051-057).",
+          "authored": false
+        },
+        {
+          "headline": "Skipping your profile setup.",
+          "rank": 2,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "Implies a deficiency ('skipping setup') but is vague. Better than fragments but not specific enough to stop scrolling.",
+          "reason": " 'Skipping your profile setup' hints at a mistake but doesn't name the consequence (e.g., 'losing clients'). It's a deficiency hook, but too vague to override the default scroll. Still better than factual announcements.",
+          "authored": false
+        },
+        {
+          "headline": "From invisible to verified.",
+          "rank": 3,
+          "score": 2.0,
+          "shape": "before-after",
+          "stopping": "Fragment: 'Invisible to verified' is unexplained. 'Invisible' is a pain word but needs context to stop scrolling.",
+          "reason": " 'Invisible' is a pain word, but the hook is a fragment (no 'before/after' context). First-time readers can't understand if this refers to business visibility, SEO, or something else. Scores below 3 as per rules.",
+          "authored": false
+        },
+        {
+          "headline": "ChatGPT adds business profiles.",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Factual announcement: 'ChatGPT adds business profiles' is topic-label framing (disproven). Understandable but irrelevant to pain.",
+          "reason": "This is a factual product announcement, not a pain point. It's topic-label framing (disproven), so it's a low-engagement format. It's not a fragment (complete sentence), so it scores higher than fragments but still low.",
+          "authored": true
+        },
+        {
+          "headline": "November 10 launch date.",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "number-claim",
+          "stopping": "Fragment: 'November 10 launch date' is meaningless on its own. No pain, no context, no relevance.",
+          "reason": "This is a pure date fragment. First-time readers can't understand why a launch date matters to their business. Scores below 3 as per rules.",
+          "authored": false
+        },
+        {
+          "headline": "Will clients find you here?",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "question",
+          "stopping": "Fragment: 'Will clients find you here?' is a question with no anchor ('here' is undefined). Worst possible fragment for this audience.",
+          "reason": "This is a question with no context ('here' refers to what?). It's worse than E because it implies a potential issue but fails to explain it. First-time readers will scroll past immediately.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post111-gemini-widget-client-tracking",
+      "graded": "2026-11-12",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You lose six hours a month on admin.",
+        "sub": "Google announced Create My Widget, a phone screen tool, on November 10, 2026.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "Concrete pain + specific number (6 hours) makes it undeniable. Solves a universal admin headache. The subtext's fictional 'Widget' is irrelevant to the cover's clarity.",
+        "reason": "C is the only one that nails the concrete-pain rule with a quantifiable, relatable metric. 'Six hours' is the exact type of specificity that stops scrollers because it’s a pain point they can immediately recognize in their own schedule. The subtext's fictional name doesn't affect the cover's clarity.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You lose six hours a month on admin.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain + specific number (6 hours) makes it undeniable. Solves a universal admin headache. The subtext's fictional 'Widget' is irrelevant to the cover's clarity.",
+          "reason": "C is the only one that nails the concrete-pain rule with a quantifiable, relatable metric. 'Six hours' is the exact type of specificity that stops scrollers because it’s a pain point they can immediately recognize in their own schedule. The subtext's fictional name doesn't affect the cover's clarity.",
+          "authored": false
+        },
+        {
+          "headline": "Can your phone track invoices now?",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Question format makes it feel personal, and 'track invoices' is a high-frequency pain. The subtext's confusion doesn't weaken the cover's directness.",
+          "reason": "B’s question ('Can your phone track invoices now?') is engaging but slightly less punchy than C’s number. It’s still a clear pain point (invoicing is a core freelancer task), and the cover stands strong without needing the subtext to make sense.",
+          "authored": false
+        },
+        {
+          "headline": "Stop copying data into spreadsheets.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Clear pain ('stop copying data'), but generic phrasing ('spreadsheets') feels like a mild instruction rather than a visceral pain point. Weakens its stop rate.",
+          "reason": "A is a solid pain hook but lacks the specificity of C. 'Spreadsheets' is a common tool, but it’s not a quantifiable pain—just a task. The subtext's fiction doesn’t hurt, but the cover itself is just good, not great.",
+          "authored": false
+        },
+        {
+          "headline": "Phone dashboards just changed on Nov 10.",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Vague jargon ('phone dashboards') and random date ('Nov 10') make it feel like an unexplained tech update. No pain or deficiency named.",
+          "reason": "D’s cover is a fragment. 'Phone dashboards' is meaningless to the target audience (no one in solo business says this), and the date feels like a random detail. It’s not a pain point—it’s just a feature name. Scrollers skip this immediately.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "New screen tool."
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Unexplained fragment ('New screen tool') with no context. First-time readers can’t understand it, so it gets skipped immediately.",
+          "reason": "E is a textbook example of what the account’s rules forbid. 'New screen tool' is a fragment—it’s not a pain, change, or deficiency. It’s just an unexplained acronym. Scrollers skip it without hesitation.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

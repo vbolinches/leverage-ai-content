@@ -1,0 +1,84 @@
+{
+  "slug": "post109-gemini-4-carbon-freelancers",
+  "hook_candidates": [
+    {
+      "headline": "One new AI tool drops today.",
+      "sub": "Google released Gemini 4 Carbon on November 10, 2026."
+    },
+    {
+      "headline": "You ignore long prompt limits.",
+      "sub": "Google released Gemini 4 Carbon on November 10, 2026."
+    },
+    {
+      "headline": "Can your AI handle long tasks?",
+      "sub": "Google released Gemini 4 Carbon on November 10, 2026."
+    },
+    {
+      "headline": "Old models drop on long tasks.",
+      "sub": "Google released Gemini 4 Carbon on November 10, 2026."
+    },
+    {
+      "headline": "You lose hours on admin work.",
+      "sub": "Google released Gemini 4 Carbon on November 10, 2026."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "You run your own business, which means you handle client work, invoices, and security alone. Long prompts often time out or miss details. Gemini 4 Carbon stays focused on extended tasks and catches security risks before they hit your accounts. It costs the same as the previous model tier.\n\nOpen the Gemini app or AI Studio. Paste this prompt exactly to test a long workflow:\n\"Act as my operations assistant. Draft a 3-step client onboarding checklist, then write a polite email explaining the timeline to a new freelancer. Keep it under 200 words. Verify the tone is professional.\"\n\nThis model works for solo operators, small teams, and developers. It is available on the Google AI Ultra plan. The free tier does not include this version yet. \n\nSave this workflow for your next client project.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #smallbusinessai #gemini4carbon #productivitytips #businesstools #aiautomation #workflowhacks #clientmanagement",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 109",
+      "headline": [
+        {
+          "t": "Google released Gemini 4 Carbon."
+        }
+      ],
+      "sub": "Google released Gemini 4 Carbon on November 10, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Newer writing tool",
+      "body": [
+        {
+          "t": "Gemini 4 Carbon is a newer version of Google's artificial writing and thinking tool."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Handles long tasks",
+      "body": [
+        {
+          "t": "Gemini 4 Carbon handles long business tasks and blocks online security threats like hacked accounts."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Open to all users",
+      "body": [
+        {
+          "t": "Gemini 4 Carbon is open to consumers, large companies, and research teams."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Get the paid plan to try it now.",
+      "items": [
+        "Google AI Ultra is the monthly paid plan.",
+        "Try the new model today.",
+        "Save this for later use."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+}

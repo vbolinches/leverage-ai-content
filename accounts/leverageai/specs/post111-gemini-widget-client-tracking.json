@@ -1,0 +1,72 @@
+{
+  "slug": "post111-gemini-widget-client-tracking",
+  "hook_candidates": [
+    {
+      "headline": "You lose six hours a month on admin.",
+      "sub": "Google announced Create My Widget, a phone screen tool, on November 10, 2026."
+    },
+    {
+      "headline": "Phone dashboards just changed on Nov 10.",
+      "sub": "Google announced Create My Widget, a phone screen tool, on November 10, 2026."
+    },
+    {
+      "headline": "Can your phone track invoices now?",
+      "sub": "Google announced Create My Widget, a phone screen tool, on November 10, 2026."
+    },
+    {
+      "headline": "Stop copying data into spreadsheets.",
+      "sub": "Google announced Create My Widget, a phone screen tool, on November 10, 2026."
+    },
+    {
+      "headline": "Building custom trackers manually is slow.",
+      "sub": "Google announced Create My Widget, a phone screen tool, on November 10, 2026."
+    }
+  ],
+  "art": "email",
+  "caption": "You spend an hour every week updating spreadsheets to track client invoices, project deadlines, or follow-up dates. Gemini’s new Create My Widget lets you build a custom dashboard for that exact task using plain English. No spreadsheets. No coding. Just a prompt that turns into a live screen box on your phone.\n\nOpen the Gemini app on your Pixel 10 or Pixel Watch. Tap the chat bar and paste this prompt exactly:\n\"Build a widget that tracks my client invoices. Show overdue amounts, due dates, and client names. Update it daily from my calendar and email.\"\n\nThe feature rolls out over the next few weeks. It only works on Pixel 10 phones and Pixel Watch in select countries and languages. If you do not have those devices yet, the prompt will not generate a widget. \n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#gemini #pixel10 #solopreneur #freelancetools #clienttracking #adminworkflow #aiwidgets #smallbusinessowner #productivityhacks",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 111",
+      "headline": [
+        {
+          "t": "New screen tool."
+        }
+      ],
+      "sub": "Google announced Create My Widget, a phone screen tool, on November 10, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Info box.",
+      "body": "A widget is a small screen box that shows quick information."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Text box.",
+      "body": "Create My Widget designs a screen box from a simple text description."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Pixel 10.",
+      "body": "Create My Widget works on Pixel 10 phones and Pixel Watch in select countries."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Wait for the update.",
+      "items": [
+        "Wait for the update.",
+        "Save this for later.",
+        "Follow for daily tips."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/"
+}

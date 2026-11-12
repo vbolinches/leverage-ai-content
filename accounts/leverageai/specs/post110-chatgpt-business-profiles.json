@@ -1,0 +1,80 @@
+{
+  "slug": "post110-chatgpt-business-profiles",
+  "hook_candidates": [
+    {
+      "headline": "November 10 launch date.",
+      "sub": "OpenAI launched ChatGPT Businesses Profiles on November 10, 2026."
+    },
+    {
+      "headline": "Skipping your profile setup.",
+      "sub": "OpenAI launched ChatGPT Businesses Profiles on November 10, 2026."
+    },
+    {
+      "headline": "Will clients find you here?",
+      "sub": "OpenAI launched ChatGPT Businesses Profiles on November 10, 2026."
+    },
+    {
+      "headline": "From invisible to verified.",
+      "sub": "OpenAI launched ChatGPT Businesses Profiles on November 10, 2026."
+    },
+    {
+      "headline": "Losing referral traffic daily.",
+      "sub": "OpenAI launched ChatGPT Businesses Profiles on November 10, 2026."
+    }
+  ],
+  "art": "chat",
+  "caption": "ChatGPT now lets solo consultants claim a free business profile. This feature launches November 10, 2026. If you run a consulting practice, freelance operation, or small service business in the US, you can now appear directly in ChatGPT responses. No website rebuild required.\n\nGo to ChatGPT Business Hub to claim your organization. Verify your details, then update your pricing and availability directly in the dashboard. Upload self-service product feeds so your service tiers stay current without manual edits. When clients ask ChatGPT for recommendations, your verified profile surfaces with click-through access.\n\nUse this prompt to draft your profile description and service list:\n\nAct as a solo consultant copywriter. Write a 100-word ChatGPT business profile for a [your niche] consultant. Include three service tiers, current pricing, and availability windows. Keep it direct, scannable, and optimized for AI search. Output in plain text.\n\nThis only works for eligible US online service businesses right now. Business Agents require separate approval. ChatGPT still struggles with highly complex custom scopes, so keep your pricing clear. Save this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#chatgpt #solopreneur #freelancer #businessprofiles #aiworkflow #consulting #clientleads #smallbusiness #aifreelance #productivity",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 110",
+      "headline": "ChatGPT adds business profiles.",
+      "sub": "OpenAI launched ChatGPT Businesses Profiles on November 10, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Verified page.",
+      "body": [
+        {
+          "t": "A ChatGPT Businesses Profile is a verified organization page in ChatGPT."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Click to view.",
+      "body": [
+        {
+          "t": "When your service appears in a ChatGPT answer, readers click to see your ChatGPT profile."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "US services.",
+      "body": [
+        {
+          "t": "A Business Agent is a separate chat tool for eligible US online services that answers questions."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Start now.",
+      "items": [
+        "You can claim your profile.",
+        "You add your service feeds.",
+        "You save this post later."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://openai.com/index/introducing-businesses-chatgpt/"
+}

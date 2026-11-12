@@ -1716,6 +1716,51 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post108-adobe-generative-remove/reel.mp4"
+    },
+    {
+      "id": "post109-gemini-4-carbon-freelancers",
+      "date": "2026-11-17",
+      "slides": [
+        "accounts/leverageai/queue/post109-gemini-4-carbon-freelancers/slide01.png",
+        "accounts/leverageai/queue/post109-gemini-4-carbon-freelancers/slide02.png",
+        "accounts/leverageai/queue/post109-gemini-4-carbon-freelancers/slide03.png",
+        "accounts/leverageai/queue/post109-gemini-4-carbon-freelancers/slide04.png",
+        "accounts/leverageai/queue/post109-gemini-4-carbon-freelancers/slide05.png"
+      ],
+      "caption": "You run your own business, which means you handle client work, invoices, and security alone. Long prompts often time out or miss details. Gemini 4 Carbon stays focused on extended tasks and catches security risks before they hit your accounts. It costs the same as the previous model tier.\n\nOpen the Gemini app or AI Studio. Paste this prompt exactly to test a long workflow:\n\"Act as my operations assistant. Draft a 3-step client onboarding checklist, then write a polite email explaining the timeline to a new freelancer. Keep it under 200 words. Verify the tone is professional.\"\n\nThis model works for solo operators, small teams, and developers. It is available on the Google AI Ultra plan. The free tier does not include this version yet. \n\nSave this workflow for your next client project.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #smallbusinessai #gemini4carbon #productivitytips #businesstools #aiautomation #workflowhacks #clientmanagement",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post109-gemini-4-carbon-freelancers/reel.mp4"
+    },
+    {
+      "id": "post110-chatgpt-business-profiles",
+      "date": "2026-11-18",
+      "slides": [
+        "accounts/leverageai/queue/post110-chatgpt-business-profiles/slide01.png",
+        "accounts/leverageai/queue/post110-chatgpt-business-profiles/slide02.png",
+        "accounts/leverageai/queue/post110-chatgpt-business-profiles/slide03.png",
+        "accounts/leverageai/queue/post110-chatgpt-business-profiles/slide04.png",
+        "accounts/leverageai/queue/post110-chatgpt-business-profiles/slide05.png"
+      ],
+      "caption": "ChatGPT now lets solo consultants claim a free business profile. This feature launches November 10, 2026. If you run a consulting practice, freelance operation, or small service business in the US, you can now appear directly in ChatGPT responses. No website rebuild required.\n\nGo to ChatGPT Business Hub to claim your organization. Verify your details, then update your pricing and availability directly in the dashboard. Upload self-service product feeds so your service tiers stay current without manual edits. When clients ask ChatGPT for recommendations, your verified profile surfaces with click-through access.\n\nUse this prompt to draft your profile description and service list:\n\nAct as a solo consultant copywriter. Write a 100-word ChatGPT business profile for a [your niche] consultant. Include three service tiers, current pricing, and availability windows. Keep it direct, scannable, and optimized for AI search. Output in plain text.\n\nThis only works for eligible US online service businesses right now. Business Agents require separate approval. ChatGPT still struggles with highly complex custom scopes, so keep your pricing clear. Save this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#chatgpt #solopreneur #freelancer #businessprofiles #aiworkflow #consulting #clientleads #smallbusiness #aifreelance #productivity",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post110-chatgpt-business-profiles/reel.mp4"
+    },
+    {
+      "id": "post111-gemini-widget-client-tracking",
+      "date": "2026-11-19",
+      "slides": [
+        "accounts/leverageai/queue/post111-gemini-widget-client-tracking/slide01.png",
+        "accounts/leverageai/queue/post111-gemini-widget-client-tracking/slide02.png",
+        "accounts/leverageai/queue/post111-gemini-widget-client-tracking/slide03.png",
+        "accounts/leverageai/queue/post111-gemini-widget-client-tracking/slide04.png",
+        "accounts/leverageai/queue/post111-gemini-widget-client-tracking/slide05.png"
+      ],
+      "caption": "You spend an hour every week updating spreadsheets to track client invoices, project deadlines, or follow-up dates. Gemini’s new Create My Widget lets you build a custom dashboard for that exact task using plain English. No spreadsheets. No coding. Just a prompt that turns into a live screen box on your phone.\n\nOpen the Gemini app on your Pixel 10 or Pixel Watch. Tap the chat bar and paste this prompt exactly:\n\"Build a widget that tracks my client invoices. Show overdue amounts, due dates, and client names. Update it daily from my calendar and email.\"\n\nThe feature rolls out over the next few weeks. It only works on Pixel 10 phones and Pixel Watch in select countries and languages. If you do not have those devices yet, the prompt will not generate a widget. \n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#gemini #pixel10 #solopreneur #freelancetools #clienttracking #adminworkflow #aiwidgets #smallbusinessowner #productivityhacks",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post111-gemini-widget-client-tracking/reel.mp4"
     }
   ]
 }
