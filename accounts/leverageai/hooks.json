@@ -884,6 +884,78 @@
       ]
     },
     {
+      "slug": "post112-gemini-website-research",
+      "graded": "2026-11-13",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop wasting hours on tabs.",
+        "sub": "Google launched the Gemini artificial assistant website research tool on November 12, 2026.",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "contrarian",
+        "stopping": "Wasting hours on tabs is a visceral, daily pain point for consultants doing research. The subtext is irrelevant but the hook itself is concrete enough to make someone pause mid-scroll. (Highest score: it's the only one that makes you imagine your own frustration with tab overload.)",
+        "reason": "Concrete pain point: 'wasting hours on tabs' names a specific, relatable daily struggle. The subtext is a distraction but the hook itself resonates.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop wasting hours on tabs.",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Wasting hours on tabs is a visceral, daily pain point for consultants doing research. The subtext is irrelevant but the hook itself is concrete enough to make someone pause mid-scroll. (Highest score: it's the only one that makes you imagine your own frustration with tab overload.)",
+          "reason": "Concrete pain point: 'wasting hours on tabs' names a specific, relatable daily struggle. The subtext is a distraction but the hook itself resonates.",
+          "authored": false
+        },
+        {
+          "headline": "You still read pages manually.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "You still read pages manually' names a specific, avoidable habit that creates visible friction. The subtext is a distraction but the hook is concrete enough to stop a scroll.",
+          "reason": "Concrete pain: 'read pages manually' is a specific, inefficient task. The subtext is irrelevant but the hook is strong enough to work.",
+          "authored": false
+        },
+        {
+          "headline": "How do you vet client sites fast?",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "'How do you vet client sites fast?' asks a direct question about a core business task. The subtext makes it feel like a generic announcement, but the hook itself is relevant enough to stop a scroll.",
+          "reason": "Relevant question: 'vet client sites' is a daily task for consultants. The subtext undermines it but the hook is still on point.",
+          "authored": false
+        },
+        {
+          "headline": "Three hours saved weekly.",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "'Three hours saved weekly' is vague and lacks context. 'Saved from what?' is the immediate question, and the subtext doesn't answer it. It feels like a generic claim.",
+          "reason": "Vague claim: No specific pain or task named. 'Three hours' could be about anything. The subtext doesn't clarify.",
+          "authored": false
+        },
+        {
+          "headline": "Research takes seconds now.",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "'Research takes seconds now' is a weak claim without context. 'Now' implies improvement, but no specific pain is named. The subtext feels like a random tech update.",
+          "reason": "Vague improvement: No concrete pain described. 'Research takes seconds' is meaningless without context.",
+          "authored": false
+        },
+        {
+          "headline": "Gemini adds website research.",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Gemini adds website research' is a feature announcement fragment. It's a headline, not a pain point. The subtext explains it's about a tool launch, but the hook itself is meaningless to a first-time reader. It's a classic 'scroll past' trigger.",
+          "reason": "Fragment: 'Gemini adds...' is an unexplained acronym + feature. A first-time reader has no idea what 'adds' refers to or why it matters. Scores below 3 as it's a non-stop trigger.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

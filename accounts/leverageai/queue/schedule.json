@@ -1764,6 +1764,19 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post111-gemini-widget-client-tracking/reel.mp4"
+    },
+    {
+      "id": "post112-gemini-website-research",
+      "date": "2026-11-20",
+      "slides": [
+        "accounts/leverageai/queue/post112-gemini-website-research/slide01.png",
+        "accounts/leverageai/queue/post112-gemini-website-research/slide02.png",
+        "accounts/leverageai/queue/post112-gemini-website-research/slide03.png",
+        "accounts/leverageai/queue/post112-gemini-website-research/slide04.png",
+        "accounts/leverageai/queue/post112-gemini-website-research/slide05.png"
+      ],
+      "caption": "You run your own business. You vet clients, check competitor pricing, and read vendor terms. Doing it manually eats hours. Gemini now researches any page you visit while you browse.\n\nOpen Chrome. Click the Gemini icon in the toolbar. The side panel opens. Paste this prompt to compare a client site and a competitor:\n\n\"Compare the pricing and service scope on this page with [competitor URL]. List three differences in a table.\"\n\nIt pulls the data and formats it. You get a clear view in seconds. No extra software. Keep it for open web research.\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #solopreneur #freelancetips #smallbusinessai #gemini #chrosetxt #clientresearch #businessautomation #productivityhacks #aiworkflow",
+      "status": "queued"
     }
   ]
 }

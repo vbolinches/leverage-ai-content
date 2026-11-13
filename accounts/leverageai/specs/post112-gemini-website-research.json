@@ -1,0 +1,68 @@
+{
+  "slug": "post112-gemini-website-research",
+  "hook_candidates": [
+    {
+      "headline": "Three hours saved weekly.",
+      "sub": "Google launched the Gemini artificial assistant website research tool on November 12, 2026."
+    },
+    {
+      "headline": "You still read pages manually.",
+      "sub": "Google launched the Gemini artificial assistant website research tool on November 12, 2026."
+    },
+    {
+      "headline": "How do you vet client sites fast?",
+      "sub": "Google launched the Gemini artificial assistant website research tool on November 12, 2026."
+    },
+    {
+      "headline": "Research takes seconds now.",
+      "sub": "Google launched the Gemini artificial assistant website research tool on November 12, 2026."
+    },
+    {
+      "headline": "Stop wasting hours on tabs.",
+      "sub": "Google launched the Gemini artificial assistant website research tool on November 12, 2026."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "You run your own business. You vet clients, check competitor pricing, and read vendor terms. Doing it manually eats hours. Gemini now researches any page you visit while you browse.\n\nOpen Chrome. Click the Gemini icon in the toolbar. The side panel opens. Paste this prompt to compare a client site and a competitor:\n\n\"Compare the pricing and service scope on this page with [competitor URL]. List three differences in a table.\"\n\nIt pulls the data and formats it. You get a clear view in seconds. No extra software. Keep it for open web research.\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #solopreneur #freelancetips #smallbusinessai #gemini #chrosetxt #clientresearch #businessautomation #productivityhacks #aiworkflow",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 112",
+      "headline": "Gemini adds website research.",
+      "sub": "Google launched the Gemini artificial assistant website research tool on November 12, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Gets answers.",
+      "body": "The Gemini website research tool gets answers on any website you visit."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Summarizes reports.",
+      "body": "The Gemini website research tool summarizes dense reports, like a long vendor contract."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Works in Chrome.",
+      "body": "The Gemini website research tool works inside the Chrome web browser."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Open panel.",
+      "items": [
+        "Click the built-in Gemini icon.",
+        "Open the side panel now.",
+        "Use your Chrome toolbar."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily.",
+      "footer_right": "SAVE ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/research-with-gemini-in-chrome/"
+}
