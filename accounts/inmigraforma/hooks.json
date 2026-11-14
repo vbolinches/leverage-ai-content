@@ -86,6 +86,82 @@
       ]
     },
     {
+      "slug": "post101-uscis-enforcement-report",
+      "graded": "2026-11-14",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Tu tiempo vale más",
+        "sub": "El reporte no da plazos nuevos",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "mistake",
+        "stopping": "directly addresses time scarcity + clarifies no new deadlines (critical for stressed immigrants)",
+        "reason": "Clear benefit (your time is valuable) + immediate reassurance (no new deadlines) - stops scrollers by solving a pain point they feel daily.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Tu tiempo vale más",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "mistake",
+          "stopping": "directly addresses time scarcity + clarifies no new deadlines (critical for stressed immigrants)",
+          "reason": "Clear benefit (your time is valuable) + immediate reassurance (no new deadlines) - stops scrollers by solving a pain point they feel daily.",
+          "authored": false
+        },
+        {
+          "headline": "No busques papeles",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "mistake",
+          "stopping": "clear 'no papers needed' in everyday language",
+          "reason": "Simple command 'don't search for papers' + confirmation of no documents required - instantly relieves a common fear.",
+          "authored": false
+        },
+        {
+          "headline": "Cambió el enfoque",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "mistake",
+          "stopping": "mentions publication date but no relevance to reader",
+          "reason": "Vague 'changed approach' + irrelevant date (October) - feels like generic update, not urgent for reader.",
+          "authored": false
+        },
+        {
+          "headline": "Se actualizó el aviso",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "mistake",
+          "stopping": "passive 'updated notice' with no 'why should I care'",
+          "reason": "No clear impact stated - 'updated notice' is meaningless without context for immigrants.",
+          "authored": false
+        },
+        {
+          "headline": "Antes solo informaba",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "mistake",
+          "stopping": "confusing 'only informed' vs 'now lists actions' without explanation",
+          "reason": "Unclear what 'actions' mean or who takes them - feels like jargon, not useful info.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "El aviso del USCIS"
+            }
+          ],
+          "rank": 6,
+          "score": 2.0,
+          "shape": "mistake",
+          "stopping": "false future date (2026) creates panic over non-existent deadline",
+          "reason": "Claims notice published in 2026 (future date) - makes readers think they face a 2026 deadline that doesn't exist, destroying trust.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post29-tps-fechas-en-pagina-oficial-uscis",
       "graded": "2026-08-19",
       "threshold": 6.0,

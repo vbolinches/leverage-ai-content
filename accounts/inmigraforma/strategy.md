@@ -325,3 +325,7 @@ not enough data to tell total signal 69 < 150 threshold; 12 measured posts; no p
 ### Batch — posts 100-100, drafted 2026-11-11
 
 not enough data to tell total signal 62 < 150 threshold; 12 measured posts; no post-level comparison possible total signal 62 < 150 threshold
+
+### Batch — posts 101-101, drafted 2026-11-14
+
+not enough data to tell total signal 58 < 150 threshold; 12 measured posts; no post-level comparison possible total signal 58 < 150 threshold; 12 measured posts
