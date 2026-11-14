@@ -19,6 +19,7 @@ import argparse, json, os, re, sys
 from datetime import date, timedelta
 
 import accounts
+import dates
 import hooks
 import llm
 import render_slides
@@ -668,6 +669,9 @@ def research(count, avoid):
             if stale:
                 print(f"  dropped {b.get('topic', '')[:44]!r}: {stale}")
                 continue
+            # Everything after this point sees one format, whatever the page
+            # printed.
+            b["published"] = dates.parse_published(b["published"]).isoformat()
             # The URL is real and official. Is it about this topic? Only a
             # quote found on the page answers that, and without it the model
             # attaches whichever allow-listed URL it happens to hold.
@@ -776,18 +780,14 @@ def _not_news(published, back=180, ahead=365):
     """
     if not published:
         return "the page carries no date, so it is not news"
-    # Some sources are dated to the month, not the day — the Visa Bulletin is
-    # "September 2026" and nothing finer, and rejecting it as unreadable threw
-    # away one of this account's most reliable recurring stories.
-    raw = (published or "").strip()
-    for fmt in (raw[:10], raw[:7] + "-01" if len(raw) >= 7 else "",
-                raw[:4] + "-01-01" if len(raw) >= 4 else ""):
-        try:
-            when = date.fromisoformat(fmt)
-            break
-        except ValueError:
-            continue
-    else:
+    # The schema asks for YYYY-MM-DD, but the model often copies the date as
+    # the page prints it. Only ISO was read here until 2026-11-14, when six
+    # briefs dated "Oct 20, 2026"-style were thrown away as unreadable. Some
+    # sources are dated to the month, not the day - the Visa Bulletin is
+    # "September 2026" - and parse_published() reads those as the 1st.
+    # A bare year is refused: it cannot say whether the page is news.
+    when = dates.parse_published(published)
+    if when is None:
         return f"unreadable date {published!r}"
     age = (date.today() - when).days
     if age > back:
