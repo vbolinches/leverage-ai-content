@@ -1689,9 +1689,12 @@
         "accounts/leverageai/queue/post106-google-vids-free-videos/slide05.png"
       ],
       "caption": "Google Vids lets you make short videos from text descriptions. You can create quick service ads or client demos without filming. This saves time on content that usually takes hours to shoot and edit.\n\nOpen Google Vids and type a description of the video you want. The tool generates a 15-second clip from your text. You get three videos each month at no cost. This works with your personal Google account or your Workspace subscription. Try this prompt: 'A friendly consultant explaining invoice tips in a bright office.' The tool generates the video from that text.\n\n If you need more than three clips, you will need to wait until next month or use other tools for longer content. Save this workflow for your next content batch.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#googlevids #workspace #aivideo #soloentrepreneur #freelancetools #smallbusinessmarketing #contentcreation #aitools #businesstips #marketingautomation",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post106-google-vids-free-videos/reel.mp4"
+      "video": "accounts/leverageai/queue/post106-google-vids-free-videos/reel.mp4",
+      "published_media_id": "18122936602963390",
+      "published_on": "2026-11-14",
+      "threads_posted": true
     },
     {
       "id": "post107-chatgpt-images-26-gifs",
