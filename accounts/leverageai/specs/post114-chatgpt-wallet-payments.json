@@ -1,0 +1,68 @@
+{
+  "slug": "post114-chatgpt-wallet-payments",
+  "hook_candidates": [
+    {
+      "headline": "Three fewer taps per payment.",
+      "sub": "ChatGPT now handles checkout inside the chat window."
+    },
+    {
+      "headline": "You still copy card numbers manually.",
+      "sub": "ChatGPT Wallet processes payments with one scan."
+    },
+    {
+      "headline": "Why switch apps for every checkout?",
+      "sub": "ChatGPT now handles payments inside the chat window."
+    },
+    {
+      "headline": "From typing details to one scan.",
+      "sub": "ChatGPT Wallet processes payments with one scan."
+    },
+    {
+      "headline": "You lose minutes on app switching.",
+      "sub": "ChatGPT now handles checkout inside the chat window."
+    }
+  ],
+  "art": "chat",
+  "caption": "Stop switching apps to collect client payments. ChatGPT Wallet lets you process transactions inside the chat window. You approve each charge with a quick biometric scan. The tool fills in your payment details automatically. This cuts down on manual data entry and app-hopping during busy delivery days.\n\nUse this prompt when closing a sale or buying software for your business:\n\"Process a payment of $150 for [Client Name] using ChatGPT Wallet. Confirm the transaction once approved and log it in my Notion tracker.\"\n\nThis feature is live now for ChatGPT Pro subscribers in the US. You must be eighteen or older and use a supported US bank card. Free plan users cannot access it yet. The tool keeps your existing card rewards and dispute protections intact. It does not replace your main invoicing platform, but it speeds up small direct purchases.\n\nSave this slide set for your next checkout.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#chatgptwallet #freelancertools #solopreneur #aifinance #chatgptpro #businessautomation #paymentworkflow #chatgpttips #smallbusinessai #productivityhacks",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "W114",
+      "headline": "Wallet launched.",
+      "sub": "OpenAI launched ChatGPT Wallet, a secure payment tool, on November 13, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "IS",
+      "headline": "Pays for you.",
+      "body": "ChatGPT Wallet means the program handles online payments instead of you typing card numbers."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "DOES",
+      "headline": "Keeps rewards.",
+      "body": "ChatGPT Wallet handles online store checkouts for you while keeping your credit card rewards."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO",
+      "headline": "Pro US only.",
+      "body": "ChatGPT Wallet works only for ChatGPT Pro, the paid plan, subscribers aged eighteen with US cards."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Do this",
+      "items": [
+        "Open the wallet first.",
+        "Approve every payment now.",
+        "Scan your phone fingerprint."
+      ],
+      "cta_title": "Save.",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://openai.com/index/introducing-chatgpt-wallet/"
+}

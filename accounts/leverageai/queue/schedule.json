@@ -1780,6 +1780,36 @@
       ],
       "caption": "You run your own business. You vet clients, check competitor pricing, and read vendor terms. Doing it manually eats hours. Gemini now researches any page you visit while you browse.\n\nOpen Chrome. Click the Gemini icon in the toolbar. The side panel opens. Paste this prompt to compare a client site and a competitor:\n\n\"Compare the pricing and service scope on this page with [competitor URL]. List three differences in a table.\"\n\nIt pulls the data and formats it. You get a clear view in seconds. No extra software. Keep it for open web research.\n\nSave this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #solopreneur #freelancetips #smallbusinessai #gemini #chrosetxt #clientresearch #businessautomation #productivityhacks #aiworkflow",
       "status": "queued"
+    },
+    {
+      "id": "post113-google-wallet-gemini-finance",
+      "date": "2026-11-21",
+      "slides": [
+        "accounts/leverageai/queue/post113-google-wallet-gemini-finance/slide01.png",
+        "accounts/leverageai/queue/post113-google-wallet-gemini-finance/slide02.png",
+        "accounts/leverageai/queue/post113-google-wallet-gemini-finance/slide03.png",
+        "accounts/leverageai/queue/post113-google-wallet-gemini-finance/slide04.png",
+        "accounts/leverageai/queue/post113-google-wallet-gemini-finance/slide05.png"
+      ],
+      "caption": "You run your own business. You handle sales, delivery, invoices, and admin. Tracking client payments and personal expenses usually means opening a spreadsheet, typing numbers, and guessing where the money went. This changes how you track cash flow without leaving your phone.\n\nConnect Google Wallet to Gemini. It safely reads your transaction history. Ask it to review your spending, spot recurring charges you forgot about, or project holiday costs using last year’s data. It generates clear charts right in the chat. It cannot move or invest your money. It only reads what you allow.\n\nCopy this exact prompt:\n“Review my spending from the last quarter. Show me a chart of my cash flow. List any subscriptions I am still paying for. Estimate my holiday budget based on last year.”\n\nThis works for U.S. users on iOS, Android, and web. Open the Gemini app, go to Personal Intelligence settings, and toggle Connected Apps. Link your Wallet. Wait for the sync.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aifinance #solopreneur #freelancetools #bookkeepingtips #googlewallet #geminiapp #businesstools #cashflow #adminworkflow #smallbusinessai",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post113-google-wallet-gemini-finance/reel.mp4"
+    },
+    {
+      "id": "post114-chatgpt-wallet-payments",
+      "date": "2026-11-22",
+      "slides": [
+        "accounts/leverageai/queue/post114-chatgpt-wallet-payments/slide01.png",
+        "accounts/leverageai/queue/post114-chatgpt-wallet-payments/slide02.png",
+        "accounts/leverageai/queue/post114-chatgpt-wallet-payments/slide03.png",
+        "accounts/leverageai/queue/post114-chatgpt-wallet-payments/slide04.png",
+        "accounts/leverageai/queue/post114-chatgpt-wallet-payments/slide05.png"
+      ],
+      "caption": "Stop switching apps to collect client payments. ChatGPT Wallet lets you process transactions inside the chat window. You approve each charge with a quick biometric scan. The tool fills in your payment details automatically. This cuts down on manual data entry and app-hopping during busy delivery days.\n\nUse this prompt when closing a sale or buying software for your business:\n\"Process a payment of $150 for [Client Name] using ChatGPT Wallet. Confirm the transaction once approved and log it in my Notion tracker.\"\n\nThis feature is live now for ChatGPT Pro subscribers in the US. You must be eighteen or older and use a supported US bank card. Free plan users cannot access it yet. The tool keeps your existing card rewards and dispute protections intact. It does not replace your main invoicing platform, but it speeds up small direct purchases.\n\nSave this slide set for your next checkout.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#chatgptwallet #freelancertools #solopreneur #aifinance #chatgptpro #businessautomation #paymentworkflow #chatgpttips #smallbusinessai #productivityhacks",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post114-chatgpt-wallet-payments/reel.mp4"
     }
   ]
 }

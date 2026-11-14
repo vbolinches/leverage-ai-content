@@ -956,6 +956,163 @@
       ]
     },
     {
+      "slug": "post113-google-wallet-gemini-finance",
+      "graded": "2026-11-14",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "Track spending in three minutes.",
+        "sub": "Google Wallet, the payment app, and Gemini, the chat tool, link launched November 13, 2026.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "contrarian",
+        "stopping": "The hook 'Track spending in three minutes' is concrete and time-obsessed. It's the only one that implies a specific, measurable outcome (3 minutes) without requiring prior knowledge. The subtext ruins it, but the hook itself is the closest to a usable pain point (time savings) before the tech jargon destroys it. Still, it's the least terrible hook in the batch because it's specific to a universal freelancer pain (time wasted on tracking).",
+        "reason": "3 minutes is a concrete time-saving claim. Solo operators care about time more than app names. The hook almost works before the subtext drowns it. Best of a bad batch.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Track spending in three minutes.",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "The hook 'Track spending in three minutes' is concrete and time-obsessed. It's the only one that implies a specific, measurable outcome (3 minutes) without requiring prior knowledge. The subtext ruins it, but the hook itself is the closest to a usable pain point (time savings) before the tech jargon destroys it. Still, it's the least terrible hook in the batch because it's specific to a universal freelancer pain (time wasted on tracking).",
+          "reason": "3 minutes is a concrete time-saving claim. Solo operators care about time more than app names. The hook almost works before the subtext drowns it. Best of a bad batch.",
+          "authored": false
+        },
+        {
+          "headline": "Stop tracking expenses manually.",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Stop tracking expenses manually' is a direct pain point. It's simple, clear, and implies a solution. The subtext is the same disaster, but the hook itself is a standard, recognizable frustration for solo operators. It's better than B because 'stop' is more active than 'recover hours' (which feels vague).",
+          "reason": "Common pain point phrasing ('stop manual tracking') used by the account before. The hook is clear, but the subtext's tech jargon (Gemini, Google Wallet) makes it feel like a developer tool, not a workflow for consultants.",
+          "authored": false
+        },
+        {
+          "headline": "Stop manual expense tracking",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "'Stop manual expense tracking' is nearly identical to D's hook. The only difference is 'expense' vs 'spending', which is minor. It's a standard pain point, but the subtext's irrelevant app names and future date make it feel like a tech demo, not a workflow. The hook is clear, but the subtext kills it.",
+          "reason": "Same hook as D, just slightly less common wording. Still a clear pain point but the subtext makes it feel unrelatable.",
+          "authored": false
+        },
+        {
+          "headline": "From spreadsheets to simple chat.",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "'From spreadsheets to simple chat' is a change hook, which is good. But 'simple chat' is vague and the subtext's 'Gemini' (a chat tool) makes it feel like a developer tool. The hook implies a transition (good), but the subtext makes it feel like a generic 'chat app' feature, not a business workflow. Solo operators don't care about 'simple chat'—they care about saving time on spreadsheets.",
+          "reason": "Change hooks are good, but 'simple chat' is unexplained and the subtext's app names make it feel like a tech demo. The hook is close but not concrete enough.",
+          "authored": false
+        },
+        {
+          "headline": "Recover hours on bookkeeping.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "'Recover hours on bookkeeping' is a pain point, but 'bookkeeping' is a technical term. Solo operators say 'expense tracking', not 'bookkeeping'. The hook feels like it's written for accountants, not freelancers. The subtext's app names and future date make it feel irrelevant to their actual workflow.",
+          "reason": "Uses a niche term ('bookkeeping') instead of a common pain point ('expense tracking'). The hook is too technical for the audience.",
+          "authored": false
+        },
+        {
+          "headline": "Where did your cash go?",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "'Where did your cash go?' is a vague, rhetorical question. It's not a pain point—it's a symptom. Solo operators don't think about 'cash' in this context; they think about 'expenses' or 'revenue'. The hook is unrelatable, and the subtext's app names and future date make it feel like a generic finance question, not a business workflow.",
+          "reason": "Vague and not a concrete pain point. Sounds like a finance blog, not an AI workflow for solo operators.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Google Wallet links to Gemini."
+            }
+          ],
+          "rank": 7,
+          "score": 0.0,
+          "shape": "contrarian",
+          "stopping": "'Google Wallet links to Gemini' is a feature announcement, not a hook. It's a fragment that requires prior knowledge (what is Google Wallet? What is Gemini?) and makes no claim about a pain point or solution. Solo operators will scroll past because it feels like a tech news post, not a business workflow. The subtext's app names and future date make it feel like a scam or a mistake.",
+          "reason": "This is the worst: a fragment that doesn't name a pain, change, or deficiency. It's a tech announcement disguised as a hook. It's unexplained, unrelatable, and doesn't even claim to solve a problem.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post114-chatgpt-wallet-payments",
+      "graded": "2026-11-14",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You lose minutes on app switching.",
+        "sub": "ChatGPT now handles checkout inside the chat window.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "before-after",
+        "stopping": "Quantifies time loss (minutes) - primal pain for busy solopreneurs. Explicitly states the deficiency (app switching) and the change (no switching).",
+        "reason": "You lose minutes on app switching. → 'Lose minutes' is a visceral, time-sensitive pain. Solopreneurs feel this daily. 'App switching' is a universal friction point. Beats E by being more specific about the cost (minutes vs. 'why').",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You lose minutes on app switching.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "before-after",
+          "stopping": "Quantifies time loss (minutes) - primal pain for busy solopreneurs. Explicitly states the deficiency (app switching) and the change (no switching).",
+          "reason": "You lose minutes on app switching. → 'Lose minutes' is a visceral, time-sensitive pain. Solopreneurs feel this daily. 'App switching' is a universal friction point. Beats E by being more specific about the cost (minutes vs. 'why').",
+          "authored": false
+        },
+        {
+          "headline": "Why switch apps for every checkout?",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "before-after",
+          "stopping": "Poses a question about a universal friction point (switching apps) that triggers recognition. No jargon.",
+          "reason": "Why switch apps for every checkout? → 'Why' implies wasted time, but doesn't quantify it. Strong pain recognition, but lacks the urgency of 'minutes' in F.",
+          "authored": false
+        },
+        {
+          "headline": "You still copy card numbers manually.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "before-after",
+          "stopping": "Names a specific, manual task (copying card numbers) that's a daily pain. Clear deficiency.",
+          "reason": "You still copy card numbers manually. → Pain is concrete (manual copying), but 'still' feels slightly scolding. Less urgent than time loss in F/E.",
+          "authored": false
+        },
+        {
+          "headline": "From typing details to one scan.",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "before-after",
+          "stopping": "Implies pain ('typing details') but doesn't name it as a deficiency. Feels like a feature description.",
+          "reason": "From typing details to one scan. → 'Typing details' is vague (what details?); it's phrased as a transition, not a pain. Feels like a description of the solution.",
+          "authored": false
+        },
+        {
+          "headline": "Three fewer taps per payment.",
+          "rank": 5,
+          "score": 4.0,
+          "shape": "number-claim",
+          "stopping": "Focuses on a feature ('three fewer taps') without naming the pain. Sounds like a tech spec.",
+          "reason": "Three fewer taps per payment. → 'Taps' is technical jargon for non-tech solopreneurs. Doesn't stop scrollers—it's just a feature stat.",
+          "authored": false
+        },
+        {
+          "headline": "Wallet launched.",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Fragment: 'Wallet launched' is unexplained. First-time reader has no context.",
+          "reason": "Wallet launched. → No pain, no deficiency, no context. Looks like a headline for a tech blog, not a solopreneur's pain point. Skipped immediately.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

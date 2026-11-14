@@ -1,0 +1,84 @@
+{
+  "slug": "post113-google-wallet-gemini-finance",
+  "hook_candidates": [
+    {
+      "headline": "Track spending in three minutes.",
+      "sub": "Google Wallet, the payment app, and Gemini, the chat tool, link launched November 13, 2026."
+    },
+    {
+      "headline": "Stop tracking expenses manually.",
+      "sub": "Google Wallet, the payment app, and Gemini, the chat tool, link launched November 13, 2026."
+    },
+    {
+      "headline": "Where did your cash go?",
+      "sub": "Google Wallet, the payment app, and Gemini, the chat tool, link launched November 13, 2026."
+    },
+    {
+      "headline": "From spreadsheets to simple chat.",
+      "sub": "Google Wallet, the payment app, and Gemini, the chat tool, link launched November 13, 2026."
+    },
+    {
+      "headline": "Recover hours on bookkeeping.",
+      "sub": "Google Wallet, the payment app, and Gemini, the chat tool, link launched November 13, 2026."
+    }
+  ],
+  "art": "chart",
+  "caption": "You run your own business. You handle sales, delivery, invoices, and admin. Tracking client payments and personal expenses usually means opening a spreadsheet, typing numbers, and guessing where the money went. This changes how you track cash flow without leaving your phone.\n\nConnect Google Wallet to Gemini. It safely reads your transaction history. Ask it to review your spending, spot recurring charges you forgot about, or project holiday costs using last year’s data. It generates clear charts right in the chat. It cannot move or invest your money. It only reads what you allow.\n\nCopy this exact prompt:\n“Review my spending from the last quarter. Show me a chart of my cash flow. List any subscriptions I am still paying for. Estimate my holiday budget based on last year.”\n\nThis works for U.S. users on iOS, Android, and web. Open the Gemini app, go to Personal Intelligence settings, and toggle Connected Apps. Link your Wallet. Wait for the sync.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aifinance #solopreneur #freelancetools #bookkeepingtips #googlewallet #geminiapp #businesstools #cashflow #adminworkflow #smallbusinessai",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 113",
+      "headline": [
+        {
+          "t": "Google Wallet links to Gemini."
+        }
+      ],
+      "sub": "Google Wallet, the payment app, and Gemini, the chat tool, link launched November 13, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Reads spending safely.",
+      "body": [
+        {
+          "t": "Personal Finance Insights means Gemini safely reads your Google Wallet spending data."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Charts spending.",
+      "body": [
+        {
+          "t": "Google Wallet and Gemini draw spending charts, find forgotten subscriptions, and plan holiday budgets."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "U.S. users only.",
+      "body": [
+        {
+          "t": "Google Wallet and Gemini work for U.S. users on phones and computers, but Gemini cannot move cash."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Open the app.",
+      "items": [
+        "Open the Gemini app.",
+        "Save this post for later.",
+        "Gemini budgets personal holidays."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/"
+}
