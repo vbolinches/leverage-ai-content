@@ -316,6 +316,7 @@ def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
     """
     convo = [{"role": "user", "content": user}]
     calls = 0
+    full = False
     for rnd in range(max_rounds):
         msg = chat(convo, system=system, model=model, tools=tools,
                    think=think, label=f"{label}:{rnd + 1}", num_ctx=num_ctx)
@@ -333,13 +334,27 @@ def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
                     args = json.loads(args)
                 except json.JSONDecodeError:
                     args = {}
-            try:
-                result = dispatch(name, args)
-            except Exception as e:                      # noqa: BLE001
-                result = f"tool {name} failed: {e}"
-            calls += 1
-            convo.append({"role": "tool", "tool_name": name,
-                          "content": str(result)[:12000]})
+            # One round can ask for several pages at once, and five 12K
+            # results arrive together. Each is admitted only if the next
+            # call still fits; past that the call is answered, briefly, and
+            # not run - nothing it returned could be read anyway.
+            if full:
+                result = ("Not run: research is out of room. Stop searching "
+                          "and work with what you have.")
+            else:
+                try:
+                    result = dispatch(name, args)
+                except Exception as e:                  # noqa: BLE001
+                    result = f"tool {name} failed: {e}"
+                calls += 1
+                result = str(result)[:12000]
+                if _projected_tokens(msg, convo) + len(result) / CHARS_PER_TOKEN \
+                        > _budget(msg, num_ctx):
+                    full = True
+                    result = ("Not shown: this result would overflow the "
+                              "conversation. Stop searching and work with what "
+                              "you have.")
+            convo.append({"role": "tool", "tool_name": name, "content": result})
         # Checked here, after the tool results are in, so the conversation is
         # never left holding a tool call nobody answered. 0.7 leaves room for
         # the structured extraction that normally follows this loop.
@@ -349,8 +364,7 @@ def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
         # leaves out this round's reply and the pages just read: research
         # stopped one round late every time, and the brief step that follows
         # started at 26-30K of a 32K window (batch-2026-11-15/-16.log).
-        ceiling = 0.7 * (msg.get("_num_ctx") or num_ctx or NUM_CTX)
-        if _projected_tokens(msg, convo) > ceiling:
+        if full or _projected_tokens(msg, convo) > _budget(msg, num_ctx):
             print(f"  ::warning::{label} stopping after round {rnd + 1} — the "
                   f"conversation is filling the context window. Working with "
                   f"what it found so far.")
@@ -358,6 +372,48 @@ def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
     else:
         print(f"  ::warning::{label} hit {max_rounds} rounds without settling")
     return convo, calls
+
+
+def _budget(msg, num_ctx=None):
+    """What a tool loop may fill: 0.7 of the window leaves room for the
+    structured extraction that normally follows it."""
+    return 0.7 * (msg.get("_num_ctx") or num_ctx or NUM_CTX)
+
+
+def estimate_tokens(text):
+    return len(text or "") / CHARS_PER_TOKEN
+
+
+def fit(system, messages, max_tokens):
+    """`messages` shortened until system + messages fit in `max_tokens`.
+
+    Overflow in Ollama does not raise: the oldest turns are dropped, and the
+    oldest turns are the instructions. So before a call that must not lose
+    them, the oldest TOOL results - page texts and search listings - are cut
+    to a stub, oldest first. Instructions, the model's own notes and the most
+    recent pages are kept. Returns a new list; the input is not changed.
+    """
+    out = [dict(m) for m in messages]
+
+    def size():
+        n = estimate_tokens(system)
+        for m in out:
+            n += estimate_tokens(m.get("content"))
+            if m.get("tool_calls"):
+                n += estimate_tokens(json.dumps(m["tool_calls"], ensure_ascii=False))
+            n += 4                                       # per-message overhead
+        return n
+
+    stub = "[tool result removed to fit the context window]"
+    for m in out:
+        if size() <= max_tokens:
+            break
+        if m.get("role") == "tool" and m.get("content") != stub:
+            m["content"] = stub
+    if size() > max_tokens:
+        raise LLMError(f"cannot fit the prompt in {max_tokens:.0f} tokens even "
+                       f"with every tool result removed")
+    return out
 
 
 def _projected_tokens(msg, convo):

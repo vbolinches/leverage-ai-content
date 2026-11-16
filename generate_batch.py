@@ -211,12 +211,25 @@ def used_sources(sched):
         try:
             with open(os.path.join(SPEC_DIR, f"{p['id']}.json"),
                       encoding="utf-8") as f:
-                url = (json.load(f).get("source_url") or "").strip()
+                spec = json.load(f)
         except (OSError, ValueError):
-            continue
-        if url:
-            used[search.canonical(url)] = p["id"]
+            spec = {}
+        urls = [(spec.get("source_url") or "").strip()]
+        # Specs only carry source_url since 2026-10; 56 of inmigraforma's 93
+        # posts predate it, and 21 of those name their source only in the
+        # caption ("Fuente oficial: https://..."). A page is covered whichever
+        # place recorded it.
+        if not urls[0]:
+            caption = p.get("caption") or spec.get("caption") or ""
+            # The first link is the post's source; later ones are background.
+            urls = [u.rstrip(".,;)") for u in _CAPTION_URL.findall(caption)][:1]
+        for url in urls:
+            if url and _official(url) and _specific(url):
+                used.setdefault(search.canonical(url), p["id"])
     return used
+
+
+_CAPTION_URL = re.compile(r"https?://[^\s<>\"']+")
 
 
 # Constrained decoding guarantees well-formed JSON. Parsing free text failed on
@@ -545,6 +558,12 @@ def _sweep(want, avoid, signals, office=("", [])):
     Starting fresh per sweep keeps each conversation well inside the window
     however large the batch is; the avoid list is what carries memory across.
     """
+    # Every part of the opening prompt is bounded, so the first call fits
+    # whatever the night's listings hold and however many posts exist: the
+    # avoid list alone grows by a line a night.
+    signals = _clip(signals, SIGNALS_CHARS)
+    office = (_clip(office[0], OFFICE_CHARS), office[1])
+    avoid = _newest(avoid, AVOID_CHARS)
     ask = (
         f"Find {want} DIFFERENT topics worth a post right now: "
         f"{ACCT['search_brief']}.\n\n"
@@ -584,7 +603,20 @@ def _sweep(want, avoid, signals, office=("", [])):
     if not found:
         print("  ::warning::this sweep retrieved no usable URLs")
         return [], calls
-    menu = "\n".join(f"  {u}   {search.TITLES.get(u, '')[:80]}" for u in found)
+    # Newest first, and no more than fits: past MENU_CHARS the oldest go.
+    menu, size = [], 0
+    for u in reversed(found):
+        line = f"  {u}   {search.TITLES.get(u, '')[:80]}"
+        if size + len(line) > MENU_CHARS:
+            break
+        menu.append(line)
+        size += len(line) + 1
+    menu = "\n".join(reversed(menu))
+    # The brief call is the tool loop's conversation plus this request. The
+    # loop stops with room for it, and fit() is the guarantee: it shortens
+    # the oldest page texts rather than let Ollama drop the instructions.
+    convo = llm.fit(RESEARCHER, convo, BRIEF_PROMPT_TOKENS - (len(menu) + 600)
+                    / llm.CHARS_PER_TOKEN)
 
     try:
         data = llm.structured(
@@ -606,6 +638,37 @@ def _sweep(want, avoid, signals, office=("", [])):
         print(f"::warning::a research sweep produced no usable briefs ({e})")
         return [], calls
     return data.get("briefs") or [], calls
+
+
+# Character budgets for the research prompt. At llm.CHARS_PER_TOKEN they come
+# to about 7K tokens for the opening ask, leaving the tool loop ~15K of its
+# 0.7 x 32K budget for searching and reading.
+SIGNALS_CHARS = 6000
+OFFICE_CHARS = 10000
+AVOID_CHARS = 3000
+MENU_CHARS = 6000
+# The brief call's prompt, at most: room is left for its answer (about 1.5K
+# tokens) and one re-ask, and the estimate is pessimistic on top of that.
+BRIEF_PROMPT_TOKENS = int(0.78 * llm.NUM_CTX)
+
+
+def _clip(text, limit):
+    """Text cut at a line boundary to `limit` characters."""
+    if len(text) <= limit:
+        return text
+    cut = text.rfind("\n", 0, limit)
+    return text[:cut if cut > 0 else limit] + "\n(... more left out to fit)"
+
+
+def _newest(items, limit):
+    """The newest entries of a list (the end of it) that fit in `limit`."""
+    out, size = [], 0
+    for x in reversed(list(items)):
+        if size + len(x) + 3 > limit:
+            break
+        out.append(x)
+        size += len(x) + 3
+    return list(reversed(out))
 
 
 def research(count, avoid):
@@ -633,7 +696,7 @@ def research(count, avoid):
     search.COVERED.clear()
     search.COVERED.update(covered)
 
-    signals = ideas.digest(ACCT)
+    signals = ideas.digest(ACCT, skip=search.covered_by)
     # What the official sources themselves published, read in code: real,
     # dated, exact URLs to choose from. Shown on EVERY sweep - unlike the
     # leads, it is the part of the prompt most likely to become a true post.

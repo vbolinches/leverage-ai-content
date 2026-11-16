@@ -75,9 +75,17 @@ def canonical(url):
     return host + path + (f"?{query}" if query else "")
 
 
+# Where a URL really landed, for the ones that redirected: a covered page
+# reached through a different address is still the covered page.
+LANDED = {}
+
+
 def covered_by(url):
     """The post id already built on this page, or None."""
-    return COVERED.get(canonical(url)) if COVERED else None
+    if not COVERED or not url:
+        return None
+    return (COVERED.get(canonical(url))
+            or COVERED.get(canonical(LANDED.get(url, ""))) or None)
 
 
 def supports(url, quote, need=40):
@@ -285,6 +293,13 @@ def fetch(url, max_chars=MAX_PAGE_CHARS):
     RETRIEVED.add(url)
     RETRIEVED.add(final)
     PAGES[url] = PAGES[final] = text
+    if final != url:
+        LANDED[url] = final
+    post = covered_by(final)
+    if post:
+        # Asked for one address, served a page that already has a post.
+        return (f"Not shown: {url} leads to a page already posted ({post}). "
+                f"Choose a different story.")
     clipped = text[:max_chars]
     if len(text) > max_chars:
         clipped += f"\n\n[...truncated at {max_chars} characters]"

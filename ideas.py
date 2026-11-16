@@ -205,8 +205,17 @@ def refresh(acct):
     return store
 
 
-def digest(acct, max_items=DIGEST_MAX, max_age_days=14):
-    """Prompt-ready digest of recent signals, or '' when stale/absent."""
+# One lead is a title and a link; a longer line is a pasted post, and the
+# digest goes into a prompt with a fixed budget (see generate_batch._sweep).
+LINE_MAX = 300
+
+
+def digest(acct, max_items=DIGEST_MAX, max_age_days=14, skip=None):
+    """Prompt-ready digest of recent signals, or '' when stale/absent.
+
+    `skip(url)` is true for a lead to leave out: research passes
+    search.covered_by, so a story that already has a post is not suggested.
+    """
     path = acct.path("ideas.json")
     if not os.path.exists(path):
         return ""
@@ -215,8 +224,10 @@ def digest(acct, max_items=DIGEST_MAX, max_age_days=14):
     updated = store.get("updated")
     if not updated or (date.today() - date.fromisoformat(updated)).days > max_age_days:
         return ""
-    lines = [f"- [{i['source']}] {i['title']} ({i['url']})"
-             for i in store.get("items", [])[:max_items]]
+    items = [i for i in store.get("items", [])
+             if not (skip and skip(i.get("url", "")))][:max_items]
+    lines = [f"- [{i['source']}] {i['title']}"[:max(60, LINE_MAX - len(i['url']) - 3)]
+             + f" ({i['url']})" for i in items]
     if not lines:
         return ""
     return ("RECENT SIGNALS from monitored sources (X, feeds, HN), newest "
