@@ -162,6 +162,78 @@
       ]
     },
     {
+      "slug": "post102-dhs-campaña-fraude-asilo",
+      "graded": "2026-11-16",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "No pierdas tiempo con datos falsos",
+        "sub": "10 nov 2026",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "category",
+        "stopping": "clear warning about false data (common pitfall) without jargon or alarm. 'No pierdas tiempo' = 'don't waste time' - instantly actionable for audience who might submit fake docs. Best understood on first read.",
+        "reason": "E: Clear, actionable, no overstatement - stops readers by naming a specific, avoidable mistake they'd recognize from experience.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "No pierdas tiempo con datos falsos",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "clear warning about false data (common pitfall) without jargon or alarm. 'No pierdas tiempo' = 'don't waste time' - instantly actionable for audience who might submit fake docs. Best understood on first read.",
+          "reason": "E: Clear, actionable, no overstatement - stops readers by naming a specific, avoidable mistake they'd recognize from experience.",
+          "authored": false
+        },
+        {
+          "headline": "Antes sin filtro, ahora con revisión",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Implies a change ('antes' vs 'ahora') but 'sin filtro' is confusing jargon. 'Filtro' (filter) isn't standard immigration term. Audience might scroll past guessing what 'filtro' means.",
+          "reason": "F: Vague phrasing ('sin filtro') makes it feel like an insider code. First-time reader skips it.",
+          "authored": false
+        },
+        {
+          "headline": "Nuevo foco en solicitudes de asilo",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Generic 'nuevo foco' (new focus) - no hint of what changed or why it matters. Feels like a government bulletin, not a reader-focused alert.",
+          "reason": "A: Too vague to stop scrolling. 'Foco' (focus) is meaningless without context.",
+          "authored": false
+        },
+        {
+          "headline": "DHS ajusta revisión de asilos",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "DHS is known to immigrants, but 'ajusta revisión' (adjusts review) is bureaucratic. No 'why should I care?' - feels like an admin update, not a personal impact.",
+          "reason": "B: Uses jargon ('ajusta revisión') without explaining how it affects readers.",
+          "authored": false
+        },
+        {
+          "headline": "Evita errores en tu historia real",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Unexplained fragment: 'historia real' (real story) is confusing. Is it about asylum? What errors? First-time reader has no idea what this means or why it matters.",
+          "reason": "D: 'Historia real' is a fragment - no context to understand on first read. Scores below 3 per floor rule.",
+          "authored": false
+        },
+        {
+          "headline": "Campaña contra fraude en asilo",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "False alarm: 'campaña contra fraude' (campaign against fraud) implies immigrants are being targeted for fraud. In reality, it's about fraud by lawyers/agents, not applicants. This could make readers avoid applying.",
+          "reason": "C: Overstates consequence (implying readers are fraudsters) - scores below 3 per override rule.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post29-tps-fechas-en-pagina-oficial-uscis",
       "graded": "2026-08-19",
       "threshold": 6.0,

@@ -1,0 +1,80 @@
+{
+  "slug": "post102-dhs-campaña-fraude-asilo",
+  "hook_candidates": [
+    {
+      "headline": "DHS ajusta revisión de asilos",
+      "sub": "Aviso del 10 nov 2026"
+    },
+    {
+      "headline": "No pierdas tiempo con datos falsos",
+      "sub": "10 nov 2026"
+    },
+    {
+      "headline": "Evita errores en tu historia real",
+      "sub": "10 nov 2026"
+    },
+    {
+      "headline": "Antes sin filtro, ahora con revisión",
+      "sub": "10 nov 2026"
+    },
+    {
+      "headline": "Nuevo foco en solicitudes de asilo",
+      "sub": "10 nov 2026"
+    }
+  ],
+  "art": "document",
+  "caption": "El Departamento de Seguridad Nacional anunció una nueva campaña para buscar fraudes en solicitudes de asilo. Esto significa que revisarán con más detalle los casos que la gente presenta para pedir protección. La página oficial destaca que el USCIS está ayudando a las fiscalías federales en estos casos. Guarda este aviso para consultarlo después.\n\nEn palabras simples: El gobierno está revisando los casos de asilo para encontrar historias inventadas. Si tu caso es real y honesto, solo sigue el proceso normal.\n\nThe official notice states: \"DHS is taking action to identify and prosecute asylum fraudsters, with USCIS providing pivotal assistance to federal prosecutions.\" Esto dice que el gobierno está trabajando con tribunales para buscar casos inventados. En el día a día, significa que los oficiales preguntarán más sobre tu historia. La página no dice qué pasa si lo ignoras.\n\nDHS announced a focus on asylum fraud cases. In plain words: they are checking files more carefully to find made-up stories, so keep your records honest and follow normal steps.\n\nFuente oficial: https://www.dhs.gov/news/2026/11/10/dhs-taking-down-asylum-fraudsters\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\n#inmigracion #asilo #proteccion #estadosunidos #leyes #migracion #visas #noticias",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 102",
+      "headline": "Campaña contra fraude en asilo",
+      "sub": "Aviso del 10 nov 2026",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "Aviso de seguridad",
+      "body": [
+        {
+          "t": "El DHS, la agencia de seguridad, lanzó el 10 de noviembre de 2026 la campaña contra el fraude en asilo."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "Protección legal",
+      "body": [
+        {
+          "t": "El asilo es la protección legal que busca quien huye de peligro grave en su país de origen."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA A MI?",
+      "headline": "Solicitudes falsas",
+      "body": [
+        {
+          "t": "La campaña contra el fraude en asilo investiga solicitudes falsas, como inventar persecución para vivir aquí."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "QUE HACER",
+      "headline": "Lea el aviso",
+      "items": [
+        "Lea el aviso oficial en internet.",
+        "Consulte a un abogado de inmigración.",
+        "No invente persecución para vivir aquí."
+      ],
+      "cta_title": "Guarda esto",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.",
+      "footer_right": "GUARDA ↓"
+    }
+  ],
+  "source_url": "https://www.dhs.gov/news/2026/11/10/dhs-taking-down-asylum-fraudsters"
+}
