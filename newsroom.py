@@ -128,24 +128,52 @@ def items(acct):
     return out[:MAX_ITEMS]
 
 
-def digest(acct, avoid=()):
-    """The listing as research sees it, minus topics already covered."""
-    rows = items(acct)
+def digest(acct, covered=None):
+    """The listing as research sees it, minus pages that already have a post.
+
+    Returns (text, urls, hidden): hidden is [(url, post id)] for the rows left
+    out. Until 2026-11-16 this took an `avoid` argument it never used and
+    nobody passed, so the listing - which tells the model to choose from it
+    first - offered posted stories every night. On the 16th all four of
+    inmigraforma's items already had posts, and research briefed those four
+    in every sweep.
+
+    `covered` maps search.canonical(url) to a post id; by default it is
+    search.COVERED, which research fills before calling this.
+    """
+    covered = search.COVERED if covered is None else covered
+    rows, hidden = [], []
+    for i in items(acct):
+        post = covered.get(search.canonical(i["url"]))
+        if post:
+            hidden.append((i["url"], post))
+        else:
+            rows.append(i)
     if not rows:
-        return "", []
+        if hidden:
+            return ("OFFICIAL NEWS: every item the official listings published "
+                    "in the last six weeks already has a post. Search for "
+                    "other news."), [], hidden
+        return "", [], hidden
     lines = [f"- {i['date']} | {i['title']}\n  {i['url']}"
              + (f"\n  {i['summary']}" if i['summary'] else "") for i in rows]
     text = ("OFFICIAL NEWS FROM THE LAST SIX WEEKS - read from the sources' own "
             "listings, so every URL below is real and exact. Choose your topics "
             "from this list first. Open the page before you use it, and cite "
-            "that URL exactly. Skip anything already covered.\n\n"
-            + "\n".join(lines))
-    return text, [i["url"] for i in rows]
+            "that URL exactly. Items this account already posted are left out."
+            "\n\n" + "\n".join(lines))
+    return text, [i["url"] for i in rows], hidden
 
 
 if __name__ == "__main__":
     import accounts
     acct = accounts.get(sys.argv[1] if len(sys.argv) > 1 else None)
-    text, urls = digest(acct)
+    import os
+    os.environ["ACCOUNT"] = acct["slug"]     # generate_batch reads it on import
+    import generate_batch
+    search.COVERED.update(generate_batch.used_sources(generate_batch.load_queue()))
+    text, urls, hidden = digest(acct)
     print(text or "(no newsroom configured, or every source failed)")
-    print(f"\n{len(urls)} item(s)")
+    for url, post in hidden:
+        print(f"  hidden, already posted as {post}: {url}")
+    print(f"\n{len(urls)} item(s) offered, {len(hidden)} hidden")

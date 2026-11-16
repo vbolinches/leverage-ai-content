@@ -215,7 +215,7 @@ def used_sources(sched):
         except (OSError, ValueError):
             continue
         if url:
-            used[url.rstrip("/")] = p["id"]
+            used[search.canonical(url)] = p["id"]
     return used
 
 
@@ -578,6 +578,9 @@ def _sweep(want, avoid, signals, office=("", [])):
     # since(mark) cannot see them - and they are the best URLs it has.
     found += [u for u in office[1]
               if u not in found and _official(u) and _specific(u)]
+    # A page that already has a post is not on the menu: a brief citing it is
+    # dropped anyway, and offering it is how the model kept choosing it.
+    found = [u for u in found if not search.covered_by(u)]
     if not found:
         print("  ::warning::this sweep retrieved no usable URLs")
         return [], calls
@@ -618,23 +621,32 @@ def research(count, avoid):
     check below, and a post can still fail to author afterwards.
     """
     import ideas, newsroom
-    signals = ideas.digest(ACCT)
-    # What the official sources themselves published, read in code: real,
-    # dated, exact URLs to choose from. Shown on EVERY sweep - unlike the
-    # leads, it is the part of the prompt most likely to become a true post.
-    office = newsroom.digest(ACCT)
-    if office[1]:
-        print(f"  newsroom: {len(office[1])} official item(s) offered to research")
-
-    # Three spares: posts are now dropped for being untrue or still broken
-    # after repair, and each dropped post is a spare consumed.
-    want = count + 3
-    briefs, taken, calls = [], list(avoid), 0
+    # Pages that already have a post. Known before research starts, so they
+    # are kept out of everything the model is shown - the official listing,
+    # search results, page reads and the brief menu - instead of being
+    # recognised only after a brief is written. See search.COVERED.
     try:
         covered = used_sources(load_queue())
     except Exception as e:                              # noqa: BLE001
         print(f"  could not read earlier sources ({e}); not filtering on them")
         covered = {}
+    search.COVERED.clear()
+    search.COVERED.update(covered)
+
+    signals = ideas.digest(ACCT)
+    # What the official sources themselves published, read in code: real,
+    # dated, exact URLs to choose from. Shown on EVERY sweep - unlike the
+    # leads, it is the part of the prompt most likely to become a true post.
+    text, urls, hidden = newsroom.digest(ACCT)
+    office = (text, urls)
+    if urls or hidden:
+        print(f"  newsroom: {len(urls) + len(hidden)} official item(s), "
+              f"{len(hidden)} already posted, {len(urls)} offered to research")
+
+    # Three spares: posts are now dropped for being untrue or still broken
+    # after repair, and each dropped post is a spare consumed.
+    want = count + 3
+    briefs, taken, calls = [], list(avoid), 0
     for sweep in range(4):
         if len(briefs) >= want:
             break
@@ -652,6 +664,18 @@ def research(count, avoid):
             # nothing in it produces a post with nothing in it.
             if len(b.get("facts") or []) < 2 or len(b.get("topic", "")) < 15:
                 print(f"  dropped an empty brief: {b.get('topic', '')!r}")
+                continue
+            # One post per source page. The model reuses whichever page it has
+            # to hand: four queued posts cited the same Federal Register index,
+            # and a public-charge brief cited uscis.gov/avoid-scams. A page
+            # that genuinely covers two topics can carry the second next batch.
+            # Checked first: it needs no fetch, and the topic goes on the avoid
+            # list so the next sweep does not brief it again.
+            post = search.covered_by(url)
+            if post:
+                print(f"  dropped {b.get('topic', '')[:44]!r}: its source is "
+                      f"already covered by {post}")
+                taken.append(b.get("topic", ""))
                 continue
             # Relevance before accuracy: a true post nobody it is for cares
             # about still reaches nobody. The month the local model took over,
@@ -732,15 +756,8 @@ def research(count, avoid):
                     continue
             if any(b.get("topic", "").lower() == x.lower() for x in taken):
                 continue
-            # One post per source page. The model reuses whichever page it has
-            # to hand: four queued posts cited the same Federal Register index,
-            # and a public-charge brief cited uscis.gov/avoid-scams. A page
-            # that genuinely covers two topics can carry the second next batch.
-            if url.rstrip("/") in covered:
-                print(f"  dropped {b.get('topic', '')[:44]!r}: its source is "
-                      f"already covered by {covered[url.rstrip('/')]}")
-                continue
-            if any(url == x.get("source_url") for x in briefs):
+            if any(search.canonical(url) == search.canonical(x.get("source_url"))
+                   for x in briefs):
                 print(f"  dropped {b.get('topic', '')[:44]!r}: its source is "
                       f"already used by another topic in this batch")
                 continue

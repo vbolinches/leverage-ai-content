@@ -197,6 +197,7 @@ def chat(messages, system=None, model=None, tools=None, schema=None,
     # How full the window was for THIS call. tool_loop needs it to stop before
     # the conversation overflows; strip it before sending the message back.
     msg["_prompt_tokens"] = resp.get("prompt_eval_count") or 0
+    msg["_eval_tokens"] = resp.get("eval_count") or 0
     msg["_num_ctx"] = payload["options"]["num_ctx"]
     if resp.get("done_reason") == "length":
         if max_tokens:
@@ -289,6 +290,13 @@ def structured(system, user, schema, model=None, require=(), label="",
     raise LLMError(f"{label or 'structured'} failed after {attempts} attempts: {last}")
 
 
+# Characters per token when sizing text the model has not been sent yet. Low
+# on purpose: English runs near 4 and Spanish nearer 3.5, and guessing the
+# window too full stops research a little early, while guessing it too empty
+# lets Ollama drop the instructions off the front.
+CHARS_PER_TOKEN = 3.0
+
+
 def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
               label="tools", think=False, num_ctx=None):
     """Let the model call local tools until it stops asking. Returns the
@@ -335,8 +343,14 @@ def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
         # Checked here, after the tool results are in, so the conversation is
         # never left holding a tool call nobody answered. 0.7 leaves room for
         # the structured extraction that normally follows this loop.
+        #
+        # Measured on what the NEXT call will be sent, not on what this one
+        # was. Until 2026-11-16 the test read this round's prompt size, which
+        # leaves out this round's reply and the pages just read: research
+        # stopped one round late every time, and the brief step that follows
+        # started at 26-30K of a 32K window (batch-2026-11-15/-16.log).
         ceiling = 0.7 * (msg.get("_num_ctx") or num_ctx or NUM_CTX)
-        if msg.get("_prompt_tokens", 0) > ceiling:
+        if _projected_tokens(msg, convo) > ceiling:
             print(f"  ::warning::{label} stopping after round {rnd + 1} — the "
                   f"conversation is filling the context window. Working with "
                   f"what it found so far.")
@@ -344,6 +358,23 @@ def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
     else:
         print(f"  ::warning::{label} hit {max_rounds} rounds without settling")
     return convo, calls
+
+
+def _projected_tokens(msg, convo):
+    """How full the window will be on the next call of a tool loop.
+
+    The last call's prompt, measured by Ollama, plus an estimate for what was
+    appended after it: the model's own reply and every tool result answering
+    it. `convo` ends with exactly those messages.
+    """
+    added = 0
+    for m in reversed(convo):
+        added += len(m.get("content") or "")
+        if m.get("tool_calls"):
+            added += len(json.dumps(m["tool_calls"], ensure_ascii=False))
+        if m.get("role") == "assistant":
+            break
+    return (msg.get("_prompt_tokens") or 0) + added / CHARS_PER_TOKEN
 
 
 def main():

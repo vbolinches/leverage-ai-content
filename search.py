@@ -36,6 +36,49 @@ TITLES = {}
 # cited as a source.
 PAGES = {}
 
+# Pages that already have a post, keyed by canonical() URL, valued by the post
+# id. generate_batch.research() fills it before the first sweep. Until
+# 2026-11-16 nothing here knew about them, so the model searched for, read and
+# briefed the same four posted stories every sweep - on the 15th and 16th
+# inmigraforma lost more than half its research rounds that way, and the pages
+# it re-read are what filled the context window. A covered page is now never
+# read into the conversation, and never shown as a search result.
+COVERED = {}
+
+_FR_DOC = re.compile(r"^/(?:documents/\d{4}/\d{2}/\d{2}/|d/|public-inspection/)"
+                     r"(\d{4}-\d{4,6})(?:/|$)")
+
+
+def canonical(url):
+    """One key per page, however the URL is spelt.
+
+    The covered check compared raw strings, so a trailing slash, an http://,
+    a #fragment or a utm_ tag made a posted page look new. The Federal
+    Register serves one document at /documents/<date>/<number>/<slug> and at
+    /d/<number>; both are keyed by the document number.
+    """
+    url = (url or "").strip()
+    if not url:
+        return ""
+    parts = urllib.parse.urlsplit(url)
+    host = parts.netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    path = re.sub(r"/+$", "", parts.path) or "/"
+    if host == "federalregister.gov":
+        m = _FR_DOC.match(path + "/")
+        if m:
+            return f"federalregister.gov/d/{m.group(1)}"
+    query = urllib.parse.urlencode(
+        [(k, v) for k, v in urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+         if not k.lower().startswith("utm_")])
+    return host + path + (f"?{query}" if query else "")
+
+
+def covered_by(url):
+    """The post id already built on this page, or None."""
+    return COVERED.get(canonical(url)) if COVERED else None
+
 
 def supports(url, quote, need=40):
     """Does the page at `url` actually contain this sentence?
@@ -306,9 +349,21 @@ def dispatch(name, args):
         hits = search(args.get("query", ""), recent=args.get("recent"))
         if not hits:
             return "No results. Try different wording."
+        fresh = [h for h in hits if not covered_by(h["url"])]
+        if not fresh:
+            return ("Every result is a story this account has already posted. "
+                    "Search for a different story.")
+        note = ("" if len(fresh) == len(hits) else
+                f"\n\n({len(hits) - len(fresh)} result(s) left out: already posted.)")
         return "\n\n".join(
-            f"{h['title']}\n{h['url']}\n{h['snippet']}" for h in hits)
+            f"{h['title']}\n{h['url']}\n{h['snippet']}" for h in fresh) + note
     if name == "read_page":
+        post = covered_by(args.get("url", ""))
+        if post:
+            # Not fetched: the page text is what fills the window, and a
+            # covered page can never become a brief.
+            return (f"Not opened: this page is already posted ({post}). "
+                    f"Choose a different story.")
         return fetch(args.get("url", ""))
     return f"unknown tool {name!r}"
 
