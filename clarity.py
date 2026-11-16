@@ -132,13 +132,27 @@ def read(post, brief, acct, model=None, label=""):
                     f"your own understanding, compare it with what the post is "
                     f"MEANT to tell people:\n{brief.get('topic', '')}. {facts}")
     ask = (f"{lang}\n\nTHE SLIDES:\n\n{slides_text(post)}{intended}").strip()
-    try:
-        data = llm.structured(READER, ask, SCHEMA, model=model,
-                              require=("i_understood_it_is_about",),
-                              label=f"clarity:{label}", think=True,
-                              temperature=0, max_tokens=12000)
-    except llm.LLMError as e:
-        return [f"the clarity read could not run ({e})"], {}
+    data = None
+    # Reasoning first. If it still runs past the cap, the same read once more
+    # with reasoning off, which cannot loop - the fact-check and the explainer
+    # already do this. Before 2026-11-16 a runaway here ended the read, and
+    # "the clarity read could not run" was then counted as a doubt: with
+    # clarity_max_doubts at 1, one crash used up the whole allowance and left
+    # the explanation loop working blind.
+    for think in (True, False):
+        try:
+            data = llm.structured(READER, ask, SCHEMA, model=model,
+                                  require=("i_understood_it_is_about",),
+                                  label=f"clarity:{label}"
+                                        + ("" if think else "/nothink"),
+                                  think=think, temperature=0, max_tokens=12000)
+            break
+        except llm.LLMError as e:
+            if think and "cap" in str(e):
+                print(f"  ::warning::clarity:{label} ran past its cap - "
+                      f"reading again without reasoning")
+                continue
+            return [f"the clarity read could not run ({e})"], {}
 
     seen = _norm(slides_text(post))
     doubts = []

@@ -533,6 +533,49 @@ def verify_detail(post, brief, acct, model=None, label=""):
     return errs, bad
 
 
+def ground_facts(brief, acct, model=None, label=""):
+    """Check a brief's facts against its own page BEFORE anything is written
+    from them. Returns (kept, dropped): the facts the page supports, and the
+    ones it does not.
+
+    The facts are written by the research model and, on an account without
+    require_source_url, nothing checked them. They then drive two checks that
+    pull opposite ways: the explainer is told they are VERIFIED, the clarity
+    reader is told the post is MEANT to say them, and verify_detail - reading
+    the page - rejects them. On 2026-11-16 a brief promised research "from 20+
+    minutes to under 5" and a price of "$1.50/$7.50 per million tokens"; neither
+    is on its page. Each round the reader asked for the claim and the checker
+    struck it, six rounds, every leverageai topic, zero posts. A fact the page
+    does not state is removed here, with the same checker that judges the post,
+    so the reader and the checker are held to the same facts.
+
+    When the checker cannot run, nothing is removed: the later checks still
+    stand, and an outage should not quietly empty every brief.
+    """
+    facts = [f for f in (brief or {}).get("facts") or [] if (f or "").strip()]
+    if not facts:
+        return [], []
+    probe = {"slides": [{"kind": "step", "body": f} for f in facts]}
+    errs, bad = verify_detail(probe, brief, acct, model=model,
+                              label=f"{label}/facts" if label else "facts")
+    if any(e.startswith(("the fact-check could not run",
+                         "the source page")) for e in errs):
+        return facts, []
+    dropped = set()
+    for claim in bad:
+        # The checker restates a claim in its own words, and one fact can carry
+        # two claims. Each flagged claim strikes the fact it overlaps most.
+        best, idx = 0.0, None
+        for i, f in enumerate(facts):
+            o = _overlap(claim, f)
+            if o > best:
+                best, idx = o, i
+        if idx is not None and best >= 0.5:
+            dropped.add(idx)
+    kept = [f for i, f in enumerate(facts) if i not in dropped]
+    return kept, [facts[i] for i in sorted(dropped)]
+
+
 # Caption lines that carry no claim and must survive any deletion.
 _KEEP_LINE = re.compile(r"^\s*(#|fuente oficial|official source|informaci[oó]n "
                         r"general|sigue a @|follow @)", re.I)

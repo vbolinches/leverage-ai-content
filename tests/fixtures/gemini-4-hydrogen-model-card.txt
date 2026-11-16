@@ -1,0 +1,22 @@
+Published 12 November 2026
+Gemini 4 Hydrogen
+Model Cards are intended to provide essential information on Gemini models, including known limitations, mitigation approaches, and safety performance.
+Description
+Gemini 4 Hydrogen brings cutting-edge intelligence to everyone - with speed and efficiency for everyday coding and agentic workflows. While our frontier models, Gemini 4 Carbon and Gemini 4 Argon, are built for deep, long-horizon reasoning on your hardest problems, Hydrogen is built for rapid execution across diverse agentic workflows.
+Inputs
+Text strings (e.g., a question, a prompt, document(s) to be summarized), images, audio, and video files, with a combined input-output token context window of up to 1M.
+Distribution
+Gemini 4 Hydrogen is distributed in the following channels; respective documentation shared in line:
+Gemini app
+Gemini API
+Google Sheets
+Google AI Studio
+Gemini for business
+Google Antigravity
+Google Search
+Our models are available to downstream providers via an application program interface (API) and subject to relevant terms of use. There is no required hardware or software to use the model.
+Known Limitations
+Gemini 4 Hydrogen may exhibit some general limitations such as hallucinations. The knowledge cutoff for Gemini 4 Hydrogen is March 2026, though in some domains the model's knowledge may be less up to date.
+Safety & Security
+Please see the full Gemini 4 Hydrogen Safety & Security Report here.
+A summary of our assessment is outlined in the table below, with full results in the Gemini 4 Hydrogen Safety & Security Report (coming soon).

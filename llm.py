@@ -65,6 +65,19 @@ TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT") or 1800)
 
 _THINK_TAGS = re.compile(r"<think>.*?</think>", re.S)
 
+# Greedy decoding (temperature 0) and reasoning do not mix on qwen3. Its model
+# card: "For thinking mode, use Temperature=0.6, TopP=0.95, TopK=20, and
+# MinP=0. DO NOT use greedy decoding, as it can lead to performance
+# degradation and endless repetitions." The clarity reader asked for exactly
+# that combination, and its answers split in two: 1-4.5K tokens, or the full
+# 12,000-token cap - 82 of 126 reads on leverageai's Nov 12/13/14/16 runs,
+# every one a reasoning loop that never reached the JSON. A caller passing
+# temperature 0 with think=True wants a repeatable verdict, so it gets the
+# documented thinking sampling with a FIXED seed: same prompt, same answer,
+# no greedy loop.
+THINK_SAMPLING = {"temperature": 0.6, "top_p": 0.95, "top_k": 20, "min_p": 0.0}
+THINK_SEED = 20261116
+
 
 class LLMError(RuntimeError):
     """Anything that came back from Ollama that we cannot use."""
@@ -173,7 +186,10 @@ def chat(messages, system=None, model=None, tools=None, schema=None,
             "num_ctx": num_ctx or NUM_CTX,
         },
     }
-    if temperature is not None:
+    if think and temperature == 0:
+        payload["options"].update(THINK_SAMPLING)
+        payload["options"]["seed"] = THINK_SEED
+    elif temperature is not None:
         payload["options"]["temperature"] = temperature
         # A fresh seed on every call that asked for randomness. Without one,
         # Ollama samples the same way for the same prompt, and the repair loop

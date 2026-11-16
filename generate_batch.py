@@ -1624,6 +1624,18 @@ def write_post(brief, slug_prefix, series_no):
     mechanical, so it gets told exactly what it broke and up to three chances
     to fix it. That turns rejections into posts instead of into gaps.
     """
+    # Facts first: an unsupported fact here cannot be written out later, only
+    # fought over for six rounds (see factcheck.ground_facts).
+    kept, dropped = factcheck.ground_facts(brief, ACCT, model=MODEL,
+                                           label=slug_prefix)
+    for f in dropped:
+        print(f"  {slug_prefix}: fact not on its source page, removed: {f[:160]!r}")
+    if len(kept) < 2:
+        # The same bar research sets for an empty brief. Failing now costs a
+        # minute; the next spare takes the slot.
+        raise llm.LLMError(f"only {len(kept)} of the brief's facts are on its "
+                           f"source page")
+    brief["facts"] = kept
     facts = "\n".join(f"  - {f}" for f in brief.get("facts") or [])
     today = date.today()
     ask = (

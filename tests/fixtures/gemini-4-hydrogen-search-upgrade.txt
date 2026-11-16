@@ -1,0 +1,11 @@
+Google Search gets a major upgrade with Gemini 4 Hydrogen
+Nov 12, 2026
+Robby Stein, VP of Product, Google Search
+We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more intuitive, visual, and precise answers. This update helps you navigate complex questions by understanding your intent, conducting simultaneous queries, and displaying structured information like tables and images. You can try these improved capabilities by visiting Google Search today to ask your most nuanced questions.
+Today, Google Search is bringing cutting-edge intelligence to everyone with Gemini 4 Hydrogen. This is the biggest model upgrade to Search yet.
+Hydrogen is now available globally in Google Search for all users, delivering more helpful, visual, and intuitive responses with improved model capabilities:
+Better understanding of intent: Search can now handle even more nuanced and complicated questions, quickly understanding what you need. Just ask in your natural flow of thought - including questions with multiple parts, hard-to-understand typos, or highly specific requests. With deeper instruction following and tool calling, Search more precisely follows what you want and gives you relevant responses that address each part of your question.
+Improved query fan-out and linking: Hydrogen's advanced reasoning supercharges our query fan-out technique in Search, connecting you to a broader range of helpful links than before. By more thoroughly understanding your question and conducting simultaneous queries across all the relevant subtopics, Search helps you find sites you previously might not have discovered.
+More visual responses: You get highly adaptive, visual, and easy-to-scan responses that are uniquely relevant to your needs - at the speed of Search. You'll see more images, structured responses, comparison tables, and custom tools built for you.
+Richer language understanding: No matter what language you ask in, you'll now get more highly nuanced and helpful responses across all supported AI Mode languages.
+Try out Gemini 4 Hydrogen in Search today.
