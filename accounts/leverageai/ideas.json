@@ -1,6 +1,270 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-17",
   "items": [
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Quoting Go Proverbs",
+      "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+      "at": "2026-11-17",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
+      "at": "2026-11-17",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Nvidia’s board is reportedly ‘not considering’ hiring Jensen Huang back",
+      "url": "https://www.theverge.com/tech/1034501/nvidia-board-jensen-huang-not-bringing-back",
+      "at": "2026-11-17",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "llm 0.37.3",
+      "url": "https://simonwillison.net/2026/Nov/16/llm/",
+      "at": "2026-11-16",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Tech leaders are convinced that Jensen Huang’s exit was a plot against him",
+      "url": "https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories",
+      "at": "2026-11-16",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "California sues OpenAI over rogue AI hacking incidents",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+      "at": "2026-11-16",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Big Nuclear isn’t worried about the Democrats stopping data centers",
+      "url": "https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats",
+      "at": "2026-11-16",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "US data centers now burn more electricity than a midsized country",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
+      "at": "2026-11-16",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
+      "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+      "at": "2026-11-16",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
+      "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+      "at": "2026-11-16",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Audible is trying to make it easier to find audiobooks you’ll actually like",
+      "url": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
+      "at": "2026-11-16",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/www.theverge.com",
+      "title": "Google Maps can now create trip itineraries for you",
+      "url": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
+      "at": "2026-11-16",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-maplibre 0.1a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+      "at": "2026-11-15",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette 1.0a43",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette/",
+      "at": "2026-11-15",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette 0.65.6",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-2/",
+      "at": "2026-11-15",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-apps 0.4a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-apps/",
+      "at": "2026-11-15",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-agent 0.6a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-agent/",
+      "at": "2026-11-15",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+      "at": "2026-11-14",
+      "signal": 51,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-llm 0.1a11",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "at": "2026-11-14",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-vega 0.7",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-vega/",
+      "at": "2026-11-14",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "at": "2026-11-13",
+      "signal": 493,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "hn/NotebookLM",
+      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "at": "2026-11-13",
+      "signal": 443,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Show HN: Carton Clock – A working pendulum clock made from empty drink cartons",
+      "url": "https://www.niklasroy.com/carton-clock/",
+      "at": "2026-11-13",
+      "signal": 87,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-cluster-map 0.19",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+      "at": "2026-11-13",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "datasette-leaflet 0.3",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
+      "at": "2026-11-13",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "llm-gemini 0.37",
+      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+      "at": "2026-11-12",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Gemini Decisions API",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+      "at": "2026-11-11",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "aws-emulator",
+      "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+      "at": "2026-11-11",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Browse tools.simonwillison.net by tag",
+      "url": "https://simonwillison.net/2026/Nov/11/tools-tags/",
+      "at": "2026-11-11",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "llm 0.37.2",
+      "url": "https://simonwillison.net/2026/Nov/11/llm/",
+      "at": "2026-11-11",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "rss/simonwillison.net",
+      "title": "Anthropic's IPO roadshow video",
+      "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+      "at": "2026-11-11",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "hn/Claude AI",
+      "title": "Saltline: First-person shooter built by Fable 5.2",
+      "url": "https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp",
+      "at": "2026-11-10",
+      "signal": 73,
+      "seen": "2026-11-17"
+    },
+    {
+      "source": "hn/AI productivity",
+      "title": "AI Users have workdays up to 90 min longer than non-users",
+      "url": "https://www.activtrak.com/news/productivity-lab-ai-users-longer-workdays/",
+      "at": "2026-11-10",
+      "signal": 67,
+      "seen": "2026-11-17"
+    },
     {
       "source": "rss/simonwillison.net",
       "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
@@ -74,11 +338,19 @@
       "seen": "2026-11-10"
     },
     {
+      "source": "rss/simonwillison.net",
+      "title": "llm-gemini 0.36",
+      "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+      "at": "2026-11-10",
+      "signal": 0,
+      "seen": "2026-11-17"
+    },
+    {
       "source": "hn/Claude AI",
       "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
       "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
       "at": "2026-11-09",
-      "signal": 356,
+      "signal": 380,
       "seen": "2026-11-10"
     },
     {
@@ -182,7 +454,7 @@
       "title": "My psychophysics as a bilateral cochlear implant user",
       "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
       "at": "2026-11-05",
-      "signal": 188,
+      "signal": 189,
       "seen": "2026-11-10"
     },
     {
@@ -198,7 +470,7 @@
       "title": "Ask HN: What's your current AI agentic setup?",
       "url": "https://news.ycombinator.com/item?id=50366117",
       "at": "2026-11-04",
-      "signal": 571,
+      "signal": 573,
       "seen": "2026-11-10"
     },
     {
@@ -270,7 +542,7 @@
       "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
       "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
       "at": "2026-11-02",
-      "signal": 352,
+      "signal": 353,
       "seen": "2026-11-03"
     },
     {
@@ -368,278 +640,6 @@
       "at": "2026-10-31",
       "signal": 0,
       "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "dbreunig/nesformer",
-      "url": "https://simonwillison.net/2026/Oct/30/nesformer/",
-      "at": "2026-10-30",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Apple Intelligence is finally coming to China with iOS 27.3",
-      "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-      "at": "2026-10-30",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-      "at": "2026-10-30",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "The biggest names in AI are backing a new way to opt out of scraping",
-      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "at": "2026-10-30",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Google&#8217;s satellite AI server transmits its first response to Earth",
-      "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-      "at": "2026-10-30",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "at": "2026-10-30",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
-      "at": "2026-10-30",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "hn/Claude AI",
-      "title": "Claude Code regularly sends each background agent’s transcript to its model",
-      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
-      "at": "2026-10-29",
-      "signal": 591,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "API credits benefit for eligible ChatGPT subscriptions",
-      "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
-      "at": "2026-10-29",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Building a multiplayer game world with autonomous Fable-class models",
-      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
-      "at": "2026-10-29",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Ben Hylak",
-      "url": "https://simonwillison.net/2026/Oct/29/ben-hylak/",
-      "at": "2026-10-29",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Ted Sanders",
-      "url": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
-      "at": "2026-10-28",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "GitHub Octoverse 2026",
-      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
-      "at": "2026-10-28",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "The October inflection point for vibe game development",
-      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
-      "at": "2026-10-28",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Terk Terkowitz",
-      "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
-      "at": "2026-10-28",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Game Boy Color on My Conference Badge",
-      "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/",
-      "at": "2026-10-27",
-      "signal": 0,
-      "seen": "2026-11-03"
-    },
-    {
-      "source": "hn/Claude AI",
-      "title": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
-      "url": "https://github.com/FrigadeHQ/hob",
-      "at": "2026-10-26",
-      "signal": 180,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "GPT-6.1 Terra",
-      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quoting Jason Koebler",
-      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "webframe: evaluated as a scraper and a sandbox",
-      "url": "https://simonwillison.net/2026/Oct/26/webframe-evaluation/",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Data center backlash is uniting America",
-      "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "OpenAI announces three big science discoveries and a new way to work with academics",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Anthropic is burning gas to feed the AI boom",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "The RealReal won’t let AI agents hog designer clothing",
-      "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Five weird details from Anthropic’s IPO filing",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Microsoft offers buyouts to 60,000 employees",
-      "url": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Kevin Roose is AGI-pilled. Why aren’t you?",
-      "url": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Anthropic’s IPO filing lays out a plan to &#8216;revolutionize every area of human endeavor&#8217; with AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "Can AI help solve the COBOL code crisis?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
-      "at": "2026-10-26",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Seam Cutter",
-      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
-      "at": "2026-10-25",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/www.theverge.com",
-      "title": "r/opensource just banned AI, non-English speakers, and more",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-      "at": "2026-10-25",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "battledrones v14: Compass Rose, a four player map",
-      "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
-      "at": "2026-10-24",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Quick Study",
-      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
-      "at": "2026-10-23",
-      "signal": 0,
-      "seen": "2026-10-27"
-    },
-    {
-      "source": "rss/simonwillison.net",
-      "title": "Introducing Kimi K3.1 Pro",
-      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-      "at": "2026-10-23",
-      "signal": 0,
-      "seen": "2026-10-27"
     }
   ]
 }
