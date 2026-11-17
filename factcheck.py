@@ -42,6 +42,26 @@ PROPOSAL_MARKERS = (
     "is proposing", "would amend", "propone", "propuesta de regla",
 )
 
+# A final rule's preamble names the proposal it finishes and the comments it
+# answered ("HUD published a proposed rule ... the comment period closed"), so
+# the markers above hit every final rule. On 2026-11-17 a HUD final rule in
+# force from 2026-12-14 (2026-23003) was refused as "a proposal" six times and
+# the topic lost. The Federal Register prints the document's kind on its
+# ACTION line: when that line says final rule, and no ACTION line says
+# proposed, the markers are history, not status. The model's own "proposed"
+# verdict still counts on its own.
+_ACTION_FINAL = re.compile(r"\baction:?\s*(?:an?\s+)?(?:interim\s+)?final\s+rule")
+_ACTION_PROPOSED = re.compile(r"\baction:?\s*(?:an?\s+)?(?:proposed\s+rule|"
+                              r"notice\s+of\s+proposed\s+rulemaking|"
+                              r"advance\s+notice\s+of\s+proposed)")
+
+
+def final_rule(page):
+    """Does the page say, on its ACTION line, that it is a final rule?"""
+    head = _norm((page or "")[:100000])
+    return bool(_ACTION_FINAL.search(head)) and not _ACTION_PROPOSED.search(head)
+
+
 # And the wording a post needs to carry when it covers one.
 PROPOSAL_WORDS = ("propuesta", "propone", "propuso", "proponen", "todavía no",
                   "aún no", "no está en vigor", "no ha entrado", "si se aprueba",
@@ -515,7 +535,8 @@ def verify_detail(post, brief, acct, model=None, label=""):
     # model's reading as a second opinion. Either one is enough.
     low = _norm(excerpt)
     proposed = (data.get("status") == "proposed"
-                or any(m in low for m in PROPOSAL_MARKERS))
+                or (any(m in low for m in PROPOSAL_MARKERS)
+                    and not final_rule(page)))
     if proposed:
         head = _norm(" ".join(str(x) for x in (
             (post.get("slides") or [{}])[0].get("headline"),

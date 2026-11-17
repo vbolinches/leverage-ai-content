@@ -47,6 +47,12 @@ COVERED = {}
 
 _FR_DOC = re.compile(r"^/(?:documents/\d{4}/\d{2}/\d{2}/|d/|public-inspection/)"
                      r"(\d{4}-\d{4,6})(?:/|$)")
+# The Government Publishing Office prints the same Federal Register documents
+# at govinfo.gov: /content/pkg/FR-2026-11-02/html/2026-22320.htm (and /pdf/),
+# or /app/details/FR-2026-11-02/2026-22320. Same document number, same key,
+# so a posted rule found through its govinfo copy is still the posted rule.
+_GOVINFO_FR = re.compile(r"^/(?:content/pkg|app/details)/FR-\d{4}-\d{2}-\d{2}/"
+                         r"(?:(?:html|pdf)/)?(\d{4}-\d{4,6})(?:\.(?:htm|html|pdf))?$", re.I)
 
 
 def canonical(url):
@@ -67,6 +73,10 @@ def canonical(url):
     path = re.sub(r"/+$", "", parts.path) or "/"
     if host == "federalregister.gov":
         m = _FR_DOC.match(path + "/")
+        if m:
+            return f"federalregister.gov/d/{m.group(1)}"
+    if host == "govinfo.gov":
+        m = _GOVINFO_FR.match(path)
         if m:
             return f"federalregister.gov/d/{m.group(1)}"
     query = urllib.parse.urlencode(

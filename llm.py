@@ -215,6 +215,9 @@ def chat(messages, system=None, model=None, tools=None, schema=None,
     msg["_prompt_tokens"] = resp.get("prompt_eval_count") or 0
     msg["_eval_tokens"] = resp.get("eval_count") or 0
     msg["_num_ctx"] = payload["options"]["num_ctx"]
+    # And how many characters that was, so a tool loop can size what it adds
+    # in this model's tokens for this text instead of a fixed guess.
+    msg["_prompt_chars"] = _chars(msgs)
     if resp.get("done_reason") == "length":
         if max_tokens:
             raise LLMError(f"Answer ran past its {max_tokens}-token cap, so it "
@@ -312,6 +315,34 @@ def structured(system, user, schema, model=None, require=(), label="",
 # lets Ollama drop the instructions off the front.
 CHARS_PER_TOKEN = 3.0
 
+# What a tool loop measured instead, once the model has told it. 3.0 alone
+# was too low for English: on 2026-11-17 leverageai's research stopped after
+# one or two rounds, and fit() cut the oldest page texts from a brief prompt
+# that would have fit, so six briefs came back with no date to copy and were
+# dropped. The measurement is the model's own count for this conversation,
+# taken with a 10% margin and kept between 2.5 and 3.6, so a cached or odd
+# count can never make the estimate bolder than English prose really is.
+CPT_MIN, CPT_MAX = 2.5, 3.6
+LOOP_CPT = CHARS_PER_TOKEN
+
+
+def _chars(msgs):
+    n = 0
+    for m in msgs:
+        n += len(m.get("content") or "")
+        if m.get("tool_calls"):
+            n += len(json.dumps(m["tool_calls"], ensure_ascii=False))
+    return n
+
+
+def measured_cpt(msg):
+    """Characters per token for the conversation this message answered, with
+    a margin, or the fixed estimate when the call was too small to say."""
+    tokens, chars = msg.get("_prompt_tokens") or 0, msg.get("_prompt_chars") or 0
+    if tokens < 1000 or chars <= 0:
+        return CHARS_PER_TOKEN
+    return min(CPT_MAX, max(CPT_MIN, 0.9 * chars / tokens))
+
 
 def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
               label="tools", think=False, num_ctx=None):
@@ -330,12 +361,15 @@ def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
     turns, which here means the instructions. Caller gets what was gathered up
     to that point, which is worth far more than a truncated run.
     """
+    global LOOP_CPT
+    LOOP_CPT = CHARS_PER_TOKEN
     convo = [{"role": "user", "content": user}]
     calls = 0
     full = False
     for rnd in range(max_rounds):
         msg = chat(convo, system=system, model=model, tools=tools,
                    think=think, label=f"{label}:{rnd + 1}", num_ctx=num_ctx)
+        cpt = LOOP_CPT = measured_cpt(msg)
         convo.append({k: v for k, v in msg.items() if k in
                       ("role", "content", "tool_calls")})
         requested = msg.get("tool_calls") or []
@@ -364,7 +398,7 @@ def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
                     result = f"tool {name} failed: {e}"
                 calls += 1
                 result = str(result)[:12000]
-                if _projected_tokens(msg, convo) + len(result) / CHARS_PER_TOKEN \
+                if _projected_tokens(msg, convo, cpt) + len(result) / cpt \
                         > _budget(msg, num_ctx):
                     full = True
                     result = ("Not shown: this result would overflow the "
@@ -380,7 +414,7 @@ def tool_loop(system, user, tools, dispatch, model=None, max_rounds=10,
         # leaves out this round's reply and the pages just read: research
         # stopped one round late every time, and the brief step that follows
         # started at 26-30K of a 32K window (batch-2026-11-15/-16.log).
-        if full or _projected_tokens(msg, convo) > _budget(msg, num_ctx):
+        if full or _projected_tokens(msg, convo, cpt) > _budget(msg, num_ctx):
             print(f"  ::warning::{label} stopping after round {rnd + 1} — the "
                   f"conversation is filling the context window. Working with "
                   f"what it found so far.")
@@ -396,11 +430,11 @@ def _budget(msg, num_ctx=None):
     return 0.7 * (msg.get("_num_ctx") or num_ctx or NUM_CTX)
 
 
-def estimate_tokens(text):
-    return len(text or "") / CHARS_PER_TOKEN
+def estimate_tokens(text, chars_per_token=None):
+    return len(text or "") / (chars_per_token or CHARS_PER_TOKEN)
 
 
-def fit(system, messages, max_tokens):
+def fit(system, messages, max_tokens, chars_per_token=None):
     """`messages` shortened until system + messages fit in `max_tokens`.
 
     Overflow in Ollama does not raise: the oldest turns are dropped, and the
@@ -410,29 +444,37 @@ def fit(system, messages, max_tokens):
     recent pages are kept. Returns a new list; the input is not changed.
     """
     out = [dict(m) for m in messages]
+    cpt = chars_per_token or CHARS_PER_TOKEN
 
     def size():
-        n = estimate_tokens(system)
+        n = estimate_tokens(system, cpt)
         for m in out:
-            n += estimate_tokens(m.get("content"))
+            n += estimate_tokens(m.get("content"), cpt)
             if m.get("tool_calls"):
-                n += estimate_tokens(json.dumps(m["tool_calls"], ensure_ascii=False))
+                n += estimate_tokens(json.dumps(m["tool_calls"], ensure_ascii=False), cpt)
             n += 4                                       # per-message overhead
         return n
 
     stub = "[tool result removed to fit the context window]"
+    cut = 0
     for m in out:
         if size() <= max_tokens:
             break
         if m.get("role") == "tool" and m.get("content") != stub:
             m["content"] = stub
+            cut += 1
+    if cut:
+        # Said out loud: a cut page is one the briefs can no longer quote or
+        # date, and the log is where that has to be visible.
+        print(f"  fit: removed {cut} older tool result(s) to keep the prompt "
+              f"under {max_tokens:.0f} tokens")
     if size() > max_tokens:
         raise LLMError(f"cannot fit the prompt in {max_tokens:.0f} tokens even "
                        f"with every tool result removed")
     return out
 
 
-def _projected_tokens(msg, convo):
+def _projected_tokens(msg, convo, chars_per_token=None):
     """How full the window will be on the next call of a tool loop.
 
     The last call's prompt, measured by Ollama, plus an estimate for what was
@@ -446,7 +488,8 @@ def _projected_tokens(msg, convo):
             added += len(json.dumps(m["tool_calls"], ensure_ascii=False))
         if m.get("role") == "assistant":
             break
-    return (msg.get("_prompt_tokens") or 0) + added / CHARS_PER_TOKEN
+    return (msg.get("_prompt_tokens") or 0) + added / (chars_per_token
+                                                         or CHARS_PER_TOKEN)
 
 
 def main():

@@ -600,6 +600,9 @@ def _sweep(want, avoid, signals, office=("", [])):
     # A page that already has a post is not on the menu: a brief citing it is
     # dropped anyway, and offering it is how the model kept choosing it.
     found = [u for u in found if not search.covered_by(u)]
+    # Nor is a news listing: a brief citing one is dropped (see _listing).
+    if ACCT.get("require_source_url"):
+        found = [u for u in found if not _listing(u)]
     if not found:
         print("  ::warning::this sweep retrieved no usable URLs")
         return [], calls
@@ -616,7 +619,7 @@ def _sweep(want, avoid, signals, office=("", [])):
     # loop stops with room for it, and fit() is the guarantee: it shortens
     # the oldest page texts rather than let Ollama drop the instructions.
     convo = llm.fit(RESEARCHER, convo, BRIEF_PROMPT_TOKENS - (len(menu) + 600)
-                    / llm.CHARS_PER_TOKEN)
+                    / llm.CHARS_PER_TOKEN, chars_per_token=llm.LOOP_CPT)
 
     try:
         data = llm.structured(
@@ -744,6 +747,10 @@ def research(count, avoid):
             # about still reaches nobody. The month the local model took over,
             # inmigraforma covered a Federal Register index, civil-surgeon
             # designations, diplomats' children and $800,000 investor visas.
+            if _never_ours(b.get("topic", "")):
+                print(f"  dropped {b.get('topic', '')[:44]!r}: a kind of "
+                      f"story this account never covers")
+                continue
             if b.get("audience") == "niche":
                 print(f"  dropped {b.get('topic', '')[:44]!r}: niche audience")
                 continue
@@ -816,6 +823,10 @@ def research(count, avoid):
                 if _evergreen(url):
                     print(f"  dropped a brief citing a page that explains "
                           f"rather than reports: {url}")
+                    continue
+                if _listing(url):
+                    print(f"  dropped a brief citing a news listing rather "
+                          f"than the story's own page: {url}")
                     continue
             if any(b.get("topic", "").lower() == x.lower() for x in taken):
                 continue
@@ -1025,6 +1036,33 @@ def _invented_metric(topic, page):
 def _evergreen(url):
     from urllib.parse import urlparse
     return bool(_EVERGREEN.match(urlparse(url).path or "/"))
+
+
+# A news LISTING is not a notice: dhs.gov/all-news-updates/180 or
+# uscis.gov/newsroom/alerts shows whatever is newest today, so a post citing
+# it links to a page that no longer shows its story, and the fact-check reads
+# twenty stories for one. On 2026-11-17 two of inmigraforma's three topics
+# cited listings (a DHS arrests item and a USCIS alert); both were rejected
+# after the writing was paid for. The story's own page is one click away.
+_LISTING = re.compile(
+    r"^/(?:all-news-updates|news|newsroom|news-releases|press-releases|"
+    r"newsroom/(?:alerts|news-releases|all-news|press-releases|fact-sheets|"
+    r"media-resources)|app/collection/[^/]+)(?:/\d+)?/?$", re.I)
+
+
+def _listing(url):
+    from urllib.parse import urlparse
+    return bool(_LISTING.match(urlparse(url).path or "/"))
+
+
+def _never_ours(topic):
+    """The account's own list of titles that are never its news
+    (newsroom_skip), applied to a brief's topic too. It only screened the
+    official listing, so research found the same kinds of story elsewhere:
+    on 2026-11-17 "ICE Arrests Highlighted by DHS" took 40 minutes of writing
+    for an account that skips arrests."""
+    pat = ACCT.get("newsroom_skip")
+    return bool(pat and topic and re.search(pat, topic, re.I))
 
 
 # qwen3 is a reasoning model, and until 2026-09-23 the writer ran with its
@@ -2610,6 +2648,20 @@ changed means affects apply applies works using yours already without through
 because inside outside always never""".split())
 
 
+# Dates are never off-script. The cover sub is told to say when the event
+# happened, and a date is checked against the page by the fact-check; but
+# "noviembre" is nine letters, so a cover whose first sentence named no month
+# could only date itself as "Del 17 nov." - which the fragment rule then
+# rejected. post103 (2026-11-17) went five repair rounds between the two
+# rules and was thrown away. Whole words only: a four-letter stem of
+# "domingo" would also let "dominicanos" onto a cover.
+_DATE_WORDS = set("""enero febrero marzo abril mayo junio julio agosto septiembre
+setiembre octubre noviembre diciembre lunes martes miércoles miercoles jueves
+viernes sábado sabado domingo january february march april june july august
+september october november december monday tuesday wednesday thursday friday
+saturday sunday""".split())
+
+
 def _stem(word):
     import unicodedata
     w = unicodedata.normalize("NFD", word.lower())
@@ -2673,6 +2725,8 @@ def _off_script(post):
                 continue
             allowed = known_cover if i == 1 else known
             for w in re.findall(r"[a-záéíóúñü]+", (text or "").lower()):
+                if w in _DATE_WORDS:
+                    continue
                 if len(w) >= 6 and _stem(w) not in allowed:
                     where = ("the explanation's first sentence" if i == 1
                              else "the checked explanation")
@@ -2707,7 +2761,9 @@ def _clarity_rules(post):
         sub = hooks.flatten(sl.get("sub"))
         if sub and len(sub.split()) < 5:
             errs.append(f"slide {i}: the sub '{sub}' is a fragment - write one "
-                        f"complete sentence (what is new, or when it happened)")
+                        f"complete sentence (what is new, or when it happened). "
+                        f"A date alone is not a sentence: give it a subject "
+                        f"and a verb, and write the month in full")
         if sl.get("kind") == "step":
             body = hooks.flatten(sl.get("body"))
             if body and len(body.split()) < 6:
