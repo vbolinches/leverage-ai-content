@@ -1819,6 +1819,36 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post114-chatgpt-wallet-payments/reel.mp4"
+    },
+    {
+      "id": "post115-gemini-4-hydrogen-research",
+      "date": "2026-11-23",
+      "slides": [
+        "accounts/leverageai/queue/post115-gemini-4-hydrogen-research/slide01.png",
+        "accounts/leverageai/queue/post115-gemini-4-hydrogen-research/slide02.png",
+        "accounts/leverageai/queue/post115-gemini-4-hydrogen-research/slide03.png",
+        "accounts/leverageai/queue/post115-gemini-4-hydrogen-research/slide04.png",
+        "accounts/leverageai/queue/post115-gemini-4-hydrogen-research/slide05.png"
+      ],
+      "caption": "You spend hours cross-referencing market trends and client data before writing a proposal. That stops now. Google released Gemini 4 Hydrogen on November 12, 2026. It processes complex business queries faster and checks numbers more carefully than previous models. This saves you direct time when drafting scope and pricing for new clients.\n\nOpen Google Search or the Gemini app. Paste this exact prompt to analyze a niche for your next proposal:\n\"Analyze the current market rate and top 3 competitors for [your service] in [your city]. Summarize key trends in three bullet points. Check the data for accuracy and flag any outdated sources.\"\n\nThe tool is free in Google Search for everyone. Paid Pro and Ultra subscribers also get it in Google Sheets and the Antigravity interface. Save this workflow for your next client pitch.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #proposalwriting #marketresearch #smallbusinessai #productivitytips #gemini4 #businessautomation #clientmanagement",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post115-gemini-4-hydrogen-research/reel.mp4"
+    },
+    {
+      "id": "post116-muse-ember-model",
+      "date": "2026-11-24",
+      "slides": [
+        "accounts/leverageai/queue/post116-muse-ember-model/slide01.png",
+        "accounts/leverageai/queue/post116-muse-ember-model/slide02.png",
+        "accounts/leverageai/queue/post116-muse-ember-model/slide03.png",
+        "accounts/leverageai/queue/post116-muse-ember-model/slide04.png",
+        "accounts/leverageai/queue/post116-muse-ember-model/slide05.png"
+      ],
+      "caption": "A new lightweight AI option just dropped. The Muse Ember Model launched on November 10, 2026, designed for developers and businesses to handle everyday tasks efficiently.\n\nYou can test this lean approach in your current chat tool. Paste this prompt to simulate the lightweight workflow:\n\n\"Act as a lean assistant. Summarize this text into three bullet points. Focus only on decisions, next steps, and deadlines. Keep it under 50 words.\"\n\nThis workflow works for solo consultants, freelancers, and small operators who handle their own admin. The official release notes and integration details are not public yet, so save this prompt for when access opens. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetips #smallbusinessai #lightweightai #adminautomation #meetingnotes #chatgptprompts #claudeai #businesstools",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post116-muse-ember-model/reel.mp4"
     }
   ]
 }

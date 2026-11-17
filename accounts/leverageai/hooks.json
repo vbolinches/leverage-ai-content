@@ -1113,6 +1113,172 @@
       ]
     },
     {
+      "slug": "post115-gemini-4-hydrogen-research",
+      "graded": "2026-11-17",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Slow research ends today.",
+        "sub": "Instant data checks replace manual hunting.",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "change",
+        "stopping": "Names pain (slow research), urgency ('today'), solution ('instant data checks'), no fluff. Every word serves the scroll-stop. #solobusiness-ready.",
+        "reason": "F wins: 'Slow research ends today' is a concrete, urgent pain point. 'Instant data checks replace manual hunting' is usable and clear. No jargon, no date, no confusion. Directly targets the audience's daily frustration.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Slow research ends today.",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "change",
+          "stopping": "Names pain (slow research), urgency ('today'), solution ('instant data checks'), no fluff. Every word serves the scroll-stop. #solobusiness-ready.",
+          "reason": "F wins: 'Slow research ends today' is a concrete, urgent pain point. 'Instant data checks replace manual hunting' is usable and clear. No jargon, no date, no confusion. Directly targets the audience's daily frustration.",
+          "authored": false
+        },
+        {
+          "headline": "Stop checking spreadsheets manually.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Names pain ('manual spreadsheets'), solution ('new assistant handles numbers faster'). 'Stop' is strong. But 'numbers' is slightly less universal than 'research'.",
+          "reason": "B is strong: 'Stop checking spreadsheets manually' is a clear pain point. 'Handles numbers faster' is concrete. But 'spreadsheets' is a bit niche (not all solos use them daily), so it's slightly less universal than F's 'research'.",
+          "authored": false
+        },
+        {
+          "headline": "Hours lost to manual checks end.",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "change",
+          "stopping": "Names pain ('hours lost'), but 'manual checks' is vague. 'Faster processing' is weak - no metric, no clarity on what 'processing' means.",
+          "reason": "C misses the mark: 'Hours lost' is good, but 'manual checks' is too broad (could mean anything). The sub lacks specifics - 'faster processing' doesn't explain *how* it helps the solo op save time or money.",
+          "authored": false
+        },
+        {
+          "headline": "Cut research time by half.",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "change",
+          "stopping": "Good metric ('cut by half'), but 'launch Nov 12' is irrelevant and distracts. Date feels like a gimmick, not a pain point.",
+          "reason": "D has potential but fails: 'Cut research time by half' is strong. However, the date 'Nov 12' is useless to the audience (it's not a deadline they care about). It makes the hook feel like a news update, not a pain solution.",
+          "authored": false
+        },
+        {
+          "headline": "How fast can you draft proposals?",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "change",
+          "stopping": "Vague and technical: 'Complex market queries' is a term solos don't use. Makes the audience think, 'What does this even mean?', and scroll past.",
+          "reason": "A is a classic mistake: 'Complex market queries' is jargon. Solos care about getting paid, not 'market queries'. The hook feels like it's written for a product manager, not a freelancer. Instantly skips.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Google released Gemini 4 Hydrogen."
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "change",
+          "stopping": "Unexplained acronym ('Gemini 4 Hydrogen') + fake date (2026). First-time readers can't understand it. Guaranteed skip.",
+          "reason": "E is the worst: It's a fragment of AI news with no context. 'Gemini 4 Hydrogen' is nonsense (Gemini 4 doesn't exist), and 'Nov 12, 2026' is a date they'll never care about. This is exactly the 'do not do this' scenario they warned about.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post116-muse-ember-model",
+      "graded": "2026-11-17",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "Stop wasting AI money on simple tasks",
+        "sub": "Muse Ember is a lightweight AI model designed to replace complex AI for basic business workflows.",
+        "rank": 1,
+        "score": 7.0,
+        "shape": "contrarian",
+        "stopping": "Makes immediate sense: concrete pain (wasting money on complex AI for simple tasks). No unexplained terms. The subtext confirms it's about replacing \"heavy\" AI for their actual workflow.",
+        "reason": "Only hook that makes sense on first glance without needing to know 'Muse Ember'. Addresses a real cost pain point solo operators feel daily. The subtext explains the solution (lightweight model for basic tasks) but the cover itself is clear.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop wasting AI money on simple tasks",
+          "rank": 1,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Makes immediate sense: concrete pain (wasting money on complex AI for simple tasks). No unexplained terms. The subtext confirms it's about replacing \"heavy\" AI for their actual workflow.",
+          "reason": "Only hook that makes sense on first glance without needing to know 'Muse Ember'. Addresses a real cost pain point solo operators feel daily. The subtext explains the solution (lightweight model for basic tasks) but the cover itself is clear.",
+          "authored": false
+        },
+        {
+          "headline": "Cut your daily AI costs.",
+          "rank": 2,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Cover makes sense ('Cut your daily AI costs'), but subtext introduces 'Muse Ember' as if it's known. First-time reader has no idea what Muse Ember is, so they'll scroll past.",
+          "reason": "Cover text is strong (concrete pain), but the subtext ruins it by using an unexplained product name. First glance: 'What's Muse Ember?' → scroll.",
+          "authored": false
+        },
+        {
+          "headline": "Swap heavy AI for light.",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Cover is vague ('Swap heavy AI for light') and uses jargon ('heavy AI') no solo operator would use. Subtext confirms it's about Muse Ember but doesn't fix the cover's confusion.",
+          "reason": "The phrase 'heavy AI' sounds like tech marketing, not how a consultant would describe their pain. First glance: 'What's heavy AI?' → scroll, though slightly slower than others.",
+          "authored": false
+        },
+        {
+          "headline": "You are using too much AI.",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Cover is direct ('You are using too much AI'), but subtext introduces unexplained 'Muse Ember'. First-time reader sees a vague accusation + unexplained term and scrolls.",
+          "reason": "The cover feels accusatory ('too much AI') which might resonate, but the unexplained product name overrides it. First glance: 'Muse Ember? What's that?' → scroll.",
+          "authored": false
+        },
+        {
+          "headline": "Your AI is overkill for basic tasks",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Similar to F: cover makes sense ('Your AI is overkill'), but subtext ruins it with 'Muse Ember'. Same scrolling trigger as F.",
+          "reason": "The cover is slightly better phrasing than F, but still destroyed by the unexplained product name. First glance: 'Muse Ember? Not interested.' → scroll.",
+          "authored": false
+        },
+        {
+          "headline": "Do you need massive AI?",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Cover is generic ('Do you need massive AI?') and subtext introduces 'Muse Ember' without context. First-time reader sees a question about AI they don't care about + random product name.",
+          "reason": "The cover feels like a generic tech newsletter headline. First glance: 'Massive AI? Not relevant to my business.' → scroll, but slightly slower than C.",
+          "authored": false
+        },
+        {
+          "headline": "One new AI drops.",
+          "rank": 7,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Cover is a fragment ('One new AI drops.') with no context. Subtext adds 'Muse Ember' but doesn't explain it. First-time reader has zero idea what this is about.",
+          "reason": "This is the worst: it reads like a headline from a tech blog with no angle. First glance: 'What's 'drops'? What's Muse Ember?' → immediate scroll.",
+          "authored": false
+        },
+        {
+          "headline": "Muse Ember drops.",
+          "rank": 8,
+          "score": 0.0,
+          "shape": "contrarian",
+          "stopping": "Cover is a complete fragment ('Muse Ember drops.') with no explanation. First-time reader has no context for 'Muse Ember' or why it matters.",
+          "reason": "This is the definition of 'unexplained code/acronym'. No solo operator would stop to read this. First glance: 'Muse Ember? What is this?' → scroll without pause.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

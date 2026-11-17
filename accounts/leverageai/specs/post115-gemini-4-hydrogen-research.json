@@ -1,0 +1,72 @@
+{
+  "slug": "post115-gemini-4-hydrogen-research",
+  "hook_candidates": [
+    {
+      "headline": "Cut research time by half.",
+      "sub": "Faster data checks launch Nov 12."
+    },
+    {
+      "headline": "Stop checking spreadsheets manually.",
+      "sub": "The new assistant handles numbers faster."
+    },
+    {
+      "headline": "How fast can you draft proposals?",
+      "sub": "Complex market queries get answered instantly."
+    },
+    {
+      "headline": "Slow research ends today.",
+      "sub": "Instant data checks replace manual hunting."
+    },
+    {
+      "headline": "Hours lost to manual checks end.",
+      "sub": "Faster processing speeds up client work."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "You spend hours cross-referencing market trends and client data before writing a proposal. That stops now. Google released Gemini 4 Hydrogen on November 12, 2026. It processes complex business queries faster and checks numbers more carefully than previous models. This saves you direct time when drafting scope and pricing for new clients.\n\nOpen Google Search or the Gemini app. Paste this exact prompt to analyze a niche for your next proposal:\n\"Analyze the current market rate and top 3 competitors for [your service] in [your city]. Summarize key trends in three bullet points. Check the data for accuracy and flag any outdated sources.\"\n\nThe tool is free in Google Search for everyone. Paid Pro and Ultra subscribers also get it in Google Sheets and the Antigravity interface. Save this workflow for your next client pitch.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #proposalwriting #marketresearch #smallbusinessai #productivitytips #gemini4 #businessautomation #clientmanagement",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 115",
+      "headline": [
+        {
+          "t": "Google released Gemini 4 Hydrogen."
+        }
+      ],
+      "sub": "Google released Gemini 4 Hydrogen, the faster chat assistant, on November 12, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IS IT",
+      "headline": "Updated version",
+      "body": "Gemini 4 Hydrogen is the updated version that delivers quicker and more accurate results."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Answers faster",
+      "body": "Gemini 4 Hydrogen answers complex questions faster and checks business numbers carefully."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "All users",
+      "body": "All users get the tool in Google Search, and paid Pro subscribers get the tool in Sheets."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Do this",
+      "items": [
+        "Try it in the Gemini app.",
+        "Check results in Google Search.",
+        "Save this for later."
+      ],
+      "cta_title": "Save this",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+}

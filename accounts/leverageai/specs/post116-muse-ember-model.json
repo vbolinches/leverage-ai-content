@@ -1,0 +1,68 @@
+{
+  "slug": "post116-muse-ember-model",
+  "hook_candidates": [
+    {
+      "headline": "One new AI drops.",
+      "sub": "Muse Ember Model, an artificial intelligence program, launched on November 10, 2026."
+    },
+    {
+      "headline": "You are using too much AI.",
+      "sub": "Muse Ember Model, an artificial intelligence program, launched on November 10, 2026."
+    },
+    {
+      "headline": "Do you need massive AI?",
+      "sub": "Muse Ember Model, an artificial intelligence program, launched on November 10, 2026."
+    },
+    {
+      "headline": "Swap heavy AI for light.",
+      "sub": "Muse Ember Model, an artificial intelligence program, launched on November 10, 2026."
+    },
+    {
+      "headline": "Cut your daily AI costs.",
+      "sub": "Muse Ember Model, an artificial intelligence program, launched on November 10, 2026."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "A new lightweight AI option just dropped. The Muse Ember Model launched on November 10, 2026, designed for developers and businesses to handle everyday tasks efficiently.\n\nYou can test this lean approach in your current chat tool. Paste this prompt to simulate the lightweight workflow:\n\n\"Act as a lean assistant. Summarize this text into three bullet points. Focus only on decisions, next steps, and deadlines. Keep it under 50 words.\"\n\nThis workflow works for solo consultants, freelancers, and small operators who handle their own admin. The official release notes and integration details are not public yet, so save this prompt for when access opens. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetips #smallbusinessai #lightweightai #adminautomation #meetingnotes #chatgptprompts #claudeai #businesstools",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 116",
+      "headline": "Muse Ember drops.",
+      "sub": "Muse Ember Model, an artificial intelligence program, launched on November 10, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IS",
+      "headline": "AI system.",
+      "body": "A model is an artificial intelligence system that reads prompts and generates text."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT DOES",
+      "headline": "Less power.",
+      "body": "The Muse Ember Model uses less computer power for everyday tasks like drafting meeting notes."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS",
+      "headline": "For firms.",
+      "body": "The Muse Ember Model targets software developers and businesses."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Check it.",
+      "items": [
+        "Read the official announcement.",
+        "Visit the Simon Willison website.",
+        "Check the known technology blog."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://simonwillison.net/2026/Nov/10/muse-ember/"
+}
