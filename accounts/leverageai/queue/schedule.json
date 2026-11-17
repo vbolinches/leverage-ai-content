@@ -1743,9 +1743,12 @@
         "accounts/leverageai/queue/post109-gemini-4-carbon-freelancers/slide05.png"
       ],
       "caption": "You run your own business, which means you handle client work, invoices, and security alone. Long prompts often time out or miss details. Gemini 4 Carbon stays focused on extended tasks and catches security risks before they hit your accounts. It costs the same as the previous model tier.\n\nOpen the Gemini app or AI Studio. Paste this prompt exactly to test a long workflow:\n\"Act as my operations assistant. Draft a 3-step client onboarding checklist, then write a polite email explaining the timeline to a new freelancer. Keep it under 200 words. Verify the tone is professional.\"\n\nThis model works for solo operators, small teams, and developers. It is available on the Google AI Ultra plan. The free tier does not include this version yet. \n\nSave this workflow for your next client project.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #smallbusinessai #gemini4carbon #productivitytips #businesstools #aiautomation #workflowhacks #clientmanagement",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post109-gemini-4-carbon-freelancers/reel.mp4"
+      "video": "accounts/leverageai/queue/post109-gemini-4-carbon-freelancers/reel.mp4",
+      "published_media_id": "18444155767181270",
+      "published_on": "2026-11-17",
+      "threads_posted": true
     },
     {
       "id": "post110-chatgpt-business-profiles",
