@@ -123,7 +123,7 @@ Slide kinds and their fields:
 __REQUIRED_SLIDE__  {"kind":"step","eyebrow":"STEP 1","headline":"Open the right place first.","body":[{"t":"One complete sentence: which app, where in it, and what to click or paste. "},{"t":"The result, in plain words.","c":"green","b":true}]}
   {"kind":"prompt","eyebrow":"STEP 2","headline":"Paste this into the chat.","sub":"A full sentence saying where to paste it.","label":"COPY THIS PROMPT","code":"literal prompt\\nwith newlines"}
   {"kind":"stat","eyebrow":"THE PAYOFF","headline":"A full sentence that sets up the number.","stat":"the number from the source"}
-  {"kind":"recap","eyebrow":"RECAP","headline":"Do this today","items":["A complete short sentence a stranger understands.","The second thing to do, as a full sentence.","What you get, as a full sentence."],"cta_title":"Save this for later","cta_sub":"__CTA_SUB__","footer_right":"SAVE THIS ↓"}
+  {"kind":"recap","eyebrow":"RECAP","headline":"What you can do now.","items":["A complete short sentence a stranger understands.","The second thing to do, as a full sentence.","What you get, as a full sentence."],"cta_title":"Save this for later","cta_sub":"__CTA_SUB__","footer_right":"SAVE THIS ↓"}
 
 Hard limits (text overflows the canvas otherwise):
 __LIMITS__"""
@@ -1832,6 +1832,20 @@ def write_post(brief, slug_prefix, series_no):
                       f"{_slide_chars(trimmed)} chars")
                 best, errs = trimmed, after
 
+    # The two recap shapes five rewrites could not shake (2026-11-18): a
+    # three-word arrow ('Lea el resumen.') and the schema's own example
+    # headline copied back. Both have a safe, fixed wording, so set it
+    # rather than lose a checked post over one line of a recap.
+    if errs:
+        import copy
+        settled = copy.deepcopy(best)
+        if _settle_recap(settled):
+            after = validate(settled)
+            if len(after) < len(errs):
+                print(f"  {slug_prefix}: settled the recap {len(errs)} -> "
+                      f"{len(after)} rule(s)")
+                best, errs = settled, after
+
     _respace(best)
     best, unclear = _clarity_pass(best, ask, brief, slug_prefix, cleared=cleared)
     before_truth = json.dumps(best, sort_keys=True)
@@ -2774,7 +2788,7 @@ def _clarity_rules(post):
             t = hooks.flatten(item)
             # "Lee la página oficial." - which page? The template's arrow
             # says where; the writer drops it and the reader asks.
-            if re.search(r"\b(lee|revis[ae]|consult[ae]|read|check)\w*\b.{0,30}"
+            if re.search(r"\b(lee|lea|revis[ae]|consult[ae]|read|check)\w*\b.{0,30}"
                          r"(p[aá]gina|aviso|sitio|notice|page|site)\b", t, re.I) \
                     and not re.search(r"descripci|caption|enlace|link", t, re.I):
                 errs.append(f"slide {i}: recap arrow '{t}' says to read the "
@@ -2790,6 +2804,40 @@ def _clarity_rules(post):
                 errs.append(f"slide {i}: '{m.group(0)}' has two words glued "
                             f"together - put the space back")
     return errs
+
+
+# Fixed wordings for the last-resort recap fix. Each passes every rule on
+# its own: the arrow says where the page is, the headline is not filler.
+_SAFE_ARROW = {"es": "Lea el aviso (link en la descripción).",
+               "en": "Read the full story (link in the caption)."}
+_SAFE_RECAP = {"es": "Lo que puede hacer ahora.",
+               "en": "What you can do now."}
+
+
+def _settle_recap(post):
+    """Replace a filler recap headline and fragment recap arrows with fixed
+    wordings. The first fragment becomes the safe arrow; any further one is
+    dropped. Returns True if anything changed; validate() decides whether
+    the result is kept."""
+    lang = "es" if ACCT.get("slide_language") == "es" else "en"
+    changed = False
+    for sl in post.get("slides") or []:
+        if sl.get("kind") != "recap":
+            continue
+        hl = re.sub(r"[^\w\s]", "", hooks.flatten(sl.get("headline"))).strip().lower()
+        if hl in _FILLER:
+            sl["headline"] = _SAFE_RECAP[lang]
+            changed = True
+        items, out = sl.get("items") or [], []
+        for it in items:
+            if len(hooks.flatten(it).split()) >= 4:
+                out.append(it)
+            elif _SAFE_ARROW[lang] not in out:
+                out.append(_SAFE_ARROW[lang])
+        if out != items:
+            sl["items"] = out
+            changed = True
+    return changed
 
 
 def validate(post):
