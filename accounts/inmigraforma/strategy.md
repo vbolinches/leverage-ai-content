@@ -333,3 +333,7 @@ not enough data to tell total signal 58 < 150 threshold; 12 measured posts; no p
 ### Batch — posts 102-102, drafted 2026-11-16
 
 not enough data to tell total signal 58 < 150 threshold; 12 measured posts; no post-level comparison possible total signal 58 < 150 threshold; 12 measured posts
+
+### Batch — posts 103-103, drafted 2026-11-18
+
+not enough data to tell total signal 58 < 150 threshold; 12 measured posts; no post-level comparison possible The performance brief reports a total signal of 58 across 12 measured posts, which is below the 150 threshold required for post-level comparisons. The hook grader scores do not correlate with reach (e.g., post50: 8.2 grade, 4 reach; post52: 6.5 grade, 66 reach), but this is irrelevant because the total signal is below 150.

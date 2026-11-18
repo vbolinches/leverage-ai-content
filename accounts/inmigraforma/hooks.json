@@ -234,6 +234,86 @@
       ]
     },
     {
+      "slug": "post103-cambios-apelaciones-inmigracion",
+      "graded": "2026-11-18",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Pierdes tiempo con reglas antiguas",
+        "sub": "La propuesta de regla se publicó el 17 de noviembre de 2026.",
+        "rank": 1,
+        "score": 6.0,
+        "shape": "category",
+        "stopping": "Clear, relatable phrasing about 'old rules' - directly addresses a pain point",
+        "reason": "'Reglas antiguas' (old rules) is instantly understandable. 'Pierdes tiempo' (wasting time) is slightly awkward but still clear enough to stop scrollers.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Pierdes tiempo con reglas antiguas",
+          "rank": 1,
+          "score": 6.0,
+          "shape": "category",
+          "stopping": "Clear, relatable phrasing about 'old rules' - directly addresses a pain point",
+          "reason": "'Reglas antiguas' (old rules) is instantly understandable. 'Pierdes tiempo' (wasting time) is slightly awkward but still clear enough to stop scrollers.",
+          "authored": false
+        },
+        {
+          "headline": "Usas pasos viejos de revisión",
+          "rank": 2,
+          "score": 5.0,
+          "shape": "category",
+          "stopping": "Relatable 'pasos viejos' (old steps) - implies they need to update their process",
+          "reason": "'Pasos' (steps) is concrete and understandable. 'Viejos' (old) is clear. 'Revisión' is still vague but better than 'propuesta de regla'.",
+          "authored": false
+        },
+        {
+          "headline": "El gobierno ajusta la revisión",
+          "rank": 3,
+          "score": 4.0,
+          "shape": "category",
+          "stopping": "Vague 'revisión' (review) term - not clear what process is changing",
+          "reason": "'Revisión' is too ambiguous for non-legal audience. They'd think 'review' means something like a social media review, not immigration process.",
+          "authored": false
+        },
+        {
+          "headline": "Cambia la propuesta de regla",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "category",
+          "stopping": "Confusing term 'propuesta de regla' - non-legal audience won't understand this phrasing",
+          "reason": "Non-legal audience would not recognize 'propuesta de regla' as a standard term; it sounds like a legal jargon fragment. They'd scroll past.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Cambia la propuesta"
+            },
+            {
+              "t": " de regla.",
+              "c": "blue"
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "category",
+          "stopping": "Worse than A due to period making 'propuesta de regla' look like a typo",
+          "reason": "Same confusing term as A, but the period adds a typo-like appearance that makes it feel broken. Non-legal audience would skip immediately.",
+          "authored": true
+        },
+        {
+          "headline": "Antes esperabas fechas distintas",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "category",
+          "stopping": "Nonsense fragment: 'fechas distintas' (different dates) with no context",
+          "reason": "No first-time reader would understand what 'different dates' refers to without prior context. Pure fragment - immediate scroll past.",
+          "authored": false
+        }
+      ]
+    },
+    {
       "slug": "post29-tps-fechas-en-pagina-oficial-uscis",
       "graded": "2026-08-19",
       "threshold": 6.0,
