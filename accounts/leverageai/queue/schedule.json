@@ -1761,9 +1761,12 @@
         "accounts/leverageai/queue/post110-chatgpt-business-profiles/slide05.png"
       ],
       "caption": "ChatGPT now lets solo consultants claim a free business profile. This feature launches November 10, 2026. If you run a consulting practice, freelance operation, or small service business in the US, you can now appear directly in ChatGPT responses. No website rebuild required.\n\nGo to ChatGPT Business Hub to claim your organization. Verify your details, then update your pricing and availability directly in the dashboard. Upload self-service product feeds so your service tiers stay current without manual edits. When clients ask ChatGPT for recommendations, your verified profile surfaces with click-through access.\n\nUse this prompt to draft your profile description and service list:\n\nAct as a solo consultant copywriter. Write a 100-word ChatGPT business profile for a [your niche] consultant. Include three service tiers, current pricing, and availability windows. Keep it direct, scannable, and optimized for AI search. Output in plain text.\n\nThis only works for eligible US online service businesses right now. Business Agents require separate approval. ChatGPT still struggles with highly complex custom scopes, so keep your pricing clear. Save this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#chatgpt #solopreneur #freelancer #businessprofiles #aiworkflow #consulting #clientleads #smallbusiness #aifreelance #productivity",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post110-chatgpt-business-profiles/reel.mp4"
+      "video": "accounts/leverageai/queue/post110-chatgpt-business-profiles/reel.mp4",
+      "published_media_id": "18110805293193040",
+      "published_on": "2026-11-18",
+      "threads_posted": true
     },
     {
       "id": "post111-gemini-widget-client-tracking",
