@@ -1,0 +1,80 @@
+{
+  "slug": "post119-gemini-carplay-email-summaries",
+  "hook_candidates": [
+    {
+      "headline": "Reclaim 30 minutes weekly.",
+      "sub": "Google launched Gemini, the free AI assistant, on Apple CarPlay, the car display, since Nov 11."
+    },
+    {
+      "headline": "You are ignoring your commute.",
+      "sub": "Google launched Gemini, the free AI assistant, on Apple CarPlay, the car display, since Nov 11."
+    },
+    {
+      "headline": "Can you read emails while driving?",
+      "sub": "Google launched Gemini, the free AI assistant, on Apple CarPlay, the car display, since Nov 11."
+    },
+    {
+      "headline": "Turn idle driving into admin time.",
+      "sub": "Google launched Gemini, the free AI assistant, on Apple CarPlay, the car display, since Nov 11."
+    },
+    {
+      "headline": "Stop wasting your daily commute.",
+      "sub": "Google launched Gemini, the free AI assistant, on Apple CarPlay, the car display, since Nov 11."
+    }
+  ],
+  "art": "email",
+  "caption": "Turn your daily drive into client management time. Google added Gemini Live to Apple CarPlay on Nov 11. It listens to your voice and returns text summaries of your inbox. You get hands-free updates without touching your phone.\n\nHere is the exact workflow. Update the Gemini app on your iPhone. Open settings and turn on microphone permissions. Connect your phone to your car’s Apple CarPlay display. Tap the Gemini icon on the screen. Ask it to summarize your recent client emails. The app reads the summaries aloud and saves the text to your iPhone notes for later reference.\n\nPrompt to use: Summarize my last five client emails and list required replies.\n\nThis works for any solo operator using an iPhone. The feature is free and available worldwide. It handles quick inbox triage and follow-up tracking. It does not draft replies or access encrypted work accounts. Keep it to reading summaries and calendar checks while your hands stay on the wheel.\n\nSave this post for your next long drive.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #solopreneur #applecarplay #gemini #productivitytips #freelancerlife #businesstools #timemanagement #adminhacks #commutetips",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 119",
+      "headline": "Gemini CarPlay",
+      "sub": "Google launched Gemini, the free AI assistant, on Apple CarPlay, the car display, since Nov 11.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Voice chat",
+      "body": [
+        {
+          "t": "Gemini Live is the voice chat mode that turns spoken words into text answers."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Email summaries",
+      "body": [
+        {
+          "t": "The new CarPlay tool lets drivers use their voice to summarize emails while commuting."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Solo owners",
+      "body": [
+        {
+          "t": "Solo business owners with iPhones can use the CarPlay tool globally."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Update the app.",
+      "items": [
+        "You should update the Gemini app.",
+        "You must allow microphone access.",
+        "Save this post for your next drive."
+      ],
+      "cta_title": "Save this",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/"
+}

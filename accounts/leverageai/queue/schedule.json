@@ -1852,6 +1852,49 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post116-muse-ember-model/reel.mp4"
+    },
+    {
+      "id": "post117-google-vids-personal-avatars",
+      "date": "2026-11-25",
+      "slides": [
+        "accounts/leverageai/queue/post117-google-vids-personal-avatars/slide01.png",
+        "accounts/leverageai/queue/post117-google-vids-personal-avatars/slide02.png",
+        "accounts/leverageai/queue/post117-google-vids-personal-avatars/slide03.png",
+        "accounts/leverageai/queue/post117-google-vids-personal-avatars/slide04.png",
+        "accounts/leverageai/queue/post117-google-vids-personal-avatars/slide05.png"
+      ],
+      "caption": "Create a digital version of yourself in minutes. Open Google Vids on your phone or browser. Tap the camera icon and select Create Avatar. Scan the QR code in the app to create your avatar. The feature is free for anyone with a personal Google account.\n\nUse it to send client updates, project notes, or onboarding videos without filming. Type your message and generate a video link. This saves thirty minutes weekly on video creation. You keep full control over what gets sent.\n\nSave this for later when you need to send a quick video update.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aifreelance #solopreneur #clientupdates #videoediting #productivityhacks #smallbusiness #googleworkspace #time-saving #aiforbusiness",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post117-google-vids-personal-avatars/reel.mp4"
+    },
+    {
+      "id": "post118-gemini-4-hydrogen-search-tables",
+      "date": "2026-11-26",
+      "slides": [
+        "accounts/leverageai/queue/post118-gemini-4-hydrogen-search-tables/slide01.png",
+        "accounts/leverageai/queue/post118-gemini-4-hydrogen-search-tables/slide02.png",
+        "accounts/leverageai/queue/post118-gemini-4-hydrogen-search-tables/slide03.png",
+        "accounts/leverageai/queue/post118-gemini-4-hydrogen-search-tables/slide04.png",
+        "accounts/leverageai/queue/post118-gemini-4-hydrogen-search-tables/slide05.png"
+      ],
+      "caption": "Stop copying data from ten browser tabs into a blank spreadsheet. When you draft client proposals, you need competitor pricing, service comparisons, and market rates. Gemini 4 Hydrogen Search now handles that research in one query. Open Google Search and type a prompt asking for a comparison table. The AI returns structured columns you can copy straight into your proposal draft. It cuts twenty-five minutes of manual tab-switching from your week.\n\nPaste this exact prompt to test it:\n\"Compare pricing, delivery time, and target audience for [your service] across three competitors. Format as a markdown table.\"\n\nThis works on the free Google Search site. No account upgrades or extra clicks are required. Just ask detailed questions and let the model sort the data. The tables are not perfect for niche local markets, so verify one data point before sending it to a client.\n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #solopreneur #freelancetools #businessresearch #productivityhacks #smallbusinessowner #googlesearch #aiproposals #timesaver #workflowautomation",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post118-gemini-4-hydrogen-search-tables/reel.mp4"
+    },
+    {
+      "id": "post119-gemini-carplay-email-summaries",
+      "date": "2026-11-27",
+      "slides": [
+        "accounts/leverageai/queue/post119-gemini-carplay-email-summaries/slide01.png",
+        "accounts/leverageai/queue/post119-gemini-carplay-email-summaries/slide02.png",
+        "accounts/leverageai/queue/post119-gemini-carplay-email-summaries/slide03.png",
+        "accounts/leverageai/queue/post119-gemini-carplay-email-summaries/slide04.png",
+        "accounts/leverageai/queue/post119-gemini-carplay-email-summaries/slide05.png"
+      ],
+      "caption": "Turn your daily drive into client management time. Google added Gemini Live to Apple CarPlay on Nov 11. It listens to your voice and returns text summaries of your inbox. You get hands-free updates without touching your phone.\n\nHere is the exact workflow. Update the Gemini app on your iPhone. Open settings and turn on microphone permissions. Connect your phone to your car’s Apple CarPlay display. Tap the Gemini icon on the screen. Ask it to summarize your recent client emails. The app reads the summaries aloud and saves the text to your iPhone notes for later reference.\n\nPrompt to use: Summarize my last five client emails and list required replies.\n\nThis works for any solo operator using an iPhone. The feature is free and available worldwide. It handles quick inbox triage and follow-up tracking. It does not draft replies or access encrypted work accounts. Keep it to reading summaries and calendar checks while your hands stay on the wheel.\n\nSave this post for your next long drive.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #solopreneur #applecarplay #gemini #productivitytips #freelancerlife #businesstools #timemanagement #adminhacks #commutetips",
+      "status": "queued"
     }
   ]
 }

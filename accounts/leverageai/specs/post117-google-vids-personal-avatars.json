@@ -1,0 +1,68 @@
+{
+  "slug": "post117-google-vids-personal-avatars",
+  "hook_candidates": [
+    {
+      "headline": "Save thirty minutes every week.",
+      "sub": "Google Vids personal avatars, a Google video messaging feature, launched on November 17."
+    },
+    {
+      "headline": "Why are you still filming updates?",
+      "sub": "Google Vids personal avatars, a Google video messaging feature, launched on November 17."
+    },
+    {
+      "headline": "Stop recording. Start typing.",
+      "sub": "Google Vids personal avatars, a Google video messaging feature, launched on November 17."
+    },
+    {
+      "headline": "Google Vids just dropped a new tool.",
+      "sub": "Google Vids personal avatars, a Google video messaging feature, launched on November 17."
+    },
+    {
+      "headline": "Your video editing time is gone.",
+      "sub": "Google Vids personal avatars, a Google video messaging feature, launched on November 17."
+    }
+  ],
+  "art": "checklist",
+  "caption": "Create a digital version of yourself in minutes. Open Google Vids on your phone or browser. Tap the camera icon and select Create Avatar. Scan the QR code in the app to create your avatar. The feature is free for anyone with a personal Google account.\n\nUse it to send client updates, project notes, or onboarding videos without filming. Type your message and generate a video link. This saves thirty minutes weekly on video creation. You keep full control over what gets sent.\n\nSave this for later when you need to send a quick video update.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aifreelance #solopreneur #clientupdates #videoediting #productivityhacks #smallbusiness #googleworkspace #time-saving #aiforbusiness",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 117",
+      "headline": "Google Vids launches free personal avatars.",
+      "sub": "Google Vids personal avatars, a Google video messaging feature, launched on November 17.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Digital version.",
+      "body": "A personal avatar is a digital version of yourself."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Send messages.",
+      "body": "Google Vids personal avatars save thirty minutes weekly on sending video messages, like a note."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "At no cost.",
+      "body": "Google Vids personal avatars work for anyone with a personal Google account at no cost."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Do this.",
+      "items": [
+        "Scan a QR code in the app.",
+        "Save this workflow for later.",
+        "Follow for daily business tips."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/products-and-platforms/products/workspace/vids-personal-avatars-no-cost/"
+}

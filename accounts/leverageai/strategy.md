@@ -273,6 +273,10 @@ The performance brief states 'PERFORMANCE: not yet meaningful — total signal 7
 
 Performance confirms reels are necessary for reach (best posts 106, 103, 102 are reels; worst posts 98 and 105 are carousels). Performance confirms category hooks are ineffective (post100, a reel with category hook, reached 2). Hook grader is disproven (no correlation between pre-publish hook grade and reach: post105 grade 9.0, reach 0; post100 grade 1.0, reach 2). Best posts: 106 (reel, 128), 103 (reel, 16), 102 (reel, 7). Worst posts: 98 (carousel, 1), 105 (carousel, 0), 100 (reel, 2). Category hook (post100) had low reach. High-grade hook (post105) had 0 reach.
 
+## Batch notes — posts 117-119 (2026-11-18)
+
+Performance of previous posts (106, 103, 102, 100, 98, 105) confirms reels are necessary for reach (best: 128, 16, 7; worst: 1, 0) and category hooks are ineffective (post100: 2 reach). Hook grader is disproven (post105: 9.0 grade, 0 reach; post100: 1.0 grade, 2 reach). The performance brief explicitly states: 'Performance confirms reels are necessary for reach (best posts 106, 103, 102 are reels; worst posts 98 and 105 are carousels). Performance confirms category hooks are ineffective (post100, a reel with category hook, reached 2). Hook grader is disproven (no correlation between pre-publish hook grade and reach: post105 grade 9.0, reach 0; post100 grade 1.0, reach 2).' This matches the strategy file's existing Confirmed (reels > carousels) and Disproven (category hooks) sections, so no new hypotheses are settled.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

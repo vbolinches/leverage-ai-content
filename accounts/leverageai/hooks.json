@@ -1279,6 +1279,249 @@
       ]
     },
     {
+      "slug": "post117-google-vids-personal-avatars",
+      "graded": "2026-11-18",
+      "threshold": 6.0,
+      "retried": true,
+      "chosen": {
+        "headline": "Stop wasting 30 minutes on video calls",
+        "sub": "Save that time for your next client instead.",
+        "rank": 1,
+        "score": 10.0,
+        "shape": "contrarian",
+        "stopping": "Pain: wasting 30 mins on video calls (a visceral, time-locked pain for solopreneurs). Benefit: 'Save for next client' ties directly to revenue. Every element is concrete, urgent, and audience-specific. No fluff, no fragments. This is the gold standard the account has learned to chase. Scores 10 for earning the stop instantly, not for cleverness. (See: 'concrete-pain beats instruction' rule.)",
+        "reason": "Pain: wasting 30 mins on video calls (a visceral, time-locked pain for solopreneurs). Benefit: 'Save for next client' ties directly to revenue. Every element is concrete, urgent, and audience-specific. No fluff, no fragments. This is the gold standard the account has learned to chase.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop wasting 30 minutes on video calls",
+          "rank": 1,
+          "score": 10.0,
+          "shape": "contrarian",
+          "stopping": "Pain: wasting 30 mins on video calls (a visceral, time-locked pain for solopreneurs). Benefit: 'Save for next client' ties directly to revenue. Every element is concrete, urgent, and audience-specific. No fluff, no fragments. This is the gold standard the account has learned to chase. Scores 10 for earning the stop instantly, not for cleverness. (See: 'concrete-pain beats instruction' rule.)",
+          "reason": "Pain: wasting 30 mins on video calls (a visceral, time-locked pain for solopreneurs). Benefit: 'Save for next client' ties directly to revenue. Every element is concrete, urgent, and audience-specific. No fluff, no fragments. This is the gold standard the account has learned to chase.",
+          "authored": false
+        },
+        {
+          "headline": "No more video editing. Ever.",
+          "rank": 2,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Pain: 'No more video editing' implies relief from a daily, time-sucking chore. Sub clarifies AI generates updates from text (usable, not vague). This hits the 'concrete-pain' rule hard. Slightly less urgent than I (no '30 mins' specificity), but still top-tier. Scores 9 for being nearly unscrollable.",
+          "reason": "Pain: 'No more video editing' implies relief from a daily, time-sucking chore. Sub clarifies AI generates updates from text (usable, not vague). This hits the 'concrete-pain' rule hard.",
+          "authored": false
+        },
+        {
+          "headline": "You’re wasting time editing videos",
+          "rank": 3,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Pain: 'You’re wasting time editing videos' is clear and relatable. Sub specifies 'AI creates videos from text, not footage' (concrete solution). Solid, but 'wasting time' feels slightly generic compared to E's 'no more.' Still, it’s a strong stopper. Scores 8 for being a reliable, audience-specific pain point.",
+          "reason": "Pain: 'You’re wasting time editing videos' is clear and relatable. Sub specifies 'AI creates videos from text, not footage' (concrete solution).",
+          "authored": false
+        },
+        {
+          "headline": "Your video calls are outdated.",
+          "rank": 4,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Pain: 'Your video calls are outdated' names a deficiency. Sub specifies 'AI avatars in under 5 minutes' (quick fix). But 'outdated' is vague (vs. 'wasting time' in F) and lacks urgency. Scores 7 for being decent but not exceptional.",
+          "reason": "Pain: 'Your video calls are outdated' names a deficiency. Sub specifies 'AI avatars in under 5 minutes' (quick fix).",
+          "authored": false
+        },
+        {
+          "headline": "Save thirty minutes every week.",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Benefit: 'Save thirty minutes' is a good hook, but it lacks a concrete pain point. 'Save time' is a common, overused phrase that doesn’t stop the scroll. The audience needs to feel the pain first, not just the benefit. Scores 5 for being a weak, generic promise.",
+          "reason": "Benefit: 'Save thirty minutes' is a good hook, but it lacks a concrete pain point. 'Save time' is a common, overused phrase that doesn’t stop the scroll.",
+          "authored": false
+        },
+        {
+          "headline": "Why are you still filming updates?",
+          "rank": 6,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Question: 'Why are you still filming updates?' is engaging but 'filming updates' is unclear (is this about client updates or social media?). The audience will scroll past to avoid confusion. Scores 4 for being a confusing fragment disguised as a question.",
+          "reason": "Question: 'Why are you still filming updates?' is engaging but 'filming updates' is unclear (is this about client updates or social media?).",
+          "authored": false
+        },
+        {
+          "headline": "Your video editing time is gone.",
+          "rank": 7,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'Your video editing time is gone.' This is a headline, not a hook. The audience can’t understand what’s being claimed ('gone' from what?), so they’ll scroll past. Scores 3 for being an unexplained fragment that breaks the 'no fragments' rule.",
+          "reason": "Fragment: 'Your video editing time is gone.' This is a headline, not a hook. The audience can’t understand what’s being claimed ('gone' from what?), so they’ll scroll past.",
+          "authored": false
+        },
+        {
+          "headline": "Stop recording. Start typing.",
+          "rank": 8,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'Stop recording. Start typing.' This is a command with no context. The audience has no idea why they should stop recording or what 'typing' means (text messages? emails?). Scores 2 for being a confusing fragment that fails the 'no fragments' rule.",
+          "reason": "Fragment: 'Stop recording. Start typing.' This is a command with no context. The audience has no idea why they should stop recording or what 'typing' means.",
+          "authored": false
+        },
+        {
+          "headline": "Google Vids launches free personal avatars.",
+          "rank": 9,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "News hook: 'Google Vids launches free personal avatars.' This is a product announcement, not a pain point. The audience doesn’t care about the launch; they care about the solution. Scores 1 for being a low-value news hook that fails the 'concrete-pain' rule.",
+          "reason": "News hook: 'Google Vids launches free personal avatars.' This is a product announcement, not a pain point.",
+          "authored": true
+        },
+        {
+          "headline": "Google Vids just dropped a new tool.",
+          "rank": 10,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "News hook: 'Google Vids just dropped a new tool.' This is the weakest news hook in the batch. 'Just dropped' is generic, and 'new tool' is vague. No pain point, no benefit. Scores 1 for being the worst possible hook (pure news, no audience focus).",
+          "reason": "News hook: 'Google Vids just dropped a new tool.' This is the weakest news hook in the batch. 'Just dropped' is generic, and 'new tool' is vague.",
+          "authored": false
+        }
+      ]
+    },
+    {
+      "slug": "post118-gemini-4-hydrogen-search-tables",
+      "graded": "2026-11-18",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Weekly proposal research costs time.",
+        "sub": "Google runs its Gemini 4 Hydrogen AI search feature since November 12.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "Concrete pain: 'costs time' is visceral for solo operators. No jargon, no tech, just wasted hours.",
+        "reason": "Names the pain point directly (time cost) without relying on the subtext. Solves a daily reality.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Weekly proposal research costs time.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain: 'costs time' is visceral for solo operators. No jargon, no tech, just wasted hours.",
+          "reason": "Names the pain point directly (time cost) without relying on the subtext. Solves a daily reality.",
+          "authored": false
+        },
+        {
+          "headline": "You still copy competitor data manually.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Manual work pain is universal for solo operators. 'Still copy' implies current frustration.",
+          "reason": "Clear, specific task (competitor data) that resonates with their workflow.",
+          "authored": false
+        },
+        {
+          "headline": "Ten browser tabs become one search.",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Vague feature description. Doesn't name a pain (e.g., 'wasting time on tabs' would work).",
+          "reason": "Focuses on the solution ('one search') not the pain. Feels like a generic feature announcement.",
+          "authored": false
+        },
+        {
+          "headline": "Does your search format answers now?",
+          "rank": 4,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Confusing fragment: 'Does your search format answers now?' makes no sense to a first-time reader.",
+          "reason": "Unexplained jargon ('format answers') kills scroll-stopping power. Looks like a typo.",
+          "authored": false
+        },
+        {
+          "headline": "Google runs its Gemini 4 Hydrogen search now.",
+          "rank": 5,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Unexplained tech term: 'Gemini 4 Hydrogen' is a fake acronym (Gemini 4 is real, but 'Hydrogen' isn't a feature name).",
+          "reason": "First-time readers skip immediately. Looks like a poorly written tech announcement, not a pain point.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post119-gemini-carplay-email-summaries",
+      "graded": "2026-11-18",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Turn idle driving into admin time.",
+        "sub": "Google launched Gemini, the free AI assistant, on Apple CarPlay, the car display, since Nov 11.",
+        "rank": 1,
+        "score": 8.0,
+        "shape": "contrarian",
+        "stopping": "Concrete pain (idle driving) + solution (admin time) matches solopreneur reality. No jargon, no fragment.",
+        "reason": "Only hook naming a specific pain (idle commute time) and solution (turning it into admin work) that solopreneurs actually experience. Uses 'admin time' - a term they recognize, not 'Gemini' or 'CarPlay'.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Turn idle driving into admin time.",
+          "rank": 1,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Concrete pain (idle driving) + solution (admin time) matches solopreneur reality. No jargon, no fragment.",
+          "reason": "Only hook naming a specific pain (idle commute time) and solution (turning it into admin work) that solopreneurs actually experience. Uses 'admin time' - a term they recognize, not 'Gemini' or 'CarPlay'.",
+          "authored": false
+        },
+        {
+          "headline": "Stop wasting your daily commute.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Vague pain ('wasting commute') but slightly better than A. Still lacks concrete numbers or consequence.",
+          "reason": "Uses 'wasting' which implies a cost, but doesn't specify what's being wasted (time/money/mental energy) or how it impacts their business. Still better than A's abstract 'ignoring'.",
+          "authored": false
+        },
+        {
+          "headline": "Can you read emails while driving?",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Question form implies distraction pain but frames it as a behavior question, not a solopreneur pain point.",
+          "reason": "Asks 'can you read emails while driving?' - solopreneurs would scroll past because it's not a pain point they'd recognize (driving while emailing is dangerous, not a solopreneur workflow). Doesn't name a deficiency.",
+          "authored": false
+        },
+        {
+          "headline": "You are ignoring your commute.",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Vague pain ('ignoring commute') with no concrete consequence or solution implied.",
+          "reason": "Passive phrasing 'ignoring' doesn't name a deficiency. Solopreneurs don't 'ignore commutes' - they just have them. No specific cost or change described.",
+          "authored": false
+        },
+        {
+          "headline": "Reclaim 30 minutes weekly.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'Reclaim 30 minutes' - first-time reader has no idea what's being reclaimed.",
+          "reason": "Is a fragment - 'reclaim 30 minutes' of what? No context. Solopreneurs would skip without understanding the pain point or solution.",
+          "authored": false
+        },
+        {
+          "headline": "Gemini CarPlay",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Unexplained acronym: 'Gemini CarPlay' - no meaning to first-time reader.",
+          "reason": "Pure fragment. Solopreneurs don't know what 'Gemini CarPlay' is or why it matters. Will be scrolled past immediately.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,
