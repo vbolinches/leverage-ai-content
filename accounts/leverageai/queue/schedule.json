@@ -1779,9 +1779,12 @@
         "accounts/leverageai/queue/post111-gemini-widget-client-tracking/slide05.png"
       ],
       "caption": "You spend an hour every week updating spreadsheets to track client invoices, project deadlines, or follow-up dates. Gemini’s new Create My Widget lets you build a custom dashboard for that exact task using plain English. No spreadsheets. No coding. Just a prompt that turns into a live screen box on your phone.\n\nOpen the Gemini app on your Pixel 10 or Pixel Watch. Tap the chat bar and paste this prompt exactly:\n\"Build a widget that tracks my client invoices. Show overdue amounts, due dates, and client names. Update it daily from my calendar and email.\"\n\nThe feature rolls out over the next few weeks. It only works on Pixel 10 phones and Pixel Watch in select countries and languages. If you do not have those devices yet, the prompt will not generate a widget. \n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#gemini #pixel10 #solopreneur #freelancetools #clienttracking #adminworkflow #aiwidgets #smallbusinessowner #productivityhacks",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post111-gemini-widget-client-tracking/reel.mp4"
+      "video": "accounts/leverageai/queue/post111-gemini-widget-client-tracking/reel.mp4",
+      "published_media_id": "17941128846124216",
+      "published_on": "2026-11-19",
+      "threads_posted": true
     },
     {
       "id": "post112-gemini-website-research",
