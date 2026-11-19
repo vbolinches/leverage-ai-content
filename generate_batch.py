@@ -2647,7 +2647,12 @@ _FILLER = {"the system", "system", "el sistema", "que significa esto",
            "short", "paste this into the chat",
            "a full sentence that sets up the number"}
 # "H-2Bpara": a code glued to the next word by a shortening pass.
-_GLUED = re.compile(r"\b[A-Z0-9]+(?:-[A-Z0-9]+)+[a-záéíóúñ]{2,}\b")
+# The last part of the code must carry a digit or two capitals before the
+# lowercase starts: 'T-Visa' and 'U-Visa' are the code letter and a
+# capitalised word, written that way on purpose. Matching them rejected the
+# I-914 post after five rewrites that had nothing to put back (2026-11-19).
+_GLUED = re.compile(r"\b[A-Z0-9]+(?:-[A-Z0-9]+)*-(?:[A-Z]*\d[A-Z0-9]*|[A-Z]{2,})"
+                    r"[a-záéíóúñ]{2,}\b")
 
 
 # Glue words of six letters or more that a headline may use freely.
@@ -2684,6 +2689,25 @@ def _stem(word):
     return "".join(c for c in w if not unicodedata.combining(c))[:4]
 
 
+def _conjugated(word, script_words):
+    """True if `word` is a Spanish infinitive the explanation uses in another
+    form. The recap told readers to 'elegir' their form where the explanation
+    said 'elija'; the four-letter stem misses that (g/j and e/i change in the
+    root) and the five-letter form was never counted, so a true post was
+    rejected after five rewrites (2026-11-19). Matching the whole root plus a
+    short ending keeps this to forms of the same verb."""
+    if len(word) < 6 or not word.endswith(("ar", "er", "ir")):
+        return False
+    root = word[:-2]
+    roots = {root, root.replace("g", "j")}
+    for r in list(roots):
+        k = r.rfind("e")
+        if k > 0:
+            roots.add(r[:k] + "i" + r[k + 1:])
+    return any(sw.startswith(r) and len(sw) - len(r) <= 4
+               for sw in script_words for r in roots)
+
+
 def _off_script(post):
     """Headlines, subs and recap arrows may only say what the checked
     explanation says. Five posts in a row (2026-09-24) passed the explanation
@@ -2708,6 +2732,7 @@ def _off_script(post):
                     + " " + (ACCT.get("cta_line") or ""))
     known_cover = {_stem(w) for w in re.findall(r"[a-záéíóúñü]+", first_script.lower())
                    if len(w) >= 6} | {_stem(w) for w in _GLUE}
+    script_words = set(re.findall(r"[a-záéíóúñü]+", " ".join(sents).lower()))
     errs = []
     # The cover is read first. An acronym or code on it ('DHS', 'H-1B') that
     # the explanation defines later stops a reader at the first frame; the
@@ -2741,7 +2766,8 @@ def _off_script(post):
             for w in re.findall(r"[a-záéíóúñü]+", (text or "").lower()):
                 if w in _DATE_WORDS:
                     continue
-                if len(w) >= 6 and _stem(w) not in allowed:
+                if len(w) >= 6 and _stem(w) not in allowed \
+                        and not _conjugated(w, script_words):
                     where = ("the explanation's first sentence" if i == 1
                              else "the checked explanation")
                     errs.append(f"slide {i}: the {key} says '{w}', a word "
