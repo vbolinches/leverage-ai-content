@@ -12437,6 +12437,120 @@
           "shares": 0
         }
       ]
+    },
+    {
+      "date": "2026-11-19",
+      "followers": 10,
+      "posts": [
+        {
+          "slug": "post110-chatgpt-business-profiles",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 1,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post109-gemini-4-carbon-freelancers",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 7,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post108-adobe-generative-remove",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post107-chatgpt-images-26-gifs",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post106-google-vids-free-videos",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 128,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post105-gemini-omni-video",
+          "format": "carousel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 0,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post104-gemini-resume-bullets",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post103-merge-gpt6-workflows",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 16,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post102-gemini-4-argon-data-reports",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 7,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post101-google-security-checkup",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post100-gemini-business-profile",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "slug": "post99-claude-invoice-link",
+          "format": "reel",
+          "likes": 0,
+          "comments": 0,
+          "reach": 4,
+          "saved": 0,
+          "shares": 0
+        }
+      ]
     }
   ]
 }
