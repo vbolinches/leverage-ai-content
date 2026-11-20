@@ -1728,6 +1728,21 @@
       "published_media_id": "18122598320080876",
       "published_on": "2026-11-19",
       "facebook_page_posted": true
+    },
+    {
+      "id": "post104-corte-correccion-parolado",
+      "date": "2026-11-21",
+      "slides": [
+        "accounts/inmigraforma/queue/post104-corte-correccion-parolado/slide01.png",
+        "accounts/inmigraforma/queue/post104-corte-correccion-parolado/slide02.png",
+        "accounts/inmigraforma/queue/post104-corte-correccion-parolado/slide03.png",
+        "accounts/inmigraforma/queue/post104-corte-correccion-parolado/slide04.png",
+        "accounts/inmigraforma/queue/post104-corte-correccion-parolado/slide05.png"
+      ],
+      "caption": "Se emitió una orden judicial el 28 de septiembre de 2026. La orden trata sobre el estatus de parolado para personas que entraron con la app CBP One. El gobierno envió correos en abril de 2025 cancelando ese estatus.\n\nEn palabras simples: Un juez ordenó que el gobierno corrija errores en las terminaciones del estatus de parolado. La orden afecta a personas que usaron la app CBP One. El gobierno les envió correos en abril de 2025 cancelando su estatus.\n\nLa página oficial solo confirma la fecha de la orden y los grupos afectados. No da pasos a seguir ni plazos.\n\nIn plain words: A court order from Sept 28, 2026 addresses parole terminations for CBP One users. The government sent cancellation emails in April 2025. The page does not specify next steps.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts\n\nGuarda esta noticia para revisarla luego. Comenta qué duda te queda.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n#inmigracioneeuu #cbpone #parolado #noticiasinmigracion #estadosunidos #papeles #leyinmigracion #inmigraforma #actualidad #green",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/inmigraforma/queue/post104-corte-correccion-parolado/reel.mp4"
     }
   ]
 }

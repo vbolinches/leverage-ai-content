@@ -1,0 +1,84 @@
+{
+  "slug": "post104-corte-correccion-parolado",
+  "hook_candidates": [
+    {
+      "headline": "Evita este error con tu estatus",
+      "sub": "La orden del 28 sep 2026 lo aclara"
+    },
+    {
+      "headline": "Antes cancelaban, ahora corrigen",
+      "sub": "Orden judicial del 28 sep 2026"
+    },
+    {
+      "headline": "El gobierno revisa las cancelaciones",
+      "sub": "Noticia del 28 sep 2026"
+    },
+    {
+      "headline": "No pierdas tu estatus por error",
+      "sub": "La orden del 28 sep 2026 ayuda"
+    },
+    {
+      "headline": "Revisa tu correo de abril",
+      "sub": "La orden del 28 sep 2026 aplica"
+    }
+  ],
+  "art": "gavel",
+  "caption": "Se emitió una orden judicial el 28 de septiembre de 2026. La orden trata sobre el estatus de parolado para personas que entraron con la app CBP One. El gobierno envió correos en abril de 2025 cancelando ese estatus.\n\nEn palabras simples: Un juez ordenó que el gobierno corrija errores en las terminaciones del estatus de parolado. La orden afecta a personas que usaron la app CBP One. El gobierno les envió correos en abril de 2025 cancelando su estatus.\n\nLa página oficial solo confirma la fecha de la orden y los grupos afectados. No da pasos a seguir ni plazos.\n\nIn plain words: A court order from Sept 28, 2026 addresses parole terminations for CBP One users. The government sent cancellation emails in April 2025. The page does not specify next steps.\n\nFuente oficial: https://www.uscis.gov/newsroom/alerts\n\nGuarda esta noticia para revisarla luego. Comenta qué duda te queda.\nSigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.\nInformación general, no asesoría legal. Consulta a un abogado de inmigración para tu caso.\n#inmigracioneeuu #cbpone #parolado #noticiasinmigracion #estadosunidos #papeles #leyinmigracion #inmigraforma #actualidad #green",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "NOTICIA 104",
+      "headline": [
+        {
+          "t": "Un juez ordenó que el gobierno corrija"
+        }
+      ],
+      "sub": "errores en las terminaciones del estatus",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "EN PALABRAS SIMPLES",
+      "headline": "La orden afecta a personas",
+      "body": [
+        {
+          "t": "Un juez ordenó que el gobierno corrija errores en las terminaciones del estatus de parolado."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "QUÉ CAMBIO",
+      "headline": "La orden judicial se emitió",
+      "body": [
+        {
+          "t": "La orden judicial se emitió el 28 de septiembre de 2026."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "¿ME AFECTA?",
+      "headline": "La orden afecta a personas",
+      "body": [
+        {
+          "t": "La orden afecta a personas que usaron la app CBP One, que gestiona entradas con parolado."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Consulte a un abogado",
+      "items": [
+        "Lee el aviso oficial (link en la descripción).",
+        "El gobierno les envió correos en abril de 2025.",
+        "Consulte a un abogado de inmigración."
+      ],
+      "cta_title": "Save this",
+      "cta_sub": "Sigue a @inmigraforma para noticias de inmigración de EE.UU. explicadas en español.",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://www.uscis.gov/newsroom/alerts"
+}

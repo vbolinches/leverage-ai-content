@@ -314,6 +314,82 @@
       ]
     },
     {
+      "slug": "post104-corte-correccion-parolado",
+      "graded": "2026-11-20",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Revisa tu correo de abril",
+        "sub": "La orden del 28 sep 2026 aplica",
+        "rank": 1,
+        "score": 1.0,
+        "shape": "contrarian",
+        "stopping": "Fragmento confuso: 'correo de abril' no explica qué correo, qué abril, ni por qué. Primer lector no entiende nada. + Fecha falsa (2026).",
+        "reason": "Fragmento confuso: 'correo de abril' no explica qué correo, qué abril, ni por qué. Primer lector no entiende nada. + Fecha falsa (2026).",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Revisa tu correo de abril",
+          "rank": 1,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Fragmento confuso: 'correo de abril' no explica qué correo, qué abril, ni por qué. Primer lector no entiende nada. + Fecha falsa (2026).",
+          "reason": "Fragmento confuso: 'correo de abril' no explica qué correo, qué abril, ni por qué. Primer lector no entiende nada. + Fecha falsa (2026).",
+          "authored": false
+        },
+        {
+          "headline": "Evita este error con tu estatus",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Vago y falso: 'evita este error' no dice qué error, y la fecha 2026 lo hace parecer falso. No genera confianza.",
+          "reason": "Vago y falso: 'evita este error' no dice qué error, y la fecha 2026 lo hace parecer falso. No genera confianza.",
+          "authored": false
+        },
+        {
+          "headline": "El gobierno revisa las cancelaciones",
+          "rank": 3,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Muy vago: 'el gobierno revisa las cancelaciones' no explica por qué ni qué hacer. Fecha falsa lo empeora.",
+          "reason": "Muy vago: 'el gobierno revisa las cancelaciones' no explica por qué ni qué hacer. Fecha falsa lo empeora.",
+          "authored": false
+        },
+        {
+          "headline": "Antes cancelaban, ahora corrigen",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "Confuso: 'corrigen' podría significar 'corregir' o 'corregir errores', pero no está claro. Fecha falsa.",
+          "reason": "Confuso: 'corrigen' podría significar 'corregir' o 'corregir errores', pero no está claro. Fecha falsa.",
+          "authored": false
+        },
+        {
+          "headline": "No pierdas tu estatus por error",
+          "rank": 5,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Mejor phrasing: 'No pierdas tu estatus' es claro y directo, aunque 'por error' sigue siendo vago. Fecha falsa pero menos obvio.",
+          "reason": "Mejor phrasing: 'No pierdas tu estatus' es claro y directo, aunque 'por error' sigue siendo vago. Fecha falsa pero menos obvio.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Un juez ordenó que el gobierno corrija"
+            }
+          ],
+          "rank": 6,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "Explica el problema: 'corrija errores en las terminaciones' (aunque 'terminaciones' es técnico, es comprensible en contexto). Fecha falsa pero menos engañoso que otros.",
+          "reason": "Explica el problema: 'corrija errores en las terminaciones' (aunque 'terminaciones' es técnico, es comprensible en contexto). Fecha falsa pero menos engañoso que otros.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post29-tps-fechas-en-pagina-oficial-uscis",
       "graded": "2026-08-19",
       "threshold": 6.0,
