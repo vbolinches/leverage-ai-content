@@ -803,6 +803,24 @@ def research(count, avoid):
                 print(f"  dropped {b.get('topic', '')[:44]!r}: promises "
                       f"{invented!r}, which its page never says")
                 continue
+            # A fact whose date the page never gives is the model's guess, and
+            # the post is written and read against the facts. On 2026-11-20
+            # the PERM brief said comments close December 17 where the page
+            # says January 19, 2027, so the reader flagged the correct date
+            # six rounds running; the G-1055 brief carried a December 21
+            # cut-off the page never mentions. Drop the fact, not the topic.
+            facts, gone = [], []
+            for f in b.get("facts") or []:
+                (gone if dates.missing_from(f, search.PAGES[url]) else facts).append(f)
+            for f in gone:
+                print(f"  {b.get('topic', '')[:44]!r}: dropped a fact whose "
+                      f"date is not on its page: {f[:90]!r}")
+            if gone:
+                if len(facts) < 2:
+                    print(f"  dropped {b.get('topic', '')[:44]!r}: too few "
+                          f"facts left once the undated guesses were removed")
+                    continue
+                b["facts"] = facts
             if ACCT.get("require_source_url"):
                 # A link shortener or a news write-up is a real URL and still
                 # fails validate(), so it is worth catching here: a brief

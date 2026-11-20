@@ -122,3 +122,70 @@ def parse_published(raw):
         except ValueError:
             continue
     return None
+
+
+# Dates written inside running text, for checking a brief's facts against its
+# page. Day-level dates only: a bare year or "November 2026" names no day to
+# disagree about.
+_IN_ISO = re.compile(r"\b(\d{4})-(\d{1,2})-(\d{1,2})\b")
+_IN_NUM = re.compile(r"\b(\d{1,2})/(\d{1,2})/(\d{4}|\d{2})\b")
+_IN_MDY = re.compile(r"\b([A-Za-zÁÉÍÓÚáéíóú]{3,})\.?\s+(\d{1,2})(?:st|nd|rd|th)?\b"
+                     r"(?:,?\s+(\d{4})\b)?")
+_IN_DMY = re.compile(r"\b(\d{1,2})(?:\s+de)?\s+([A-Za-zÁÉÍÓÚáéíóú]{3,})\.?"
+                     r"(?:,?\s+(?:del?\s+)?(\d{4})\b)?", re.I)
+
+
+_ABBR = {"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "sept",
+         "oct", "nov", "dec", "ene", "abr", "ago", "dic"}
+
+
+def _month_in_text(word):
+    """A month only when the word is one: a full name or a standard short
+    form. Running text is full of words that start like a month ('set',
+    'mar', 'jun-'), and English 'may' is a verb unless it is capitalised."""
+    w = word.lower().rstrip(".")
+    if w == "may" and word[0].islower():
+        return None
+    if w == "mar" and word[0].islower():
+        return None              # Spanish 'mar' is the sea
+    full = any(w == n for names in _NAMES.values() for n in names)
+    return _month(w) if (full or w in _ABBR) else None
+
+
+def mentioned(text):
+    """Every day-level date in `text`, as (year or None, month, day).
+
+    A numeric date gives both readings (01/02/2027 could be either), and a
+    two-digit year is read as 20yy, the way USCIS prints edition dates
+    ("11/19/26"). Lenient on purpose: this finds what a page MIGHT say, and
+    a fact is only dropped when none of its readings is there.
+    """
+    out = set()
+    s = text or ""
+    for y, m, d in _IN_ISO.findall(s):
+        if _make(y, m, d):
+            out.add((int(y), int(m), int(d)))
+    for a, b, y in _IN_NUM.findall(s):
+        y = int(y) + (2000 if len(y) == 2 else 0)
+        for m, d in ((a, b), (b, a)):
+            if _make(y, m, d):
+                out.add((y, int(m), int(d)))
+    for word, d, y in _IN_MDY.findall(s):
+        m = _month_in_text(word)
+        if m and _make(y or 2000, m, d):
+            out.add((int(y) if y else None, m, int(d)))
+    for d, word, y in _IN_DMY.findall(s):
+        m = _month_in_text(word)
+        if m and _make(y or 2000, m, d):
+            out.add((int(y) if y else None, m, int(d)))
+    return out
+
+
+def missing_from(text, page):
+    """Dates in `text` that `page` never gives: a dated date must be on the
+    page with its year, a yearless one with any year."""
+    have = mentioned(page)
+    days = {(m, d) for _, m, d in have}
+    return sorted((x for x in mentioned(text)
+                   if not (x in have if x[0] else (x[1], x[2]) in days)),
+                  key=lambda x: (x[0] or 0, x[1], x[2]))

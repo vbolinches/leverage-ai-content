@@ -328,7 +328,13 @@ def grade(acct, slug, pool):
         + (f"\n   sub: {c['sub']}" if c.get("sub") else "")
         for c in labelled
     )
-    msg = (f"Grade every candidate below. Return one grading per label, "
+    # Today's date goes in the message, not the system prompt, so the prompt
+    # stays byte-identical across a run. Without it the grader marked every
+    # hook down as a "false 2026 date" (2026-11-20): its training ends before
+    # the news it is grading.
+    msg = (f"TODAY IS {date.today().isoformat()}. Dates up to today are real; "
+           f"do not mark a hook down for its date.\n\n"
+           f"Grade every candidate below. Return one grading per label, "
            f"{len(labelled)} in total, ranked 1 to {len(labelled)} with no "
            f"rank used twice.\n\n{listing}")
 
