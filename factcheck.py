@@ -608,6 +608,33 @@ def _overlap(claim, sentence):
     return len(cw & set(_words(sentence))) / len(cw) if cw else 0.0
 
 
+def _run_of_sentences(post, claim, threshold, sent_split):
+    """(slide index, field, [sentences]) for 2-3 consecutive sentences of a
+    body or sub that together carry the claim, or None."""
+    cw = set(_words(claim))
+    if not cw:
+        return None
+    best, where = 0.0, None
+    for si, sl in enumerate(post.get("slides") or []):
+        for key in ("body", "sub"):
+            v = sl.get(key)
+            txt = v if isinstance(v, str) else "".join(
+                x.get("t", "") for x in (v or []) if isinstance(x, dict))
+            sents = [x for x in sent_split.split(txt or "") if x.strip()]
+            for k in (2, 3):
+                for i in range(len(sents) - k + 1):
+                    run = sents[i:i + k]
+                    # Every sentence in the run must belong to the claim, so
+                    # a true neighbour is never deleted with it.
+                    if any(len(set(_words(x)) & cw) < 0.6 * max(1, len(set(_words(x))))
+                           for x in run):
+                        continue
+                    o = _overlap(claim, " ".join(run))
+                    if o >= threshold and o > best:
+                        best, where = o, (si, key, run)
+    return where
+
+
 def strip_claims(post, claims, threshold=0.6):
     """Delete, from a copy of the post, each sentence that carries a flagged
     claim. Returns the new post, or None when a claim cannot be removed safely.
@@ -654,7 +681,26 @@ def strip_claims(post, claims, threshold=0.6):
                 if o > best:
                     best, where = o, ("caption", None, None, sent)
         if best < threshold or where is None:
-            continue                    # not located: the re-check decides
+            # A claim the checker quoted across two sentences ("Qué dice: ...
+            # Qué significa: ...", 2026-11-21) matches neither sentence alone,
+            # so the deletion silently removed nothing and the post was lost.
+            # Look for it as a run of 2-3 sentences in one field, each of
+            # them mostly made of the claim's words.
+            where = _run_of_sentences(new, claim, threshold, sent_split)
+            if where is None:
+                continue                # not located: the re-check decides
+            si, key, run = where
+            sl = new["slides"][si]
+            v = sl.get(key)
+            txt = v if isinstance(v, str) else "".join(
+                x.get("t", "") for x in (v or []) if isinstance(x, dict))
+            for sent in run:
+                txt = txt.replace(sent, "")
+            rest = re.sub(r"\s{2,}", " ", txt).strip()
+            if len(rest) < 15:
+                return None             # the slide would be left empty
+            sl[key] = rest
+            continue
         kind, si, key, sent = where
         if kind == "fixed":
             return None                 # a headline cannot be deleted

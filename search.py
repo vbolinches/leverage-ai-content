@@ -121,7 +121,10 @@ def supports(url, quote, need=40):
         fetch(url, max_chars=200_000)
         page = PAGES.get(url)
     if page is None:
-        return "the page could not be opened, so the citation cannot be checked"
+        # Name the page: four briefs died on this on 2026-11-21 and the log
+        # could not say whether the URL was invented or the site was down.
+        return (f"the page could not be opened, so the citation cannot be "
+                f"checked: {url[:100]}")
     if len(re.sub(r"\s+", " ", quote or "").strip()) < need:
         return f"the quote is too short to check ({len((quote or '').strip())} chars)"
     # This check answers ONE question: is the page about this topic? It is

@@ -1785,6 +1785,10 @@ def write_post(brief, slug_prefix, series_no):
             break
         print(f"  {slug_prefix}: {len(errs)} rule(s) broken — "
               f"fix {rnd + 1}/{rounds}")
+        # Which rule, not just how many: three runs (Nov 19-21) lost posts to
+        # "1 rule(s) broken" five rounds running with no way to see the rule.
+        for e in errs[:3]:
+            print(f"      - {_clip(e)}")
         try:
             candidate = llm.structured(
                 BRAND, None, POST_SCHEMA,
@@ -1943,7 +1947,8 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
         if validate(cand):
             _tighten(cand)
         if validate(cand):
-            print(f"  {slug_prefix}: clarity fix broke the format - not kept")
+            print(f"  {slug_prefix}: clarity fix broke the format - not kept"
+                  f" ({_first(validate(cand))})")
             continue
         again, _ = clarity.read(cand, brief, ACCT, model=MODEL,
                                 label=f"{slug_prefix}/clear{rnd + 1}")
@@ -2078,7 +2083,8 @@ def _truth_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
         if validate(cand):
             _tighten(cand)
         if validate(cand):
-            print(f"  {slug_prefix}: truth fix broke the format — not kept")
+            print(f"  {slug_prefix}: truth fix broke the format — not kept"
+                  f" ({_first(validate(cand))})")
             continue
         again, again_bad = _verify(cand, brief, f"{slug_prefix}/fix{rnd + 1}",
                                    cleared)
@@ -2093,12 +2099,20 @@ def _truth_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
     # The result is re-checked in full - deletion is a repair, not a pass.
     if errs and bad:
         cut = factcheck.strip_claims(post, bad)
-        if cut is not None and not validate(cut):
+        if cut is not None and cut == post:
+            # Nothing was found to delete; re-checking the same post only
+            # repeats the verdict (2026-11-21 spent 77s doing exactly that).
+            print(f"  {slug_prefix}: could not find the untrue sentence(s) in "
+                  f"the slides or caption - nothing deleted")
+        elif cut is not None and not validate(cut):
             left, left_bad = _verify(cut, brief, f"{slug_prefix}/cut", cleared)
             print(f"  {slug_prefix}: deleted {len(bad)} untrue claim(s) — "
                   f"{len(errs)} -> {len(left)} problem(s)")
             if len(left) < len(errs):
                 post, errs = cut, left
+        elif cut is not None:
+            print(f"  {slug_prefix}: deleting the untrue claim(s) broke the "
+                  f"format — {_first(validate(cut))}")
         else:
             print(f"  {slug_prefix}: untrue claims sit in a headline or would "
                   f"empty a slide — cannot delete them safely")
@@ -2882,6 +2896,20 @@ def _settle_recap(post):
             sl["items"] = out
             changed = True
     return changed
+
+
+def _clip(text, n=160):
+    """One log line's worth of a rule message."""
+    text = " ".join(str(text).split())
+    return text if len(text) <= n else text[:n - 3] + "..."
+
+
+def _first(errs):
+    """The first broken rule, for a log line, and how many more."""
+    if not errs:
+        return "no rule named"
+    more = f" (+{len(errs) - 1} more)" if len(errs) > 1 else ""
+    return _clip(errs[0]) + more
 
 
 def validate(post):
