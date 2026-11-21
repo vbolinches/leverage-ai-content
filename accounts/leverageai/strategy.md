@@ -277,6 +277,10 @@ Performance confirms reels are necessary for reach (best posts 106, 103, 102 are
 
 Performance of previous posts (106, 103, 102, 100, 98, 105) confirms reels are necessary for reach (best: 128, 16, 7; worst: 1, 0) and category hooks are ineffective (post100: 2 reach). Hook grader is disproven (post105: 9.0 grade, 0 reach; post100: 1.0 grade, 2 reach). The performance brief explicitly states: 'Performance confirms reels are necessary for reach (best posts 106, 103, 102 are reels; worst posts 98 and 105 are carousels). Performance confirms category hooks are ineffective (post100, a reel with category hook, reached 2). Hook grader is disproven (no correlation between pre-publish hook grade and reach: post105 grade 9.0, reach 0; post100 grade 1.0, reach 2).' This matches the strategy file's existing Confirmed (reels > carousels) and Disproven (category hooks) sections, so no new hypotheses are settled.
 
+## Batch notes — posts 120-121 (2026-11-21)
+
+empty Performance data for posts 120-121 not yet available. The performance brief provided (as of 2026-11-20) lists 12 published posts (100-109) but does not include posts 120-121. The brief states 'PERFORMANCE TO DATE (as of 2026-11-20) ... 12 published posts', confirming posts 120-121 are not yet included in the performance data. No new hypotheses are settled as the brief provides no data for the new posts.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

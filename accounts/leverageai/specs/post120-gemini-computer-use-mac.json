@@ -1,0 +1,68 @@
+{
+  "slug": "post120-gemini-computer-use-mac",
+  "hook_candidates": [
+    {
+      "headline": "Stop wasting hours on repetitive Mac clicks.",
+      "sub": "Gemini now handles them automatically."
+    },
+    {
+      "headline": "What if your Mac did the admin work for you?",
+      "sub": "Gemini now runs desktop apps on command."
+    },
+    {
+      "headline": "You used to click through every menu yourself.",
+      "sub": "Gemini now navigates them for you on Mac."
+    },
+    {
+      "headline": "Mac AI just got real desktop control.",
+      "sub": "Gemini now clicks and types across your apps."
+    },
+    {
+      "headline": "One sentence replaces dozens of manual clicks.",
+      "sub": "Gemini now operates Mac apps automatically."
+    }
+  ],
+  "art": "lightbulb",
+  "caption": "Open the Gemini app for Mac. Go to Settings > Permissions and allow screen access. In the chat, type:\n\nLog the last five client emails into my Notion CRM, mark them as followed up, and draft a short reply for each.\n\nWatch it navigate, pause if it misses a field, and approve the final action. It handles the clicking; you handle the strategy. Available for personal Google AI Plus, Pro, and Ultra accounts in the U.S. right now. Save this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #macproductivity #solopreneur #freelancetools #automation #gemini #smallbusinessai #adminhelp #clickless #timemanagement",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 120",
+      "headline": "Gemini runs Mac apps.",
+      "sub": "Google released Gemini Computer Use for Mac on November 19, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Controls mouse and keyboard.",
+      "body": "Gemini is Google’s AI assistant that now controls your mouse and keyboard."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Automates repetitive work.",
+      "body": "It automates repetitive work by clicking menus and typing for you."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Describe a goal.",
+      "body": "You can describe a goal, and Gemini handles the app navigation steps."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Watch it work live and pause.",
+      "items": [
+        "Computer Use rolls out in U.S.",
+        "Available for AI Plus, Pro, Ultra.",
+        "Download the Mac app to try."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+}

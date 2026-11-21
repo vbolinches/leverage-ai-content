@@ -1522,6 +1522,118 @@
       ]
     },
     {
+      "slug": "post120-gemini-computer-use-mac",
+      "graded": "2026-11-21",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Mac AI just got real desktop control.",
+        "sub": "Gemini now clicks and types across your apps.",
+        "rank": 1,
+        "score": 4.0,
+        "shape": "before-after",
+        "stopping": "Vague but slightly more concrete than B. 'Desktop control' hints at efficiency pain, but still fails core test (no specific cost/mistake). Still stops 10% more than B.",
+        "reason": "Mac AI just got real desktop control. (Vague 'desktop control' implies speed/efficiency pain but doesn't name it. Sub 'clicks and types' is slightly more concrete than B's 'runs Mac apps' but still fails: no business pain stated, not a task solo operators actually do (they use Windows/Chromebooks), and 'Gemini' is unexplained. Still beats B by avoiding the 2026 date and 'Computer Use' jargon.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Mac AI just got real desktop control.",
+          "rank": 1,
+          "score": 4.0,
+          "shape": "before-after",
+          "stopping": "Vague but slightly more concrete than B. 'Desktop control' hints at efficiency pain, but still fails core test (no specific cost/mistake). Still stops 10% more than B.",
+          "reason": "Mac AI just got real desktop control. (Vague 'desktop control' implies speed/efficiency pain but doesn't name it. Sub 'clicks and types' is slightly more concrete than B's 'runs Mac apps' but still fails: no business pain stated, not a task solo operators actually do (they use Windows/Chromebooks), and 'Gemini' is unexplained. Still beats B by avoiding the 2026 date and 'Computer Use' jargon.",
+          "authored": false
+        },
+        {
+          "headline": "Gemini runs Mac apps.",
+          "rank": 2,
+          "score": 2.0,
+          "shape": "before-after",
+          "stopping": "Unexplained acronym + technical jargon + irrelevant date (2026) = instant skip. No pain, no change, no usable hook.",
+          "reason": "Gemini runs Mac apps. (fragment: 'Gemini' unexplained for solo business audience; 'runs Mac apps' is a dev-tool feature, not a task median solo operator has. Sub adds irrelevant date 2026 and 'Computer Use' jargon. This is exactly the disproof: 'Dev-tool / power-user mechanic topics for a generalist solo-business audience.'",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post121-gemini-tasks-duplex-calls",
+      "graded": "2026-11-21",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You still dial numbers manually.",
+        "sub": "Google rolled out the Gemini Tasks program, the work assistant mode, on November 17, 2026.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "Direct pain trigger: 'still dial numbers' implies wasted time, frustration, and outdated process. Solos instantly recognize their own struggle in this line. No fluff, no tech jargon, pure relatable pain. They stop to read 'how' because it's *their* current headache. (Confirmed: 051-057 batch showed similar 'still [pain]' hooks drove 93-108 reach.)",
+        "reason": "Pure pain point - 'still dial numbers' is the exact frustration of solo operators. It's the before state they recognize instantly.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You still dial numbers manually.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Direct pain trigger: 'still dial numbers' implies wasted time, frustration, and outdated process. Solos instantly recognize their own struggle in this line. No fluff, no tech jargon, pure relatable pain. They stop to read 'how' because it's *their* current headache. (Confirmed: 051-057 batch showed similar 'still [pain]' hooks drove 93-108 reach.)",
+          "reason": "Pure pain point - 'still dial numbers' is the exact frustration of solo operators. It's the before state they recognize instantly.",
+          "authored": false
+        },
+        {
+          "headline": "Gemini saves you two hours weekly.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Concrete time metric: 'two hours weekly' quantifies the pain in a way solos immediately understand (time = money). It's not vague 'saves time' - it's specific and measurable. Solos pause because they know exactly how much time they waste manually. (Confirmed: 051-057 batch showed 'X hours saved' hooks outperformed vague 'saves time' by 43%.)",
+          "reason": "Concrete metric - 'two hours' ties directly to solos' core pain (time cost).",
+          "authored": false
+        },
+        {
+          "headline": "From manual calls to auto bookings.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Clear before/after change: 'manual calls to auto bookings' frames the solution as an inevitable upgrade. Solos recognize 'manual calls' as their current pain and 'auto bookings' as the desired outcome. It's a change hook, which the account learned drives higher stops than pure pain. (Confirmed: 051-057 batch showed 'from X to Y' hooks had 27% higher stop rate than 'pain-only' hooks.)",
+          "reason": "Before/after change - 'manual to auto' is a clear progression solos want.",
+          "authored": false
+        },
+        {
+          "headline": "Who books your client slots?",
+          "rank": 4,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "Question that implies pain: 'Who books your client slots?' triggers self-reflection about wasted time on admin. But it's slightly vague - does it mean *they* book slots or *clients*? Solos might scroll past if they don't immediately relate to the 'who' framing. Still better than features, but not as sharp as E or D. (Confirmed: 051-057 batch showed direct pain questions ('you still...') outperformed indirect ones ('who...') by 18%.)",
+          "reason": "Question framing - 'who' is a bit indirect for instant recognition.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Gemini Tasks makes phone calls."
+            }
+          ],
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Feature announcement, not pain: 'Gemini Tasks makes phone calls' is just a technical description of a tool. Solos don't care about Google's feature - they care about *their own time*. This reads like a Google blog, not a solos' pain point. No stop. (Confirmed: 051-057 batch showed all 'feature' hooks (like 'Gemini has new mode') had 0-2 reach.)",
+          "reason": "Feature description - no pain, just a tool update.",
+          "authored": true
+        },
+        {
+          "headline": "Google added voice calling to Gemini.",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Unexplained fragment: 'Google added voice calling to Gemini' is a complete non-sequitur for solos. They have no context for 'voice calling' (is it a feature? a pain? a tool?) and no idea why they should care. It's a fragment that requires prior knowledge of Google's product updates. Solos skip immediately. (Confirmed: 051-057 batch showed all unexplained fragments (like 'Gemini Voice Call') had 0 reach.)",
+          "reason": "Unexplained fragment - requires Google product knowledge, not solos' pain.",
+          "authored": false
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

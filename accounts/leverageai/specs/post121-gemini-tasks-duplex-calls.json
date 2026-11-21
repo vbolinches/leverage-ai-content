@@ -1,0 +1,84 @@
+{
+  "slug": "post121-gemini-tasks-duplex-calls",
+  "hook_candidates": [
+    {
+      "headline": "Gemini saves you two hours weekly.",
+      "sub": "Google rolled out the Gemini Tasks program, the work assistant mode, on November 17, 2026."
+    },
+    {
+      "headline": "You still dial numbers manually.",
+      "sub": "Google rolled out the Gemini Tasks program, the work assistant mode, on November 17, 2026."
+    },
+    {
+      "headline": "Who books your client slots?",
+      "sub": "Google rolled out the Gemini Tasks program, the work assistant mode, on November 17, 2026."
+    },
+    {
+      "headline": "From manual calls to auto bookings.",
+      "sub": "Google rolled out the Gemini Tasks program, the work assistant mode, on November 17, 2026."
+    },
+    {
+      "headline": "Google added voice calling to Gemini.",
+      "sub": "Google rolled out the Gemini Tasks program, the work assistant mode, on November 17, 2026."
+    }
+  ],
+  "art": "newspaper",
+  "caption": "Open the Gemini app on your phone. Tap the toggle to switch from Chat to Task mode. This activates the new Duplex voice feature.\n\nYou can use it to schedule appointments, analyze utility bills, and purchase items through integrated services. The free update is available in the United States, Japan, Korea, Canada, Australia, and India.\n\nSave this for later when you need to handle errands without the phone.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#soleproprietor #freelancetools #aiworkflow #timeaudit #businessautomation #solopreneurlife #clientmanagement #adminhacks #digitalconsultant #smallbusinessowner",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 121",
+      "headline": [
+        {
+          "t": "Gemini Tasks makes phone calls."
+        }
+      ],
+      "sub": "Google rolled out the Gemini Tasks program, the work assistant mode, on November 17, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Makes voice calls.",
+      "body": [
+        {
+          "t": "Duplex is an artificial intelligence feature that makes actual voice phone calls."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Handles real errands.",
+      "body": [
+        {
+          "t": "Gemini Tasks handles real-world errands like scheduling appointments or buying items."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Reaches users.",
+      "body": [
+        {
+          "t": "The free Gemini Tasks update reaches users in the United States."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Switch the toggle now.",
+      "items": [
+        "Open the Gemini app.",
+        "Toggle to Task mode.",
+        "Save this for later."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+}

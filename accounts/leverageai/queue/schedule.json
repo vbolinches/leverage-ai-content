@@ -1904,6 +1904,36 @@
       ],
       "caption": "Turn your daily drive into client management time. Google added Gemini Live to Apple CarPlay on Nov 11. It listens to your voice and returns text summaries of your inbox. You get hands-free updates without touching your phone.\n\nHere is the exact workflow. Update the Gemini app on your iPhone. Open settings and turn on microphone permissions. Connect your phone to your car’s Apple CarPlay display. Tap the Gemini icon on the screen. Ask it to summarize your recent client emails. The app reads the summaries aloud and saves the text to your iPhone notes for later reference.\n\nPrompt to use: Summarize my last five client emails and list required replies.\n\nThis works for any solo operator using an iPhone. The feature is free and available worldwide. It handles quick inbox triage and follow-up tracking. It does not draft replies or access encrypted work accounts. Keep it to reading summaries and calendar checks while your hands stay on the wheel.\n\nSave this post for your next long drive.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #solopreneur #applecarplay #gemini #productivitytips #freelancerlife #businesstools #timemanagement #adminhacks #commutetips",
       "status": "queued"
+    },
+    {
+      "id": "post120-gemini-computer-use-mac",
+      "date": "2026-11-28",
+      "slides": [
+        "accounts/leverageai/queue/post120-gemini-computer-use-mac/slide01.png",
+        "accounts/leverageai/queue/post120-gemini-computer-use-mac/slide02.png",
+        "accounts/leverageai/queue/post120-gemini-computer-use-mac/slide03.png",
+        "accounts/leverageai/queue/post120-gemini-computer-use-mac/slide04.png",
+        "accounts/leverageai/queue/post120-gemini-computer-use-mac/slide05.png"
+      ],
+      "caption": "Open the Gemini app for Mac. Go to Settings > Permissions and allow screen access. In the chat, type:\n\nLog the last five client emails into my Notion CRM, mark them as followed up, and draft a short reply for each.\n\nWatch it navigate, pause if it misses a field, and approve the final action. It handles the clicking; you handle the strategy. Available for personal Google AI Plus, Pro, and Ultra accounts in the U.S. right now. Save this for later. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #macproductivity #solopreneur #freelancetools #automation #gemini #smallbusinessai #adminhelp #clickless #timemanagement",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post120-gemini-computer-use-mac/reel.mp4"
+    },
+    {
+      "id": "post121-gemini-tasks-duplex-calls",
+      "date": "2026-11-29",
+      "slides": [
+        "accounts/leverageai/queue/post121-gemini-tasks-duplex-calls/slide01.png",
+        "accounts/leverageai/queue/post121-gemini-tasks-duplex-calls/slide02.png",
+        "accounts/leverageai/queue/post121-gemini-tasks-duplex-calls/slide03.png",
+        "accounts/leverageai/queue/post121-gemini-tasks-duplex-calls/slide04.png",
+        "accounts/leverageai/queue/post121-gemini-tasks-duplex-calls/slide05.png"
+      ],
+      "caption": "Open the Gemini app on your phone. Tap the toggle to switch from Chat to Task mode. This activates the new Duplex voice feature.\n\nYou can use it to schedule appointments, analyze utility bills, and purchase items through integrated services. The free update is available in the United States, Japan, Korea, Canada, Australia, and India.\n\nSave this for later when you need to handle errands without the phone.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#soleproprietor #freelancetools #aiworkflow #timeaudit #businessautomation #solopreneurlife #clientmanagement #adminhacks #digitalconsultant #smallbusinessowner",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post121-gemini-tasks-duplex-calls/reel.mp4"
     }
   ]
 }
