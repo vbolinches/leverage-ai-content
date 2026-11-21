@@ -1064,6 +1064,7 @@ def _evergreen(url):
 # after the writing was paid for. The story's own page is one click away.
 _LISTING = re.compile(
     r"^/(?:all-news-updates|news|newsroom|news-releases|press-releases|"
+    r"news-releases/(?:press-releases|statements|speeches)|"
     r"newsroom/(?:alerts|news-releases|all-news|press-releases|fact-sheets|"
     r"media-resources)|app/collection/[^/]+)(?:/\d+)?/?$", re.I)
 

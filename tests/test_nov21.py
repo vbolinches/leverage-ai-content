@@ -10,6 +10,9 @@ batch-2026-11-21.log: inmigraforma made 0 of 3.
   fix "broke the format", without the log ever saying which rule.
 - Four briefs were dropped because "the page could not be opened", with no
   page named.
+- Vicente asked (Nov 21) for DHS's own news list to be watched as a third
+  official source. 45 of its 50 latest releases are arrest round-ups, so only
+  titles matching the account's "keep" pattern are offered.
 """
 import copy
 import os
@@ -22,7 +25,11 @@ sys.path.insert(0, ROOT)
 os.chdir(ROOT)
 os.environ.setdefault("ACCOUNT", "inmigraforma")
 
+import json  # noqa: E402
+from datetime import date, timedelta  # noqa: E402
+
 import factcheck  # noqa: E402
+import newsroom  # noqa: E402
 import generate_batch as gb  # noqa: E402
 import search  # noqa: E402
 
@@ -96,6 +103,56 @@ class LogNamesTheRule(unittest.TestCase):
                 mock.patch.dict(search.PAGES, {}, clear=True):
             why = search.supports(url, "x" * 60)
         self.assertIn("travel.state.gov", why)
+
+
+def _dhs_row(day, path, title, summary="WASHINGTON - Summary."):
+    return (f'<li class="usa-collection__item"><a href="https://www.dhs.gov{path}">'
+            f'<time datetime="{day}"><span>x</span></time></a>'
+            f'<div class="usa-collection__body"><h3 class="usa-collection__heading">'
+            f'\n      <a href="https://www.dhs.gov{path}" hreflang="en">{title}</a>'
+            f'</h3><p>{summary}</p></div></li>')
+
+
+class DhsNewsList(unittest.TestCase):
+    def setUp(self):
+        today = date.today()
+        self.page = "<ul class=\"usa-collection\">" + "".join([
+            _dhs_row(today.isoformat(), "/news/2026/11/19/e-verify-contracts",
+                     "DHS and GSA Identify Contracts Noncompliant with E-Verify",
+                     "WASHINGTON &ndash; <strong>E-Verify</strong> review."),
+            _dhs_row(today.isoformat(), "/news/2026/11/20/worst-of-the-worst",
+                     "WORST OF THE WORST: ICE Arrests Murderers and Drug Traffickers"),
+            _dhs_row((today - timedelta(days=90)).isoformat(),
+                     "/news/2026/08/01/old-asylum", "Old Asylum Rule"),
+        ]) + "</ul>"
+        with open(os.path.join(ROOT, "accounts", "inmigraforma",
+                               "account.json"), encoding="utf-8") as f:
+            acct = json.load(f)
+        self.src = [x for x in acct["newsroom"] if x["kind"] == "dhs"][0]
+
+    def test_inmigraforma_watches_dhs(self):
+        self.assertIn("e-verify", self.src["keep"])
+
+    def test_keeps_paperwork_news_only(self):
+        rows = newsroom.dhs(keep=self.src["keep"], page=self.page)
+        self.assertEqual([r["url"] for r in rows],
+                         ["https://www.dhs.gov/news/2026/11/19/e-verify-contracts"])
+        self.assertIn("E-Verify review", rows[0]["summary"])
+
+    def test_items_routes_the_dhs_source(self):
+        acct = {"newsroom": [self.src]}
+        with mock.patch.object(newsroom, "dhs", return_value=[
+                {"title": "E-Verify", "url": "https://www.dhs.gov/news/x",
+                 "date": date.today().isoformat(), "summary": ""}]) as got:
+            out = newsroom.items(acct)
+        got.assert_called_once_with(keep=self.src["keep"])
+        self.assertEqual(out[0]["url"], "https://www.dhs.gov/news/x")
+
+    def test_the_list_itself_is_not_a_source(self):
+        self.assertTrue(gb._listing(
+            "https://www.dhs.gov/news-releases/press-releases?items_per_page=50"))
+        self.assertFalse(gb._listing(
+            "https://www.dhs.gov/news/2026/11/10/dhs-taking-down-asylum-fraudsters"))
 
 
 if __name__ == "__main__":

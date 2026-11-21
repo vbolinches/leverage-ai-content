@@ -155,6 +155,10 @@
       "kind": "uscis"
     },
     {
+      "kind": "dhs",
+      "keep": "e-verify|asylum|parole|\\btps\\b|temporary protected|visa|green card|work permit|employment authori|naturaliz|citizenship test|cbp one|cbp home|self-deport|registration|biometric|\\bfees?\\b|\\bform\\b|\\brule\\b|program|deadline|travel ban|proclamation|refugee|h-1b|h-2a|daca"
+    },
+    {
       "kind": "federal_register",
       "agencies": [
         "u-s-citizenship-and-immigration-services",

@@ -17,6 +17,7 @@ like any other.
 
 Configured per account as "newsroom": a list of
     {"kind": "uscis"}
+    {"kind": "dhs", "keep": "<regex a title must match>"}
     {"kind": "federal_register", "agencies": ["u-s-citizenship-..."]}
     {"kind": "rss", "url": "https://..."}
 and "newsroom_skip", a regex for titles that are never this account's news.
@@ -61,6 +62,43 @@ def uscis(days=DAYS):
     return out
 
 
+DHS_URL = "https://www.dhs.gov/news-releases/press-releases?items_per_page=50"
+
+
+def dhs(days=DAYS, keep=None, page=None):
+    """DHS's own press-release list (added 2026-11-21, Vicente's call: the
+    one new post the night before came from a DHS release).
+
+    Most of DHS's releases are arrest round-ups and statements about
+    sanctuary cities - 45 of the 50 on 2026-11-21. `keep` is a regex a title
+    must match to be offered at all (the account's "keep" for this source), so
+    research sees the few that change someone's paperwork: E-Verify, asylum,
+    parole, TPS, fees, programs.
+    """
+    if page is None:
+        body, _, _ = search._get_curl(DHS_URL)
+        page = body.decode("utf-8", "replace")
+    cutoff = (date.today() - timedelta(days=days)).isoformat()
+    keep_re = re.compile(keep, re.I) if keep else None
+    out = []
+    for row in re.findall(r'<li class="usa-collection__item">(.*?)</li>', page, re.S):
+        a = re.search(r'usa-collection__heading">\s*<a href="([^"]+)"[^>]*>([^<]+)</a>',
+                      row)
+        d = re.search(r'datetime="(\d{4}-\d{2}-\d{2})', row)
+        if not a or not d or d.group(1) < cutoff:
+            continue
+        title = re.sub(r"\s+", " ", html.unescape(a.group(2))).strip()
+        if keep_re and not keep_re.search(title):
+            continue
+        p = re.search(r"<p>(.*?)</p>", row[a.end():], re.S)
+        summary = re.sub(r"<[^>]+>", " ", p.group(1)) if p else ""
+        summary = re.sub(r"\s+", " ", html.unescape(summary)).strip()
+        out.append({"title": title,
+                    "url": urllib.parse.urljoin("https://www.dhs.gov", a.group(1)),
+                    "date": d.group(1), "summary": summary[:240]})
+    return out
+
+
 def federal_register(agencies, days=DAYS):
     """Rules, proposed rules and real notices from these agencies."""
     q = [("per_page", "100"), ("order", "newest"),
@@ -101,6 +139,8 @@ def items(acct):
         try:
             if src["kind"] == "uscis":
                 rows = uscis()
+            elif src["kind"] == "dhs":
+                rows = dhs(keep=src.get("keep"))
             elif src["kind"] == "federal_register":
                 rows = federal_register(src["agencies"])
             elif src["kind"] == "rss":
