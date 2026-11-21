@@ -1813,9 +1813,12 @@
         "accounts/leverageai/queue/post113-google-wallet-gemini-finance/slide05.png"
       ],
       "caption": "You run your own business. You handle sales, delivery, invoices, and admin. Tracking client payments and personal expenses usually means opening a spreadsheet, typing numbers, and guessing where the money went. This changes how you track cash flow without leaving your phone.\n\nConnect Google Wallet to Gemini. It safely reads your transaction history. Ask it to review your spending, spot recurring charges you forgot about, or project holiday costs using last year’s data. It generates clear charts right in the chat. It cannot move or invest your money. It only reads what you allow.\n\nCopy this exact prompt:\n“Review my spending from the last quarter. Show me a chart of my cash flow. List any subscriptions I am still paying for. Estimate my holiday budget based on last year.”\n\nThis works for U.S. users on iOS, Android, and web. Open the Gemini app, go to Personal Intelligence settings, and toggle Connected Apps. Link your Wallet. Wait for the sync.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aifinance #solopreneur #freelancetools #bookkeepingtips #googlewallet #geminiapp #businesstools #cashflow #adminworkflow #smallbusinessai",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post113-google-wallet-gemini-finance/reel.mp4"
+      "video": "accounts/leverageai/queue/post113-google-wallet-gemini-finance/reel.mp4",
+      "published_media_id": "18101779418217942",
+      "published_on": "2026-11-21",
+      "threads_posted": true
     },
     {
       "id": "post114-chatgpt-wallet-payments",
