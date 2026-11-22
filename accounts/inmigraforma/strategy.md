@@ -341,3 +341,7 @@ not enough data to tell total signal 58 < 150 threshold; 12 measured posts; no p
 ### Batch — posts 104-104, drafted 2026-11-20
 
 not enough data to tell total signal 58 < 150 threshold; 12 measured posts; no post-level comparison possible The performance brief reports a total signal of 58 across 12 measured posts, which is below the 150 threshold required for post-level comparisons. The strategy file explicitly states that below the 150 threshold, no post-level or batch-level comparison is legitimate.
+
+### Batch — posts 105-105, drafted 2026-11-22
+
+not enough data to tell total signal 58 < 150 threshold; 12 measured posts; no post-level comparison possible The performance brief reports a total signal of 58 across 12 measured posts, which is below the 150 threshold required for post-level comparisons. The strategy file explicitly states that below the 150 threshold, no post-level or batch-level comparison is legitimate.
