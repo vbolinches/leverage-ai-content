@@ -1831,9 +1831,12 @@
         "accounts/leverageai/queue/post114-chatgpt-wallet-payments/slide05.png"
       ],
       "caption": "Stop switching apps to collect client payments. ChatGPT Wallet lets you process transactions inside the chat window. You approve each charge with a quick biometric scan. The tool fills in your payment details automatically. This cuts down on manual data entry and app-hopping during busy delivery days.\n\nUse this prompt when closing a sale or buying software for your business:\n\"Process a payment of $150 for [Client Name] using ChatGPT Wallet. Confirm the transaction once approved and log it in my Notion tracker.\"\n\nThis feature is live now for ChatGPT Pro subscribers in the US. You must be eighteen or older and use a supported US bank card. Free plan users cannot access it yet. The tool keeps your existing card rewards and dispute protections intact. It does not replace your main invoicing platform, but it speeds up small direct purchases.\n\nSave this slide set for your next checkout.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#chatgptwallet #freelancertools #solopreneur #aifinance #chatgptpro #businessautomation #paymentworkflow #chatgpttips #smallbusinessai #productivityhacks",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post114-chatgpt-wallet-payments/reel.mp4"
+      "video": "accounts/leverageai/queue/post114-chatgpt-wallet-payments/reel.mp4",
+      "published_media_id": "18114705821338213",
+      "published_on": "2026-11-22",
+      "threads_posted": true
     },
     {
       "id": "post115-gemini-4-hydrogen-research",
