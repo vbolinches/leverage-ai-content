@@ -118,13 +118,17 @@ def supports(url, quote, need=40):
         # check properly. Seven of twelve briefs died on this in one run
         # before the fetch was added, and the guarantee is unchanged: the
         # quote still has to be on the page.
-        fetch(url, max_chars=200_000)
+        why = fetch(url, max_chars=200_000)
         page = PAGES.get(url)
+    else:
+        why = ""
     if page is None:
         # Name the page: four briefs died on this on 2026-11-21 and the log
         # could not say whether the URL was invented or the site was down.
-        return (f"the page could not be opened, so the citation cannot be "
-                f"checked: {url[:100]}")
+        # Name the reason too: on 2026-11-22 two did, and a 404 (an invented
+        # address), a 403 (the site refused) and a PDF need different fixes.
+        return (f"the page could not be opened ({_why(why, url)}), so the "
+                f"citation cannot be checked: {url[:100]}")
     if len(re.sub(r"\s+", " ", quote or "").strip()) < need:
         return f"the quote is too short to check ({len((quote or '').strip())} chars)"
     # This check answers ONE question: is the page about this topic? It is
@@ -144,6 +148,14 @@ def supports(url, quote, need=40):
     # paraphrase; those need different fixes, and a bare message cannot tell.
     return (f"that sentence is not on that page "
             f"({share(page, quote):.0%} of it found): {quote[:90]!r}")
+
+
+def _why(msg, url):
+    """fetch()'s failure message, short and without the URL repeated."""
+    msg = (msg if isinstance(msg, str) else "").replace(url, "")
+    msg = msg.replace("could not open :", "")
+    msg = re.sub(r"\s+", " ", msg).strip(" :;")
+    return (msg[:140] or "no reason given")
 
 
 def since(mark):
@@ -268,6 +280,24 @@ def _get_curl(url):
     return body, ctype, final
 
 
+_GOVINFO_PDF = re.compile(r"^(https?://(?:www\.)?govinfo\.gov/content/pkg/"
+                          r"FR-\d{4}-\d{2}-\d{2}/)pdf/(\d{4}-\d{4,6})\.pdf"
+                          r"(?:[?#].*)?$", re.I)
+
+
+def html_twin(url):
+    """The HTML print of a govinfo Federal Register PDF, or None.
+
+    fetch() reads text, not PDF, so a brief citing the PDF died as "could not
+    be opened" (2026-11-22, the PERM proposal). GPO prints every Federal
+    Register document twice, /pdf/<number>.pdf and /html/<number>.htm, with
+    the same words; the HTML one is read in its place and the citation stays
+    the PDF the model chose.
+    """
+    m = _GOVINFO_PDF.match((url or "").strip())
+    return f"{m.group(1)}html/{m.group(2)}.htm" if m else None
+
+
 def fetch(url, max_chars=MAX_PAGE_CHARS):
     """A page as plain text, so the model reads the source instead of the
     snippet. Reading is also what earns a URL its place in RETRIEVED for the
@@ -275,6 +305,13 @@ def fetch(url, max_chars=MAX_PAGE_CHARS):
     """
     if not url.startswith(("http://", "https://")):
         return f"refused: {url!r} is not an http(s) URL"
+    twin = html_twin(url)
+    if twin:
+        out = fetch(twin, max_chars=max_chars)
+        if twin in PAGES:
+            PAGES[url] = PAGES[twin]
+            RETRIEVED.add(url)
+        return out
     try:
         body, ctype, final = _get_urllib(url)
     except Exception as first:                          # noqa: BLE001

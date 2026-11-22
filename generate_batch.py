@@ -1065,6 +1065,7 @@ def _evergreen(url):
 _LISTING = re.compile(
     r"^/(?:all-news-updates|news|newsroom|news-releases|press-releases|"
     r"news-releases/(?:press-releases|statements|speeches)|"
+    r"forms/forms-updates|"
     r"newsroom/(?:alerts|news-releases|all-news|press-releases|fact-sheets|"
     r"media-resources)|app/collection/[^/]+)(?:/\d+)?/?$", re.I)
 
@@ -1789,7 +1790,7 @@ def write_post(brief, slug_prefix, series_no):
         # Which rule, not just how many: three runs (Nov 19-21) lost posts to
         # "1 rule(s) broken" five rounds running with no way to see the rule.
         for e in errs[:3]:
-            print(f"      - {_clip(e)}")
+            print(f"      - {_clip_line(e)}")
         try:
             candidate = llm.structured(
                 BRAND, None, POST_SCHEMA,
@@ -1918,27 +1919,38 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
     # targeted round went 3 -> 4 (2026-09-24).
     stable = {v for _, _, v in _slide_strings(post)
               if not any(_mentions(d, v) for d in doubts)}
+    broke = []          # rules the last rejected candidate broke
     for rnd in range(rounds):
         if len(doubts) <= 0:
             break
-        try:
-            cand = llm.structured(
-                BRAND, None, POST_SCHEMA,
-                model=WRITER, require=("slides", "caption"),
-                label=f"clear{rnd + 1}:{slug_prefix}", temperature=0.4,
-                max_tokens=16000,
-                think=WRITER_THINK,
-                messages=[
-                    {"role": "user", "content": ask},
-                    {"role": "assistant",
-                     "content": json.dumps(post, ensure_ascii=False)},
-                    {"role": "user", "content": _clarity_fix_note()
-                        + "\n".join(f"  - {d}" for d in doubts)
-                        + "\n\n" + _slide_plan()},
-                ],
-            )
-        except llm.LLMError as e:
-            print(f"  {slug_prefix}: clarity fix failed ({e})")
+        note = (_clarity_fix_note()
+                + "\n".join(f"  - {d}" for d in doubts)
+                + _broke_note(broke)
+                + "\n\n" + _slide_plan())
+        cand = None
+        # A round that thinks past its cap is retried once without thinking,
+        # as the clarity reader already is. On 2026-11-22 the PERM post's
+        # second clarity fix ran 16000 tokens of reasoning, the round was
+        # lost, and the post was rejected with its two doubts unanswered.
+        for think in ([WRITER_THINK, False] if WRITER_THINK else [False]):
+            try:
+                cand = llm.structured(
+                    BRAND, None, POST_SCHEMA,
+                    model=WRITER, require=("slides", "caption"),
+                    label=(f"clear{rnd + 1}:{slug_prefix}"
+                           + ("" if think else "/nothink")),
+                    temperature=0.4, max_tokens=16000, think=think,
+                    messages=[
+                        {"role": "user", "content": ask},
+                        {"role": "assistant",
+                         "content": json.dumps(post, ensure_ascii=False)},
+                        {"role": "user", "content": note},
+                    ],
+                )
+                break
+            except llm.LLMError as e:
+                print(f"  {slug_prefix}: clarity fix failed ({e})")
+        if cand is None:
             break
         _respace(cand)
         # The candidate must carry the checked sentences (validate() holds
@@ -1948,9 +1960,11 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
         if validate(cand):
             _tighten(cand)
         if validate(cand):
+            broke = validate(cand)
             print(f"  {slug_prefix}: clarity fix broke the format - not kept"
-                  f" ({_first(validate(cand))})")
+                  f" ({_first(broke)})")
             continue
+        broke = []
         again, _ = clarity.read(cand, brief, ACCT, model=MODEL,
                                 label=f"{slug_prefix}/clear{rnd + 1}")
         again = _uncleared(again, set(cleared) | stable)
@@ -1960,6 +1974,21 @@ def _clarity_pass(post, ask, brief, slug_prefix, rounds=2, cleared=()):
             stable |= {v for _, _, v in _slide_strings(cand)
                        if not any(_mentions(d, v) for d in again)}
     return post, doubts
+
+
+def _broke_note(errs):
+    """The rules the last clarity fix broke, so the next round avoids them.
+
+    A rejected candidate was dropped without a word, and the next round got
+    the same request and made the same kind of mistake or thought until its
+    cap (2026-11-22: a cover sub used a word the first sentence never used,
+    then the retry ran out of tokens).
+    """
+    if not errs:
+        return ""
+    return ("\n\nYOUR LAST FIX WAS NOT KEPT because it broke these rules - "
+            "fix the quoted fields again without breaking them:\n"
+            + "\n".join(f"  - {_clip_line(e, 240)}" for e in errs[:4]))
 
 
 def _clarity_fix_note():
@@ -2899,7 +2928,7 @@ def _settle_recap(post):
     return changed
 
 
-def _clip(text, n=160):
+def _clip_line(text, n=160):
     """One log line's worth of a rule message."""
     text = " ".join(str(text).split())
     return text if len(text) <= n else text[:n - 3] + "..."
@@ -2910,7 +2939,7 @@ def _first(errs):
     if not errs:
         return "no rule named"
     more = f" (+{len(errs) - 1} more)" if len(errs) > 1 else ""
-    return _clip(errs[0]) + more
+    return _clip_line(errs[0]) + more
 
 
 def validate(post):

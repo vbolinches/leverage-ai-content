@@ -134,6 +134,12 @@ _IN_MDY = re.compile(r"\b([A-Za-zÁÉÍÓÚáéíóú]{3,})\.?\s+(\d{1,2})(?:st|
 _IN_DMY = re.compile(r"\b(\d{1,2})(?:\s+de)?\s+([A-Za-zÁÉÍÓÚáéíóú]{3,})\.?"
                      r"(?:,?\s+(?:del?\s+)?(\d{4})\b)?", re.I)
 
+# The Visa Bulletin prints its cut-off dates as 01APR25 and 15NOV13, and so
+# do other State Department tables. Not reading them dropped every EB fact of
+# the November 2026 bulletin as "a date not on its page" (2026-11-22).
+_IN_DDMMMYY = re.compile(r"\b(\d{2})(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|"
+                         r"NOV|DEC)(\d{2})\b")
+
 
 _ABBR = {"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "sept",
          "oct", "nov", "dec", "ene", "abr", "ago", "dic"}
@@ -174,6 +180,11 @@ def mentioned(text):
         m = _month_in_text(word)
         if m and _make(y or 2000, m, d):
             out.add((int(y) if y else None, m, int(d)))
+    for d, word, y in _IN_DDMMMYY.findall(s):
+        y = int(y) + (1900 if int(y) > 60 else 2000)
+        m = _month(word.lower())
+        if m and _make(y, m, d):
+            out.add((y, m, int(d)))
     for d, word, y in _IN_DMY.findall(s):
         m = _month_in_text(word)
         if m and _make(y or 2000, m, d):
