@@ -281,6 +281,10 @@ Performance of previous posts (106, 103, 102, 100, 98, 105) confirms reels are n
 
 empty Performance data for posts 120-121 not yet available. The performance brief provided (as of 2026-11-20) lists 12 published posts (100-109) but does not include posts 120-121. The brief states 'PERFORMANCE TO DATE (as of 2026-11-20) ... 12 published posts', confirming posts 120-121 are not yet included in the performance data. No new hypotheses are settled as the brief provides no data for the new posts.
 
+## Batch notes — posts 122-122 (2026-11-23)
+
+Performance confirms concrete-pain hooks (change shape: free video, GPT-6 Astra, Gemini 4 Carbon) drive higher reach than news-peg hooks (Gemini adds website research, ChatGPT adds business profiles) for reels. Best posts (106, 103, 109) used concrete-pain hooks and reached 128, 16, 7. Worst posts (110, 112) used news-peg hooks and reached 1, 1. Reel format is necessary for reach (post110, a reel, reached 1, but carousels like post105 reached 0). Hook grader is disproven (post110: 7.0 grade, 1 reach; post112: 8.0 grade, 1 reach). The performance brief lists the best performers (106,103,109) with concrete-pain hooks (change shape) and high reach, and the worst performers (110,112) with news-peg hooks and low reach. The format (reel vs carousel) is confirmed by the reach of reels (post110: 1) vs carousels (post105: 0). The hook grader is disproven by the grades (7.0, 8.0) and reach (1,1) for posts 110 and 112, and the previous data.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

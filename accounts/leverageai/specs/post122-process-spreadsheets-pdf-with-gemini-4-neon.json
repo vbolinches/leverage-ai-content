@@ -1,0 +1,86 @@
+{
+  "slug": "post122-process-spreadsheets-pdf-with-gemini-4-neon",
+  "hook_candidates": [
+    {
+      "headline": "Three clicks to clean data.",
+      "sub": "Google released Gemini 4 Neon, a new artificial intelligence program, on November 18, 2026."
+    },
+    {
+      "headline": "Stop copying numbers by hand.",
+      "sub": "Google released Gemini 4 Neon, a new artificial intelligence program, on November 18, 2026."
+    },
+    {
+      "headline": "Can AI organize your receipts?",
+      "sub": "Google released Gemini 4 Neon, a new artificial intelligence program, on November 18, 2026."
+    },
+    {
+      "headline": "Messy invoices become clean tables.",
+      "sub": "Google released Gemini 4 Neon, a new artificial intelligence program, on November 18, 2026."
+    },
+    {
+      "headline": "Save hours on client expenses.",
+      "sub": "Google released Gemini 4 Neon, a new artificial intelligence program, on November 18, 2026."
+    }
+  ],
+  "art": "spreadsheet",
+  "caption": "Stop copying numbers from invoices and client quotes into blank sheets. Gemini 4 Neon reads those files and outputs a clean table you can paste straight into your accounting software. It handles standard PDFs and CSV exports without manual formatting.\n\nOpen the Gemini app and select Gemini 4 Neon. Upload one messy file and paste this exact prompt:\n\"Extract all line items, dates, and amounts from this file. Output a plain text table with columns for Date, Description, and Total. Skip headers and footers. Flag any unreadable sections.\"\n\n\nThis runs on Google AI Pro or Ultra plans. The API tier costs $3 per million input tokens, making it cheap for daily admin work. \n\nSave this for later when you face a stack of unorganized files.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solexperts #freelanceadmin #smallbusinessai #clientinvoices #timeblocking #productivitytools #aiforbusiness #spreadsheettips #solopreneur #workflowautomation",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "W",
+      "headline": "Google released it.",
+      "sub": "Google released Gemini 4 Neon, a new artificial intelligence program, on November 18, 2026.",
+      "footer_right": "→"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "I",
+      "headline": "It reads info.",
+      "body": [
+        {
+          "t": "Gemini 4 Neon is a computer system that reads and organizes written information.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "D",
+      "headline": "It turns files.",
+      "body": [
+        {
+          "t": "Gemini 4 Neon turns messy spreadsheets and PDF files into clean data, like listing client expenses.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "W",
+      "headline": "Plans use it.",
+      "body": [
+        {
+          "t": "Only Google AI Pro or Ultra subscribers, paid plans for AI services, can use Gemini 4 Neon.",
+          "c": "green",
+          "b": true
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "N",
+      "headline": "You pick it.",
+      "items": [
+        "Pick Gemini 4 Neon.",
+        "Read the full story (link in the caption).",
+        "Use paid AI plans."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+}

@@ -1940,6 +1940,21 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post121-gemini-tasks-duplex-calls/reel.mp4"
+    },
+    {
+      "id": "post122-process-spreadsheets-pdf-with-gemini-4-neon",
+      "date": "2026-11-30",
+      "slides": [
+        "accounts/leverageai/queue/post122-process-spreadsheets-pdf-with-gemini-4-neon/slide01.png",
+        "accounts/leverageai/queue/post122-process-spreadsheets-pdf-with-gemini-4-neon/slide02.png",
+        "accounts/leverageai/queue/post122-process-spreadsheets-pdf-with-gemini-4-neon/slide03.png",
+        "accounts/leverageai/queue/post122-process-spreadsheets-pdf-with-gemini-4-neon/slide04.png",
+        "accounts/leverageai/queue/post122-process-spreadsheets-pdf-with-gemini-4-neon/slide05.png"
+      ],
+      "caption": "Stop copying numbers from invoices and client quotes into blank sheets. Gemini 4 Neon reads those files and outputs a clean table you can paste straight into your accounting software. It handles standard PDFs and CSV exports without manual formatting.\n\nOpen the Gemini app and select Gemini 4 Neon. Upload one messy file and paste this exact prompt:\n\"Extract all line items, dates, and amounts from this file. Output a plain text table with columns for Date, Description, and Total. Skip headers and footers. Flag any unreadable sections.\"\n\n\nThis runs on Google AI Pro or Ultra plans. The API tier costs $3 per million input tokens, making it cheap for daily admin work. \n\nSave this for later when you face a stack of unorganized files.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#solexperts #freelanceadmin #smallbusinessai #clientinvoices #timeblocking #productivitytools #aiforbusiness #spreadsheettips #solopreneur #workflowautomation",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post122-process-spreadsheets-pdf-with-gemini-4-neon/reel.mp4"
     }
   ]
 }

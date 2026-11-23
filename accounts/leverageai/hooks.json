@@ -1634,6 +1634,78 @@
       ]
     },
     {
+      "slug": "post122-process-spreadsheets-pdf-with-gemini-4-neon",
+      "graded": "2026-11-23",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Messy invoices become clean tables.",
+        "sub": "Google released Gemini 4 Neon, a new artificial intelligence program, on November 18, 2026.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "before-after",
+        "stopping": "Messy invoices → clean tables. Instantly recognizable pain (messy receipts) + clear transformation. Matches top-performing hooks like 'Before: 3 hours data entry. After: 3 clicks.' No confusion, no jargon. Solopreneurs stop because they've lived this pain today.",
+        "reason": "Concrete transformation. Solopreneurs see 'messy invoices' and know exactly what they're scrolling past to avoid.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Messy invoices become clean tables.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "before-after",
+          "stopping": "Messy invoices → clean tables. Instantly recognizable pain (messy receipts) + clear transformation. Matches top-performing hooks like 'Before: 3 hours data entry. After: 3 clicks.' No confusion, no jargon. Solopreneurs stop because they've lived this pain today.",
+          "reason": "Concrete transformation. Solopreneurs see 'messy invoices' and know exactly what they're scrolling past to avoid.",
+          "authored": false
+        },
+        {
+          "headline": "Stop copying numbers by hand.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Stop copying numbers by hand. Specific, visceral pain (manual data entry = wasted time/money). No ambiguity. Solopreneurs who've done this for hours stop to see if it's true.",
+          "reason": "Clear pain point. 'Copying numbers' is a universal solopreneur frustration. No need to interpret.",
+          "authored": false
+        },
+        {
+          "headline": "Save hours on client expenses.",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "change",
+          "stopping": "Save hours on client expenses. Good pain point (expenses = money), but 'client expenses' is slightly vague (tracking vs. reducing?). Still stops some scrollers.",
+          "reason": "Close to perfect, but 'client expenses' could mean multiple things. Solopreneurs pause but might scroll if unsure.",
+          "authored": false
+        },
+        {
+          "headline": "Three clicks to clean data.",
+          "rank": 4,
+          "score": 6.0,
+          "shape": "change",
+          "stopping": "Three clicks to clean data. 'Clean data' is vague (what data? Why does it matter?). Solopreneurs scroll past wondering if this applies to them.",
+          "reason": "Vague phrasing. 'Clean data' is not a pain point solopreneurs recognize as urgent. Too abstract.",
+          "authored": false
+        },
+        {
+          "headline": "Can AI organize your receipts?",
+          "rank": 5,
+          "score": 3.0,
+          "shape": "question",
+          "stopping": "Can AI organize your receipts? Riddle-like fragment. First-time readers don't understand if it's a question or a statement. They scroll before realizing it's a solution.",
+          "reason": "Fragment. 'Can AI organize your receipts?' is unexplained and feels like a broken thought. No pain point visible.",
+          "authored": false
+        },
+        {
+          "headline": "Google released it.",
+          "rank": 6,
+          "score": 2.0,
+          "shape": "number-claim",
+          "stopping": "Google released it. Unexplained fragment. No context, no pain, no transformation. Solopreneurs scroll past instantly.",
+          "reason": "Fragment. 'Google released it' is meaningless alone. It's just repeating the subtext. No hook at all.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,
