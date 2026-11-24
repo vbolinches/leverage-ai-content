@@ -1849,9 +1849,12 @@
         "accounts/leverageai/queue/post115-gemini-4-hydrogen-research/slide05.png"
       ],
       "caption": "You spend hours cross-referencing market trends and client data before writing a proposal. That stops now. Google released Gemini 4 Hydrogen on November 12, 2026. It processes complex business queries faster and checks numbers more carefully than previous models. This saves you direct time when drafting scope and pricing for new clients.\n\nOpen Google Search or the Gemini app. Paste this exact prompt to analyze a niche for your next proposal:\n\"Analyze the current market rate and top 3 competitors for [your service] in [your city]. Summarize key trends in three bullet points. Check the data for accuracy and flag any outdated sources.\"\n\nThe tool is free in Google Search for everyone. Paid Pro and Ultra subscribers also get it in Google Sheets and the Antigravity interface. Save this workflow for your next client pitch.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetools #proposalwriting #marketresearch #smallbusinessai #productivitytips #gemini4 #businessautomation #clientmanagement",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post115-gemini-4-hydrogen-research/reel.mp4"
+      "video": "accounts/leverageai/queue/post115-gemini-4-hydrogen-research/reel.mp4",
+      "published_media_id": "18120140129519097",
+      "published_on": "2026-11-24",
+      "threads_posted": true
     },
     {
       "id": "post116-muse-ember-model",
