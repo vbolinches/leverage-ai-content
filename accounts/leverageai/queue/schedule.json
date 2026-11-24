@@ -1958,6 +1958,36 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post122-process-spreadsheets-pdf-with-gemini-4-neon/reel.mp4"
+    },
+    {
+      "id": "post123-gemini-email-automation",
+      "date": "2026-12-01",
+      "slides": [
+        "accounts/leverageai/queue/post123-gemini-email-automation/slide01.png",
+        "accounts/leverageai/queue/post123-gemini-email-automation/slide02.png",
+        "accounts/leverageai/queue/post123-gemini-email-automation/slide03.png",
+        "accounts/leverageai/queue/post123-gemini-email-automation/slide04.png",
+        "accounts/leverageai/queue/post123-gemini-email-automation/slide05.png"
+      ],
+      "caption": "Gemini sits inside Gmail now. You can use it to draft routine replies without typing them. This saves time on client follow-ups and scheduling. Gemini isn't magic. It can hallucinate details or miss your tone if you do not check the draft. Always review emails before sending. It works best for standard messages, not complex negotiations.\n\nTo try this: Open Gmail. Click the Gemini button in the compose window. Paste this prompt:\n\n\"Draft a polite reply to this client email. Confirm the meeting time is Tuesday at 2pm. Ask if they need a dial-in link. Keep it under 50 words.\"\n\nVisit the Google Workspace AI resources page to see training. Small business owners are already using this to handle inbox volume.\n\nSave this for your next client follow-up.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #solopreneur #gmailtips #emailautomation #googleworkspace #freelancertools #smallbusinesstips #productivityhack #aiemail #consultantlife",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post123-gemini-email-automation/reel.mp4"
+    },
+    {
+      "id": "post124-google-search-expense-tracking",
+      "date": "2026-12-02",
+      "slides": [
+        "accounts/leverageai/queue/post124-google-search-expense-tracking/slide01.png",
+        "accounts/leverageai/queue/post124-google-search-expense-tracking/slide02.png",
+        "accounts/leverageai/queue/post124-google-search-expense-tracking/slide03.png",
+        "accounts/leverageai/queue/post124-google-search-expense-tracking/slide04.png",
+        "accounts/leverageai/queue/post124-google-search-expense-tracking/slide05.png"
+      ],
+      "caption": "You spend hours copying receipts into spreadsheets. That stops now. Google Search added Personal Intelligence on November 23, 2026. It reads your financial data directly.\n\nGo to your Search Personalization settings webpage. Toggle the feature on. It currently pulls data from Google Wallet. You keep full control and can disconnect it anytime. It identifies spending habits and optimizes credit card rewards.\n\nSave this slide for your next admin block. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solopreneur #freelancetools #businessexpenses #aitools #productivitytips #smallbusinessowner #googleworkspace #adminworkflow #financialtracking #solobiz",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post124-google-search-expense-tracking/reel.mp4"
     }
   ]
 }

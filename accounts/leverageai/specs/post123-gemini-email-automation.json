@@ -1,0 +1,68 @@
+{
+  "slug": "post123-gemini-email-automation",
+  "hook_candidates": [
+    {
+      "headline": "Save 20 minutes daily.",
+      "sub": "Google published a small business case study on November 19, 2026 about Gemini email."
+    },
+    {
+      "headline": "Type the same reply weekly?",
+      "sub": "Google published a small business case study on November 19, 2026 about Gemini email."
+    },
+    {
+      "headline": "Stop typing routine emails.",
+      "sub": "Google published a small business case study on November 19, 2026 about Gemini email."
+    },
+    {
+      "headline": "Google added email automation.",
+      "sub": "Google published a small business case study on November 19, 2026 about Gemini email."
+    },
+    {
+      "headline": "Your inbox slows you down.",
+      "sub": "Google published a small business case study on November 19, 2026 about Gemini email."
+    }
+  ],
+  "art": "globe",
+  "caption": "Gemini sits inside Gmail now. You can use it to draft routine replies without typing them. This saves time on client follow-ups and scheduling. Gemini isn't magic. It can hallucinate details or miss your tone if you do not check the draft. Always review emails before sending. It works best for standard messages, not complex negotiations.\n\nTo try this: Open Gmail. Click the Gemini button in the compose window. Paste this prompt:\n\n\"Draft a polite reply to this client email. Confirm the meeting time is Tuesday at 2pm. Ask if they need a dial-in link. Keep it under 50 words.\"\n\nVisit the Google Workspace AI resources page to see training. Small business owners are already using this to handle inbox volume.\n\nSave this for your next client follow-up.\n\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflows #solopreneur #gmailtips #emailautomation #googleworkspace #freelancertools #smallbusinesstips #productivityhack #aiemail #consultantlife",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WF",
+      "headline": "Gemini study.",
+      "sub": "Google published a small business case study on November 19, 2026 about Gemini email.",
+      "footer_right": "→"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "IS",
+      "headline": "AI tool",
+      "body": "Gemini is an artificial intelligence tool built into Google Workspace, the online office suite."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "DOES",
+      "headline": "Drafts emails",
+      "body": "Gemini automatically drafts routine emails like scheduling a client meeting."
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO",
+      "headline": "Owners use",
+      "body": "The case study shows small business owners use the Gemini email tool."
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "NEXT",
+      "headline": "Start",
+      "items": [
+        "Visit the Google site.",
+        "Start free training today.",
+        "Save this for later."
+      ],
+      "cta_title": "Save",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "↓"
+    }
+  ],
+  "source_url": "https://blog.google/products-and-platforms/products/workspace/google-workspace-gemini-small-business-stories/"
+}

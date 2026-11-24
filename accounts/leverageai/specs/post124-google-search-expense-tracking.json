@@ -1,0 +1,80 @@
+{
+  "slug": "post124-google-search-expense-tracking",
+  "hook_candidates": [
+    {
+      "headline": "Three clicks replace your spreadsheet.",
+      "sub": "The feature launches this week."
+    },
+    {
+      "headline": "You used to log every lunch.",
+      "sub": "Search now tracks it automatically."
+    },
+    {
+      "headline": "How do you track daily expenses?",
+      "sub": "Search now reads your Wallet data."
+    },
+    {
+      "headline": "You lose two hours weekly on receipts.",
+      "sub": "Search now tracks it automatically."
+    },
+    {
+      "headline": "Google Search tracks expenses now.",
+      "sub": "The feature launched November 23, 2026."
+    }
+  ],
+  "art": "spreadsheet",
+  "caption": "You spend hours copying receipts into spreadsheets. That stops now. Google Search added Personal Intelligence on November 23, 2026. It reads your financial data directly.\n\nGo to your Search Personalization settings webpage. Toggle the feature on. It currently pulls data from Google Wallet. You keep full control and can disconnect it anytime. It identifies spending habits and optimizes credit card rewards.\n\nSave this slide for your next admin block. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#solopreneur #freelancetools #businessexpenses #aitools #productivitytips #smallbusinessowner #googleworkspace #adminworkflow #financialtracking #solobiz",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WF124",
+      "headline": "New feature",
+      "sub": "Google Search added Personal Intelligence, a new data-reading feature, on November 23, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT",
+      "headline": "Reads apps",
+      "body": [
+        {
+          "t": "Personal Intelligence means Google Search reads your Google Wallet payment app and Drive files."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "DOES",
+      "headline": "Cuts admin",
+      "body": [
+        {
+          "t": "Personal Intelligence eliminates manual expense tracking by reading your spending data, like lunch."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO",
+      "headline": "Wallet now",
+      "body": [
+        {
+          "t": "Personal Intelligence rolls out now for Google Wallet users while Drive support arrives later."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "DO",
+      "headline": "Do this",
+      "items": [
+        "Visit Search Personalization settings.",
+        "Turn on Personal Intelligence.",
+        "Eliminate manual expense tracking."
+      ],
+      "cta_title": "Save this",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+}

@@ -1706,6 +1706,150 @@
       ]
     },
     {
+      "slug": "post123-gemini-email-automation",
+      "graded": "2026-11-24",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Stop typing routine emails.",
+        "sub": "Google published a small business case study on November 19, 2026 about Gemini email.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "Pain of repetitive work is visceral - 'stop' makes it urgent, 'routine' confirms it's daily for them, not hypothetical. No filler.",
+        "reason": "Strongest concrete pain point. Directly addresses a daily friction point with actionable verb 'stop'.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Stop typing routine emails.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Pain of repetitive work is visceral - 'stop' makes it urgent, 'routine' confirms it's daily for them, not hypothetical. No filler.",
+          "reason": "Strongest concrete pain point. Directly addresses a daily friction point with actionable verb 'stop'.",
+          "authored": false
+        },
+        {
+          "headline": "Your inbox slows you down.",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Inbox slowdown is a universal solo operator pain. 'Slows you down' is more visceral than 'saves time'.",
+          "reason": "Clear pain point without fluff. Feels like it's speaking directly to their current frustration.",
+          "authored": false
+        },
+        {
+          "headline": "Type the same reply weekly?",
+          "rank": 3,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Question format makes it personal ('your reply'), but 'weekly' is less urgent than 'routine' in E.",
+          "reason": "Effective question that triggers self-recognition, but slightly less immediate than E's 'stop'.",
+          "authored": false
+        },
+        {
+          "headline": "Save 20 minutes daily.",
+          "rank": 4,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Benefit claim ('save time') is generic. Past data shows this type gets scrolled past.",
+          "reason": "Vague benefit without naming the pain. 'Save 20 minutes' feels like marketing fluff.",
+          "authored": false
+        },
+        {
+          "headline": "Google added email automation.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Just a news fact. 'Google added...' is irrelevant unless it's a pain - it's not.",
+          "reason": "Reads like a headline. Audience has zero reason to stop scrolling for this.",
+          "authored": false
+        },
+        {
+          "headline": "Gemini study.",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Fragment: 'Gemini study' is unexplained. No context for what it means to the reader.",
+          "reason": "Unexplained acronym. First-time readers skip this immediately.",
+          "authored": true
+        }
+      ]
+    },
+    {
+      "slug": "post124-google-search-expense-tracking",
+      "graded": "2026-11-24",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "You lose two hours weekly on receipts.",
+        "sub": "Search now tracks it automatically.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "Quantified time loss (2 hours) is visceral for solopreneurs drowning in admin. Solves a known pain point without jargon.",
+        "reason": "D's pain point is specific, measurable, and directly tied to a daily frustration (receipts). The 'two hours' makes it feel urgent and real, not theoretical.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "You lose two hours weekly on receipts.",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Quantified time loss (2 hours) is visceral for solopreneurs drowning in admin. Solves a known pain point without jargon.",
+          "reason": "D's pain point is specific, measurable, and directly tied to a daily frustration (receipts). The 'two hours' makes it feel urgent and real, not theoretical.",
+          "authored": false
+        },
+        {
+          "headline": "You used to log every lunch.",
+          "rank": 2,
+          "score": 7.0,
+          "shape": "contrarian",
+          "stopping": "Relatable daily pain (lunch logging) but lacks urgency. The 'now' in sub implies immediate solution but doesn't quantify the pain.",
+          "reason": "C is strong but 'log every lunch' is less universally painful than D's hourly loss. The sub feels like an afterthought.",
+          "authored": false
+        },
+        {
+          "headline": "Three clicks replace your spreadsheet.",
+          "rank": 3,
+          "score": 5.0,
+          "shape": "contrarian",
+          "stopping": "Vague 'three clicks' implies ease but doesn't name the pain. 'Spreadsheet' is a weak pain point for this audience.",
+          "reason": "E's 'three clicks' sounds helpful but doesn't explain *why* it matters. Spreadsheets are a common pain but not as visceral as receipt chaos.",
+          "authored": false
+        },
+        {
+          "headline": "How do you track daily expenses?",
+          "rank": 4,
+          "score": 3.0,
+          "shape": "contrarian",
+          "stopping": "Question hook but 'Wallet data' is an unexplained fragment. First-time readers skip unexplained terms.",
+          "reason": "F's 'Wallet data' is a fragment (is this Apple/Google Wallet?) that makes readers scroll past immediately. The question fails to land the pain.",
+          "authored": false
+        },
+        {
+          "headline": "Google Search tracks expenses now.",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "Generic announcement with no pain point. 'Tracks expenses now' is meaningless without context.",
+          "reason": "A is just a feature announcement. No 'why should I care?' for solopreneurs. Pure scroll past.",
+          "authored": false
+        },
+        {
+          "headline": "New feature",
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "Unexplained acronym 'Personal Intelligence' + 'New feature' cover. First-time readers skip fragments and meta-announcements.",
+          "reason": "B is a death sentence: 'New feature' is a guaranteed scroll, and 'Personal Intelligence' is an unexplained jargon fragment. The worst possible combo.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,
