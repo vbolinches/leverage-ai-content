@@ -1867,9 +1867,12 @@
         "accounts/leverageai/queue/post116-muse-ember-model/slide05.png"
       ],
       "caption": "A new lightweight AI option just dropped. The Muse Ember Model launched on November 10, 2026, designed for developers and businesses to handle everyday tasks efficiently.\n\nYou can test this lean approach in your current chat tool. Paste this prompt to simulate the lightweight workflow:\n\n\"Act as a lean assistant. Summarize this text into three bullet points. Focus only on decisions, next steps, and deadlines. Keep it under 50 words.\"\n\nThis workflow works for solo consultants, freelancers, and small operators who handle their own admin. The official release notes and integration details are not public yet, so save this prompt for when access opens. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflow #solopreneur #freelancetips #smallbusinessai #lightweightai #adminautomation #meetingnotes #chatgptprompts #claudeai #businesstools",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post116-muse-ember-model/reel.mp4"
+      "video": "accounts/leverageai/queue/post116-muse-ember-model/reel.mp4",
+      "published_media_id": "17954607771083770",
+      "published_on": "2026-11-25",
+      "threads_posted": true
     },
     {
       "id": "post117-google-vids-personal-avatars",
