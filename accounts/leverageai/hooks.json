@@ -1850,6 +1850,82 @@
       ]
     },
     {
+      "slug": "post125-move-ai-history-gemini",
+      "graded": "2026-11-26",
+      "threshold": 6.0,
+      "retried": false,
+      "chosen": {
+        "headline": "Switch tools without starting over",
+        "sub": "Google added a chat history transfer tool to Gemini, the free AI assistant, on November 19, 2026.",
+        "rank": 1,
+        "score": 9.0,
+        "shape": "contrarian",
+        "stopping": "Pain is visceral: 'starting over' = lost hours on client work. Solopreneurs feel this daily. 'Switch tools' implies they're already juggling apps, so the fix is urgent.",
+        "reason": "Direct pain + solution implied. No fluff. Perfect for the audience's daily reality.",
+        "authored": false
+      },
+      "candidates": [
+        {
+          "headline": "Switch tools without starting over",
+          "rank": 1,
+          "score": 9.0,
+          "shape": "contrarian",
+          "stopping": "Pain is visceral: 'starting over' = lost hours on client work. Solopreneurs feel this daily. 'Switch tools' implies they're already juggling apps, so the fix is urgent.",
+          "reason": "Direct pain + solution implied. No fluff. Perfect for the audience's daily reality.",
+          "authored": false
+        },
+        {
+          "headline": "Retyping prompts wastes one hour",
+          "rank": 2,
+          "score": 8.0,
+          "shape": "contrarian",
+          "stopping": "Concrete time loss ('one hour') is strong, but 'retying prompts' is slightly less urgent than F's 'starting over' (which implies lost context on client work).",
+          "reason": "Measurable pain, but less active than F's 'switching' pain.",
+          "authored": false
+        },
+        {
+          "headline": "Move chats in three steps",
+          "rank": 3,
+          "score": 6.0,
+          "shape": "contrarian",
+          "stopping": "'Move chats' is too technical for the audience. They don't think in 'chats'—they think in 'client work' or 'restarting.'",
+          "reason": "Sounds like a tech manual, not a solopreneur's pain.",
+          "authored": false
+        },
+        {
+          "headline": "You are losing prompt history",
+          "rank": 4,
+          "score": 4.0,
+          "shape": "contrarian",
+          "stopping": "'Losing prompt history' is vague. Doesn't say *how* it hurts (e.g., wasting time, losing client context).",
+          "reason": "Emotional but not concrete. Audience skips vague pain.",
+          "authored": false
+        },
+        {
+          "headline": "Can you move AI chat history?",
+          "rank": 5,
+          "score": 2.0,
+          "shape": "contrarian",
+          "stopping": "'Can you move AI chat history?' is a question. First-time readers skip questions—they don't want to engage, they want a solution.",
+          "reason": "Fragmented thought. Reads like a support ticket, not a hook.",
+          "authored": false
+        },
+        {
+          "headline": [
+            {
+              "t": "Google added a chat transfer tool."
+            }
+          ],
+          "rank": 6,
+          "score": 1.0,
+          "shape": "contrarian",
+          "stopping": "'Google added a chat transfer tool' is meta-commentary about a feature. Audience cares about *their* pain, not Google's update.",
+          "reason": "Feature announcement. Skipped immediately.",
+          "authored": true
+        }
+      ]
+    },
+    {
       "slug": "post36-claude-code-doubled-limits",
       "graded": "2026-08-22",
       "threshold": 6.0,

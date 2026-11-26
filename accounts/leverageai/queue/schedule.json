@@ -1994,6 +1994,21 @@
       "status": "queued",
       "format": "reel",
       "video": "accounts/leverageai/queue/post124-google-search-expense-tracking/reel.mp4"
+    },
+    {
+      "id": "post125-move-ai-history-gemini",
+      "date": "2026-12-03",
+      "slides": [
+        "accounts/leverageai/queue/post125-move-ai-history-gemini/slide01.png",
+        "accounts/leverageai/queue/post125-move-ai-history-gemini/slide02.png",
+        "accounts/leverageai/queue/post125-move-ai-history-gemini/slide03.png",
+        "accounts/leverageai/queue/post125-move-ai-history-gemini/slide04.png",
+        "accounts/leverageai/queue/post125-move-ai-history-gemini/slide05.png"
+      ],
+      "caption": "You run sales, delivery, and invoices yourself. Switching AI tools usually means losing months of prompt history and client context. You spend an hour retraining your new assistant from scratch. That ends today.\n\nGemini now lets you move your chat history in three steps. Open your Gemini import settings and copy the prompt. Export a ZIP file of your chat history from your previous provider's account settings. Upload that ZIP archive in Gemini settings to continue your conversations right where you left off. This works for solo operators moving from other apps to Gemini. Use this prompt after importing: Continue our previous conversation about client onboarding.\n\nSave this for later when you switch platforms. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aitools #solopreneur #freelancerworkflow #gemini #productivity #smallbusinessowner #workflowautomation #aitransfer #businessadmin #notionalternative",
+      "status": "queued",
+      "format": "reel",
+      "video": "accounts/leverageai/queue/post125-move-ai-history-gemini/reel.mp4"
     }
   ]
 }

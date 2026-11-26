@@ -289,6 +289,10 @@ Performance confirms concrete-pain hooks (change shape: free video, GPT-6 Astra,
 
 Performance confirms concrete-pain hooks (change shape) drive higher reach than news-peg hooks for reels. Best posts (106, 103, 109) reached 128, 16, 7. Worst posts (110, 112) reached 1, 1. The best performers (106, 103, 109) all used concrete-pain hooks framed as change (e.g., 'free video', 'GPT-6 Astra', 'Gemini 4 Carbon'), while the worst (110, 112) used news-peg hooks without concrete pain framing (e.g., 'Gemini adds website research', 'ChatGPT adds business profiles'). The reach data (128, 16, 7 vs 1, 1) supports this pattern.
 
+## Batch notes — posts 125-125 (2026-11-26)
+
+not enough data to tell Performance brief does not include data for post125, which is the only post in the batch.
+
 ## Next brief — what to ask for
 
 1. **Reach and format for posts 050-056**, still the top-priority ask —

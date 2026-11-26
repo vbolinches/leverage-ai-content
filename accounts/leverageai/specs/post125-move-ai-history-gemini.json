@@ -1,0 +1,84 @@
+{
+  "slug": "post125-move-ai-history-gemini",
+  "hook_candidates": [
+    {
+      "headline": "Move chats in three steps",
+      "sub": "Google added a chat history transfer tool to Gemini, the free AI assistant, on November 19, 2026."
+    },
+    {
+      "headline": "You are losing prompt history",
+      "sub": "Google added a chat history transfer tool to Gemini, the free AI assistant, on November 19, 2026."
+    },
+    {
+      "headline": "Can you move AI chat history?",
+      "sub": "Google added a chat history transfer tool to Gemini, the free AI assistant, on November 19, 2026."
+    },
+    {
+      "headline": "Switch tools without starting over",
+      "sub": "Google added a chat history transfer tool to Gemini, the free AI assistant, on November 19, 2026."
+    },
+    {
+      "headline": "Retyping prompts wastes one hour",
+      "sub": "Google added a chat history transfer tool to Gemini, the free AI assistant, on November 19, 2026."
+    }
+  ],
+  "art": "chat",
+  "caption": "You run sales, delivery, and invoices yourself. Switching AI tools usually means losing months of prompt history and client context. You spend an hour retraining your new assistant from scratch. That ends today.\n\nGemini now lets you move your chat history in three steps. Open your Gemini import settings and copy the prompt. Export a ZIP file of your chat history from your previous provider's account settings. Upload that ZIP archive in Gemini settings to continue your conversations right where you left off. This works for solo operators moving from other apps to Gemini. Use this prompt after importing: Continue our previous conversation about client onboarding.\n\nSave this for later when you switch platforms. Follow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aitools #solopreneur #freelancerworkflow #gemini #productivity #smallbusinessowner #workflowautomation #aitransfer #businessadmin #notionalternative",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "WORKFLOW 125",
+      "headline": [
+        {
+          "t": "Google added a chat transfer tool."
+        }
+      ],
+      "sub": "Google added a chat history transfer tool to Gemini, the free AI assistant, on November 19, 2026.",
+      "footer_right": "SWIPE →"
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT IS",
+      "headline": "Moves past answers.",
+      "body": [
+        {
+          "t": "Chat history transfer moves your past questions and answers to a new program."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHAT IT DOES",
+      "headline": "Continue conversations.",
+      "body": [
+        {
+          "t": "The Gemini chat history transfer lets you continue old conversations, like a client email."
+        }
+      ]
+    },
+    {
+      "kind": "step",
+      "eyebrow": "WHO GETS IT",
+      "headline": "Applies to users.",
+      "body": [
+        {
+          "t": "The Gemini chat history transfer applies to users moving from other AI apps to Gemini."
+        }
+      ]
+    },
+    {
+      "kind": "recap",
+      "eyebrow": "RECAP",
+      "headline": "Open settings.",
+      "items": [
+        "Open Gemini import settings.",
+        "Save this for later.",
+        "Upload the ZIP archive."
+      ],
+      "cta_title": "Save this for later",
+      "cta_sub": "Follow @leverageai.daily — one AI workflow a day for people who run their own business",
+      "footer_right": "SAVE THIS ↓"
+    }
+  ],
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/switch-ai-assistants-transfer-history/"
+}
