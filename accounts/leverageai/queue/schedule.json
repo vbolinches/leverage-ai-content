@@ -1885,9 +1885,12 @@
         "accounts/leverageai/queue/post117-google-vids-personal-avatars/slide05.png"
       ],
       "caption": "Create a digital version of yourself in minutes. Open Google Vids on your phone or browser. Tap the camera icon and select Create Avatar. Scan the QR code in the app to create your avatar. The feature is free for anyone with a personal Google account.\n\nUse it to send client updates, project notes, or onboarding videos without filming. Type your message and generate a video link. This saves thirty minutes weekly on video creation. You keep full control over what gets sent.\n\nSave this for later when you need to send a quick video update.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aifreelance #solopreneur #clientupdates #videoediting #productivityhacks #smallbusiness #googleworkspace #time-saving #aiforbusiness",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post117-google-vids-personal-avatars/reel.mp4"
+      "video": "accounts/leverageai/queue/post117-google-vids-personal-avatars/reel.mp4",
+      "published_media_id": "18136432087810314",
+      "published_on": "2026-11-25",
+      "threads_posted": true
     },
     {
       "id": "post118-gemini-4-hydrogen-search-tables",
