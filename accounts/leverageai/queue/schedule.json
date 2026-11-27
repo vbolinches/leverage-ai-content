@@ -1903,9 +1903,12 @@
         "accounts/leverageai/queue/post118-gemini-4-hydrogen-search-tables/slide05.png"
       ],
       "caption": "Stop copying data from ten browser tabs into a blank spreadsheet. When you draft client proposals, you need competitor pricing, service comparisons, and market rates. Gemini 4 Hydrogen Search now handles that research in one query. Open Google Search and type a prompt asking for a comparison table. The AI returns structured columns you can copy straight into your proposal draft. It cuts twenty-five minutes of manual tab-switching from your week.\n\nPaste this exact prompt to test it:\n\"Compare pricing, delivery time, and target audience for [your service] across three competitors. Format as a markdown table.\"\n\nThis works on the free Google Search site. No account upgrades or extra clicks are required. Just ask detailed questions and let the model sort the data. The tables are not perfect for niche local markets, so verify one data point before sending it to a client.\n\nSave this for later.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n#aiworkflows #solopreneur #freelancetools #businessresearch #productivityhacks #smallbusinessowner #googlesearch #aiproposals #timesaver #workflowautomation",
-      "status": "queued",
+      "status": "published",
       "format": "reel",
-      "video": "accounts/leverageai/queue/post118-gemini-4-hydrogen-search-tables/reel.mp4"
+      "video": "accounts/leverageai/queue/post118-gemini-4-hydrogen-search-tables/reel.mp4",
+      "published_media_id": "18188984227410684",
+      "published_on": "2026-11-27",
+      "threads_posted": true
     },
     {
       "id": "post119-gemini-carplay-email-summaries",
