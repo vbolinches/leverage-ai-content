@@ -1921,7 +1921,10 @@
         "accounts/leverageai/queue/post119-gemini-carplay-email-summaries/slide05.png"
       ],
       "caption": "Turn your daily drive into client management time. Google added Gemini Live to Apple CarPlay on Nov 11. It listens to your voice and returns text summaries of your inbox. You get hands-free updates without touching your phone.\n\nHere is the exact workflow. Update the Gemini app on your iPhone. Open settings and turn on microphone permissions. Connect your phone to your car’s Apple CarPlay display. Tap the Gemini icon on the screen. Ask it to summarize your recent client emails. The app reads the summaries aloud and saves the text to your iPhone notes for later reference.\n\nPrompt to use: Summarize my last five client emails and list required replies.\n\nThis works for any solo operator using an iPhone. The feature is free and available worldwide. It handles quick inbox triage and follow-up tracking. It does not draft replies or access encrypted work accounts. Keep it to reading summaries and calendar checks while your hands stay on the wheel.\n\nSave this post for your next long drive.\nFollow @leverageai.daily — one AI workflow a day for people who run their own business.\n\n#aiworkflow #solopreneur #applecarplay #gemini #productivitytips #freelancerlife #businesstools #timemanagement #adminhacks #commutetips",
-      "status": "queued"
+      "status": "published",
+      "published_media_id": "18116564393150597",
+      "published_on": "2026-11-27",
+      "threads_posted": true
     },
     {
       "id": "post120-gemini-computer-use-mac",
